@@ -1,5 +1,13 @@
-# SOMASS Space Planner
+# SOMASS · 3B mağaza sunumu
 
-SOMASS mağaza planı ve müşteriye özel, yalnızca görüntülenen 3B sunum.
+[Müşteri için 3B mağazayı aç](https://baharercili.github.io/somass/view/)
 
-Web paketi hazırlanıyor. Bu depo henüz yayımlanmış bir site içermiyor.
+Güncel kayıttan üretilmiş, yalnızca görüntülenen sunum. Kamera döndürülebilir, yakınlaştırılabilir ve kaydırılabilir; düzenleme ve kayıt araçları yüklenmez.
+
+- 165 yerleşim öğesi
+- 80 katalog ürünü örneği
+- 27 ölçülmüş duvar
+
+Canlı bağlantıda 80/80 mobilyanın yüklendiği doğrulandı. Kaynak yerel proje ve ölçüler korunmuştur.
+
+Depodaki parçalardan siteyi doğrulayarak oluşturan yayın akışı `.github/workflows/pages.yml` içindedir.
