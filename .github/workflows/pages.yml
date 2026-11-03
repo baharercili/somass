@@ -3,7 +3,7 @@ name: Publish current SOMASS 3D view
 on:
   workflow_dispatch:
   push:
-    branches: [customer-live]
+    branches: [main]
     paths:
       - 'customer.part-*'
       - 'customer.fragments/**'
