@@ -72,8 +72,9 @@ jobs:
                   assert '.git' not in name.parts and not stat.S_ISLNK(info.external_attr>>16), 'Unexpected repository/link entry'
                   assert info.filename not in names, 'Duplicate archive entry'
                   names.add(info.filename)
-              assert 'index.html' in names and '.nojekyll' in names, 'Site entry is missing'
+              assert 'index.html' in names, 'Site entry is missing'
               archive.extractall('_site')
+          Path('_site/.nojekyll').touch()
           assert 'view/index.html' in names, 'Readonly customer view is missing'
           assert manifest.get('readOnly') is True, 'Readonly manifest is required'
           print(f"Verified {manifest['siteFiles']} files; {manifest['siteBytes']} bytes")
