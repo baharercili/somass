@@ -1,0 +1,89 @@
+name: Publish current SOMASS 3D view
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [customer-live]
+    paths:
+      - 'customer.part-*'
+      - 'customer.fragments/**'
+      - 'customer-upload-manifest.json'
+      - '.github/workflows/pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout publication files
+        uses: actions/checkout@v6
+      - name: Validate and unpack the complete site
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, re, shutil, stat, zipfile
+          from pathlib import Path, PurePosixPath
+          manifest=json.loads(Path('customer-upload-manifest.json').read_text())
+          assert manifest['schemaVersion']==1, 'Unsupported archive manifest'
+          assert 0<manifest['siteBytes']<1_000_000_000, 'Site exceeds publication budget'
+          assert manifest['sourcePlanObjects']==165 and manifest['sourcePlanWalls']==27, 'Unexpected source plan'
+          for part in manifest['parts']:
+              destination=Path(part['name'])
+              if destination.is_file():
+                  continue
+              number=part['name'].removeprefix('customer.part-')
+              count=(part['bytes']+3_145_728-1)//3_145_728
+              fragments=[Path('customer.fragments')/f'p{number}-c{index:04}' for index in range(count)]
+              assert all(fragment.is_file() for fragment in fragments), 'A customer fragment is missing'
+              with destination.open('wb') as target:
+                  for fragment in fragments:
+                      target.write(fragment.read_bytes())
+          digest=hashlib.sha256();total=0
+          with Path('site.zip').open('wb') as target:
+              for index,part in enumerate(manifest['parts'],1):
+                  assert part['name']==f'customer.part-{index:04}', 'Invalid part order'
+                  source=Path(part['name']);assert source.is_file(), 'An archive part is missing'
+                  assert source.stat().st_size==part['bytes'], 'Archive part is incomplete'
+                  part_hash=hashlib.sha256()
+                  with source.open('rb') as handle:
+                      for block in iter(lambda:handle.read(1024*1024),b''):
+                          target.write(block);part_hash.update(block);digest.update(block);total+=len(block)
+                  assert part_hash.hexdigest()==part['sha256'], 'Archive part checksum differs'
+          assert total==manifest['archiveBytes'], 'Archive size differs'
+          assert digest.hexdigest()==manifest['archiveSha256'], 'Archive checksum differs'
+          with zipfile.ZipFile('site.zip') as archive:
+              infos=archive.infolist();assert len(infos)==manifest['siteFiles'], 'A site file is missing'
+              assert sum(info.file_size for info in infos)==manifest['siteBytes'], 'Expanded site size differs'
+              names=set()
+              for info in infos:
+                  name=PurePosixPath(info.filename)
+                  assert not name.is_absolute() and '..' not in name.parts and '\\' not in info.filename, 'Unsafe archive path'
+                  assert '.git' not in name.parts and not stat.S_ISLNK(info.external_attr>>16), 'Unexpected repository/link entry'
+                  assert info.filename not in names, 'Duplicate archive entry'
+                  names.add(info.filename)
+              assert 'index.html' in names and '.nojekyll' in names, 'Site entry is missing'
+              archive.extractall('_site')
+          assert 'view/index.html' in names, 'Readonly customer view is missing'
+          assert manifest.get('readOnly') is True, 'Readonly manifest is required'
+          print(f"Verified {manifest['siteFiles']} files; {manifest['siteBytes']} bytes")
+          PY
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload the unpacked website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
