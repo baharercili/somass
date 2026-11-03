@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "readOnly": true,
+  "siteBytes": 128050570,
+  "siteFiles": 159,
+  "sourcePlanObjects": 165,
+  "sourcePlanWalls": 27,
+  "nativeProductInstances": 80,
+  "distinctNativeProductIds": 57,
+  "sourcePlanSha256": "2be5af7e878241e24802dd204b780513f63c884b793fd35fe76ae63480f67d62",
+  "archiveBytes": 112135087,
+  "archiveSha256": "0e3d31013b4d8445e1172fdfe89aa3e92b773b3bbff5787f59f5c889a82d5fc9",
+  "parts": [
+    {
+      "name": "customer.part-0001",
+      "bytes": 20971520,
+      "sha256": "2d6fd28c64e62f8711a785881213768082e51177b9ce16e3be0c6aaafe769dfd"
+    },
+    {
+      "name": "customer.part-0002",
+      "bytes": 20971520,
+      "sha256": "17adeff00cec807250582acba4fd8b1ae45e79526fd2f4dce294fe4fc4df1099"
+    },
+    {
+      "name": "customer.part-0003",
+      "bytes": 20971520,
+      "sha256": "16bee5afd76786f4138a5ef5316f723bcd1bb3b81b66aa11bec39304d7136d97"
+    },
+    {
+      "name": "customer.part-0004",
+      "bytes": 20971520,
+      "sha256": "47cbac75a94ed01e1784419b39485226b248dbc6c562b0f79bbe1b5678fa328a"
+    },
+    {
+      "name": "customer.part-0005",
+      "bytes": 20971520,
+      "sha256": "556beca04db0254a6a6282aa2d195d31cd896b9a8f229e583c00d1be756f38f1"
+    },
+    {
+      "name": "customer.part-0006",
+      "bytes": 7277487,
+      "sha256": "02ebc6a0625ff3a1c4310c2dd0485da317716514d1cb7b798159edcf8e5af667"
+    }
+  ]
+}
