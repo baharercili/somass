@@ -1,13 +1,11 @@
-name: Publish current SOMASS 3D view
+name: Publish full SOMASS project
 
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - 'customer.part-*'
-      - 'customer.fragments/**'
-      - 'customer-upload-manifest.json'
+      - 'somass-source-manifest.json'
       - '.github/workflows/pages.yml'
 
 permissions:
@@ -27,64 +25,129 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout publication files
+      - name: Checkout complete project
         uses: actions/checkout@v6
-      - name: Validate and unpack the complete site
+      - name: Verify and restore packaged source
+        shell: bash
         run: |
           python3 - <<'PY'
-          import hashlib, json, re, shutil, stat, zipfile
           from pathlib import Path, PurePosixPath
-          manifest=json.loads(Path('customer-upload-manifest.json').read_text())
-          assert manifest['schemaVersion']==1, 'Unsupported archive manifest'
-          assert 0<manifest['siteBytes']<1_000_000_000, 'Site exceeds publication budget'
-          assert manifest['sourcePlanObjects']==165 and manifest['sourcePlanWalls']==27, 'Unexpected source plan'
-          for part in manifest['parts']:
-              destination=Path(part['name'])
-              if destination.is_file():
-                  continue
-              number=part['name'].removeprefix('customer.part-')
-              count=(part['bytes']+3_145_728-1)//3_145_728
-              fragments=[Path('customer.fragments')/f'p{number}-c{index:04}' for index in range(count)]
-              assert all(fragment.is_file() for fragment in fragments), 'A customer fragment is missing'
-              with destination.open('wb') as target:
-                  for fragment in fragments:
-                      target.write(fragment.read_bytes())
-          digest=hashlib.sha256();total=0
-          with Path('site.zip').open('wb') as target:
-              for index,part in enumerate(manifest['parts'],1):
-                  assert part['name']==f'customer.part-{index:04}', 'Invalid part order'
-                  source=Path(part['name']);assert source.is_file(), 'An archive part is missing'
-                  assert source.stat().st_size==part['bytes'], 'Archive part is incomplete'
-                  part_hash=hashlib.sha256()
+          import hashlib, json, shutil, stat, zipfile
+          
+          root = Path.cwd()
+          manifest = json.loads((root / 'somass-source-manifest.json').read_text())
+          if manifest.get('schemaVersion') != 1:
+              raise ValueError('Unsupported source package manifest')
+          
+          def safe_name(name):
+              path = PurePosixPath(name)
+              if not name or path.is_absolute() or path.as_posix() != name or '..' in path.parts or '\\' in name or '.git' in path.parts:
+                  raise ValueError('Unsafe source package path')
+              return Path(*path.parts)
+          
+          def checksum(path):
+              value = hashlib.sha256()
+              with path.open('rb') as source:
+                  for block in iter(lambda: source.read(1024 * 1024), b''):
+                      value.update(block)
+              return value.hexdigest()
+          
+          archive = root / 'somass-source.zip'
+          whole = hashlib.sha256()
+          total = 0
+          seen = set()
+          with archive.open('wb') as output:
+              for item in manifest['parts']:
+                  name = item['name']
+                  if '/' in name or not name.startswith('somass-source.part-') or name in seen:
+                      raise ValueError('Unexpected or duplicate source part')
+                  seen.add(name)
+                  source = root / safe_name(name)
+                  if source.is_symlink() or not source.is_file():
+                      raise ValueError('Missing source part')
+                  part = hashlib.sha256()
+                  size = 0
                   with source.open('rb') as handle:
-                      for block in iter(lambda:handle.read(1024*1024),b''):
-                          target.write(block);part_hash.update(block);digest.update(block);total+=len(block)
-                  assert part_hash.hexdigest()==part['sha256'], 'Archive part checksum differs'
-          assert total==manifest['archiveBytes'], 'Archive size differs'
-          assert digest.hexdigest()==manifest['archiveSha256'], 'Archive checksum differs'
-          with zipfile.ZipFile('site.zip') as archive:
-              infos=archive.infolist();assert len(infos)==manifest['siteFiles'], 'A site file is missing'
-              assert sum(info.file_size for info in infos)==manifest['siteBytes'], 'Expanded site size differs'
-              names=set()
-              for info in infos:
-                  name=PurePosixPath(info.filename)
-                  assert not name.is_absolute() and '..' not in name.parts and '\\' not in info.filename, 'Unsafe archive path'
-                  assert '.git' not in name.parts and not stat.S_ISLNK(info.external_attr>>16), 'Unexpected repository/link entry'
-                  assert info.filename not in names, 'Duplicate archive entry'
-                  names.add(info.filename)
-              assert 'index.html' in names, 'Site entry is missing'
-              archive.extractall('_site')
-          Path('_site/.nojekyll').touch()
-          assert 'view/index.html' in names, 'Readonly customer view is missing'
-          assert manifest.get('readOnly') is True, 'Readonly manifest is required'
-          print(f"Verified {manifest['siteFiles']} files; {manifest['siteBytes']} bytes")
+                      for block in iter(lambda: handle.read(1024 * 1024), b''):
+                          output.write(block)
+                          part.update(block)
+                          whole.update(block)
+                          size += len(block)
+                          total += len(block)
+                  if size != item['bytes'] or part.hexdigest() != item['sha256']:
+                      raise ValueError('Source part checksum differs: ' + name)
+          if total != manifest['archiveBytes'] or whole.hexdigest() != manifest['archiveSha256']:
+              raise ValueError('Source archive checksum differs')
+          
+          destination = root / '_source'
+          if destination.exists() or destination.is_symlink():
+              raise ValueError('Source destination already exists')
+          destination.mkdir()
+          with zipfile.ZipFile(archive) as package:
+              integrity = manifest['memberIntegrity']
+              integrity_path = safe_name(integrity['path'])
+              integrity_bytes = package.read(integrity_path.as_posix())
+              if len(integrity_bytes) != integrity['bytes'] or hashlib.sha256(integrity_bytes).hexdigest() != integrity['sha256']:
+                  raise ValueError('Member integrity manifest differs')
+              details = json.loads(integrity_bytes)
+              if details.get('schemaVersion') != 1:
+                  raise ValueError('Unsupported member manifest')
+              expected = {item['path']: item for item in details['members']}
+              if len(expected) != len(details['members']) or integrity['path'] in expected:
+                  raise ValueError('Duplicate member integrity records')
+              expected[integrity['path']] = integrity
+              if len(expected) != manifest['memberCount']:
+                  raise ValueError('Source member count differs')
+              seen = set()
+              for info in package.infolist():
+                  path = safe_name(info.filename)
+                  mode = info.external_attr >> 16
+                  if info.filename in seen or info.filename not in expected or info.is_dir() or stat.S_ISLNK(mode):
+                      raise ValueError('Unexpected or unsafe archive member')
+                  if stat.S_IFMT(mode) not in (0, stat.S_IFREG):
+                      raise ValueError('Non-file archive member')
+                  seen.add(info.filename)
+                  item = expected[info.filename]
+                  if info.file_size != item['bytes']:
+                      raise ValueError('Source member size differs: ' + info.filename)
+                  target = destination / path
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  value = hashlib.sha256()
+                  with package.open(info) as source, target.open('xb') as output:
+                      for block in iter(lambda: source.read(1024 * 1024), b''):
+                          value.update(block)
+                          output.write(block)
+                  if value.hexdigest() != item['sha256']:
+                      raise ValueError('Source member checksum differs: ' + info.filename)
+              if seen != set(expected):
+                  raise ValueError('Source package members missing')
+          
+          # Reuse the already published customer baseline, including fragmented parts.
+          for source in root.glob('customer.part-*'):
+              if source.is_symlink() or not source.is_file():
+                  raise ValueError('Unsafe customer baseline part')
+              shutil.copy2(source, destination / source.name)
+          fragments = root / 'customer.fragments'
+          if fragments.exists():
+              if fragments.is_symlink() or not fragments.is_dir():
+                  raise ValueError('Unsafe customer baseline fragments')
+              for source in fragments.rglob('*'):
+                  if source.is_symlink():
+                      raise ValueError('Unsafe customer baseline fragment')
+                  if source.is_file():
+                      target = destination / 'customer.fragments' / source.relative_to(fragments)
+                      target.parent.mkdir(parents=True, exist_ok=True)
+                      shutil.copy2(source, target)
+          print('Verified and restored', len(expected), 'source files and existing customer baseline.')
           PY
+      - name: Verify assets and build editor plus customer view
+        run: python3 _source/tools/build-site.py --strict
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload the unpacked website
+      - name: Upload the assembled website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: _site
-      - name: Publish Pages
+          path: _source/_site
+      - name: Publish complete project
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "archiveBytes": 174120581,
+  "archiveSha256": "0824eebe07fa697728f295217ff7ae9978bb007eabfd35c033450bcd2223ff58",
+  "partBytes": 20971520,
+  "parts": [
+    {
+      "name": "somass-source.part-0001",
+      "bytes": 20971520,
+      "sha256": "1f9cf3e712d783ce0d2e4a28a30f84321a22f55808b17d57d7cc2c69d6fcabdd",
+      "gitBlobSha1": "a913beb4c7dc86a392a544be0fdbca5e3dda03af"
+    },
+    {
+      "name": "somass-source.part-0002",
+      "bytes": 20971520,
+      "sha256": "f1328c00bcd6d5c65466486083ff573b8afd6b1c95dd0971c8f266c321d8bfc8",
+      "gitBlobSha1": "d650e80ef1fb8da72803ec6f977a52a37c4cde99"
+    },
+    {
+      "name": "somass-source.part-0003",
+      "bytes": 20971520,
+      "sha256": "7c8b108135504258fd23b1928152647466c9945e5f9da2164593e7729d6d3e93",
+      "gitBlobSha1": "1f08b269f57c8e5756637e28652072de657ce751"
+    },
+    {
+      "name": "somass-source.part-0004",
+      "bytes": 20971520,
+      "sha256": "40d3ac8dd461a0e2ba57a55a31573613ab3cd9fe89e45be55757634146716ed9",
+      "gitBlobSha1": "82f079c6a8ba8a11a00e0e49b80bebc1e1c171ed"
+    },
+    {
+      "name": "somass-source.part-0005",
+      "bytes": 20971520,
+      "sha256": "9184c46b2eac7530cf4ebc27e717a709c71a2936ab31615b7807eafe47c67f35",
+      "gitBlobSha1": "ec23855016fe0f1d7149d329607a72a92765bd49"
+    },
+    {
+      "name": "somass-source.part-0006",
+      "bytes": 20971520,
+      "sha256": "6e9deafe7bce0a29c9d09d27de22366065019f353d6989bbcf7c04067e1e4440",
+      "gitBlobSha1": "bc7cd05ac065506532926f33d3720a57a5d08d11"
+    },
+    {
+      "name": "somass-source.part-0007",
+      "bytes": 20971520,
+      "sha256": "fe2ff9ae49799616bd3db6835d12543b2aacbe9a4c32274fc473680c3c1bba28",
+      "gitBlobSha1": "1d286f233252978b059fc3ec1b015414c4117c16"
+    },
+    {
+      "name": "somass-source.part-0008",
+      "bytes": 20971520,
+      "sha256": "a03748f85496a364bf840169cd7337489212c85237114b4892d53416176d7f95",
+      "gitBlobSha1": "2a1d9da0e083eae3ed6493855c16c53ee017ae3f"
+    },
+    {
+      "name": "somass-source.part-0009",
+      "bytes": 6348421,
+      "sha256": "b961efa2dfdbd7b20919c408f5f5eb4904ae876a0f4f034eff09a35c4cb7ed5c",
+      "gitBlobSha1": "54053d6220a8b6cc1faf4fdb90971f07b4157b99"
+    }
+  ],
+  "memberCount": 176,
+  "memberIntegrity": {
+    "path": "PACKAGE-MEMBERS.json",
+    "bytes": 22828,
+    "sha256": "adebccbe6af67cf100e10cc9d0c70b486be08eaf9c1f4b5d44bd84160b8f24ed"
+  },
+  "excludes": [
+    "_site",
+    "customer.part-*",
+    "customer.fragments",
+    "private local plan backup",
+    ".git",
+    "removed Zara rug models and images"
+  ],
+  "build": {
+    "command": "python3 _source/tools/build-site.py --strict",
+    "siteBytes": 311748096,
+    "siteFiles": 903,
+    "sourceObjects": 204,
+    "sourceWalls": 27,
+    "selectableSomassProducts": 309,
+    "backingCatalogueProducts": 309,
+    "protectedCustomerFiles": 7,
+    "publicationProfile": "somass-only"
+  }
+}
