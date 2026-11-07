@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5f3ee"><meta name="description" content="SOMASS İstanbul mağazası için ölçülü plan çizimi. Duvarları santimetreyle oluşturun, kapı ve pencere ekleyin, planınızı ölçekli dışa aktarın.">
+<title>SOMASS · Mağaza Planı</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../easy.css">
+<link rel="stylesheet" href="../layout-measure.css">
+<link rel="stylesheet" href="../start-point.css">
+<link rel="stylesheet" href="../glass-extension.css">
+<link rel="stylesheet" href="../tile-floor.css">
+<link rel="stylesheet" href="../project-save.css">
+<link rel="stylesheet" href="../project-schedules.css?v=20261102-lists1">
+<link rel="stylesheet" href="../installations.css">
+<link rel="stylesheet" href="../space-3d.css?v=20261102-recovery1">
+<link rel="stylesheet" href="../guide-lines.css">
+<link rel="stylesheet" href="../floor-joints.css">
+<link rel="stylesheet" href="../canvas-pan.css">
+<link rel="stylesheet" href="../door-edit.css">
+<link rel="stylesheet" href="../guide-fit-status.css">
+<link rel="stylesheet" href="../remeasure-mode.css">
+<link rel="stylesheet" href="../survey-edit.css">
+<link rel="stylesheet" href="../precision-controls.css">
+<link rel="stylesheet" href="../tile-band-reference.css">
+<link rel="stylesheet" href="../corner-details.css">
+<link rel="stylesheet" href="../room-geometry.css">
+<link rel="stylesheet" href="../wall-body.css">
+<link rel="stylesheet" href="../dimension-annotations.css">
+<link rel="stylesheet" href="../beams.css">
+<link rel="stylesheet" href="../frontage-calibration.css">
+</head>
+<body>
+<div id="app">
+<header class="header">
+ <a class="brand" href="./" aria-label="Somass mağaza planı">somass<span>SPACE PLANNER</span></a>
+ <div class="project-title"><span class="eyebrow">MAĞAZA PLANI</span><input id="projectName" aria-label="Proje adı" value="İstanbul mağazası" maxlength="80"></div>
+ <div class="header-actions"><span class="save-state" id="saveState"><i></i> Bu tarayıcıda kayıtlı</span><button id="exportOpen" class="button primary"><span data-icon="export"></span><span>Planı dışa aktar</span></button></div>
+</header>
+<div class="subheader"><div><span class="location-mark" data-icon="pin"></span><input id="location" aria-label="Konum veya adres" value="İstanbul" maxlength="160"><span class="sub-dot">/</span><span>Ölçüm & yerleşim</span></div><button id="helpOpen" class="text-button"><span data-icon="help"></span>Nasıl kullanılır?</button></div>
+<main class="workspace">
+<aside class="measure-panel" id="measurePanel">
+ <div class="panel-heading"><span class="eyebrow">01 — PLANINI OLUŞTUR</span><h1>Her şey bir<br>ölçüyle başlar.</h1><p>Ölçünü al, yönünü seç.<br>Mağazan adım adım şekillensin.</p></div>
+ <div class="input-section"><div class="section-label"><h2>Duvar ekle</h2><span class="unit-tag">cm</span></div>
+ <label for="wallLength">Duvar uzunluğu</label><div class="unit-input"><input id="wallLength" inputmode="decimal" type="text" placeholder="Örn. 420" autocomplete="off"><span>cm</span></div>
+ <label class="direction-label">Çizim yönü <span id="directionName">Sağa</span></label>
+ <div class="directions" role="group" aria-label="Duvar yönü"><button data-dir="270" aria-label="Yukarı">↑</button><button data-dir="180" aria-label="Sola">←</button><button data-dir="90" aria-label="Aşağı">↓</button><button data-dir="0" class="active" aria-label="Sağa" aria-pressed="true">→</button></div>
+ <details class="precise"><summary>Başlangıç noktası ve serbest açı</summary><div class="two-col"><div><label for="startX">X (cm)</label><input id="startX" inputmode="decimal" value="0"></div><div><label for="startY">Y (cm)</label><input id="startY" inputmode="decimal" value="0"></div></div><label for="angle">Açı (°) · 0 sağa, 90 aşağı</label><input id="angle" inputmode="decimal" value="0"></details>
+ <button class="button primary full" id="addWall"><span data-icon="plus"></span>Duvarı ekle</button><div class="inline-actions"><button id="closePlan" class="text-button">Başlangıca bağla ↗</button><button id="newChain" class="text-button">Yeni başlangıç</button></div>
+ <p class="micro-note" id="chainNote">İlk duvar (0, 0) noktasından başlar.</p>
+ </div>
+ <div class="input-section room-section"><button class="accordion-title" id="roomToggle" aria-expanded="false"><span data-icon="room"></span>Dikdörtgenle hızlı başla<span class="chevron">+</span></button><div id="roomForm" hidden><div class="two-col"><div><label for="roomWidth">En (cm)</label><input id="roomWidth" inputmode="decimal" placeholder="Örn. 600"></div><div><label for="roomHeight">Boy (cm)</label><input id="roomHeight" inputmode="decimal" placeholder="Örn. 800"></div></div><button id="addRoom" class="button secondary full">Dikdörtgen oluştur</button><p class="micro-note">4 duvarı verdiğin ölçülerle ekler.</p></div></div>
+ <div class="panel-footer"><span data-icon="ruler"></span><p>Tüm girişler santimetre.<br><strong>Duvarlar ölçü çizgisidir;</strong> kalınlık hesaba katılmaz.</p></div>
+</aside>
+<section class="drawing-panel" id="drawingPanel" aria-label="Plan çizim alanı">
+ <div class="drawing-top"><div><span class="live-dot"></span><span id="planStatus">Yeni plan</span></div><div class="history"><button id="undo" class="icon-button" title="Geri al" aria-label="Geri al" disabled><span data-icon="undo"></span></button><button id="redo" class="icon-button" title="Yinele" aria-label="Yinele" disabled><span data-icon="redo"></span></button><span class="separator"></span><button id="fit" class="icon-button" title="Planı ekrana sığdır" aria-label="Planı ekrana sığdır"><span data-icon="fit"></span></button></div></div>
+ <div class="canvas-wrap" id="canvasWrap"><svg id="canvas" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ölçekli mağaza planı. Duvar aracıyla iki noktaya dokunarak çizgi ekleyebilirsiniz."></svg>
+ <div class="toolbox" role="toolbar" aria-label="Çizim araçları">
+ <button data-tool="select" class="active" title="Seç ve taşı (V)" aria-label="Seç ve taşı"><span data-icon="cursor"></span><small>Seç</small></button>
+ <button data-tool="wall" title="Duvar çiz (W)" aria-label="Duvar çiz"><span data-icon="wall"></span><small>Duvar</small></button>
+ <button data-tool="door" title="Kapı ekle" aria-label="Kapı ekle"><span data-icon="door"></span><small>Kapı</small></button>
+ <button data-tool="window" title="Pencere ekle" aria-label="Pencere ekle"><span data-icon="window"></span><small>Pencere</small></button>
+ <button data-tool="column" title="Kolon ekle" aria-label="Kolon ekle"><span data-icon="column"></span><small>Kolon</small></button>
+ <button data-tool="furniture" title="Yerleşim bloğu ekle" aria-label="Yerleşim bloğu ekle"><span data-icon="sofa"></span><small>Mobilya</small></button>
+ <button data-tool="pan" title="Görünümü kaydır (H)" aria-label="Görünümü kaydır"><span data-icon="hand"></span><small>Kaydır</small></button>
+ </div>
+ <div class="empty-state" id="emptyState"><div class="sketch" aria-hidden="true"><svg viewBox="0 0 210 145"><path d="M48 116V35H161V116" fill="none" stroke="#b7bbaa" stroke-width="5"/><path d="M54 111V41H155V111" fill="none" stroke="#d2d5c9" stroke-width="1"/><path d="M47 20H162M48 15V25M161 15V25M30 34V117M25 35H35M25 116H35" fill="none" stroke="#8f997b"/><circle cx="48" cy="116" r="5" fill="#566442"/><circle cx="161" cy="116" r="5" fill="#f4f4ed" stroke="#8a967a"/><path d="M67 116H140" stroke="#c8ccb9" stroke-dasharray="3 5"/></svg></div><span class="eyebrow">SOMASS / İSTANBUL</span><h2>Mekânına yer aç.</h2><p>İlk duvarının ölçüsünü gir.<br>Ya da Duvar aracını seçip iki noktaya dokun.</p><button id="emptyStart" class="button secondary">İlk ölçüyü gir <span>↗</span></button><span class="empty-footnote">Hazır ölçü yok. Bu alan senin mağazan için.</span></div>
+ <div class="canvas-bottom"><div class="view-scale"><svg id="scaleBar" width="105" height="28" aria-hidden="true"></svg></div><div class="zoom-controls"><button id="zoomOut" aria-label="Uzaklaştır">−</button><span id="zoomValue">100%</span><button id="zoomIn" aria-label="Yakınlaştır">+</button></div></div>
+ </div>
+ <div class="canvas-settings"><label><input id="snapEnabled" type="checkbox" checked>Izgaraya yakala</label><select id="gridSize" aria-label="Izgara adımı"><option value="1">1 cm</option><option value="5">5 cm</option><option value="10" selected>10 cm</option><option value="20">20 cm</option><option value="50">50 cm</option></select><label><input id="ortho" type="checkbox" checked>Dik açı</label><label><input id="showDims" type="checkbox" checked>Ölçüler</label><span class="coords" id="coords">X 0 · Y 0 cm</span></div>
+</section>
+<aside class="detail-panel" id="detailPanel"><div class="detail-heading"><span class="eyebrow">02 — PLANA BAKIŞ</span><h2>Mekânın özeti</h2></div><div class="stats"><div><span>Kapalı alan*</span><strong id="areaValue">—<small> m²</small></strong></div><div><span>Duvar toplamı</span><strong id="lengthValue">0<small> m</small></strong></div></div><p class="stats-note" id="areaNote">Alan için dış sınırı kapat.</p>
+ <div id="selectionPanel" class="selection-panel"><div class="selection-empty"><span data-icon="cursor"></span><h3>Bir öğe seç</h3><p>Duvar, açıklık veya yerleşim bloğuna dokun; ölçülerini buradan düzenle.</p></div></div>
+ <div class="wall-list-section"><div class="section-label"><h2>Duvarlar</h2><span class="count" id="wallCount">0</span></div><div id="wallList" class="wall-list"><p class="list-empty">Eklediğin ölçüler burada listelenir.</p></div></div>
+ <div class="output-settings"><h2>Çıktı ayarları</h2><div class="two-col"><div><label for="printScale">Ölçek</label><select id="printScale"><option value="20">1:20</option><option value="50" selected>1:50</option><option value="100">1:100</option><option value="200">1:200</option></select></div><div><label for="paperSize">Kâğıt</label><select id="paperSize"><option value="A4">A4 yatay</option><option value="A3" selected>A3 yatay</option></select></div></div><p class="micro-note">Ekran yakınlaştırması, çıktı ölçeğini değiştirmez.</p></div>
+</aside>
+</main>
+<footer class="statusbar"><span id="toolHint">Ölçü girerek başla veya çizim aracını seç.</span><span>Ölçümden mekâna. <strong>SOMASS</strong></span></footer>
+<nav class="mobile-tabs" aria-label="Çalışma paneli"><button data-panel="measure"><span data-icon="ruler"></span>Ölçü gir</button><button data-panel="drawing" class="active"><span data-icon="room"></span>Çizim</button><button data-panel="detail"><span data-icon="sliders"></span>Detaylar</button></nav>
+</div>
+<dialog id="exportDialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Kapat">×</button></form><span class="eyebrow">PLANINI YANINA AL</span><h2>Bir sonraki adım.</h2><p>Çizimin bu tarayıcıda otomatik kaydedilir. Başka cihazda devam etmek için plan dosyasını indir.</p><div class="export-options"><button id="exportSvg"><span data-icon="ruler"></span><div><strong>Ölçekli SVG indir</strong><small>Vektörel plan · seçili kâğıt ve ölçek</small></div><span>↗</span></button><button id="printPlan"><span data-icon="printer"></span><div><strong>Yazdır / PDF kaydet</strong><small>Gerçek boyut: %100 · sayfaya sığdırma kapalı</small></div><span>↗</span></button><button id="exportJson"><span data-icon="download"></span><div><strong>Düzenlenebilir planı indir</strong><small>Ölçülerin ve yerleşimin · JSON yedeği</small></div><span>↗</span></button><button id="importJson"><span data-icon="upload"></span><div><strong>Kaydedilmiş planı aç</strong><small>Önceden indirdiğin JSON dosyasından devam et</small></div><span>↗</span></button></div><p class="export-caption" id="exportCaption"></p><p class="micro-note">Tarayıcı verileri silinirse yerel kayıt kaybolabilir. Ölçüm sonunda bir plan yedeği indir.</p></dialog>
+<dialog id="helpDialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Kapat">×</button></form><span class="eyebrow">KÜÇÜK BİR REHBER</span><h2>Ölç, çiz, yerleştir.</h2><ol class="help-steps"><li><strong>İlk duvarı ölç.</strong><p>Santimetre olarak uzunluğu yaz, yönü seç ve Duvarı ekle'ye bas. Sonraki duvar, son uçtan devam eder.</p></li><li><strong>Sınırı tamamla.</strong><p>Duvarları sırayla ekle. Başlangıca bağla, son uçla ilk noktayı birleştirir. L biçimi ve serbest açılar da çizilebilir.</p></li><li><strong>Açıklıkları yerleştir.</strong><p>Kapı veya Pencere aracını seçip bir duvara dokun. Detaylardan genişliği ve duvar başlangıcına uzaklığı gir. Kolon ve mobilya bloklarını sürükleyebilirsin.</p></li><li><strong>Gerçek ölçekte çıktı al.</strong><p>Detaylardan ölçek ve kâğıt seç. Yazdırırken aynı kâğıdı, %100 / gerçek boyutu ve sıfır kenar boşluğunu kullan; üstbilgi ve altbilgiyi kapat. SVG çıktısının fiziksel ölçüsü tanımlıdır.</p></li></ol><p class="micro-note">Çizimde duvar kalınlığı modellenmez. Tüm uzunluklar çizgi uçları arasındadır; alan kapalı çizgi sınırından hesaplanır. Bu araç ölçüm ve yerleşim taslağı içindir.</p><div class="shortcuts"><span>V · Seç</span><span>W · Duvar</span><span>H · Kaydır</span><span>⌘/Ctrl Z · Geri al</span></div></dialog>
+<input id="fileInput" type="file" accept=".json,application/json" hidden><div class="toast" id="toast" role="status" aria-live="polite"></div><div id="printSheet"></div>
+<script src="../static-site-config.js"></script>
+<script src="../space-data.js"></script>
+<script src="../guide-data.js"></script>
+<script src="../initial-plan.js"></script>
+<script src="../room-geometry.js"></script>
+<script src="../beam-data.js"></script>
+<script src="../precision-math.js"></script>
+<script src="../jotun-palette.js"></script>
+<script src="../indoor-plants.js"></script>
+<script src="../model-previews.js"></script>
+<script src="../platform-support.js"></script>
+<script src="../design-materials.js"></script>
+<script src="../somass-logo-contours.js"></script>
+<script src="../sofa-models.js"></script>
+<script src="../wall-text-glyphs.js"></script>
+<script src="../wall-art.js"></script>
+<script src="../showroom-models.js"></script>
+<script src="../decor-elements.js"></script>
+<script src="../app.js"></script>
+<script src="../easy.js"></script>
+<script src="../layout-measure.js"></script>
+<script src="../start-point.js"></script>
+<script src="../glass-extension.js"></script>
+<script src="../tile-palette.js"></script>
+<script src="../tile-floor.js"></script>
+<script src="../installations.js"></script>
+<script src="../vendor/three.min.js"></script>
+<script src="../somass-catalog/catalog-data.js?v=full-editor-20261103-v2"></script>
+<script src="../native-file-codec.js"></script>
+<script src="../native-file-transport.js"></script>
+<script src="../vendor/GLTFLoader.js"></script>
+<script src="../zara-rugs.js"></script>
+<script src="../catalog-models.js?v=20261102-load1"></script>
+<script src="../catalog-rendering.js?v=20261102-load1"></script>
+<script src="../door-3d.js"></script>
+<script src="../fire-cabinet-geometry.js"></script>
+<script src="../upper-band-surface.js"></script>
+<script src="../wall-prism-joins.js"></script>
+<script src="../wall-recesses.js"></script>
+<script src="../space-3d.js?v=20261102-recovery1"></script>
+<script src="../space-product-edit.js?v=20261031-share2"></script>
+<script src="../guide-lines.js"></script>
+<script src="../tool-coordination.js"></script>
+<script src="../plan-revisions.js"></script>
+<script src="../floor-joints.js"></script>
+<script src="../canvas-pan.js"></script>
+<script src="../door-edit.js"></script>
+<script src="../guide-fit-status.js"></script>
+<script src="../remeasure-mode.js"></script>
+<script src="../frontage-calibration.js"></script>
+<script src="../survey-fit.js"></script>
+<script src="../survey-edit.js"></script>
+<script src="../precision-controls.js"></script>
+<script src="../tile-band-reference.js"></script>
+<script src="../corner-details.js"></script>
+<script src="../room-geometry.js"></script>
+<script src="../wall-body.js"></script>
+<script src="../video-sockets.js"></script>
+<script src="../plan-details.js"></script>
+<script src="../fire-cabinet.js"></script>
+<script src="../beams.js"></script>
+<script src="../upper-wall-band.js"></script>
+<script src="../dimension-annotations.js"></script>
+<script src="../frontage-tile-reference.js"></script>
+<script src="../kitchen-layout.js"></script>
+<script src="../entrance-glazing.js"></script>
+<script src="../interior-door-finish.js"></script>
+<script src="../side-glazing-panels.js"></script>
+<script src="../room-align.js"></script>
+<script src="../wall-clad-column.js"></script>
+<script src="../wall-face-details.js"></script>
+<script src="../plan-view.js"></script>
+<script src="../vendor/pdf-lib.min.js"></script>
+<script src="../a3-layout.js"></script>
+<script src="../a3-export.js"></script>
+<script src="../project-schedules.js?v=20261102-lists1"></script>
+<link rel="stylesheet" href="../catalog-placement.css">
+<script src="../catalog-placement.js?v=20261106-no-zara-rugs"></script>
+<link rel="stylesheet" href="../partition-walls.css">
+<script src="../partition-walls.js"></script>
+<script src="../partition-endpoints.js"></script>
+<link rel="stylesheet" href="../object-actions.css">
+<script src="../object-actions.js"></script>
+<link rel="stylesheet" href="../decor-elements.css">
+<script src="../decor-controls.js"></script>
+<script src="../design-extras.js"></script>
+<link rel="stylesheet" href="../planner-usability.css">
+<script src="../planner-usability.js"></script>
+<script src="../catalog-colors.js"></script>
+<script src="../showroom-controls.js"></script>
+<script src="../project-save.js"></script>
+<script src="../customer-share.js?v=20261103-online-export2"></script>
+<link rel="stylesheet" href="../ui-shell.css?v=20261108-ui3">
+<link rel="stylesheet" href="../ui-inspector.css?v=20261108-ui3">
+<link rel="stylesheet" href="../ui-paint.css?v=20261108-ui3">
+<script src="../ui-inspector.js?v=20261108-ui3"></script>
+<script src="../ui-paint.js?v=20261108-ui3"></script>
+<script src="../ui-shell.js?v=20261108-ui3"></script>
+</body></html>

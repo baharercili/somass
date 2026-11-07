@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "baseArchiveSha256": "0824eebe07fa697728f295217ff7ae9978bb007eabfd35c033450bcd2223ff58",
+  "sourcePlanSha256": "b688259bee986b82ccdbd7c13e1f685e8dffd2f8d1a8fb40e48de8003730dfd1",
+  "protectedCustomerFilesSha256": "ca18509c56531dec2f2b3da48a2ae3e8bccf62a7bc1ee3c73e416389f83dfcce",
+  "projectDefinitionSha256": "c616895cfaecb7d34833d9e7d51f9d2aeb07566afbbf02a5dc7e37b6ca9bd6d4",
+  "files": [
+    {
+      "path": "web-source/editor/index.html",
+      "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
+      "bytes": 18597,
+      "sha256": "717df17ef08b4c5afc4a3f5497af5eb17738cfe2e614940795b741494f6bb054"
+    },
+    {
+      "path": "web-source/ui-inspector.css",
+      "baseSha256": null,
+      "bytes": 7253,
+      "sha256": "81f8f92f967eaa3516ee7090f4b8d189199fe0c90df716c0bfe3ad07972ed08c"
+    },
+    {
+      "path": "web-source/ui-inspector.js",
+      "baseSha256": null,
+      "bytes": 16258,
+      "sha256": "c86896389a28740c73b20637816dd2cb3d28e286d4937ba2efd71b80a35d9338"
+    },
+    {
+      "path": "web-source/ui-paint.css",
+      "baseSha256": null,
+      "bytes": 6262,
+      "sha256": "42e1e5e43e07c4f10504f15e5aacca7ad960318f7bcd8ec63bc78b65ec0ea547"
+    },
+    {
+      "path": "web-source/ui-paint.js",
+      "baseSha256": null,
+      "bytes": 21934,
+      "sha256": "1d17f7b670dc73836a4e5e9843a054dcc0f064eac20a56b4788ee149f3f6190c"
+    },
+    {
+      "path": "web-source/ui-shell.css",
+      "baseSha256": null,
+      "bytes": 15355,
+      "sha256": "774c95c76d88dca193d10bb8bf13f1c608cf2169fc7e377d3719a58375789edd"
+    },
+    {
+      "path": "web-source/ui-shell.js",
+      "baseSha256": null,
+      "bytes": 12731,
+      "sha256": "602f15abcdaea6685350346cf2167f39dbe784327faa9ce42d40adc6d8e76d86"
+    }
+  ]
+}

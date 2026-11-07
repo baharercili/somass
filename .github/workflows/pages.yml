@@ -7,6 +7,7 @@ on:
     paths:
       - 'somass-source-manifest.json'
       - '.github/workflows/pages.yml'
+      - 'source-overrides/**'
 
 permissions:
   contents: read
@@ -140,6 +141,8 @@ jobs:
                       shutil.copy2(source, target)
           print('Verified and restored', len(expected), 'source files and existing customer baseline.')
           PY
+      - name: Apply verified interface updates
+        run: python3 source-overrides/apply.py --source _source --package-manifest somass-source-manifest.json
       - name: Verify assets and build editor plus customer view
         run: python3 _source/tools/build-site.py --strict
       - name: Configure Pages

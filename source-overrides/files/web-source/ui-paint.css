@@ -1,0 +1,49 @@
+#uiPaintDialog{width:min(1180px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 36px);padding:0;border:1px solid #d9dfcf;border-radius:16px;background:#fffefa;color:#293322;box-shadow:0 28px 100px #18271340;overflow:hidden}
+#uiPaintDialog::backdrop{background:#1d281d70;backdrop-filter:blur(3px)}
+#uiPaintDialog[open]{display:flex;flex-direction:column}
+#uiPaintDialog button,#uiPaintDialog input{font:inherit}
+#uiPaintDialog button{cursor:pointer;border:1px solid #d6ddce;border-radius:8px;background:#f7f8f2;padding:10px 13px;color:#35452a;font-size:12px;font-weight:600}
+#uiPaintDialog button:focus-visible,#uiPaintDialog input:focus-visible{outline:3px solid #8ba16e;outline-offset:2px}
+#uiPaintDialog button:disabled{opacity:.45;cursor:default}
+#uiPaintDialog .ui-paint-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:23px 25px 17px}
+#uiPaintDialog .ui-paint-eyebrow{font-size:10px;font-weight:700;letter-spacing:1.7px;color:#7a876d}
+#uiPaintDialog h2{font-size:25px;letter-spacing:-.7px;margin:5px 0 4px}
+#uiPaintDialog .ui-paint-head p{font-size:12px;margin:0;color:#78836d}
+#uiPaintDialog button.ui-paint-close{width:35px;height:35px;padding:0;font-size:24px;border:0;background:transparent}
+#uiPaintDialog .ui-paint-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:0 25px 17px;border-bottom:1px solid #e1e5d9}
+#uiPaintDialog .ui-paint-export-actions{display:flex;gap:7px}
+#uiPaintDialog .ui-paint-primary{background:#4a5d3c;border-color:#4a5d3c;color:white}
+#uiPaintDialog .ui-paint-head,#uiPaintDialog .ui-paint-toolbar,#uiPaintDialog .ui-paint-foot,#uiPaintDialog .ui-paint-alert{flex:0 0 auto}
+#uiPaintDialog .ui-paint-layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;grid-template-rows:minmax(0,1fr);height:min(650px,calc(100dvh - 240px));min-height:0;flex:1 1 auto;overflow:hidden}
+#uiPaintDialog .ui-paint-preview{display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden;background:#f0f3e9;border-right:1px solid #dfe5d5}
+#uiPaintDialog .ui-paint-filters{display:flex;flex-wrap:wrap;gap:6px;padding:14px 15px 8px}
+#uiPaintDialog .ui-paint-filters button{display:flex;align-items:center;gap:7px;padding:6px 9px;font-size:11px;background:#fffefa}
+#uiPaintDialog .ui-paint-filters button[aria-pressed=true]{background:#4b5d3e;border-color:#4b5d3e;color:white}
+#uiPaintDialog .ui-paint-filters i{width:15px;height:15px;border:1px solid #596b4430;border-radius:3px}
+#uiPaintDialog .ui-paint-filters small{opacity:.65;font-weight:400}
+#uiPaintDialog .ui-paint-filters,#uiPaintDialog .ui-paint-preview-help{flex:0 0 auto}
+#uiPaintDialog .ui-paint-canvas{position:relative;min-width:0;min-height:0;height:0;flex:1 1 0;overflow:hidden;margin:0 12px;padding:0}
+#uiPaintDialog #uiPaintCanvas>svg{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;max-width:100%;max-height:100%;min-height:0;aspect-ratio:auto;object-fit:contain}
+#uiPaintDialog .ui-paint-preview-help{font-size:11px;color:#718061;text-align:center;margin:5px 12px 12px}
+#uiPaintDialog .ui-paint-side{display:flex;flex-direction:column;min-height:0;padding:16px 14px 0}
+#uiPaintDialog .ui-paint-side>label{font-size:11px;font-weight:700;margin-bottom:7px}
+#uiPaintDialog #uiPaintSearch{width:100%;min-height:39px;padding:9px 11px;border:1px solid #d1d9c7;border-radius:7px;background:white;color:#26321e;font-size:13px}
+#uiPaintDialog .ui-paint-count{font-size:11px;color:#7b876f;margin:10px 0}
+#uiPaintDialog .ui-paint-list{overflow:auto;min-height:0;padding:0 2px 14px}
+#uiPaintDialog .ui-paint-card{border:1px solid #e0e5d8;border-radius:10px;background:white;margin-bottom:9px;overflow:hidden}
+#uiPaintDialog .ui-paint-card.is-active{border-color:#637f47;box-shadow:0 0 0 1px #637f47}
+#uiPaintDialog .ui-paint-card-head{display:flex;gap:11px;align-items:center;width:100%;padding:12px;border:0;border-radius:0;background:white;text-align:left}
+#uiPaintDialog .ui-paint-card-head i{width:49px;height:55px;flex:none;border-radius:4px;border:1px solid #2a381e30}
+#uiPaintDialog .ui-paint-card-head strong,#uiPaintDialog .ui-paint-card-head b,#uiPaintDialog .ui-paint-card-head small{display:block}
+#uiPaintDialog .ui-paint-card-head strong{font-size:12px;line-height:1.4}
+#uiPaintDialog .ui-paint-card-head b{font-size:12px;margin:3px 0}
+#uiPaintDialog .ui-paint-card-head small{font-size:11px;color:#7d886f;font-weight:400}
+#uiPaintDialog .ui-paint-card-actions{display:flex;gap:7px;padding:0 12px 12px}
+#uiPaintDialog .ui-paint-card-actions button{padding:6px 9px;font-size:10px;background:#f4f6ee}
+#uiPaintDialog .ui-paint-foot{padding:11px 25px;background:#fcfcf7;border-top:1px solid #e0e5d8;font-size:11px;color:#78846b}
+#uiPaintDialog .ui-paint-empty{max-width:290px;text-align:center;padding:30px;color:#77876a}
+#uiPaintDialog .ui-paint-empty h3{font-size:18px;color:#3e5430}
+#uiPaintDialog .ui-paint-empty p,#uiPaintDialog .ui-paint-no-result{font-size:12px;line-height:1.6;color:#7d886e}
+#uiPaintDialog .ui-paint-alert{padding:10px 25px;background:#fff5df;font-size:12px;color:#82602d}
+@media(max-width:760px){#uiPaintDialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);border-radius:12px}#uiPaintDialog .ui-paint-head{padding:18px 16px 12px}#uiPaintDialog h2{font-size:21px}#uiPaintDialog .ui-paint-toolbar{padding:0 16px 12px;align-items:stretch;flex-direction:column}#uiPaintDialog .ui-paint-export-actions{display:grid;grid-template-columns:1fr 1fr}#uiPaintDialog .ui-paint-layout{grid-template-columns:minmax(0,1fr) 250px;height:calc(100dvh - 280px)}#uiPaintDialog .ui-paint-filters{gap:4px;padding:9px}#uiPaintDialog .ui-paint-filters button{font-size:10px;padding:4px 6px}#uiPaintDialog .ui-paint-side{padding:10px 10px 0}#uiPaintDialog .ui-paint-foot{padding:9px 16px}}
+@media(max-width:570px){#uiPaintDialog .ui-paint-layout{display:block;overflow:auto;height:calc(100dvh - 284px);min-height:0}#uiPaintDialog .ui-paint-preview{border-right:0;border-bottom:1px solid #dfe5d5}#uiPaintDialog .ui-paint-canvas{height:260px;min-height:260px;flex:none}#uiPaintDialog .ui-paint-side{display:block}#uiPaintDialog .ui-paint-list{max-height:none;overflow:visible}#uiPaintDialog .ui-paint-preview-help{font-size:10px}}
