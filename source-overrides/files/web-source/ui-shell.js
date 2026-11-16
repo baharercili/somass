@@ -42,7 +42,7 @@
   rail.append(button('studioSettings','Ölçüler','settings',()=>{closeTools();showInspector('settings');}));
   nav.querySelector('.studio-nav-bottom').append(button('studioHelp','Yardım','help',()=>$('easyHelp')?.click()));
   $('studioToolsClose').onclick=closeTools;$('studioDockClose').onclick=hideInspector;search.addEventListener('input',filterTools);
-  const groups={structure:{title:'DUVAR VE ÖLÇÜ',ids:['toolsToggle','editOpen','partitionWallButton','openInstallations','guideOpen','openFrontageCalibration']},decor:{title:'MOBİLYA VE DEKOR',ids:['catalogProductsButton','showroomModelsButton','decorElementsButton','designAdd-wall-finish','designAdd-indoor-plant','designAdd-oak-platform']},all:{title:'GÖRÜNÜM VE HASSASİYET',ids:['precisionMoveToggle']}};
+  const groups={structure:{title:'DUVAR VE ÖLÇÜ',ids:['toolsToggle','editOpen','partitionWallButton','openInstallations','guideOpen','openFrontageCalibration']},decor:{title:'MOBİLYA VE DEKOR',ids:['catalogProductsButton','showroomModelsButton','designAdd-wall-fabric-rack','decorElementsButton','designAdd-wall-finish','designAdd-indoor-plant','designAdd-oak-platform']},all:{title:'GÖRÜNÜM VE HASSASİYET',ids:['precisionMoveToggle']}};
   toolContent.append(actions);actions.classList.add('studio-native-tools');
   for(const [group,config] of Object.entries(groups)){
    const section=document.createElement('section');section.className='studio-tool-group';section.dataset.group=group;section.innerHTML='<h3>'+config.title+'</h3><div></div>';actions.append(section);

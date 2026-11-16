@@ -42,7 +42,8 @@
       const metrics = [{ label: paint ? 'Genişlik' : 'En', value: number(resolved.w) + ' cm' }];
       if (!paint) metrics.push({ label: 'Derinlik', value: number(resolved.h) + ' cm' });
       const height = object.catalogProduct?.heightCm ?? resolved.heightCm;
-      if (!paint && Number.isFinite(height)) metrics.push({ label: 'Yükseklik', value: number(height) + ' cm' });
+      if (object.kind === 'wall-fabric-rack') metrics.push({ label: 'Üst kot', value: number(height) + ' cm' }, { label: 'Pano boyu', value: number(object.rackBoardHeightCm) + ' cm' }, { label: 'Kumaş boyu', value: number(object.rackFabricLengthCm) + ' cm' }, { label: 'Numune', value: String(object.sampleCount) });
+      else if (!paint && Number.isFinite(height)) metrics.push({ label: 'Yükseklik', value: number(height) + ' cm' });
       if (!mounted) metrics.push({ label: 'Açı', value: number(resolved.rotation || 0) + '°' });
       return {
         id, kind: paint ? 'paint' : decor?.isElement?.(object) ? 'decor' : 'object',

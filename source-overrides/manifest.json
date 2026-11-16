@@ -14,14 +14,38 @@
     {
       "path": "web-source/decor-elements.js",
       "baseSha256": "1fad87f5cee5e41b1210f3f3068390b6425ad2ef4f1d9d4fd664deef59d184f9",
-      "bytes": 24263,
-      "sha256": "c9583e99a2efcedd82b6c155154705be07a1e6f499eeb74b563240361dd15e71"
+      "bytes": 25211,
+      "sha256": "4f8d7cfcfb0445a026834832751856dbbad1237ef48715262b02142dbaab8060"
     },
     {
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
-      "bytes": 18645,
-      "sha256": "48b91c3f51856d874a75e39cf93794222a0139b0e8ca1a43af6c7cf748f8d845"
+      "bytes": 18794,
+      "sha256": "10654345a61bb7543b0b69297905a39c29f1a5700168916f54e86fa4306b5153"
+    },
+    {
+      "path": "web-source/project-schedules.js",
+      "baseSha256": "75e0bb4aea172445a7f95a644c359613bd511f10b46861b67dc2b86f079c72b2",
+      "bytes": 26670,
+      "sha256": "d46c487fe068114b667f5ad67d7298545513e984946e667d061b7477630fe45a"
+    },
+    {
+      "path": "web-source/showroom-controls.js",
+      "baseSha256": "9663e43e0a18a3a69d6d7bf25a5d6786a22144e343dd9385a118a435048a959d",
+      "bytes": 9921,
+      "sha256": "3c470fce38741553320157d37b4af67a2edccd54ab6b08a2d2b447968b00e82c"
+    },
+    {
+      "path": "web-source/showroom-models.js",
+      "baseSha256": "2969ffccb6420934e1971a1d826d538447dd0428b5a30a9be4bba1e7898fab17",
+      "bytes": 12914,
+      "sha256": "2d0d096527c04f3c1f6b58597914109c47e2a98e45dd0f92fbbb8c7d777d5b61"
+    },
+    {
+      "path": "web-source/space-product-edit.js",
+      "baseSha256": "ae2b2da5b58c1ad5c099f4fcc5a72a91056c22ef7e4483e5cf32ab52fe8e0489",
+      "bytes": 31421,
+      "sha256": "7cf88f4ec4ef2ed7596c28836774bd9cb1894e12156b44063cb51d4ab23d3860"
     },
     {
       "path": "web-source/ui-inspector.css",
@@ -32,8 +56,8 @@
     {
       "path": "web-source/ui-inspector.js",
       "baseSha256": null,
-      "bytes": 16258,
-      "sha256": "c86896389a28740c73b20637816dd2cb3d28e286d4937ba2efd71b80a35d9338"
+      "bytes": 16582,
+      "sha256": "455e41ac38faf4a59baa35adf0fe07d7ced5aef104b70510ee7bdc076b4d3106"
     },
     {
       "path": "web-source/ui-paint.css",
@@ -56,8 +80,14 @@
     {
       "path": "web-source/ui-shell.js",
       "baseSha256": null,
-      "bytes": 12731,
-      "sha256": "602f15abcdaea6685350346cf2167f39dbe784327faa9ce42d40adc6d8e76d86"
+      "bytes": 12760,
+      "sha256": "0a70a769e1abe6e3d7130396b4015fa471d60e9313bf8cf0d8bd734e89e8bb84"
+    },
+    {
+      "path": "web-source/wall-fabric-rack.js",
+      "baseSha256": null,
+      "bytes": 11651,
+      "sha256": "cd9c0aefa4c86dd466e65de33d5f27e457780f5a24f1e98c5a8d0a8cf08126ee"
     }
   ]
 }
