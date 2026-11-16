@@ -6,10 +6,16 @@
   "projectDefinitionSha256": "c616895cfaecb7d34833d9e7d51f9d2aeb07566afbbf02a5dc7e37b6ca9bd6d4",
   "files": [
     {
+      "path": "web-source/decor-controls.js",
+      "baseSha256": "2ce5f219036a6a049515764184f95ba409979451f80752d59a68c15d69d49646",
+      "bytes": 13197,
+      "sha256": "2f0a02da88bf4cb46432fc26b02f3c9a531b8a102eee057ef768b97e4c6ee961"
+    },
+    {
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
-      "bytes": 18597,
-      "sha256": "717df17ef08b4c5afc4a3f5497af5eb17738cfe2e614940795b741494f6bb054"
+      "bytes": 18617,
+      "sha256": "e2e828a70371b6073ac794e8951c8dfe7c6166b2bddc21cc5811290caf2c96d0"
     },
     {
       "path": "web-source/ui-inspector.css",
