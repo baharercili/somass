@@ -8,14 +8,20 @@
     {
       "path": "web-source/decor-controls.js",
       "baseSha256": "2ce5f219036a6a049515764184f95ba409979451f80752d59a68c15d69d49646",
-      "bytes": 13197,
-      "sha256": "2f0a02da88bf4cb46432fc26b02f3c9a531b8a102eee057ef768b97e4c6ee961"
+      "bytes": 13552,
+      "sha256": "bf029cd19420fb8bb6708418c2e9e14ee01680db7bb1d39fa6a85be8c7b80cd0"
+    },
+    {
+      "path": "web-source/decor-elements.js",
+      "baseSha256": "1fad87f5cee5e41b1210f3f3068390b6425ad2ef4f1d9d4fd664deef59d184f9",
+      "bytes": 24263,
+      "sha256": "c9583e99a2efcedd82b6c155154705be07a1e6f499eeb74b563240361dd15e71"
     },
     {
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
-      "bytes": 18617,
-      "sha256": "e2e828a70371b6073ac794e8951c8dfe7c6166b2bddc21cc5811290caf2c96d0"
+      "bytes": 18645,
+      "sha256": "48b91c3f51856d874a75e39cf93794222a0139b0e8ca1a43af6c7cf748f8d845"
     },
     {
       "path": "web-source/ui-inspector.css",
