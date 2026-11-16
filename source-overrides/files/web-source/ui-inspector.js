@@ -44,6 +44,7 @@
       const height = object.catalogProduct?.heightCm ?? resolved.heightCm;
       if (object.kind === 'wall-fabric-rack') metrics.push({ label: 'Üst kot', value: number(height) + ' cm' }, { label: 'Pano boyu', value: number(object.rackBoardHeightCm) + ' cm' }, { label: 'Kumaş boyu', value: number(object.rackFabricLengthCm) + ' cm' }, { label: 'Numune', value: String(object.sampleCount) });
       else if (!paint && Number.isFinite(height)) metrics.push({ label: 'Yükseklik', value: number(height) + ' cm' });
+      if (object.kind === 'sofa-three') metrics.push({ label: 'Oturma modülü', value: String(object.seatModuleCount ?? 2) });
       if (!mounted) metrics.push({ label: 'Açı', value: number(resolved.rotation || 0) + '°' });
       return {
         id, kind: paint ? 'paint' : decor?.isElement?.(object) ? 'decor' : 'object',

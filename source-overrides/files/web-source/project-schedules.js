@@ -27,11 +27,12 @@
   const STYLES = ['color','materialOverrides','fabricFinish','pantryExteriorColor','palette','paintCode','paintName',
     'paintEffect','effectStrength','matColor','plantKey','chaiseSide','panelCount','foldAngle','sampleCount',
     'curveCm','moduleWidthCm','slatWidthCm','gapCm','pleatCm','opacity','artLayout','letterSizeCm','casegoodsPresentation',
-    'rackBoardHeightCm','rackFabricLengthCm','rackPegColor'];
+    'rackBoardHeightCm','rackFabricLengthCm','rackPegColor','seatModuleCount'];
   function meaningfulStyle(o,key) {
     if(['color','materialOverrides','pantryExteriorColor','casegoodsPresentation'].includes(key))return true;
     if(key==='fabricFinish')return ['sofa-three','sofa-chaise','sofa-corner'].includes(o.kind);
     if(key==='chaiseSide')return o.kind==='sofa-chaise';
+    if(key==='seatModuleCount')return o.kind==='sofa-three'&&Number.isInteger(o.seatModuleCount)&&o.seatModuleCount>2;
     if(key==='palette')return ['printed-screen','wall-fabric-rack'].includes(o.kind);
     if(['paintCode','paintName','paintEffect','effectStrength'].includes(key))return o.kind==='wall-finish';
     if(key==='plantKey')return o.kind==='indoor-plant';
@@ -104,6 +105,7 @@
     if(s.curveCm)parts.push('yay derinliği '+fmt(s.curveCm)+' cm');
     if(finite(s.arcLengthCm)&&s.curveCm)parts.push('hat uzunluğu '+fmt(s.arcLengthCm)+' cm');
     if(finite(s.sampleCount))parts.push(s.sampleCount+' numune');
+    if(finite(s.seatModuleCount))parts.push(s.seatModuleCount+' oturma modülü');
     if(finite(s.rackBoardHeightCm))parts.push('pano boyu '+fmt(s.rackBoardHeightCm)+' cm');
     if(finite(s.rackFabricLengthCm))parts.push('kumaş sarkması '+fmt(s.rackFabricLengthCm)+' cm');
     if(finite(s.panelCount))parts.push(s.panelCount+' kanat');
@@ -163,7 +165,7 @@
       const key=stable({product:catalog?.id||null,kind:o.kind||null,category,name,dimensions,style});
       const map=maps[group];if(!map.has(key))map.set(key,{code:code(GROUPS.find(g=>g.key===group).prefix,key,used),name,category,categoryName,kind:o.kind||null,
         productId:catalog?.id||null,sourceProductId:catalog?.sourceProductId||null,quantity:0,dimensions,finish:style,finishText:finishText(o),
-        specification:{...(['curtain','slat-divider'].includes(o.kind)&&finite(o.curveCm)?{curveCm:o.curveCm}:{}),...(['curtain','slat-divider'].includes(o.kind)&&positive(o.w)&&finite(o.curveCm)?{arcLengthCm:round(Math.abs(o.curveCm)<.0001?o.w:(()=>{const a=2*Math.atan(2*Math.abs(o.curveCm)/o.w);return o.w*a/Math.sin(a);})())}:{}),...(['fabric-display','wall-fabric-rack'].includes(o.kind)&&finite(o.sampleCount)?{sampleCount:o.sampleCount}:{}),...(o.kind==='wall-fabric-rack'?{rackBoardHeightCm:num(o.rackBoardHeightCm),rackFabricLengthCm:num(o.rackFabricLengthCm)}:{}),...(['printed-screen','folding-screen'].includes(o.kind)&&finite(o.panelCount)?{panelCount:o.panelCount}:{}),...(o.kind==='sofa-chaise'&&o.chaiseSide?{chaiseSide:o.chaiseSide}:{})},sourceIds:[]});
+        specification:{...(['curtain','slat-divider'].includes(o.kind)&&finite(o.curveCm)?{curveCm:o.curveCm}:{}),...(['curtain','slat-divider'].includes(o.kind)&&positive(o.w)&&finite(o.curveCm)?{arcLengthCm:round(Math.abs(o.curveCm)<.0001?o.w:(()=>{const a=2*Math.atan(2*Math.abs(o.curveCm)/o.w);return o.w*a/Math.sin(a);})())}:{}),...(['fabric-display','wall-fabric-rack'].includes(o.kind)&&finite(o.sampleCount)?{sampleCount:o.sampleCount}:{}),...(o.kind==='wall-fabric-rack'?{rackBoardHeightCm:num(o.rackBoardHeightCm),rackFabricLengthCm:num(o.rackFabricLengthCm)}:{}),...(['printed-screen','folding-screen'].includes(o.kind)&&finite(o.panelCount)?{panelCount:o.panelCount}:{}),...(o.kind==='sofa-three'&&Number.isInteger(o.seatModuleCount)&&o.seatModuleCount>2?{seatModuleCount:o.seatModuleCount}:{}),...(o.kind==='sofa-chaise'&&o.chaiseSide?{chaiseSide:o.chaiseSide}:{})},sourceIds:[]});
       const row=map.get(key);row.quantity++;row.sourceIds.push(o.id);
     }
     const groups=Object.fromEntries(GROUPS.map(g=>[g.key,[...maps[g.key].values()].sort((a,b)=>a.categoryName.localeCompare(b.categoryName,'tr')||a.name.localeCompare(b.name,'tr')||a.code.localeCompare(b.code))]));

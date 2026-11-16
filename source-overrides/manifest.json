@@ -14,32 +14,38 @@
     {
       "path": "web-source/decor-elements.js",
       "baseSha256": "1fad87f5cee5e41b1210f3f3068390b6425ad2ef4f1d9d4fd664deef59d184f9",
-      "bytes": 25211,
-      "sha256": "4f8d7cfcfb0445a026834832751856dbbad1237ef48715262b02142dbaab8060"
+      "bytes": 25577,
+      "sha256": "bcb351c4cd1339b2e669c46c4ff6c2e1237de1d97945c4d01315006126b0b552"
     },
     {
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
-      "bytes": 18794,
-      "sha256": "10654345a61bb7543b0b69297905a39c29f1a5700168916f54e86fa4306b5153"
+      "bytes": 18823,
+      "sha256": "ce6c88889005e7111837c5eaa6ca2b5b8dee38a9a670ca42357c8f6c52c57f0d"
     },
     {
       "path": "web-source/project-schedules.js",
       "baseSha256": "75e0bb4aea172445a7f95a644c359613bd511f10b46861b67dc2b86f079c72b2",
-      "bytes": 26670,
-      "sha256": "d46c487fe068114b667f5ad67d7298545513e984946e667d061b7477630fe45a"
+      "bytes": 27014,
+      "sha256": "1882749d5b2dc7f60a9785e9d9e21723512e4a04cc728a252696969c3c820c5e"
     },
     {
       "path": "web-source/showroom-controls.js",
       "baseSha256": "9663e43e0a18a3a69d6d7bf25a5d6786a22144e343dd9385a118a435048a959d",
-      "bytes": 9921,
-      "sha256": "3c470fce38741553320157d37b4af67a2edccd54ab6b08a2d2b447968b00e82c"
+      "bytes": 10917,
+      "sha256": "123fdda024c4c778dfcf411bb38d98e548e632a4d2535d6d3bcf17796ff2c77b"
     },
     {
       "path": "web-source/showroom-models.js",
       "baseSha256": "2969ffccb6420934e1971a1d826d538447dd0428b5a30a9be4bba1e7898fab17",
       "bytes": 12914,
       "sha256": "2d0d096527c04f3c1f6b58597914109c47e2a98e45dd0f92fbbb8c7d777d5b61"
+    },
+    {
+      "path": "web-source/sofa-models.js",
+      "baseSha256": "58f3534af6cf67da881028640edd715bb3e7cd1136ea9935249c2622fa0de585",
+      "bytes": 10638,
+      "sha256": "efc3a45c4d90d081fb7e010e35a398faf6856824d57a46d56049a0a88f444972"
     },
     {
       "path": "web-source/space-product-edit.js",
@@ -56,8 +62,8 @@
     {
       "path": "web-source/ui-inspector.js",
       "baseSha256": null,
-      "bytes": 16582,
-      "sha256": "455e41ac38faf4a59baa35adf0fe07d7ced5aef104b70510ee7bdc076b4d3106"
+      "bytes": 16710,
+      "sha256": "60b7dd12cb0fb0b646ef0d4df6894718b5a4fe8d2dfc09e926ebc007330b14d2"
     },
     {
       "path": "web-source/ui-paint.css",
