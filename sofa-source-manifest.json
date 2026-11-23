@@ -1,0 +1,703 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa",
+  "publicUrl": "https://baharercili.github.io/somass/sofa/",
+  "archiveBytes": 235674503,
+  "archiveSha256": "e1ef3e8c876574aad4c688efc3a140b850b1036daeea5dca8b2963ed784ae81c",
+  "partBytes": 2097152,
+  "parts": [
+    {
+      "name": "sofa-source.part-0001",
+      "bytes": 2097152,
+      "sha256": "9fa64524f6e1d4ad862d1ef11598fd5842573813400b43aba8f39870395bc2d3",
+      "gitBlobSha1": "904179f16b307eb47a0777cc830ccbdaaf6b2da4"
+    },
+    {
+      "name": "sofa-source.part-0002",
+      "bytes": 2097152,
+      "sha256": "a31cb5105e5070c1ba58aa6867da79c7381805f4f89a18150a6bb217b05b9038",
+      "gitBlobSha1": "a7bf8fccdd710925d521ff4396ad0811960e3349"
+    },
+    {
+      "name": "sofa-source.part-0003",
+      "bytes": 2097152,
+      "sha256": "b2cdeb3889b3cb861e653ea0a94ed84ff1eb847be6d01a363bd6857c4fc41c5c",
+      "gitBlobSha1": "c7c4277f5ccec9143a3e10f3f2e864c6fd00631b"
+    },
+    {
+      "name": "sofa-source.part-0004",
+      "bytes": 2097152,
+      "sha256": "b1351cdf57984ab04b00380a48493645b631660016fd1efb08187719c6f47a3a",
+      "gitBlobSha1": "89b2f0bc3c81b0247954cf78106ea773343872df"
+    },
+    {
+      "name": "sofa-source.part-0005",
+      "bytes": 2097152,
+      "sha256": "9029a3715547c65beb80f8b82c392bd60353600bfd63e6e8e96f6b2d160d17ff",
+      "gitBlobSha1": "cc53c22738153fb04d4606f5520649febff80ccb"
+    },
+    {
+      "name": "sofa-source.part-0006",
+      "bytes": 2097152,
+      "sha256": "e0c782d0327fac56f42182172dfa4e32e9cc3f660ea3249eb077af21a6455503",
+      "gitBlobSha1": "97be50097f59a3593d8f835721dfbbfdad7607dd"
+    },
+    {
+      "name": "sofa-source.part-0007",
+      "bytes": 2097152,
+      "sha256": "889c426157f615ac390adcc7cf6f3cdc1c61d3a79792b8422362bbe1a7a9fb4e",
+      "gitBlobSha1": "665bf0ef6818adf180a476eb0df6e2341c3c6806"
+    },
+    {
+      "name": "sofa-source.part-0008",
+      "bytes": 2097152,
+      "sha256": "9b7054ab8b7bdbce335b7ee2f9c8b3a61f5a356b6b40a4de531d4e4f8c3db1e9",
+      "gitBlobSha1": "f8c60ecab006908929fc1dfc76f611b20dacf4a0"
+    },
+    {
+      "name": "sofa-source.part-0009",
+      "bytes": 2097152,
+      "sha256": "b7566b28877c1d3caef9445ff195c20d4b8e969bd927a1ace67f751f1656176e",
+      "gitBlobSha1": "19e1f35703ce24ecaaa8c1adce1f1bfca9f42c5b"
+    },
+    {
+      "name": "sofa-source.part-0010",
+      "bytes": 2097152,
+      "sha256": "6821e95551c565a107f690e429ce3e0455749a727245ef426402894566425e9b",
+      "gitBlobSha1": "a28fe1d9c0a5f54005609b5ed6d3a218a0f1413f"
+    },
+    {
+      "name": "sofa-source.part-0011",
+      "bytes": 2097152,
+      "sha256": "011877b70b2159a718759b1fe8e66d1414b9159fd620570c22cf1e7158f51149",
+      "gitBlobSha1": "3a270aefcd64d8eec23cad3e2f8302495d4f086b"
+    },
+    {
+      "name": "sofa-source.part-0012",
+      "bytes": 2097152,
+      "sha256": "1ba506919965d3cd6fa3b014581e555a99f940772f14c550ad42c75a5c74553b",
+      "gitBlobSha1": "bf3525d67a33d2159993acc556e0ee6351cbd791"
+    },
+    {
+      "name": "sofa-source.part-0013",
+      "bytes": 2097152,
+      "sha256": "57143cb87882bb9410135a3c13e82a5f9253e9f45f3fa7e901c4f19cd8e045c6",
+      "gitBlobSha1": "7dfe444936c7df92b7f3650017077704015c51c0"
+    },
+    {
+      "name": "sofa-source.part-0014",
+      "bytes": 2097152,
+      "sha256": "35826b2268904da3c4ce4072e86f95740e042b549c196c47ca7a95e372abcb24",
+      "gitBlobSha1": "57ce5e5782013ecbdd86cf41b073687b4be66519"
+    },
+    {
+      "name": "sofa-source.part-0015",
+      "bytes": 2097152,
+      "sha256": "7362a0ef422fc63a853b274576a9a146376bbb7f2b08e8488383755266a519b9",
+      "gitBlobSha1": "3966987cfcc819e4d7b87e6670ed4e0e3c885b9a"
+    },
+    {
+      "name": "sofa-source.part-0016",
+      "bytes": 2097152,
+      "sha256": "0d499b6c8d616ccf640d966169edffb68ccaf7c8ab003d018760e9c9ed82297f",
+      "gitBlobSha1": "b351928cfe7cba8a50ea362fdb468c5c6fb3074d"
+    },
+    {
+      "name": "sofa-source.part-0017",
+      "bytes": 2097152,
+      "sha256": "e37209d4eb4a8365da1fc16c6248a6f6481aca2c964d41a5920dfd00d419329a",
+      "gitBlobSha1": "43e43ed1adf0c78b0f667e9624b43ad2dee7e3b8"
+    },
+    {
+      "name": "sofa-source.part-0018",
+      "bytes": 2097152,
+      "sha256": "fe6a5da13ed936a2a0399f75a97ceb881c18699f1f76f8f4888eacb55c75f35f",
+      "gitBlobSha1": "a59cd3686208af243f57c6e520fa0702f1e36cde"
+    },
+    {
+      "name": "sofa-source.part-0019",
+      "bytes": 2097152,
+      "sha256": "60114cf4a660863d624cee20e5e37089d1524898cc1e6de6d0ea7901f591ae68",
+      "gitBlobSha1": "3b6c5b12848c96e1418b745248685ad7e54e1029"
+    },
+    {
+      "name": "sofa-source.part-0020",
+      "bytes": 2097152,
+      "sha256": "e4ffac4311ade66fd3a7126a1be3ad0bd8dcfa44d5477ee8afa8c7e26c67f578",
+      "gitBlobSha1": "71f0b10ee6764468ae287eb9a54934a98892325a"
+    },
+    {
+      "name": "sofa-source.part-0021",
+      "bytes": 2097152,
+      "sha256": "48a400ec0af951b9860fa0df4fa8ad9436f9687f7af7697a5889ea12a05d7b14",
+      "gitBlobSha1": "5531234a611dad502c38bfbbccdec442e582f94c"
+    },
+    {
+      "name": "sofa-source.part-0022",
+      "bytes": 2097152,
+      "sha256": "046a6d138283d320e8d479c7422c68d40673e176f30a858eef70843696a12fcb",
+      "gitBlobSha1": "ecfa03bdadffbd48f2d9a6e086f69108abc3da0f"
+    },
+    {
+      "name": "sofa-source.part-0023",
+      "bytes": 2097152,
+      "sha256": "70ca38621bb8b9ad64e831651f336900380456d538266b88d4d3189f1f7a8f6e",
+      "gitBlobSha1": "dd1b67416da1c55309e184975aa67170bd45113b"
+    },
+    {
+      "name": "sofa-source.part-0024",
+      "bytes": 2097152,
+      "sha256": "95cef1f19cb1d4d7506402a9757233bce0a2d044d02edc34b8d865b3458753c2",
+      "gitBlobSha1": "9279f07d90f507054a1c163af66ccd3df45d96fb"
+    },
+    {
+      "name": "sofa-source.part-0025",
+      "bytes": 2097152,
+      "sha256": "8cc0a405f6dc6d3b3464a5a204d7226fd3358792e1dfb6b57b8d0ca47071afa3",
+      "gitBlobSha1": "1aa0d3a77e75357045e3f7e45ab222d126604211"
+    },
+    {
+      "name": "sofa-source.part-0026",
+      "bytes": 2097152,
+      "sha256": "e8a64304376fea63fc7da0d668b892b4cce518e7b70ad644555488e259d9424a",
+      "gitBlobSha1": "93cc1a7d3d6e6633aeb7294ba1017f09f5914734"
+    },
+    {
+      "name": "sofa-source.part-0027",
+      "bytes": 2097152,
+      "sha256": "063ae953f748257198e6d3f02e04a7b0f7c37c4866625346af96fb4cf1faf703",
+      "gitBlobSha1": "38834259588993b1f6177d4341c475991d904d13"
+    },
+    {
+      "name": "sofa-source.part-0028",
+      "bytes": 2097152,
+      "sha256": "409062400f3fa5c18e37904c33a98787a432cbb10c31af3683d060cc41560efc",
+      "gitBlobSha1": "7c490fdc9188b0d82510708f1e330d0f02ebc900"
+    },
+    {
+      "name": "sofa-source.part-0029",
+      "bytes": 2097152,
+      "sha256": "9d011bcce4f940025446bf28007b5791dcb3ba0007961dec279a3b908ca81aaf",
+      "gitBlobSha1": "0edccf9588ec7d4b0c3f4b51b0709f79d1e1841e"
+    },
+    {
+      "name": "sofa-source.part-0030",
+      "bytes": 2097152,
+      "sha256": "aa2dcdcbfe44049031657bc0f8edb631b67305f5c3243dfc04638a589a2849b1",
+      "gitBlobSha1": "1ada02e3d839f4cb8a6a0db18b9bed050a1266d1"
+    },
+    {
+      "name": "sofa-source.part-0031",
+      "bytes": 2097152,
+      "sha256": "742d18b78d3bc3e21261825db34ed1e60c3c293b48f41325b00b6e3cc2b77a54",
+      "gitBlobSha1": "33f537202850bba325c0564721ff9ce55f53ada9"
+    },
+    {
+      "name": "sofa-source.part-0032",
+      "bytes": 2097152,
+      "sha256": "f56abb7cdc2a990627ddba156b502c0f4c1a70b4a832f5280cf2ffa7f045d318",
+      "gitBlobSha1": "2e7ece761bd48ef07bf12c735e14d87188e13a4d"
+    },
+    {
+      "name": "sofa-source.part-0033",
+      "bytes": 2097152,
+      "sha256": "7b18ccd82ebfd5e355623462e1e8a3bc65a3ac384d4896b81f5019800307ae21",
+      "gitBlobSha1": "36e68aa9f5b18e4aa90ec2c307f4cf7b2cd9bab4"
+    },
+    {
+      "name": "sofa-source.part-0034",
+      "bytes": 2097152,
+      "sha256": "473547bf8d047069dbf86143eda45343ce906c535bbc038a5ab242356885d871",
+      "gitBlobSha1": "8fff7c400a70741ca4ef23b30964bbca52178201"
+    },
+    {
+      "name": "sofa-source.part-0035",
+      "bytes": 2097152,
+      "sha256": "9d34cbce8e192b7a079e5eb7f7864b739b290cbdbfc4683d0171ab69e3605d4f",
+      "gitBlobSha1": "df6dbc112bcd2bebca415b8bb6842d9045493bfb"
+    },
+    {
+      "name": "sofa-source.part-0036",
+      "bytes": 2097152,
+      "sha256": "8f23eee2f7b2f574fc58be92d3c7dd5bd19e68d6bed36f7e79d73fd94d77aa8d",
+      "gitBlobSha1": "d06085c1755c7f8f1e25693b0de426dec0e49be1"
+    },
+    {
+      "name": "sofa-source.part-0037",
+      "bytes": 2097152,
+      "sha256": "c2ec0b3b57986a75ee8900224d9e56b7774fe1a0bcc54d5f47ae8ccf72e01e5d",
+      "gitBlobSha1": "1504b810dda7367f40832c984016b1eabc37b235"
+    },
+    {
+      "name": "sofa-source.part-0038",
+      "bytes": 2097152,
+      "sha256": "05bfac65313a26b90131d3c1dbea7d33fff9485bde0cfefa95258fb00cb9d37a",
+      "gitBlobSha1": "7f4443c693da68ee180da6c91b8eca182a42a178"
+    },
+    {
+      "name": "sofa-source.part-0039",
+      "bytes": 2097152,
+      "sha256": "4840fdd35514255b16b4710e1219d7194bb6c4771dc34baed1bd0d3ceb384f47",
+      "gitBlobSha1": "aa7f72219d33f8e0bb47fad2f9649ee60eb48852"
+    },
+    {
+      "name": "sofa-source.part-0040",
+      "bytes": 2097152,
+      "sha256": "7d9ce051a156df9d025cca8cd09a9ea58378bc15d0f01d325857cb16079e5181",
+      "gitBlobSha1": "0b23dac80be7da1248c96956611cdbeccd5ff3f3"
+    },
+    {
+      "name": "sofa-source.part-0041",
+      "bytes": 2097152,
+      "sha256": "70eb6eff91021b27fda623962ce2a759a07f371263ec2ca7b00c615bf04bc702",
+      "gitBlobSha1": "aceb7daa7b8c4da648ec202b2ac068beb266943f"
+    },
+    {
+      "name": "sofa-source.part-0042",
+      "bytes": 2097152,
+      "sha256": "571b01c3610ab4c3648caeaf07a33d753e0998cbc1c291188ac6d219b08d30d5",
+      "gitBlobSha1": "19328b1f0305b6ce7aa7035ff1f49c7dd6546543"
+    },
+    {
+      "name": "sofa-source.part-0043",
+      "bytes": 2097152,
+      "sha256": "dcab4f2bc46b879ceeb98e29f5ed7facebb973b7c36cb13d6fc36947d8419419",
+      "gitBlobSha1": "0300bfaeae84822679c7c595f3317709bc8dc84e"
+    },
+    {
+      "name": "sofa-source.part-0044",
+      "bytes": 2097152,
+      "sha256": "b3b2dff21e838d9778f43bdea09452cae1d710a7ed3da2f6c08b4094be4c9aa2",
+      "gitBlobSha1": "938253df92d5e7c2e84206360dbaa037be7006ad"
+    },
+    {
+      "name": "sofa-source.part-0045",
+      "bytes": 2097152,
+      "sha256": "3ef4e7db048930ab2c192d093b35d197be28ddff64c1139178b79d37811137ff",
+      "gitBlobSha1": "aef4fc2ba32f163d3c5a023746f1d519897b6ae9"
+    },
+    {
+      "name": "sofa-source.part-0046",
+      "bytes": 2097152,
+      "sha256": "9de1cd299342b309742c3f2abbc6ef0e6b786708a1a228c2e5c5b86a0dfeaa2e",
+      "gitBlobSha1": "53fea8a4a323847057b3e4a4bf7492e4cd21ecc7"
+    },
+    {
+      "name": "sofa-source.part-0047",
+      "bytes": 2097152,
+      "sha256": "064e6f7c022ec39a323d2ba3b83d154db2ca236c8af6f6be6482ef38fbc0526f",
+      "gitBlobSha1": "78a9acd10b5ab8a11c1d363f0e9e2bcad87b3ce0"
+    },
+    {
+      "name": "sofa-source.part-0048",
+      "bytes": 2097152,
+      "sha256": "a9faf50c6ff1b277e441b0948a4376b539f4eef8bbc47d735c1715ad9a9cdfb0",
+      "gitBlobSha1": "2c87a59aedf73ff90b2c2314f82dc71a59285ab6"
+    },
+    {
+      "name": "sofa-source.part-0049",
+      "bytes": 2097152,
+      "sha256": "ccb04bf4eb5abd7d99c2c58add9203944cb6009d0cb38f91e1d91dc9484a98ab",
+      "gitBlobSha1": "6569fdfac84d40f271b263434ceb28ea262c8341"
+    },
+    {
+      "name": "sofa-source.part-0050",
+      "bytes": 2097152,
+      "sha256": "870435546d01d81ae4e1cb572a97660a3043c9aa333b5e310072951919c3036e",
+      "gitBlobSha1": "e28707544a5096f2ac6d0ec069ffada9f49daaf3"
+    },
+    {
+      "name": "sofa-source.part-0051",
+      "bytes": 2097152,
+      "sha256": "432f70339958e325c13e1a26f40da780ca6a988b84a5741a491171eb7930fadc",
+      "gitBlobSha1": "5d4f20bf3a15c293b8fcf4122d8273ce871fccb0"
+    },
+    {
+      "name": "sofa-source.part-0052",
+      "bytes": 2097152,
+      "sha256": "06e5c5797698ceb3fa94df2f4abe58a818f43b4f7f6e82ce4bd9c017b1196245",
+      "gitBlobSha1": "fe0747780ef965380760c157d88601f8a0803b7f"
+    },
+    {
+      "name": "sofa-source.part-0053",
+      "bytes": 2097152,
+      "sha256": "817ff1c3d12d561356c322dc0f7ef374ae0916908515d0257a92c02523dfd3ed",
+      "gitBlobSha1": "efe85a7a967d9b9e060485598e861744e65b9767"
+    },
+    {
+      "name": "sofa-source.part-0054",
+      "bytes": 2097152,
+      "sha256": "1283656ebe21dfcea0befafb42ab9d92da011c4c7e10e7591eecea854b08852d",
+      "gitBlobSha1": "c1b2de8535c60f3657dd709ade33aa17ed9999a4"
+    },
+    {
+      "name": "sofa-source.part-0055",
+      "bytes": 2097152,
+      "sha256": "7cc71c459f7a47f2f8e8a17d4922d7b56ebaddba91c95f39956609b2f173d216",
+      "gitBlobSha1": "e1283afd77b0c401242529ebe26a4c9a49458423"
+    },
+    {
+      "name": "sofa-source.part-0056",
+      "bytes": 2097152,
+      "sha256": "51b387e215a4d2f5c1cb07fd525ad927e244be0ebc6620da2bcbb029b4b5a557",
+      "gitBlobSha1": "17c7da8e40e166917f14d420661799f76f46c8d3"
+    },
+    {
+      "name": "sofa-source.part-0057",
+      "bytes": 2097152,
+      "sha256": "9ad8b9557b9874c4eb14b253761f7d347186aea3e744a537218df0813372f589",
+      "gitBlobSha1": "d178fed5cc44d73b66e126061dd7d68d3379fc8b"
+    },
+    {
+      "name": "sofa-source.part-0058",
+      "bytes": 2097152,
+      "sha256": "047236934624af50367475cef0338cb5a012556a0f08c4c5271acb1326f05938",
+      "gitBlobSha1": "3c914c8af54759c3ae8ad31238efcbac6c826cf5"
+    },
+    {
+      "name": "sofa-source.part-0059",
+      "bytes": 2097152,
+      "sha256": "4863659d6580c1838b3510134e29132c8a0955c1b7b6483aa0986db83995927e",
+      "gitBlobSha1": "7e321e574a89135b84125294bf15ea0f062fe560"
+    },
+    {
+      "name": "sofa-source.part-0060",
+      "bytes": 2097152,
+      "sha256": "7f3c757e05a2fe57be82898bf952407e6fbd538325310279de8d60589e04281e",
+      "gitBlobSha1": "ffe08fabc5e635a7e61fd1aa9f24688490475659"
+    },
+    {
+      "name": "sofa-source.part-0061",
+      "bytes": 2097152,
+      "sha256": "5cc1eb92494857ed946d303ffe0aea313e384b59d3a45b11a8df1444995a6127",
+      "gitBlobSha1": "61bea16084c13a03a1836ec7eb272c60f3e2af2b"
+    },
+    {
+      "name": "sofa-source.part-0062",
+      "bytes": 2097152,
+      "sha256": "3fb090f46ec66eedf67893f777ac0168040b7db6f32fa42e6ef9f7d4e9661b0b",
+      "gitBlobSha1": "98770d1048928b5b5d99acd048502a9dc456b754"
+    },
+    {
+      "name": "sofa-source.part-0063",
+      "bytes": 2097152,
+      "sha256": "b603c8e4b1c1adb14508c2740929efb896a2031a9ad746148f27a369c3e27136",
+      "gitBlobSha1": "79e8b51e4679235776b5dbaeb12e5d658c47ad73"
+    },
+    {
+      "name": "sofa-source.part-0064",
+      "bytes": 2097152,
+      "sha256": "112c90530766109bb7cad26e06517e66f0bf527662b1d28b5264b8fe1cf094a5",
+      "gitBlobSha1": "4866000fdcbcfaa20edbbe3153d10880e074dc3a"
+    },
+    {
+      "name": "sofa-source.part-0065",
+      "bytes": 2097152,
+      "sha256": "d8d256e2f2e54153c90e20f8d24c22d48f17b32b338c7465fff08cdd2ad8fc3c",
+      "gitBlobSha1": "3d20eb1b7b68b8ed0ba804bbefe1b814c73e2dc7"
+    },
+    {
+      "name": "sofa-source.part-0066",
+      "bytes": 2097152,
+      "sha256": "aa59179ffe353e1fb367f90c3011f36bd24d6390086339c05108dcdc8c89759e",
+      "gitBlobSha1": "c60107c12efa11df351b3bb4445974127d492dda"
+    },
+    {
+      "name": "sofa-source.part-0067",
+      "bytes": 2097152,
+      "sha256": "40f6c3fbb85429054ea98279f14d5018d1a4e241fc7bd3f99a4ada1be8dd929a",
+      "gitBlobSha1": "bc28ee92ddb717caf35783af4dd26b7916615a29"
+    },
+    {
+      "name": "sofa-source.part-0068",
+      "bytes": 2097152,
+      "sha256": "63497e2a56d99b536e85cf22c8b29d03590d6bc4faab4789b6ab2407ba02727f",
+      "gitBlobSha1": "513ec11c8df54ae96a9448584d8171c0e5faf8c9"
+    },
+    {
+      "name": "sofa-source.part-0069",
+      "bytes": 2097152,
+      "sha256": "2952249505a94438950abc64ad879ea20185823cb98a61c9cb40beaf28da12b6",
+      "gitBlobSha1": "50c06af6c7f89ce44e30ef082b2616996c215b31"
+    },
+    {
+      "name": "sofa-source.part-0070",
+      "bytes": 2097152,
+      "sha256": "82b66294e77bc62643f4ac169fe2bf82bc40c685c49baf8314f7a4106d11695b",
+      "gitBlobSha1": "33d5514692e3b8b4aa832799a3d177e2fccdf5f6"
+    },
+    {
+      "name": "sofa-source.part-0071",
+      "bytes": 2097152,
+      "sha256": "b97cdbddd25161eaa1bd01b70bc554386d4e37d532697abbf6bc18cc4d8531e5",
+      "gitBlobSha1": "6093c3d5b4c8e7b7f092f43d8ec96b7f5ce14234"
+    },
+    {
+      "name": "sofa-source.part-0072",
+      "bytes": 2097152,
+      "sha256": "a2ca114f71368798b269114f2357dc89ef03d8a80c75afa57c6f6d42fe84ddfb",
+      "gitBlobSha1": "b5b2567af24799b6ea7ad44f20c89295a7f639e4"
+    },
+    {
+      "name": "sofa-source.part-0073",
+      "bytes": 2097152,
+      "sha256": "6864dccb0a4bbca1e204ae39db841144b226cf1576fd80a0c346cb7b8d7604e9",
+      "gitBlobSha1": "f02edee84c17c84acbf4413aaf8e751f81ae770b"
+    },
+    {
+      "name": "sofa-source.part-0074",
+      "bytes": 2097152,
+      "sha256": "ec054c28fcd0328052f9443dff4a3fff05ea94ee1fe98ffcee59c6d1665dca8c",
+      "gitBlobSha1": "7f484cbe73b5b44667624243408d5e2f9fee96f2"
+    },
+    {
+      "name": "sofa-source.part-0075",
+      "bytes": 2097152,
+      "sha256": "3f257a55076e4906df098b342b54c5a6e9a6306ef770142ad038476abc364e90",
+      "gitBlobSha1": "d938ae75bfa054c1902cbe8504891c8e25141133"
+    },
+    {
+      "name": "sofa-source.part-0076",
+      "bytes": 2097152,
+      "sha256": "8275b37817adeb83e8e3dada768268ce754a26e1cb7b78b3d9b653e3d889849b",
+      "gitBlobSha1": "b9854ae8c8919e60b8ffda541da39cdfa5afefed"
+    },
+    {
+      "name": "sofa-source.part-0077",
+      "bytes": 2097152,
+      "sha256": "c5bf3b9e29b6b6eefe2229971d3cf0f63a380f3ee7d2d57875c7803ee17fcb14",
+      "gitBlobSha1": "0cbcc626a16993c462a558c275a21894118c4439"
+    },
+    {
+      "name": "sofa-source.part-0078",
+      "bytes": 2097152,
+      "sha256": "ee2f2653f209958a65fc39e26c2512fbc72b84aa22e4e545a372ffa5ef426bfa",
+      "gitBlobSha1": "6f431b80d70727bbb3229da29c4c9f12009a26e1"
+    },
+    {
+      "name": "sofa-source.part-0079",
+      "bytes": 2097152,
+      "sha256": "7aec62e0463962f085d60c98d3d135dd0a870e574e750e758b2476434bac55c0",
+      "gitBlobSha1": "f03e9fc2091aedf64b655d3416dab835ad0a2a3e"
+    },
+    {
+      "name": "sofa-source.part-0080",
+      "bytes": 2097152,
+      "sha256": "226062f50bd1be5db37a8432a349ed069ffda9501cf9d4ab23eb50c7dd987728",
+      "gitBlobSha1": "c1d249bf3d53f948a535aeb83d6345acbc0b0ea2"
+    },
+    {
+      "name": "sofa-source.part-0081",
+      "bytes": 2097152,
+      "sha256": "01188f0e7807bcb44caec436e465d00bf8bf3b0772ca74fca8983fddf162572a",
+      "gitBlobSha1": "5309c919c78f9293828b8dd93db35ee38e8df29b"
+    },
+    {
+      "name": "sofa-source.part-0082",
+      "bytes": 2097152,
+      "sha256": "b42151e03ee7e8e5e848fa90879f363745d445272680ff21a276c933030f3802",
+      "gitBlobSha1": "5aeba86c755ac2b87b5f8c3ecec44948a26a77e4"
+    },
+    {
+      "name": "sofa-source.part-0083",
+      "bytes": 2097152,
+      "sha256": "1e9895e87e6b4be4885fc75cbef112cf766ceb3db0174b83890fc9396334c199",
+      "gitBlobSha1": "57a5fc24028f8c2723fda9f7dff9f1c07273da19"
+    },
+    {
+      "name": "sofa-source.part-0084",
+      "bytes": 2097152,
+      "sha256": "3a887e3a1562749b6414f6ad64cf561723c71d66b513c8f5b043fca2bb433721",
+      "gitBlobSha1": "55b09e159a1b1e14384562c1c6ab87968d7f032f"
+    },
+    {
+      "name": "sofa-source.part-0085",
+      "bytes": 2097152,
+      "sha256": "4f26a7fb31ede49d75aa40228765b1948a2b14f6c4b9e7fe03ab1f055268d58c",
+      "gitBlobSha1": "aeb448a8eab84ab28ae626891c9e5b3292ef6322"
+    },
+    {
+      "name": "sofa-source.part-0086",
+      "bytes": 2097152,
+      "sha256": "e4b336e2cdfd1c099caf3a1ecf9b019917bd95660f6615bef9a21c1001c31ec0",
+      "gitBlobSha1": "91dd5beeb136b632c38cad2cd8bb925972d84f6b"
+    },
+    {
+      "name": "sofa-source.part-0087",
+      "bytes": 2097152,
+      "sha256": "83120d655c102f0aef3707c7f5608d009c29ba8c68b21030709508970089c2ab",
+      "gitBlobSha1": "f326ce6fb9364ffc4642d11d3b3e912b1526f3b3"
+    },
+    {
+      "name": "sofa-source.part-0088",
+      "bytes": 2097152,
+      "sha256": "9dcaefcaf70a64503530b3a400568032f8ac915d1efed81a8c80ee28e7c5907d",
+      "gitBlobSha1": "de1d90a7f2fba339080e42dd362a875e52259867"
+    },
+    {
+      "name": "sofa-source.part-0089",
+      "bytes": 2097152,
+      "sha256": "256a675d1ec12df90d08b125f91b52246f931c2bbbb0f8682857a66ff8045bd6",
+      "gitBlobSha1": "a378fbc75bf70a3f4ee86bf2cd238aa4dd13f0de"
+    },
+    {
+      "name": "sofa-source.part-0090",
+      "bytes": 2097152,
+      "sha256": "dcf18e6cb19cf728c2c3b24b9871c99bb13c0f086dfc229f6e987d83bbbaedf8",
+      "gitBlobSha1": "9b195c1a0003fe608b2c9a0a4fcc53af13793b44"
+    },
+    {
+      "name": "sofa-source.part-0091",
+      "bytes": 2097152,
+      "sha256": "dba1c9bdd98e9567351dcca5c2ba9dcc2fbd316ebb3b623fa120b98da0a083c3",
+      "gitBlobSha1": "364df15d90a5a21899cde0fab50aea22ef99db50"
+    },
+    {
+      "name": "sofa-source.part-0092",
+      "bytes": 2097152,
+      "sha256": "81f20c36874b148259c0162e460fa8819b9f108dd37691e97e4ac9d21c56b51a",
+      "gitBlobSha1": "a0879271c92b8e8e2b6100d773585790503d7a70"
+    },
+    {
+      "name": "sofa-source.part-0093",
+      "bytes": 2097152,
+      "sha256": "16a8b0b4ef5e76fb56938786a82295dca6102b24c5f15d7b8b432047409168fa",
+      "gitBlobSha1": "4c87d7b9df2b513736542da26f445f892049e3c3"
+    },
+    {
+      "name": "sofa-source.part-0094",
+      "bytes": 2097152,
+      "sha256": "cadf73bdb188d1fd14da73a6b03a3f5fc4ee390438fe832d65261ba9fd687e0a",
+      "gitBlobSha1": "58594ab7b02d5eb0f938d77fcfcc7eb88750f17a"
+    },
+    {
+      "name": "sofa-source.part-0095",
+      "bytes": 2097152,
+      "sha256": "1e83ec15a3fd1dc66d006fd317208c59c1492c79c1b4b529b46242b6d7d1ddea",
+      "gitBlobSha1": "d3d4cc1d200e8ca8ade9791e9c6a3ad4ccb3fe65"
+    },
+    {
+      "name": "sofa-source.part-0096",
+      "bytes": 2097152,
+      "sha256": "294092aed591f26d338757a8216809daca635c2b9dc4cf929453405f40717b9e",
+      "gitBlobSha1": "e981ae005f71c326412a53e64e297f21a64b06c7"
+    },
+    {
+      "name": "sofa-source.part-0097",
+      "bytes": 2097152,
+      "sha256": "def4e97442c6d68b42101ae3685828d1a47037550529b1b9cae8c5d13de45371",
+      "gitBlobSha1": "1609aa6e9055e0618bf0b50e6e4290726162222f"
+    },
+    {
+      "name": "sofa-source.part-0098",
+      "bytes": 2097152,
+      "sha256": "142369e3fc472870c7bc23d4d68046d2df83d2c67c1d84fb976b48224109a8b0",
+      "gitBlobSha1": "b424e5e2de39750f0a5b4e36e1de59005888c9c9"
+    },
+    {
+      "name": "sofa-source.part-0099",
+      "bytes": 2097152,
+      "sha256": "190c6f9cb9142b27a19f6ef2e9976c5772c89bfc8aeb1052e06266a5147704bc",
+      "gitBlobSha1": "3ea715521297d2f37913e38acb64d2e1236d10d0"
+    },
+    {
+      "name": "sofa-source.part-0100",
+      "bytes": 2097152,
+      "sha256": "c24571d11bd7d2f9385e53459ca1d558f774dfaf387b49ce5434f4cefd755ff5",
+      "gitBlobSha1": "01636b71ceb0f6ad8a9790dfd1fb23ea222a3673"
+    },
+    {
+      "name": "sofa-source.part-0101",
+      "bytes": 2097152,
+      "sha256": "8ca64673121ddb6518df11f245b593be63c9637786eb4439a43339c995a11bc8",
+      "gitBlobSha1": "891d95af8ccee565bb99a5bfae7169654cceb195"
+    },
+    {
+      "name": "sofa-source.part-0102",
+      "bytes": 2097152,
+      "sha256": "e4b1bafc75c0557a4699cbd2b98b1b6f636d881ca24774d55b7902a907f5853c",
+      "gitBlobSha1": "c675aadbb3acaa6df456fa4d6c45fbef0177f23a"
+    },
+    {
+      "name": "sofa-source.part-0103",
+      "bytes": 2097152,
+      "sha256": "dee176fb25a20e3d36cdfa84e7b6e7daf6a8ad7c75369206469921b14f6fcd40",
+      "gitBlobSha1": "2265494a49bbb9f00b6912bea2c6adc56eacf5ff"
+    },
+    {
+      "name": "sofa-source.part-0104",
+      "bytes": 2097152,
+      "sha256": "c293cac7470b4a16074111dcea48371dee250ed13d08ae7f81d07f926e4c2663",
+      "gitBlobSha1": "a1d9dffa98d994343afe74b25d33c9f13e735833"
+    },
+    {
+      "name": "sofa-source.part-0105",
+      "bytes": 2097152,
+      "sha256": "933793ccfe3e31c9bdfe963ea291bde6436db69e2e8b4683166670ed6692f5a0",
+      "gitBlobSha1": "1010395cfdd32d42f21d10dc771c3241e025bc61"
+    },
+    {
+      "name": "sofa-source.part-0106",
+      "bytes": 2097152,
+      "sha256": "72d6eea5d9ed680e2e4e77d63cdacfb4814bd173bbd00fb62b0c98afeb56cd87",
+      "gitBlobSha1": "9641befbee86b183888ebd7921ee1af9209bd774"
+    },
+    {
+      "name": "sofa-source.part-0107",
+      "bytes": 2097152,
+      "sha256": "9f6747eae950521a3e4cfbcad81d338421dd6f966e7e77c44cb3301ec04e45d4",
+      "gitBlobSha1": "63d2a82c26adf0715f463607ad9fc3759b85b35a"
+    },
+    {
+      "name": "sofa-source.part-0108",
+      "bytes": 2097152,
+      "sha256": "93c823ac611b08dad1b5a9a9da48eeb99bfde993d3c72c695c14e14cd5a9d11e",
+      "gitBlobSha1": "bafb66245918a29cedb14b59f75832c292ab82e5"
+    },
+    {
+      "name": "sofa-source.part-0109",
+      "bytes": 2097152,
+      "sha256": "c6e3bcbfc63bc3b92ecf10f85516510ee1392540af6a5da292e0aa442149b164",
+      "gitBlobSha1": "0582650c5aae424415d6b2bf5aa2bf6a91ac2a9c"
+    },
+    {
+      "name": "sofa-source.part-0110",
+      "bytes": 2097152,
+      "sha256": "17cc331334de0e5ae774bb293c10cd51fd5afb46052e3e400fcdcefafad9118b",
+      "gitBlobSha1": "f299986b6615a180887d58e71e1d3528b8eb2a96"
+    },
+    {
+      "name": "sofa-source.part-0111",
+      "bytes": 2097152,
+      "sha256": "1baba75045131b4caf13ff5daf00dbdca1cb92aba08044c9bf8337653fed2855",
+      "gitBlobSha1": "919710ddc7bdc32fd6a586112b59f28240030116"
+    },
+    {
+      "name": "sofa-source.part-0112",
+      "bytes": 2097152,
+      "sha256": "72e21f52a96081d74899b60c75309306885d2c59f5bce248480b1ca350350fca",
+      "gitBlobSha1": "c51e8697bf25017e0e294eec856e66e40e711857"
+    },
+    {
+      "name": "sofa-source.part-0113",
+      "bytes": 793479,
+      "sha256": "1a0445bb6cf2c1c7297e19a403846e0499a4b6e052422c1bc5f18ed2d055d005",
+      "gitBlobSha1": "a0482336b1d4e7c1638abd27a707454313d181bd"
+    }
+  ],
+  "memberCount": 3838,
+  "memberIntegrity": {
+    "path": "PACKAGE-MEMBERS.json",
+    "bytes": 807867,
+    "sha256": "f0ec1872e57c9cc39a5b584985e063e275f90664545c1bf75e62551f73dd4077"
+  },
+  "build": {
+    "kind": "verified-static-app",
+    "destination": "_source/_site/sofa",
+    "productCount": 213,
+    "galleryEntryCount": 1917,
+    "sourceFiles": 3836,
+    "siteFiles": 3837,
+    "siteBytes": 263071953
+  }
+}
