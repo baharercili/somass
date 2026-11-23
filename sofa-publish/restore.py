@@ -4,11 +4,109 @@ import argparse
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
+import re
 import stat
 import tempfile
 import zipfile
 
 MAX_SITE_BYTES = 1024 * 1024 * 1024
+INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js'})
+MAX_INTERFACE_BYTES = 2 * 1024 * 1024
+
+
+def regular_source(path, root):
+    """Overlay sources must stay within the checkout without following symlinks."""
+    relative = path.relative_to(root)
+    current = root
+    for part in relative.parts:
+        current = current / part
+        if current.is_symlink():
+            raise ValueError('Symlink in sofa interface source')
+    if not path.is_file():
+        raise ValueError('Missing sofa interface source')
+
+
+def interface_integer(value, maximum):
+    return type(value) is int and 0 < value <= maximum
+
+
+def interface_digest(value):
+    return isinstance(value, str) and re.fullmatch(r'[0-9a-f]{64}', value) is not None
+
+
+def apply_interface_overrides(package_root, restored, manifest, expected):
+    """Apply a small allowlisted patch only after both base and patch verify."""
+    control = package_root / 'sofa-publish' / 'interface-overrides.json'
+    if not control.exists() and not control.is_symlink():
+        return 0
+    regular_source(control, package_root)
+    if not 0 < control.stat().st_size <= 64 * 1024:
+        raise ValueError('Invalid sofa interface manifest size')
+    overlay = json.loads(control.read_bytes().decode('utf-8'))
+    if (not isinstance(overlay, dict)
+            or set(overlay) != {'schemaVersion', 'application', 'baseArchiveSha256', 'files'}
+            or overlay['schemaVersion'] != 1
+            or overlay['application'] != 'studio-sofa-interface'
+            or overlay['baseArchiveSha256'] != manifest['archiveSha256']):
+        raise ValueError('Sofa interface base package differs')
+    files = overlay['files']
+    if not isinstance(files, list) or not 1 <= len(files) <= len(INTERFACE_FILES):
+        raise ValueError('Invalid sofa interface file list')
+    changes, seen = [], set()
+    for item in files:
+        if (not isinstance(item, dict)
+                or set(item) != {'path', 'expectedBaseSha256', 'expectedBaseBytes', 'sha256', 'bytes'}):
+            raise ValueError('Invalid sofa interface file record')
+        name = item['path']
+        if not isinstance(name, str) or name not in INTERFACE_FILES or name in seen:
+            raise ValueError('Unexpected or duplicate sofa interface file')
+        seen.add(name)
+        if (not interface_integer(item['expectedBaseBytes'], MAX_INTERFACE_BYTES)
+                or not interface_integer(item['bytes'], MAX_INTERFACE_BYTES)
+                or not interface_digest(item['expectedBaseSha256'])
+                or not interface_digest(item['sha256'])):
+            raise ValueError('Invalid sofa interface file limits')
+        original = expected.get(name)
+        if (not original or original['bytes'] != item['expectedBaseBytes']
+                or original['sha256'] != item['expectedBaseSha256']):
+            raise ValueError('Sofa interface base member differs: ' + name)
+        installed = restored / name
+        original_content = installed.read_bytes()
+        if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
+            raise ValueError('Restored sofa interface base differs: ' + name)
+        source = package_root / 'sofa-publish' / 'interface-overrides' / name
+        regular_source(source, package_root)
+        if source.stat().st_size != item['bytes']:
+            raise ValueError('Sofa interface source size differs: ' + name)
+        content = source.read_bytes()
+        content.decode('utf-8')
+        if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+            raise ValueError('Sofa interface source checksum differs: ' + name)
+        changes.append((name, content, item))
+    audit_name = 'INTERFACE-OVERRIDES.json'
+    if audit_name in expected:
+        raise ValueError('Sofa interface audit member already exists')
+    # Validation above reads every payload before any patch is installed. The
+    # destination is still private temporary output until restore's final rename.
+    for name, content, item in changes:
+        (restored / name).write_bytes(content)
+        if sha256((restored / name).read_bytes()) != item['sha256']:
+            raise ValueError('Installed sofa interface checksum differs')
+        expected[name] = {'path': name, 'bytes': len(content), 'sha256': item['sha256']}
+    audit = {'schemaVersion': 1, 'baseArchiveSha256': manifest['archiveSha256'],
+             'baseMemberIntegrity': manifest['memberIntegrity'], 'files': files}
+    audit_content = (json.dumps(audit, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    (restored / audit_name).write_bytes(audit_content)
+    expected[audit_name] = {'path': audit_name, 'bytes': len(audit_content), 'sha256': sha256(audit_content)}
+    integrity_name = 'PACKAGE-MEMBERS.json'
+    installed_details = {'schemaVersion': 1, 'members': sorted(
+        (item for name, item in expected.items() if name != integrity_name), key=lambda item: item['path'])}
+    integrity_content = (json.dumps(installed_details, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    if sum(item['bytes'] for name, item in expected.items() if name != integrity_name) + len(integrity_content) > MAX_SITE_BYTES:
+        raise ValueError('Patched sofa website exceeds allowed size')
+    (restored / integrity_name).write_bytes(integrity_content)
+    expected[integrity_name] = {'path': integrity_name, 'bytes': len(integrity_content), 'sha256': sha256(integrity_content)}
+    return len(changes)
 
 
 def safe_name(name):
@@ -113,8 +211,12 @@ def restore(package_root, site):
             for name in ['index.html', 'urun.html', 'kombinasyonlar.html', 'assets/sofa.glb', 'assets/product-galleries/catalogue-v77.json']:
                 if name not in seen:
                     raise ValueError('Required sofa application file missing: ' + name)
+        interface_count = apply_interface_overrides(package_root, restored, manifest, expected)
         restored.rename(destination)
-    return {'destination': str(destination), 'verifiedFiles': len(expected), 'archiveSha256': whole.hexdigest()}
+    result = {'destination': str(destination), 'verifiedFiles': len(expected), 'archiveSha256': whole.hexdigest()}
+    if interface_count:
+        result['interfaceOverrides'] = interface_count
+    return result
 
 
 def main():

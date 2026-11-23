@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-interface",
+  "baseArchiveSha256": "8e1eb809db3f8b0dab431a9edeeaa0fd96a63123f27a1d0092a8fa5c726efeff",
+  "files": [
+    {
+      "path": "kombinasyonlar.html",
+      "expectedBaseSha256": "9c701e27f7de1ad70193989d56d022c9d4dd19730dd4282cd00225854fbb2e32",
+      "expectedBaseBytes": 7688,
+      "sha256": "fb8b820ae7d872db8103f757ffd7e7719542594196c397a3bb438116b01797f7",
+      "bytes": 7991
+    },
+    {
+      "path": "kombinasyonlar.css",
+      "expectedBaseSha256": "3ee37423529ea768f2a7bd6816b1c72dbb71972b05be86eda6e7836624e277c5",
+      "expectedBaseBytes": 13349,
+      "sha256": "2745e481350895cabfe84bb4909515ad47b57f73af6f82c6898fb4a19f2d86fa",
+      "bytes": 14634
+    },
+    {
+      "path": "kombinasyonlar.js",
+      "expectedBaseSha256": "95cd75737d3037b920d2e33e8eee2e881928f21d5e2161b4b3d0120a901d294c",
+      "expectedBaseBytes": 17655,
+      "sha256": "99205fd5c0da6e8980cf154692d2fd12898ad5d2a9f8075e98ec9da3a97bbc4f",
+      "bytes": 19263
+    }
+  ]
+}
