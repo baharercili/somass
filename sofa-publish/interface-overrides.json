@@ -112,8 +112,8 @@
       "path": "material-gallery.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "692d79d83c8fe99321ccdaab64ee31b230e1488185855c3d2e51afb45970a8cf",
-      "bytes": 316365
+      "sha256": "8e8394e2f400fb6f7b5b49eb0d1089630fd7c6705f375e199a0bf8455b9aa666",
+      "bytes": 225559
     },
     {
       "path": "assets/material-gallery/0032fb2d59206e6fcf75654155da2f4b5afa6b3a3a9f34dabed37bcbb8104278.jpg",
@@ -3439,6 +3439,13 @@
       "expectedBaseBytes": 58321,
       "sha256": "6a8edf7ddb9a0a4f6a4c0af609472f595afcacdc1d16b1a94c6b7d2c7ca2a60b",
       "bytes": 64376
+    },
+    {
+      "path": "assets/material-gallery/a51006c09bf47a185f242eab9fd590bc1cf5db31920de02cac2b6bc41501d75d.png",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "a51006c09bf47a185f242eab9fd590bc1cf5db31920de02cac2b6bc41501d75d",
+      "bytes": 3526733
     }
   ]
 }
