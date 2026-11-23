@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-product-variant-media",
+  "archiveSha256": "6b15c92617bfd4aa1c769aeb5ba7121fb4b8f7a0bcf4c31a0b2865dbb1366d74",
+  "archiveBytes": 27132448,
+  "memberCount": 913,
+  "parts": [
+    {
+      "name": "product-variant-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "244a8d3e7762d61eadd125ad7684a9d3eab86a40a677a22898ac0af54d7e3ea4"
+    },
+    {
+      "name": "product-variant-media.part-0002",
+      "bytes": 2097152,
+      "sha256": "f3bf7a6ca3e36badbd7d6334aa76183f9d97b4717bcaa6064e034b37dd4f6f14"
+    },
+    {
+      "name": "product-variant-media.part-0003",
+      "bytes": 2097152,
+      "sha256": "b362b3969f7ac751ae3de26304a9128441dc5bf9749eb146ea431a4d7a5a727d"
+    },
+    {
+      "name": "product-variant-media.part-0004",
+      "bytes": 2097152,
+      "sha256": "37173772b82ae4a71b85adfbd6b6608d45ef4c33b6fede7c84f8c8fe6ce251dc"
+    },
+    {
+      "name": "product-variant-media.part-0005",
+      "bytes": 2097152,
+      "sha256": "215b79c8ca4a4d417f86cdaa33e0ece3eaf17406e16037b6f3516c135386c69b"
+    },
+    {
+      "name": "product-variant-media.part-0006",
+      "bytes": 2097152,
+      "sha256": "b06a23ed85da29f661f3aaa4c607b8ea85e98a6fb435cea6c6d28f8ed9ae4e24"
+    },
+    {
+      "name": "product-variant-media.part-0007",
+      "bytes": 2097152,
+      "sha256": "67dc1f9772521774a49623d9130ccc320c062cb83e0dda869a177a62c910bc2c"
+    },
+    {
+      "name": "product-variant-media.part-0008",
+      "bytes": 2097152,
+      "sha256": "d2ef33ccf1571ee6c1309ecfba823a30fd284d01cc25b25e8ce13aa7e970e769"
+    },
+    {
+      "name": "product-variant-media.part-0009",
+      "bytes": 2097152,
+      "sha256": "a5ef7b24b8c0b33955bae823d8abcfa0f6bf686f9c93c34ac269f99eb4de0cdb"
+    },
+    {
+      "name": "product-variant-media.part-0010",
+      "bytes": 2097152,
+      "sha256": "2348c0d72d9dd4edca0aad6d1f4c4f2bf05daf9157d0a22c440c9a9d1e00fed9"
+    },
+    {
+      "name": "product-variant-media.part-0011",
+      "bytes": 2097152,
+      "sha256": "dd4b5baee60cf71a52e5e39f98d7cf2af65023cc7493f1b4eabfa3fdd47e370f"
+    },
+    {
+      "name": "product-variant-media.part-0012",
+      "bytes": 2097152,
+      "sha256": "50016d89f0366f31667b2fcbcc29f13020e76101296ddc56698ff1e2ca38043c"
+    },
+    {
+      "name": "product-variant-media.part-0013",
+      "bytes": 1966624,
+      "sha256": "03d008b84e404457b469ba1f82763fa1dc22c6f3e1372f744f5f594b70bcf0be"
+    }
+  ]
+}

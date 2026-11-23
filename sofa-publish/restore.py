@@ -22,13 +22,25 @@ INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombi
     'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json',
     'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx', 'material-gallery.html'})
 MAX_INTERFACE_BYTES = 2 * 1024 * 1024
+INTERFACE_FILES = INTERFACE_FILES | frozenset(['assets/product-galleries/catalogue-v77.json', 'assets/studio/catalogue-v69.json', 'catalogue-variants.js', 'combinations-state.js', 'consumer-summary.js', 'fabric-appearance.js', 'fabric-library.js', 'fabric-material.js', 'inspiration-catalog.js', 'new-fabric-variants.js', 'product-export-materials.js', 'product-glb-export.js', 'studio-catalog-images.js', 'team-pack-engine.js', 'team-pack.js'])
+V118_EXISTING_ANCHORS = {'fabric-material.js': ('3f5d86520c47b73e83866a3577315150cb0c0d25775a73307212e5b8c4776e3b', 13593), 'combinations-state.js': ('2aa13955c46ac8ca0caf3be2bf58619f18a958da8f4709ba8534996c2e57ab8f', 12659), 'consumer-summary.js': ('2f8b64bd350fa92edc10690ceb31577aaf35de25dc4f2f4eb2afc42e90f4c99e', 11416), 'inspiration-catalog.js': ('4e6c5e3ca2dabefe02d865fb105a524f2530bb794c7eacabf78e60927325e3d3', 17790), 'catalogue-variants.js': ('9262570c944251b152c05f485915a4ab25c5e767d7ab5f7206fc1f70f0aa4edb', 22004), 'studio-catalog-images.js': ('ea5dfa65ff1fce414bf7dad16656199e4b9ee983b7f2a652d37cd357b2937da2', 3645), 'product-export-materials.js': ('0d94c6d00ce92013ae7b84f36dd2f37dcf74b71812b9a20c0b3111b238e81307', 12781), 'assets/studio/catalogue-v69.json': ('487990eb3ef7e1f9ada8428943a7b4cf8b3d567ca551b4badf94ecea9fc352dc', 443933), 'assets/product-galleries/catalogue-v77.json': ('f51a7cd7934d59ccb1b539a4d212b932e6834f019dbd1860d534094e8827c332', 1566629), 'product-glb-export.js': ('f73741ca5129d2cd4609a9fc57efcd12d29d3073ee52e811d76bdbea2400c6e5', 4403), 'team-pack.js': ('e8737fbc45020eaaed423a924ea0a32efa66b1f1bab5d22f657dc1317542a08e', 2645), 'team-pack-engine.js': ('6e0d64a202797e7f3069fe24e9c430c146621bdd1f827912ef7d5998f8339b63', 7041)}
+V118_ADDITIONS = frozenset(['fabric-library.js', 'fabric-appearance.js', 'new-fabric-variants.js'])
+MAX_OVERLAY_FILES = 1536
+MAX_PRODUCT_MEDIA_BYTES = 2 * 1024 * 1024
+MAX_PRODUCT_MEDIA_FILES = 913
+MAX_PRODUCT_MEDIA_TOTAL_BYTES = 128 * 1024 * 1024
+MAX_PRODUCT_ARCHIVE_BYTES = 128 * 1024 * 1024
+MAX_PRODUCT_PART_BYTES = 2 * 1024 * 1024
+MAX_PRODUCT_PARTS = 64
+PRODUCT_VARIANT_KEYS = frozenset(['inspiration-fabric-v118-01-soft-touch-1351-oak', 'inspiration-fabric-v118-02-veronza-1008-dark-oak', 'inspiration-fabric-v118-03-colormax-1015-black-oak', 'inspiration-fabric-v118-04-soft-touch-1355-oak', 'inspiration-fabric-v118-05-veronza-1012-dark-oak', 'inspiration-fabric-v118-06-colormax-1017-black-oak', 'inspiration-fabric-v118-07-soft-touch-1246-oak', 'inspiration-fabric-v118-08-veronza-1030-dark-oak', 'inspiration-fabric-v118-09-soft-touch-1024-black-oak', 'inspiration-fabric-v118-10-veronza-1035-oak', 'inspiration-fabric-v118-11-soft-touch-1200-dark-oak', 'inspiration-fabric-v118-12-veronza-1031-black-oak', 'inspiration-fabric-v118-13-veronza-1041-oak', 'inspiration-fabric-v118-14-soft-touch-1351-dark-oak', 'inspiration-fabric-v118-15-veronza-1008-black-oak', 'inspiration-fabric-v118-16-colormax-1015-oak', 'inspiration-fabric-v118-17-soft-touch-1355-dark-oak', 'inspiration-fabric-v118-18-veronza-1012-black-oak', 'inspiration-fabric-v118-19-colormax-1017-oak', 'inspiration-fabric-v118-20-soft-touch-1246-dark-oak', 'inspiration-fabric-v118-21-veronza-1030-black-oak', 'inspiration-fabric-v118-22-soft-touch-1024-oak', 'inspiration-fabric-v118-23-veronza-1035-dark-oak', 'inspiration-fabric-v118-24-soft-touch-1200-black-oak', 'inspiration-fabric-v118-25-veronza-1031-oak', 'inspiration-fabric-v118-26-veronza-1041-dark-oak', 'inspiration-fabric-v118-27-soft-touch-1351-black-oak', 'inspiration-fabric-v118-28-veronza-1008-oak', 'inspiration-fabric-v118-29-colormax-1015-dark-oak', 'inspiration-fabric-v118-30-soft-touch-1355-black-oak', 'inspiration-fabric-v118-31-veronza-1012-oak', 'inspiration-fabric-v118-32-colormax-1017-dark-oak', 'inspiration-fabric-v118-33-soft-touch-1246-black-oak', 'inspiration-fabric-v118-34-veronza-1030-oak', 'inspiration-fabric-v118-35-soft-touch-1024-dark-oak', 'inspiration-fabric-v118-36-veronza-1035-black-oak', 'inspiration-fabric-v118-37-soft-touch-1200-oak', 'inspiration-fabric-v118-38-veronza-1031-dark-oak', 'inspiration-fabric-v118-39-veronza-1041-black-oak', 'inspiration-fabric-v118-40-soft-touch-1351-oak', 'inspiration-fabric-v118-41-veronza-1008-dark-oak', 'inspiration-fabric-v118-42-colormax-1015-black-oak', 'inspiration-fabric-v118-43-soft-touch-1355-oak', 'inspiration-fabric-v118-44-veronza-1012-dark-oak', 'inspiration-fabric-v118-45-colormax-1017-black-oak', 'inspiration-fabric-v118-46-soft-touch-1246-oak', 'inspiration-fabric-v118-47-veronza-1030-dark-oak', 'inspiration-fabric-v118-48-soft-touch-1024-black-oak', 'inspiration-fabric-v118-49-veronza-1035-oak', 'inspiration-fabric-v118-50-veronza-1041-dark-oak'])
+PRODUCT_MEDIA_PATH = re.compile(r'assets/product-galleries/v118/([^/]+)/(hero|open-back|front|rear|right-rear|right-side|top|dimensioned-top|detail)(\.thumb)?\.webp')
 APP_ORIGINAL_SHA256 = '45ed6c3305ec33d07eafec29d0900e625469ca80770e5347ac3c387fbae27d4b'
 APP_ORIGINAL_BYTES = 58321
 MATERIAL_MEDIA_PATH = re.compile(r'assets/material-gallery/([0-9a-f]{64})\.(jpg|jpeg|png|webp)')
 MAX_MATERIAL_MEDIA_BYTES = 4 * 1024 * 1024
 MAX_MATERIAL_MEDIA_FILES = 512
 MAX_MATERIAL_MEDIA_TOTAL_BYTES = 128 * 1024 * 1024
-MAX_INTERFACE_MANIFEST_BYTES = 192 * 1024
+MAX_INTERFACE_MANIFEST_BYTES = 768 * 1024
 MAX_MATERIAL_ARCHIVE_BYTES = 128 * 1024 * 1024
 MAX_MATERIAL_PART_BYTES = 2 * 1024 * 1024
 MAX_MATERIAL_PARTS = 64
@@ -42,6 +54,88 @@ SHEET_NS = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'
 REL_NS = 'http://schemas.openxmlformats.org/package/2006/relationships'
 OFFICE_REL_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
 CONTENT_NS = 'http://schemas.openxmlformats.org/package/2006/content-types'
+
+
+
+def interface_limit(name):
+    return 4 * 1024 * 1024 if name in {
+        'assets/studio/catalogue-v69.json', 'assets/product-galleries/catalogue-v77.json'} else MAX_INTERFACE_BYTES
+
+
+def product_image_match(name):
+    match = PRODUCT_MEDIA_PATH.fullmatch(name) if isinstance(name, str) else None
+    return match if match and match.group(1) in PRODUCT_VARIANT_KEYS else None
+
+
+FABRIC_CHIPS = {'assets/fabrics/v118/soft-touch-1351.png': ('f69838a4ddfc0392c3f0496ae667e2cc8938cfc793a6467ea7e5b43631b0c853', 117849), 'assets/fabrics/v118/soft-touch-1355.png': ('323c77b25f68522cbcb8d7a140d40364f7eafde1f19c661cec312d63807fb1e1', 122580), 'assets/fabrics/v118/soft-touch-1246.png': ('1b69b2cc6c780308a629deb46cf21dfc8441a897b97b935708482ea6e8d6b9d9', 110673), 'assets/fabrics/v118/soft-touch-1024.png': ('23be439a718fa75b321c6a16ef616635fca275a1e8994d50e60784975e98da83', 181713), 'assets/fabrics/v118/soft-touch-1200.png': ('fe24a589d6396eec267ad26894ea813050b8bda54db2880243eb84992bd104a5', 120553), 'assets/fabrics/v118/veronza-1008.png': ('b1f73a888d75b6c86f64c58255f11e992573e80aed564e91c7c40a6920399f41', 142803), 'assets/fabrics/v118/veronza-1041.png': ('a9b0a288f5cee210113551c1541ed519f7743c235c66a5017ec5481d85820f39', 203347), 'assets/fabrics/v118/veronza-1035.png': ('2027208a1eb3104986aaa9fedc7491428ef3aa42a0ba4723c33ae3e8ce20a499', 179391), 'assets/fabrics/v118/veronza-1030.png': ('d38528b844ba4fcf9ee813d046c5614c61fed226816569aaa471652dfe573223', 203301), 'assets/fabrics/v118/veronza-1031.png': ('d3dcdefabeb621634209da8716505a7863748c6e5a988a6409ce95439cc5f54d', 205122), 'assets/fabrics/v118/veronza-1012.png': ('5bd7d80d60930afb5dc07329929d4a3ad667850237e5025305b96461f833343d', 204812), 'assets/fabrics/v118/colormax-1015.png': ('01221a454760a5191011fe18a2817610a1668f57f978b48d720442a365882838', 361471), 'assets/fabrics/v118/colormax-1017.png': ('4388695d27aafeede1847ac19fa28f782494757492eada7d439a2857b9a8a1d8', 441825)}
+FABRIC_CHIP_DIMENSIONS = {'assets/fabrics/v118/soft-touch-1351.png': (360, 280), 'assets/fabrics/v118/soft-touch-1355.png': (360, 280), 'assets/fabrics/v118/soft-touch-1246.png': (360, 280), 'assets/fabrics/v118/soft-touch-1024.png': (360, 280), 'assets/fabrics/v118/soft-touch-1200.png': (360, 280), 'assets/fabrics/v118/veronza-1008.png': (360, 280), 'assets/fabrics/v118/veronza-1041.png': (360, 280), 'assets/fabrics/v118/veronza-1035.png': (360, 280), 'assets/fabrics/v118/veronza-1030.png': (360, 280), 'assets/fabrics/v118/veronza-1031.png': (360, 280), 'assets/fabrics/v118/veronza-1012.png': (360, 280), 'assets/fabrics/v118/colormax-1015.png': (560, 420), 'assets/fabrics/v118/colormax-1017.png': (560, 420)}
+
+
+
+def product_media_match(name):
+    return product_image_match(name) or (name in FABRIC_CHIPS if isinstance(name, str) else False)
+
+
+def validate_fabric_chip(name, content):
+    if name not in FABRIC_CHIPS or (sha256(content), len(content)) != FABRIC_CHIPS[name]:
+        raise ValueError('Fabric chip differs from its exact original source')
+    validate_material_media('assets/material-gallery/' + sha256(content) + '.png', content)
+    if struct.unpack('>II', content[16:24]) != FABRIC_CHIP_DIMENSIONS[name]:
+        raise ValueError('Fabric chip dimensions differ')
+    cursor, saw_data = 8, False
+    while cursor < len(content):
+        if cursor + 12 > len(content):
+            raise ValueError('Truncated fabric chip PNG')
+        size = int.from_bytes(content[cursor:cursor + 4], 'big')
+        kind = content[cursor + 4:cursor + 8]
+        end = cursor + 12 + size
+        if end > len(content) or kind in (b'acTL', b'fcTL', b'fdAT'):
+            raise ValueError('Invalid or animated fabric chip PNG')
+        if kind == b'IDAT': saw_data = True
+        if kind == b'IEND' and end != len(content):
+            raise ValueError('Fabric chip PNG has trailing content')
+        cursor = end
+    if not saw_data:
+        raise ValueError('Fabric chip PNG image data missing')
+
+
+def validate_product_media(name, content):
+    """Check a still WebP at one exact authored product/view/size path."""
+    if name in FABRIC_CHIPS:
+        return validate_fabric_chip(name, content)
+    match = product_image_match(name)
+    if (not match or len(content) < 30 or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8], 'little') != len(content) - 8):
+        raise ValueError('Product variant WebP signature or path differs')
+    cursor, dimensions, frames = 12, None, 0
+    while cursor < len(content):
+        if cursor + 8 > len(content):
+            raise ValueError('Truncated product variant WebP chunk')
+        kind = content[cursor:cursor + 4]
+        size = int.from_bytes(content[cursor + 4:cursor + 8], 'little')
+        start, end = cursor + 8, cursor + 8 + size
+        if end + (size & 1) > len(content) or kind in (b'ANIM', b'ANMF'):
+            raise ValueError('Invalid or animated product variant WebP')
+        data = content[start:end]
+        if kind == b'VP8X':
+            if len(data) != 10 or data[0] & 2:
+                raise ValueError('Invalid or animated product variant WebP canvas')
+            canvas = (int.from_bytes(data[4:7], 'little') + 1, int.from_bytes(data[7:10], 'little') + 1)
+        elif kind == b'VP8 ':
+            if len(data) < 10 or data[3:6] != b'\x9d\x01\x2a':
+                raise ValueError('Invalid product variant VP8 frame')
+            dimensions = (int.from_bytes(data[6:8], 'little') & 0x3fff, int.from_bytes(data[8:10], 'little') & 0x3fff)
+            frames += 1
+        elif kind == b'VP8L':
+            if len(data) < 5 or data[0] != 0x2f:
+                raise ValueError('Invalid product variant VP8L frame')
+            bits = int.from_bytes(data[1:5], 'little')
+            dimensions = ((bits & 0x3fff) + 1, ((bits >> 14) & 0x3fff) + 1)
+            frames += 1
+        cursor = end + (size & 1)
+    expected_dimensions = (300, 200) if match.group(3) else (1536, 1024)
+    if frames != 1 or dimensions != expected_dimensions or ('canvas' in locals() and canvas != dimensions):
+        raise ValueError('Product variant WebP dimensions differ')
 
 
 def material_media_match(name):
@@ -310,6 +404,83 @@ def load_material_media_package(package_root, media_records):
     return media, audit
 
 
+def load_product_media_package(package_root, media_records):
+    """Read a verified optional media ZIP without extracting paths into checkout."""
+    folder = package_root / 'sofa-publish' / 'product-variant-media'
+    control = folder / 'product-variant-media-manifest.json'
+    if not control.exists() and not control.is_symlink():
+        return {}, None
+    regular_source(control, package_root)
+    if not 0 < control.stat().st_size <= 64 * 1024:
+        raise ValueError('Invalid product variant media manifest size')
+    control_content = control.read_bytes()
+    manifest = json.loads(control_content.decode('utf-8'))
+    if (not isinstance(manifest, dict)
+            or set(manifest) != {'schemaVersion', 'application', 'archiveSha256', 'archiveBytes', 'memberCount', 'parts'}
+            or manifest['schemaVersion'] != 1
+            or manifest['application'] != 'studio-sofa-product-variant-media'
+            or not interface_digest(manifest['archiveSha256'])
+            or not interface_integer(manifest['archiveBytes'], MAX_PRODUCT_ARCHIVE_BYTES)
+            or type(manifest['memberCount']) is not int
+            or manifest['memberCount'] != len(media_records) or not media_records
+            or not isinstance(manifest['parts'], list) or not 1 <= len(manifest['parts']) <= MAX_PRODUCT_PARTS):
+        raise ValueError('Invalid product variant media package manifest')
+    stream, whole, total = io.BytesIO(), hashlib.sha256(), 0
+    for index, item in enumerate(manifest['parts'], 1):
+        if (not isinstance(item, dict) or set(item) != {'name', 'bytes', 'sha256'}
+                or item['name'] != f'product-variant-media.part-{index:04d}'
+                or not interface_integer(item['bytes'], MAX_PRODUCT_PART_BYTES)
+                or not interface_digest(item['sha256'])):
+            raise ValueError('Unexpected product variant media package part')
+        source = folder / item['name']
+        regular_source(source, package_root)
+        if source.stat().st_size != item['bytes']:
+            raise ValueError('Product variant media package part size differs')
+        content = source.read_bytes()
+        if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+            raise ValueError('Product variant media package part checksum differs')
+        total += len(content)
+        if total > manifest['archiveBytes']:
+            raise ValueError('Product variant media package exceeds expected size')
+        stream.write(content)
+        whole.update(content)
+    if total != manifest['archiveBytes'] or whole.hexdigest() != manifest['archiveSha256']:
+        raise ValueError('Product variant media archive checksum differs')
+    media, total_expanded = {}, 0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            infos = archive.infolist()
+            if len(infos) != manifest['memberCount']:
+                raise ValueError('Product variant media package member count differs')
+            for info in infos:
+                name, mode = info.filename, info.external_attr >> 16
+                if (name not in media_records or name in media or not product_media_match(name)
+                        or info.is_dir() or stat.S_ISLNK(mode)
+                        or stat.S_IFMT(mode) not in (0, stat.S_IFREG) or info.flag_bits & 1
+                        or info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unexpected or unsafe product variant media archive member')
+                item = media_records[name]
+                if info.file_size != item['bytes'] or not interface_integer(info.file_size, MAX_PRODUCT_MEDIA_BYTES):
+                    raise ValueError('Product variant media package member size differs')
+                total_expanded += info.file_size
+                if total_expanded > MAX_PRODUCT_MEDIA_TOTAL_BYTES:
+                    raise ValueError('Product variant media archive expands beyond limit')
+                content = archive.read(info)
+                if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+                    raise ValueError('Product variant media package member checksum differs')
+                validate_product_media(name, content)
+                media[name] = content
+    except (zipfile.BadZipFile, RuntimeError, zlib.error) as error:
+        raise ValueError('Invalid product variant media archive') from error
+    if set(media) != set(media_records):
+        raise ValueError('Product variant media archive does not cover active product entries')
+    audit = {'manifestPath': 'sofa-publish/product-variant-media/product-variant-media-manifest.json',
+             'manifestSha256': sha256(control_content), 'archiveSha256': manifest['archiveSha256'],
+             'archiveBytes': manifest['archiveBytes'], 'memberCount': manifest['memberCount'],
+             'parts': manifest['parts']}
+    return media, audit
+
+
 def apply_interface_overrides(package_root, restored, manifest, expected):
     """Apply a small allowlisted patch only after both base and patch verify."""
     control = package_root / 'sofa-publish' / 'interface-overrides.json'
@@ -326,22 +497,26 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             or overlay['baseArchiveSha256'] != manifest['archiveSha256']):
         raise ValueError('Sofa interface base package differs')
     files = overlay['files']
-    if not isinstance(files, list) or not 1 <= len(files) <= len(INTERFACE_FILES) + MAX_MATERIAL_MEDIA_FILES:
+    if not isinstance(files, list) or not 1 <= len(files) <= MAX_OVERLAY_FILES:
         raise ValueError('Invalid sofa interface file list')
     changes, seen, media_count, media_bytes, media_records = [], set(), 0, 0, {}
+    product_count, product_bytes, product_records = 0, 0, {}
     for item in files:
         if (not isinstance(item, dict)
                 or set(item) != {'path', 'expectedBaseSha256', 'expectedBaseBytes', 'sha256', 'bytes'}):
             raise ValueError('Invalid sofa interface file record')
         name = item['path']
         media = material_media_match(name)
-        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media) or name in seen:
+        product_media = product_media_match(name)
+        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media and not product_media) or name in seen:
             raise ValueError('Unexpected or duplicate sofa interface file')
         seen.add(name)
-        maximum = MAX_MATERIAL_MEDIA_BYTES if media else MAX_INTERFACE_BYTES
+        maximum = MAX_MATERIAL_MEDIA_BYTES if media else (MAX_PRODUCT_MEDIA_BYTES if product_media else interface_limit(name))
         if (not interface_integer(item['bytes'], maximum)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
+        if name in V118_EXISTING_ANCHORS and (item['expectedBaseSha256'], item['expectedBaseBytes']) != V118_EXISTING_ANCHORS[name]:
+            raise ValueError('V118 runtime patch must retain its original V2 anchor')
         if name == 'app.js' and (item['expectedBaseSha256'] != APP_ORIGINAL_SHA256
                                  or type(item['expectedBaseBytes']) is not int
                                  or item['expectedBaseBytes'] != APP_ORIGINAL_BYTES):
@@ -352,21 +527,30 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if media_count > MAX_MATERIAL_MEDIA_FILES or media_bytes > MAX_MATERIAL_MEDIA_TOTAL_BYTES:
                 raise ValueError('Material gallery media exceeds allowed limits')
             media_records[name] = item
+        if product_media:
+            product_count += 1
+            product_bytes += item['bytes']
+            if product_count > MAX_PRODUCT_MEDIA_FILES or product_bytes > MAX_PRODUCT_MEDIA_TOTAL_BYTES:
+                raise ValueError('Product variant media exceeds allowed limits')
+            product_records[name] = item
     bundled_media, bundle_audit = load_material_media_package(package_root, media_records)
+    product_bundle, product_audit = load_product_media_package(package_root, product_records)
+    bundled_media.update(product_bundle)
     for item in files:
         name = item['path']
         media = material_media_match(name)
+        product_media = product_media_match(name)
         original = expected.get(name)
         installed = restored / name
         if item['expectedBaseSha256'] is None:
-            if ((name not in NEW_INTERFACE_FILES and not media) or type(item['expectedBaseBytes']) is not int
+            if ((name not in NEW_INTERFACE_FILES and name not in V118_ADDITIONS and not media and not product_media) or type(item['expectedBaseBytes']) is not int
                     or item['expectedBaseBytes'] != 0 or original is not None
                     or installed.exists() or installed.is_symlink()):
                 raise ValueError('Sofa interface addition collides with base member: ' + name)
         else:
-            if media:
-                raise ValueError('Content-addressed material gallery media must be new additions')
-            if (not interface_integer(item['expectedBaseBytes'], MAX_INTERFACE_BYTES)
+            if media or product_media:
+                raise ValueError('Gallery media must be new additions')
+            if (not interface_integer(item['expectedBaseBytes'], interface_limit(name))
                     or not interface_digest(item['expectedBaseSha256'])
                     or not original or original['bytes'] != item['expectedBaseBytes']
                     or original['sha256'] != item['expectedBaseSha256']):
@@ -375,7 +559,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
                 raise ValueError('Restored sofa interface base differs: ' + name)
         source = package_root / 'sofa-publish' / 'interface-overrides' / name
-        if media and name in bundled_media and not source.exists() and not source.is_symlink():
+        if (media or product_media) and name in bundled_media and not source.exists() and not source.is_symlink():
             content = bundled_media[name]
         else:
             regular_source(source, package_root)
@@ -386,6 +570,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             raise ValueError('Sofa interface source checksum differs: ' + name)
         if media:
             validate_material_media(name, content)
+        elif product_media:
+            validate_product_media(name, content)
         elif name == WORKBOOK_PATH:
             validate_xlsx(content)
         else:
@@ -408,6 +594,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
              'baseMemberIntegrity': manifest['memberIntegrity'], 'files': files}
     if bundle_audit is not None:
         audit['materialMediaPackage'] = bundle_audit
+    if product_audit is not None:
+        audit['productVariantMediaPackage'] = product_audit
     audit_content = (json.dumps(audit, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     (restored / audit_name).write_bytes(audit_content)
     expected[audit_name] = {'path': audit_name, 'bytes': len(audit_content), 'sha256': sha256(audit_content)}

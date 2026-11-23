@@ -1,16 +1,17 @@
+import {NEW_FABRICS,addNewFabricChoices} from './fabric-library.js?v=20261124-new-fabrics-v118';
 import {getTableProfile} from './sofa-table-profiles.js?v=20261118-wood-modules-v65';
 import {createSelectionHistory} from './workspace-history.js?v=20261123-square-corner-v2';
-import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY} from './combinations-state.js?v=20261123-square-corner-v2';
+import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY} from './combinations-state.js?v=20261124-new-fabrics-v118';
 import {sanitizeCompositionOptions,getTablePositionChoices} from './table-composition.js?v=20261123-square-corner-v2';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 import * as THREE from 'three';
 import { GLTFLoader } from './vendor/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from './vendor/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from './vendor/addons/environments/RoomEnvironment.js';
-import { SofaMaterialSystem } from './fabric-material.js?v=20261122-open-travel-v95';
+import { SofaMaterialSystem } from './fabric-material.js?v=20261124-new-fabrics-v118';
 import { ModularLayout } from './modular-layout.js?v=20261123-square-corner-v2';
 import { evaluateBackBounds } from './back-motion.js?v=20261122-open-travel-v95';
-import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261123-square-corner-v2';
+import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261124-new-fabrics-v118';
 import {layoutFamily,layoutSide,layoutForFamily,layoutForSide,createPlacementGuide,shortPosition,validWoodModules,findWoodModuleSlot,reflowWoodModules} from './configuration-guide.js?v=20261123-square-corner-v2';
 import {deriveModuleSequence,appendModule,removeModule,getCornerTableChoices,setCornerTable} from './module-chain.js?v=20261123-square-corner-v2';
 
@@ -25,8 +26,9 @@ const choices = {
 };
 
 const paletteData=await fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(r=>r.json());
-const cardSwatches=paletteData.swatches;
-for(const swatch of cardSwatches){const entry={label:swatch.label,color:swatch.hex,renderColor:swatch.render_hex||swatch.hex,photoChip:swatch.photo_chip};choices.body['card-'+swatch.id]=entry;choices.accent['card-'+swatch.id]=entry;}
+const cardSwatches=[...paletteData.swatches,...NEW_FABRICS.map(f=>({id:f.key,key:f.key,label:f.label,hex:f.hex,render_hex:f.renderHex,photo_chip:f.photoChip}))];
+for(const swatch of cardSwatches){const entry={label:swatch.label,color:swatch.hex,renderColor:swatch.render_hex||swatch.hex,photoChip:swatch.photo_chip};const key=swatch.key||'card-'+swatch.id;choices.body[key]=entry;choices.accent[key]=entry;}
+addNewFabricChoices(choices);
 const layoutKeys=['straight2','straight3','corner-left','corner-right','chaise-left','chaise-right','single-left','single-right','single-both','dual-chaise'];
 
 let storedConfig='{}';try{storedConfig=localStorage.getItem(CONFIG_STORAGE_KEY)||'{}';}catch{}
@@ -529,7 +531,7 @@ function renderPalette(){
  const grid=$('#photo-palette');if(!grid)return;grid.replaceChildren();
  for(const swatch of cardSwatches){
   const b=document.createElement('button'),sample=document.createElement('span'),label=document.createElement('span'),check=document.createElementNS('http://www.w3.org/2000/svg','svg'),use=document.createElementNS('http://www.w3.org/2000/svg','use');
-  b.type='button';b.dataset.group=paletteTarget;b.dataset.value='card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=swatch.label;b.setAttribute('aria-label',swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
+  b.type='button';b.dataset.group=paletteTarget;b.dataset.value=swatch.key||'card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=swatch.label;b.setAttribute('aria-label',swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
   const rgb=swatch.hex.slice(1).match(/.{2}/g).map(value=>parseInt(value,16)/255),linear=rgb.map(value=>value<=.04045?value/12.92:((value+.055)/1.055)**2.4),luminance=linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
   b.style.setProperty('--check-color',luminance>.24?'#263126':'#ffffff');sample.className='palette-color-sample';if(swatch.photo_chip)sample.style.backgroundImage=`url("${swatch.photo_chip}")`;sample.style.color=luminance>.24?'#263126':'#ffffff';check.classList.add('icon');check.setAttribute('aria-hidden','true');use.setAttribute('href','#i-check');check.append(use);sample.append(check);label.className='palette-color-name';label.textContent=swatch.label;b.append(sample,label);grid.append(b);
  }

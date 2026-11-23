@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 108,
-  "date": "2026-11-23",
+  "version": 118,
+  "date": "2026-11-24",
   "productFamily": "SOFF",
   "title": "SOFF yerleşim SKU ve modül listeleri",
   "currency": "TRY",
@@ -17,16 +17,23 @@
     "assignment": "Kalıcı, eklemeli kayıt; liste sırası değişince SKU değişmez."
   },
   "source": {
-    "allCatalogueRecords": 221,
-    "visibleMaterialVariants": 214,
+    "allCatalogueRecords": 271,
+    "visibleMaterialVariants": 264,
     "visiblePhysicalLayouts": 84,
     "retiredRecordsExcluded": 7,
     "hashes": {
-      "inspiration-catalog.js": "4e6c5e3ca2dabefe02d865fb105a524f2530bb794c7eacabf78e60927325e3d3",
-      "catalogue-variants.js": "9262570c944251b152c05f485915a4ab25c5e767d7ab5f7206fc1f70f0aa4edb",
-      "consumer-summary.js": "2f8b64bd350fa92edc10690ceb31577aaf35de25dc4f2f4eb2afc42e90f4c99e",
-      "v2-combinations.js": "6251c3356613af4dfebbf409d214cdcd3c8b347db198d62649925372101ce5cd"
-    }
+      "inspiration-catalog.js": "502e2f70096cdef87d2f8008f76d01cfed33f9074633763dac79156f34b10f9e",
+      "catalogue-variants.js": "aa268ba64104c9e05d81a3951f0f272190b9f879460983ebd555bf6e7f954417",
+      "consumer-summary.js": "51dd60f8b00f868ed2335dff64648231dc916f8cda24e9d698aeaf95ffb8a7c6",
+      "v2-combinations.js": "6251c3356613af4dfebbf409d214cdcd3c8b347db198d62649925372101ce5cd",
+      "new-fabric-variants.js": "939bdb17dc5e91ab3ea8bfe0f1240e5ab23caea8d34123d21d74bc81bcc4ad70",
+      "fabric-library.js": "e37ccd70b240040c216eb88a108a70a95732102dbc90f24bd2deaaaf2c3eeb1c",
+      "fabric-appearance.js": "424d0bf7dbf931b41ee7fc5b1670efa72f843e76a16607c077f1d9b97a0e4aef",
+      "combinations-state.js": "bb5789b705d3b66be145d4f5b2ab87db493a5f4c1a8243045ce381040ac91c3c"
+    },
+    "selectionVersion": 118,
+    "selectionSHA256": "03fcd45859d74a8b412248cf0ea38cb094e235e80ef26ab592d36e4b944503a1",
+    "baselineCatalogueSHA256": "3183c22851bb1288f1accbac994e1a1ae81a00539f5c6db4d334f032f53e9a4a"
   },
   "modules": [
     {
@@ -407,6 +414,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-c03-3",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kum-gri&accent=card-orman&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0001-V004",
+          "key": "inspiration-fabric-v118-15-veronza-1008-black-oak",
+          "cardKey": "inspiration-fabric-v118-15-veronza-1008-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1008 · Siyah ahşap",
+          "body": "veronza-1008",
+          "accent": "soft-touch-1351",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001008",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Ekru melanj · 1008",
+            "accent": "Mavi gri · 1351",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1008",
+            "accent": "soft-touch-1351",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 2,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-15-veronza-1008-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1008&accent=soft-touch-1351&base=black-oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0001-V001"
@@ -1079,6 +1127,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k05-tutun-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-tutun&accent=card-krem&base=oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0004-V003",
+          "key": "inspiration-fabric-v118-28-veronza-1008-oak",
+          "cardKey": "inspiration-fabric-v118-28-veronza-1008-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1008 · Naturel meşe",
+          "body": "veronza-1008",
+          "accent": "veronza-1035",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001008",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Ekru melanj · 1008",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1008",
+            "accent": "veronza-1035",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-28-veronza-1008-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1008&accent=veronza-1035&base=oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0004-V001"
@@ -1998,6 +2093,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-s06-5",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-tas&accent=card-inci&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0008-V004",
+          "key": "inspiration-fabric-v118-10-veronza-1035-oak",
+          "cardKey": "inspiration-fabric-v118-10-veronza-1035-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1035 · Naturel meşe",
+          "body": "veronza-1035",
+          "accent": "veronza-1008",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001035",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Koyu kahve · 1035",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1035",
+            "accent": "veronza-1008",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-10-veronza-1035-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1035&accent=veronza-1008&base=oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0008-V003"
@@ -2439,6 +2581,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s07-sedef-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sedef&accent=card-arduvaz&base=oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0010-V003",
+          "key": "inspiration-fabric-v118-36-veronza-1035-black-oak",
+          "cardKey": "inspiration-fabric-v118-36-veronza-1035-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1035 · Siyah ahşap",
+          "body": "veronza-1035",
+          "accent": "soft-touch-1246",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001035",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Koyu kahve · 1035",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1035",
+            "accent": "soft-touch-1246",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-36-veronza-1035-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1035&accent=soft-touch-1246&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0010-V002"
@@ -2703,6 +2892,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-black-b01",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-inci&accent=card-bej&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0011-V004",
+          "key": "inspiration-fabric-v118-26-veronza-1041-dark-oak",
+          "cardKey": "inspiration-fabric-v118-26-veronza-1041-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1041 · Koyu meşe",
+          "body": "veronza-1041",
+          "accent": "soft-touch-1246",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001041",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Tütün / kahve melanj · 1041",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1041",
+            "accent": "soft-touch-1246",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "rectangle",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-26-veronza-1041-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1041&accent=soft-touch-1246&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0011-V003"
@@ -2940,6 +3181,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s04-krem-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-krem&accent=card-tas&base=oak&finish=velvet&scene=warm&layout=straight2&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0012-V003",
+          "key": "inspiration-fabric-v118-30-soft-touch-1355-black-oak",
+          "cardKey": "inspiration-fabric-v118-30-soft-touch-1355-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1355 · Siyah ahşap",
+          "body": "soft-touch-1355",
+          "accent": "veronza-1041",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001355",
+          "accentArtCode": "263267001041",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Gri yeşil · 1355",
+            "accent": "Tütün / kahve melanj · 1041",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1355",
+            "accent": "veronza-1041",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-30-soft-touch-1355-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1355&accent=veronza-1041&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0012-V002"
@@ -3188,6 +3481,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-k04-3",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kum-gri&accent=card-orman&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22return%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0013-V004",
+          "key": "inspiration-fabric-v118-08-veronza-1030-dark-oak",
+          "cardKey": "inspiration-fabric-v118-08-veronza-1030-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1030 · Koyu meşe",
+          "body": "veronza-1030",
+          "accent": "veronza-1008",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001030",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Zeytin melanj · 1030",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1030",
+            "accent": "veronza-1008",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": "return",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": "return"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-08-veronza-1030-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1030&accent=veronza-1008&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22return%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0013-V001"
@@ -3474,6 +3814,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-black-b07",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-orman&accent=card-inci&base=black-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0014-V004",
+          "key": "inspiration-fabric-v118-17-soft-touch-1355-dark-oak",
+          "cardKey": "inspiration-fabric-v118-17-soft-touch-1355-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1355 · Koyu meşe",
+          "body": "soft-touch-1355",
+          "accent": "colormax-1015",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "457623001355",
+          "accentArtCode": "262962001015",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Colormax Plain-1",
+            "body": "Gri yeşil · 1355",
+            "accent": "Ekru melanj · 1015",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "soft-touch-1355",
+            "accent": "colormax-1015",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-17-soft-touch-1355-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1355&accent=colormax-1015&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0014-V003"
@@ -3722,6 +4114,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-s07-27",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-siyah&accent=card-tas&base=dark-oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0015-V004",
+          "key": "inspiration-fabric-v118-18-veronza-1012-black-oak",
+          "cardKey": "inspiration-fabric-v118-18-veronza-1012-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1012 · Siyah ahşap",
+          "body": "veronza-1012",
+          "accent": "soft-touch-1246",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001012",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Bakır / kiremit melanj · 1012",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1012",
+            "accent": "soft-touch-1246",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight3",
+            "extra": 0,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-18-veronza-1012-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1012&accent=soft-touch-1246&base=black-oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0015-V001"
@@ -3937,6 +4376,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k14-porselen-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-porselen&accent=card-lacivert&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0016-V003",
+          "key": "inspiration-fabric-v118-44-veronza-1012-dark-oak",
+          "cardKey": "inspiration-fabric-v118-44-veronza-1012-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1012 · Koyu meşe",
+          "body": "veronza-1012",
+          "accent": "colormax-1015",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "263267001012",
+          "accentArtCode": "262962001015",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Colormax Plain-1",
+            "body": "Bakır / kiremit melanj · 1012",
+            "accent": "Ekru melanj · 1015",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1012",
+            "accent": "colormax-1015",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": "right-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-44-veronza-1012-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1012&accent=colormax-1015&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0016-V002"
@@ -4568,6 +5054,110 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-v2-six-seat-five-angle-zeytin-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=straight2&extra=3&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22beforeId%22%3A%22module-1%22%2C%22afterId%22%3A%22module-2%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%2C%22beforeId%22%3A%22module-2%22%2C%22afterId%22%3A%22module-3%22%7D%2C%7B%22id%22%3A%22wood-3%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A4%2C%22beforeId%22%3A%22module-3%22%2C%22afterId%22%3A%22module-4%22%7D%2C%7B%22id%22%3A%22wood-4%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A5%2C%22beforeId%22%3A%22module-4%22%2C%22afterId%22%3A%22module-5%22%7D%2C%7B%22id%22%3A%22wood-5%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22beforeId%22%3A%22module-6%22%2C%22afterId%22%3A%22module-1%22%7D%5D&modules=%5B%7B%22id%22%3A%22module-6%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-4%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-5%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0"
+        },
+        {
+          "sku": "SOM-Y0018-V003",
+          "key": "inspiration-fabric-v118-48-soft-touch-1024-black-oak",
+          "cardKey": "inspiration-fabric-v118-48-soft-touch-1024-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1024 · Siyah ahşap",
+          "body": "soft-touch-1024",
+          "accent": "soft-touch-1246",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001024",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Haki / zeytin · 1024",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1024",
+            "accent": "soft-touch-1246",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 3,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2,
+                "beforeId": "module-1",
+                "afterId": "module-2"
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 3,
+                "beforeId": "module-2",
+                "afterId": "module-3"
+              },
+              {
+                "id": "wood-3",
+                "type": "angled",
+                "position": 4,
+                "beforeId": "module-3",
+                "afterId": "module-4"
+              },
+              {
+                "id": "wood-4",
+                "type": "angled",
+                "position": 5,
+                "beforeId": "module-4",
+                "afterId": "module-5"
+              },
+              {
+                "id": "wood-5",
+                "type": "angled",
+                "position": 1,
+                "beforeId": "module-6",
+                "afterId": "module-1"
+              }
+            ],
+            "modules": [
+              {
+                "id": "module-6",
+                "type": "seat"
+              },
+              {
+                "id": "module-1",
+                "type": "seat"
+              },
+              {
+                "id": "module-2",
+                "type": "seat"
+              },
+              {
+                "id": "module-3",
+                "type": "seat"
+              },
+              {
+                "id": "module-4",
+                "type": "seat"
+              },
+              {
+                "id": "module-5",
+                "type": "seat"
+              }
+            ],
+            "moduleRotation": 0
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-48-soft-touch-1024-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1024&accent=soft-touch-1246&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=3&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22beforeId%22%3A%22module-1%22%2C%22afterId%22%3A%22module-2%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%2C%22beforeId%22%3A%22module-2%22%2C%22afterId%22%3A%22module-3%22%7D%2C%7B%22id%22%3A%22wood-3%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A4%2C%22beforeId%22%3A%22module-3%22%2C%22afterId%22%3A%22module-4%22%7D%2C%7B%22id%22%3A%22wood-4%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A5%2C%22beforeId%22%3A%22module-4%22%2C%22afterId%22%3A%22module-5%22%7D%2C%7B%22id%22%3A%22wood-5%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22beforeId%22%3A%22module-6%22%2C%22afterId%22%3A%22module-1%22%7D%5D&modules=%5B%7B%22id%22%3A%22module-6%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-4%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-5%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0"
         }
       ],
       "defaultVariantSku": "SOM-Y0018-V002"
@@ -5002,6 +5592,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-c01-6",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-denim&accent=card-lacivert&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0020-V005",
+          "key": "inspiration-fabric-v118-02-veronza-1008-dark-oak",
+          "cardKey": "inspiration-fabric-v118-02-veronza-1008-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1008 · Koyu meşe",
+          "body": "veronza-1008",
+          "accent": "veronza-1030",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001008",
+          "accentArtCode": "263267001030",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Ekru melanj · 1008",
+            "accent": "Zeytin melanj · 1030",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1008",
+            "accent": "veronza-1030",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-02-veronza-1008-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1008&accent=veronza-1030&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0020-V004"
@@ -5088,6 +5719,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-single-both-zeytin",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=single-both&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0021-V002",
+          "key": "inspiration-fabric-v118-05-veronza-1012-dark-oak",
+          "cardKey": "inspiration-fabric-v118-05-veronza-1012-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1012 · Koyu meşe",
+          "body": "veronza-1012",
+          "accent": "veronza-1008",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001012",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Bakır / kiremit melanj · 1012",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1012",
+            "accent": "veronza-1008",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "single-both",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-05-veronza-1012-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1012&accent=veronza-1008&base=dark-oak&finish=velvet&scene=warm&layout=single-both&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0021-V001"
@@ -5358,6 +6030,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-k06-5",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-tas&accent=card-inci&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0022-V004",
+          "key": "inspiration-fabric-v118-12-veronza-1031-black-oak",
+          "cardKey": "inspiration-fabric-v118-12-veronza-1031-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1031 · Siyah ahşap",
+          "body": "veronza-1031",
+          "accent": "veronza-1008",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001031",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Haki / kahve melanj · 1031",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1031",
+            "accent": "veronza-1008",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": "return",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": "return"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-12-veronza-1031-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1031&accent=veronza-1008&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0022-V002"
@@ -5644,6 +6363,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-black-b08",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bordo&accent=card-bej&base=black-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0023-V004",
+          "key": "inspiration-fabric-v118-21-veronza-1030-black-oak",
+          "cardKey": "inspiration-fabric-v118-21-veronza-1030-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1030 · Siyah ahşap",
+          "body": "veronza-1030",
+          "accent": "soft-touch-1200",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001030",
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Zeytin melanj · 1030",
+            "accent": "Kum / bej · 1200",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1030",
+            "accent": "soft-touch-1200",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-21-veronza-1030-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1030&accent=soft-touch-1200&base=black-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0023-V003"
@@ -5881,6 +6652,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c12-inci-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-inci&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0024-V003",
+          "key": "inspiration-fabric-v118-43-soft-touch-1355-oak",
+          "cardKey": "inspiration-fabric-v118-43-soft-touch-1355-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1355 · Naturel meşe",
+          "body": "soft-touch-1355",
+          "accent": "soft-touch-1246",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001355",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Gri yeşil · 1355",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1355",
+            "accent": "soft-touch-1246",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-43-soft-touch-1355-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1355&accent=soft-touch-1246&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0024-V002"
@@ -6311,6 +7134,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s09-bordo-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bordo&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0026-V003",
+          "key": "inspiration-fabric-v118-39-veronza-1041-black-oak",
+          "cardKey": "inspiration-fabric-v118-39-veronza-1041-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1041 · Siyah ahşap",
+          "body": "veronza-1041",
+          "accent": "veronza-1008",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001041",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Tütün / kahve melanj · 1041",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1041",
+            "accent": "veronza-1008",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 3
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-39-veronza-1041-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1041&accent=veronza-1008&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0026-V001"
@@ -6526,6 +7401,68 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-v2-square-corner-compact-zeytin-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D&modules=%5B%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22corner-right%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0&cornerTables=%5B%7B%22moduleId%22%3A%22module-2%22%2C%22type%22%3A%22square%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0027-V003",
+          "key": "inspiration-fabric-v118-47-veronza-1030-dark-oak",
+          "cardKey": "inspiration-fabric-v118-47-veronza-1030-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1030 · Koyu meşe",
+          "body": "veronza-1030",
+          "accent": "soft-touch-1351",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001030",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Zeytin melanj · 1030",
+            "accent": "Mavi gri · 1351",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1030",
+            "accent": "soft-touch-1351",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-right",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": [],
+            "modules": [
+              {
+                "id": "module-1",
+                "type": "seat"
+              },
+              {
+                "id": "module-2",
+                "type": "corner-right"
+              },
+              {
+                "id": "module-3",
+                "type": "seat"
+              }
+            ],
+            "moduleRotation": 0,
+            "cornerTables": [
+              {
+                "moduleId": "module-2",
+                "type": "square"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-47-veronza-1030-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1030&accent=soft-touch-1351&base=dark-oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D&modules=%5B%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22corner-right%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0&cornerTables=%5B%7B%22moduleId%22%3A%22module-2%22%2C%22type%22%3A%22square%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0027-V002"
@@ -6978,6 +7915,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c07-tutun-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-tutun&accent=card-krem&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0029-V003",
+          "key": "inspiration-fabric-v118-34-veronza-1030-oak",
+          "cardKey": "inspiration-fabric-v118-34-veronza-1030-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1030 · Naturel meşe",
+          "body": "veronza-1030",
+          "accent": "veronza-1035",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001030",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Zeytin melanj · 1030",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1030",
+            "accent": "veronza-1035",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "square",
+            "terminal": "none",
+            "tableDesign": "square-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "square",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-34-veronza-1030-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1030&accent=veronza-1035&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0029-V002"
@@ -7678,6 +8667,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-black-b05",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sedef&accent=card-arduvaz&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0032-V004",
+          "key": "inspiration-fabric-v118-24-soft-touch-1200-black-oak",
+          "cardKey": "inspiration-fabric-v118-24-soft-touch-1200-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1200 · Siyah ahşap",
+          "body": "soft-touch-1200",
+          "accent": "veronza-1035",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001200",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Kum / bej · 1200",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1200",
+            "accent": "veronza-1035",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": "return",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": "return"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-24-soft-touch-1200-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1200&accent=veronza-1035&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=return&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0032-V003"
@@ -8119,6 +9155,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c09-bal-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bal&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0034-V003",
+          "key": "inspiration-fabric-v118-37-soft-touch-1200-oak",
+          "cardKey": "inspiration-fabric-v118-37-soft-touch-1200-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1200 · Naturel meşe",
+          "body": "soft-touch-1200",
+          "accent": "soft-touch-1351",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001200",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Kum / bej · 1200",
+            "accent": "Mavi gri · 1351",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1200",
+            "accent": "soft-touch-1351",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-37-soft-touch-1200-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1200&accent=soft-touch-1351&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0034-V002"
@@ -8638,6 +9721,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-s02-8",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sis&accent=card-denim&base=oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0036-V006",
+          "key": "inspiration-fabric-v118-06-colormax-1017-black-oak",
+          "cardKey": "inspiration-fabric-v118-06-colormax-1017-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1017 · Siyah ahşap",
+          "body": "colormax-1017",
+          "accent": "colormax-1015",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "colormax",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "262962001017",
+          "accentArtCode": "262962001015",
+          "materials": {
+            "fabric": "Colormax Plain-1",
+            "body": "Sarı / ekru melanj · 1017",
+            "accent": "Ekru melanj · 1015",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "colormax-1017",
+            "accent": "colormax-1015",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight3",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-06-colormax-1017-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1017&accent=colormax-1015&base=black-oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0036-V005"
@@ -8842,6 +9966,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s13-kum-gri-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kum-gri&accent=card-orman&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22left-end%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0037-V003",
+          "key": "inspiration-fabric-v118-45-colormax-1017-black-oak",
+          "cardKey": "inspiration-fabric-v118-45-colormax-1017-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1017 · Siyah ahşap",
+          "body": "colormax-1017",
+          "accent": "veronza-1008",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "262962001017",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Veronza Plain-1",
+            "body": "Sarı / ekru melanj · 1017",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "colormax-1017",
+            "accent": "veronza-1008",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": "left-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": "left-end"
+              },
+              {
+                "id": "wood-2",
+                "type": "rectangle",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-45-colormax-1017-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1017&accent=veronza-1008&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22left-end%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0037-V002"
@@ -9068,6 +10244,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-c07-27",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-siyah&accent=card-tas&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0038-V004",
+          "key": "inspiration-fabric-v118-11-soft-touch-1200-dark-oak",
+          "cardKey": "inspiration-fabric-v118-11-soft-touch-1200-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1200 · Koyu meşe",
+          "body": "soft-touch-1200",
+          "accent": "soft-touch-1355",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001200",
+          "accentArtCode": "457623001355",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Kum / bej · 1200",
+            "accent": "Gri yeşil · 1355",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "soft-touch-1200",
+            "accent": "soft-touch-1355",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": "right-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-11-soft-touch-1200-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1200&accent=soft-touch-1355&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0038-V003"
@@ -9564,6 +10787,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k10-inci-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-inci&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0040-V003",
+          "key": "inspiration-fabric-v118-38-veronza-1031-dark-oak",
+          "cardKey": "inspiration-fabric-v118-38-veronza-1031-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1031 · Koyu meşe",
+          "body": "veronza-1031",
+          "accent": "soft-touch-1355",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001031",
+          "accentArtCode": "457623001355",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Haki / kahve melanj · 1031",
+            "accent": "Gri yeşil · 1355",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1031",
+            "accent": "soft-touch-1355",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": "return"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-38-veronza-1031-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1031&accent=soft-touch-1355&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0040-V001"
@@ -10005,6 +11280,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c04-krem-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-krem&accent=card-tas&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0042-V003",
+          "key": "inspiration-fabric-v118-31-veronza-1012-oak",
+          "cardKey": "inspiration-fabric-v118-31-veronza-1012-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1012 · Naturel meşe",
+          "body": "veronza-1012",
+          "accent": "veronza-1035",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001012",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Bakır / kiremit melanj · 1012",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1012",
+            "accent": "veronza-1035",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-31-veronza-1012-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1012&accent=veronza-1035&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0042-V001"
@@ -10479,6 +11801,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-d03-kiremit-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kiremit&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0044-V003",
+          "key": "inspiration-fabric-v118-25-veronza-1031-oak",
+          "cardKey": "inspiration-fabric-v118-25-veronza-1031-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1031 · Naturel meşe",
+          "body": "veronza-1031",
+          "accent": "soft-touch-1246",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001031",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Haki / kahve melanj · 1031",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1031",
+            "accent": "soft-touch-1246",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-25-veronza-1031-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1031&accent=soft-touch-1246&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0044-V002"
@@ -10964,6 +12333,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-s08-28",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kirmizi&accent=card-krem&base=oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0046-V004",
+          "key": "inspiration-fabric-v118-22-soft-touch-1024-oak",
+          "cardKey": "inspiration-fabric-v118-22-soft-touch-1024-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1024 · Naturel meşe",
+          "body": "soft-touch-1024",
+          "accent": "veronza-1008",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001024",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Haki / zeytin · 1024",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1024",
+            "accent": "veronza-1008",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight3",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-22-soft-touch-1024-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1024&accent=veronza-1008&base=oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0046-V001"
@@ -11201,6 +12617,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-c08-28",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kirmizi&accent=card-krem&base=oak&finish=velvet&scene=warm&layout=chaise-right&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22left-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0047-V004",
+          "key": "inspiration-fabric-v118-19-colormax-1017-oak",
+          "cardKey": "inspiration-fabric-v118-19-colormax-1017-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1017 · Naturel meşe",
+          "body": "colormax-1017",
+          "accent": "veronza-1035",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "262962001017",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Veronza Plain-1",
+            "body": "Sarı / ekru melanj · 1017",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "colormax-1017",
+            "accent": "veronza-1035",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-right",
+            "extra": 1,
+            "back": "closed",
+            "table": "square",
+            "terminal": "none",
+            "tableDesign": "square-shelf",
+            "tableVariant": "standard",
+            "tablePosition": "left-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "square",
+                "position": "left-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-19-colormax-1017-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1017&accent=veronza-1035&base=oak&finish=velvet&scene=warm&layout=chaise-right&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22left-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0047-V002"
@@ -11906,6 +13369,80 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-v2-square-corner-asymmetric-zeytin-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D&modules=%5B%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-4%22%2C%22type%22%3A%22corner-right%22%7D%2C%7B%22id%22%3A%22module-5%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-6%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0&cornerTables=%5B%7B%22moduleId%22%3A%22module-4%22%2C%22type%22%3A%22square%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0050-V003",
+          "key": "inspiration-fabric-v118-50-veronza-1041-dark-oak",
+          "cardKey": "inspiration-fabric-v118-50-veronza-1041-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1041 · Koyu meşe",
+          "body": "veronza-1041",
+          "accent": "soft-touch-1351",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001041",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Tütün / kahve melanj · 1041",
+            "accent": "Mavi gri · 1351",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1041",
+            "accent": "soft-touch-1351",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-right",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": [],
+            "modules": [
+              {
+                "id": "module-1",
+                "type": "seat"
+              },
+              {
+                "id": "module-2",
+                "type": "seat"
+              },
+              {
+                "id": "module-3",
+                "type": "seat"
+              },
+              {
+                "id": "module-4",
+                "type": "corner-right"
+              },
+              {
+                "id": "module-5",
+                "type": "seat"
+              },
+              {
+                "id": "module-6",
+                "type": "seat"
+              }
+            ],
+            "moduleRotation": 0,
+            "cornerTables": [
+              {
+                "moduleId": "module-4",
+                "type": "square"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-50-veronza-1041-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1041&accent=soft-touch-1351&base=dark-oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D&modules=%5B%7B%22id%22%3A%22module-1%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-2%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-3%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-4%22%2C%22type%22%3A%22corner-right%22%7D%2C%7B%22id%22%3A%22module-5%22%2C%22type%22%3A%22seat%22%7D%2C%7B%22id%22%3A%22module-6%22%2C%22type%22%3A%22seat%22%7D%5D&moduleRotation=0&cornerTables=%5B%7B%22moduleId%22%3A%22module-4%22%2C%22type%22%3A%22square%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0050-V001"
@@ -12181,6 +13718,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-zeytin-double-angle",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=straight2&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0051-V004",
+          "key": "inspiration-fabric-v118-01-soft-touch-1351-oak",
+          "cardKey": "inspiration-fabric-v118-01-soft-touch-1351-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1351 · Naturel meşe",
+          "body": "soft-touch-1351",
+          "accent": "soft-touch-1246",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001351",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Mavi gri · 1351",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1351",
+            "accent": "soft-touch-1246",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-01-soft-touch-1351-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1351&accent=soft-touch-1246&base=oak&finish=velvet&scene=warm&layout=straight2&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0051-V003"
@@ -12440,6 +14029,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-k08-26",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bordo&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=corner-right&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22left-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0052-V004",
+          "key": "inspiration-fabric-v118-20-soft-touch-1246-dark-oak",
+          "cardKey": "inspiration-fabric-v118-20-soft-touch-1246-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1246 · Koyu meşe",
+          "body": "soft-touch-1246",
+          "accent": "veronza-1035",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001246",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Taş / açık gri · 1246",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "soft-touch-1246",
+            "accent": "veronza-1035",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-right",
+            "extra": 1,
+            "back": "closed",
+            "table": "square",
+            "terminal": "none",
+            "tableDesign": "square-shelf",
+            "tableVariant": "standard",
+            "tablePosition": "left-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "square",
+                "position": "left-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-20-soft-touch-1246-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1246&accent=veronza-1035&base=dark-oak&finish=velvet&scene=warm&layout=corner-right&extra=1&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=left-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22left-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0052-V003"
@@ -13581,6 +15217,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-s05-4",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sedef&accent=card-arduvaz&base=oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0057-V004",
+          "key": "inspiration-fabric-v118-14-soft-touch-1351-dark-oak",
+          "cardKey": "inspiration-fabric-v118-14-soft-touch-1351-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1351 · Koyu meşe",
+          "body": "soft-touch-1351",
+          "accent": "veronza-1008",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001351",
+          "accentArtCode": "263267001008",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Mavi gri · 1351",
+            "accent": "Ekru melanj · 1008",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "soft-touch-1351",
+            "accent": "veronza-1008",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 0,
+            "back": "closed",
+            "table": "square",
+            "terminal": "none",
+            "tableDesign": "square-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "square",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-14-soft-touch-1351-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1351&accent=veronza-1008&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0057-V002"
@@ -13807,6 +15490,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-c04-4",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sedef&accent=card-arduvaz&base=oak&finish=velvet&scene=warm&layout=chaise-right&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0058-V004",
+          "key": "inspiration-fabric-v118-07-soft-touch-1246-oak",
+          "cardKey": "inspiration-fabric-v118-07-soft-touch-1246-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1246 · Naturel meşe",
+          "body": "soft-touch-1246",
+          "accent": "soft-touch-1351",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001246",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Taş / açık gri · 1246",
+            "accent": "Mavi gri · 1351",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1246",
+            "accent": "soft-touch-1351",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-right",
+            "extra": 0,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-07-soft-touch-1246-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1246&accent=soft-touch-1351&base=oak&finish=velvet&scene=warm&layout=chaise-right&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0058-V003"
@@ -14248,6 +15978,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s06-sis-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sis&accent=card-denim&base=oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0060-V003",
+          "key": "inspiration-fabric-v118-33-soft-touch-1246-black-oak",
+          "cardKey": "inspiration-fabric-v118-33-soft-touch-1246-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1246 · Siyah ahşap",
+          "body": "soft-touch-1246",
+          "accent": "soft-touch-1024",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001246",
+          "accentArtCode": "457623001024",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Taş / açık gri · 1246",
+            "accent": "Haki / zeytin · 1024",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1246",
+            "accent": "soft-touch-1024",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-33-soft-touch-1246-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1246&accent=soft-touch-1024&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0060-V002"
@@ -14534,6 +16311,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-black-b04",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kiremit&accent=card-bej&base=black-oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0061-V004",
+          "key": "inspiration-fabric-v118-23-veronza-1035-dark-oak",
+          "cardKey": "inspiration-fabric-v118-23-veronza-1035-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1035 · Koyu meşe",
+          "body": "veronza-1035",
+          "accent": "soft-touch-1200",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001035",
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Soft Touch Plain-1",
+            "body": "Koyu kahve · 1035",
+            "accent": "Kum / bej · 1200",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1035",
+            "accent": "soft-touch-1200",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-23-veronza-1035-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1035&accent=soft-touch-1200&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0061-V003"
@@ -14782,6 +16611,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-s11-lacivert-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-lacivert&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A3%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0062-V003",
+          "key": "inspiration-fabric-v118-42-colormax-1015-black-oak",
+          "cardKey": "inspiration-fabric-v118-42-colormax-1015-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1015 · Siyah ahşap",
+          "body": "colormax-1015",
+          "accent": "soft-touch-1355",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "262962001015",
+          "accentArtCode": "457623001355",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Soft Touch Plain-1",
+            "body": "Ekru melanj · 1015",
+            "accent": "Gri yeşil · 1355",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "colormax-1015",
+            "accent": "soft-touch-1355",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "rectangle",
+                "position": 3
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-42-colormax-1015-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1015&accent=soft-touch-1355&base=black-oak&finish=velvet&scene=warm&layout=straight2&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A3%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0062-V002"
@@ -15453,6 +17334,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-d01-6",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-denim&accent=card-lacivert&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0065-V005",
+          "key": "inspiration-fabric-v118-04-soft-touch-1355-oak",
+          "cardKey": "inspiration-fabric-v118-04-soft-touch-1355-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1355 · Naturel meşe",
+          "body": "soft-touch-1355",
+          "accent": "soft-touch-1200",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001355",
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Gri yeşil · 1355",
+            "accent": "Kum / bej · 1200",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1355",
+            "accent": "soft-touch-1200",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-04-soft-touch-1355-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1355&accent=soft-touch-1200&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0065-V002"
@@ -15668,6 +17590,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-d03-22",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-orman&accent=card-inci&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0066-V004",
+          "key": "inspiration-fabric-v118-13-veronza-1041-oak",
+          "cardKey": "inspiration-fabric-v118-13-veronza-1041-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1041 · Naturel meşe",
+          "body": "veronza-1041",
+          "accent": "veronza-1035",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "veronza",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "263267001041",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Veronza Plain-1",
+            "body": "Tütün / kahve melanj · 1041",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1041",
+            "accent": "veronza-1035",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 2,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-13-veronza-1041-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1041&accent=veronza-1035&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0066-V001"
@@ -15905,6 +17868,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k09-kehribar-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kehribar&accent=card-cikolata&base=oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0067-V003",
+          "key": "inspiration-fabric-v118-35-soft-touch-1024-dark-oak",
+          "cardKey": "inspiration-fabric-v118-35-soft-touch-1024-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1024 · Koyu meşe",
+          "body": "soft-touch-1024",
+          "accent": "colormax-1015",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "457623001024",
+          "accentArtCode": "262962001015",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Colormax Plain-1",
+            "body": "Haki / zeytin · 1024",
+            "accent": "Ekru melanj · 1015",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "soft-touch-1024",
+            "accent": "colormax-1015",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "square",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-35-soft-touch-1024-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1024&accent=colormax-1015&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0067-V001"
@@ -16120,6 +18135,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c11-lacivert-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-lacivert&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=3&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0068-V003",
+          "key": "inspiration-fabric-v118-40-soft-touch-1351-oak",
+          "cardKey": "inspiration-fabric-v118-40-soft-touch-1351-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1351 · Naturel meşe",
+          "body": "soft-touch-1351",
+          "accent": "soft-touch-1200",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001351",
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Mavi gri · 1351",
+            "accent": "Kum / bej · 1200",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1351",
+            "accent": "soft-touch-1200",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 3,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 3
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-40-soft-touch-1351-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1351&accent=soft-touch-1200&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=3&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0068-V001"
@@ -16616,6 +18678,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-k05-4",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-sedef&accent=card-arduvaz&base=oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0070-V004",
+          "key": "inspiration-fabric-v118-16-colormax-1015-oak",
+          "cardKey": "inspiration-fabric-v118-16-colormax-1015-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1015 · Naturel meşe",
+          "body": "colormax-1015",
+          "accent": "soft-touch-1351",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "262962001015",
+          "accentArtCode": "457623001351",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Soft Touch Plain-1",
+            "body": "Ekru melanj · 1015",
+            "accent": "Mavi gri · 1351",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "colormax-1015",
+            "accent": "soft-touch-1351",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-right",
+            "extra": 0,
+            "back": "closed",
+            "table": "square",
+            "terminal": "none",
+            "tableDesign": "square-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "square",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-16-colormax-1015-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1015&accent=soft-touch-1351&base=oak&finish=velvet&scene=warm&layout=corner-right&extra=0&table=square&terminal=none&tableDesign=square-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22square%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0070-V001"
@@ -16864,6 +18973,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k12-zeytin-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0071-V003",
+          "key": "inspiration-fabric-v118-41-veronza-1008-dark-oak",
+          "cardKey": "inspiration-fabric-v118-41-veronza-1008-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1008 · Koyu meşe",
+          "body": "veronza-1008",
+          "accent": "colormax-1017",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "263267001008",
+          "accentArtCode": "262962001017",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Colormax Plain-1",
+            "body": "Ekru melanj · 1008",
+            "accent": "Sarı / ekru melanj · 1017",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1008",
+            "accent": "colormax-1017",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-41-veronza-1008-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1008&accent=colormax-1017&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0071-V001"
@@ -17079,6 +19240,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c03-zeytin-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0072-V003",
+          "key": "inspiration-fabric-v118-27-soft-touch-1351-black-oak",
+          "cardKey": "inspiration-fabric-v118-27-soft-touch-1351-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1351 · Siyah ahşap",
+          "body": "soft-touch-1351",
+          "accent": "veronza-1035",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001351",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Mavi gri · 1351",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1351",
+            "accent": "veronza-1035",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "square",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-27-soft-touch-1351-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1351&accent=veronza-1035&base=black-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22square%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0072-V001"
@@ -17357,6 +19570,47 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-k01-7",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-lacivert&accent=card-bej&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
+        },
+        {
+          "sku": "SOM-Y0073-V006",
+          "key": "inspiration-fabric-v118-03-colormax-1015-black-oak",
+          "cardKey": "inspiration-fabric-v118-03-colormax-1015-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1015 · Siyah ahşap",
+          "body": "colormax-1015",
+          "accent": "colormax-1017",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "colormax",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "262962001015",
+          "accentArtCode": "262962001017",
+          "materials": {
+            "fabric": "Colormax Plain-1",
+            "body": "Ekru melanj · 1015",
+            "accent": "Sarı / ekru melanj · 1017",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "colormax-1015",
+            "accent": "colormax-1017",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "none",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 0,
+            "tableDirection": "front",
+            "tables": []
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-03-colormax-1015-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1015&accent=colormax-1017&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=none&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=0&tableDirection=front&tables=%5B%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0073-V003"
@@ -17594,6 +19848,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-d06-lacivert-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-lacivert&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0074-V003",
+          "key": "inspiration-fabric-v118-29-colormax-1015-dark-oak",
+          "cardKey": "inspiration-fabric-v118-29-colormax-1015-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1015 · Koyu meşe",
+          "body": "colormax-1015",
+          "accent": "veronza-1035",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "262962001015",
+          "accentArtCode": "263267001035",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Veronza Plain-1",
+            "body": "Ekru melanj · 1015",
+            "accent": "Koyu kahve · 1035",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "colormax-1015",
+            "accent": "veronza-1035",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 3
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-29-colormax-1015-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1015&accent=veronza-1035&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0074-V001"
@@ -18735,6 +21041,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c14-zeytin-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-zeytin&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0079-V003",
+          "key": "inspiration-fabric-v118-46-soft-touch-1246-oak",
+          "cardKey": "inspiration-fabric-v118-46-soft-touch-1246-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1246 · Naturel meşe",
+          "body": "soft-touch-1246",
+          "accent": "veronza-1012",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "457623001246",
+          "accentArtCode": "263267001012",
+          "materials": {
+            "fabric": "Soft Touch Plain-1 / Veronza Plain-1",
+            "body": "Taş / açık gri · 1246",
+            "accent": "Bakır / kiremit melanj · 1012",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1246",
+            "accent": "veronza-1012",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "rectangle",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-46-soft-touch-1246-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1246&accent=veronza-1012&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0079-V002"
@@ -18928,6 +21286,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-c16-tas-dark-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-tas&accent=card-inci&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22right-end%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0080-V003",
+          "key": "inspiration-fabric-v118-49-veronza-1035-oak",
+          "cardKey": "inspiration-fabric-v118-49-veronza-1035-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Veronza 1035 · Naturel meşe",
+          "body": "veronza-1035",
+          "accent": "colormax-1017",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "263267001035",
+          "accentArtCode": "262962001017",
+          "materials": {
+            "fabric": "Veronza Plain-1 / Colormax Plain-1",
+            "body": "Koyu kahve · 1035",
+            "accent": "Sarı / ekru melanj · 1017",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1035",
+            "accent": "colormax-1017",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": "right-end",
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": "right-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-49-veronza-1035-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1035&accent=colormax-1017&base=oak&finish=velvet&scene=warm&layout=chaise-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=right-end&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22right-end%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0080-V001"
@@ -19659,6 +22064,58 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-angled-v72-k07-bal-oak",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bal&accent=card-bej&base=oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0083-V003",
+          "key": "inspiration-fabric-v118-32-colormax-1017-dark-oak",
+          "cardKey": "inspiration-fabric-v118-32-colormax-1017-dark-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Colormax 1017 · Koyu meşe",
+          "body": "colormax-1017",
+          "accent": "soft-touch-1246",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "262962001017",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Colormax Plain-1 / Soft Touch Plain-1",
+            "body": "Sarı / ekru melanj · 1017",
+            "accent": "Taş / açık gri · 1246",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "colormax-1017",
+            "accent": "soft-touch-1246",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 2
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": "return"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-32-colormax-1017-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1017&accent=soft-touch-1246&base=dark-oak&finish=velvet&scene=warm&layout=corner-left&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0083-V001"
@@ -19885,6 +22342,53 @@
           },
           "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-d04-3",
           "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-kum-gri&accent=card-orman&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%5D"
+        },
+        {
+          "sku": "SOM-Y0084-V004",
+          "key": "inspiration-fabric-v118-09-soft-touch-1024-black-oak",
+          "cardKey": "inspiration-fabric-v118-09-soft-touch-1024-black-oak",
+          "productFamily": "SOFF",
+          "label": "SOFF · Soft Touch 1024 · Siyah ahşap",
+          "body": "soft-touch-1024",
+          "accent": "soft-touch-1200",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "soft-touch",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "457623001024",
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Soft Touch Plain-1",
+            "body": "Haki / zeytin · 1024",
+            "accent": "Kum / bej · 1200",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "soft-touch-1024",
+            "accent": "soft-touch-1200",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 0,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-fabric-v118-09-soft-touch-1024-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1024&accent=soft-touch-1200&base=black-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=0&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%5D"
         }
       ],
       "defaultVariantSku": "SOM-Y0084-V002"
@@ -20104,7 +22608,57 @@
     "inspiration-v2-square-corner-asymmetric-bej-black-oak": "SOM-Y0050",
     "inspiration-v2-square-corner-asymmetric-zeytin-oak": "SOM-Y0050",
     "inspiration-v2-six-seat-five-angle-zeytin-oak": "SOM-Y0018",
-    "inspiration-v2-six-seat-five-angle-denim-dark-oak": "SOM-Y0018"
+    "inspiration-v2-six-seat-five-angle-denim-dark-oak": "SOM-Y0018",
+    "inspiration-fabric-v118-01-soft-touch-1351-oak": "SOM-Y0051",
+    "inspiration-fabric-v118-02-veronza-1008-dark-oak": "SOM-Y0020",
+    "inspiration-fabric-v118-03-colormax-1015-black-oak": "SOM-Y0073",
+    "inspiration-fabric-v118-04-soft-touch-1355-oak": "SOM-Y0065",
+    "inspiration-fabric-v118-05-veronza-1012-dark-oak": "SOM-Y0021",
+    "inspiration-fabric-v118-06-colormax-1017-black-oak": "SOM-Y0036",
+    "inspiration-fabric-v118-07-soft-touch-1246-oak": "SOM-Y0058",
+    "inspiration-fabric-v118-08-veronza-1030-dark-oak": "SOM-Y0013",
+    "inspiration-fabric-v118-09-soft-touch-1024-black-oak": "SOM-Y0084",
+    "inspiration-fabric-v118-10-veronza-1035-oak": "SOM-Y0008",
+    "inspiration-fabric-v118-11-soft-touch-1200-dark-oak": "SOM-Y0038",
+    "inspiration-fabric-v118-12-veronza-1031-black-oak": "SOM-Y0022",
+    "inspiration-fabric-v118-13-veronza-1041-oak": "SOM-Y0066",
+    "inspiration-fabric-v118-14-soft-touch-1351-dark-oak": "SOM-Y0057",
+    "inspiration-fabric-v118-15-veronza-1008-black-oak": "SOM-Y0001",
+    "inspiration-fabric-v118-16-colormax-1015-oak": "SOM-Y0070",
+    "inspiration-fabric-v118-17-soft-touch-1355-dark-oak": "SOM-Y0014",
+    "inspiration-fabric-v118-18-veronza-1012-black-oak": "SOM-Y0015",
+    "inspiration-fabric-v118-19-colormax-1017-oak": "SOM-Y0047",
+    "inspiration-fabric-v118-20-soft-touch-1246-dark-oak": "SOM-Y0052",
+    "inspiration-fabric-v118-21-veronza-1030-black-oak": "SOM-Y0023",
+    "inspiration-fabric-v118-22-soft-touch-1024-oak": "SOM-Y0046",
+    "inspiration-fabric-v118-23-veronza-1035-dark-oak": "SOM-Y0061",
+    "inspiration-fabric-v118-24-soft-touch-1200-black-oak": "SOM-Y0032",
+    "inspiration-fabric-v118-25-veronza-1031-oak": "SOM-Y0044",
+    "inspiration-fabric-v118-26-veronza-1041-dark-oak": "SOM-Y0011",
+    "inspiration-fabric-v118-27-soft-touch-1351-black-oak": "SOM-Y0072",
+    "inspiration-fabric-v118-28-veronza-1008-oak": "SOM-Y0004",
+    "inspiration-fabric-v118-29-colormax-1015-dark-oak": "SOM-Y0074",
+    "inspiration-fabric-v118-30-soft-touch-1355-black-oak": "SOM-Y0012",
+    "inspiration-fabric-v118-31-veronza-1012-oak": "SOM-Y0042",
+    "inspiration-fabric-v118-32-colormax-1017-dark-oak": "SOM-Y0083",
+    "inspiration-fabric-v118-33-soft-touch-1246-black-oak": "SOM-Y0060",
+    "inspiration-fabric-v118-34-veronza-1030-oak": "SOM-Y0029",
+    "inspiration-fabric-v118-35-soft-touch-1024-dark-oak": "SOM-Y0067",
+    "inspiration-fabric-v118-36-veronza-1035-black-oak": "SOM-Y0010",
+    "inspiration-fabric-v118-37-soft-touch-1200-oak": "SOM-Y0034",
+    "inspiration-fabric-v118-38-veronza-1031-dark-oak": "SOM-Y0040",
+    "inspiration-fabric-v118-39-veronza-1041-black-oak": "SOM-Y0026",
+    "inspiration-fabric-v118-40-soft-touch-1351-oak": "SOM-Y0068",
+    "inspiration-fabric-v118-41-veronza-1008-dark-oak": "SOM-Y0071",
+    "inspiration-fabric-v118-42-colormax-1015-black-oak": "SOM-Y0062",
+    "inspiration-fabric-v118-43-soft-touch-1355-oak": "SOM-Y0024",
+    "inspiration-fabric-v118-44-veronza-1012-dark-oak": "SOM-Y0016",
+    "inspiration-fabric-v118-45-colormax-1017-black-oak": "SOM-Y0037",
+    "inspiration-fabric-v118-46-soft-touch-1246-oak": "SOM-Y0079",
+    "inspiration-fabric-v118-47-veronza-1030-dark-oak": "SOM-Y0027",
+    "inspiration-fabric-v118-48-soft-touch-1024-black-oak": "SOM-Y0018",
+    "inspiration-fabric-v118-49-veronza-1035-oak": "SOM-Y0080",
+    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050"
   },
   "cardToVariantSku": {
     "inspiration-zeytin-double-angle": "SOM-Y0051-V003",
@@ -20320,6 +22874,56 @@
     "inspiration-v2-square-corner-asymmetric-bej-black-oak": "SOM-Y0050-V001",
     "inspiration-v2-square-corner-asymmetric-zeytin-oak": "SOM-Y0050-V002",
     "inspiration-v2-six-seat-five-angle-zeytin-oak": "SOM-Y0018-V002",
-    "inspiration-v2-six-seat-five-angle-denim-dark-oak": "SOM-Y0018-V001"
+    "inspiration-v2-six-seat-five-angle-denim-dark-oak": "SOM-Y0018-V001",
+    "inspiration-fabric-v118-01-soft-touch-1351-oak": "SOM-Y0051-V004",
+    "inspiration-fabric-v118-02-veronza-1008-dark-oak": "SOM-Y0020-V005",
+    "inspiration-fabric-v118-03-colormax-1015-black-oak": "SOM-Y0073-V006",
+    "inspiration-fabric-v118-04-soft-touch-1355-oak": "SOM-Y0065-V005",
+    "inspiration-fabric-v118-05-veronza-1012-dark-oak": "SOM-Y0021-V002",
+    "inspiration-fabric-v118-06-colormax-1017-black-oak": "SOM-Y0036-V006",
+    "inspiration-fabric-v118-07-soft-touch-1246-oak": "SOM-Y0058-V004",
+    "inspiration-fabric-v118-08-veronza-1030-dark-oak": "SOM-Y0013-V004",
+    "inspiration-fabric-v118-09-soft-touch-1024-black-oak": "SOM-Y0084-V004",
+    "inspiration-fabric-v118-10-veronza-1035-oak": "SOM-Y0008-V004",
+    "inspiration-fabric-v118-11-soft-touch-1200-dark-oak": "SOM-Y0038-V004",
+    "inspiration-fabric-v118-12-veronza-1031-black-oak": "SOM-Y0022-V004",
+    "inspiration-fabric-v118-13-veronza-1041-oak": "SOM-Y0066-V004",
+    "inspiration-fabric-v118-14-soft-touch-1351-dark-oak": "SOM-Y0057-V004",
+    "inspiration-fabric-v118-15-veronza-1008-black-oak": "SOM-Y0001-V004",
+    "inspiration-fabric-v118-16-colormax-1015-oak": "SOM-Y0070-V004",
+    "inspiration-fabric-v118-17-soft-touch-1355-dark-oak": "SOM-Y0014-V004",
+    "inspiration-fabric-v118-18-veronza-1012-black-oak": "SOM-Y0015-V004",
+    "inspiration-fabric-v118-19-colormax-1017-oak": "SOM-Y0047-V004",
+    "inspiration-fabric-v118-20-soft-touch-1246-dark-oak": "SOM-Y0052-V004",
+    "inspiration-fabric-v118-21-veronza-1030-black-oak": "SOM-Y0023-V004",
+    "inspiration-fabric-v118-22-soft-touch-1024-oak": "SOM-Y0046-V004",
+    "inspiration-fabric-v118-23-veronza-1035-dark-oak": "SOM-Y0061-V004",
+    "inspiration-fabric-v118-24-soft-touch-1200-black-oak": "SOM-Y0032-V004",
+    "inspiration-fabric-v118-25-veronza-1031-oak": "SOM-Y0044-V003",
+    "inspiration-fabric-v118-26-veronza-1041-dark-oak": "SOM-Y0011-V004",
+    "inspiration-fabric-v118-27-soft-touch-1351-black-oak": "SOM-Y0072-V003",
+    "inspiration-fabric-v118-28-veronza-1008-oak": "SOM-Y0004-V003",
+    "inspiration-fabric-v118-29-colormax-1015-dark-oak": "SOM-Y0074-V003",
+    "inspiration-fabric-v118-30-soft-touch-1355-black-oak": "SOM-Y0012-V003",
+    "inspiration-fabric-v118-31-veronza-1012-oak": "SOM-Y0042-V003",
+    "inspiration-fabric-v118-32-colormax-1017-dark-oak": "SOM-Y0083-V003",
+    "inspiration-fabric-v118-33-soft-touch-1246-black-oak": "SOM-Y0060-V003",
+    "inspiration-fabric-v118-34-veronza-1030-oak": "SOM-Y0029-V003",
+    "inspiration-fabric-v118-35-soft-touch-1024-dark-oak": "SOM-Y0067-V003",
+    "inspiration-fabric-v118-36-veronza-1035-black-oak": "SOM-Y0010-V003",
+    "inspiration-fabric-v118-37-soft-touch-1200-oak": "SOM-Y0034-V003",
+    "inspiration-fabric-v118-38-veronza-1031-dark-oak": "SOM-Y0040-V003",
+    "inspiration-fabric-v118-39-veronza-1041-black-oak": "SOM-Y0026-V003",
+    "inspiration-fabric-v118-40-soft-touch-1351-oak": "SOM-Y0068-V003",
+    "inspiration-fabric-v118-41-veronza-1008-dark-oak": "SOM-Y0071-V003",
+    "inspiration-fabric-v118-42-colormax-1015-black-oak": "SOM-Y0062-V003",
+    "inspiration-fabric-v118-43-soft-touch-1355-oak": "SOM-Y0024-V003",
+    "inspiration-fabric-v118-44-veronza-1012-dark-oak": "SOM-Y0016-V003",
+    "inspiration-fabric-v118-45-colormax-1017-black-oak": "SOM-Y0037-V003",
+    "inspiration-fabric-v118-46-soft-touch-1246-oak": "SOM-Y0079-V003",
+    "inspiration-fabric-v118-47-veronza-1030-dark-oak": "SOM-Y0027-V003",
+    "inspiration-fabric-v118-48-soft-touch-1024-black-oak": "SOM-Y0018-V003",
+    "inspiration-fabric-v118-49-veronza-1035-oak": "SOM-Y0080-V003",
+    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050-V003"
   }
 }

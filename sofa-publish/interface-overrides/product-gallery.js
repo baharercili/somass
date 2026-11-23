@@ -1,6 +1,6 @@
 import {applyProductSEO} from './product-seo.js?v=20261123-soff-v108';
-import {mountProductTeamPack} from './team-pack.js?v=20261123-square-corner-v2';
-const MANIFEST='./assets/product-galleries/catalogue-v77.json?v=20261123-v2-final-v102';
+import {mountProductTeamPack} from './team-pack.js?v=20261124-new-fabrics-v118';
+const MANIFEST='./assets/product-galleries/catalogue-v77.json?v=20261124-new-fabrics-v118';
 const text=value=>typeof value==='string'?value:typeof value?.label==='string'?value.label:'';
 
 /** Only local image assets and the measured editor destination may be opened. */

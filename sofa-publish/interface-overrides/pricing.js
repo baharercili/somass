@@ -1,4 +1,4 @@
-export const SKU_CATALOGUE_URL='./assets/pricing/catalogue-skus.json?v=20261123-sku-v108';
+export const SKU_CATALOGUE_URL='./assets/pricing/catalogue-skus.json?v=20261124-new-fabrics-v118';
 export const PRICE_STORAGE_KEY='studio-sofa-module-prices-v108';
 const money=new Intl.NumberFormat('tr-TR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const normalise=value=>String(value??'').toLocaleLowerCase('tr-TR').replace(/ı/g,'i').normalize('NFD').replace(/[\u0300-\u036f]/g,'');

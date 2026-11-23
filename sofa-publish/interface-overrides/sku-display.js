@@ -1,4 +1,4 @@
-const SKU_DATA='./assets/pricing/catalogue-skus.json?v=20261123-sku-v108';
+const SKU_DATA='./assets/pricing/catalogue-skus.json?v=20261124-new-fabrics-v118';
 export function skuForCard(data,key){
  const sku=data?.cardToPlacementSku?.[key],variantSku=data?.cardToVariantSku?.[key];
  return /^SOM-Y\d{4,}$/.test(sku??'')&&variantSku?.startsWith(sku+'-V')?{sku,variantSku}:null;
