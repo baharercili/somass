@@ -8,27 +8,96 @@ from pathlib import Path, PurePosixPath
 import posixpath
 import re
 import stat
+import struct
 import tempfile
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import zipfile
+import zlib
 
 MAX_SITE_BYTES = 1024 * 1024 * 1024
 INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js', 'urun.html',
     'index.html', 'product-gallery.js', 'product-seo.js',
     'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
     'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json',
-    'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx'})
+    'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx', 'material-gallery.html'})
 MAX_INTERFACE_BYTES = 2 * 1024 * 1024
+MATERIAL_MEDIA_PATH = re.compile(r'assets/material-gallery/([0-9a-f]{64})\.(jpg|jpeg|png|webp)')
+MAX_MATERIAL_MEDIA_BYTES = 3 * 1024 * 1024
+MAX_MATERIAL_MEDIA_FILES = 512
+MAX_MATERIAL_MEDIA_TOTAL_BYTES = 128 * 1024 * 1024
+MAX_INTERFACE_MANIFEST_BYTES = 192 * 1024
+MAX_MATERIAL_ARCHIVE_BYTES = 128 * 1024 * 1024
+MAX_MATERIAL_PART_BYTES = 2 * 1024 * 1024
+MAX_MATERIAL_PARTS = 64
 WORKBOOK_PATH = 'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx'
 NEW_INTERFACE_FILES = frozenset({'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
-    'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json', WORKBOOK_PATH})
+    'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json', WORKBOOK_PATH,
+    'material-gallery.html'})
 XLSX_MAX_EXPANDED_BYTES = 32 * 1024 * 1024
 XLSX_MAX_MEMBERS = 1000
 SHEET_NS = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'
 REL_NS = 'http://schemas.openxmlformats.org/package/2006/relationships'
 OFFICE_REL_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
 CONTENT_NS = 'http://schemas.openxmlformats.org/package/2006/content-types'
+
+
+def material_media_match(name):
+    return MATERIAL_MEDIA_PATH.fullmatch(name) if isinstance(name, str) else None
+
+
+def validate_material_media(name, content):
+    """Keep original image bytes while checking their content address and format."""
+    match = material_media_match(name)
+    if not match or sha256(content) != match.group(1):
+        raise ValueError('Material gallery image content address differs')
+    extension = match.group(2)
+    if extension in ('jpg', 'jpeg'):
+        if not content.startswith(b'\xff\xd8\xff') or not content.endswith(b'\xff\xd9'):
+            raise ValueError('Material gallery JPEG signature differs')
+        # Read only marker headers; image scan data is preserved without decoding.
+        cursor, frame = 2, False
+        while cursor < len(content) - 2:
+            if content[cursor] != 0xff:
+                raise ValueError('Invalid material gallery JPEG marker')
+            while cursor < len(content) and content[cursor] == 0xff:
+                cursor += 1
+            if cursor >= len(content):
+                break
+            marker = content[cursor]
+            cursor += 1
+            if marker == 0x01 or 0xd0 <= marker <= 0xd7:
+                continue
+            if marker in (0x00, 0xd8, 0xd9) or cursor + 2 > len(content):
+                raise ValueError('Invalid material gallery JPEG segment')
+            size = int.from_bytes(content[cursor:cursor + 2], 'big')
+            if size < 2 or cursor + size > len(content) - 2:
+                raise ValueError('Invalid material gallery JPEG segment length')
+            if marker in (0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf):
+                if size < 8:
+                    raise ValueError('Invalid material gallery JPEG frame')
+                height, width = struct.unpack('>HH', content[cursor + 3:cursor + 7])
+                if not (0 < width <= 32768 and 0 < height <= 32768):
+                    raise ValueError('Invalid material gallery JPEG dimensions')
+                frame = True
+            if marker == 0xda:
+                if not frame or cursor + size >= len(content) - 2:
+                    raise ValueError('Material gallery JPEG scan or frame missing')
+                return
+            cursor += size
+        raise ValueError('Material gallery JPEG scan missing')
+    if extension == 'png':
+        if (len(content) < 57 or not content.startswith(b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR')
+                or content[-12:] != b'\x00\x00\x00\x00IEND\xaeB`\x82'):
+            raise ValueError('Material gallery PNG signature differs')
+        width, height = struct.unpack('>II', content[16:24])
+        if not (0 < width <= 32768 and 0 < height <= 32768):
+            raise ValueError('Invalid material gallery PNG dimensions')
+        return
+    if (len(content) < 30 or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8], 'little') != len(content) - 8
+            or content[12:16] not in (b'VP8 ', b'VP8L', b'VP8X')):
+        raise ValueError('Material gallery WebP signature differs')
 
 
 def relationship_target(rels_name, target):
@@ -162,13 +231,90 @@ def interface_digest(value):
     return isinstance(value, str) and re.fullmatch(r'[0-9a-f]{64}', value) is not None
 
 
+def load_material_media_package(package_root, media_records):
+    """Read a verified optional media ZIP without extracting paths into checkout."""
+    folder = package_root / 'sofa-publish' / 'material-media'
+    control = folder / 'material-media-manifest.json'
+    if not control.exists() and not control.is_symlink():
+        return {}, None
+    regular_source(control, package_root)
+    if not 0 < control.stat().st_size <= 64 * 1024:
+        raise ValueError('Invalid material media manifest size')
+    control_content = control.read_bytes()
+    manifest = json.loads(control_content.decode('utf-8'))
+    if (not isinstance(manifest, dict)
+            or set(manifest) != {'schemaVersion', 'application', 'archiveSha256', 'archiveBytes', 'memberCount', 'parts'}
+            or manifest['schemaVersion'] != 1
+            or manifest['application'] != 'studio-sofa-material-media'
+            or not interface_digest(manifest['archiveSha256'])
+            or not interface_integer(manifest['archiveBytes'], MAX_MATERIAL_ARCHIVE_BYTES)
+            or type(manifest['memberCount']) is not int
+            or manifest['memberCount'] != len(media_records) or not media_records
+            or not isinstance(manifest['parts'], list) or not 1 <= len(manifest['parts']) <= MAX_MATERIAL_PARTS):
+        raise ValueError('Invalid material media package manifest')
+    stream, whole, total = io.BytesIO(), hashlib.sha256(), 0
+    for index, item in enumerate(manifest['parts'], 1):
+        if (not isinstance(item, dict) or set(item) != {'name', 'bytes', 'sha256'}
+                or item['name'] != f'material-media.part-{index:04d}'
+                or not interface_integer(item['bytes'], MAX_MATERIAL_PART_BYTES)
+                or not interface_digest(item['sha256'])):
+            raise ValueError('Unexpected material media package part')
+        source = folder / item['name']
+        regular_source(source, package_root)
+        if source.stat().st_size != item['bytes']:
+            raise ValueError('Material media package part size differs')
+        content = source.read_bytes()
+        if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+            raise ValueError('Material media package part checksum differs')
+        total += len(content)
+        if total > manifest['archiveBytes']:
+            raise ValueError('Material media package exceeds expected size')
+        stream.write(content)
+        whole.update(content)
+    if total != manifest['archiveBytes'] or whole.hexdigest() != manifest['archiveSha256']:
+        raise ValueError('Material media archive checksum differs')
+    media, total_expanded = {}, 0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            infos = archive.infolist()
+            if len(infos) != manifest['memberCount']:
+                raise ValueError('Material media package member count differs')
+            for info in infos:
+                name, mode = info.filename, info.external_attr >> 16
+                if (name not in media_records or name in media or not material_media_match(name)
+                        or info.is_dir() or stat.S_ISLNK(mode)
+                        or stat.S_IFMT(mode) not in (0, stat.S_IFREG) or info.flag_bits & 1
+                        or info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unexpected or unsafe material media archive member')
+                item = media_records[name]
+                if info.file_size != item['bytes'] or not interface_integer(info.file_size, MAX_MATERIAL_MEDIA_BYTES):
+                    raise ValueError('Material media package member size differs')
+                total_expanded += info.file_size
+                if total_expanded > MAX_MATERIAL_MEDIA_TOTAL_BYTES:
+                    raise ValueError('Material media archive expands beyond limit')
+                content = archive.read(info)
+                if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+                    raise ValueError('Material media package member checksum differs')
+                validate_material_media(name, content)
+                media[name] = content
+    except (zipfile.BadZipFile, RuntimeError, zlib.error) as error:
+        raise ValueError('Invalid material media archive') from error
+    if set(media) != set(media_records):
+        raise ValueError('Material media archive does not cover active gallery entries')
+    audit = {'manifestPath': 'sofa-publish/material-media/material-media-manifest.json',
+             'manifestSha256': sha256(control_content), 'archiveSha256': manifest['archiveSha256'],
+             'archiveBytes': manifest['archiveBytes'], 'memberCount': manifest['memberCount'],
+             'parts': manifest['parts']}
+    return media, audit
+
+
 def apply_interface_overrides(package_root, restored, manifest, expected):
     """Apply a small allowlisted patch only after both base and patch verify."""
     control = package_root / 'sofa-publish' / 'interface-overrides.json'
     if not control.exists() and not control.is_symlink():
         return 0
     regular_source(control, package_root)
-    if not 0 < control.stat().st_size <= 64 * 1024:
+    if not 0 < control.stat().st_size <= MAX_INTERFACE_MANIFEST_BYTES:
         raise ValueError('Invalid sofa interface manifest size')
     overlay = json.loads(control.read_bytes().decode('utf-8'))
     if (not isinstance(overlay, dict)
@@ -178,28 +324,42 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             or overlay['baseArchiveSha256'] != manifest['archiveSha256']):
         raise ValueError('Sofa interface base package differs')
     files = overlay['files']
-    if not isinstance(files, list) or not 1 <= len(files) <= len(INTERFACE_FILES):
+    if not isinstance(files, list) or not 1 <= len(files) <= len(INTERFACE_FILES) + MAX_MATERIAL_MEDIA_FILES:
         raise ValueError('Invalid sofa interface file list')
-    changes, seen = [], set()
+    changes, seen, media_count, media_bytes, media_records = [], set(), 0, 0, {}
     for item in files:
         if (not isinstance(item, dict)
                 or set(item) != {'path', 'expectedBaseSha256', 'expectedBaseBytes', 'sha256', 'bytes'}):
             raise ValueError('Invalid sofa interface file record')
         name = item['path']
-        if not isinstance(name, str) or name not in INTERFACE_FILES or name in seen:
+        media = material_media_match(name)
+        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media) or name in seen:
             raise ValueError('Unexpected or duplicate sofa interface file')
         seen.add(name)
-        if (not interface_integer(item['bytes'], MAX_INTERFACE_BYTES)
+        maximum = MAX_MATERIAL_MEDIA_BYTES if media else MAX_INTERFACE_BYTES
+        if (not interface_integer(item['bytes'], maximum)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
+        if media:
+            media_count += 1
+            media_bytes += item['bytes']
+            if media_count > MAX_MATERIAL_MEDIA_FILES or media_bytes > MAX_MATERIAL_MEDIA_TOTAL_BYTES:
+                raise ValueError('Material gallery media exceeds allowed limits')
+            media_records[name] = item
+    bundled_media, bundle_audit = load_material_media_package(package_root, media_records)
+    for item in files:
+        name = item['path']
+        media = material_media_match(name)
         original = expected.get(name)
         installed = restored / name
         if item['expectedBaseSha256'] is None:
-            if (name not in NEW_INTERFACE_FILES or type(item['expectedBaseBytes']) is not int
+            if ((name not in NEW_INTERFACE_FILES and not media) or type(item['expectedBaseBytes']) is not int
                     or item['expectedBaseBytes'] != 0 or original is not None
                     or installed.exists() or installed.is_symlink()):
                 raise ValueError('Sofa interface addition collides with base member: ' + name)
         else:
+            if media:
+                raise ValueError('Content-addressed material gallery media must be new additions')
             if (not interface_integer(item['expectedBaseBytes'], MAX_INTERFACE_BYTES)
                     or not interface_digest(item['expectedBaseSha256'])
                     or not original or original['bytes'] != item['expectedBaseBytes']
@@ -209,13 +369,18 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
                 raise ValueError('Restored sofa interface base differs: ' + name)
         source = package_root / 'sofa-publish' / 'interface-overrides' / name
-        regular_source(source, package_root)
-        if source.stat().st_size != item['bytes']:
-            raise ValueError('Sofa interface source size differs: ' + name)
-        content = source.read_bytes()
+        if media and name in bundled_media and not source.exists() and not source.is_symlink():
+            content = bundled_media[name]
+        else:
+            regular_source(source, package_root)
+            if source.stat().st_size != item['bytes']:
+                raise ValueError('Sofa interface source size differs: ' + name)
+            content = source.read_bytes()
         if len(content) != item['bytes'] or sha256(content) != item['sha256']:
             raise ValueError('Sofa interface source checksum differs: ' + name)
-        if name == WORKBOOK_PATH:
+        if media:
+            validate_material_media(name, content)
+        elif name == WORKBOOK_PATH:
             validate_xlsx(content)
         else:
             text = content.decode('utf-8')
@@ -235,6 +400,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         expected[name] = {'path': name, 'bytes': len(content), 'sha256': item['sha256']}
     audit = {'schemaVersion': 1, 'baseArchiveSha256': manifest['archiveSha256'],
              'baseMemberIntegrity': manifest['memberIntegrity'], 'files': files}
+    if bundle_audit is not None:
+        audit['materialMediaPackage'] = bundle_audit
     audit_content = (json.dumps(audit, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     (restored / audit_name).write_bytes(audit_content)
     expected[audit_name] = {'path': audit_name, 'bytes': len(audit_content), 'sha256': sha256(audit_content)}

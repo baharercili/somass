@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-material-media",
+  "archiveSha256": "88d7a9f5cae02b64d0260df5e097ca6fd491261b09105a836212e22f1e0a8cec",
+  "archiveBytes": 35114884,
+  "memberCount": 464,
+  "parts": [
+    {
+      "name": "material-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "2b3ab29608a0473237f342c5bd699bb71583db9d6c017384258b8386f9ddb193"
+    },
+    {
+      "name": "material-media.part-0002",
+      "bytes": 2097152,
+      "sha256": "b3ddd1c3ef158710213a059652872f65574d1870e1cf5a8843e26bb22097d731"
+    },
+    {
+      "name": "material-media.part-0003",
+      "bytes": 2097152,
+      "sha256": "470ef53f3a61ea3fd4de28a7b673f7f2ee658406ad6bb3e5a0dbfd16f4535fef"
+    },
+    {
+      "name": "material-media.part-0004",
+      "bytes": 2097152,
+      "sha256": "0a579a2b40e95d583462be39502e7e3462b3b2a9ede10e811f416c3f0d88dc1a"
+    },
+    {
+      "name": "material-media.part-0005",
+      "bytes": 2097152,
+      "sha256": "b00ab4f6d144ae6c033245e7a94d0934950f39363de5926075c44d4092cbb27c"
+    },
+    {
+      "name": "material-media.part-0006",
+      "bytes": 2097152,
+      "sha256": "d90929e9b4973ab34c9747bfc2ba0700d97ad4a4aedf5001b0d64529f913c72c"
+    },
+    {
+      "name": "material-media.part-0007",
+      "bytes": 2097152,
+      "sha256": "ace4e61092baca1a9bce0368cd7cc883356e35493d282814ce52d251146a0009"
+    },
+    {
+      "name": "material-media.part-0008",
+      "bytes": 2097152,
+      "sha256": "c33e1b4c80e187cb3cbd55d9368f72d23556a87107521febe2f65358496437e7"
+    },
+    {
+      "name": "material-media.part-0009",
+      "bytes": 2097152,
+      "sha256": "4b510fed7ee85d399cfd12de5a18590a455aa85cdf4790b91f2bd403f6ee0e8f"
+    },
+    {
+      "name": "material-media.part-0010",
+      "bytes": 2097152,
+      "sha256": "197b942db39d182b6136bf2a0a869d99fc07279ff3c97ee2ee3785cdf22f2fa2"
+    },
+    {
+      "name": "material-media.part-0011",
+      "bytes": 2097152,
+      "sha256": "aaf59ee46dee26ef0e2360ec08bbba7d9344dcdd1fdbfbbf34cc5e979f1e1ec9"
+    },
+    {
+      "name": "material-media.part-0012",
+      "bytes": 2097152,
+      "sha256": "50558f2cfd9ad6d364ed031c84964a01ce328affcc1aa7e2eb07011d520feab2"
+    },
+    {
+      "name": "material-media.part-0013",
+      "bytes": 2097152,
+      "sha256": "698406a7e3e387a25b26dd99b35853d46233cbd493b61dd5072474bee296b52e"
+    },
+    {
+      "name": "material-media.part-0014",
+      "bytes": 2097152,
+      "sha256": "27b165be5a894a60f3ed057559c8b9f9e310eab9961f63e50d3c42b90b6b2718"
+    },
+    {
+      "name": "material-media.part-0015",
+      "bytes": 2097152,
+      "sha256": "3f398b8b61e17b2a8cddbb578bf759c31707b8a1ea83a0454b3bda331d892995"
+    },
+    {
+      "name": "material-media.part-0016",
+      "bytes": 2097152,
+      "sha256": "97df853bbe9119cf51416907ff4d98b2cb6dca49466e7308117f4a9774360bc2"
+    },
+    {
+      "name": "material-media.part-0017",
+      "bytes": 1560452,
+      "sha256": "c75b0cd162ff8e142d4183174cda0b249e184b03155148fa1152072eca377517"
+    }
+  ]
+}
