@@ -2,16 +2,143 @@
 """Verify a separate sofa package, then add it beside existing editor/view output."""
 import argparse
 import hashlib
+import io
 import json
 from pathlib import Path, PurePosixPath
+import posixpath
 import re
 import stat
 import tempfile
+from urllib.parse import urlsplit
+import xml.etree.ElementTree as ET
 import zipfile
 
 MAX_SITE_BYTES = 1024 * 1024 * 1024
-INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js'})
+INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js', 'urun.html',
+    'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
+    'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json',
+    'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx'})
 MAX_INTERFACE_BYTES = 2 * 1024 * 1024
+WORKBOOK_PATH = 'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx'
+NEW_INTERFACE_FILES = frozenset({'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
+    'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json', WORKBOOK_PATH})
+XLSX_MAX_EXPANDED_BYTES = 32 * 1024 * 1024
+XLSX_MAX_MEMBERS = 1000
+SHEET_NS = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'
+REL_NS = 'http://schemas.openxmlformats.org/package/2006/relationships'
+OFFICE_REL_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+CONTENT_NS = 'http://schemas.openxmlformats.org/package/2006/content-types'
+
+
+def relationship_target(rels_name, target):
+    """Resolve an OPC part relationship without escaping the ZIP package."""
+    if not isinstance(target, str) or not target or '\\' in target or '\x00' in target:
+        raise ValueError('Invalid spreadsheet relationship target')
+    split = urlsplit(target)
+    if split.scheme or split.netloc or split.query:
+        raise ValueError('Unexpected external spreadsheet relationship')
+    rels = PurePosixPath(rels_name)
+    base = '' if rels_name == '_rels/.rels' else str(rels.parent.parent)
+    resolved = posixpath.normpath(target.lstrip('/') if target.startswith('/') else posixpath.join(base, target))
+    if resolved in ('', '.', '..') or resolved.startswith('../') or resolved.startswith('/'):
+        raise ValueError('Spreadsheet relationship escapes package')
+    return resolved
+
+
+def validate_xlsx(content):
+    """Recognize a standard OOXML spreadsheet, not a renamed arbitrary binary."""
+    if not content.startswith(b'PK\x03\x04'):
+        raise ValueError('Spreadsheet payload is not an XLSX ZIP archive')
+    required = {'[Content_Types].xml', '_rels/.rels', 'xl/workbook.xml', 'xl/_rels/workbook.xml.rels'}
+    xml, names, total = {}, set(), 0
+    try:
+        with zipfile.ZipFile(io.BytesIO(content)) as workbook:
+            infos = workbook.infolist()
+            if not 1 <= len(infos) <= XLSX_MAX_MEMBERS:
+                raise ValueError('Unexpected spreadsheet archive size')
+            for info in infos:
+                name = info.filename.rstrip('/') if info.is_dir() else info.filename
+                part = PurePosixPath(name)
+                mode = info.external_attr >> 16
+                if (not name or part.is_absolute() or part.as_posix() != name or '..' in part.parts
+                        or '\\' in name or '\x00' in name or name in names
+                        or stat.S_ISLNK(mode) or stat.S_IFMT(mode) not in (0, stat.S_IFREG, stat.S_IFDIR)
+                        or info.flag_bits & 1 or info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unsafe spreadsheet archive member')
+                names.add(name)
+                if info.is_dir():
+                    continue
+                if info.file_size < 0:
+                    raise ValueError('Invalid spreadsheet archive member size')
+                total += info.file_size
+                if total > XLSX_MAX_EXPANDED_BYTES:
+                    raise ValueError('Spreadsheet archive expands beyond limit')
+                data = workbook.read(info)
+                if len(data) != info.file_size:
+                    raise ValueError('Spreadsheet archive member length differs')
+                if name.endswith(('.xml', '.rels')):
+                    if b'<!DOCTYPE' in data.upper() or b'<!ENTITY' in data.upper():
+                        raise ValueError('Spreadsheet XML declarations are unsupported')
+                    xml[name] = ET.fromstring(data)
+                elif re.fullmatch(r'xl/media/[^/]+\.(?:png|jpe?g)', name, flags=re.I):
+                    if not (data.startswith(b'\x89PNG\r\n\x1a\n') or data.startswith(b'\xff\xd8\xff')):
+                        raise ValueError('Invalid spreadsheet media')
+                else:
+                    raise ValueError('Unexpected spreadsheet binary or macro part')
+    except (zipfile.BadZipFile, ET.ParseError, RuntimeError) as error:
+        raise ValueError('Invalid XLSX spreadsheet structure') from error
+    if not required <= set(xml):
+        raise ValueError('Spreadsheet workbook parts missing')
+    content_types = xml['[Content_Types].xml']
+    if content_types.tag != '{' + CONTENT_NS + '}Types':
+        raise ValueError('Invalid spreadsheet content types')
+    workbook_types = [item.get('ContentType') for item in content_types.findall('{' + CONTENT_NS + '}Override')
+                      if item.get('PartName') == '/xl/workbook.xml']
+    if not workbook_types:
+        workbook_types = [item.get('ContentType') for item in content_types.findall('{' + CONTENT_NS + '}Default')
+                          if item.get('Extension') == 'xml']
+    if workbook_types != ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml']:
+        raise ValueError('Spreadsheet must be a non-macro XLSX workbook')
+    relationships = {}
+    for name, root in xml.items():
+        if not name.endswith('.rels'):
+            continue
+        if root.tag != '{' + REL_NS + '}Relationships':
+            raise ValueError('Invalid spreadsheet relationship document')
+        relations = {}
+        for item in root:
+            rid, target, kind = item.get('Id'), item.get('Target'), item.get('Type')
+            if item.tag != '{' + REL_NS + '}Relationship' or not rid or rid in relations or not kind:
+                raise ValueError('Invalid or duplicate spreadsheet relationship')
+            if item.get('TargetMode', 'Internal') == 'External':
+                scheme = urlsplit(target or '').scheme.lower()
+                if kind != OFFICE_REL_NS + '/hyperlink' or scheme not in ('http', 'https', 'mailto'):
+                    raise ValueError('External spreadsheet data links are unsupported')
+                relations[rid] = (kind, None)
+                continue
+            if item.get('TargetMode', 'Internal') != 'Internal' or kind.endswith('/externalLink'):
+                raise ValueError('External spreadsheet data links are unsupported')
+            resolved = relationship_target(name, target)
+            if resolved not in names:
+                raise ValueError('Missing spreadsheet relationship part')
+            relations[rid] = (kind, resolved)
+        relationships[name] = relations
+    package_workbooks = [target for kind, target in relationships['_rels/.rels'].values()
+                         if kind == OFFICE_REL_NS + '/officeDocument']
+    if package_workbooks != ['xl/workbook.xml']:
+        raise ValueError('Invalid spreadsheet workbook relationship')
+    document = xml['xl/workbook.xml']
+    if document.tag != '{' + SHEET_NS + '}workbook':
+        raise ValueError('Invalid spreadsheet workbook document')
+    sheets = document.findall('{' + SHEET_NS + '}sheets/{' + SHEET_NS + '}sheet')
+    if not sheets:
+        raise ValueError('Spreadsheet has no worksheets')
+    for sheet in sheets:
+        rid = sheet.get('{' + OFFICE_REL_NS + '}id')
+        kind, target = relationships['xl/_rels/workbook.xml.rels'].get(rid, (None, None))
+        if (kind != OFFICE_REL_NS + '/worksheet' or target not in xml
+                or xml[target].tag != '{' + SHEET_NS + '}worksheet'):
+            raise ValueError('Invalid spreadsheet worksheet relationship')
 
 
 def regular_source(path, root):
@@ -61,27 +188,38 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         if not isinstance(name, str) or name not in INTERFACE_FILES or name in seen:
             raise ValueError('Unexpected or duplicate sofa interface file')
         seen.add(name)
-        if (not interface_integer(item['expectedBaseBytes'], MAX_INTERFACE_BYTES)
-                or not interface_integer(item['bytes'], MAX_INTERFACE_BYTES)
-                or not interface_digest(item['expectedBaseSha256'])
+        if (not interface_integer(item['bytes'], MAX_INTERFACE_BYTES)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
         original = expected.get(name)
-        if (not original or original['bytes'] != item['expectedBaseBytes']
-                or original['sha256'] != item['expectedBaseSha256']):
-            raise ValueError('Sofa interface base member differs: ' + name)
         installed = restored / name
-        original_content = installed.read_bytes()
-        if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
-            raise ValueError('Restored sofa interface base differs: ' + name)
+        if item['expectedBaseSha256'] is None:
+            if (name not in NEW_INTERFACE_FILES or type(item['expectedBaseBytes']) is not int
+                    or item['expectedBaseBytes'] != 0 or original is not None
+                    or installed.exists() or installed.is_symlink()):
+                raise ValueError('Sofa interface addition collides with base member: ' + name)
+        else:
+            if (not interface_integer(item['expectedBaseBytes'], MAX_INTERFACE_BYTES)
+                    or not interface_digest(item['expectedBaseSha256'])
+                    or not original or original['bytes'] != item['expectedBaseBytes']
+                    or original['sha256'] != item['expectedBaseSha256']):
+                raise ValueError('Sofa interface base member differs: ' + name)
+            original_content = installed.read_bytes()
+            if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
+                raise ValueError('Restored sofa interface base differs: ' + name)
         source = package_root / 'sofa-publish' / 'interface-overrides' / name
         regular_source(source, package_root)
         if source.stat().st_size != item['bytes']:
             raise ValueError('Sofa interface source size differs: ' + name)
         content = source.read_bytes()
-        content.decode('utf-8')
         if len(content) != item['bytes'] or sha256(content) != item['sha256']:
             raise ValueError('Sofa interface source checksum differs: ' + name)
+        if name == WORKBOOK_PATH:
+            validate_xlsx(content)
+        else:
+            text = content.decode('utf-8')
+            if name.endswith('.json'):
+                json.loads(text)
         changes.append((name, content, item))
     audit_name = 'INTERFACE-OVERRIDES.json'
     if audit_name in expected:
@@ -89,6 +227,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
     # Validation above reads every payload before any patch is installed. The
     # destination is still private temporary output until restore's final rename.
     for name, content, item in changes:
+        (restored / name).parent.mkdir(parents=True, exist_ok=True)
         (restored / name).write_bytes(content)
         if sha256((restored / name).read_bytes()) != item['sha256']:
             raise ValueError('Installed sofa interface checksum differs')

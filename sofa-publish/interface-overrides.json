@@ -7,8 +7,8 @@
       "path": "kombinasyonlar.html",
       "expectedBaseSha256": "9c701e27f7de1ad70193989d56d022c9d4dd19730dd4282cd00225854fbb2e32",
       "expectedBaseBytes": 7688,
-      "sha256": "fb8b820ae7d872db8103f757ffd7e7719542594196c397a3bb438116b01797f7",
-      "bytes": 7991
+      "sha256": "4613e9a0be719a87324ba06e7eb80971d43e127edb9a9c4d6b0dddf9e8931064",
+      "bytes": 8180
     },
     {
       "path": "kombinasyonlar.css",
@@ -23,6 +23,69 @@
       "expectedBaseBytes": 17655,
       "sha256": "99205fd5c0da6e8980cf154692d2fd12898ad5d2a9f8075e98ec9da3a97bbc4f",
       "bytes": 19263
+    },
+    {
+      "path": "urun.html",
+      "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
+      "expectedBaseBytes": 5678,
+      "sha256": "eb23d33b10067da1e8a1a57ff3d5a8978ff540a7643a9f6cf06abd86181c71cd",
+      "bytes": 5867
+    },
+    {
+      "path": "pricing.html",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "d2e2431f19f3063b29842fec701e4945fa9c65be636405f695b51ab5555d72e6",
+      "bytes": 5539
+    },
+    {
+      "path": "pricing.js",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "c0eb1323fe3f708b918321335bb4214f517db3c6091de4fe6c8bcbfa961e97a9",
+      "bytes": 13173
+    },
+    {
+      "path": "pricing.css",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "2bfc9488c2b0e82a6476a3d1250a6fc6085bcafa4d1ca5a193ef362e9f0bf0e7",
+      "bytes": 7909
+    },
+    {
+      "path": "sku-display.js",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "967075bbd36a4ec79efcb915f38487b6af4fcc2555ba6d8ad21e0c2532fe8a4e",
+      "bytes": 2605
+    },
+    {
+      "path": "sku-display.css",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "0c14d34e65ce3b2961bd44bd47b52b7ffd3f64ff9fc4e69e11d7240ac0447bdc",
+      "bytes": 1165
+    },
+    {
+      "path": "assets/pricing/catalogue-skus.json",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "5d4d98248ca17ec9c7e6d44562b14aac81e5a6f4bf4cd865a8cd97e25ba0eade",
+      "bytes": 689363
+    },
+    {
+      "path": "assets/pricing/sku-registry.json",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "7b9fcd1d0553da7ac8e429ecbe4f6be54ef5cf39e24d5930de2d421eb7f6a876",
+      "bytes": 19692
+    },
+    {
+      "path": "assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "sha256": "e06dce0df27eecc89ac758819e00c95df4750f04bcf16b656cfe842636f52230",
+      "bytes": 47564
     }
   ]
 }
