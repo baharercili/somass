@@ -8,6 +8,8 @@ on:
       - 'somass-source-manifest.json'
       - '.github/workflows/pages.yml'
       - 'source-overrides/**'
+      - 'sofa-source-manifest.json'
+      - 'sofa-publish/**'
 
 permissions:
   contents: read
@@ -145,6 +147,8 @@ jobs:
         run: python3 source-overrides/apply.py --source _source --package-manifest somass-source-manifest.json
       - name: Verify assets and build editor plus customer view
         run: python3 _source/tools/build-site.py --strict
+      - name: Verify and add sofa application beside editor and view
+        run: python3 sofa-publish/restore.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website

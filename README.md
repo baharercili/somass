@@ -15,3 +15,11 @@ GitHub Actions iş akışı parçaları doğrular, kaynağı `_source/` klasör�
 Yeniden yayın için güncel kaynak parçaları ve bunlarla eşleşen manifest birlikte depoya eklenmelidir. Manifest veya `.github/workflows/pages.yml` değişince yayın çalışır; **Actions → Publish full SOMASS project → Run workflow** ile de başlatılabilir. Pages kaynağı **GitHub Actions** olmalıdır.
 
 Özel ölçüm fotoğrafları, yerel kayıt bağlantıları ve erişim anahtarları kaynak paketine dahil değildir. Duvarlar, yerleşim, ölçüler, kalan ürün geometrileri ve malzemeleri bu yayın sırasında değiştirilmez.
+
+
+## Modüler koltuk oluşturucu
+
+- [Koltuk oluşturucu](https://baharercili.github.io/somass/sofa/): modüller, kumaşlar, ahşap seçenekleri ve ara sehpalarla kendi kombinasyonunu oluştur.
+- [Koltuk kombinasyonları](https://baharercili.github.io/somass/sofa/kombinasyonlar.html): ürün galerileri, ölçüler ve indirilebilir ekip dosyaları.
+
+Koltuk uygulaması bağımsız `sofa-source.part-*` parçaları ve `sofa-source-manifest.json` ile saklanır. Mevcut mağaza düzenleyicisi ve müşteri görünümü aynı yollarında yayımlanmaya devam eder. Yayın, mevcut sıkı derlemenin ardından koltuk paketinin parça, arşiv ve tek tek dosya SHA-256 değerlerini doğrular; yalnız `_source/_site/sofa/` klasörünü ekler. Koltuk manifesti veya `sofa-publish/` araçları değişince aynı yayın iş akışı çalışır.
