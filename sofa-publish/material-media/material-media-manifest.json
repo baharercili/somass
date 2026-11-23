@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-material-media",
-  "archiveSha256": "88d7a9f5cae02b64d0260df5e097ca6fd491261b09105a836212e22f1e0a8cec",
-  "archiveBytes": 35114884,
-  "memberCount": 464,
+  "archiveSha256": "ddaaf30c096a4b545429dcbbc5df7d7f2291e30b7f2b4a0ef715063842e62d2a",
+  "archiveBytes": 36376954,
+  "memberCount": 474,
   "parts": [
     {
       "name": "material-media.part-0001",
@@ -87,8 +87,13 @@
     },
     {
       "name": "material-media.part-0017",
-      "bytes": 1560452,
-      "sha256": "c75b0cd162ff8e142d4183174cda0b249e184b03155148fa1152072eca377517"
+      "bytes": 2097152,
+      "sha256": "953e09b9eab417af61e7adb8fc73a841efcdf77db060d447f0c8198368bcff92"
+    },
+    {
+      "name": "material-media.part-0018",
+      "bytes": 725370,
+      "sha256": "c304516a73b018107cd4676fde9902e2598dce176e97ec4b8a0845c3a0188397"
     }
   ]
 }
