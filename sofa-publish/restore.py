@@ -17,11 +17,13 @@ import zlib
 
 MAX_SITE_BYTES = 1024 * 1024 * 1024
 INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js', 'urun.html',
-    'index.html', 'product-gallery.js', 'product-seo.js',
+    'index.html', 'app.js', 'product-gallery.js', 'product-seo.js',
     'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
     'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json',
     'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx', 'material-gallery.html'})
 MAX_INTERFACE_BYTES = 2 * 1024 * 1024
+APP_ORIGINAL_SHA256 = '45ed6c3305ec33d07eafec29d0900e625469ca80770e5347ac3c387fbae27d4b'
+APP_ORIGINAL_BYTES = 58321
 MATERIAL_MEDIA_PATH = re.compile(r'assets/material-gallery/([0-9a-f]{64})\.(jpg|jpeg|png|webp)')
 MAX_MATERIAL_MEDIA_BYTES = 3 * 1024 * 1024
 MAX_MATERIAL_MEDIA_FILES = 512
@@ -340,6 +342,10 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         if (not interface_integer(item['bytes'], maximum)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
+        if name == 'app.js' and (item['expectedBaseSha256'] != APP_ORIGINAL_SHA256
+                                 or type(item['expectedBaseBytes']) is not int
+                                 or item['expectedBaseBytes'] != APP_ORIGINAL_BYTES):
+            raise ValueError('Configurator patch must retain the original V2 app anchor')
         if media:
             media_count += 1
             media_bytes += item['bytes']

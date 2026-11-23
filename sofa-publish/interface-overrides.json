@@ -35,8 +35,8 @@
       "path": "index.html",
       "expectedBaseSha256": "8171d56fecc0521bc9d865d492fd00d5604706839f491414940eb5b03916bbdb",
       "expectedBaseBytes": 28146,
-      "sha256": "651d758cac27ead78a66b02e85b323251b594faf33c25c821368adc81d07956d",
-      "bytes": 28354
+      "sha256": "27f8377817447ac78a14a5c1f71c048bb0ad2c9edc8f028b89c131c8ebb83d06",
+      "bytes": 28691
     },
     {
       "path": "product-gallery.js",
@@ -3432,6 +3432,13 @@
       "expectedBaseBytes": 0,
       "sha256": "d8288f0b490ac2aea8cfa4966f06fa453cdb6bda9e42ba112c466bd90eaf4f46",
       "bytes": 139184
+    },
+    {
+      "path": "app.js",
+      "expectedBaseSha256": "45ed6c3305ec33d07eafec29d0900e625469ca80770e5347ac3c387fbae27d4b",
+      "expectedBaseBytes": 58321,
+      "sha256": "6a8edf7ddb9a0a4f6a4c0af609472f595afcacdc1d16b1a94c6b7d2c7ca2a60b",
+      "bytes": 64376
     }
   ]
 }

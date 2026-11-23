@@ -85,7 +85,7 @@
       <div id="config-busy" class="config-busy" role="status" aria-live="polite" hidden><span class="busy-dot" aria-hidden="true"></span>Koltuğun güncelleniyor…</div>
 
       <div id="loading" class="loading-overlay" aria-live="polite"><div class="loading-card"><span class="loading-mark" aria-hidden="true">S</span><p id="loading-label">Üç boyutlu görünüm hazırlanıyor</p><div class="loading-track"><div id="loading-progress" class="loading-fill" role="progressbar" aria-label="Görünümün yüklenmesi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div></div><span class="loading-caption">Bu sırada seçenekleri keşfedebilirsin.</span></div></div>
-      <div id="load-error" class="error-overlay" role="alert" hidden><div><h2>Görünüm yüklenemedi</h2><p>İnternet bağlantını kontrol edip yeniden deneyebilirsin.</p><button type="button" id="retry-load" class="solid-button">Yeniden dene <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></div>
+      <div id="load-error" class="error-overlay" role="alert" style="overflow:auto" hidden><div style="margin:auto"><h2 id="load-error-title">Görünüm yüklenemedi</h2><p id="load-error-message">Seçimlerin korundu. Yeniden deneyebilirsin.</p><button type="button" id="retry-load" class="solid-button">Yeniden dene <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><div id="load-browser-help" hidden><p>Safari/Chrome’da açmak için bağlantıyı kopyala.</p><button type="button" id="copy-browser-link" class="solid-button">Bağlantıyı kopyala</button><p id="load-browser-status" role="status" aria-live="polite"></p></div></div></div>
     </section>
 
     <aside class="controls-panel" id="controls-panel" aria-label="Düzenleme seçenekleri">
@@ -199,6 +199,6 @@
     <footer class="review-footer"><div id="review-status" class="review-status" role="status" aria-live="polite"></div><button type="button" id="download-selection" class="continue-button" disabled><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Seçim özetini indir</span></button><button type="button" id="review-share" class="secondary-button"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>Bağlantıyı kopyala</button><a id="review-combinations" class="review-combinations" href="./kombinasyonlar.html">Diğer kombinasyonları gör<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button type="button" id="edit-selection" class="text-button">Seçimime dön</button></footer>
   </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="./app.js?v=20261123-square-corner-v2"></script>
+  <script type="module" src="./app.js?v=20261123-load-recovery-v116"></script>
 </body>
 </html>
