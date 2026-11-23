@@ -162,3 +162,8 @@ jobs:
       - name: Publish complete project
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Check published collection page and original 3D model
+        env:
+          SOMASS_PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python3 collections-publish/check-published.py
