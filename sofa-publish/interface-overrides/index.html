@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="SOFF modüler koltuğunun yerleşimini, kumaşını ve ahşap detayını seç. Seçimini 3 boyutta incele, kaydet ve paylaş.">
+  <title>SOFF — Koltuğunu oluştur</title>
+  <link rel="stylesheet" href="./styles.css?v=20261121-black-oak-v74">
+  <link rel="stylesheet" href="./workspace.css?v=20261118-multi-wood-v68">
+  <link rel="stylesheet" href="./consumer.css?v=20261123-square-corner-v2">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 7.5h4l1.6-2h4.8l1.6 2h4v12H4z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3m0 0L8 7m4-4 4 4M5 12v8h14v-8"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 10a7.5 7.5 0 1 1 .8 6.2M4.5 10V4m0 6h6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M18.6 7.4a8 8 0 1 0 1.1 7.4M19 3v5h-5"/><path d="m10 8 5 4-5 4z"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="m4 16 12-12 5 5L9 21zM13 7l2 2m-5 1 2 2m-5 1 2 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 11V5a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v7c0 4-2 6-6 6h-1c-2 0-3-1-4-2l-5-6a1.5 1.5 0 0 1 2-2l2 2"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 11h18M11 11v9"/></symbol>
+    <symbol id="i-table" viewBox="0 0 24 24"><path d="M3 7h18v3H3zm2 3v10m14-10v10M5 16h14"/></symbol>
+    <symbol id="i-fabric" viewBox="0 0 24 24"><path d="M7 3h12v18H7zM3 7h4m-4 5h4m-4 5h4M11 7h4m-4 5h4m-4 5h4"/></symbol>
+    <symbol id="i-wood" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 3v6c0 3 5 3 5 6v6m3-18v5c0 4-5 4-5 7M7 15v6m10-9v9"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="m8 5-5 5 5 5M3 10h11a6 6 0 0 1 6 6v3"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m16 5 5 5-5 5m5-5H10a6 6 0 0 0-6 6v3"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16m-5-11 3 3-3 3"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><rect x="7" y="7" width="10" height="10" rx="1"/></symbol>
+  </svg>
+
+  <header class="site-header workspace-header">
+    <a class="brand" href="./" aria-label="Studio başlangıç sayfası">STUDIO</a>
+    <div class="document-identity"><strong>Koltuğum</strong><span id="save-status" role="status">Seçimin hazırlanıyor</span></div>
+    <div class="history-actions" role="group" aria-label="Değişiklik geçmişi">
+      <button type="button" id="undo-config" class="header-icon-button" aria-label="Geri al" title="Geri al · Ctrl/⌘ Z" disabled><svg class="icon" aria-hidden="true"><use href="#i-undo"/></svg></button>
+      <button type="button" id="redo-config" class="header-icon-button" aria-label="Yeniden yap" title="Yeniden yap · Ctrl/⌘ Shift Z" disabled><svg class="icon" aria-hidden="true"><use href="#i-redo"/></svg></button>
+    </div>
+    <a id="browse-combinations" class="header-combinations" href="./kombinasyonlar.html" aria-label="Kombinasyonları keşfet" title="Kombinasyonları keşfet"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg><span>Kombinasyonlar</span></a>
+    <nav class="header-actions" aria-label="Seçimini kaydet ve paylaş">
+      <button type="button" id="open-review" class="header-button header-review" aria-label="Seçimimi incele" title="Seçimimi incele" disabled><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Seçimim</span></button>
+      <button type="button" id="share-config" class="header-button share-button" aria-label="Seçimin bağlantısını kopyala" title="Seçimin bağlantısını kopyala"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg><span>Paylaş</span></button>
+    </nav>
+  </header>
+
+  <main class="configurator" id="configurator">
+    <section class="stage" aria-label="Koltuğunun üç boyutlu önizlemesi">
+      <div class="stage-heading"><span class="stage-kicker">KOLTUĞUNUN ÖNİZLEMESİ</span><span id="stage-layout-label" class="stage-layout-label">Üçlü koltuk</span></div>
+      <div id="viewport" aria-label="Koltuğu döndürmek için sürükle, yakınlaştırmak için kaydır"></div>
+
+      <details id="view-settings" class="view-settings">
+        <summary><svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg><span>Görünüm</span></summary>
+        <div class="view-settings-content">
+          <p class="settings-label">Arka plan</p>
+          <div class="scene-options" role="group" aria-label="Önizleme arka planı">
+            <button type="button" data-group="scene" data-value="warm" aria-pressed="true" class="is-active"><span style="--scene:#e8e4dc"></span>Sıcak</button>
+            <button type="button" data-group="scene" data-value="light" aria-pressed="false"><span style="--scene:#f1f2ef"></span>Açık</button>
+            <button type="button" data-group="scene" data-value="dark" aria-pressed="false"><span style="--scene:#343a3b"></span>Koyu</button>
+          </div>
+          <p class="settings-label">Yakınlaştırma</p>
+          <div class="zoom-tools" role="group" aria-label="Yakınlaştırma"><button type="button" id="zoom-out" class="tool-button" aria-label="Uzaklaştır" title="Uzaklaştır"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button><button type="button" id="reset-view" class="tool-button" aria-label="Koltuğu ekrana sığdır" title="Ekrana sığdır"><svg class="icon" aria-hidden="true"><use href="#i-fit"/></svg></button><button type="button" id="zoom-in" class="tool-button" aria-label="Yakınlaştır" title="Yakınlaştır"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
+          <button type="button" id="auto-rotate" class="settings-action" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-rotate"/></svg>Otomatik döndür</button>
+          <button type="button" id="explode-modules" class="settings-action" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg>Modülleri ayrı göster</button>
+          <button type="button" id="save-image" class="settings-action" disabled><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Görseli indir</button>
+        </div>
+      </details>
+
+      <div class="stage-bottom">
+        <div class="view-switcher" role="group" aria-label="Kamera açısı"><button type="button" id="view-front" aria-pressed="false">Ön</button><button type="button" id="view-quarter" aria-pressed="true" class="is-active">Çapraz</button><button type="button" id="view-back" aria-pressed="false">Arka</button></div>
+        <div class="stage-tools" aria-label="Önizleme araçları">
+          <button type="button" id="toggle-dimensions" class="tool-button" aria-label="Toplam ölçüleri göster" aria-pressed="false" title="Ölçüleri göster"><svg class="icon" aria-hidden="true"><use href="#i-ruler"/></svg></button><button type="button" id="fullscreen" class="tool-button" aria-label="Tam ekran görünüm" title="Tam ekran"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></button>
+        </div>
+      </div>
+      <p id="stage-hint" class="stage-hint"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg><span>Bir parçaya dokun, seçeneklerini aç · Sürükle, döndür</span></p>
+      <div id="dimensions-note" class="dimensions-note" hidden><span id="dimension-note-title">Toplam dış ölçü</span><strong id="dimension-note-value">226 × 107 cm</strong></div>
+      <div id="config-busy" class="config-busy" role="status" aria-live="polite" hidden><span class="busy-dot" aria-hidden="true"></span>Koltuğun güncelleniyor…</div>
+
+      <div id="loading" class="loading-overlay" aria-live="polite"><div class="loading-card"><span class="loading-mark" aria-hidden="true">S</span><p id="loading-label">Üç boyutlu görünüm hazırlanıyor</p><div class="loading-track"><div id="loading-progress" class="loading-fill" role="progressbar" aria-label="Görünümün yüklenmesi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div></div><span class="loading-caption">Bu sırada seçenekleri keşfedebilirsin.</span></div></div>
+      <div id="load-error" class="error-overlay" role="alert" hidden><div><h2>Görünüm yüklenemedi</h2><p>İnternet bağlantını kontrol edip yeniden deneyebilirsin.</p><button type="button" id="retry-load" class="solid-button">Yeniden dene <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></div>
+    </section>
+
+    <aside class="controls-panel" id="controls-panel" aria-label="Düzenleme seçenekleri">
+      <header class="inspector-header">
+        <div><span class="inspector-eyebrow">SOFF · Koltuğunu oluştur</span><h1 id="workspace-title">Yerleşim</h1><p id="workspace-subtitle">Önce koltuğunun biçimini seç.</p></div>
+        <span id="step-progress" class="step-progress" aria-label="Geçerli adım">1 / 4</span>
+      </header>
+      <nav class="step-navigation" aria-label="Koltuğunu oluşturma adımları">
+        <button type="button" data-step="layout" aria-controls="layout-step" aria-current="step" class="is-active"><span class="step-number">1</span><span>Yerleşim</span></button>
+        <button type="button" data-step="tables" aria-controls="tables-step"><span class="step-number">2</span><span>Ahşap modül</span></button>
+        <button type="button" data-step="colors" aria-controls="colors-step"><span class="step-number">3</span><span>Kumaş</span></button>
+        <button type="button" data-step="wood" aria-controls="wood-step"><span class="step-number">4</span><span>Ahşap rengi</span></button>
+      </nav>
+      <div id="controls-scroll" class="controls-scroll">
+
+        <section id="layout-step" data-step-panel="layout" aria-labelledby="layout-heading">
+          <div class="step-heading"><h2 id="layout-heading" tabindex="-1">Nasıl bir koltuk istiyorsun?</h2><p>Hazır bir düzenden başla; sol veya sağ uca istediğin modülü ekle.</p></div>
+          <h3 class="builder-section-title">Başlangıç düzeni</h3>
+          <p id="preset-reset-note" class="module-builder-note" hidden>Hazır bir düzen seçmek mevcut modül sırasını yeniler.</p>
+          <div class="layout-options" role="group" aria-label="Koltuk biçimi">
+            <button type="button" class="layout-card is-active" data-layout-family="straight" aria-pressed="true"><svg class="layout-icon" viewBox="0 0 72 40" aria-hidden="true"><path class="layout-fill" d="M14 10h22v22H14zm22 0h22v22H36z"/><path d="M10 32V7h52v25M36 10v22"/></svg><span>Düz</span></button>
+            <button type="button" class="layout-card" data-layout-family="corner" aria-pressed="false"><svg class="layout-icon" viewBox="0 0 72 40" aria-hidden="true"><path class="layout-fill" d="M14 8h21v14H14zm0 14h21v14H14zm21-14h23v14H35z"/><path d="M11 36V5h50v17M35 8v28M14 22h21"/></svg><span>Köşe</span></button>
+            <button type="button" class="layout-card" data-layout-family="chaise" aria-pressed="false"><svg class="layout-icon" viewBox="0 0 72 40" aria-hidden="true"><path class="layout-fill" d="M14 9h22v27H14zm22 0h22v17H36z"/><path d="M11 36V6h50v20M36 9v27"/></svg><span>Dinlenmeli</span></button>
+            <button type="button" class="layout-card" data-layout-family="dual" aria-pressed="false"><svg class="layout-icon" viewBox="0 0 72 40" aria-hidden="true"><path class="layout-fill" d="M14 9h22v27H14zm22 0h22v27H36z"/><path d="M11 36V6h50v30M36 9v27"/></svg><span>Çift dinlenmeli</span></button>
+            <button type="button" class="layout-card" data-layout-family="single" aria-pressed="false"><svg class="layout-icon" viewBox="0 0 72 40" aria-hidden="true"><rect class="layout-fill" x="23" y="10" width="27" height="23" rx="3"/><path d="M19 33V7h35v26M24 13h26"/></svg><span>Tekli</span></button>
+          </div>
+          <div id="layout-side-control" class="layout-choice-block" hidden><h3 id="layout-side-heading">Hangi yönde olsun?</h3><div id="layout-side-options" class="segmented-options" role="group" aria-label="Koltuk yönü"><button type="button" data-layout-side="left" aria-pressed="true">Sol</button><button type="button" data-layout-side="right" aria-pressed="false">Sağ</button><button type="button" data-layout-side="both" aria-pressed="false" hidden>Çift kol</button></div><p class="orientation-note">Sol ve sağ, koltuğa karşıdan bakışa göredir.</p></div>
+          <div id="straight-size-control" class="layout-choice-block"><h3>Başlangıç boyu</h3><div class="segmented-options" role="group" aria-label="Düz koltuk boyu"><button type="button" data-layout="straight2" aria-pressed="true">Üçlü koltuk</button><button type="button" data-layout="straight3" aria-pressed="false">Dörtlü koltuk</button></div></div>
+          <section id="module-builder" class="module-builder" aria-labelledby="module-builder-heading">
+            <h3 id="module-builder-heading">Modül ekle</h3>
+            <div class="module-type-picker" role="group" aria-label="Eklenecek modül">
+              <button type="button" data-append-type="seat" aria-pressed="true"><svg viewBox="0 0 54 36" aria-hidden="true"><rect x="10" y="8" width="34" height="22" rx="4"/><path d="M10 14h34"/></svg><span>Oturum</span></button>
+              <button type="button" data-append-type="chaise" aria-pressed="false"><svg viewBox="0 0 54 36" aria-hidden="true"><rect x="16" y="3" width="22" height="30" rx="4"/><path d="M16 9h22"/></svg><span>Dinlenme</span></button>
+              <button type="button" data-append-type="corner" aria-pressed="false"><svg viewBox="0 0 54 36" aria-hidden="true"><path d="M12 4h30v27H12zM12 11h23v20"/></svg><span>Köşe</span></button>
+            </div>
+            <div id="module-corner-direction" class="module-corner-direction" hidden><p>Köşe hangi yöne dönsün?</p><div class="segmented-options" role="group" aria-label="Köşe dönüşü"><button type="button" data-corner-direction="left" aria-pressed="true">Sola dönsün</button><button type="button" data-corner-direction="right" aria-pressed="false">Sağa dönsün</button></div></div>
+            <div class="module-append-actions"><button type="button" data-add-seat="left" aria-controls="seat-module-list">Sola ekle</button><button type="button" data-add-seat="right" aria-controls="seat-module-list">Sağa ekle</button></div>
+            <p id="module-builder-status" class="module-builder-status" role="status" aria-live="polite"></p>
+            <div class="seat-modules-heading"><h3>Modüllerin</h3><span id="seat-module-count" aria-live="polite">2 modül</span></div>
+            <p class="module-builder-note">Kaldırmak istediğin modülü listeden seç.</p>
+            <ol id="seat-module-list" class="seat-module-list" aria-label="Koltuk modülleri"></ol>
+            <div class="seat-module-removal"><span id="selected-seat-label">Bir modül seç</span><button type="button" id="remove-selected-module">Seçili modülü kaldır</button></div>
+          </section>
+
+          <div class="layout-info-card"><p id="layout-summary" class="layout-summary" role="status" aria-live="polite">Üçlü koltuk · 2 modül</p><div class="measure-row"><div><span id="measure-label">Toplam dış ölçü</span><strong id="layout-footprint">226 × 107 cm</strong><small class="dimension-order">Genişlik × derinlik</small></div><span id="layout-module-count" class="module-count-tag">2 modül</span></div><p id="layout-detail">Yükseklik 82 cm · Oturum yüksekliği 42 cm</p></div>
+        </section>
+
+        <section id="tables-step" data-step-panel="tables" aria-labelledby="tables-heading" hidden>
+          <div class="step-heading"><h2 id="tables-heading" tabindex="-1">Ahşap modüllerini yerleştir</h2><p>Birden fazla modül ekle; her birinin formunu ve konumunu ayrı seç.</p></div>
+          <section id="corner-table-section" class="corner-table-section" aria-labelledby="corner-table-heading" hidden>
+            <h3 id="corner-table-heading">Köşe dönüşü</h3>
+            <p class="module-builder-note">Köşe oturumunun yerine 95 × 95 cm açık raflı kare sehpa seçebilirsin. Sehpa bazayla aynı ahşap rengini kullanır.</p>
+            <div id="corner-table-options"></div>
+          </section>
+          <section class="wood-modules-selection" aria-label="Eklenen ahşap modüller">
+            <div class="wood-modules-heading"><h3>Ahşap modüllerin</h3><span id="wood-module-count" aria-live="polite">0 ahşap modül</span></div>
+            <p id="wood-modules-empty" class="wood-modules-empty">Henüz ahşap modül eklenmedi.</p>
+            <div id="wood-module-list" class="wood-module-list" role="list"></div>
+            <button type="button" id="add-wood-module" class="add-wood-module"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>Ahşap modül ekle</button>
+            <p id="wood-module-availability" class="wood-module-availability">Her modülün formunu ve konumunu ayrı ayrı değiştirebilirsin.</p>
+          </section>
+          <div id="wood-module-editor" hidden>
+          <h3 id="wood-editor-heading" class="wood-editor-heading">Ahşap modülü düzenle</h3>
+          <div class="composition-options" aria-label="Ahşap modül seçenekleri">
+            <div class="composition-option-group"><h3 id="table-option-heading">1. Formunu seç</h3><div class="composition-choice-row wood-module-choices" role="group" aria-labelledby="table-option-heading" aria-describedby="composition-availability-note">
+              <button type="button" class="wood-module-card" data-composition-group="table" data-composition-value="angled" aria-pressed="false"><span class="wood-module-selected" aria-hidden="true">✓</span><svg class="wood-form-icon" viewBox="0 0 72 44" aria-hidden="true"><path d="M18 8h36l-10 28H28z"/></svg><strong>Açılı</strong><small>30° açılım</small></button>
+              <button type="button" class="wood-module-card" data-composition-group="table" data-composition-value="square" aria-pressed="false"><span class="wood-module-selected" aria-hidden="true">✓</span><svg class="wood-form-icon" viewBox="0 0 72 44" aria-hidden="true"><rect x="21" y="7" width="30" height="30" rx="3"/></svg><strong>Kare</strong><small>95 × 95 cm</small></button>
+              <button type="button" class="wood-module-card" data-composition-group="table" data-composition-value="rectangle" aria-pressed="false"><span class="wood-module-selected" aria-hidden="true">✓</span><svg class="wood-form-icon" viewBox="0 0 72 44" aria-hidden="true"><rect x="28" y="7" width="16" height="30" rx="3"/></svg><strong>Dikdörtgen</strong><small>47,5 × 95 cm</small></button>
+            </div></div>
+            <div id="table-model-info" class="layout-info-card" aria-labelledby="table-model-title" hidden><strong id="table-model-title">Ahşap modül</strong><p id="table-model-dimensions"></p><p id="table-model-finish">Bazayla aynı meşe rengi</p></div>
+            <div id="table-position-picker" class="composition-option-group" hidden><h3 id="table-position-heading">2. Yerini seç</h3><p class="table-position-help">Seçili modül koyu, eklediğin diğer ahşap modüller açık renkte gösterilir. Boş bir konum seç.</p><div id="table-placement-guide" class="placement-guide" role="group" aria-labelledby="table-position-heading"></div><span id="table-position-current" class="sr-only" aria-live="polite"></span></div>
+            <p id="composition-availability-note" class="composition-availability-note" role="status">Ahşap modüller, bazayla aynı meşe rengini kullanır. Koltuk bitişinde kolsuz oturumun yanında kol görevi görür.</p>
+          </div>
+          </div>
+        </section>
+
+        <section id="colors-step" data-step-panel="colors" aria-labelledby="colors-heading" hidden>
+          <div class="step-heading"><h2 id="colors-heading" tabindex="-1">Kumaş rengini seç</h2><p>Önce renklendireceğin parçayı, sonra karteladan rengini seç.</p></div>
+          <div class="fabric-note"><span class="fabric-texture" aria-hidden="true"></span><div><strong id="active-material">Mora kadife</strong><span>Gerçek karteladan, 33 renk</span></div></div>
+          <div class="palette-targets" role="group" aria-label="Rengini değiştireceğin parça">
+            <button type="button" data-palette-target="body" aria-pressed="true" class="is-active"><span id="body-color-dot" class="selection-color-dot" aria-hidden="true"></span><span><small>Ana kumaş</small><strong id="body-color-name">İnci</strong></span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></button>
+            <button type="button" data-palette-target="accent" aria-pressed="false"><span id="accent-color-dot" class="selection-color-dot" aria-hidden="true"></span><span><small>Küçük yastıklar</small><strong id="accent-color-name">Bej</strong></span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></button>
+          </div>
+          <section id="swatch-palette" class="palette-section" aria-label="Kadife kartelası"><div class="palette-heading"><strong id="palette-target">Ana kumaş</strong><span id="palette-count">33 renk</span></div><label class="palette-search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Kadife renklerinde ara</span><input id="palette-search" type="search" placeholder="Renk adıyla ara" aria-label="Kadife renklerinde ara" autocomplete="off"></label><div id="photo-palette" class="photo-palette" role="group" aria-label="Kadife rengi seç"></div><p id="palette-empty" class="palette-empty" role="status" hidden>Bu aramada renk bulunamadı.</p><p class="palette-caption">Bir renk seç; koltuğun üzerindeki etkisini hemen gör.</p></section>
+          <p class="color-note">Renkler, ekranına ve ışığa göre farklı görünebilir. Kumaşın tonunu fiziksel kartelayla da değerlendirebilirsin.</p>
+        </section>
+
+        <section id="wood-step" data-step-panel="wood" aria-labelledby="base-heading" hidden>
+          <div class="step-heading"><h2 id="base-heading" tabindex="-1">Ahşap rengi</h2><p>Alt kasa ve sehpalarda naturel meşe, koyu meşe veya siyah ahşabı seçerek görünümü tamamla.</p></div>
+          <div class="wood-options" role="group" aria-label="Ahşap rengi">
+            <button type="button" class="wood-option is-active" data-group="base" data-value="oak" aria-pressed="true"><span class="wood-sample oak" aria-hidden="true"></span><span class="wood-option-name">Naturel meşe<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span></button>
+            <button type="button" class="wood-option" data-group="base" data-value="dark-oak" aria-pressed="false"><span class="wood-sample walnut" aria-hidden="true"></span><span class="wood-option-name">Koyu meşe<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span></button>
+            <button type="button" class="wood-option" data-group="base" data-value="black-oak" aria-pressed="false"><span class="wood-sample black-wood" aria-hidden="true"></span><span class="wood-option-name">Siyah ahşap<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span></button>
+          </div>
+          <div class="product-details"><h3>Birlikte tamamlanan detaylar</h3><dl><div><dt>Döşeme</dt><dd>Mora kadife</dd></div><div><dt>Ayak rengi</dt><dd>Bronz</dd></div><div><dt>Ahşap rengi</dt><dd id="base-name" data-group-label="base">Naturel meşe</dd></div></dl></div>
+          <p class="completion-note">Son adım. Seçimini gözden geçir, kaydet ve paylaş.</p>
+        </section>
+      </div>
+
+      <footer class="selection-footer">
+        <div class="footer-summary"><div class="footer-selection"><strong id="footer-layout">Üçlü koltuk</strong><span id="footer-size">226 × 107 cm</span></div><button type="button" id="reset-config" class="reset-config">Baştan başla</button></div>
+        <div class="footer-navigation"><button type="button" id="previous-step" class="previous-button" hidden><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg><span id="previous-label">Geri</span></button><button type="button" id="continue-step" class="continue-button"><span id="continue-label" class="button-label">Ahşap modüle geç</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      </footer>
+    </aside>
+  </main>
+
+  <dialog id="selection-dialog" class="selection-dialog" aria-labelledby="review-heading" aria-describedby="review-intro">
+    <header class="review-header"><div><p class="eyebrow">SENİN SEÇİMİN</p><h2 id="review-heading">Seçimini gözden geçir</h2></div><button type="button" id="close-review" class="close-button" aria-label="Seçim özetini kapat"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></header>
+    <div class="review-scroll"><p id="review-intro" class="review-intro">Yerleşim ve malzemelerin burada bir arada. Özeti indirerek ya da bağlantıyı kaydederek seçimine yeniden ulaşabilirsin.</p><div class="review-layout-card"><strong id="review-layout">Üçlü koltuk</strong><span id="review-size">226 × 107 cm</span><small class="dimension-order">Genişlik × derinlik × yükseklik</small><p id="review-orientation" hidden></p></div><h3 class="review-section-heading">Malzeme ve renkler</h3><dl id="review-materials" class="review-materials"></dl><h3 class="review-section-heading">Yerleşimindeki parçalar</h3><p id="review-count" class="review-piece-count">2 modül</p><ul id="review-modules" class="review-modules"></ul><p id="review-dimension-note" class="review-dimension-note">Ölçüler toplam dış ölçülerdir.</p></div>
+    <footer class="review-footer"><div id="review-status" class="review-status" role="status" aria-live="polite"></div><button type="button" id="download-selection" class="continue-button" disabled><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Seçim özetini indir</span></button><button type="button" id="review-share" class="secondary-button"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>Bağlantıyı kopyala</button><a id="review-combinations" class="review-combinations" href="./kombinasyonlar.html">Diğer kombinasyonları gör<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button type="button" id="edit-selection" class="text-button">Seçimime dön</button></footer>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js?v=20261123-square-corner-v2"></script>
+</body>
+</html>

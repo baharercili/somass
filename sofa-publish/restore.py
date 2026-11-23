@@ -15,6 +15,7 @@ import zipfile
 
 MAX_SITE_BYTES = 1024 * 1024 * 1024
 INTERFACE_FILES = frozenset({'kombinasyonlar.html', 'kombinasyonlar.css', 'kombinasyonlar.js', 'urun.html',
+    'index.html', 'product-gallery.js', 'product-seo.js',
     'pricing.html', 'pricing.js', 'pricing.css', 'sku-display.js', 'sku-display.css',
     'assets/pricing/catalogue-skus.json', 'assets/pricing/sku-registry.json',
     'assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx'})
