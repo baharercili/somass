@@ -1,0 +1,13 @@
+{
+  "status": "passed-package-integrity-and-relative-runtime-checks",
+  "collections": 13,
+  "products": 138,
+  "previewImages": 374,
+  "runtimeFiles": 376,
+  "hostedGLBModels": 1,
+  "otherGLBSourceFolderControlsPreserved": true,
+  "allArchiveMemberSHA256Verified": true,
+  "existingApplicationsPreserved": true,
+  "browserWebGLVerified": false,
+  "finalProfessionalAuditsCompleted": 0
+}

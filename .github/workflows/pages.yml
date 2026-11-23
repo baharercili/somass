@@ -10,6 +10,8 @@ on:
       - 'source-overrides/**'
       - 'sofa-source-manifest.json'
       - 'sofa-publish/**'
+      - 'collections-web-manifest.json'
+      - 'collections-publish/**'
 
 permissions:
   contents: read
@@ -149,6 +151,8 @@ jobs:
         run: python3 _source/tools/build-site.py --strict
       - name: Verify and add sofa application beside editor and view
         run: python3 sofa-publish/restore.py --site _source/_site
+      - name: Verify and add collection review beside existing applications
+        run: python3 collections-publish/restore.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website

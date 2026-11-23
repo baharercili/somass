@@ -23,3 +23,11 @@ Yeniden yayın için güncel kaynak parçaları ve bunlarla eşleşen manifest b
 - [Koltuk kombinasyonları](https://baharercili.github.io/somass/sofa/kombinasyonlar.html): ürün galerileri, ölçüler ve indirilebilir ekip dosyaları.
 
 Koltuk uygulaması bağımsız `sofa-source.part-*` parçaları ve `sofa-source-manifest.json` ile saklanır. Mevcut mağaza düzenleyicisi ve müşteri görünümü aynı yollarında yayımlanmaya devam eder. Yayın, mevcut sıkı derlemenin ardından koltuk paketinin parça, arşiv ve tek tek dosya SHA-256 değerlerini doğrular; yalnız `_source/_site/sofa/` klasörünü ekler. Koltuk manifesti veya `sofa-publish/` araçları değişince aynı yayın iş akışı çalışır.
+
+
+## Koleksiyonlar
+
+- [Koleksiyonlar inceleme sayfası](https://baharercili.github.io/somass/koleksiyonlar/): 13 koleksiyon, 138 ürün, moodboardlar, malzeme önizlemeleri ve güncel tasarım kararları.
+- Bono Yemek Masası'nın özgün GLB modeli doğrudan açılır. Diğer model kayıtları için özgün yerel GLB dosyası veya arşiv klasörü bağlanabilir; dosyalar tarayıcı dışına gönderilmez.
+
+Koleksiyon incelemesi `collections-web.part-*` parçaları ve `collections-web-manifest.json` ile saklanır. Yayın sırasında tüm parça, arşiv ve dosya SHA-256 değerleri doğrulanır; çıktı yalnız `/koleksiyonlar/` dizinine eklenir. Önceki mağaza düzenleyicisi, müşteri görünümü ve koltuk uygulaması korunur. Malzeme, ölçü ve üretim onayları ayrı inceleme kayıtlarıdır.
