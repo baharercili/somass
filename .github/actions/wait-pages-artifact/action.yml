@@ -1,0 +1,12 @@
+name: Wait for the uploaded Pages artifact
+description: Check the same internal artifact service used by the official deployment action.
+inputs:
+  artifact-name:
+    description: Exact unique name used by this workflow attempt.
+    required: true
+  artifact-id:
+    description: Exact artifact ID returned by the completed upload step.
+    required: true
+runs:
+  using: node20
+  main: index.cjs
