@@ -1,79 +1,64 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-editorial-media",
-  "archiveSha256": "02456bd717344d8757398a4fd65b6166d6bb8fe88d14f228b6c4f895cb71f86f",
-  "archiveBytes": 28649362,
+  "archiveSha256": "0bde2999ab222d7c7eb9b4e934dd08fb3bdefc84c8dbcb959143421d87b5c7cd",
+  "archiveBytes": 22247009,
   "memberCount": 80,
   "parts": [
     {
       "name": "editorial-media.part-0001",
       "bytes": 2097152,
-      "sha256": "f9c1618c077fdbd9a29cf2e67f53b3e4706fb1287455890c889caa7e945b5b02"
+      "sha256": "175f01fc332c350bf027ec86d13d63d1aeb09878c75e6f49231934558e477e99"
     },
     {
       "name": "editorial-media.part-0002",
       "bytes": 2097152,
-      "sha256": "1301a339daa7a72c8469517c8705e9c7fa3683cf862a54165e35e21c72e0de61"
+      "sha256": "80d5fdcb63dc510bb23509ca6bc78be9341efb4499ab6af2260ec04c57d74ea1"
     },
     {
       "name": "editorial-media.part-0003",
       "bytes": 2097152,
-      "sha256": "d88af7b548a6dc787203918c77a14b90a8e6b8203f9d08014bdea83eaf32fd37"
+      "sha256": "e0b40bd18a9a22692799e0b37b51a277b27efe80747684ab463f07d289dc2e25"
     },
     {
       "name": "editorial-media.part-0004",
       "bytes": 2097152,
-      "sha256": "d239c76be6b735fb974f456229f5959b7adfad581be74db03e9dffabf85b6cb5"
+      "sha256": "af679c8f5a1fc4cf7f3aff8baa6df1c361803638d33105aa239aaa377a204919"
     },
     {
       "name": "editorial-media.part-0005",
       "bytes": 2097152,
-      "sha256": "a4321bea4fd3fe5d9dad8f8f91fd6a7d8ab5df8a08c087dfc498a23a25cbc7bf"
+      "sha256": "2f1893044005b461bd805534a07d808757e37ea04221a74eaf6f2b07fdea1f6c"
     },
     {
       "name": "editorial-media.part-0006",
       "bytes": 2097152,
-      "sha256": "13aafa070c8d802fd328e35c33fb054d0195d65a5a15d03a6b7a2856c95096a5"
+      "sha256": "37965933eca5441fa0a881f26f9e3f2f274e682b763e19a5dadb17512139f863"
     },
     {
       "name": "editorial-media.part-0007",
       "bytes": 2097152,
-      "sha256": "239c8383d0a491aa2a843dfc33f1c4bce2ff5a98f2cf26fbcba2a0b955ec568c"
+      "sha256": "3bf034973d287554d52048b85661416d8df66f5ff94241389b032233623b90fd"
     },
     {
       "name": "editorial-media.part-0008",
       "bytes": 2097152,
-      "sha256": "cd1b596e4b788c7b219ddea2b4bfc2df0a7952c3c80a8c6f0cc8718798619929"
+      "sha256": "fd23a6f1213570def0746de61993c9892a026c35b538f1b05de06c582c3ea2f0"
     },
     {
       "name": "editorial-media.part-0009",
       "bytes": 2097152,
-      "sha256": "92c1993e19c034482fb039e865566fc516c8c71360e46351364fddb35ba7e6b9"
+      "sha256": "eb0cb2a872f7999c1dba65d9f28857c76397365edb8cfad4fa8eba55308063f6"
     },
     {
       "name": "editorial-media.part-0010",
       "bytes": 2097152,
-      "sha256": "8133b1cc632380cc2acf7f7279958b41650df4d934e2e0c7d5e945792436fc4b"
+      "sha256": "de404fbc6fb1267a181480889a89f3d79f5fff020f05c3407a3ad2da926404ea"
     },
     {
       "name": "editorial-media.part-0011",
-      "bytes": 2097152,
-      "sha256": "fe7ba09d7e7aeb9644c8fc39968bf589cf05f85f6158c005b0f093622f2fa8fb"
-    },
-    {
-      "name": "editorial-media.part-0012",
-      "bytes": 2097152,
-      "sha256": "42c49e2712e0d3751057a550881753f59b8da0ea58dc0c73c579e35e3ff1418d"
-    },
-    {
-      "name": "editorial-media.part-0013",
-      "bytes": 2097152,
-      "sha256": "a7bccae17245d1d0e32c089df8fed1923c5c74da20a9e9a1f74559bc049f1c4b"
-    },
-    {
-      "name": "editorial-media.part-0014",
-      "bytes": 1386386,
-      "sha256": "111072f0fb520bdf541ec68b517508dbbf0618b8a064c291896a8d50de3881f9"
+      "bytes": 1275489,
+      "sha256": "9492a0f59f00fa6b6a86a29044d246eb4bd8084fe38084f5a4b24588cd150f01"
     }
   ],
   "images": [
@@ -391,14 +376,14 @@
     },
     {
       "path": "assets/editorial/v122/editorial-14-two-material-conversation/original.jpg",
-      "width": 941,
-      "height": 1672,
+      "width": 900,
+      "height": 1600,
       "mime": "image/jpeg"
     },
     {
       "path": "assets/editorial/v122/editorial-14-two-material-conversation/share.jpg",
       "width": 900,
-      "height": 1599,
+      "height": 1600,
       "mime": "image/jpeg"
     },
     {
@@ -409,8 +394,8 @@
     },
     {
       "path": "assets/editorial/v122/editorial-14-two-material-conversation/web.webp",
-      "width": 941,
-      "height": 1672,
+      "width": 900,
+      "height": 1600,
       "mime": "image/webp"
     },
     {
@@ -511,14 +496,14 @@
     },
     {
       "path": "assets/editorial/v122/editorial-19-blue-wall-rhythm/original.jpg",
-      "width": 941,
+      "width": 940,
       "height": 1672,
       "mime": "image/jpeg"
     },
     {
       "path": "assets/editorial/v122/editorial-19-blue-wall-rhythm/share.jpg",
       "width": 900,
-      "height": 1599,
+      "height": 1600,
       "mime": "image/jpeg"
     },
     {
@@ -529,7 +514,7 @@
     },
     {
       "path": "assets/editorial/v122/editorial-19-blue-wall-rhythm/web.webp",
-      "width": 941,
+      "width": 940,
       "height": 1672,
       "mime": "image/webp"
     },
