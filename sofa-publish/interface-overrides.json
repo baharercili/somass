@@ -7,15 +7,15 @@
       "path": "kombinasyonlar.html",
       "expectedBaseSha256": "9c701e27f7de1ad70193989d56d022c9d4dd19730dd4282cd00225854fbb2e32",
       "expectedBaseBytes": 7688,
-      "sha256": "a7d9105129142962f89cb8f5e481cfcca029cf8202c50bb40d17147569547a80",
-      "bytes": 8294
+      "sha256": "009c93122c087c62b1385655dac0381d2b99e9698990d177fc55049a36f03345",
+      "bytes": 8359
     },
     {
       "path": "kombinasyonlar.css",
       "expectedBaseSha256": "3ee37423529ea768f2a7bd6816b1c72dbb71972b05be86eda6e7836624e277c5",
       "expectedBaseBytes": 13349,
-      "sha256": "2745e481350895cabfe84bb4909515ad47b57f73af6f82c6898fb4a19f2d86fa",
-      "bytes": 14634
+      "sha256": "0464c81abc82e371a7004250592599a124154abb4d568fc320a094acea19ebd6",
+      "bytes": 16158
     },
     {
       "path": "kombinasyonlar.js",
