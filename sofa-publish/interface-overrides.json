@@ -112,8 +112,8 @@
       "path": "material-gallery.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "247dd1b3b44b37e08a1ef643b72ade702333fedba0ef92a813564ed58f82dfb5",
-      "bytes": 255930
+      "sha256": "70d70af9221e113fb0803908ee1031714ac602ed942fddff8ddb542f93861c07",
+      "bytes": 277694
     },
     {
       "path": "assets/material-gallery/0032fb2d59206e6fcf75654155da2f4b5afa6b3a3a9f34dabed37bcbb8104278.jpg",
@@ -10712,6 +10712,776 @@
       "expectedBaseBytes": 0,
       "bytes": 586358,
       "sha256": "0e55dbb9358063617522fe7ebbd38bd5956b44437973b98a3645f0d2611ebace"
+    },
+    {
+      "path": "assets/folded-swatches/v121/colormax-262962001015.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 29870,
+      "sha256": "4deb516068308629bcf3976425cd0c7962bd6f55cd78999e85551ecf1540da05"
+    },
+    {
+      "path": "assets/folded-swatches/v121/colormax-262962001015.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 361532,
+      "sha256": "ed59f555c40284aa60c24ac123167a028c217c0f07a2451222552716efceca99"
+    },
+    {
+      "path": "assets/folded-swatches/v121/colormax-262962001017.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 33202,
+      "sha256": "9c5f35b7bc7294effe7ce912873a1c3eff4c901d2d3dc6ce2eb3795709d4efa9"
+    },
+    {
+      "path": "assets/folded-swatches/v121/colormax-262962001017.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 395246,
+      "sha256": "7b4bdca43f265aa6428f59fcfbfebb074c4926f7e04642e3799ce66510baa257"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R01.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14974,
+      "sha256": "4eceb127c72cf846f5ff1c71b6d3b4bf2691f445866c8cee62f8dbffab4b7df4"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R01.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 252578,
+      "sha256": "e99ae699aa2a7809baa13f0a0b2636eb4ff0315129a900061e0d947b95ea0431"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R02.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 16634,
+      "sha256": "7fcbef9f87d1ac7c1c432e2603169a69f5e310d40d24df8b2b800a4b5a254b70"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R02.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 260062,
+      "sha256": "e341dfa0eb7a8ff0a3dfa56421357d2fff925fc24b01744118c4d6e55b7db03d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R03.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 16784,
+      "sha256": "18dce3308075350d398d0e2e65aab1295f70f435b6c6c53c4b8d28917fcb29b6"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R03.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 314102,
+      "sha256": "f226aaac2bfb561f81e8c82ad416a82a895ff7cae9118e0ac251dd83529757e7"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R04.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14330,
+      "sha256": "5f117d8955682c298dbb1823bbd1204c3d5f49f9dadf208b80dc40f64f311f2e"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R04.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 219664,
+      "sha256": "a15d383ffb6281d37a248530c20a143bc642eeb7c5f952e21f5b5f75fb31e061"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R05.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14142,
+      "sha256": "2ea52b4d545089da4a7166298426bfd21fb417bea6fbb4fe509693896d496fd5"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R05.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 259566,
+      "sha256": "a8116661c4739c11ba776470abcdcd720782e3393b7aed836afe5771db49cff7"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R06.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 15272,
+      "sha256": "840de6329b8e09adb370727b32018c192ec6b3177526d1d611f6b2b6ff77dbd5"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R06.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 261178,
+      "sha256": "989c179e03d9721114bad72b2275323bdf0a05ab123518d23ef4ef13a5fe7e09"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R07.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 13498,
+      "sha256": "8850503845aa6e5c53af76a5a05098ba2423001e5dcd754cbfe6a894bacd1642"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R07.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 232564,
+      "sha256": "af2fdd2a2b12f5628e212043184ed1a8ef71578759e5694d774fde55302449db"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R08.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 16352,
+      "sha256": "965e5d32e4cd5e843d0a33e97d726c4b9504f363beab4fe114de9ff7244959b5"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R08.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 286484,
+      "sha256": "8dad217b2c247a82c246cae9ca1263d8ff46b8453b9e879ed07970b27bd1d33a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R09.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11238,
+      "sha256": "238547d8bf58f27909674824c732a66522fb3eb0e1c157696746e26d44fe16e2"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R09.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 215742,
+      "sha256": "303a9e33aab1037a6b7965f813369a23a142ceaf035d1355b25c743a085e8e3d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R10.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 9478,
+      "sha256": "da3cdff57e4049459c7f779be51c4ed233e0afede5bbb6cbd2d128d9a83d1691"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R10.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 211232,
+      "sha256": "a7511b590e872f8b66f498763ac6326bb124f3c09936ff8e3ad805287263cc42"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R11.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14640,
+      "sha256": "e62a542ddfdd734520d13e6217b03a0cc92f2df320c7a8600b78304395683197"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R11.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 265192,
+      "sha256": "cc78822cf05d9d4753a40f68c1af258d672a1d93fca14b990796bdef005695a5"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R12.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14962,
+      "sha256": "e2d70096990b09190df14d92f065a9c2c5a6265fe603adb4171aee3c2efc18bb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R12.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 308566,
+      "sha256": "b36d366d60b1c02aa7d2111ca257191353ee50e6677098f1dba72c4f786e113e"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R13.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 13522,
+      "sha256": "413d260c17fa068b89bbe743bcb09e12b5105e333b9dabb8309d651f76c0d6fb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R13.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 238970,
+      "sha256": "37af7144f40c8bb80283f7916569bf139f0c7d855e20b25731369d5ff3e2e6fd"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R14.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 12024,
+      "sha256": "828e9ec4e1eb0512eac20c335009ca0e31fb1813edcfa5b2515cbd99e6a6c9cf"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R14.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 221538,
+      "sha256": "eaa97dc907c2a7de6448adee12977b4c251917bc786c2ad2b416aa3ab5eb115d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R15.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14492,
+      "sha256": "172e717368f108c2091f0d276f406ada99c639e03dfd45cb6c6dc4ea671f26a3"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R15.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 284470,
+      "sha256": "181fffbb9b616b3e81e3279cdb735f59de1c8307508dee718448687802d86b57"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R16.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14854,
+      "sha256": "bcac6a47faf1cfe35d07f1535f61eb0a33969f88f3bf7d2ff992ad4f96fb5aaa"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R16.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 278926,
+      "sha256": "6163ea214cf8acc1ac48429bf55a676d62484aaa377a8a2fd909a344caf3c204"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R17.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 15566,
+      "sha256": "57ab01b50504df63d8b43d68e1c2d8715bd417499feb5e553dfa5002c4493ec2"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-R17.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 304990,
+      "sha256": "b32f6a31a4d39aa3e31b441c0056e45cf520466be0c2ce85be5da329809d4fac"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S01.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 7992,
+      "sha256": "73407eb8b10612bb818140f95654063794ad12715396b582d4858746995bf2a2"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S01.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 184702,
+      "sha256": "de593bb16d8136f9143754f55092f28688290f66b0132d9b21d8ce5adf34aaeb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S02.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11278,
+      "sha256": "4919ca18fe09774f27b8ac9ebf7a7f1492f4ff2d71ac93fc4b400a07b824c76c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S02.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 247908,
+      "sha256": "6ec4f4c9091d658acace170eb9f0fd87a61890a9b7dfa00ea7419675cb418a49"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S03.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11158,
+      "sha256": "bb6a16dd962fe733bfbba77ea7c9d15ec106be087eac4479959a19f9bcc40e5f"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S03.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 253870,
+      "sha256": "66de814d6ba1d478ad3c76699f5a64b1b41eb90d80a58661064bb1cc622cbd96"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S04.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11102,
+      "sha256": "8d38e87f9b174f5faf82102722a13f6942404f5231472e5d2408b9ed6fa7b69e"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S04.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 209230,
+      "sha256": "5a9dcef5411d983eb759e27a9130fa4a60d49b1442d2dc2c399371a57bb18908"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S05.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 7974,
+      "sha256": "c38b80043410e7c3bae8d78a0277baf22be34faf04812094fc63ec9092adecfb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S05.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 158974,
+      "sha256": "3e41c8d467d87a162553ca4d148eba51f1303a64212f607b6483ec759446a415"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S06.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11076,
+      "sha256": "dfc3c1933178388efd2550e1c4e8e4ad44daf6c0847ee32495bec3eb17017da5"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S06.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 209484,
+      "sha256": "76bfaf33aa63b50c907dfba8e208f7040656852e6fc860dfe2b1c68f9bad5a9d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S07.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 12192,
+      "sha256": "5035e180a7d80274adfc0eef1d5aa14946e77068317cc71e7fb0adcc96a10b4d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S07.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 199784,
+      "sha256": "20b32521cc84123a8e6ac1515aec8ec9cf9b6db6d6356c2e905b01ea6df82e1d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S08.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 12616,
+      "sha256": "8c8fdf5f6fba231a0ded901fd77d77bd49ef181d3d528f7e1b9b12a55989b00b"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S08.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 223444,
+      "sha256": "8bbe9ade6187681bebc71d53e0a489621e821f154a6355d9cc9a13331eb6316a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S09.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 13722,
+      "sha256": "de9d78dd34b27a77944e5f04a3cae3c3fa9ec9209f2aa2b8f46e1d9c8a1ca69d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S09.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 215422,
+      "sha256": "36115d4bfc32dc4f81559b73bc61e9f147739db508708242c3628007f1a2abfc"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S10.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 16408,
+      "sha256": "e33d8908c4a70e1ecaa849a96accec7a0bb568d5191b6d0d06a9c04308b00bc8"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S10.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 254662,
+      "sha256": "1d2ca94ba25f8b64cb8de58ce453de07a6e9302e02d407fbf814af0e36e6ef2c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S11.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 16614,
+      "sha256": "bd70fe563acda7a6d829932d78052992a7ecf677600b34c746d2c36b74a351fb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S11.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 283566,
+      "sha256": "693fb2ba108c0f625ef68310e1f39d457e12e4dd41a7fb636d5325491395e888"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S12.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 11876,
+      "sha256": "327448f40d79cf1dc03cd2a6eeae533eb1c0754ac2446b4960f0dad1c3b0172b"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S12.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 252220,
+      "sha256": "91804b585b0d39d4a12ea4344cd328927c9ea8522b160020f3027f050109e24c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S13.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 9790,
+      "sha256": "e4fba3cf628321acf8bee8786d8214ecb254ad5c5ca50f90a822eae2d9617cc4"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S13.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 232072,
+      "sha256": "23dbc7b653e9069683947ed515f6e5ee4de7c0bdaf6a42a9ba233dd5de175c3d"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S14.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 12590,
+      "sha256": "ba3999c7ff6a50fd83d9b524aefcdaf98b28acb9cfd8d8bb06808eddc594552a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S14.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 246022,
+      "sha256": "e6b6089e339a751a195e8e84a1ba5de2993ac960781ae621065ee722f9f6c534"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S15.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 14732,
+      "sha256": "da7592e63ba6db0e8ed1362b1ef0c3f6f7e191624edbd3c324b6d6803c847956"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S15.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 272950,
+      "sha256": "9c9c72f6b5131623b290b92a10573b9c27129a5aaa18a34532df866daf308b94"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S16.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 15918,
+      "sha256": "8d39b367f3feb544c0b2943dd572bdd9c71149dbc3e96f62b604221f52f9de2f"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-S16.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 264322,
+      "sha256": "2dcfba6f25afff7a697c39940ad51f1de68446f8a029e1f54a5eac75db57ce2c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-official-1023.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 19314,
+      "sha256": "a011a6fbeb747d81a0b94d984a5171f7d21fc14bd66c293ff446ced0ca38cae8"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-official-1023.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 306682,
+      "sha256": "7f6d8336c88f9d376e35afdd8ea7d00dd88a936bd833d00ec0adad83b7b115bb"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1008.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 22260,
+      "sha256": "28195e6e47e6db41d288c0b5c21f679a86064e9267c4cbd1e9a63abd0b0b0883"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1008.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 299250,
+      "sha256": "f305c1d270903dd2afdc3590aeb9631b3e9b935cc0cf8926ec918bf1ff6626b4"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1009.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 18648,
+      "sha256": "e579eb076bd039427764969c0a073ab7ed4f5b96ef7f769187dd8bbd5601bfd4"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1009.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 284442,
+      "sha256": "89317a605b58b42f161794886e38372099581fb0f20707a7494558068947cf97"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1013.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 23448,
+      "sha256": "87a16e6f7d1504b0e125619511aaa31dfc700590f3cf38f172bbfa1cad069312"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1013.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 323326,
+      "sha256": "10d5232eb1e3200c11b82b47cd32c088ae5fcda290137301355f6c865d7ea32a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1016.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 21794,
+      "sha256": "e15e0dfd3bb6b9b9d33be18c3ec84556d157c431f80c42c6f342f04299dfc1ce"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1016.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 333894,
+      "sha256": "559ca81f1043875ffe827e67e4ecde0d39160ed7f37ddfc86e667dff6b7bdf15"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1019.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 19534,
+      "sha256": "592a1c54254ae92c1bcb02b89b6a1e9b2abf43b085e2641898f477a984801940"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1019.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 317784,
+      "sha256": "a4fca04c3fc4156d21fcadb1dd2ade0aaee2a2a31678ba302e920ca41e3cd8ec"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1025.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 15146,
+      "sha256": "c32a341076e31554586114a822f7fab13cac0d9604c46bce7d9c3e2ae8d579f2"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1025.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 238942,
+      "sha256": "b1ba7ace52a212de7119b91944a88c2aaab384bb26af079940d80abc8947c5bc"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1035.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 21014,
+      "sha256": "812eed3f19af57f1500cfe13f71e55220469d3fb5e2bd350a10b9129333668e6"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1035.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 266612,
+      "sha256": "d1d40fea243cf298f73e9bc7c8060846f2ecd76bab1c1ebe217a589d7180c93b"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1036.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 17764,
+      "sha256": "cb636aecf40175413e32a37d1732c5d8f59ba3465befd6e72783f838563135b3"
+    },
+    {
+      "path": "assets/folded-swatches/v121/mora-reference-1036.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 246452,
+      "sha256": "310a5d568bdcf873f1dc558b7fe05f3bc67ad9c5e4972411d25d435ffcec0fca"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001024.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 27458,
+      "sha256": "3bd5a5f73ff85ab3902d7e7869f1f8812e934be25fe6a50caedfcfb2c3ab2dd0"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001024.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 358472,
+      "sha256": "c2f67dc4a3a35adaf0f052cf62d89f0e33bb2082b565907b1825834c1db2b891"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001200.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 26732,
+      "sha256": "286a9d70628b693b27abd135d147e7028ecf9a18af56b8d6fe5e07a2f5ea66e3"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001200.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 333526,
+      "sha256": "1d2d0968ed8f171df5dfb4c6e4565312a9fdea301f9c38bb101a22f3c804cd68"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001246.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 24406,
+      "sha256": "6ba224cd0d7f123f17bc095e2e70614625fa66ad9a5d9f76b23fb5839b3b1f3e"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001246.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 337694,
+      "sha256": "d2fde39960fac03ca3523438c7610f67cd0c15982fbbad0f6ad8672591d7c900"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001351.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 24302,
+      "sha256": "2fb5eb8c34c05b537cd575f33a58a07a3bdf0e18e517b0bfbb906b563b1e117c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001351.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 335648,
+      "sha256": "54a66b859aecff8945a469d9394aaeb4719bbde64223e65daa721cc79df4b3fa"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001355.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 29766,
+      "sha256": "5ef36b76d23cab22f47f37e208a9c00c088ca1d2ba84013433084452871ad455"
+    },
+    {
+      "path": "assets/folded-swatches/v121/soft-touch-457623001355.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 447612,
+      "sha256": "e9c9e770e4e89a0a9c7c9c762d53e1eb5dc1673d1f2bd7d0b932e17766664b00"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001008.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 29294,
+      "sha256": "78ece6df26ceb7dfb6220b10a985cf97a440d9a71cf7eebc01aac9c123d5160c"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001008.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 292444,
+      "sha256": "2b701ece4f825afb2b570469fe84ae34922d6e7bdc94e7e4d70c5b41bfb4d2b8"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001012.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 35434,
+      "sha256": "59375307df78116c6baf2f19719f49706693ef9164afd74120797b9469227911"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001012.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 400828,
+      "sha256": "d58f33b77822fa443d10f0848d48d73488d75cd26c93b83c91aa876a53995268"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001030.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 34034,
+      "sha256": "b06e7145e9b398aa7be0f9ce7b1370ee1058f199cf1c60ee0687a311a0a84fea"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001030.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 366542,
+      "sha256": "32aa7a916f2a19e5e0a1a9afcf6ae1aee2caad04cb3213b8e280d1bf34ce8d0b"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001031.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 33554,
+      "sha256": "d5537c9a766a08464c9aa1622a94cf9232a5cdb14ec604e0f07ec835eec2674a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001031.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 351874,
+      "sha256": "d287d77583c7c43123064418d6706b238c3400dba9a42a91e766eccc39784038"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001035.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 29682,
+      "sha256": "fe39262cbdfbdf7881fb37cbc54f8a153d9cfc6b6ab0342ce47c10d3495d6c2a"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001035.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 307176,
+      "sha256": "753c3de8f3eb33369c0373e211c19c09c67c2110d28325574837efad3f3fada3"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001041.thumb.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 32646,
+      "sha256": "67d458c06e1d0201ac1571811c5ac08ad95689a2e4971f90b9e3e621511045e2"
+    },
+    {
+      "path": "assets/folded-swatches/v121/veronza-263267001041.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 349140,
+      "sha256": "f6877212c5734312f8eaddbb6a70bad5e405df3b30bdf030801452bb7e20090e"
     }
   ]
 }
