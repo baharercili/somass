@@ -28,8 +28,8 @@
       "path": "urun.html",
       "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
       "expectedBaseBytes": 5678,
-      "sha256": "2640c4d0049cf56764eedc8179bd1f8f949c88a56f84bd97dbe3de7228c9fa7f",
-      "bytes": 5922
+      "sha256": "292e803485caa8b1b66ddff376d18bbab861033ade6706dda377ce074485c065",
+      "bytes": 7810
     },
     {
       "path": "index.html",
@@ -12131,8 +12131,8 @@
       "path": "ana-sayfa.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "bytes": 38122,
-      "sha256": "d3517cd3f9aa93cf42ada54cd94fef02b4a342401a1d6250121035597ee60bcb"
+      "bytes": 40462,
+      "sha256": "477c68afe0129ab9fa35e585346c3618f7d5ff027e6849a7768a74dd3080ec88"
     }
   ]
 }
