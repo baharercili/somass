@@ -28,8 +28,8 @@
       "path": "urun.html",
       "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
       "expectedBaseBytes": 5678,
-      "sha256": "e6e87a306d1af75c2b3028310959d6a89c14b1a123b2d2a30da712de1465653c",
-      "bytes": 8131
+      "sha256": "9bc5dda4e76a1f4a52cb942df553a43f991ae528cc0a6b44a25c1ce4a4336e81",
+      "bytes": 8137
     },
     {
       "path": "index.html",
@@ -42,8 +42,8 @@
       "path": "product-gallery.js",
       "expectedBaseSha256": "98b9bd00f6ce52b4a8a0ee7054ef79d45699a4b9185e34d382748ba1a911029e",
       "expectedBaseBytes": 10698,
-      "sha256": "3148b3d174d16fde7572cabae053edd91d16aa28207cedb070527f9909374512",
-      "bytes": 11294
+      "sha256": "983046d00ddb56162f289705d3757779f751e9d75e057e0264450946174cdf72",
+      "bytes": 17856
     },
     {
       "path": "product-seo.js",
