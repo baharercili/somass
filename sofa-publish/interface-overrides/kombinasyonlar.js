@@ -1,6 +1,6 @@
 import {CONFIG_STORAGE_KEY,createGalleryChoices,readGalleryState,combinationHref} from './combinations-state.js?v=20261124-new-fabrics-v118';
 import {getInspirationCatalog} from './inspiration-catalog.js?v=20261124-new-fabrics-v118';
-import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-new-fabrics-v118';
+import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-realism-v128';
 import {groupCatalogueVariants,isListedCatalogueVariant} from './catalogue-variants.js?v=20261124-new-fabrics-v118';
 
 export const CATALOGUE_PAGE_SIZE=12;
@@ -193,7 +193,7 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
 
 export async function initCatalogue(document=globalThis.document){
  const $=selector=>document.querySelector(selector);
- const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-new-fabrics-v118',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
+ const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-realism-v128',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
  const products=new Map((Array.isArray(productManifest?.products)?productManifest.products:[]).filter(product=>product&&typeof product.key==='string').map(product=>[product.key,product]));
  const choices=createGalleryChoices(palette),cards=attachStudioImages(getInspirationCatalog(choices),studioManifest,choices).map(card=>({...card,productHref:'./urun.html?model='+encodeURIComponent(card.key),galleryCount:Array.isArray(products.get(card.key)?.gallery)?products.get(card.key).gallery.length:null}));
  // The previous draft is only a return destination; it never influences the catalogue.

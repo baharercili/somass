@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from './vendor/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from './vendor/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from './vendor/addons/environments/RoomEnvironment.js';
-import { SofaMaterialSystem } from './fabric-material.js?v=20261124-new-fabrics-v118';
+import { SofaMaterialSystem } from './fabric-material.js?v=20261124-realism-v128';
 import { ModularLayout } from './modular-layout.js?v=20261123-square-corner-v2';
 import { evaluateBackBounds } from './back-motion.js?v=20261122-open-travel-v95';
 import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261124-new-fabrics-v118';

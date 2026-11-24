@@ -40,7 +40,7 @@ export function attachStudioImages(cards,manifest,choices){
 /** Missing images never prevent the measured catalogue and live fallback from opening. */
 export async function loadStudioImageManifest(fetcher=globalThis.fetch){
  try{
-  const response=await fetcher('./assets/studio/catalogue-v69.json?v=20261124-new-fabrics-v118',{credentials:'same-origin'});
+  const response=await fetcher('./assets/studio/catalogue-v69.json?v=20261124-realism-v128',{credentials:'same-origin'});
   if(!response.ok)return null;
   const manifest=await response.json();
   return manifest&&typeof manifest==='object'&&!Array.isArray(manifest)?manifest:null;

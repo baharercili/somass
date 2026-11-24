@@ -1,11 +1,11 @@
 import * as THREE from 'three';
 import {GLTFLoader} from './vendor/addons/loaders/GLTFLoader.js';
 import {GLTFExporter} from './vendor/addons/exporters/GLTFExporter.js';
-import {SofaMaterialSystem} from './fabric-material.js?v=20261124-new-fabrics-v118';
+import {SofaMaterialSystem} from './fabric-material.js?v=20261124-realism-v128';
 import {ModularLayout} from './modular-layout.js?v=20261123-square-corner-v2';
 import {createGalleryChoices,readGalleryState} from './combinations-state.js?v=20261124-new-fabrics-v118';
 import {buildConsumerSummary} from './consumer-summary.js?v=20261124-new-fabrics-v118';
-import {createExportMaterialAdapter} from './product-export-materials.js?v=20261124-new-fabrics-v118';
+import {createExportMaterialAdapter} from './product-export-materials.js?v=20261124-realism-v128';
 
 let resourcesPromise,exportQueue=Promise.resolve();
 const abort=signal=>{if(signal?.aborted)throw new DOMException('İndirme iptal edildi.','AbortError');};

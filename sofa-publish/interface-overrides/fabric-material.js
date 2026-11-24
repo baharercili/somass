@@ -1,4 +1,4 @@
-import {FABRIC_GLSL,fabricProfile} from './fabric-appearance.js?v=20261124-new-fabrics-v118';
+import {FABRIC_GLSL,fabricProfile} from './fabric-appearance.js?v=20261124-realism-v128';
 import { loadPillowFaceRegions, repairPillowFaceRegions } from './pillow-edge-repair.js?v=20261111-pillow-face-v24';
 import * as THREE from 'three';
 import { backMotionProfile, backDirectionVector, ensureBackWeight } from './back-motion.js?v=20261122-open-travel-v95';

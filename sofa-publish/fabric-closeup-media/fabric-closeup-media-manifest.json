@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-fabric-closeup-media",
+  "archiveSha256": "f4a8e42d4f6ae22f0826a5f07233136b363b0d1a44ad538e2c75315865c8f165",
+  "archiveBytes": 2332224,
+  "memberCount": 24,
+  "parts": [
+    {
+      "name": "fabric-closeup-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "aa5af7ca2dbcb8e1dc2ecf75d27026ea374dfc79572630e005aeb862f03dc113"
+    },
+    {
+      "name": "fabric-closeup-media.part-0002",
+      "bytes": 235072,
+      "sha256": "9daf2ada06214e92223a869598cba2590b6bd3049f0b56acbf6c90b985ad8529"
+    }
+  ],
+  "media": [
+    {
+      "path": "assets/fabric-closeups/v129/mora-R04.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-R04.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-R17.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-R17.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-S06.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-S06.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-official-1023.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-official-1023.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1008.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1008.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1009.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1009.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1013.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1013.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1016.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1016.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1019.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1019.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1025.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1025.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1035.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1035.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1036.thumb.webp",
+      "mime": "image/webp",
+      "width": 360,
+      "height": 240
+    },
+    {
+      "path": "assets/fabric-closeups/v129/mora-reference-1036.webp",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}

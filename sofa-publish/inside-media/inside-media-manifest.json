@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-inside-media",
+  "archiveSha256": "e5dc38732ee5df85ab99385269eb4c5753c39259595ad94e984762e3cb205293",
+  "archiveBytes": 3129760,
+  "memberCount": 3,
+  "parts": [
+    {
+      "name": "inside-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "0b5f0837ae3b7891b1565c6dbc96afd02b0109ab26c368ede6e58769dfae4cec"
+    },
+    {
+      "name": "inside-media.part-0002",
+      "bytes": 1032608,
+      "sha256": "33977351a61c2653f6e644750073cceceac9f02001393f3181a6f76bf970770d"
+    }
+  ],
+  "media": [
+    {
+      "path": "assets/inside/v128/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 20000,
+      "frameRate": 24,
+      "frameCount": 480,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": false
+    },
+    {
+      "path": "assets/inside/v128/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/inside/v128/structure.glb",
+      "mime": "model/gltf-binary",
+      "nativeParts": 57,
+      "nativeWoodParts": 53,
+      "nativeFootParts": 4,
+      "triangles": 29462,
+      "units": "metres",
+      "upAxis": "Y"
+    }
+  ]
+}

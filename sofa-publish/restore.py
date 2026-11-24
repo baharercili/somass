@@ -1712,5 +1712,377 @@ def main():
     print(json.dumps(restore(args.package_root, args.site)))
 
 
+
+
+# V130 only: strict independent media validators.
+
+def inside_video_duration(content, box):
+    _, start, end, _ = box
+    if start + 4 > end or content[start + 1:start + 4] != b'\0\0\0':
+        raise ValueError('Invalid video full box')
+    version = content[start]
+    scale_offset, duration_offset, size = (12, 16, 4) if version == 0 else (20, 24, 8)
+    if version not in (0, 1) or start + duration_offset + size > end:
+        raise ValueError('Invalid video duration record')
+    scale = int.from_bytes(content[start + scale_offset:start + scale_offset + 4], 'big')
+    ticks = int.from_bytes(content[start + duration_offset:start + duration_offset + size], 'big')
+    if not 0 < scale <= 1000000000 or ticks != INSIDE_DURATION_SECONDS * scale:
+        raise ValueError('Video must have its approved twenty-second duration')
+    return scale, ticks
+
+def inside_mp4_metadata(content):
+    boxes = video_boxes(content)
+    if not boxes or boxes[0][0] != b'ftyp' or any(b[0] not in (b'ftyp', b'moov', b'mdat', b'free', b'wide') for b in boxes):
+        raise ValueError('Unexpected or fragmented MP4 container')
+    ftyp, moov, mdat = video_one(boxes, b'ftyp'), video_one(boxes, b'moov'), video_one(boxes, b'mdat')
+    brands = content[ftyp[1]:ftyp[2]]
+    if len(brands) < 8 or len(brands) % 4 or brands[:4] not in (b'isom', b'mp41', b'mp42'):
+        raise ValueError('MP4 must be a self-contained ISO/AVC file')
+    movie = video_boxes(content, moov[1], moov[2]);inside_video_duration(content, video_one(movie, b'mvhd'))
+    track = video_one(movie, b'trak');track_boxes = video_boxes(content, track[1], track[2])
+    tkhd = video_one(track_boxes, b'tkhd')
+    if tkhd[2] - tkhd[1] < 84 or tuple(int.from_bytes(content[i:i + 4], 'big') for i in [tkhd[2] - 8, tkhd[2] - 4]) != (INSIDE_WIDTH << 16, INSIDE_HEIGHT << 16):
+        raise ValueError('MP4 track dimensions differ from the approved native frames')
+    if content[tkhd[2] - 44:tkhd[2] - 8] != struct.pack('>9I', 65536, 0, 0, 0, 65536, 0, 0, 0, 1073741824):
+        raise ValueError('MP4 track must not rotate or transform the native frames')
+    mdia = video_one(track_boxes, b'mdia');media = video_boxes(content, mdia[1], mdia[2])
+    scale, ticks = inside_video_duration(content, video_one(media, b'mdhd'))
+    handler = video_one(media, b'hdlr')
+    if handler[1] + 12 > handler[2] or content[handler[1] + 8:handler[1] + 12] != b'vide':
+        raise ValueError('Only one silent video track is permitted')
+    minf = video_one(media, b'minf');minimum = video_boxes(content, minf[1], minf[2])
+    dinf = video_one(minimum, b'dinf');dref = video_one(video_boxes(content, dinf[1], dinf[2]), b'dref')
+    if content[dref[1]:dref[1] + 8] != b'\0\0\0\0\0\0\0\1':
+        raise ValueError('Unexpected MP4 data references')
+    references = video_boxes(content, dref[1] + 8, dref[2])
+    if len(references) != 1:
+        raise ValueError('MP4 data-reference count differs')
+    reference = video_one(references, b'url ')
+    if reference[2] - reference[1] != 4 or content[reference[1]:reference[2]] != b'\0\0\0\1':
+        raise ValueError('External MP4 media references are forbidden')
+    stbl = video_one(minimum, b'stbl');tables = video_boxes(content, stbl[1], stbl[2])
+    stsd = video_one(tables, b'stsd')
+    if content[stsd[1]:stsd[1] + 8] != b'\0\0\0\0\0\0\0\1':
+        raise ValueError('Unexpected MP4 sample descriptions')
+    descriptions = video_boxes(content, stsd[1] + 8, stsd[2]);entry = video_one(descriptions, b'avc1')
+    if len(descriptions) != 1 or entry[2] - entry[1] < 78:
+        raise ValueError('Only one H264 AVC video description is permitted')
+    if content[entry[1] + 6:entry[1] + 8] != b'\0\1' or struct.unpack('>HH', content[entry[1] + 24:entry[1] + 28]) != (INSIDE_WIDTH, INSIDE_HEIGHT):
+        raise ValueError('AVC sample dimensions or media reference differ')
+    sample = video_boxes(content, entry[1] + 78, entry[2]);avcc = video_one(sample, b'avcC')
+    video_avcc(content[avcc[1]:avcc[2]])
+    colors = [box for box in sample if box[0] == b'colr']
+    if len(colors) > 1:
+        raise ValueError('Conflicting MP4 colour metadata')
+    if colors:
+        colr = colors[0];color = content[colr[1]:colr[2]]
+        if (len(color) not in (10, 11) or color[:4] not in (b'nclx', b'nclc')
+                or color[4:10] != b'\0\1\0\1\0\1'):
+            raise ValueError('MP4 colour metadata conflicts with its H264 BT709 signal')
+    def table(kind, width):
+        box = video_one(tables, kind);start, end = box[1], box[2]
+        if start + 8 > end or content[start:start + 4] != b'\0\0\0\0':raise ValueError('Invalid MP4 sample table')
+        count = int.from_bytes(content[start + 4:start + 8], 'big')
+        if not 1 <= count <= INSIDE_FRAME_COUNT or start + 8 + count * width != end:raise ValueError('Invalid MP4 sample table length')
+        return [content[p:p + width] for p in range(start + 8, end, width)]
+    timing = [struct.unpack('>II', row) for row in table(b'stts', 8)]
+    if (sum(count for count, delta in timing) != INSIDE_FRAME_COUNT
+            or sum(count * delta for count, delta in timing) != ticks
+            or any(not count or delta * INSIDE_FPS != scale for count, delta in timing)):
+        raise ValueError('MP4 must contain exactly 480 constant-rate frames at 24 fps')
+    stsz = video_one(tables, b'stsz');s = content[stsz[1]:stsz[2]]
+    if len(s) < 12 or s[:4] != b'\0\0\0\0' or int.from_bytes(s[8:12], 'big') != INSIDE_FRAME_COUNT:
+        raise ValueError('MP4 sample count differs')
+    fixed = int.from_bytes(s[4:8], 'big')
+    if (fixed and len(s) != 12) or (not fixed and len(s) != 12 + INSIDE_FRAME_COUNT * 4):raise ValueError('Invalid MP4 sample size table')
+    sizes = [fixed] * INSIDE_FRAME_COUNT if fixed else [int.from_bytes(s[p:p + 4], 'big') for p in range(12, len(s), 4)]
+    if not all(sizes):raise ValueError('Empty MP4 sample')
+    chunk_kinds = [b[0] for b in tables if b[0] in (b'stco', b'co64')]
+    if len(chunk_kinds) != 1:raise ValueError('Missing or ambiguous MP4 chunk offsets')
+    offsets = [int.from_bytes(row, 'big') for row in table(chunk_kinds[0], 4 if chunk_kinds[0] == b'stco' else 8)]
+    mappings = [struct.unpack('>III', row) for row in table(b'stsc', 12)]
+    if mappings[0][0] != 1 or any(first > len(offsets) or not count or description != 1 for first, count, description in mappings) or any(a[0] >= b[0] for a, b in zip(mappings, mappings[1:])):
+        raise ValueError('Invalid MP4 sample-to-chunk mapping')
+    intervals, sample_index, mapping_index, idr = [], 0, 0, False
+    for chunk, offset in enumerate(offsets, 1):
+        while mapping_index + 1 < len(mappings) and mappings[mapping_index + 1][0] <= chunk:mapping_index += 1
+        for _ in range(mappings[mapping_index][1]):
+            if sample_index >= len(sizes):raise ValueError('Excess MP4 samples')
+            end = offset + sizes[sample_index]
+            if offset < mdat[1] or end > mdat[2]:raise ValueError('MP4 sample points outside its own media data')
+            intervals.append((offset, end));cursor, slices = offset, 0
+            while cursor < end:
+                if cursor + 4 > end:raise ValueError('Truncated AVC NAL length')
+                size = int.from_bytes(content[cursor:cursor + 4], 'big');cursor += 4
+                if not size or cursor + size > end or content[cursor] & 0x80:raise ValueError('Invalid AVC NAL payload')
+                kind = content[cursor] & 31
+                if kind not in (1, 5, 6, 7, 8, 9, 10, 11, 12):raise ValueError('Unexpected AVC NAL type')
+                if kind in (1, 5):slices += 1
+                if kind == 5:idr = True
+                cursor += size
+            if not slices:raise ValueError('MP4 sample has no H264 picture slice')
+            sample_index += 1;offset = end
+    ordered = sorted(intervals)
+    if (sample_index != INSIDE_FRAME_COUNT or not idr or ordered[0][0] != mdat[1] or ordered[-1][1] != mdat[2]
+            or any(a[1] != b[0] for a, b in zip(ordered, ordered[1:]))):
+        raise ValueError('MP4 picture samples do not exactly cover its video data')
+    return {'mime': 'video/mp4', 'width': INSIDE_WIDTH, 'height': INSIDE_HEIGHT,
+            'durationMilliseconds': INSIDE_DURATION_SECONDS * 1000, 'frameRate': INSIDE_FPS,
+            'frameCount': INSIDE_FRAME_COUNT, 'codec': 'H264 High', 'pixelFormat': 'yuv420p',
+            'colorSpace': 'bt709', 'audio': False, 'faststart': moov[3] < mdat[3]}
+
+def _extension_webp_dimensions(name, content):
+    """Accept one approved still portrait WebP, at its genuine native size."""
+    match = _extension_media_match(name)
+    if (not match or len(content) < 30 or len(content) > EXTENSION_MAX_FILE_BYTES
+            or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8], 'little') != len(content) - 8):
+        raise ValueError('Extension WebP signature or path differs')
+    cursor, dimensions, canvas, frames, canvases = 12, None, None, 0, 0
+    while cursor < len(content):
+        if cursor + 8 > len(content):
+            raise ValueError('Truncated extension WebP chunk')
+        kind = content[cursor:cursor + 4]
+        size = int.from_bytes(content[cursor + 4:cursor + 8], 'little')
+        start, end = cursor + 8, cursor + 8 + size
+        if end + (size & 1) > len(content) or kind in (b'ANIM', b'ANMF'):
+            raise ValueError('Invalid or animated extension WebP')
+        data = content[start:end]
+        if kind == b'VP8X':
+            if len(data) != 10 or data[0] & 2 or canvases or frames:
+                raise ValueError('Invalid or animated extension WebP canvas')
+            canvas = (int.from_bytes(data[4:7], 'little') + 1, int.from_bytes(data[7:10], 'little') + 1)
+            canvases += 1
+        elif kind == b'VP8 ':
+            if len(data) < 10 or data[3:6] != b'\x9d\x01\x2a':
+                raise ValueError('Invalid extension VP8 frame')
+            dimensions = (int.from_bytes(data[6:8], 'little') & 0x3fff, int.from_bytes(data[8:10], 'little') & 0x3fff)
+            frames += 1
+        elif kind == b'VP8L':
+            if len(data) < 5 or data[0] != 0x2f:
+                raise ValueError('Invalid extension VP8L frame')
+            bits = int.from_bytes(data[1:5], 'little')
+            dimensions = ((bits & 0x3fff) + 1, ((bits >> 14) & 0x3fff) + 1)
+            frames += 1
+        cursor = end + (size & 1)
+    if frames != 1 or (canvas is not None and canvas != dimensions):
+        raise ValueError('Extension WebP frame or canvas differs')
+    return dimensions
+
+# V130 additive media support. Original V127 validators remain byte-for-byte.
+import math
+import os
+
+INSIDE_DURATION_SECONDS = 20
+INSIDE_FRAME_COUNT = 480
+INSIDE_FPS = 24
+INSIDE_WIDTH, INSIDE_HEIGHT = 1280, 720
+INSIDE_PATHS = frozenset({'assets/inside/v128/structure.glb', 'assets/inside/v128/film.mp4', 'assets/inside/v128/poster.webp'})
+CLOSEUP_IDS = frozenset({'mora-official-1023','mora-reference-1016','mora-reference-1036','mora-S06','mora-R04','mora-R17','mora-reference-1035','mora-reference-1008','mora-reference-1025','mora-reference-1019','mora-reference-1013','mora-reference-1009'})
+CLOSEUP_PATHS = frozenset('assets/fabric-closeups/v129/' + key + suffix + '.webp' for key in CLOSEUP_IDS for suffix in ('','.thumb'))
+INSIDE_STATIC_LIMITS = {'soff-ic-yapi.html': 32 * 1024, 'soff-ic-yapi.js': 64 * 1024}
+INTERFACE_FILES = INTERFACE_FILES | frozenset(INSIDE_STATIC_LIMITS)
+NEW_INTERFACE_FILES = NEW_INTERFACE_FILES | frozenset(INSIDE_STATIC_LIMITS)
+EXTENSION_MAX_FILE_BYTES = 8 * 1024 * 1024
+EXTENSION_MAX_ARCHIVE_BYTES = 16 * 1024 * 1024
+EXTENSION_MAX_PART_BYTES = 2 * 1024 * 1024
+EXTENSION_MAX_PARTS = 8
+INSIDE_SOURCE_IDS = frozenset(['cad-05-9970', 'cad-05-9BEA', 'cad-05-9D05', 'cad-05-9D06', 'cad-07-2FC', 'cad-07-2FF', 'cad-07-302', 'cad-07-305', 'cad-07-306', 'cad-07-307', 'cad-07-30A', 'cad-07-30B', 'cad-07-30C', 'cad-07-30D', 'cad-07-30E', 'cad-07-30F', 'cad-07-310', 'cad-07-311', 'cad-07-312', 'cad-07-315', 'cad-07-318', 'cad-07-319', 'cad-07-31A', 'cad-07-31D', 'cad-07-320', 'cad-07-321', 'cad-07-322', 'cad-07-323', 'cad-07-326', 'cad-08-2F7', 'cad-08-2F9', 'cad-08-2FE', 'cad-08-2FEA', 'cad-08-2FEB', 'cad-08-3049', 'cad-08-3088', 'cad-08-30BB', 'cad-08-30BD', 'cad-08-30BE', 'cad-08-30BF', 'cad-08-30C0', 'cad-08-30C1', 'cad-08-30C2', 'cad-08-350', 'cad-10-2EB', 'cad-10-2EC', 'cad-10-2EF', 'cad-10-2F2', 'cad-10-2F5', 'cad-10-2F9', 'cad-10-2FC', 'cad-10-300', 'cad-10-301', 'cad-10-304', 'cad-10-307', 'cad-10-33A', 'cad-10-374'])
+
+
+def _extension_media_match(name):
+    return isinstance(name, str) and (name in INSIDE_PATHS or name in CLOSEUP_PATHS)
+
+
+def inside_media_limit(name):
+    if name == 'assets/inside/v128/film.mp4': return 8 * 1024 * 1024
+    if name in INSIDE_PATHS: return 1024 * 1024
+    if name in CLOSEUP_PATHS: return 256 * 1024 if name.endswith('.thumb.webp') else 2 * 1024 * 1024
+    raise ValueError('Unexpected extension media path')
+
+
+def validate_inside_glb(content):
+    if len(content) < 32 or len(content) > 1024 * 1024 or struct.unpack_from('<4sII', content) != (b'glTF', 2, len(content)):
+        raise ValueError('Invalid bounded native inside GLB header')
+    size, kind = struct.unpack_from('<I4s', content, 12)
+    if kind != b'JSON' or size % 4 or not 0 < size < len(content) - 28:
+        raise ValueError('Invalid inside GLB JSON chunk')
+    document = json.loads(content[20:20 + size].decode('utf-8'))
+    start = 20 + size; length, kind = struct.unpack_from('<I4s', content, start)
+    if kind != b'BIN\0' or length % 4 or start + 8 + length != len(content):
+        raise ValueError('Inside GLB must contain one self-contained BIN chunk')
+    binary = content[start + 8:]
+    if (set(document) != {'asset','scene','scenes','nodes','meshes','materials','buffers','bufferViews','accessors','extras'}
+            or document['asset'].get('version') != '2.0' or len(document['buffers']) != 1
+            or document['buffers'][0] != {'byteLength':length}
+            or len(document['meshes']) != 57 or len(document['nodes']) != 61
+            or {mesh.get('name') for mesh in document['meshes']} != INSIDE_SOURCE_IDS):
+        raise ValueError('Inside GLB must retain exact native 53 wood and 4 foot parts')
+    if any(value in content[20:20 + size] for value in (b'"uri"', b'/Users/', b'file://', b'http://', b'https://')):
+        raise ValueError('External or private inside GLB resources are forbidden')
+    views, accessors = document['bufferViews'], document['accessors']
+    def data(accessor_index, component, kind):
+        if type(accessor_index) is not int or not 0 <= accessor_index < len(accessors): raise ValueError('Invalid GLB accessor reference')
+        a = accessors[accessor_index]
+        if (a.get('componentType') != component or a.get('type') != kind or 'sparse' in a or 'byteOffset' in a
+                or type(a.get('count')) is not int or not 0 < a['count'] <= 200000): raise ValueError('Invalid native GLB accessor')
+        index = a.get('bufferView')
+        if type(index) is not int or not 0 <= index < len(views): raise ValueError('Invalid native GLB buffer view')
+        v = views[index]; stride = 12 if kind == 'VEC3' else 2; offset = v.get('byteOffset',0)
+        if (v.get('buffer') != 0 or 'byteStride' in v or type(offset) is not int or offset < 0 or offset % 4
+                or v.get('byteLength') != stride * a['count'] or offset + v['byteLength'] > length): raise ValueError('Native GLB view bounds differ')
+        return a['count'], binary[offset:offset + v['byteLength']]
+    triangles = 0
+    for mesh in document['meshes']:
+        if len(mesh.get('primitives',[])) != 1: raise ValueError('Unexpected native GLB primitive count')
+        p = mesh['primitives'][0]
+        if set(p.get('attributes',{})) != {'POSITION'} or p.get('mode',4) != 4: raise ValueError('Native GLB must retain source triangle geometry')
+        count, xyz = data(p['attributes']['POSITION'],5126,'VEC3'); number, ix = data(p['indices'],5123,'SCALAR')
+        if number % 3: raise ValueError('Invalid native GLB triangle indices')
+        positions = struct.unpack('<' + 'f' * (len(xyz)//4),xyz)
+        if not all(math.isfinite(v) and abs(v) <= 10 for v in positions): raise ValueError('Invalid native GLB coordinates')
+        if max(struct.unpack('<' + 'H' * number,ix)) >= count: raise ValueError('Native GLB index outside its own vertices')
+        triangles += number//3
+    if triangles != 29462: raise ValueError('Inside native source triangle count differs')
+    return {'mime':'model/gltf-binary','nativeParts':57,'nativeWoodParts':53,'nativeFootParts':4,'triangles':triangles,'units':'metres','upAxis':'Y'}
+
+
+def validate_extension_media(name, content):
+    if not _extension_media_match(name) or not 0 < len(content) <= inside_media_limit(name):
+        raise ValueError('Unexpected extension media path or size')
+    if name.endswith('.glb'): metadata = validate_inside_glb(content)
+    elif name.endswith('.mp4'): metadata = inside_mp4_metadata(content)
+    else:
+        width, height = _extension_webp_dimensions(name,content)
+        wanted = (1280,720) if name in INSIDE_PATHS else ((360,240) if name.endswith('.thumb.webp') else (1536,1024))
+        if (width,height) != wanted: raise ValueError('Extension still-image dimensions differ')
+        metadata = {'mime':'image/webp','width':width,'height':height}
+    return {'path':name, **metadata}
+
+
+def load_extension_media_package(package_root, media_records, kind):
+    if kind not in ('inside','fabric-closeup'): raise ValueError('Unexpected extension package kind')
+    prefix = kind + '-media'; paths = INSIDE_PATHS if kind == 'inside' else CLOSEUP_PATHS
+    folder = package_root/'sofa-publish'/prefix; control = folder/(prefix+'-manifest.json')
+    if not control.exists() and not control.is_symlink():
+        if media_records: raise ValueError('Extension assets require their exact verified bundle')
+        return {},None
+    regular_source(control,package_root)
+    if not 0 < control.stat().st_size <= 64*1024: raise ValueError('Invalid extension media manifest size')
+    raw=control.read_bytes();m=json.loads(raw.decode('utf-8'))
+    if (not isinstance(m,dict) or set(m) != {'schemaVersion','application','archiveSha256','archiveBytes','memberCount','parts','media'}
+            or type(m['schemaVersion']) is not int or m['schemaVersion'] != 1 or m['application'] != 'studio-sofa-'+prefix
+            or not interface_digest(m['archiveSha256']) or not interface_integer(m['archiveBytes'],EXTENSION_MAX_ARCHIVE_BYTES)
+            or type(m['memberCount']) is not int or m['memberCount'] != len(paths) or set(media_records) != paths
+            or not isinstance(m['parts'],list) or not 1 <= len(m['parts']) <= EXTENSION_MAX_PARTS
+            or not isinstance(m['media'],list) or len(m['media']) != len(paths)):
+        raise ValueError('Invalid exact extension media manifest')
+    metadata={}
+    for item in m['media']:
+        if not isinstance(item,dict) or item.get('path') not in paths or item['path'] in metadata: raise ValueError('Unexpected or duplicate extension metadata')
+        metadata[item['path']]=item
+    if set(metadata) != paths: raise ValueError('Extension metadata must cover every exact asset')
+    stream=io.BytesIO();digest=hashlib.sha256();total=0
+    for index,part in enumerate(m['parts'],1):
+        if (not isinstance(part,dict) or set(part) != {'name','bytes','sha256'} or part['name'] != f'{prefix}.part-{index:04d}'
+                or not interface_integer(part['bytes'],EXTENSION_MAX_PART_BYTES) or not interface_digest(part['sha256'])):
+            raise ValueError('Unexpected extension package part')
+        f=folder/part['name'];regular_source(f,package_root)
+        if f.stat().st_size != part['bytes']: raise ValueError('Extension package part size differs')
+        b=f.read_bytes();total+=len(b)
+        if sha256(b) != part['sha256'] or total > m['archiveBytes']: raise ValueError('Extension package part hash or total differs')
+        digest.update(b);stream.write(b)
+    if total != m['archiveBytes'] or digest.hexdigest() != m['archiveSha256']: raise ValueError('Extension archive checksum differs')
+    media={};expanded=0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            if len(archive.infolist()) != len(paths): raise ValueError('Extension archive member count differs')
+            for info in archive.infolist():
+                name,mode=info.filename,info.external_attr>>16
+                if (name not in paths or name in media or info.is_dir() or stat.S_ISLNK(mode) or stat.S_IFMT(mode) not in (0,stat.S_IFREG)
+                        or info.flag_bits&1 or info.compress_type not in (zipfile.ZIP_STORED,zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unsafe or unexpected extension archive member')
+                row=media_records[name]
+                if not interface_integer(info.file_size,inside_media_limit(name)) or info.file_size != row['bytes']: raise ValueError('Extension asset size differs')
+                expanded+=info.file_size
+                if expanded > EXTENSION_MAX_ARCHIVE_BYTES: raise ValueError('Extension media expands beyond its own limit')
+                b=archive.read(info)
+                if len(b) != row['bytes'] or sha256(b) != row['sha256']: raise ValueError('Extension asset checksum differs')
+                actual=validate_extension_media(name,b)
+                if set(actual) != set(metadata[name]) or any(type(metadata[name][k]) is not type(v) or metadata[name][k] != v for k,v in actual.items()):
+                    raise ValueError('Extension native header or media metadata differs')
+                media[name]=b
+    except (zipfile.BadZipFile,RuntimeError,zlib.error) as error: raise ValueError('Invalid extension ZIP') from error
+    if set(media) != paths: raise ValueError('Extension archive must cover every approved asset')
+    return media,{'manifestPath':'sofa-publish/'+prefix+'/'+prefix+'-manifest.json','manifestSha256':sha256(raw),'archiveSha256':m['archiveSha256'],'archiveBytes':m['archiveBytes'],'memberCount':len(paths),'parts':m['parts'],'media':m['media']}
+
+
+def load_inside_media_package(package_root, media_records):
+    return load_extension_media_package(package_root,media_records,'inside')
+
+
+def load_fabric_closeup_media_package(package_root, media_records):
+    return load_extension_media_package(package_root,media_records,'fabric-closeup')
+
+
+_apply_interface_overrides_before_v130 = apply_interface_overrides
+
+
+def apply_v130_interface_overrides(package_root, restored, manifest, expected):
+    """Add two exact media namespaces without rewriting any legacy validator."""
+    control=package_root/'sofa-publish/interface-overrides.json'
+    if not control.exists() and not control.is_symlink(): return _apply_interface_overrides_before_v130(package_root,restored,manifest,expected)
+    regular_source(control,package_root)
+    if not 0 < control.stat().st_size <= MAX_INTERFACE_MANIFEST_BYTES: raise ValueError('Invalid full extension interface manifest size')
+    overlay=json.loads(control.read_text('utf-8'));files=overlay.get('files') if isinstance(overlay,dict) else None
+    if not isinstance(files,list) or not 1 <= len(files) <= MAX_OVERLAY_FILES: raise ValueError('Invalid full extension interface file count')
+    rows={};new={}
+    for row in files:
+        if not isinstance(row,dict) or set(row) != {'path','expectedBaseSha256','expectedBaseBytes','sha256','bytes'} or not isinstance(row.get('path'),str) or row['path'] in rows:
+            raise ValueError('Invalid or duplicate full interface record')
+        name=row['path'];rows[name]=row
+        if _extension_media_match(name):
+            if (row['expectedBaseSha256'] is not None or type(row['expectedBaseBytes']) is not int or row['expectedBaseBytes'] != 0
+                    or not interface_digest(row['sha256']) or not interface_integer(row['bytes'],inside_media_limit(name))
+                    or name in expected or (restored/name).exists() or (restored/name).is_symlink()):
+                raise ValueError('Extension addition collides with an original source member')
+            new[name]=row
+        if name in INSIDE_STATIC_LIMITS and not interface_integer(row['bytes'],INSIDE_STATIC_LIMITS[name]): raise ValueError('Inside runtime exceeds its own narrow byte limit')
+    inside,inside_audit=load_inside_media_package(package_root,{k:v for k,v in new.items() if k in INSIDE_PATHS})
+    closeups,closeup_audit=load_fabric_closeup_media_package(package_root,{k:v for k,v in new.items() if k in CLOSEUP_PATHS})
+    if not new: return _apply_interface_overrides_before_v130(package_root,restored,manifest,expected)
+    # Present legacy validators with a read-only hardlinked payload view. Only
+    # its separate manifest copy omits the27 newly classified binary records.
+    # No116 source parts, cached archives or original manifests are rewritten.
+    with tempfile.TemporaryDirectory(prefix='.sofa-v130-legacy-view-',dir=restored.parent) as temporary:
+        filtered=Path(temporary);source=package_root/'sofa-publish'
+        for f in source.rglob('*'):
+            if f.is_symlink(): raise ValueError('Symlink in extension publication source')
+            if not f.is_file() or f==control: continue
+            regular_source(f,package_root);target=filtered/'sofa-publish'/f.relative_to(source);target.parent.mkdir(parents=True,exist_ok=True);os.link(f,target)
+        subset=dict(overlay);subset['files']=[row for row in files if row['path'] not in new]
+        target=filtered/'sofa-publish/interface-overrides.json';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(subset,ensure_ascii=False,indent=2)+'\n','utf-8')
+        count=_apply_interface_overrides_before_v130(filtered,restored,manifest,expected)
+    combined={**inside,**closeups}
+    for name,b in combined.items():
+        f=restored/safe_name(name)
+        if name in expected or f.exists() or f.is_symlink(): raise ValueError('Verified extension installation collides with another member')
+        f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(b)
+        if sha256(f.read_bytes()) != new[name]['sha256']: raise ValueError('Installed extension checksum differs')
+        expected[name]={'path':name,'bytes':len(b),'sha256':new[name]['sha256']}
+    audit_name='INTERFACE-OVERRIDES.json';audit=json.loads((restored/audit_name).read_text('utf-8'));audit['files']=files
+    if inside_audit is not None: audit['insideMediaPackage']=inside_audit
+    if closeup_audit is not None: audit['fabricCloseupMediaPackage']=closeup_audit
+    b=(json.dumps(audit,ensure_ascii=False,indent=2)+'\n').encode();(restored/audit_name).write_bytes(b);expected[audit_name]={'path':audit_name,'bytes':len(b),'sha256':sha256(b)}
+    integrity='PACKAGE-MEMBERS.json';details={'schemaVersion':1,'members':sorted((row for name,row in expected.items() if name != integrity),key=lambda row:row['path'])}
+    b=(json.dumps(details,ensure_ascii=False,indent=2)+'\n').encode()
+    if sum(row['bytes'] for name,row in expected.items() if name != integrity)+len(b)>MAX_SITE_BYTES: raise ValueError('Full extended publication exceeds its original total site limit')
+    (restored/integrity).write_bytes(b);expected[integrity]={'path':integrity,'bytes':len(b),'sha256':sha256(b)}
+    return count+len(new)
+
+
+apply_interface_overrides = apply_v130_interface_overrides
+
+
 if __name__ == '__main__':
     main()

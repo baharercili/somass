@@ -10,7 +10,7 @@ export const FABRIC_GLSL=`
  float sofaFiberHash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453123);}
  float sofaFiberNoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mix(mix(sofaFiberHash(i),sofaFiberHash(i+vec2(1,0)),f.x),mix(sofaFiberHash(i+vec2(0,1)),sofaFiberHash(i+vec2(1,1)),f.x),f.y);}
  float sofaFamilyYarn(vec2 point,float profile){
-  float frequency=profile<1.5?390.0:(profile<2.5?185.0:130.0);
+  float frequency=profile<1.5?390.0:(profile<2.5?462.5:325.0);
   vec2 p=point*frequency,cell=floor(p),f=fract(p)-.5;
   float seed=sofaFiberHash(cell),grain=sofaFiberNoise(p*2.7);
   if(profile<1.5){
@@ -25,7 +25,7 @@ export const FABRIC_GLSL=`
   float attenuation=1.0-smoothstep(.4,1.3,max(fwidth(p.x),fwidth(p.y)));
   return mix((sofaFiberNoise(p*.45)-.5)*.5,(ring-.45)*.9+(seed-.5)*.35+(grain-.5)*.15,attenuation);
  }
- float sofaFamilyDetail(vec3 p,vec3 weights,float profile){return sofaFamilyYarn(p.zy,profile)*weights.x+sofaFamilyYarn(p.xz,profile)*weights.y+sofaFamilyYarn(p.xy,profile)*weights.z;}
+ float sofaFamilyDetail(vec3 p,vec3 weights,float profile){return sofaFamilyYarn(p.yz,profile)*weights.x+sofaFamilyYarn(p.xz,profile)*weights.y+sofaFamilyYarn(p.xy,profile)*weights.z;}
  vec3 sofaFamilyNormal(vec3 baseNormal,float height){
   vec3 dx=dFdx(-vViewPosition),dy=dFdy(-vViewPosition),r1=cross(dy,baseNormal),r2=cross(baseNormal,dx);
   float determinant=dot(dx,r1);vec3 gradient=sign(determinant)*(dFdx(height)*r1+dFdy(height)*r2);
@@ -39,7 +39,7 @@ export function portableFabricMaps(THREE,choice,dye){
  const size=512,canvases=Array.from({length:3},()=>{const c=document.createElement('canvas');c.width=c.height=size;return c;}),contexts=canvases.map(c=>c.getContext('2d')),images=contexts.map(c=>c.createImageData(size,size));
  const fract=x=>x-Math.floor(x),hash=(x,y)=>fract(Math.sin(x*127.1+y*311.7)*43758.5453123),mix=(a,b,t)=>a+(b-a)*t;
  const noise=(x,y)=>{let ix=Math.floor(x),iy=Math.floor(y),fx=fract(x),fy=fract(y);fx=fx*fx*(3-2*fx);fy=fy*fy*(3-2*fy);return mix(mix(hash(ix,iy),hash(ix+1,iy),fx),mix(hash(ix,iy+1),hash(ix+1,iy+1),fx),fy);};
- const frequency=profile.id===1?390:profile.id===2?185:130,cx=1.1741223484/.2842281705,cy=1.1741223484/.2734999955;
+ const frequency=profile.id===1?390:profile.id===2?462.5:325,cx=1.1741223484/.2842281705,cy=1.1741223484/.2734999955;
  function yarn(x,y){x*=frequency;y*=frequency;const ix=Math.floor(x),iy=Math.floor(y),seed=hash(ix,iy),grain=noise(x*2.7,y*2.7);if(profile.id===1){const warp=.5+.5*Math.cos((x+.20*Math.sin(y*Math.PI))*Math.PI*2),weft=.5+.5*Math.cos((y+.15*Math.sin(x*Math.PI))*Math.PI*2);return(warp+weft-1)*.45+(grain-.5)*.18;}const qx=fract(x)-.5-(hash(ix+13,iy+13)-.5)*.2,qy=(fract(y)-.5-(hash(ix+29,iy+29)-.5)*.2)*(profile.id===2?1.3:1.1),ring=Math.exp(-Math.pow((Math.hypot(qx,qy)-(.24+.06*seed))*12,2));return(ring-.45)*.9+(seed-.5)*.35+(grain-.5)*.15;}
  const encode=v=>Math.round(Math.max(0,Math.min(1,v<=.0031308?v*12.92:1.055*v**(1/2.4)-.055))*255),dx=1/(size*cx),dy=1/(size*cy);
  for(let y=0;y<size;y++)for(let x=0;x<size;x++){

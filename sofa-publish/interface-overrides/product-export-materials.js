@@ -1,4 +1,4 @@
-import {fabricProfile,portableFabricMaps} from './fabric-appearance.js?v=20261124-new-fabrics-v118';
+import {fabricProfile,portableFabricMaps} from './fabric-appearance.js?v=20261124-realism-v128';
 import * as THREE from 'three';
 
 // Portable glTF has no onBeforeCompile/triplanar shader. This adapter preserves
@@ -90,7 +90,7 @@ export function createExportMaterialAdapter(system,choices,state){
    const n=normals?ids.reduce((a,id)=>[a[0]+normals.getX(id),a[1]+normals.getY(id),a[2]+normals.getZ(id)],[0,0,0]):[0,1,0];
    const axis=Math.abs(n[0])>=Math.abs(n[1])&&Math.abs(n[0])>=Math.abs(n[2])?0:Math.abs(n[1])>=Math.abs(n[2])?1:2;
    for(const id of ids){const key=id+':'+axis;let next=b.vertices.get(key);if(next===undefined){next=b.vertices.size;b.vertices.set(key,next);const p=position(id);b.position.push(...p);b.normal.push(normals?normals.getX(id):0,normals?normals.getY(id):1,normals?normals.getZ(id):0);
-     const uv=role==='wood'?(axis===0?[p[1]*WS,p[2]*WS]:axis===1?[p[2]*WS,p[0]*WS]:[p[1]*WS,p[0]*WS]):axis===0?[p[2]*CSX,p[1]*CSY]:axis===1?[p[0]*CSX,p[2]*CSY]:[p[0]*CSX,p[1]*CSY];b.uv.push(...uv);}
+     const uv=role==='wood'?(axis===0?[p[1]*WS,p[2]*WS]:axis===1?[p[2]*WS,p[0]*WS]:[p[1]*WS,p[0]*WS]):axis===0?(fabricProfile(choices[role][state[role]])?[p[1]*CSX,p[2]*CSY]:[p[2]*CSX,p[1]*CSY]):axis===1?[p[0]*CSX,p[2]*CSY]:[p[0]*CSX,p[1]*CSY];b.uv.push(...uv);}
     b.index.push(next);
    }
    triangles++;if(triangles%32768===0){abort(signal);await pause();}

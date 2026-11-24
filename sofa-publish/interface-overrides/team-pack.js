@@ -19,7 +19,7 @@ export function createTeamPackFiles(product){
  return files;
 }
 export function mountProductTeamPack(product){
- const files=createTeamPackFiles(product),getEngine=()=>import('./team-pack-engine.js?v=20261124-new-fabrics-v118');
+ const files=createTeamPackFiles(product),getEngine=()=>import('./team-pack-engine.js?v=20261124-realism-v128');
  return mountTeamPackPanel({product,files,packageFilename:productFileStem(product)+'-Ekip-Paketi.zip',
   downloadPackage:async options=>(await getEngine()).prepareProductPackage(options),
   downloadFile:async options=>(await getEngine()).prepareProductFile(options)

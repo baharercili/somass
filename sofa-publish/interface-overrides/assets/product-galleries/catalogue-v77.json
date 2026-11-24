@@ -41872,14 +41872,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1351 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -41960,14 +41961,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1351 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-zeytin-double-angle",
@@ -42044,14 +42046,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1008 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -42132,14 +42135,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1008 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-c01-6",
@@ -42226,14 +42230,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1015 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -42314,14 +42319,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1015 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-k01-20",
@@ -42398,14 +42404,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1355 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -42486,14 +42493,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1355 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-d01-0",
@@ -42560,14 +42568,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1012 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -42648,14 +42657,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1012 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-single-both-zeytin",
@@ -42742,14 +42752,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1017 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -42830,14 +42841,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1017 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-s02-8",
@@ -42931,14 +42943,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1246 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43019,14 +43032,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1246 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-c04-4",
@@ -43130,14 +43144,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1030 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43218,14 +43233,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1030 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-k04-14",
@@ -43319,14 +43335,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1024 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43407,14 +43424,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1024 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-d04-23",
@@ -43508,14 +43526,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1035 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43596,14 +43615,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1035 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-s06-5",
@@ -43697,14 +43717,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1200 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43785,14 +43806,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1200 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-c07-27",
@@ -43906,14 +43928,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1031 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -43994,14 +44017,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1031 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-k06-24",
@@ -44088,14 +44112,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1041 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -44176,14 +44201,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1041 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-d03-12",
@@ -44277,14 +44303,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1351 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -44365,14 +44392,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1351 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-s05-25",
@@ -44459,14 +44487,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1008 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -44547,14 +44576,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1008 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-c03-12",
@@ -44658,14 +44688,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1015 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -44746,14 +44777,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1015 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-k05-16",
@@ -44872,14 +44904,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1355 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -44960,14 +44993,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1355 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-black-b07",
@@ -45071,14 +45105,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1012 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -45159,14 +45194,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1012 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-s07-10",
@@ -45260,14 +45296,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1017 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -45348,14 +45385,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1017 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-c08-15",
@@ -45459,14 +45497,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1246 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -45547,14 +45586,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1246 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-k08-26",
@@ -45663,14 +45703,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1030 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -45751,14 +45792,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1030 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-black-b08",
@@ -45862,14 +45904,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1024 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -45950,14 +45993,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1024 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-s08-11",
@@ -46076,14 +46120,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1035 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -46164,14 +46209,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1035 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-black-b04",
@@ -46275,14 +46321,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1200 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -46363,14 +46410,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1200 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-black-b05",
@@ -46474,14 +46522,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1031 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -46562,14 +46611,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1031 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-d03-kiremit-dark-oak",
@@ -46678,14 +46728,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1041 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -46766,14 +46817,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1041 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-black-b01",
@@ -46882,14 +46934,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1351 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -46970,14 +47023,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1351 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c03-buz-mavi-oak",
@@ -47091,14 +47145,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1008 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -47179,14 +47234,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1008 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k05-bej-dark-oak",
@@ -47295,14 +47351,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1015 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -47383,14 +47440,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1015 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-d06-kehribar-dark-oak",
@@ -47509,14 +47567,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1355 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -47597,14 +47656,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1355 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s04-krem-oak",
@@ -47708,14 +47768,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1012 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -47796,14 +47857,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1012 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c04-cikolata-oak",
@@ -47922,14 +47984,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1017 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -48010,14 +48073,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1017 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k07-ada-cayi-dark-oak",
@@ -48121,14 +48185,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1246 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -48209,14 +48274,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1246 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s06-sis-oak",
@@ -48335,14 +48401,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1030 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -48423,14 +48490,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1030 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c07-tutun-oak",
@@ -48549,14 +48617,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1024 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -48637,14 +48706,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1024 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k09-gok-dark-oak",
@@ -48748,14 +48818,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1035 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -48836,14 +48907,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1035 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s07-sedef-oak",
@@ -48947,14 +49019,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1200 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -49035,14 +49108,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1200 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c09-bal-oak",
@@ -49171,14 +49245,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1031 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -49259,14 +49334,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1031 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k10-fume-dark-oak",
@@ -49375,14 +49451,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1041 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -49463,14 +49540,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1041 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s09-antrasit-oak",
@@ -49574,14 +49652,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1351 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -49662,14 +49741,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1351 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c11-kehribar-dark-oak",
@@ -49788,14 +49868,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1008 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -49876,14 +49957,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1008 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k12-buz-mavi-oak",
@@ -50002,14 +50084,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1015 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -50090,14 +50173,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1015 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s11-lacivert-dark-oak",
@@ -50206,14 +50290,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1355 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -50294,14 +50379,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1355 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c12-inci-oak",
@@ -50405,14 +50491,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1012 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -50493,14 +50580,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1012 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-k14-porselen-dark-oak",
@@ -50599,14 +50687,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Colormax 1017 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -50687,14 +50776,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Colormax 1017 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-s13-kum-gri-dark-oak",
@@ -50813,14 +50903,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1246 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -50901,14 +50992,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1246 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c14-zeytin-oak",
@@ -51017,14 +51109,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1030 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -51105,14 +51198,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1030 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-v2-square-corner-compact-zeytin-oak",
@@ -51273,14 +51367,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Soft Touch 1024 · Siyah ahşap · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -51361,14 +51456,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Soft Touch 1024 · Siyah ahşap · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-v2-six-seat-five-angle-zeytin-oak",
@@ -51462,14 +51558,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1035 · Naturel meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -51550,14 +51647,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1035 · Naturel meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-angled-v72-c16-orman-oak",
@@ -51688,14 +51786,15 @@
       "gallery": [
         {
           "id": "v118-hero",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/hero.thumb.webp?v=20261124-realism-v128",
           "label": "Stüdyo görünümü",
           "alt": "SOFF · Veronza 1041 · Koyu meşe · Stüdyo görünümü",
           "width": 1536,
           "height": 1024,
-          "kind": "native-studio"
+          "kind": "photographic-studio",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         },
         {
           "id": "v118-open-back",
@@ -51776,14 +51875,15 @@
         },
         {
           "id": "v118-detail",
-          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.webp?v=20261124-new-fabrics-v118",
-          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.thumb.webp?v=20261124-new-fabrics-v118",
+          "src": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.webp?v=20261124-realism-v128",
+          "fullSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.webp?v=20261124-realism-v128",
+          "thumbSrc": "./assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/detail.thumb.webp?v=20261124-realism-v128",
           "label": "Kumaş ve modül detayı",
           "alt": "SOFF · Veronza 1041 · Koyu meşe · Kumaş ve modül detayı",
           "width": 1536,
           "height": 1024,
-          "kind": "fabric-detail"
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided photographic studio finish; fine material pitch and local panel direction; V128"
         }
       ],
       "sourceCardKey": "inspiration-v2-square-corner-asymmetric-bej-black-oak",
