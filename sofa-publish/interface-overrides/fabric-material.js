@@ -1,4 +1,4 @@
-import {FABRIC_GLSL,fabricProfile} from './fabric-appearance.js?v=20261124-realism-v128';
+import {FABRIC_GLSL,LEGACY_FABRIC_GLSL,fabricProfile} from './fabric-appearance.js?v=20261124-soft-touch-lines-v134-v05';
 import { loadPillowFaceRegions, repairPillowFaceRegions } from './pillow-edge-repair.js?v=20261111-pillow-face-v24';
 import * as THREE from 'three';
 import { backMotionProfile, backDirectionVector, ensureBackWeight } from './back-motion.js?v=20261122-open-travel-v95';
@@ -167,7 +167,7 @@ export class SofaMaterialSystem {
     }
    `);
   };
-  const familyCompile=shader=>{
+  const legacyFamilyCompile=shader=>{
    Object.assign(shader.uniforms,u);
    shader.vertexShader=shader.vertexShader.replace('#include <common>',`#include <common>
     attribute vec3 sofaOriginalPosition;
@@ -194,7 +194,7 @@ export class SofaMaterialSystem {
     varying float vSofaAccentRegion;
     varying vec2 vSofaFrameBoundary;
     uniform vec3 uBody,uAccent,uBase,uFlags;
-    ${FABRIC_GLSL}
+    ${LEGACY_FABRIC_GLSL}
     uniform float uFinish,uCap,uWoodVariant;
     uniform sampler2D uVelvetAlbedo,uVelvetNormal,uVelvetRoughness;
     uniform sampler2D uWoodAlbedo,uWoodNormal,uWoodRoughness;
@@ -305,8 +305,159 @@ export class SofaMaterialSystem {
     }
    `);
   };
-  m.onBeforeCompile=shader=>(this.useNewFabricProfiles?familyCompile:moraCompile)(shader);
-  m.customProgramCacheKey=()=>this.useNewFabricProfiles?'studio-families-woven-melange-boucle-v118':'studio-photo-colors-soft-velvet-black-oak-v74';
+  const familyCompile=shader=>{
+   Object.assign(shader.uniforms,u);
+   shader.vertexShader=shader.vertexShader.replace('#include <common>',`#include <common>
+    attribute vec3 sofaOriginalPosition;
+    attribute float sofaBackWeight;
+    uniform float uBackLift,uBackSlide;
+    uniform vec3 uBackDirection;
+    attribute float sofaAccentRegion;
+    attribute vec2 sofaFrameBoundary;
+    varying vec2 vSofaFrameBoundary;
+    varying float vSofaAccentRegion;
+    varying vec3 vSofaPosition;
+    varying vec3 vSurfacePosition;
+    varying vec3 vSurfaceNormal;
+    varying vec3 vSofaNapUp,vSofaNapDepth;
+   `).replace('#include <begin_vertex>','#include <begin_vertex>\nvSofaPosition=sofaOriginalPosition;vSofaAccentRegion=sofaAccentRegion;vSofaFrameBoundary=sofaFrameBoundary;')
+   .replace('#include <morphnormal_vertex>','#include <morphnormal_vertex>\nvSurfaceNormal=objectNormal;')
+   .replace('#include <morphtarget_vertex>',`#include <morphtarget_vertex>
+    vSurfacePosition=transformed;
+    vSofaNapUp=mat3(modelViewMatrix)*vec3(0.0,1.0,0.0);vSofaNapDepth=mat3(modelViewMatrix)*vec3(0.0,0.0,1.0);
+    transformed+=(vec3(0.0,uBackLift,0.0)+uBackDirection*uBackSlide)*sofaBackWeight;
+   `);
+   shader.fragmentShader=shader.fragmentShader.replace('#include <common>',`#include <common>
+    varying vec3 vSofaPosition;
+    varying vec3 vSurfacePosition;
+    varying vec3 vSurfaceNormal;
+    varying vec3 vSofaNapUp,vSofaNapDepth;
+    varying float vSofaAccentRegion;
+    varying vec2 vSofaFrameBoundary;
+    uniform vec3 uBody,uAccent,uBase,uFlags;
+    ${FABRIC_GLSL}
+    uniform float uFinish,uCap,uWoodVariant;
+    uniform sampler2D uVelvetAlbedo,uVelvetNormal,uVelvetRoughness;
+    uniform sampler2D uWoodAlbedo,uWoodNormal,uWoodRoughness;
+    vec3 sofaProjectionWeights(vec3 n){
+     vec3 w=pow(abs(normalize(n)),vec3(4.0));
+     return w/max(dot(w,vec3(1.0)),.000001);
+    }
+    vec4 sofaTriSample(sampler2D tex,vec2 uvX,vec2 uvY,vec2 uvZ,vec3 weights){
+     return texture2D(tex,uvX)*weights.x+texture2D(tex,uvY)*weights.y+texture2D(tex,uvZ)*weights.z;
+    }
+    mat3 sofaTangentFrame(vec3 eyePosition,vec3 surfaceNormal,vec2 uv,float facing){
+     vec3 q0=dFdx(eyePosition),q1=dFdy(eyePosition);
+     vec2 st0=dFdx(uv),st1=dFdy(uv);
+     vec3 q1perp=cross(q1,surfaceNormal),q0perp=cross(surfaceNormal,q0);
+     vec3 t=q1perp*st0.x+q0perp*st1.x;
+     vec3 b=q1perp*st0.y+q0perp*st1.y;
+     float determinant=max(dot(t,t),dot(b,b));
+     float factor=determinant>1e-20?inversesqrt(determinant):0.0;
+     #if defined(DOUBLE_SIDED) && !defined(FLAT_SHADED)
+      factor*=facing;
+     #endif
+     return mat3(t*factor,b*factor,surfaceNormal);
+    }
+    vec3 sofaTriNormal(sampler2D tex,vec2 uvX,vec2 uvY,vec2 uvZ,vec3 weights,float strength,vec3 baseNormal,float facing){
+     vec3 nX=texture2D(tex,uvX).xyz*2.0-1.0;
+     vec3 nY=texture2D(tex,uvY).xyz*2.0-1.0;
+     vec3 nZ=texture2D(tex,uvZ).xyz*2.0-1.0;
+     nX.xy*=strength;nY.xy*=strength;nZ.xy*=strength;
+     vec3 viewX=normalize(sofaTangentFrame(-vViewPosition,baseNormal,uvX,facing)*nX);
+     vec3 viewY=normalize(sofaTangentFrame(-vViewPosition,baseNormal,uvY,facing)*nY);
+     vec3 viewZ=normalize(sofaTangentFrame(-vViewPosition,baseNormal,uvZ,facing)*nZ);
+     return normalize(viewX*weights.x+viewY*weights.y+viewZ*weights.z);
+    }
+   `).replace('#include <map_fragment>',`#include <map_fragment>
+    vec3 projectionWeights=sofaProjectionWeights(vSurfaceNormal);
+    vec3 p=vSurfacePosition;
+    vec2 clothScale=vec2(1.1741223484/.2842281705,1.1741223484/.2734999955);
+    vec2 clothX=p.zy*clothScale,clothY=p.xz*clothScale,clothZ=p.xy*clothScale;
+    float woodScale=1.1741223484/.6;
+    vec2 woodX=p.yz*woodScale,woodY=p.zx*woodScale,woodZ=p.yx*woodScale;
+    vec3 sofaSource=diffuseColor.rgb;
+    float sofaLum=dot(sofaSource,vec3(.2126,.7152,.0722));
+    float sofaWoodHue=1.0-smoothstep(.50,.64,sofaSource.b/max(sofaSource.r,.0001));
+    float woodEdge=1.0-smoothstep(-.267,-.261,vSofaPosition.y);
+    float sofaBaseMask=max(woodEdge,sofaWoodHue*(1.0-smoothstep(-.20,-.16,vSofaPosition.y))*(1.0-uCap));
+    sofaBaseMask=mix(sofaBaseMask,1.0-smoothstep(.1240,.1247,vSofaFrameBoundary.x),vSofaFrameBoundary.y);
+    float accentAa=max(fwidth(vSofaAccentRegion)*.75,.00001);
+    float sofaAccentMask=smoothstep(.5-accentAa,.5+accentAa,vSofaAccentRegion)*(1.0-uCap);
+    float sofaBodyMask=(1.0-sofaAccentMask)*(1.0-sofaBaseMask);
+    vec3 recolored=mix(sofaSource,uBody*clamp(sofaSource/vec3(.9131,.7913,.6584),vec3(.2),vec3(1.7)),sofaBodyMask*uFlags.x);
+    recolored=mix(recolored,uAccent*clamp(sofaSource/vec3(.3231,.2346,.1559),vec3(.15),vec3(2.5)),sofaAccentMask*uFlags.y);
+    recolored=mix(recolored,uBase*clamp(sofaLum/.48,.2,1.6),sofaBaseMask*uFlags.z);
+    if(uCap>.5)recolored=uBody;
+    if(uFinish>1.5){
+     // Retain the fine-pile scan's relative nap variation, independent of photo dye values.
+     float scannedDetail=sofaTriSample(uVelvetAlbedo,clothX,clothY,clothZ,projectionWeights).r/.787412;
+     scannedDetail=clamp(1.0+(scannedDetail-1.0)*.55,.86,1.14);
+     vec3 cloth=mix(uBody,uAccent,sofaAccentMask)*(1.0*scannedDetail);
+     if(uBodyFabric>.5||uAccentFabric>.5){
+      vec3 bodyCloth=uBody*scannedDetail,accentCloth=uAccent*scannedDetail;
+      if(uBodyFabric>.5)bodyCloth=uBody*(1.0+sofaFamilyDetail(p,projectionWeights,uBodyFabric)*(uBodyFabric<1.5?.10:(uBodyFabric<2.5?.22:.24)));
+      if(uAccentFabric>.5)accentCloth=uAccent*(1.0+sofaFamilyDetail(p,projectionWeights,uAccentFabric)*(uAccentFabric<1.5?.10:(uAccentFabric<2.5?.22:.24)));
+      cloth=mix(bodyCloth,accentCloth,sofaAccentMask);
+     }
+     // Hue-preserving reflectance bound; no saturation or hue remapping.
+     float clothPeak=max(max(cloth.r,cloth.g),cloth.b);
+     cloth*=min(1.0,1.0/max(clothPeak,.000001));
+     recolored=mix(cloth,recolored,sofaBaseMask);
+    }
+    if(uWoodVariant>-.5&&sofaBaseMask>.001){
+     vec3 woodColour=sofaTriSample(uWoodAlbedo,woodX,woodY,woodZ,projectionWeights).rgb;
+     // Black stain keeps the oak's real grain while neutralising its warm dye.
+     // Normal and roughness samples below remain the unchanged oak PBR scan.
+     if(uWoodVariant>1.5)woodColour=uBase*clamp(dot(woodColour,vec3(.2126,.7152,.0722))/.32,.35,1.85);
+     recolored=mix(recolored,woodColour,sofaBaseMask);
+    }
+    diffuseColor.rgb=recolored;
+   `).replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
+    if(uFinish>1.5){
+     float scannedRoughness=sofaTriSample(uVelvetRoughness,clothX,clothY,clothZ,projectionWeights).g;
+     float velvetRoughness=clamp(.82+(scannedRoughness-.7215686)*.85,.70,.94);
+     roughnessFactor=mix(velvetRoughness,roughnessFactor,sofaBaseMask);
+     float family=mix(uBodyFabric,uAccentFabric,step(.5,sofaAccentMask));
+     if(family>.5){float familyRoughness=family<1.5?.72:(family<2.5?.90:.88);float textileRoughness=family<1.5?clamp(familyRoughness+sofaFamilyDetail(vSurfacePosition,sofaProjectionWeights(vSurfaceNormal),family)*.025,.70,.84):clamp(familyRoughness+sofaFamilyDetail(vSurfacePosition,sofaProjectionWeights(vSurfaceNormal),family)*.04,.78,.96);roughnessFactor=mix(textileRoughness,roughnessFactor,sofaBaseMask);}
+    }
+    else if(uFinish>.5)roughnessFactor=mix(.91,roughnessFactor,sofaBaseMask);
+    if(uWoodVariant>-.5&&sofaBaseMask>.001)roughnessFactor=mix(roughnessFactor,sofaTriSample(uWoodRoughness,woodX,woodY,woodZ,projectionWeights).g,sofaBaseMask);
+   `).replace('#include <metalnessmap_fragment>',`#include <metalnessmap_fragment>
+    if(uFinish>1.5||uWoodVariant>-.5)metalnessFactor=0.0;
+   `).replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+    if(uFinish>1.5 && sofaBaseMask<.5){
+     normal=sofaTriNormal(uVelvetNormal,clothX,clothY,clothZ,projectionWeights,.24,nonPerturbedNormal,faceDirection);
+     float family=mix(uBodyFabric,uAccentFabric,step(.5,sofaAccentMask));
+     if(family>.5){float bump=family<1.5?.00016:(family<2.5?.00055:.00075);normal=sofaFamilyNormal(nonPerturbedNormal,sofaFamilyDetail(vSurfacePosition,projectionWeights,family)*bump);}
+    }
+    if(uWoodVariant>-.5&&sofaBaseMask>.5){
+     normal=sofaTriNormal(uWoodNormal,woodX,woodY,woodZ,projectionWeights,1.0,nonPerturbedNormal,faceDirection);
+    }
+   `).replace('#include <lights_physical_fragment>',`#include <lights_physical_fragment>
+    if(uFinish>1.5){
+     // Fuzz-covered cloth has a subdued underlying dielectric reflection.
+     float family=mix(uBodyFabric,uAccentFabric,step(.5,sofaAccentMask));
+     material.specularColor*=mix(family>.5?(family<1.5?.26:.18):.30,1.0,sofaBaseMask);
+     #ifdef USE_SHEEN
+      // Keep fine-pile detail with a broad low-reflection lobe; dye selection is independent.
+vec3 sheenDye=mix(uBody,uAccent,sofaAccentMask);material.sheenColor*=(family>.5&&family<1.5?mix(sheenDye,vec3(1.0),.18):sheenDye)*(1.0-sofaBaseMask);
+      if(family>.5&&family<1.5){
+       // User-specified seat front-to-back and back/arm vertical panel direction; not a manufacturer cutting certificate.
+       vec3 napWeights=sofaProjectionWeights(vSurfaceNormal);
+       vec3 nap=vSofaNapUp*(napWeights.x+napWeights.z)-vSofaNapDepth*napWeights.y;
+       nap-=nonPerturbedNormal*dot(nap,nonPerturbedNormal);
+       if(dot(nap,nap)<.00001)nap=cross(nonPerturbedNormal,cross(vSofaNapUp,vSofaNapDepth));
+       nap=normalize(nap);
+       float napGain=.84+.30*smoothstep(-.6,.6,dot(nap,normalize(vViewPosition)));
+       material.sheenColor*=2.0*napGain;material.sheenRoughness=.44;
+      }
+     #endif
+    }
+   `);
+  };
+  m.onBeforeCompile=shader=>(this.useNewFabricProfiles?(this.useSoftTouchChenille?familyCompile:legacyFamilyCompile):moraCompile)(shader);
+  m.customProgramCacheKey=()=>this.useNewFabricProfiles?(this.useSoftTouchChenille?'studio-families-soft-touch-chenille-lines-v134-v05':'studio-families-woven-melange-boucle-v118'):'studio-photo-colors-soft-velvet-black-oak-v74';
   this.records.push({material:m,uniforms:u});return m;
  }
  setBackProgress(progress){
@@ -330,7 +481,8 @@ export class SofaMaterialSystem {
  }
  apply(state,choices,compare=false){
   const useNew=!compare&&Boolean(fabricProfile(choices.body[state.body])||fabricProfile(choices.accent[state.accent]));
-  if(this.useNewFabricProfiles!==useNew){this.useNewFabricProfiles=useNew;for(const record of this.records)record.material.needsUpdate=true;}
+  const useSoft=!compare&&[choices.body[state.body],choices.accent[state.accent]].some(choice=>fabricProfile(choice)?.id===1);
+  if(this.useNewFabricProfiles!==useNew||this.useSoftTouchChenille!==useSoft){this.useNewFabricProfiles=useNew;this.useSoftTouchChenille=useSoft;for(const record of this.records)record.material.needsUpdate=true;}
   const finish=compare?0:({original:0,linen:1,velvet:2}[state.finish]);
   for(const {material:m,uniforms:u} of this.records){
    u.uBodyFabric.value=compare?0:(fabricProfile(choices.body[state.body])?.id??0);u.uAccentFabric.value=compare?0:(fabricProfile(choices.accent[state.accent])?.id??0);

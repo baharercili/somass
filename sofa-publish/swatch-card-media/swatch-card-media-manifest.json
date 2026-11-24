@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-swatch-card-media",
-  "archiveSha256": "59c2a07c5d027c782999c7e88d4e41d41a44735758abd8036438c3f347af3d30",
-  "archiveBytes": 22320601,
+  "archiveSha256": "e4fa258a751b53d8b60cf3c5899036f5471d8dfef24ccdb9cb4ae0d84d190ee3",
+  "archiveBytes": 20208416,
   "memberCount": 110,
   "parts": [
     {
@@ -43,22 +43,17 @@
     {
       "name": "swatch-card-media.part-0008",
       "bytes": 2097152,
-      "sha256": "962a84ba812cee6fb7ba3990daf863046eda37b011dd367dd04be1d08cd9c7b5"
+      "sha256": "7c0172be1141e7a75efc829a15c5d18f747d2bf49b3ab5ba7dabd477402fbe06"
     },
     {
       "name": "swatch-card-media.part-0009",
       "bytes": 2097152,
-      "sha256": "a51497afe635d7a46591122c6ddf1531aa713ec50961945e3e9a841d09d7ea22"
+      "sha256": "70841aac46a4b1ac9bc0c4c20a83b0a8fe7914417f43b73c160c4345de39a116"
     },
     {
       "name": "swatch-card-media.part-0010",
-      "bytes": 2097152,
-      "sha256": "823a9c8bc4eb2a93d07196b61075702046dc22f73a75bb688374455d283e8619"
-    },
-    {
-      "name": "swatch-card-media.part-0011",
-      "bytes": 1349081,
-      "sha256": "34c1f34d97789aca6797bf5f3998f737be18f79ff1db515e0e3f34d079800135"
+      "bytes": 1334048,
+      "sha256": "262b1feb2e9acd9bf6f808ca0d6a2e16b8c901b541f14c99a20b4d528deacd2c"
     }
   ]
 }

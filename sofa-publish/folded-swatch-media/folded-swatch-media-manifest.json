@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-folded-swatch-media",
-  "archiveSha256": "cbc0cb25942892e4a19f1eabfd53bd7e7d19236547c636bfbc08d05f8c01704b",
-  "archiveBytes": 16041202,
+  "archiveSha256": "33ec72d3086b4807a3d2a7363a99adfb2f770fe55361375c768cf8aa47ecd25a",
+  "archiveBytes": 15680982,
   "memberCount": 110,
   "parts": [
     {
@@ -33,17 +33,17 @@
     {
       "name": "folded-swatch-media.part-0006",
       "bytes": 2097152,
-      "sha256": "6ae7bebdae5c6860d344cd6ad737970d427ff71468070bb00b4f56b04c204eef"
+      "sha256": "ab873bd8478ae447262978df6dfb0bf958775f74ea09d426009de8d5d86275ed"
     },
     {
       "name": "folded-swatch-media.part-0007",
       "bytes": 2097152,
-      "sha256": "46b9ce4dca21318fa35a8e5e97f581410650349fbce4ac1171e1138aaf7c51fd"
+      "sha256": "646219bd4eaa62f396ca9ca8ff749ce23024c00901ea8d1865afd433fa369e52"
     },
     {
       "name": "folded-swatch-media.part-0008",
-      "bytes": 1361138,
-      "sha256": "2fd17bd61c59c870e62d77b167f9b96a645b7a6bf287ca4e928f04d55135fe1c"
+      "bytes": 1000918,
+      "sha256": "b16f76f6b3e3ef0d071ac140bb19948afded8d2b84751d87f550e5fca904f608"
     }
   ]
 }

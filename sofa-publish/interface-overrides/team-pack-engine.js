@@ -1,5 +1,5 @@
 import {makeProductZip,checkAbort,yieldToPage} from './team-pack-zip.js?v=20261121-team-pack-v79';
-import {productFileStem,createTeamPackFiles} from './team-pack.js?v=20261124-reverse-v132';
+import {productFileStem,createTeamPackFiles} from './team-pack.js?v=20261124-soft-touch-lines-v134-v05';
 
 let cachedKey='',generated=new Map();
 function productCache(product){if(cachedKey!==product.key){cachedKey=product.key;generated=new Map();}return generated;}
@@ -18,7 +18,7 @@ export async function prepareProductFile({product,file,files=[],signal,onProgres
  checkAbort(signal);if(!files.length)files=createTeamPackFiles(product);const cache=productCache(product);const cacheable=file.id==='model'||file.id.startsWith('dimensions-');if(cacheable&&cache.has(file.id))return{blob:cache.get(file.id),filename:file.filename};let blob;
  if(file.url){blob=await assetBlob(file,signal);return{blob,filename:file.filename};}
  if(file.id==='model'){
-  onProgress?.({phase:'model',label:'Modüller ve malzemeler yükleniyor…'});await yieldToPage();const{exportProductGLB}=await import('./product-glb-export.js?v=20261124-reverse-v132');const result=await exportProductGLB(product,{signal,onProgress:update=>onProgress?.({phase:"model",label:update.message||"Modelin parçaları hazırlanıyor…",...(Number.isFinite(update.progress)?{percent:Math.round(update.progress*100)}:{})})});blob=result instanceof Blob?result:new Blob([result],{type:'model/gltf-binary'});
+  onProgress?.({phase:'model',label:'Modüller ve malzemeler yükleniyor…'});await yieldToPage();const{exportProductGLB}=await import('./product-glb-export.js?v=20261124-soft-touch-lines-v134-v05');const result=await exportProductGLB(product,{signal,onProgress:update=>onProgress?.({phase:"model",label:update.message||"Modelin parçaları hazırlanıyor…",...(Number.isFinite(update.progress)?{percent:Math.round(update.progress*100)}:{})})});blob=result instanceof Blob?result:new Blob([result],{type:'model/gltf-binary'});
  }else if(file.id.startsWith('dimensions-')){
   onProgress?.({phase:'dimensions'});const{buildDimensionSVG}=await documents();const svg=buildDimensionSVG(product);blob=file.id==='dimensions-svg'?textBlob(svg,'image/svg+xml'):await pngFromSVG(svg,signal);
  }else if(file.id==='summary-html'){

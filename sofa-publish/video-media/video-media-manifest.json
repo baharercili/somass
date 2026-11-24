@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-video-media",
-  "archiveSha256": "25b4828c5cc600fc137a4b0cb358d3c6c5b04158925ef2f72a055ff6e08a2d99",
-  "archiveBytes": 2363896,
+  "archiveSha256": "69776184e7cf37e48608f7c1d2323873f83d64b9a2dbe5d328a5c1239d49064f",
+  "archiveBytes": 2215426,
   "memberCount": 10,
   "parts": [
     {
       "name": "video-media.part-0001",
       "bytes": 2097152,
-      "sha256": "8ab5ed9bf97375598b1557541f3a99e7631396e6ac8b66171a3601b8038b9a92"
+      "sha256": "fe6227020bb8563d7f02f52ba7082396df994ba91157fe92f533ac86d9e6d1be"
     },
     {
       "name": "video-media.part-0002",
-      "bytes": 266744,
-      "sha256": "4b85df83b7f1d4fa998a1f5e83740ceb56714b3c8598f8216cca65d7f57b975f"
+      "bytes": 118274,
+      "sha256": "4b734184aadc7a1cfaed39df54fee160fdc2098bfaea63ce2d681419d8f24519"
     }
   ],
   "media": [

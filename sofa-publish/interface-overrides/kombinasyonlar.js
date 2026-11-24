@@ -1,6 +1,6 @@
 import {CONFIG_STORAGE_KEY,createGalleryChoices,readGalleryState,combinationHref} from './combinations-state.js?v=20261124-reverse-v132';
-import {getInspirationCatalog} from './inspiration-catalog.js?v=20261124-reverse-v132';
-import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-reverse-v132';
+import {getInspirationCatalog} from './inspiration-catalog.js?v=20261124-soft-touch-lines-v134-v05';
+import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-soft-touch-lines-v134-v05';
 import {groupCatalogueVariants,isListedCatalogueVariant} from './catalogue-variants.js?v=20261124-reverse-v132';
 
 export const CATALOGUE_PAGE_SIZE=12;
@@ -126,9 +126,10 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
  };
  async function previews(items,epoch,signal){
   if(!items.length||signal.aborted)return;
-  // The legacy worker has no per-table reverse geometry; retain the exact measured plan.
-  for(const item of items)if(item.reverseAngle)failed.add(item.key);
-  items=items.filter(item=>!item.reverseAngle);
+  // The legacy worker lacks reverse geometry and the Soft Touch chenille shader; retain the measured plan and live 3D link.
+  const keepMeasuredPlan=item=>item.reverseAngle||['body','accent'].some(role=>choices?.[role]?.[item.state?.[role]]?.fabricSeries==='soft-touch');
+  for(const item of items)if(keepMeasuredPlan(item))failed.add(item.key);
+  items=items.filter(item=>!keepMeasuredPlan(item));
   if(!items.length){updateStatus();return;}
   try{
    await renderPreviews(items,items[0].state,choices,{signal,onPreview:(key,src)=>{
@@ -198,7 +199,7 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
 
 export async function initCatalogue(document=globalThis.document){
  const $=selector=>document.querySelector(selector);
- const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-reverse-v132',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
+ const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-soft-touch-lines-v134-v05',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
  const products=new Map((Array.isArray(productManifest?.products)?productManifest.products:[]).filter(product=>product&&typeof product.key==='string').map(product=>[product.key,product]));
  const choices=createGalleryChoices(palette),cards=attachStudioImages(getInspirationCatalog(choices),studioManifest,choices).map(card=>({...card,productHref:'./urun.html?model='+encodeURIComponent(card.key),galleryCount:Array.isArray(products.get(card.key)?.gallery)?products.get(card.key).gallery.length:null}));
  // The previous draft is only a return destination; it never influences the catalogue.

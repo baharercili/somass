@@ -1,4 +1,4 @@
-import {fabricProfile,portableFabricMaps} from './fabric-appearance.js?v=20261124-realism-v128';
+import {fabricProfile,portableFabricMaps} from './fabric-appearance.js?v=20261124-soft-touch-lines-v134-v05';
 import * as THREE from 'three';
 
 // Portable glTF has no onBeforeCompile/triplanar shader. This adapter preserves
@@ -46,8 +46,8 @@ export function createExportMaterialAdapter(system,choices,state){
  for(const role of ['body','accent']){
   const profile=fabricProfile(choices[role][state[role]]),familyMaps=profile?portableFabricMaps(THREE,choices[role][state[role]],dyes[role]):null;
   if(familyMaps)for(const texture of familyMaps)ownedTextures.add(texture);
-  const material=new THREE.MeshPhysicalMaterial({color:0xffffff,map:familyMaps?.[0]||velvetMap(role),normalMap:familyMaps?.[1]||system.maps.normal,normalScale:new THREE.Vector2(familyMaps?1:.24,familyMaps?1:.24),roughness:1,roughnessMap:familyMaps?.[2]||roughnessMap,metalness:0,sheen:.45,sheenRoughness:.72,sheenColor:dyes[role],specularIntensity:familyMaps?.18:.30});
-  material.name=profile?choices[role][state[role]].familyLabel+'_'+choices[role][state[role]].shortCode+'_'+role:(role==='body'?'Mora_Main_Upholstery':'Mora_Accent_Cushions');material.userData={role,finish:profile?choices[role][state[role]].familyLabel:'Mora velvet',...(profile?{fabricSeries:choices[role][state[role]].fabricSeries,artCode:choices[role][state[role]].artCode}:{}),colour:choices[role][state[role]].label,portablePBR:true};materials[role]=material;ownedMaterials.add(material);
+  const material=new THREE.MeshPhysicalMaterial({color:0xffffff,map:familyMaps?.[0]||velvetMap(role),normalMap:familyMaps?.[1]||system.maps.normal,normalScale:new THREE.Vector2(familyMaps?1:.24,familyMaps?1:.24),roughness:1,roughnessMap:familyMaps?.[2]||roughnessMap,metalness:0,sheen:profile?.id===1?profile.sheen:.45,sheenRoughness:profile?.id===1?profile.sheenRoughness:.72,sheenColor:dyes[role],specularIntensity:profile?.id===1?profile.specularIntensity:(familyMaps?.18:.30)});
+  material.name=profile?choices[role][state[role]].familyLabel+'_'+choices[role][state[role]].shortCode+'_'+role:(role==='body'?'Mora_Main_Upholstery':'Mora_Accent_Cushions');material.userData={role,finish:profile?choices[role][state[role]].familyLabel:'Mora velvet',...(profile?{fabricSeries:choices[role][state[role]].fabricSeries,artCode:choices[role][state[role]].artCode}:{}),colour:choices[role][state[role]].label,portablePBR:true};if(profile?.id===1){material.sheenColor.lerp(new THREE.Color(0xffffff),.18).multiplyScalar(profile.sheen);material.sheen=1;material.anisotropy=profile.anisotropy;material.anisotropyRotation=Math.PI/2;material.userData.visualNapConvention=profile.napConvention;material.userData.nativePortableDifference='Standard glTF sheen and mild anisotropy approximate the native view-dependent short-pile response.';}materials[role]=material;ownedMaterials.add(material);
  }
  const wood=new THREE.MeshPhysicalMaterial({color:0xffffff,map:blackMap||woodSource.basecolor,normalMap:woodSource.normal,roughnessMap:woodSource.roughness,roughness:1,metalness:0,specularIntensity:.42});wood.name='Oak_Frame_'+state.base;wood.userData={role:'wood',finish:state.base,portablePBR:true};materials.wood=wood;ownedMaterials.add(wood);
  function roleMaterial(role,side){if(side===materials[role].side)return materials[role];const key=role+':'+side;if(!sidedMaterials.has(key)){const m=materials[role].clone();m.side=side;ownedMaterials.add(m);sidedMaterials.set(key,m);}return sidedMaterials.get(key);}
@@ -90,12 +90,12 @@ export function createExportMaterialAdapter(system,choices,state){
    const n=normals?ids.reduce((a,id)=>[a[0]+normals.getX(id),a[1]+normals.getY(id),a[2]+normals.getZ(id)],[0,0,0]):[0,1,0];
    const axis=Math.abs(n[0])>=Math.abs(n[1])&&Math.abs(n[0])>=Math.abs(n[2])?0:Math.abs(n[1])>=Math.abs(n[2])?1:2;
    for(const id of ids){const key=id+':'+axis;let next=b.vertices.get(key);if(next===undefined){next=b.vertices.size;b.vertices.set(key,next);const p=position(id);b.position.push(...p);b.normal.push(normals?normals.getX(id):0,normals?normals.getY(id):1,normals?normals.getZ(id):0);
-     const uv=role==='wood'?(axis===0?[p[1]*WS,p[2]*WS]:axis===1?[p[2]*WS,p[0]*WS]:[p[1]*WS,p[0]*WS]):axis===0?(fabricProfile(choices[role][state[role]])?[p[1]*CSX,p[2]*CSY]:[p[2]*CSX,p[1]*CSY]):axis===1?[p[0]*CSX,p[2]*CSY]:[p[0]*CSX,p[1]*CSY];b.uv.push(...uv);}
+     const uv=role==='wood'?(axis===0?[p[1]*WS,p[2]*WS]:axis===1?[p[2]*WS,p[0]*WS]:[p[1]*WS,p[0]*WS]):fabricProfile(choices[role][state[role]])?.id===1?(axis===0?[p[2]*CSX,p[1]*CSY]:axis===1?[p[0]*CSX,-p[2]*CSY]:[p[0]*CSX,p[1]*CSY]):axis===0?(fabricProfile(choices[role][state[role]])?[p[1]*CSX,p[2]*CSY]:[p[2]*CSX,p[1]*CSY]):axis===1?[p[0]*CSX,p[2]*CSY]:[p[0]*CSX,p[1]*CSY];b.uv.push(...uv);}
     b.index.push(next);
    }
    triangles++;if(triangles%32768===0){abort(signal);await pause();}
   }
-  cached={triangles,parts:[...builders.values()].map(b=>{const g=new THREE.BufferGeometry();g.name=(source.name||mesh.name)+'_'+b.role;g.setAttribute('position',new THREE.Float32BufferAttribute(b.position,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(b.normal,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(b.uv,2));g.setIndex(b.index);return {geometry:g,role:b.role};})};geometryCache.set(source,cached);return cached;
+  cached={triangles,parts:[...builders.values()].map(b=>{const g=new THREE.BufferGeometry();g.name=(source.name||mesh.name)+'_'+b.role;g.setAttribute('position',new THREE.Float32BufferAttribute(b.position,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(b.normal,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(b.uv,2));g.setIndex(b.index);if(b.role!=='wood'&&fabricProfile(choices[b.role][state[b.role]])?.id===1){g.normalizeNormals();g.computeTangents();}return {geometry:g,role:b.role};})};geometryCache.set(source,cached);return cached;
  }
  function directGeometry(source){
   let cached=geometryCache.get(source);if(cached?.direct)return cached.direct;

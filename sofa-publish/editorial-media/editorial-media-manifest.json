@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-editorial-media",
-  "archiveSha256": "c7f214e1e4776fdc0bc00774e6ca4d905758e6a12e189eb70dfa79299ae0d6b8",
-  "archiveBytes": 28890337,
+  "archiveSha256": "02456bd717344d8757398a4fd65b6166d6bb8fe88d14f228b6c4f895cb71f86f",
+  "archiveBytes": 28649362,
   "memberCount": 80,
   "parts": [
     {
@@ -28,52 +28,52 @@
     {
       "name": "editorial-media.part-0005",
       "bytes": 2097152,
-      "sha256": "6cace53cf53b2b423c29d542ca1bd9e49e73674030adf640dcd58b2cb1188520"
+      "sha256": "a4321bea4fd3fe5d9dad8f8f91fd6a7d8ab5df8a08c087dfc498a23a25cbc7bf"
     },
     {
       "name": "editorial-media.part-0006",
       "bytes": 2097152,
-      "sha256": "03548acf6106cf32f84749cfc038db1eb28eddb3045acd49fb7ca7adfcbb2aa5"
+      "sha256": "13aafa070c8d802fd328e35c33fb054d0195d65a5a15d03a6b7a2856c95096a5"
     },
     {
       "name": "editorial-media.part-0007",
       "bytes": 2097152,
-      "sha256": "148c21a420eb83aa7b3918d9bc5291f2410943328048d3e3eb755f0d7ccc5375"
+      "sha256": "239c8383d0a491aa2a843dfc33f1c4bce2ff5a98f2cf26fbcba2a0b955ec568c"
     },
     {
       "name": "editorial-media.part-0008",
       "bytes": 2097152,
-      "sha256": "80502b9723ed1dc179c4528db97e593ab4e6a0cd9a7e02c83aab0266bc2b4740"
+      "sha256": "cd1b596e4b788c7b219ddea2b4bfc2df0a7952c3c80a8c6f0cc8718798619929"
     },
     {
       "name": "editorial-media.part-0009",
       "bytes": 2097152,
-      "sha256": "6070544e944fa22e6bbb47587eb6fa00d15813caae8be6e30dcd3e1be5bafba5"
+      "sha256": "92c1993e19c034482fb039e865566fc516c8c71360e46351364fddb35ba7e6b9"
     },
     {
       "name": "editorial-media.part-0010",
       "bytes": 2097152,
-      "sha256": "f85ca7825e65bd1230ea4b5404218a88a54e1c63a160ebfde3c523b34c74563b"
+      "sha256": "8133b1cc632380cc2acf7f7279958b41650df4d934e2e0c7d5e945792436fc4b"
     },
     {
       "name": "editorial-media.part-0011",
       "bytes": 2097152,
-      "sha256": "c311d76a63f7ea667243fb472f81e11773988f3af90ed9cfbaf682044318f7b9"
+      "sha256": "fe7ba09d7e7aeb9644c8fc39968bf589cf05f85f6158c005b0f093622f2fa8fb"
     },
     {
       "name": "editorial-media.part-0012",
       "bytes": 2097152,
-      "sha256": "2c7bd6c19b2ca7096f2cc8135c68d0a9902d71a74ec242f223bd83f16822a7e2"
+      "sha256": "42c49e2712e0d3751057a550881753f59b8da0ea58dc0c73c579e35e3ff1418d"
     },
     {
       "name": "editorial-media.part-0013",
       "bytes": 2097152,
-      "sha256": "926489d779a469e273525bc62f9d61bd49afc0a1bf6919c9fdcb9314b8fb0d7e"
+      "sha256": "a7bccae17245d1d0e32c089df8fed1923c5c74da20a9e9a1f74559bc049f1c4b"
     },
     {
       "name": "editorial-media.part-0014",
-      "bytes": 1627361,
-      "sha256": "41aba0dd554deffb10fd6c2a74b6803209e8492198a1c41c370c9b6a310adc8f"
+      "bytes": 1386386,
+      "sha256": "111072f0fb520bdf541ec68b517508dbbf0618b8a064c291896a8d50de3881f9"
     }
   ],
   "images": [
