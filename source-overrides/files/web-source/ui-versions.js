@@ -99,7 +99,7 @@
   copyForm.append(copyName.wrap, createCopy); copy.append(copyForm);
 
   const backup = node('section', 'versions-backup');
-  backup.append(node('h3', '', 'Yedekle ve taşı'), node('p', '', 'Aynı çalışma bağlantısını kullanan kişiler bu sürümlerde birlikte devam eder. JSON yedeğini ayrıca indirebilirsin.'));
+  backup.append(node('h3', '', 'Yedekle ve taşı'), node('p', '', g.SOMASS_CLOUD_CONFIG?.mode==='shared'?'Sürümler bu cihazda korunur. Ortak alana kaydettiğin sürümler bağlantıya erişen tüm mimarlar tarafından açılıp düzenlenebilir.':'Aynı çalışma bağlantısını kullanan kişiler bu sürümlerde birlikte devam eder. JSON yedeğini ayrıca indirebilirsin.'));
   const backupActions = node('div', 'versions-backup-actions');
   const exportAll = button('versionsExportAll', 'Tüm sürümleri yedekle'), importOpen = button('versionsImportOpen', 'Sürüm yedeği aç');
   const importInput = node('input'); importInput.id = 'versionsImportInput'; importInput.type = 'file';

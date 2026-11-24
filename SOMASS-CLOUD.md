@@ -15,3 +15,12 @@ The Supabase project is `kjjgsikkkgnrlanhfqum`. Anonymous Auth is enabled with t
 The official Supabase JS SDK is pinned to version 2.119.2, vendored with its MIT license. Source updates use the existing verified SOMASS overlay and strict build pipeline. The combined Pages workflow and all SOFF/collection sources are preserved.
 
 Code and published starting designs are versioned in GitHub. Subsequent editing sessions are automatically saved to the private shared Supabase workspace; they do not rewrite the repository's public starting designs automatically.
+
+
+## Ortak bağlantı sürümü — 24 Kasım 2026
+
+Bu sürümde bağlantıyı bilen kişiler aynı ortak tasarım/sürüm alanını giriş yapmadan kullanır. Uygulama dosyaları GitHub’da, çalışma kayıtları Supabase’de tutulur. Kişisel hesaplara ait eski tablolar ve kayıtlar ayrı kalır. Tarayıcıdaki eski çalışmalar otomatik paylaşılmaz; kullanıcı, paylaşılacak sürüm listesini inceleyip ortak alana aktarmayı seçer.
+
+Paylaşılan alan `somass_shared_design_projects`, kayıt yöntemi `somass_shared_save_bundle` ve sabit çalışma alanı `5248c66f-a4bc-43df-906b-656960e5ce47` ile sınırlıdır. Güncellemeler beklenen sunucu sürümünü kontrol eder; başka bir cihazın değişikliği sessizce ezilmez. Kaynak başlangıç planı, üretici katalogları ve salt okunur kaynak görünümü değişmez.
+
+Yeni şema: `supabase/migrations/20261124180000_somass_shared_designs.sql`. Aynı Supabase projesinde önce Room Planner ortak alan göçü uygulanmış olmalıdır. Önceki özel hesap/OTP belgeleri yukarıda korunmuştur; varsayılan paylaşılan kullanımda e-posta veya parola gerekmez.

@@ -8,20 +8,20 @@
     {
       "path": "web-source/cloud-config.js",
       "baseSha256": null,
-      "bytes": 302,
-      "sha256": "5d02a26eda791e94b2cd55275b360ea4a1ffc90df3832a4f7e5f83a663bf1072"
+      "bytes": 361,
+      "sha256": "97154c1aabcc8c924b5d830faa5b7dbe4f05ce09aa4a5b20877b1658f0a5f88b"
     },
     {
       "path": "web-source/cloud-sync.css",
       "baseSha256": null,
-      "bytes": 3687,
-      "sha256": "13a6cd964619971c5f2b6c795bca08800bcd6bc095ba478c2c62d6313f7ab500"
+      "bytes": 4044,
+      "sha256": "62964eb5b30f372abc83998a00d87ff2d850dd0fd78af116174e9783d5f5072c"
     },
     {
       "path": "web-source/cloud-sync.js",
       "baseSha256": null,
-      "bytes": 32718,
-      "sha256": "5153f0433bf8ce34e363cb504aac569246766b1989d27ed58e43fb790c4a05d9"
+      "bytes": 51258,
+      "sha256": "8461b336bb4b4bdda4ea7e69bd4cea82a834222170f405062f3b57086b2ce928"
     },
     {
       "path": "web-source/decor-controls.js",
@@ -45,13 +45,13 @@
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
       "bytes": 19356,
-      "sha256": "a7637c8fac74259a35cb730059817a6afc5ab5804661d28328e9a6636d2697ce"
+      "sha256": "f63c2e5eab8a94f6159b250a9d67420c6660eb4f75ea32cc86ecad342e86ba3d"
     },
     {
       "path": "web-source/project-save.js",
       "baseSha256": "4fb31424064549c6c1ce3c0c4fec8465a1a751d4efc6a07bd8f742eb45970207",
-      "bytes": 3210,
-      "sha256": "d5ddea277d125fb49f53824c7c63519aaf9f173b3d563e840b1907a918fd9eb3"
+      "bytes": 3376,
+      "sha256": "d48c5098e970e040faa06d2ababd85424f04dd1af45da531863bcf4248a7cc62"
     },
     {
       "path": "web-source/project-schedules.js",
@@ -140,8 +140,8 @@
     {
       "path": "web-source/ui-versions.js",
       "baseSha256": null,
-      "bytes": 16704,
-      "sha256": "d886df732cb844e3bd8de1f88734570c925ef4994b9c9768c4f76d12753af7b8"
+      "bytes": 16886,
+      "sha256": "d6f2b8db911eb0ef169e3f213221a02e92d3e270fc6ddeb8208d87844e25b652"
     },
     {
       "path": "web-source/wall-fabric-rack.js",
