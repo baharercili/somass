@@ -112,8 +112,8 @@
       "path": "material-gallery.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "5582766c9698f01f208ee3743115c3f756149f3a2a3d7b8d9cf4ea543bb5a390",
-      "bytes": 296290
+      "sha256": "91bb38e9ea12a9488c271bed2455444f9b6740507960d0cbb9a37a21368f22a9",
+      "bytes": 296509
     },
     {
       "path": "assets/material-gallery/0032fb2d59206e6fcf75654155da2f4b5afa6b3a3a9f34dabed37bcbb8104278.jpg",
@@ -12049,6 +12049,83 @@
       "expectedBaseBytes": 0,
       "bytes": 273698,
       "sha256": "6122b07d77da13ee5fb7e10cd294fe2659cbfd7627f2391dea24e7ae71b07971"
+    },
+    {
+      "path": "soff-hareket-hikayeleri.html",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 17852,
+      "sha256": "3d25548806b73a030420930884e267e68d216151cb60f2bb008806a951fd51ed"
+    },
+    {
+      "path": "assets/animations/v125/ahsap-tonlari/film.mp4",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 509498,
+      "sha256": "a70b1ff7f4adc114d0c9688d68618acd9731d5f37eed50b96bd1171e1a2780f9"
+    },
+    {
+      "path": "assets/animations/v125/ahsap-tonlari/poster.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 22410,
+      "sha256": "92cb794cecbf70e0adc830b3b997bb56b75bae9d18e4a6adab246b587041709a"
+    },
+    {
+      "path": "assets/animations/v125/govde-ve-yastik/film.mp4",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 509688,
+      "sha256": "451a28b4090cfb87e266795362f46f6375347aedca63990eec9b3a89f0b19aba"
+    },
+    {
+      "path": "assets/animations/v125/govde-ve-yastik/poster.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 26130,
+      "sha256": "a239f6e52e99282ed493b575e74b3c0e154dd026ea9afd53c05e69fe40d640b6"
+    },
+    {
+      "path": "assets/animations/v125/kumas-ve-renk/film.mp4",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 694616,
+      "sha256": "a7ac8be8a17481f024fdd045292761f910bbd9761d9578da92ce119e0da14f3e"
+    },
+    {
+      "path": "assets/animations/v125/kumas-ve-renk/poster.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 28254,
+      "sha256": "009ff8f742083ffc51cf90257c9240678d3a0ac3953a6efd749b1c0d88485bfd"
+    },
+    {
+      "path": "assets/animations/v125/modul-ekle/film.mp4",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 331809,
+      "sha256": "3e22211ff6072487c8507297bdcc024d50a86d939a19721a01898e36de9cd481"
+    },
+    {
+      "path": "assets/animations/v125/modul-ekle/poster.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 25218,
+      "sha256": "bc8e3e1dedeace4cb20f302a17b7f2384b9933af0047a9c58c1f848e7ea7fe32"
+    },
+    {
+      "path": "assets/animations/v125/sirt-hareketi/film.mp4",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 194293,
+      "sha256": "f6961e5abcd28b9bd9b2185359b90e07456dab2d28733ce9500e8b32e009552f"
+    },
+    {
+      "path": "assets/animations/v125/sirt-hareketi/poster.webp",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 20272,
+      "sha256": "b96173c33728cfae82a180161485f6dbb70bc89de579c1f1664b3fb37972759a"
     }
   ]
 }

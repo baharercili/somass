@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-video-media",
+  "archiveSha256": "25b4828c5cc600fc137a4b0cb358d3c6c5b04158925ef2f72a055ff6e08a2d99",
+  "archiveBytes": 2363896,
+  "memberCount": 10,
+  "parts": [
+    {
+      "name": "video-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "8ab5ed9bf97375598b1557541f3a99e7631396e6ac8b66171a3601b8038b9a92"
+    },
+    {
+      "name": "video-media.part-0002",
+      "bytes": 266744,
+      "sha256": "4b85df83b7f1d4fa998a1f5e83740ceb56714b3c8598f8216cca65d7f57b975f"
+    }
+  ],
+  "media": [
+    {
+      "path": "assets/animations/v125/ahsap-tonlari/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 12000,
+      "frameRate": 24,
+      "frameCount": 288,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": true
+    },
+    {
+      "path": "assets/animations/v125/ahsap-tonlari/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/animations/v125/govde-ve-yastik/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 12000,
+      "frameRate": 24,
+      "frameCount": 288,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": true
+    },
+    {
+      "path": "assets/animations/v125/govde-ve-yastik/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/animations/v125/kumas-ve-renk/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 12000,
+      "frameRate": 24,
+      "frameCount": 288,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": true
+    },
+    {
+      "path": "assets/animations/v125/kumas-ve-renk/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/animations/v125/modul-ekle/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 12000,
+      "frameRate": 24,
+      "frameCount": 288,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": true
+    },
+    {
+      "path": "assets/animations/v125/modul-ekle/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "assets/animations/v125/sirt-hareketi/film.mp4",
+      "mime": "video/mp4",
+      "width": 1280,
+      "height": 720,
+      "durationMilliseconds": 12000,
+      "frameRate": 24,
+      "frameCount": 288,
+      "codec": "H264 High",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "audio": false,
+      "faststart": true
+    },
+    {
+      "path": "assets/animations/v125/sirt-hareketi/poster.webp",
+      "mime": "image/webp",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

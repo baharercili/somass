@@ -991,6 +991,418 @@ def load_editorial_media_package(package_root, media_records):
     return media, audit
 
 
+
+VIDEO_SCENE_IDS = frozenset(['kumas-ve-renk', 'govde-ve-yastik', 'ahsap-tonlari', 'modul-ekle', 'sirt-hareketi'])
+VIDEO_FILENAMES = frozenset({'film.mp4', 'poster.webp'})
+VIDEO_MEDIA_PATH = re.compile(r'assets/animations/v125/([^/]+)/(film\.mp4|poster\.webp)')
+VIDEO_WIDTH, VIDEO_HEIGHT, VIDEO_FPS, VIDEO_DURATION_SECONDS, VIDEO_FRAME_COUNT = 1280, 720, 24, 12, 288
+MAX_VIDEO_MP4_BYTES = 4 * 1024 * 1024
+MAX_VIDEO_POSTER_BYTES = 1 * 1024 * 1024
+MAX_VIDEO_MEDIA_FILES = 10
+MAX_VIDEO_MEDIA_TOTAL_BYTES = 16 * 1024 * 1024
+MAX_VIDEO_ARCHIVE_BYTES = 16 * 1024 * 1024
+MAX_VIDEO_PART_BYTES = 2 * 1024 * 1024
+MAX_VIDEO_PARTS = 8
+INTERFACE_FILES = INTERFACE_FILES | frozenset({'soff-hareket-hikayeleri.html'})
+NEW_INTERFACE_FILES = NEW_INTERFACE_FILES | frozenset({'soff-hareket-hikayeleri.html'})
+
+
+def video_webp_dimensions(name, content):
+    """Accept one approved still portrait WebP, at its genuine native size."""
+    match = video_media_match(name)
+    if (not match or len(content) < 30 or len(content) > MAX_VIDEO_POSTER_BYTES
+            or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8], 'little') != len(content) - 8):
+        raise ValueError('Video poster WebP signature or path differs')
+    cursor, dimensions, canvas, frames, canvases = 12, None, None, 0, 0
+    while cursor < len(content):
+        if cursor + 8 > len(content):
+            raise ValueError('Truncated video poster WebP chunk')
+        kind = content[cursor:cursor + 4]
+        size = int.from_bytes(content[cursor + 4:cursor + 8], 'little')
+        start, end = cursor + 8, cursor + 8 + size
+        if end + (size & 1) > len(content) or kind in (b'ANIM', b'ANMF'):
+            raise ValueError('Invalid or animated video poster WebP')
+        data = content[start:end]
+        if kind == b'VP8X':
+            if len(data) != 10 or data[0] & 2 or canvases or frames:
+                raise ValueError('Invalid or animated video poster WebP canvas')
+            canvas = (int.from_bytes(data[4:7], 'little') + 1, int.from_bytes(data[7:10], 'little') + 1)
+            canvases += 1
+        elif kind == b'VP8 ':
+            if len(data) < 10 or data[3:6] != b'\x9d\x01\x2a':
+                raise ValueError('Invalid video poster VP8 frame')
+            dimensions = (int.from_bytes(data[6:8], 'little') & 0x3fff, int.from_bytes(data[8:10], 'little') & 0x3fff)
+            frames += 1
+        elif kind == b'VP8L':
+            if len(data) < 5 or data[0] != 0x2f:
+                raise ValueError('Invalid video poster VP8L frame')
+            bits = int.from_bytes(data[1:5], 'little')
+            dimensions = ((bits & 0x3fff) + 1, ((bits >> 14) & 0x3fff) + 1)
+            frames += 1
+        cursor = end + (size & 1)
+    if frames != 1 or (canvas is not None and canvas != dimensions):
+        raise ValueError('Video poster WebP frame or canvas differs')
+    return dimensions
+
+def video_media_match(name):
+    match = VIDEO_MEDIA_PATH.fullmatch(name) if isinstance(name, str) else None
+    return match if match and match.group(1) in VIDEO_SCENE_IDS else None
+
+
+def video_media_limit(name):
+    return MAX_VIDEO_MP4_BYTES if name.endswith('/film.mp4') else MAX_VIDEO_POSTER_BYTES
+
+
+def video_boxes(content, start=0, end=None):
+    end = len(content) if end is None else end
+    result, cursor = [], start
+    while cursor < end:
+        if cursor + 8 > end or len(result) >= 4096:
+            raise ValueError('Truncated or excessive video boxes')
+        size, kind = struct.unpack('>I4s', content[cursor:cursor + 8])
+        header = 8
+        if size == 1:
+            if cursor + 16 > end:
+                raise ValueError('Truncated extended video box')
+            size, header = int.from_bytes(content[cursor + 8:cursor + 16], 'big'), 16
+        if size < header or cursor + size > end:
+            raise ValueError('Invalid video box length')
+        result.append((kind, cursor + header, cursor + size, cursor))
+        cursor += size
+    if cursor != end:
+        raise ValueError('Unfinished video box sequence')
+    return result
+
+
+def video_one(boxes, kind):
+    found = [box for box in boxes if box[0] == kind]
+    if len(found) != 1:
+        raise ValueError('Required unique video box missing: ' + repr(kind))
+    return found[0]
+
+
+def video_duration(content, box):
+    _, start, end, _ = box
+    if start + 4 > end or content[start + 1:start + 4] != b'\0\0\0':
+        raise ValueError('Invalid video full box')
+    version = content[start]
+    scale_offset, duration_offset, size = (12, 16, 4) if version == 0 else (20, 24, 8)
+    if version not in (0, 1) or start + duration_offset + size > end:
+        raise ValueError('Invalid video duration record')
+    scale = int.from_bytes(content[start + scale_offset:start + scale_offset + 4], 'big')
+    ticks = int.from_bytes(content[start + duration_offset:start + duration_offset + size], 'big')
+    if not 0 < scale <= 1000000000 or ticks != VIDEO_DURATION_SECONDS * scale:
+        raise ValueError('Video must have its approved twelve-second duration')
+    return scale, ticks
+
+
+def video_sps_dimensions(nal):
+    if len(nal) < 5 or nal[0] & 0x80 or nal[0] & 31 != 7:
+        raise ValueError('Invalid H264 sequence parameter set')
+    data = re.sub(b'\x00\x00\x03', b'\x00\x00', nal[1:])
+    position = 0
+    def bits(count):
+        nonlocal position
+        if count < 0 or position + count > len(data) * 8:
+            raise ValueError('Truncated H264 sequence parameters')
+        value = 0
+        for _ in range(count):
+            value = (value << 1) | ((data[position // 8] >> (7 - position % 8)) & 1)
+            position += 1
+        return value
+    def ue():
+        zeros = 0
+        while not bits(1):
+            zeros += 1
+            if zeros > 31:
+                raise ValueError('Oversized H264 sequence integer')
+        return (1 << zeros) - 1 + bits(zeros)
+    def se():
+        value = ue()
+        return (value + 1) // 2 if value & 1 else -(value // 2)
+    profile = bits(8)
+    bits(8);bits(8);ue()
+    if profile != 100 or ue() != 1 or ue() != 0 or ue() != 0:
+        raise ValueError('Video must be H264 High, eight-bit 4:2:0')
+    bits(1)
+    if bits(1):
+        for index in range(8):
+            if bits(1):
+                last, next_scale = 8, 8
+                for _ in range(16 if index < 6 else 64):
+                    if next_scale:
+                        next_scale = (last + se() + 256) % 256
+                    last = next_scale or last
+    ue()
+    order_type = ue()
+    if order_type == 0:
+        ue()
+    elif order_type == 1:
+        bits(1);se();se();cycle = ue()
+        if cycle > 255:
+            raise ValueError('Excessive H264 ordering cycle')
+        for _ in range(cycle):se()
+    elif order_type != 2:
+        raise ValueError('Invalid H264 ordering type')
+    ue();bits(1)
+    width, height = (ue() + 1) * 16, (ue() + 1) * 16
+    if bits(1) != 1:
+        raise ValueError('Interlaced video is outside the approved contract')
+    bits(1)
+    if bits(1):
+        left, right, top, bottom = ue(), ue(), ue(), ue()
+        width -= 2 * (left + right)
+        height -= 2 * (top + bottom)
+    if (width, height) != (VIDEO_WIDTH, VIDEO_HEIGHT):
+        raise ValueError('H264 sequence dimensions differ from the approved native frames')
+    if not bits(1):
+        raise ValueError('H264 BT709 VUI metadata missing')
+    if bits(1):
+        if bits(8) == 255:bits(16);bits(16)
+    if bits(1):bits(1)
+    if not bits(1):
+        raise ValueError('H264 video-signal metadata missing')
+    bits(3);bits(1)
+    if not bits(1) or (bits(8), bits(8), bits(8)) != (1, 1, 1):
+        raise ValueError('H264 must declare BT709 colour primaries, transfer and matrix')
+    return width, height
+
+
+def video_avcc(content):
+    if len(content) < 7 or content[0] != 1 or content[1] != 100 or content[4] & 3 != 3:
+        raise ValueError('Video requires H264 High AVC with four-byte NAL lengths')
+    cursor, dimensions = 6, []
+    sps_count = content[5] & 31
+    if not 1 <= sps_count <= 8:
+        raise ValueError('Invalid H264 SPS count')
+    for _ in range(sps_count):
+        if cursor + 2 > len(content):raise ValueError('Truncated AVC parameter length')
+        size = int.from_bytes(content[cursor:cursor + 2], 'big');cursor += 2
+        if size == 0 or cursor + size > len(content):raise ValueError('Truncated AVC parameter set')
+        dimensions.append(video_sps_dimensions(content[cursor:cursor + size]));cursor += size
+    if cursor >= len(content) or not 1 <= content[cursor] <= 32:
+        raise ValueError('Invalid H264 PPS count')
+    pps_count = content[cursor];cursor += 1
+    for _ in range(pps_count):
+        if cursor + 2 > len(content):raise ValueError('Truncated AVC picture parameter length')
+        size = int.from_bytes(content[cursor:cursor + 2], 'big');cursor += 2
+        if size == 0 or cursor + size > len(content) or content[cursor] & 0x80 or content[cursor] & 31 != 8:
+            raise ValueError('Invalid AVC picture parameter set')
+        cursor += size
+    if cursor < len(content):
+        if (content[cursor:] != b'\xfd\xf8\xf8\x00'):
+            raise ValueError('Unexpected AVC chroma/depth extension')
+        cursor += 4
+    if cursor != len(content) or len(set(dimensions)) != 1:
+        raise ValueError('Conflicting H264 sequence dimensions')
+    return dimensions[0]
+
+
+def video_mp4_metadata(content):
+    boxes = video_boxes(content)
+    if not boxes or boxes[0][0] != b'ftyp' or any(b[0] not in (b'ftyp', b'moov', b'mdat', b'free', b'wide') for b in boxes):
+        raise ValueError('Unexpected or fragmented MP4 container')
+    ftyp, moov, mdat = video_one(boxes, b'ftyp'), video_one(boxes, b'moov'), video_one(boxes, b'mdat')
+    brands = content[ftyp[1]:ftyp[2]]
+    if len(brands) < 8 or len(brands) % 4 or brands[:4] not in (b'isom', b'mp41', b'mp42') or moov[3] > mdat[3]:
+        raise ValueError('MP4 must be a self-contained faststart ISO/AVC file')
+    movie = video_boxes(content, moov[1], moov[2]);video_duration(content, video_one(movie, b'mvhd'))
+    track = video_one(movie, b'trak');track_boxes = video_boxes(content, track[1], track[2])
+    tkhd = video_one(track_boxes, b'tkhd')
+    if tkhd[2] - tkhd[1] < 84 or tuple(int.from_bytes(content[i:i + 4], 'big') for i in [tkhd[2] - 8, tkhd[2] - 4]) != (VIDEO_WIDTH << 16, VIDEO_HEIGHT << 16):
+        raise ValueError('MP4 track dimensions differ from the approved native frames')
+    if content[tkhd[2] - 44:tkhd[2] - 8] != struct.pack('>9I', 65536, 0, 0, 0, 65536, 0, 0, 0, 1073741824):
+        raise ValueError('MP4 track must not rotate or transform the native frames')
+    mdia = video_one(track_boxes, b'mdia');media = video_boxes(content, mdia[1], mdia[2])
+    scale, ticks = video_duration(content, video_one(media, b'mdhd'))
+    handler = video_one(media, b'hdlr')
+    if handler[1] + 12 > handler[2] or content[handler[1] + 8:handler[1] + 12] != b'vide':
+        raise ValueError('Only one silent video track is permitted')
+    minf = video_one(media, b'minf');minimum = video_boxes(content, minf[1], minf[2])
+    dinf = video_one(minimum, b'dinf');dref = video_one(video_boxes(content, dinf[1], dinf[2]), b'dref')
+    if content[dref[1]:dref[1] + 8] != b'\0\0\0\0\0\0\0\1':
+        raise ValueError('Unexpected MP4 data references')
+    references = video_boxes(content, dref[1] + 8, dref[2])
+    if len(references) != 1:
+        raise ValueError('MP4 data-reference count differs')
+    reference = video_one(references, b'url ')
+    if reference[2] - reference[1] != 4 or content[reference[1]:reference[2]] != b'\0\0\0\1':
+        raise ValueError('External MP4 media references are forbidden')
+    stbl = video_one(minimum, b'stbl');tables = video_boxes(content, stbl[1], stbl[2])
+    stsd = video_one(tables, b'stsd')
+    if content[stsd[1]:stsd[1] + 8] != b'\0\0\0\0\0\0\0\1':
+        raise ValueError('Unexpected MP4 sample descriptions')
+    descriptions = video_boxes(content, stsd[1] + 8, stsd[2]);entry = video_one(descriptions, b'avc1')
+    if len(descriptions) != 1 or entry[2] - entry[1] < 78:
+        raise ValueError('Only one H264 AVC video description is permitted')
+    if content[entry[1] + 6:entry[1] + 8] != b'\0\1' or struct.unpack('>HH', content[entry[1] + 24:entry[1] + 28]) != (VIDEO_WIDTH, VIDEO_HEIGHT):
+        raise ValueError('AVC sample dimensions or media reference differ')
+    sample = video_boxes(content, entry[1] + 78, entry[2]);avcc = video_one(sample, b'avcC')
+    video_avcc(content[avcc[1]:avcc[2]])
+    colors = [box for box in sample if box[0] == b'colr']
+    if len(colors) > 1:
+        raise ValueError('Conflicting MP4 colour metadata')
+    if colors:
+        colr = colors[0];color = content[colr[1]:colr[2]]
+        if (len(color) not in (10, 11) or color[:4] not in (b'nclx', b'nclc')
+                or color[4:10] != b'\0\1\0\1\0\1'):
+            raise ValueError('MP4 colour metadata conflicts with its H264 BT709 signal')
+    def table(kind, width):
+        box = video_one(tables, kind);start, end = box[1], box[2]
+        if start + 8 > end or content[start:start + 4] != b'\0\0\0\0':raise ValueError('Invalid MP4 sample table')
+        count = int.from_bytes(content[start + 4:start + 8], 'big')
+        if not 1 <= count <= VIDEO_FRAME_COUNT or start + 8 + count * width != end:raise ValueError('Invalid MP4 sample table length')
+        return [content[p:p + width] for p in range(start + 8, end, width)]
+    timing = [struct.unpack('>II', row) for row in table(b'stts', 8)]
+    if (sum(count for count, delta in timing) != VIDEO_FRAME_COUNT
+            or sum(count * delta for count, delta in timing) != ticks
+            or any(not count or delta * VIDEO_FPS != scale for count, delta in timing)):
+        raise ValueError('MP4 must contain exactly 288 constant-rate frames at 24 fps')
+    stsz = video_one(tables, b'stsz');s = content[stsz[1]:stsz[2]]
+    if len(s) < 12 or s[:4] != b'\0\0\0\0' or int.from_bytes(s[8:12], 'big') != VIDEO_FRAME_COUNT:
+        raise ValueError('MP4 sample count differs')
+    fixed = int.from_bytes(s[4:8], 'big')
+    if (fixed and len(s) != 12) or (not fixed and len(s) != 12 + VIDEO_FRAME_COUNT * 4):raise ValueError('Invalid MP4 sample size table')
+    sizes = [fixed] * VIDEO_FRAME_COUNT if fixed else [int.from_bytes(s[p:p + 4], 'big') for p in range(12, len(s), 4)]
+    if not all(sizes):raise ValueError('Empty MP4 sample')
+    chunk_kinds = [b[0] for b in tables if b[0] in (b'stco', b'co64')]
+    if len(chunk_kinds) != 1:raise ValueError('Missing or ambiguous MP4 chunk offsets')
+    offsets = [int.from_bytes(row, 'big') for row in table(chunk_kinds[0], 4 if chunk_kinds[0] == b'stco' else 8)]
+    mappings = [struct.unpack('>III', row) for row in table(b'stsc', 12)]
+    if mappings[0][0] != 1 or any(first > len(offsets) or not count or description != 1 for first, count, description in mappings) or any(a[0] >= b[0] for a, b in zip(mappings, mappings[1:])):
+        raise ValueError('Invalid MP4 sample-to-chunk mapping')
+    intervals, sample_index, mapping_index, idr = [], 0, 0, False
+    for chunk, offset in enumerate(offsets, 1):
+        while mapping_index + 1 < len(mappings) and mappings[mapping_index + 1][0] <= chunk:mapping_index += 1
+        for _ in range(mappings[mapping_index][1]):
+            if sample_index >= len(sizes):raise ValueError('Excess MP4 samples')
+            end = offset + sizes[sample_index]
+            if offset < mdat[1] or end > mdat[2]:raise ValueError('MP4 sample points outside its own media data')
+            intervals.append((offset, end));cursor, slices = offset, 0
+            while cursor < end:
+                if cursor + 4 > end:raise ValueError('Truncated AVC NAL length')
+                size = int.from_bytes(content[cursor:cursor + 4], 'big');cursor += 4
+                if not size or cursor + size > end or content[cursor] & 0x80:raise ValueError('Invalid AVC NAL payload')
+                kind = content[cursor] & 31
+                if kind not in (1, 5, 6, 7, 8, 9, 10, 11, 12):raise ValueError('Unexpected AVC NAL type')
+                if kind in (1, 5):slices += 1
+                if kind == 5:idr = True
+                cursor += size
+            if not slices:raise ValueError('MP4 sample has no H264 picture slice')
+            sample_index += 1;offset = end
+    ordered = sorted(intervals)
+    if (sample_index != VIDEO_FRAME_COUNT or not idr or ordered[0][0] != mdat[1] or ordered[-1][1] != mdat[2]
+            or any(a[1] != b[0] for a, b in zip(ordered, ordered[1:]))):
+        raise ValueError('MP4 picture samples do not exactly cover its video data')
+    return {'mime': 'video/mp4', 'width': VIDEO_WIDTH, 'height': VIDEO_HEIGHT,
+            'durationMilliseconds': VIDEO_DURATION_SECONDS * 1000, 'frameRate': VIDEO_FPS,
+            'frameCount': VIDEO_FRAME_COUNT, 'codec': 'H264 High', 'pixelFormat': 'yuv420p',
+            'colorSpace': 'bt709', 'audio': False, 'faststart': True}
+
+
+def validate_video_media(name, content):
+    match = video_media_match(name)
+    if not match or not 0 < len(content) <= video_media_limit(name):
+        raise ValueError('Video media path or byte size differs')
+    if match.group(2) == 'film.mp4':
+        metadata = video_mp4_metadata(content)
+    else:
+        width, height = video_webp_dimensions(name, content)
+        if not 320 <= width <= VIDEO_WIDTH or not 180 <= height <= VIDEO_HEIGHT or width * 9 != height * 16:
+            raise ValueError('Video poster must retain a bounded native 16:9 aspect')
+        metadata = {'mime': 'image/webp', 'width': width, 'height': height}
+    return {'path': name, **metadata}
+
+
+def load_video_media_package(package_root, media_records):
+    folder = package_root / 'sofa-publish' / 'video-media'
+    control = folder / 'video-media-manifest.json'
+    if not control.exists() and not control.is_symlink():
+        if media_records:
+            raise ValueError('Animation assets require their exact verified video bundle')
+        return {}, None
+    regular_source(control, package_root)
+    if not 0 < control.stat().st_size <= 32 * 1024:
+        raise ValueError('Invalid video media manifest size')
+    raw = control.read_bytes();manifest = json.loads(raw.decode('utf-8'))
+    paths = {'assets/animations/v125/' + scene + '/' + name for scene in VIDEO_SCENE_IDS for name in VIDEO_FILENAMES}
+    if (not isinstance(manifest, dict)
+            or set(manifest) != {'schemaVersion', 'application', 'archiveSha256', 'archiveBytes', 'memberCount', 'parts', 'media'}
+            or type(manifest['schemaVersion']) is not int or manifest['schemaVersion'] != 1
+            or manifest['application'] != 'studio-sofa-video-media'
+            or not interface_digest(manifest['archiveSha256'])
+            or not interface_integer(manifest['archiveBytes'], MAX_VIDEO_ARCHIVE_BYTES)
+            or type(manifest['memberCount']) is not int or manifest['memberCount'] != 10
+            or set(media_records) != paths
+            or not isinstance(manifest['parts'], list) or not 1 <= len(manifest['parts']) <= MAX_VIDEO_PARTS
+            or not isinstance(manifest['media'], list) or len(manifest['media']) != 10):
+        raise ValueError('Invalid exact five-animation package manifest')
+    metadata = {}
+    image_keys = {'path', 'mime', 'width', 'height'}
+    video_keys = image_keys | {'durationMilliseconds', 'frameRate', 'frameCount', 'codec', 'pixelFormat', 'colorSpace', 'audio', 'faststart'}
+    for record in manifest['media']:
+        if (not isinstance(record, dict) or not isinstance(record.get('path'), str)
+                or record['path'] not in paths or record['path'] in metadata
+                or set(record) != (video_keys if record['path'].endswith('.mp4') else image_keys)):
+            raise ValueError('Invalid or duplicate animation metadata')
+        metadata[record['path']] = record
+    if set(metadata) != paths:
+        raise ValueError('Animation metadata must cover the exact ten active paths')
+    stream, whole, total = io.BytesIO(), hashlib.sha256(), 0
+    for index, part in enumerate(manifest['parts'], 1):
+        if (not isinstance(part, dict) or set(part) != {'name', 'bytes', 'sha256'}
+                or part['name'] != f'video-media.part-{index:04d}'
+                or not interface_integer(part['bytes'], MAX_VIDEO_PART_BYTES)
+                or not interface_digest(part['sha256'])):
+            raise ValueError('Unexpected video package part')
+        source = folder / part['name'];regular_source(source, package_root)
+        if source.stat().st_size != part['bytes']:
+            raise ValueError('Video package part size differs')
+        data = source.read_bytes()
+        if sha256(data) != part['sha256']:
+            raise ValueError('Video package part hash differs')
+        total += len(data)
+        if total > manifest['archiveBytes']:
+            raise ValueError('Video archive exceeds its expected size')
+        whole.update(data);stream.write(data)
+    if total != manifest['archiveBytes'] or whole.hexdigest() != manifest['archiveSha256']:
+        raise ValueError('Video archive hash differs')
+    media, expanded = {}, 0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            if len(archive.infolist()) != 10:
+                raise ValueError('Video archive member count differs')
+            for info in archive.infolist():
+                name, mode = info.filename, info.external_attr >> 16
+                if (name not in paths or name in media or not video_media_match(name) or info.is_dir()
+                        or stat.S_ISLNK(mode) or stat.S_IFMT(mode) not in (0, stat.S_IFREG)
+                        or info.flag_bits & 1 or info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unexpected or unsafe video archive member')
+                record = media_records[name]
+                if info.file_size != record['bytes'] or not interface_integer(info.file_size, video_media_limit(name)):
+                    raise ValueError('Animation file size differs')
+                expanded += info.file_size
+                if expanded > MAX_VIDEO_MEDIA_TOTAL_BYTES:
+                    raise ValueError('Animation package expands beyond its limit')
+                data = archive.read(info)
+                if len(data) != record['bytes'] or sha256(data) != record['sha256']:
+                    raise ValueError('Animation file hash differs')
+                actual = validate_video_media(name, data)
+                if (set(actual) != set(metadata[name])
+                        or any(type(metadata[name][key]) is not type(value) or metadata[name][key] != value for key, value in actual.items())):
+                    raise ValueError('Animation native codec/duration/dimension metadata differs')
+                media[name] = data
+    except (zipfile.BadZipFile, RuntimeError, zlib.error) as error:
+        raise ValueError('Invalid video package ZIP') from error
+    if set(media) != paths:
+        raise ValueError('Video package does not cover every approved animation and poster')
+    audit = {'manifestPath': 'sofa-publish/video-media/video-media-manifest.json', 'manifestSha256': sha256(raw),
+             'archiveSha256': manifest['archiveSha256'], 'archiveBytes': manifest['archiveBytes'],
+             'memberCount': 10, 'parts': manifest['parts'], 'media': manifest['media']}
+    return media, audit
+
+
 def apply_interface_overrides(package_root, restored, manifest, expected):
     """Apply a small allowlisted patch only after both base and patch verify."""
     control = package_root / 'sofa-publish' / 'interface-overrides.json'
@@ -1014,6 +1426,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
     swatch_count, swatch_bytes, swatch_records = 0, 0, {}
     folded_count, folded_bytes, folded_records = 0, 0, {}
     editorial_count, editorial_bytes, editorial_records = 0, 0, {}
+    video_count, video_bytes, video_records = 0, 0, {}
     for item in files:
         if (not isinstance(item, dict)
                 or set(item) != {'path', 'expectedBaseSha256', 'expectedBaseBytes', 'sha256', 'bytes'}):
@@ -1024,10 +1437,11 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         swatch_media = swatch_media_match(name)
         folded_media = folded_media_match(name)
         editorial_media = editorial_media_match(name)
-        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media and not product_media and not swatch_media and not folded_media and not editorial_media) or name in seen:
+        video_media = video_media_match(name)
+        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media and not product_media and not swatch_media and not folded_media and not editorial_media and not video_media) or name in seen:
             raise ValueError('Unexpected or duplicate sofa interface file')
         seen.add(name)
-        maximum = MAX_MATERIAL_MEDIA_BYTES if media else (MAX_PRODUCT_MEDIA_BYTES if product_media else (MAX_SWATCH_MEDIA_BYTES if swatch_media else (MAX_FOLDED_MEDIA_BYTES if folded_media else (MAX_EDITORIAL_MEDIA_BYTES if editorial_media else interface_limit(name)))))
+        maximum = MAX_MATERIAL_MEDIA_BYTES if media else (MAX_PRODUCT_MEDIA_BYTES if product_media else (MAX_SWATCH_MEDIA_BYTES if swatch_media else (MAX_FOLDED_MEDIA_BYTES if folded_media else (MAX_EDITORIAL_MEDIA_BYTES if editorial_media else (video_media_limit(name) if video_media else interface_limit(name))))))
         if (not interface_integer(item['bytes'], maximum)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
@@ -1067,15 +1481,23 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if editorial_count > MAX_EDITORIAL_MEDIA_FILES or editorial_bytes > MAX_EDITORIAL_MEDIA_TOTAL_BYTES:
                 raise ValueError('Editorial media exceeds allowed limits')
             editorial_records[name] = item
+        if video_media:
+            video_count += 1
+            video_bytes += item['bytes']
+            if video_count > MAX_VIDEO_MEDIA_FILES or video_bytes > MAX_VIDEO_MEDIA_TOTAL_BYTES:
+                raise ValueError('Animation media exceeds allowed limits')
+            video_records[name] = item
     bundled_media, bundle_audit = load_material_media_package(package_root, media_records)
     product_bundle, product_audit = load_product_media_package(package_root, product_records)
     swatch_bundle, swatch_audit = load_swatch_media_package(package_root, swatch_records)
     folded_bundle, folded_audit = load_folded_media_package(package_root, folded_records)
     editorial_bundle, editorial_audit = load_editorial_media_package(package_root, editorial_records)
+    video_bundle, video_audit = load_video_media_package(package_root, video_records)
     bundled_media.update(product_bundle)
     bundled_media.update(swatch_bundle)
     bundled_media.update(folded_bundle)
     bundled_media.update(editorial_bundle)
+    bundled_media.update(video_bundle)
     for item in files:
         name = item['path']
         media = material_media_match(name)
@@ -1083,15 +1505,16 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         swatch_media = swatch_media_match(name)
         folded_media = folded_media_match(name)
         editorial_media = editorial_media_match(name)
+        video_media = video_media_match(name)
         original = expected.get(name)
         installed = restored / name
         if item['expectedBaseSha256'] is None:
-            if ((name not in NEW_INTERFACE_FILES and name not in V118_ADDITIONS and not media and not product_media and not swatch_media and not folded_media and not editorial_media) or type(item['expectedBaseBytes']) is not int
+            if ((name not in NEW_INTERFACE_FILES and name not in V118_ADDITIONS and not media and not product_media and not swatch_media and not folded_media and not editorial_media and not video_media) or type(item['expectedBaseBytes']) is not int
                     or item['expectedBaseBytes'] != 0 or original is not None
                     or installed.exists() or installed.is_symlink()):
                 raise ValueError('Sofa interface addition collides with base member: ' + name)
         else:
-            if media or product_media or swatch_media or folded_media or editorial_media:
+            if media or product_media or swatch_media or folded_media or editorial_media or video_media:
                 raise ValueError('Gallery media must be new additions')
             if (not interface_integer(item['expectedBaseBytes'], interface_limit(name))
                     or not interface_digest(item['expectedBaseSha256'])
@@ -1102,7 +1525,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
                 raise ValueError('Restored sofa interface base differs: ' + name)
         source = package_root / 'sofa-publish' / 'interface-overrides' / name
-        if (media or product_media or swatch_media or folded_media or editorial_media) and name in bundled_media and not source.exists() and not source.is_symlink():
+        if (media or product_media or swatch_media or folded_media or editorial_media or video_media) and name in bundled_media and not source.exists() and not source.is_symlink():
             content = bundled_media[name]
         else:
             regular_source(source, package_root)
@@ -1121,6 +1544,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             validate_folded_media(name, content)
         elif editorial_media:
             validate_editorial_media(name, content)
+        elif video_media:
+            validate_video_media(name, content)
         elif name == WORKBOOK_PATH:
             validate_xlsx(content)
         else:
@@ -1151,6 +1576,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         audit['foldedSwatchMediaPackage'] = folded_audit
     if editorial_audit is not None:
         audit['editorialMediaPackage'] = editorial_audit
+    if video_audit is not None:
+        audit['videoMediaPackage'] = video_audit
     audit_content = (json.dumps(audit, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     (restored / audit_name).write_bytes(audit_content)
     expected[audit_name] = {'path': audit_name, 'bytes': len(audit_content), 'sha256': sha256(audit_content)}
