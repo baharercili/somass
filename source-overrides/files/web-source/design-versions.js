@@ -12,6 +12,13 @@
     }
     return JSON.stringify(ordered(plan, true));
   }
+  // Cloud dirtiness concerns the design, not export clocks or local revision UUIDs.
+  function bundleFingerprint(bundle) {
+    if (!bundle || bundle.format !== FORMAT || bundle.schemaVersion !== 1 || !Array.isArray(bundle.versions)) throw Error('Geçerli bir SOMASS sürüm yedeği seç.');
+    return JSON.stringify({ format: FORMAT, schemaVersion: 1, activeId: bundle.activeId,
+      versions: bundle.versions.map(entry => ({ id: entry.id, name: entry.name, plan: fingerprint(entry.plan) }))
+        .sort((a, b) => a.id.localeCompare(b.id)) });
+  }
   function createEngine(context) {
     const storage = context.storage, session = context.session;
     const prefix = context.storageKey + '::design-versions:v1:', entryPrefix = prefix + 'entry:';
@@ -21,6 +28,8 @@
     let lastEntries = [];
     const makeId = context.makeId || (() => g.crypto?.randomUUID?.() || 'v-' + Date.now().toString(36) + '-' + (++serial) + '-' + Math.random().toString(36).slice(2));
     const validatePlan = plan => copy(context.validatePlan(copy(plan)));
+    let initialPlanFingerprint = null;
+    try { initialPlanFingerprint = fingerprint(validatePlan(context.getPlan())); } catch (_) {}
     const flags = () => context.getFlags?.() || {};
     const friendlyStorage = () => Error('Sürüm kaydedilemedi. Açık plan korunuyor; tüm sürümleri yedekleyip yeniden deneyebilirsin.');
     function checkedName(value) {
@@ -196,6 +205,123 @@
       if (typeof value.activeId !== 'string' || !ids.has(value.activeId)) throw Error('Sürüm yedeğinin açık tasarım bilgisi geçersiz.');
       return { entries, activeId: value.activeId };
     }
+    function snapshot() {
+      const entries = ensureReady().map(copy), plan = validatePlan(context.getPlan());
+      const current = entries.find(entry => entry.id === activeId);
+      if (current) {
+        if (current.revision !== seenRevision && fingerprint(current.plan) !== seenFingerprint) {
+          throw Error('Başka sekmedeki yeni kayıt korunuyor. Bu sekmedeki çalışmayı kaydettikten sonra bulut kaydı yeniden denenecek.');
+        }
+        current.plan = plan;
+      }
+      // An uninitialized native-only draft deliberately stays uninitialized here.
+      // The caller may explicitly saveCurrent() before connecting it to the cloud.
+      const stamp = entries.reduce((latest, entry) => entry.updatedAt > latest ? entry.updatedAt : latest, '');
+      const bundle = { format: FORMAT, schemaVersion: 1, exportedAt: stamp || null,
+        activeId: current ? current.id : null, versions: entries };
+      if (new TextEncoder().encode(JSON.stringify(bundle)).length > MAX_BACKUP_BYTES) throw Error('Sürüm yedeği 20 MB sınırını aşıyor.');
+      return bundle;
+    }
+    function snapshotFingerprint() {
+      const bundle = snapshot(), semantic = bundleFingerprint(bundle);
+      return bundle.activeId ? semantic : JSON.stringify({ versions: semantic, workingPlan: fingerprint(validatePlan(context.getPlan())) });
+    }
+    function hydrate(value, options = {}) {
+      return action(() => {
+        const checked = validatedBundle(value), previousEntries = ensureReady();
+        if (typeof options.expectedFingerprint !== 'string' || options.expectedFingerprint !== snapshotFingerprint()) {
+          throw Error('Bulut okunurken bu cihazdaki tasarım değişti. Yerel çalışma korunuyor; yeniden eşitle.');
+        }
+        if (!previousEntries.length && context.wasNativeRestored?.() === true) {
+          throw Error('Önce bu cihazdaki mevcut çalışmayı ayrı bir sürüm olarak kaydet. Yerel plan korunuyor.');
+        }
+        if (options.allowReplaceSeed && (previousEntries.length || context.wasNativeRestored?.() === true
+          || fingerprint(validatePlan(context.getPlan())) !== initialPlanFingerprint)) {
+          throw Error('Kayıtlı veya değiştirilmiş çalışma başlangıç tasarımıyla değiştirilemez.');
+        }
+        const chosen = checked.entries.find(entry => entry.id === checked.activeId);
+        const previousPlan = validatePlan(context.getPlan()), previousEditor = context.captureEditorState?.();
+        const previous = { activeId, seenRevision, seenFingerprint, lastEntries: copy(lastEntries) };
+        const nativeKey = context.storageKey, oldNative = storage.getItem(nativeKey);
+        const oldLast = storage.getItem(lastKey), oldSession = session.getItem(sessionKey);
+        const oldEntries = new Map(previousEntries.map(entry => [entry.id, storage.getItem(entryPrefix + entry.id)]));
+        const desired = new Map(checked.entries.map(entry => [entry.id, JSON.stringify(entry)]));
+        // Record each change so failures roll back only values written by us; a
+        // newer value from another tab is never blindly overwritten by rollback.
+        const mutations = [];
+        const mutate = (target, key, next) => {
+          const before = target.getItem(key);
+          if (before === next) return;
+          const mutation = { target, key, before, after: next }; mutations.push(mutation);
+          if (next === null) target.removeItem(key); else target.setItem(key, next);
+          if (target.getItem(key) !== next) throw friendlyStorage();
+        };
+        let adopted = false;
+        try {
+          if (options.expectedFingerprint !== snapshotFingerprint()) throw Error('Bulut okunurken bu cihazdaki tasarım değişti. Yerel çalışma korunuyor; yeniden eşitle.');
+          for (const [id, next] of desired) {
+            if (storage.getItem(entryPrefix + id) !== (oldEntries.get(id) ?? null)) throw Error('Başka sekmede yeni bir kayıt oluştu. Yerel çalışma korunuyor.');
+            mutate(storage, entryPrefix + id, next);
+          }
+          adopted = true; context.adoptPlan(validatePlan(chosen.plan));
+          // Native persistence is a callback; record its actual written value,
+          // including timestamp normalization, even when the callback fails.
+          const nativeBefore = storage.getItem(nativeKey);
+          try { nativeSave(); }
+          finally {
+            const nativeAfter = storage.getItem(nativeKey);
+            if (nativeBefore !== nativeAfter) {
+              let writtenByUs = false;
+              try { writtenByUs = fingerprint(validatePlan(JSON.parse(nativeAfter))) === fingerprint(validatePlan(context.getPlan())); } catch (_) {}
+              if (!writtenByUs) throw Error('Başka sekmedeki açık plan değişti. Yeni kayıt korunuyor.');
+              mutations.push({ target: storage, key: nativeKey, before: nativeBefore, after: nativeAfter });
+            }
+          }
+          if (nativeBefore !== oldNative) throw Error('Başka sekmedeki açık plan değişti. Yerel çalışma korunuyor.');
+          if (session.getItem(sessionKey) !== oldSession || storage.getItem(lastKey) !== oldLast) throw Error('Açık sürüm başka sekmede değişti. Yerel çalışma korunuyor.');
+          mutate(session, sessionKey, chosen.id); mutate(storage, lastKey, chosen.id);
+          for (const [id, raw] of oldEntries) {
+            if (desired.has(id)) continue;
+            if (storage.getItem(entryPrefix + id) !== raw) throw Error('Başka sekmede yeni bir kayıt oluştu. Yerel çalışma korunuyor.');
+            mutate(storage, entryPrefix + id, null);
+          }
+          for (const [id, raw] of desired) if (storage.getItem(entryPrefix + id) !== raw) throw Error('Sürüm kaydı eşitleme sırasında değişti. Yerel çalışma korunuyor.');
+          remember(chosen); lastEntries = checked.entries.map(copy);
+          return { count: checked.entries.length, activeId: chosen.id };
+        } catch (problem) {
+          let rollbackFailed = false;
+          // Free newly allocated keys first, so a quota failure cannot prevent
+          // restoring larger pre-existing values that fit before this attempt.
+          for (const mutation of mutations) {
+            if (mutation.before !== null || mutation.after === null) continue;
+            try { if (mutation.target.getItem(mutation.key) === mutation.after) mutation.target.removeItem(mutation.key); }
+            catch (_) { rollbackFailed = true; }
+          }
+          for (const mutation of mutations.reverse()) {
+            try {
+              if (mutation.target.getItem(mutation.key) !== mutation.after) continue;
+              if (mutation.before === null) mutation.target.removeItem(mutation.key);
+              else mutation.target.setItem(mutation.key, mutation.before);
+              if (mutation.target.getItem(mutation.key) !== mutation.before) rollbackFailed = true;
+            } catch (_) { rollbackFailed = true; }
+          }
+          if (adopted) {
+            try { context.adoptPlan(previousPlan); context.restoreEditorState?.(previousEditor); }
+            catch (_) { rollbackFailed = true; }
+          }
+          activeId = previous.activeId; seenRevision = previous.seenRevision; seenFingerprint = previous.seenFingerprint;
+          lastEntries = previous.lastEntries;
+          if (rollbackFailed) throw Error('Bulut kaydı tamamlanamadı. Açık çalışma korunuyor; yedeğini indirip yeniden dene.');
+          throw problem;
+        }
+      });
+    }
+    function bootstrapPublished(value) {
+      if (ensureReady().length || context.wasNativeRestored?.() === true) return false;
+      if (fingerprint(validatePlan(context.getPlan())) !== initialPlanFingerprint) return false;
+      hydrate(value, { expectedFingerprint: snapshotFingerprint(), allowReplaceSeed: true });
+      return true;
+    }
     function importData(value) {
       return action(() => {
         const checked = validatedBundle(value), initial = ensureReady();
@@ -226,7 +352,8 @@
     function refresh() { emit(); return getState(); }
     function boot() {
       try {
-        const entries = ensureReady(); if (!entries.length) return;
+        const entries = ensureReady();
+        if (!entries.length) { if (context.publishedBundle) bootstrapPublished(context.publishedBundle); return; }
         const bootPlan = validatePlan(context.getPlan()), restored = context.wasNativeRestored?.() === true;
         const matching = entries.find(entry => fingerprint(entry.plan) === fingerprint(bootPlan));
         if (restored && !matching) {
@@ -240,10 +367,11 @@
       } catch (problem) { lastError = problem.message; }
     }
     const api = { getState, saveCurrent, createCopy, switchTo, rename, exportData, importData, importPlan, captureCurrent, refresh,
+      snapshot, snapshotFingerprint, bundleFingerprint, hydrate, bootstrapPublished,
       constants: { format: FORMAT, maxVersions: MAX_VERSIONS, maxBackupBytes: MAX_BACKUP_BYTES } };
     boot(); return api;
   }
-  const internals = { createEngine, fingerprint, FORMAT, MAX_VERSIONS, MAX_BACKUP_BYTES };
+  const internals = { createEngine, fingerprint, bundleFingerprint, FORMAT, MAX_VERSIONS, MAX_BACKUP_BYTES };
   if (typeof module !== 'undefined' && module.exports) module.exports = internals;
   if (!g.document || typeof model === 'undefined' || typeof validateState !== 'function' || typeof persist !== 'function') return;
   const originalPersist = persist, originalImport = typeof deleteConfirmImport === 'function' ? deleteConfirmImport : null;
@@ -270,6 +398,7 @@
   try { browserStorage = g.localStorage; tabStorage = g.sessionStorage; }
   catch (_) { storageAccessFailed = true; browserStorage = tabStorage = unavailableStorage; }
   const engine = createEngine({ storage: browserStorage, session: tabStorage,
+    publishedBundle: g.SOMASS_PUBLISHED_DESIGNS,
     storageKey: g.SOMASS_STATIC_SITE?.storageKey || STORAGE, validatePlan: validateState, getPlan: () => model,
     adoptPlan, writeNative: () => originalPersist(),
     captureEditorState: () => ({ undo: copy(undoStack), redo: copy(redoStack), selected }),

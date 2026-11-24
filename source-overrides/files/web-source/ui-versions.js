@@ -99,7 +99,7 @@
   copyForm.append(copyName.wrap, createCopy); copy.append(copyForm);
 
   const backup = node('section', 'versions-backup');
-  backup.append(node('h3', '', 'Yedekle ve taşı'), node('p', '', 'Sürümler bu tarayıcıda saklanır. Başka cihaz için tüm sürümleri yedekle.'));
+  backup.append(node('h3', '', 'Yedekle ve taşı'), node('p', '', 'Sürümler bu cihazda otomatik saklanır. Bulut hesabına giriş yaparak başka cihazda da devam edebilirsin.'));
   const backupActions = node('div', 'versions-backup-actions');
   const exportAll = button('versionsExportAll', 'Tüm sürümleri yedekle'), importOpen = button('versionsImportOpen', 'Sürüm yedeği aç');
   const importInput = node('input'); importInput.id = 'versionsImportInput'; importInput.type = 'file';

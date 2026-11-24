@@ -6,6 +6,24 @@
   "projectDefinitionSha256": "c616895cfaecb7d34833d9e7d51f9d2aeb07566afbbf02a5dc7e37b6ca9bd6d4",
   "files": [
     {
+      "path": "web-source/cloud-config.js",
+      "baseSha256": null,
+      "bytes": 276,
+      "sha256": "79ff20d95772a177a80cc60e582a45e9c53d78683a475c98ce5265709beafd83"
+    },
+    {
+      "path": "web-source/cloud-sync.css",
+      "baseSha256": null,
+      "bytes": 2963,
+      "sha256": "c840bafb37112b8530eeafeee379f47448adfbb4065a1034390538f35c80473e"
+    },
+    {
+      "path": "web-source/cloud-sync.js",
+      "baseSha256": null,
+      "bytes": 25778,
+      "sha256": "c282e9eb2d7a748e3983fa8d930e497ad2fd2a901014b4ff431babf0d0436a78"
+    },
+    {
       "path": "web-source/decor-controls.js",
       "baseSha256": "2ce5f219036a6a049515764184f95ba409979451f80752d59a68c15d69d49646",
       "bytes": 13552,
@@ -20,20 +38,32 @@
     {
       "path": "web-source/design-versions.js",
       "baseSha256": null,
-      "bytes": 19474,
-      "sha256": "09a2cd993de0778311e1a2dd03f6a88893b29afbc14dbe03d610cbd1236844cc"
+      "bytes": 28270,
+      "sha256": "be3a4610bfc0db6e5446f85f70fe153aa21aa02ce880de1c9372ff95711459a8"
     },
     {
       "path": "web-source/editor/index.html",
       "baseSha256": "47c8bff4d085271a6c02369102b3db67aa573098ddf62fc173684bcd2befd73e",
-      "bytes": 19024,
-      "sha256": "cdfa2f04ce48082ec0625ab0303184aeee32f7e3fcc233edc0361d0444d6a2e4"
+      "bytes": 19349,
+      "sha256": "6289c4328efdd6335e1d3fd02ab3755d5d7fdb81c9de4b3eb8369e4f50da601e"
+    },
+    {
+      "path": "web-source/project-save.js",
+      "baseSha256": "4fb31424064549c6c1ce3c0c4fec8465a1a751d4efc6a07bd8f742eb45970207",
+      "bytes": 3225,
+      "sha256": "1f5e553cb1b8c51ecc9ef57317a95d55e184a83ae4f873971056e6b974cca66e"
     },
     {
       "path": "web-source/project-schedules.js",
       "baseSha256": "75e0bb4aea172445a7f95a644c359613bd511f10b46861b67dc2b86f079c72b2",
       "bytes": 27014,
       "sha256": "1882749d5b2dc7f60a9785e9d9e21723512e4a04cc728a252696969c3c820c5e"
+    },
+    {
+      "path": "web-source/published-designs.js",
+      "baseSha256": null,
+      "bytes": 301261,
+      "sha256": "150e47420152e56fabe3be054ddb5fd32838c0489f7689933405e31b806a27ee"
     },
     {
       "path": "web-source/showroom-controls.js",
@@ -58,6 +88,12 @@
       "baseSha256": "ae2b2da5b58c1ad5c099f4fcc5a72a91056c22ef7e4483e5cf32ab52fe8e0489",
       "bytes": 31421,
       "sha256": "7cf88f4ec4ef2ed7596c28836774bd9cb1894e12156b44063cb51d4ab23d3860"
+    },
+    {
+      "path": "web-source/supabase-client.min.js",
+      "baseSha256": null,
+      "bytes": 222519,
+      "sha256": "ff78751b8c637ea3b0d3d20330ef3c2f8b25c61b67a7f9d9cf8f41417c741c6e"
     },
     {
       "path": "web-source/ui-inspector.css",
@@ -104,8 +140,8 @@
     {
       "path": "web-source/ui-versions.js",
       "baseSha256": null,
-      "bytes": 16659,
-      "sha256": "147856546ab7c4742d4f644e020cc34b5b2ce02afe9fa9981eaf4fa9b540f28c"
+      "bytes": 16686,
+      "sha256": "c3f09928ffd823865cc9a9ca8dafb5b4e6137f4f14e0cb5a953ad622729813fd"
     },
     {
       "path": "web-source/wall-fabric-rack.js",
