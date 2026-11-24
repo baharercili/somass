@@ -5,7 +5,7 @@
  const label=document.createElement('span');label.id='projectSaveStatus';label.className='project-save-status';label.setAttribute('role','status');
  document.querySelector('.header-actions').prepend(label,button);
  let localSaved=!!g.SOMASS_RESTORED_FROM_STORAGE&&!g.SOMASS_STORAGE_UNAVAILABLE;
- function status(){label.textContent=g.SOMASS_RESTORE_FAILED?'Önceki taslak korunuyor':localSaved?'Bu tarayıcıda kayıtlı':'JSON yedeği gerekli';label.classList.toggle('save-error',!!g.SOMASS_RESTORE_FAILED||!localSaved);label.title='Bu cihazda otomatik kayıt tutulur. Başka cihazda devam etmek için Bulut hesabına giriş yapabilir veya JSON yedeğini açabilirsin.';}
+ function status(){label.textContent=g.SOMASS_RESTORE_FAILED?'Önceki taslak korunuyor':localSaved?'Bu tarayıcıda kayıtlı':'JSON yedeği gerekli';label.classList.toggle('save-error',!!g.SOMASS_RESTORE_FAILED||!localSaved);label.title='Bu cihazda yedek tutulur. Ortak çalışma bağlantısı kullanıldığında değişiklikler ortak kayda da aktarılır.';}
  const previousPersist=persist;persist=function(){model.projectUpdatedAt=new Date().toISOString();const ok=previousPersist();localSaved=ok===true;status();return ok;};
  async function save(){
   if(button.disabled)return false;button.disabled=true;
