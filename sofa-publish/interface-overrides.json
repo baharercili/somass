@@ -12131,8 +12131,8 @@
       "path": "ana-sayfa.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "bytes": 40822,
-      "sha256": "38a5b0e5c9bbc9b33837869e8c8e03344c743d0630c244046b320099cc9d232c"
+      "bytes": 41713,
+      "sha256": "0234d712266991669bff0cb19f22cd34a34bf23d20b555a37ee9882151416cdb"
     },
     {
       "path": "assets/inside/v128/film.mp4",
