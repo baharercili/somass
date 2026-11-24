@@ -1,14 +1,14 @@
-import {CONFIG_STORAGE_KEY,createGalleryChoices,readGalleryState,combinationHref} from './combinations-state.js?v=20261124-new-fabrics-v118';
-import {getInspirationCatalog} from './inspiration-catalog.js?v=20261124-new-fabrics-v118';
-import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-realism-v128';
-import {groupCatalogueVariants,isListedCatalogueVariant} from './catalogue-variants.js?v=20261124-new-fabrics-v118';
+import {CONFIG_STORAGE_KEY,createGalleryChoices,readGalleryState,combinationHref} from './combinations-state.js?v=20261124-reverse-v132';
+import {getInspirationCatalog} from './inspiration-catalog.js?v=20261124-reverse-v132';
+import {attachStudioImages,loadStudioImageManifest} from './studio-catalog-images.js?v=20261124-reverse-v132';
+import {groupCatalogueVariants,isListedCatalogueVariant} from './catalogue-variants.js?v=20261124-reverse-v132';
 
 export const CATALOGUE_PAGE_SIZE=12;
 const svgNS='http://www.w3.org/2000/svg';
-const FILTER_VALUES=Object.freeze({kind:['all','straight','chaise','dual','corner','single'],tone:['all','neutral','warm','green','blue','deep'],sizeBand:['all','compact','medium','large'],base:['all','oak','dark-oak','black-oak'],fabric:['all','new']});
+const FILTER_VALUES=Object.freeze({kind:['all','straight','chaise','dual','corner','single'],tone:['all','neutral','warm','green','blue','deep'],sizeBand:['all','compact','medium','large'],base:['all','oak','dark-oak','black-oak'],fabric:['all','new'],collection:['all','reverse']});
 
 export function filterCatalogue(cards,filters={}){
- return cards.filter(card=>(filters.fabric!=='new'||card.newFabric===true)&&(!filters.kind||filters.kind==='all'||card.kind===filters.kind)&&(!filters.tone||filters.tone==='all'||card.tone===filters.tone)&&(!filters.sizeBand||filters.sizeBand==='all'||card.sizeBand===filters.sizeBand)&&(!filters.base||filters.base==='all'||card.state.base===filters.base));
+ return cards.filter(card=>(filters.collection!=='reverse'||card.reverseAngle===true)&&(filters.fabric!=='new'||card.newFabric===true)&&(!filters.kind||filters.kind==='all'||card.kind===filters.kind)&&(!filters.tone||filters.tone==='all'||card.tone===filters.tone)&&(!filters.sizeBand||filters.sizeBand==='all'||card.sizeBand===filters.sizeBand)&&(!filters.base||filters.base==='all'||card.state.base===filters.base));
 }
 export function cataloguePage(cards,requestedPage=1,pageSize=CATALOGUE_PAGE_SIZE){
  pageSize=Number.isSafeInteger(pageSize)&&pageSize>0?Math.min(CATALOGUE_PAGE_SIZE,pageSize):CATALOGUE_PAGE_SIZE;
@@ -35,7 +35,7 @@ export function makeCatalogueCard(card,choices,index,document=globalThis.documen
  const fragment=document.querySelector('#combination-template').content.cloneNode(true),article=fragment.querySelector('article');
  article.dataset.layout=card.layoutKey;article.dataset.combination=card.key;article.dataset.kind=card.kind;
  article.querySelector('[data-number]').textContent=String(index+1).padStart(3,'0');
- article.querySelector('[data-title]').textContent=card.variants?card.summary.layoutLabel:card.title;
+ article.querySelector('[data-title]').textContent=card.reverseAngle?card.title:(card.variants?card.summary.layoutLabel:card.title);
  article.querySelector('[data-layout-label]').textContent=card.summary.layoutLabel;
  article.querySelector('[data-description]').textContent=card.description;
  article.querySelector('[data-dimensions]').textContent=(card.dimensions.approximate?'Yaklaşık ':'')+card.footprintLabel;
@@ -82,9 +82,9 @@ export function makeCatalogueCard(card,choices,index,document=globalThis.documen
 const loadPreviews=async(...args)=>{const {renderCombinationPreviews}=await import('./combination-previews.js?v=20261122-open-travel-v95');return renderCombinationPreviews(...args);};
 
 /** Only the visible page is rendered; a preset's own state always reaches the worker. */
-export function createCatalogueController({cards,choices,elements,makeCard=makeCatalogueCard,renderPreviews=loadPreviews,initialPage=1,initialFabric='all',onPageChange=()=>{}}){
+export function createCatalogueController({cards,choices,elements,makeCard=makeCatalogueCard,renderPreviews=loadPreviews,initialPage=1,initialFabric='all',initialCollection='all',onPageChange=()=>{}}){
  cards=cards.filter(isListedCatalogueVariant);
- const filters={kind:'all',tone:'all',sizeBand:'all',base:'all',fabric:initialFabric==='new'?'new':'all'},staticImages=new Map(cards.filter(card=>card.studioImage).map(card=>[card.key,card.studioImage]));
+ const filters={kind:'all',tone:'all',sizeBand:'all',base:'all',fabric:initialCollection!=='reverse'&&initialFabric==='new'?'new':'all',collection:initialCollection==='reverse'?'reverse':'all'},staticImages=new Map(cards.filter(card=>card.studioImage).map(card=>[card.key,card.studioImage]));
  const cache=new Map([...staticImages].map(([key,image])=>[key,image.src])),loadedStatic=new Set(),rejectedStatic=new Set(),failed=new Set(),indices=new Map(cards.map((card,index)=>[card.key,index]));
  const selectedVariants=new Map();
  let page=initialPage,visible=[],nodes=new Map(),revision=0,controller=null,suspended=false,previewTask=Promise.resolve(),queueEpoch=null;
@@ -126,6 +126,10 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
  };
  async function previews(items,epoch,signal){
   if(!items.length||signal.aborted)return;
+  // The legacy worker has no per-table reverse geometry; retain the exact measured plan.
+  for(const item of items)if(item.reverseAngle)failed.add(item.key);
+  items=items.filter(item=>!item.reverseAngle);
+  if(!items.length){updateStatus();return;}
   try{
    await renderPreviews(items,items[0].state,choices,{signal,onPreview:(key,src)=>{
     if(signal.aborted||epoch!==revision||!nodes.has(key))return;
@@ -168,14 +172,14 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
   elements.count.textContent=`${matching.length} farklı yerleşim · ${matchingVariants.length} renk ve malzeme seçeneği`+(matching.length?` · ${slice.start}–${slice.end} gösteriliyor`:'');
   elements.pageStatus.textContent=`${page} / ${slice.totalPages}`;elements.previous.disabled=page<=1;elements.next.disabled=page>=slice.totalPages;elements.pagination.hidden=matching.length<=CATALOGUE_PAGE_SIZE;elements.empty.hidden=matching.length!==0;elements.grid.hidden=matching.length===0;
   if(elements.paginationTop)elements.paginationTop.hidden=elements.pagination.hidden;
-  renderPageNumbers(slice.totalPages);onPageChange(page,{...filters});elements.newFabricButton?.setAttribute('aria-pressed',String(filters.fabric==='new'));
+  renderPageNumbers(slice.totalPages);onPageChange(page,{...filters});elements.newFabricButton?.setAttribute('aria-pressed',String(filters.fabric==='new'));elements.reverseAngleButton?.setAttribute('aria-pressed',String(filters.collection==='reverse'));
   for(const button of elements.kindButtons)button.setAttribute('aria-pressed',String(button.dataset.combinationFilter===filters.kind));
   for(const name of ['tone','sizeBand','base'])elements.selects[name].value=filters[name];
   elements.reset.hidden=Object.values(filters).every(value=>value==='all');updateStatus();
   previewTask=startPreviewQueue(epoch,controller.signal);
  }
  const api={
-  setFilter(name,value){if(!FILTER_VALUES[name]?.includes(value)||filters[name]===value)return;filters[name]=value;page=1;render();},
+  setFilter(name,value){if(!FILTER_VALUES[name]?.includes(value)||filters[name]===value)return;filters[name]=value;if(name==='fabric'&&value==='new')filters.collection='all';if(name==='collection'&&value==='reverse')filters.fabric='all';page=1;render();},
   resetFilters(){for(const name of Object.keys(filters))filters[name]='all';page=1;render();},
   goToPage(value){const next=cataloguePage(groupCatalogueVariants(filterCatalogue(cards,filters),selectedVariants),value).page;if(next===page)return;page=next;render();elements.catalogue.scrollIntoView?.({block:'start'});},
   suspend(){suspended=true;revision++;controller?.abort();},
@@ -187,13 +191,14 @@ export function createCatalogueController({cards,choices,elements,makeCard=makeC
  for(const name of ['tone','sizeBand','base'])elements.selects[name].addEventListener('change',event=>api.setFilter(name,event.target.value));
  elements.previous.addEventListener('click',()=>api.goToPage(page-1));elements.next.addEventListener('click',()=>api.goToPage(page+1));
  elements.newFabricButton?.addEventListener('click',()=>api.setFilter('fabric',filters.fabric==='new'?'all':'new'));
+ elements.reverseAngleButton?.addEventListener('click',()=>api.setFilter('collection',filters.collection==='reverse'?'all':'reverse'));
  for(const button of elements.resetButtons)button.addEventListener('click',()=>api.resetFilters());
  render();return api;
 }
 
 export async function initCatalogue(document=globalThis.document){
  const $=selector=>document.querySelector(selector);
- const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-realism-v128',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
+ const [palette,studioManifest,productManifest]=await Promise.all([fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(response=>{if(!response.ok)throw new Error('Palette unavailable');return response.json();}),loadStudioImageManifest(),fetch('./assets/product-galleries/catalogue-v77.json?v=20261124-reverse-v132',{credentials:'same-origin'}).then(response=>response.ok?response.json():null).catch(()=>null)]);
  const products=new Map((Array.isArray(productManifest?.products)?productManifest.products:[]).filter(product=>product&&typeof product.key==='string').map(product=>[product.key,product]));
  const choices=createGalleryChoices(palette),cards=attachStudioImages(getInspirationCatalog(choices),studioManifest,choices).map(card=>({...card,productHref:'./urun.html?model='+encodeURIComponent(card.key),galleryCount:Array.isArray(products.get(card.key)?.gallery)?products.get(card.key).gallery.length:null}));
  // The previous draft is only a return destination; it never influences the catalogue.
@@ -201,7 +206,7 @@ export async function initCatalogue(document=globalThis.document){
  const draft=readGalleryState(location.search,stored,choices),backHref=combinationHref(draft,draft.layout,choices);
  $('#gallery-brand-link').href='./ana-sayfa.html';for(const id of ['gallery-builder-link','gallery-footer-link'])$('#'+id).href=backHref;
  const requestedPage=Number(new URLSearchParams(location.search).get('page')),initialPage=Number.isSafeInteger(requestedPage)&&requestedPage>0?requestedPage:1;
- const controller=createCatalogueController({cards,choices,initialPage,initialFabric:new URLSearchParams(location.search).get('fabric'),onPageChange:(page,filters)=>{try{const url=new URL(location.href);if(filters.fabric==='new')url.searchParams.set('fabric','new');else url.searchParams.delete('fabric');if(page===1)url.searchParams.delete('page');else url.searchParams.set('page',String(page));if(url.href!==location.href)history.replaceState(history.state,'',url.href);}catch{}},elements:{newFabricButton:$('#catalog-new-fabrics'),grid:$('#combination-grid'),count:$('#combination-count'),status:$('#gallery-preview-status'),pageStatus:$('#catalog-page-status'),pageNumbers:$('#catalog-page-numbers'),pageNumbersTop:$('#catalog-page-numbers-top'),previous:$('#catalog-previous'),next:$('#catalog-next'),pagination:$('#catalog-pagination'),paginationTop:$('#catalog-pagination-top'),empty:$('#catalog-empty'),reset:$('#catalog-reset'),catalogue:$('#catalogue-top'),kindButtons:[...document.querySelectorAll('[data-combination-filter]')],selects:{tone:$('#catalog-tone'),sizeBand:$('#catalog-size'),base:$('#catalog-wood')},resetButtons:[...document.querySelectorAll('[data-catalog-reset]')]}});
+ const controller=createCatalogueController({cards,choices,initialPage,initialFabric:new URLSearchParams(location.search).get('fabric'),initialCollection:new URLSearchParams(location.search).get('collection'),onPageChange:(page,filters)=>{try{const url=new URL(location.href);if(filters.collection==='reverse')url.searchParams.set('collection','reverse');else url.searchParams.delete('collection');if(filters.fabric==='new')url.searchParams.set('fabric','new');else url.searchParams.delete('fabric');if(page===1)url.searchParams.delete('page');else url.searchParams.set('page',String(page));if(url.href!==location.href)history.replaceState(history.state,'',url.href);}catch{}},elements:{newFabricButton:$('#catalog-new-fabrics'),reverseAngleButton:$('#catalog-reverse-angles'),grid:$('#combination-grid'),count:$('#combination-count'),status:$('#gallery-preview-status'),pageStatus:$('#catalog-page-status'),pageNumbers:$('#catalog-page-numbers'),pageNumbersTop:$('#catalog-page-numbers-top'),previous:$('#catalog-previous'),next:$('#catalog-next'),pagination:$('#catalog-pagination'),paginationTop:$('#catalog-pagination-top'),empty:$('#catalog-empty'),reset:$('#catalog-reset'),catalogue:$('#catalogue-top'),kindButtons:[...document.querySelectorAll('[data-combination-filter]')],selects:{tone:$('#catalog-tone'),sizeBand:$('#catalog-size'),base:$('#catalog-wood')},resetButtons:[...document.querySelectorAll('[data-catalog-reset]')]}});
  window.addEventListener('pagehide',()=>controller.suspend());window.addEventListener('pageshow',event=>{if(event.persisted)controller.resume();});return controller;
 }
 if(typeof document!=='undefined')initCatalogue().catch(()=>{

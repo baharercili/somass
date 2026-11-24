@@ -1,8 +1,8 @@
 import {selectedFabricDescription} from './fabric-library.js?v=20261124-new-fabrics-v118';
-import {moduleExtraCount} from './module-chain.js?v=20261123-square-corner-v2';
-import {getTableProfile} from './sofa-table-profiles.js?v=20261118-wood-modules-v65';
+import {moduleExtraCount} from './module-chain.js?v=20261124-reverse-v132';
+import {getTableProfile} from './sofa-table-profiles.js?v=20261124-reverse-v132';
 
-import {planSofaComposition,getTablePositionChoices} from './table-composition.js?v=20261123-square-corner-v2';
+import {planSofaComposition,getTablePositionChoices} from './table-composition.js?v=20261124-reverse-v132';
 
 import {SOFA_TABLE_DESIGNS,normalizeTableDesign} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 
@@ -29,7 +29,7 @@ const cleanText=value=>typeof value==='string'?value.replace(/[\u0000-\u001f\u00
 const materialLabel=(choices,group,key)=>cleanText(choices?.[group]?.[key]?.label)||'Seçilmedi';
 const coordinateCm=value=>Math.round(value*1e8)/1e6||0;
 function moduleFor(part){
- const key=part.type,outline=part.outline?{outlineCm:part.outline.map(([x,z])=>[coordinateCm(x),coordinateCm(z)])}:{},cm=part.kind==='table'?value=>Math.round(value*1000)/10:centimetres;return{...outline,...(part.tableId?{tableId:part.tableId}:{}),...(part.moduleId?{moduleId:part.moduleId,logicalType:part.logicalType}:{}),key,label:part.kind==='table'?(SOFA_TABLE_DESIGNS[part.tableDesign]?.label||MODULE_LABELS[key]||'Sehpa'):MODULE_LABELS[key],kind:part.kind,widthCm:cm(part.width),depthCm:cm(part.depth),heightCm:cm(part.height),seatHeightCm:centimetres(part.seatHeight??.42),approximate:Boolean(part.approximate),role:part.role,rotationDegrees:Math.round(part.rotation*180/Math.PI*1e6)/1e6||0,xCm:coordinateCm(part.x),zCm:coordinateCm(part.z)};
+ const key=part.type,outline=part.outline?{outlineCm:part.outline.map(([x,z])=>[coordinateCm(x),coordinateCm(z)])}:{},cm=part.kind==='table'?value=>Math.round(value*1000)/10:centimetres;return{...outline,...(part.tableId?{tableId:part.tableId}:{}),...(part.tableDirection==='back'?{tableDirection:'back'}:{}),...(part.moduleId?{moduleId:part.moduleId,logicalType:part.logicalType}:{}),key,label:part.kind==='table'?(SOFA_TABLE_DESIGNS[part.tableDesign]?.label||MODULE_LABELS[key]||'Sehpa'):MODULE_LABELS[key],kind:part.kind,widthCm:cm(part.width),depthCm:cm(part.depth),heightCm:cm(part.height),seatHeightCm:centimetres(part.seatHeight??.42),approximate:Boolean(part.approximate),role:part.role,rotationDegrees:Math.round(part.rotation*180/Math.PI*1e6)/1e6||0,xCm:coordinateCm(part.x),zCm:coordinateCm(part.z)};
 }
 
 /** Customer-facing selection data. No DOM, rendering bounds, storage or side effects. */
@@ -46,19 +46,19 @@ export function buildConsumerSummary(state={},choices={}){
  const selectedTables=[...(plan.options.tables??(table!=='none'?[{id:'wood-1',type:table,position:plan.options.tablePosition}]:[])),...cornerTables];
  const tables=selectedTables.map(entry=>{
   const profile=getTableProfile(entry.type),dimensions=profile.dimensions,label=SOFA_TABLE_DESIGNS[profile.design]?.label||'Ahşap modül';
-  return {...entry,tableDesign:profile.design,label,positionLabel:entry.cornerConnector?'Köşe dönüşünde · kare açık raflı sehpa':positionChoices.find(option=>option.value===entry.position)?.label||'',widthCm:Math.round(dimensions.width*1000)/10,depthCm:Math.round(dimensions.depth*1000)/10,heightCm:Math.round(dimensions.height*1000)/10,dimensionsLabel:`${tableCm(dimensions.width)} × ${tableCm(dimensions.depth)} × ${tableCm(dimensions.height)} cm`+(entry.type==='angled'?' · 30° açılım':'')};
+  return {...entry,tableDesign:profile.design,label,positionLabel:entry.cornerConnector?'Köşe dönüşünde · kare açık raflı sehpa':positionChoices.find(option=>option.value===entry.position)?.label||'',widthCm:Math.round(dimensions.width*1000)/10,depthCm:Math.round(dimensions.depth*1000)/10,heightCm:Math.round(dimensions.height*1000)/10,dimensionsLabel:`${tableCm(dimensions.width)} × ${tableCm(dimensions.depth)} × ${tableCm(dimensions.height)} cm`+(entry.type==='angled'?(entry.direction==='back'?' · 30° dışa açılım · geniş kenar önde':' · 30° açılım'):'')};
  });
  const designs=new Map();for(const entry of tables){const previous=designs.get(entry.type);if(previous)previous.count++;else designs.set(entry.type,{label:entry.label,count:1});}
  const tableDesignLabel=[...designs.values()].map(entry=>(entry.count>1?entry.count+' × ':'')+entry.label).join(' · '),compositionLabel=tableDesignLabel;
  const tablePosition=hasCornerTable&&plan.options.table==='none'?cornerTables[0].position:plan.options.tablePosition,tablePositionLabel=tables.length===1?tables[0].positionLabel:tables.map((entry,index)=>`${index+1}. modül: ${entry.positionLabel}`).join(' · ');
- const tableDirection=plan.options.tableDirection,tableDirectionLabel='';
+ const tableDirection=plan.options.tableDirection,tableDirectionLabel=tableDirection==='back'?'Geniş kenar önde':'';
  const tableVariantDimensionsLabel=tables.length===1?tables[0].dimensionsLabel:tables.map((entry,index)=>`${index+1}. ${entry.label}: ${entry.dimensionsLabel}`).join(' · '),tableDimensionsLabel=tableVariantDimensionsLabel;
  const side=layout.side==='left'?'soldadır':'sağdadır';
  const endPlacement=tables.some(entry=>['left-end','right-end'].includes(entry.position)),orientationHint=plan.custom?'Modüller sol serbest uçtan sağ serbest uca seçtiğiniz sırayla yerleşir.':layoutKey==='dual-chaise'?'Her iki yanda dinlenme bölümü bulunur.':layout.kind==='corner'?`Koltuğa karşıdan bakıldığında dönüş ${side}.`:layout.kind==='chaise'?`Koltuğa karşıdan bakıldığında dinlenme bölümü ${side}.`:layoutKey==='single-both'?'Her iki yanda kol bulunur.':layout.kind==='single'?(endPlacement?`Ahşap modül, koltuğa karşıdan bakıldığında ${tablePosition==='left-end'?'sol':'sağ'} bitiştedir.`:`Koltuğa karşıdan bakıldığında kol ${side}.`):'';
  const materials={...selectedFabricDescription(state,choices),body:materialLabel(choices,'body',state.body),accent:materialLabel(choices,'accent',state.accent),wood:materialLabel(choices,'base',state.base)};
  if(tableCount)materials.tableDesign=tableDesignLabel;
  const footprintLabel=`${dimensions.widthCm} × ${dimensions.depthCm} cm`,dimensionsLabel=`${dimensions.widthCm} × ${dimensions.depthCm} × ${dimensions.heightCm} cm`;
- const layoutLabel=hasCornerTable?`Kare sehpalı ${seatCount} modüllü ${modulePlan.some(part=>part.key.startsWith('chaise_'))?'dinlenmeli köşe':'köşe'}`:plan.custom?`${seatCount} modüllü özel kanepe`:layout.kind==='straight'?(seatCount===2?'Üçlü koltuk':seatCount===3?'Dörtlü koltuk':`${seatCount} modüllü düz kanepe`):layoutKey==='single-both'?layout.label:layout.kind==='single'&&endPlacement?'Ahşap bitişli tek modül':layout.label;
+ const layoutLabel=hasCornerTable?`Kare sehpalı ${seatCount} modüllü ${modulePlan.some(part=>part.key.startsWith('chaise_'))?'dinlenmeli köşe':'köşe'}`:plan.custom?`${seatCount} modüllü özel kanepe`:layout.kind==='straight'?(tables.some(entry=>entry.type==='angled'&&entry.direction==='back')?(seatCount===2?'İkili koltuk':seatCount===3?'Üçlü koltuk':seatCount===4?'Dörtlü koltuk':`${seatCount} modüllü düz kanepe`):(seatCount===2?'Üçlü koltuk':seatCount===3?'Dörtlü koltuk':`${seatCount} modüllü düz kanepe`)):layoutKey==='single-both'?layout.label:layout.kind==='single'&&endPlacement?'Ahşap bitişli tek modül':layout.label;
  const summary={...(plan.custom?{modules:plan.options.modules.map(module=>({...module})),moduleRotation:plan.options.moduleRotation,conflicts:plan.conflicts.map(conflict=>({...conflict}))}:{}),layoutKey,layoutLabel,layoutKind:plan.custom?'custom':layout.kind,side:plan.custom?null:layout.side??null,additionalMiddleCount:extra,middleCount:modulePlan.filter(module=>module.key==='middle').length,moduleCount:plan.moduleCount,seatCount,tableCount,countLabel,table,tables,terminal,tableDesign,tableDesignLabel,tableVariant,tableVariantLabel,tableVariantDimensionsLabel,tableDimensionsLabel,tablePosition,tablePositionLabel,tableDirection,tableDirectionLabel,compositionLabel,modulePlan,moduleBreakdown,dimensions,footprintLabel,dimensionsLabel,dimensionOrder:'Genişlik × derinlik × yükseklik',dimensionNote:dimensions.approximate?'Köşe modülünün yaklaşık 118 × 118 cm dış ölçüsü üzerinden hesaplanır.':'Yerleşim için modüllerin dış ölçüleri esas alınır.',orientationHint,materials};
  summary.shareText=buildSelectionText(summary);
  return summary;

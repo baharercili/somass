@@ -1,9 +1,9 @@
 import {addNewFabricChoices} from './fabric-library.js?v=20261124-new-fabrics-v118';
-import {sanitizeModuleSequence,moduleExtraCount,moduleQuarterRotation} from './module-chain.js?v=20261123-square-corner-v2';
-import {buildConsumerSummary} from './consumer-summary.js?v=20261124-new-fabrics-v118';
+import {sanitizeModuleSequence,moduleExtraCount,moduleQuarterRotation} from './module-chain.js?v=20261124-reverse-v132';
+import {buildConsumerSummary} from './consumer-summary.js?v=20261124-reverse-v132';
 
-import {sanitizeCompositionOptions} from './table-composition.js?v=20261123-square-corner-v2';
-import {sanitizeCornerTables} from './corner-table-composition.js?v=20261123-square-corner-v2';
+import {sanitizeCompositionOptions} from './table-composition.js?v=20261124-reverse-v132';
+import {sanitizeCornerTables} from './corner-table-composition.js?v=20261124-reverse-v132';
 
 import {DEFAULT_TABLE_DESIGN,TABLE_DESIGN_IDS,normalizeTableDesign} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 
@@ -17,7 +17,7 @@ const NAMED_TABLE_POSITIONS=['return','left-end','right-end'];
 export const DEFAULT_GALLERY_STATE=Object.freeze({body:'card-inci',accent:'card-bej',base:'oak',finish:'velvet',scene:'warm',layout:'straight2',extra:0,back:'closed',table:'none',terminal:'none',tableDesign:DEFAULT_TABLE_DESIGN,tableVariant:'standard',tablePosition:0,tableDirection:'front'});
 const owns=(object,key)=>object!=null&&typeof key==='string'&&Object.hasOwn(object,key);
 const clampExtra=moduleExtraCount;
-const tableEntries=value=>Array.isArray(value)?value.filter(entry=>entry&&typeof entry==='object'&&!Array.isArray(entry)).map(entry=>({id:entry.id,type:entry.type,position:entry.position,...(Object.hasOwn(entry,'beforeId')?{beforeId:entry.beforeId}:{}),...(Object.hasOwn(entry,'afterId')?{afterId:entry.afterId}:{})})):[];
+const tableEntries=value=>Array.isArray(value)?value.filter(entry=>entry&&typeof entry==='object'&&!Array.isArray(entry)).map(entry=>({id:entry.id,type:entry.type,position:entry.position,...(entry.type==='angled'&&entry.direction==='back'?{direction:'back'}:{}),...(Object.hasOwn(entry,'beforeId')?{beforeId:entry.beforeId}:{}),...(Object.hasOwn(entry,'afterId')?{afterId:entry.afterId}:{})})):[];
 
 /** The same legacy identifiers used by the configurator remain valid on shared links. */
 export function createGalleryChoices(palette=[]){

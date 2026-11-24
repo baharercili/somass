@@ -1,19 +1,19 @@
 import {NEW_FABRICS,addNewFabricChoices} from './fabric-library.js?v=20261124-new-fabrics-v118';
-import {getTableProfile} from './sofa-table-profiles.js?v=20261118-wood-modules-v65';
-import {createSelectionHistory} from './workspace-history.js?v=20261123-square-corner-v2';
-import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY} from './combinations-state.js?v=20261124-new-fabrics-v118';
-import {sanitizeCompositionOptions,getTablePositionChoices} from './table-composition.js?v=20261123-square-corner-v2';
+import {getTableProfile} from './sofa-table-profiles.js?v=20261124-reverse-v132';
+import {createSelectionHistory} from './workspace-history.js?v=20261124-reverse-v132';
+import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY} from './combinations-state.js?v=20261124-reverse-v132';
+import {sanitizeCompositionOptions,getTablePositionChoices} from './table-composition.js?v=20261124-reverse-v132';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 import * as THREE from 'three';
 import { GLTFLoader } from './vendor/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from './vendor/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from './vendor/addons/environments/RoomEnvironment.js';
 import { SofaMaterialSystem } from './fabric-material.js?v=20261124-realism-v128';
-import { ModularLayout } from './modular-layout.js?v=20261123-square-corner-v2';
+import { ModularLayout } from './modular-layout.js?v=20261124-reverse-v132';
 import { evaluateBackBounds } from './back-motion.js?v=20261122-open-travel-v95';
-import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261124-new-fabrics-v118';
-import {layoutFamily,layoutSide,layoutForFamily,layoutForSide,createPlacementGuide,shortPosition,validWoodModules,findWoodModuleSlot,reflowWoodModules} from './configuration-guide.js?v=20261123-square-corner-v2';
-import {deriveModuleSequence,appendModule,removeModule,getCornerTableChoices,setCornerTable} from './module-chain.js?v=20261123-square-corner-v2';
+import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261124-reverse-v132';
+import {layoutFamily,layoutSide,layoutForFamily,layoutForSide,createPlacementGuide,shortPosition,validWoodModules,findWoodModuleSlot,reflowWoodModules} from './configuration-guide.js?v=20261124-reverse-v132';
+import {deriveModuleSequence,appendModule,removeModule,getCornerTableChoices,setCornerTable} from './module-chain.js?v=20261124-reverse-v132';
 
 const $ = (s) => document.querySelector(s);
 const defaults = {body:'card-inci',accent:'card-bej',base:'oak',finish:'velvet',scene:'warm'};

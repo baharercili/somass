@@ -2,7 +2,7 @@
 export function studioImageSignature(card,choices){
  const state=card.state??{},summary=card.summary??card,dimensions=card.dimensions??summary.dimensions??{},modules=card.modulePlan??summary.modulePlan??[];
  const dye=(group,key)=>choices?.[group]?.[key]?.renderColor??choices?.[group]?.[key]?.color??null;
- const tables=Array.isArray(state.tables)?state.tables.map(entry=>[entry.type,entry.position]):state.table&&state.table!=='none'?[[state.table,state.tablePosition]]:[];
+ const tables=Array.isArray(state.tables)?state.tables.map(entry=>[entry.type,entry.position,...(entry.type==='angled'&&entry.direction==='back'?['back']:[])]):state.table&&state.table!=='none'?[[state.table,state.tablePosition]]:[];
  return JSON.stringify({
   version:1,state:[state.body,state.accent,state.base,state.finish??'velvet',state.scene??'warm',state.layout,Number(state.extra)||0,state.back??'closed',state.tableDirection??'front'],
   tables,colors:[dye('body',state.body),dye('accent',state.accent),dye('base',state.base)],
@@ -15,7 +15,7 @@ function localStudioSource(card,source){
  if(typeof source!=='string'||!/^inspiration-[a-z\d-]{1,80}$/.test(card.key??''))return false;
  const parts=source.split('?');
  const sourceKey=card.key.startsWith('inspiration-angled-v72-')?card.key.slice('inspiration-'.length):null;
- const exactAsset=parts[0]===`./assets/product-galleries/v118/${card.key}/hero.webp`||parts[0]===`./assets/product-galleries/v102/${card.key}/hero.webp`||parts[0]===`./assets/product-galleries/all-v96/${card.key}/studio.webp`||parts[0]===`./assets/product-galleries/flat-v94/${card.key}.webp`||parts[0]===`./assets/studio/${card.key}.webp`||parts[0]===`./assets/product-galleries/cd-v71/${card.key}.webp`||(card.key==='inspiration-zeytin-double-angle'&&parts[0]==='./assets/product-galleries/angled-v72/angled-v72-s03-zeytin-oak.webp')||(card.key==='inspiration-single-both-zeytin'&&parts[0]==='./assets/product-galleries/single-both-v86/cift-kollu-tekli-zeytin.webp')||(sourceKey&&parts[0]===`./assets/product-galleries/angled-v72/${sourceKey}.webp`);
+ const exactAsset=parts[0]===`./assets/product-galleries/v132/${card.key}/hero.webp`||parts[0]===`./assets/product-galleries/v118/${card.key}/hero.webp`||parts[0]===`./assets/product-galleries/v102/${card.key}/hero.webp`||parts[0]===`./assets/product-galleries/all-v96/${card.key}/studio.webp`||parts[0]===`./assets/product-galleries/flat-v94/${card.key}.webp`||parts[0]===`./assets/studio/${card.key}.webp`||parts[0]===`./assets/product-galleries/cd-v71/${card.key}.webp`||(card.key==='inspiration-zeytin-double-angle'&&parts[0]==='./assets/product-galleries/angled-v72/angled-v72-s03-zeytin-oak.webp')||(card.key==='inspiration-single-both-zeytin'&&parts[0]==='./assets/product-galleries/single-both-v86/cift-kollu-tekli-zeytin.webp')||(sourceKey&&parts[0]===`./assets/product-galleries/angled-v72/${sourceKey}.webp`);
  return parts.length<=2&&exactAsset&&(parts.length===1||/^v=[a-z\d._-]{1,100}$/i.test(parts[1]));
 }
 
@@ -40,7 +40,7 @@ export function attachStudioImages(cards,manifest,choices){
 /** Missing images never prevent the measured catalogue and live fallback from opening. */
 export async function loadStudioImageManifest(fetcher=globalThis.fetch){
  try{
-  const response=await fetcher('./assets/studio/catalogue-v69.json?v=20261124-realism-v128',{credentials:'same-origin'});
+  const response=await fetcher('./assets/studio/catalogue-v69.json?v=20261124-reverse-v132',{credentials:'same-origin'});
   if(!response.ok)return null;
   const manifest=await response.json();
   return manifest&&typeof manifest==='object'&&!Array.isArray(manifest)?manifest:null;

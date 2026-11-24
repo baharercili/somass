@@ -2084,5 +2084,191 @@ def apply_v130_interface_overrides(package_root, restored, manifest, expected):
 apply_interface_overrides = apply_v130_interface_overrides
 
 
+# V132 adds one exact ten-layout media package and exact original-source patches.
+# The public inventory limit is derived from the actual sparse union. Legacy validators retain1792.
+V132_FULL_OVERLAY_LIMIT = 1951
+V132_LEGACY_OVERLAY_RECORDS = 1771
+REVERSE_VARIANT_KEYS = frozenset(["inspiration-reverse-v132-01-soft-touch-1246-oak", "inspiration-reverse-v132-02-veronza-1008-dark-oak", "inspiration-reverse-v132-03-card-bordo-black-oak", "inspiration-reverse-v132-04-soft-touch-1351-oak", "inspiration-reverse-v132-05-veronza-1012-dark-oak", "inspiration-reverse-v132-06-colormax-1015-black-oak", "inspiration-reverse-v132-07-veronza-1031-oak", "inspiration-reverse-v132-08-veronza-1035-dark-oak", "inspiration-reverse-v132-09-veronza-1041-black-oak", "inspiration-reverse-v132-10-card-bal-oak"])
+REVERSE_VIEWS = ('hero','open-back','front','rear','right-rear','right-side','top','dimensioned-top','detail')
+REVERSE_MEDIA_PATHS = frozenset('assets/product-galleries/v132/'+key+'/'+view+suffix+'.webp'
+                              for key in REVERSE_VARIANT_KEYS for view in REVERSE_VIEWS for suffix in ('','.thumb'))
+REVERSE_ORIGINAL_ANCHORS = {"configuration-guide.js": ["d63d983cb7e85ec0ef5f5180963b6a6da51c6eb0edc2dd7824a21ccb5fa52bbf", 8661], "corner-table-composition.js": ["47bc317e0e3e1ad6e3f37fdce3a0d29428c2ef9c104f10acf10f126b88323934", 2067], "modular-layout.js": ["2429e45ab7968fac16ae06b3b676f8d5cea8839b911fc80010463ca95aebab7f", 14400], "module-chain-planner.js": ["0477bfe258b80958661358f634ab294184a6e455da4b971379daaf31b25c06b4", 9687], "module-chain.js": ["e18b94c1091df53414173052a4399c34ce5d4e5dd29ee5802cf1b08a07a43a79", 8120], "product-pack-documents.js": ["f5527f6bafec57a688116a9407db5d0b3df50c91a7ddf2173b4eb370da6c523b", 13894], "sofa-table-profiles.js": ["ae4485e3db3c09241de557cba63c2a927f059671c1a3c84cf9d4624a8de074db", 964], "table-composition.js": ["2cea73b71dcc4cdefabd563fdf52527d8b75b23215da3038fcbc82c40170d285", 23679], "workspace-history.js": ["c38eb1366805433985817968e6ad344bc51e3a9b174b0e60f17dc2ea7c5fa5bd", 2586]}
+INTERFACE_FILES = INTERFACE_FILES | frozenset(REVERSE_ORIGINAL_ANCHORS)
+REVERSE_MAX_ARCHIVE_BYTES = 64 * 1024 * 1024
+REVERSE_MAX_PART_BYTES = 2 * 1024 * 1024
+REVERSE_MAX_PARTS = 32
+
+
+def reverse_media_limit(name):
+    if name not in REVERSE_MEDIA_PATHS: raise ValueError('Unexpected reverse-table media path')
+    return 256 * 1024 if name.endswith('.thumb.webp') else 2 * 1024 * 1024
+
+
+def validate_reverse_media(name, content):
+    if (name not in REVERSE_MEDIA_PATHS or not 30 <= len(content) <= reverse_media_limit(name)
+            or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8],'little') != len(content)-8):
+        raise ValueError('Invalid bounded reverse-table WebP signature')
+    cursor,canvas,dimensions,canvases,frames = 12,None,None,0,0
+    while cursor < len(content):
+        if cursor+8 > len(content): raise ValueError('Truncated reverse-table WebP chunk')
+        kind=content[cursor:cursor+4];size=int.from_bytes(content[cursor+4:cursor+8],'little')
+        start=cursor+8;end=start+size
+        if end+(size&1) > len(content) or kind in (b'ANIM',b'ANMF'): raise ValueError('Invalid or animated reverse-table WebP')
+        data=content[start:end]
+        if kind == b'VP8X':
+            if len(data) != 10 or data[0]&2 or canvases or frames: raise ValueError('Invalid reverse-table WebP canvas')
+            canvas=(int.from_bytes(data[4:7],'little')+1,int.from_bytes(data[7:10],'little')+1);canvases+=1
+        elif kind == b'VP8 ':
+            if len(data)<10 or data[3:6] != b'\x9d\x01\x2a': raise ValueError('Invalid reverse-table VP8 frame')
+            dimensions=(int.from_bytes(data[6:8],'little')&0x3fff,int.from_bytes(data[8:10],'little')&0x3fff);frames+=1
+        elif kind == b'VP8L':
+            if len(data)<5 or data[0] != 0x2f: raise ValueError('Invalid reverse-table VP8L frame')
+            bits=int.from_bytes(data[1:5],'little');dimensions=((bits&0x3fff)+1,((bits>>14)&0x3fff)+1);frames+=1
+        cursor=end+(size&1)
+    expected_dimensions=(300,200) if name.endswith('.thumb.webp') else (1536,1024)
+    if frames != 1 or (canvas is not None and canvas != dimensions) or dimensions != expected_dimensions:
+        raise ValueError('Reverse-table native WebP dimensions differ')
+    return {'path':name,'width':dimensions[0],'height':dimensions[1],'mime':'image/webp'}
+
+
+def load_reverse_media_package(package_root, media_records):
+    prefix='reverse-table-media';folder=package_root/'sofa-publish'/prefix;control=folder/(prefix+'-manifest.json')
+    if not control.exists() and not control.is_symlink():
+        if media_records: raise ValueError('Reverse-table assets require their exact verified bundle')
+        return {},None
+    regular_source(control,package_root)
+    if not 0 < control.stat().st_size <= 64*1024: raise ValueError('Invalid reverse-table package control size')
+    raw=control.read_bytes();m=json.loads(raw.decode('utf-8'))
+    if (not isinstance(m,dict) or set(m) != {'schemaVersion','application','archiveSha256','archiveBytes','memberCount','parts','media'}
+            or type(m['schemaVersion']) is not int or m['schemaVersion'] != 1 or m['application'] != 'studio-sofa-reverse-table-media'
+            or not interface_digest(m['archiveSha256']) or not interface_integer(m['archiveBytes'],REVERSE_MAX_ARCHIVE_BYTES)
+            or type(m['memberCount']) is not int or m['memberCount'] != 180 or set(media_records) != REVERSE_MEDIA_PATHS
+            or not isinstance(m['parts'],list) or not 1 <= len(m['parts']) <= REVERSE_MAX_PARTS
+            or not isinstance(m['media'],list) or len(m['media']) != 180):
+        raise ValueError('Invalid exact reverse-table media manifest')
+    metadata={}
+    for row in m['media']:
+        if (not isinstance(row,dict) or set(row) != {'path','width','height','mime'}
+                or row.get('path') not in REVERSE_MEDIA_PATHS or row['path'] in metadata):
+            raise ValueError('Unexpected or duplicate reverse-table metadata')
+        metadata[row['path']]=row
+    if set(metadata) != REVERSE_MEDIA_PATHS: raise ValueError('Reverse-table metadata coverage differs')
+    stream=io.BytesIO();digest=hashlib.sha256();total=0
+    for index,part in enumerate(m['parts'],1):
+        if (not isinstance(part,dict) or set(part) != {'name','bytes','sha256'}
+                or part['name'] != f'{prefix}.part-{index:04d}'
+                or not interface_integer(part['bytes'],REVERSE_MAX_PART_BYTES) or not interface_digest(part['sha256'])):
+            raise ValueError('Unexpected reverse-table package part')
+        source=folder/part['name'];regular_source(source,package_root)
+        if source.stat().st_size != part['bytes']: raise ValueError('Reverse-table part size differs')
+        b=source.read_bytes();total+=len(b)
+        if sha256(b) != part['sha256'] or total > m['archiveBytes']: raise ValueError('Reverse-table part checksum or total differs')
+        digest.update(b);stream.write(b)
+    if total != m['archiveBytes'] or digest.hexdigest() != m['archiveSha256']: raise ValueError('Reverse-table archive checksum differs')
+    media={};expanded=0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            if len(archive.infolist()) != 180: raise ValueError('Reverse-table archive member count differs')
+            for info in archive.infolist():
+                name,mode=info.filename,info.external_attr>>16
+                if (name not in REVERSE_MEDIA_PATHS or name in media or info.is_dir() or stat.S_ISLNK(mode)
+                        or stat.S_IFMT(mode) not in (0,stat.S_IFREG) or info.flag_bits&1
+                        or info.compress_type not in (zipfile.ZIP_STORED,zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unsafe or unexpected reverse-table archive member')
+                row=media_records[name]
+                if not interface_integer(info.file_size,reverse_media_limit(name)) or info.file_size != row['bytes']:
+                    raise ValueError('Reverse-table asset size differs')
+                expanded+=info.file_size
+                if expanded > REVERSE_MAX_ARCHIVE_BYTES: raise ValueError('Reverse-table expanded package limit exceeded')
+                b=archive.read(info)
+                if len(b) != row['bytes'] or sha256(b) != row['sha256']: raise ValueError('Reverse-table asset checksum differs')
+                actual=validate_reverse_media(name,b)
+                if any(type(metadata[name][key]) is not type(value) or metadata[name][key] != value for key,value in actual.items()):
+                    raise ValueError('Reverse-table media metadata differs from native header')
+                media[name]=b
+    except (zipfile.BadZipFile,RuntimeError,zlib.error) as error: raise ValueError('Invalid reverse-table ZIP') from error
+    if set(media) != REVERSE_MEDIA_PATHS: raise ValueError('Reverse-table archive exact coverage differs')
+    return media,{'manifestPath':'sofa-publish/'+prefix+'/'+prefix+'-manifest.json','manifestSha256':sha256(raw),
+                  'archiveSha256':m['archiveSha256'],'archiveBytes':m['archiveBytes'],'memberCount':180,'parts':m['parts'],'media':m['media']}
+
+
+def validate_v132_overlay_records(overlay, manifest, expected, restored):
+    if (not isinstance(overlay,dict) or set(overlay) != {'schemaVersion','application','baseArchiveSha256','files'}
+            or type(overlay['schemaVersion']) is not int or overlay['schemaVersion'] != 1
+            or overlay['application'] != 'studio-sofa-interface' or overlay['baseArchiveSha256'] != manifest['archiveSha256']):
+        raise ValueError('V132 full interface base package differs')
+    files=overlay['files']
+    if not isinstance(files,list) or not 1 <= len(files) <= V132_FULL_OVERLAY_LIMIT: raise ValueError('V132 full interface count exceeds its explicit derived limit')
+    rows={};new={}
+    for row in files:
+        if (not isinstance(row,dict) or set(row) != {'path','expectedBaseSha256','expectedBaseBytes','sha256','bytes'}
+                or not isinstance(row.get('path'),str) or row['path'] in rows or not interface_digest(row['sha256'])):
+            raise ValueError('Invalid or duplicate V132 full interface record')
+        name=row['path'];rows[name]=row
+        if name.startswith('assets/product-galleries/v132/') and name not in REVERSE_MEDIA_PATHS:
+            raise ValueError('Unapproved V132 media path')
+        if name in REVERSE_ORIGINAL_ANCHORS and (row['expectedBaseSha256'],row['expectedBaseBytes']) != tuple(REVERSE_ORIGINAL_ANCHORS[name]):
+            raise ValueError('V132 original source anchor differs')
+        if name in REVERSE_MEDIA_PATHS:
+            if (row['expectedBaseSha256'] is not None or type(row['expectedBaseBytes']) is not int or row['expectedBaseBytes'] != 0
+                    or not interface_integer(row['bytes'],reverse_media_limit(name)) or name in expected
+                    or (restored/name).exists() or (restored/name).is_symlink()):
+                raise ValueError('Reverse-table addition collides with an original member')
+            new[name]=row
+    if new and (set(new) != REVERSE_MEDIA_PATHS or len(files) != V132_FULL_OVERLAY_LIMIT
+                or not set(REVERSE_ORIGINAL_ANCHORS).issubset(rows)):
+        raise ValueError('V132 requires its exact full record count and180 approved media records')
+    return files,new
+
+
+_apply_interface_overrides_before_v132 = apply_interface_overrides
+
+
+def apply_v132_interface_overrides(package_root, restored, manifest, expected):
+    control=package_root/'sofa-publish/interface-overrides.json'
+    if not control.exists() and not control.is_symlink(): return _apply_interface_overrides_before_v132(package_root,restored,manifest,expected)
+    regular_source(control,package_root)
+    if not 0 < control.stat().st_size <= MAX_INTERFACE_MANIFEST_BYTES: raise ValueError('Invalid V132 full control size')
+    overlay=json.loads(control.read_text('utf-8'))
+    files,new=validate_v132_overlay_records(overlay,manifest,expected,restored)
+    media,package_audit=load_reverse_media_package(package_root,new)
+    if not new: return _apply_interface_overrides_before_v132(package_root,restored,manifest,expected)
+    # The actual full manifest remains complete. A separate read-only
+    # compatibility view delegates the explicit legacy/source subset.
+    with tempfile.TemporaryDirectory(prefix='.sofa-v132-legacy-view-',dir=restored.parent) as temporary:
+        filtered=Path(temporary);source=package_root/'sofa-publish'
+        for f in source.rglob('*'):
+            if f.is_symlink(): raise ValueError('Symlink in V132 publication source')
+            if not f.is_file() or f==control: continue
+            regular_source(f,package_root);target=filtered/'sofa-publish'/f.relative_to(source)
+            target.parent.mkdir(parents=True,exist_ok=True);os.link(f,target)
+        subset=dict(overlay);subset['files']=[row for row in files if row['path'] not in new]
+        if len(subset['files']) != V132_LEGACY_OVERLAY_RECORDS: raise ValueError('V132 compatibility view count differs')
+        target=filtered/'sofa-publish/interface-overrides.json';target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(json.dumps(subset,ensure_ascii=False,indent=2)+'\n','utf-8')
+        count=_apply_interface_overrides_before_v132(filtered,restored,manifest,expected)
+    for name,b in media.items():
+        target=restored/safe_name(name)
+        if name in expected or target.exists() or target.is_symlink(): raise ValueError('Verified reverse-table installation collides')
+        target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b)
+        if sha256(target.read_bytes()) != new[name]['sha256']: raise ValueError('Installed reverse-table checksum differs')
+        expected[name]={'path':name,'bytes':len(b),'sha256':new[name]['sha256']}
+    audit_name='INTERFACE-OVERRIDES.json';audit=json.loads((restored/audit_name).read_text('utf-8'))
+    audit.update({'files':files,'fullOverlayLimit':V132_FULL_OVERLAY_LIMIT,'fullOverlayRecords':len(files),
+                  'legacyOverlayRecordCount':count,'reverseTableMediaRecordCount':len(new),'reverseTableMediaPackage':package_audit})
+    b=(json.dumps(audit,ensure_ascii=False,indent=2)+'\n').encode();(restored/audit_name).write_bytes(b)
+    expected[audit_name]={'path':audit_name,'bytes':len(b),'sha256':sha256(b)}
+    integrity='PACKAGE-MEMBERS.json';details={'schemaVersion':1,'members':sorted((r for name,r in expected.items() if name != integrity),key=lambda r:r['path'])}
+    b=(json.dumps(details,ensure_ascii=False,indent=2)+'\n').encode()
+    if sum(row['bytes'] for name,row in expected.items() if name != integrity)+len(b) > MAX_SITE_BYTES:
+        raise ValueError('Full V132 publication exceeds its preserved site limit')
+    (restored/integrity).write_bytes(b);expected[integrity]={'path':integrity,'bytes':len(b),'sha256':sha256(b)}
+    return count+len(new)
+
+
+apply_interface_overrides = apply_v132_interface_overrides
+
+
 if __name__ == '__main__':
     main()

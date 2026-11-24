@@ -8,7 +8,7 @@ export function groupCatalogueVariants(cards,selected=new Map()){
  const groups=new Map();
  for(const card of cards){
   if(!isListedCatalogueVariant(card))continue;
-  const key=GEOMETRY_GROUPS[card.key]??V2_GEOMETRY_GROUPS[card.key]??(card.newFabric&&/^[a-f0-9]{64}$/.test(card.geometryGroupKey??'')?card.geometryGroupKey:JSON.stringify(card.modulePlan));
+  const key=GEOMETRY_GROUPS[card.key]??V2_GEOMETRY_GROUPS[card.key]??((card.newFabric||card.reverseAngle)&&/^[a-f0-9]{64}$/.test(card.geometryGroupKey??'')?card.geometryGroupKey:JSON.stringify(card.modulePlan));
   if(!groups.has(key))groups.set(key,[]);
   groups.get(key).push(card);
  }

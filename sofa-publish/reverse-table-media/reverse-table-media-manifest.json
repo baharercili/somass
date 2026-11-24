@@ -1,0 +1,1111 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-reverse-table-media",
+  "archiveSha256": "0eebabbf36a2ba2bc900afd402fc2dc7eb7510047970d3c77ed859855335c9a9",
+  "archiveBytes": 6977750,
+  "memberCount": 180,
+  "parts": [
+    {
+      "name": "reverse-table-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "d943284c809ede747613643ab154135b03cc33bb18aa167c50c65adaaeef7fde"
+    },
+    {
+      "name": "reverse-table-media.part-0002",
+      "bytes": 2097152,
+      "sha256": "22bfec13c4d051503fa4706b0b51dc645cd97159eb43d4852d98647326fa39d6"
+    },
+    {
+      "name": "reverse-table-media.part-0003",
+      "bytes": 2097152,
+      "sha256": "c575cbc01f38f806e8f5f88a2a5bc801061dbf2ba104779bb7b0e463355e366b"
+    },
+    {
+      "name": "reverse-table-media.part-0004",
+      "bytes": 686294,
+      "sha256": "7c322775d82df047172882339e5c42fbb1776a8bbb677d0afb75b64b3421248a"
+    }
+  ],
+  "media": [
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/detail.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/detail.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/dimensioned-top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/dimensioned-top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/front.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/front.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/hero.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/hero.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/open-back.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/open-back.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-rear.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-rear.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.thumb.webp",
+      "width": 300,
+      "height": 200,
+      "mime": "image/webp"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.webp",
+      "width": 1536,
+      "height": 1024,
+      "mime": "image/webp"
+    }
+  ]
+}

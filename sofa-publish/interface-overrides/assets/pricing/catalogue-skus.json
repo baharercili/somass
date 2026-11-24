@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 118,
+  "version": 132,
   "date": "2026-11-24",
   "productFamily": "SOFF",
   "title": "SOFF yerleşim SKU ve modül listeleri",
@@ -17,23 +17,47 @@
     "assignment": "Kalıcı, eklemeli kayıt; liste sırası değişince SKU değişmez."
   },
   "source": {
-    "allCatalogueRecords": 271,
-    "visibleMaterialVariants": 264,
-    "visiblePhysicalLayouts": 84,
+    "allCatalogueRecords": 281,
+    "visibleMaterialVariants": 274,
+    "visiblePhysicalLayouts": 94,
     "retiredRecordsExcluded": 7,
     "hashes": {
-      "inspiration-catalog.js": "502e2f70096cdef87d2f8008f76d01cfed33f9074633763dac79156f34b10f9e",
-      "catalogue-variants.js": "aa268ba64104c9e05d81a3951f0f272190b9f879460983ebd555bf6e7f954417",
-      "consumer-summary.js": "51dd60f8b00f868ed2335dff64648231dc916f8cda24e9d698aeaf95ffb8a7c6",
-      "v2-combinations.js": "6251c3356613af4dfebbf409d214cdcd3c8b347db198d62649925372101ce5cd",
-      "new-fabric-variants.js": "939bdb17dc5e91ab3ea8bfe0f1240e5ab23caea8d34123d21d74bc81bcc4ad70",
+      "app.js": "0102299e4e414b857466e4add5f71e5b5ed2698ed6d360c0a418e2c3ca475000",
+      "catalogue-variants.js": "a9de7704cca1a8055be31e34c040774ef7d2afd68c1a75ba3d34660f803318f3",
+      "combinations-state.js": "a6c6edbe04cb49f8578708e8c452d30e779e7c05d0dfb5d74ad3195d47ffe942",
+      "configuration-guide.js": "cdfb3670555ce949f11e7bdc6fa023a5750bb1dc3198fad5f367ed134be881ef",
+      "consumer-summary.js": "b30a8e429e2bdbd210a1bbd040fb2ee941c80ae220e6269a702c4b36563854e2",
+      "corner-table-composition.js": "f1c4cf962b3f092d33e957d645de60d55c68f4d1c3379b058e734c9ca86b605b",
+      "fabric-appearance.js": "29e4f967c0731f9bd37b064408a24618dc8e46c88911235c039ecadcfbe4891d",
       "fabric-library.js": "e37ccd70b240040c216eb88a108a70a95732102dbc90f24bd2deaaaf2c3eeb1c",
-      "fabric-appearance.js": "424d0bf7dbf931b41ee7fc5b1670efa72f843e76a16607c077f1d9b97a0e4aef",
-      "combinations-state.js": "bb5789b705d3b66be145d4f5b2ab87db493a5f4c1a8243045ce381040ac91c3c"
+      "inspiration-catalog.js": "d69dc3eea2111d363f2bdcc8c3689f6dedca8e09daee3e9d7e1a8cb7c3a25008",
+      "kombinasyonlar.js": "99f9b08fce6f58b794d0552cac5a59ea8c87bbe798b2d167034e50b04525baa4",
+      "modular-layout.js": "ec19b41b705aca4504660eace14adce5da1d8cfda4734b1364721fb6666722a0",
+      "module-chain-planner.js": "3f5f17b30238280328c457428037a278116bb2f22600404a3b5a8bccf24d3f5e",
+      "module-chain.js": "5c31e4eeeabbb201dd5f129454cf5f86ad5ec460da291a8b08e83b3049c34294",
+      "new-fabric-variants.js": "939bdb17dc5e91ab3ea8bfe0f1240e5ab23caea8d34123d21d74bc81bcc4ad70",
+      "pricing.js": "03c9d24dceb607a3d851cc2f97d4160be03e667dc7fe8c1bdd4ef12cb600f28a",
+      "product-gallery.js": "cf9d9952b4e5803e3825d5c7e5df44f7b94b245ad9a4d8045f3af34b5e3e2244",
+      "product-glb-export.js": "9043325e94cc79b7a2ede144db338593ac2fb0df2d3e760355670e1ff1391d71",
+      "product-pack-documents.js": "0333f80848ae31c4307874d780b09c2daa0560298abf7242abf1b90460438628",
+      "sku-display.js": "120c34145f7961116104cfb12ffb23a1d2be808e9ea139325fe1cbe9222a0488",
+      "sofa-table-profiles.js": "81b938e6e8812bae166084c0075351f3971826902a001146cd08af606c1b0987",
+      "studio-catalog-images.js": "47406106190a77d6ca763b2ae637c0719c6b20213d4d50c325d54143c3f1173d",
+      "table-composition.js": "bf7a7df03aeeb928761084b01d503f639abd7e4b10ae09b51322c41b9f0bd3a3",
+      "team-pack-engine.js": "0657df74bb1cabb65b27af9e8fd6c81e745d411a48f7be6f7bf69c9016d2502b",
+      "team-pack.js": "a7d610128b5d9884175f2f25d44d837849e7d09b3a9831d08a29678a211428dd",
+      "v2-combinations.js": "6251c3356613af4dfebbf409d214cdcd3c8b347db198d62649925372101ce5cd",
+      "workspace-history.js": "754c4f5b327c750b129ea4b73684191326960680dd78f95966874f59aeae9275"
     },
-    "selectionVersion": 118,
+    "selectionVersion": 132,
     "selectionSHA256": "03fcd45859d74a8b412248cf0ea38cb094e235e80ef26ab592d36e4b944503a1",
-    "baselineCatalogueSHA256": "3183c22851bb1288f1accbac994e1a1ae81a00539f5c6db4d334f032f53e9a4a"
+    "baselineCatalogueSHA256": "157fd21adcfaab655be6d88a50ae4031338ab7f4eac4725f1bb4a1e14668371f",
+    "recipesSHA256": "6ebc3d74c916b45acff0525a9ca0e92552ae9a7bb2b708530308b66c1ec908d5",
+    "geometryProofSHA256": "a39d7401ca89bac43234df02fea7b66d21276bdf39da60730aebc0a70bcccb53",
+    "inventoryContractSHA256": "b6007daa5137414bddf8ca6f68496124d192716f9d529aaa028478a538432844",
+    "runtimePinMethod": "Raw source bytes before the one-time publication portability adapter.",
+    "geometryCandidatePinsSHA256": "a9d28be6b6fb459a64da83ac53c95ab76084e29109cfba20276d833cba19da6b",
+    "runtimeCardsSHA256": "baa68505218c2c48bff581c928df7c193031afcc7e514d454f128da7552fc6af"
   },
   "modules": [
     {
@@ -22392,6 +22416,5303 @@
         }
       ],
       "defaultVariantSku": "SOM-Y0084-V002"
+    },
+    {
+      "sku": "SOM-Y0085",
+      "productFamily": "SOFF",
+      "geometryKey": "5d49d66e32332b86a979460a285fe18ff6d06f4db03dc097309f80da54b17088",
+      "geometrySignature": "2492c4c37c304c1e34fa6e4cda865911a9b737837bb96f535e0322a0418e382f",
+      "label": "Arada sehpalı ikili",
+      "presentationIndex": 85,
+      "kind": "straight",
+      "dimensions": {
+        "widthCm": 289,
+        "depthCm": 133,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "289 × 133 cm",
+      "seatCount": 2,
+      "tableCount": 1,
+      "moduleCount": 3,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -76.137215,
+          "zCm": -14.623276,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 76.137215,
+          "zCm": -14.623276,
+          "rotationDegrees": 15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 0,
+          "zCm": 0,
+          "rotationDegrees": 180,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0085-V001",
+          "key": "inspiration-reverse-v132-01-soft-touch-1246-oak",
+          "cardKey": "inspiration-reverse-v132-01-soft-touch-1246-oak",
+          "productFamily": "SOFF",
+          "label": "Arada sehpalı ikili",
+          "body": "soft-touch-1246",
+          "accent": "card-siyah",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "mora-f-evo",
+          "bodyArtCode": "457623001246",
+          "accentArtCode": null,
+          "materials": {
+            "fabric": "Soft Touch / Mora kadife",
+            "body": "Soft Touch 1246 · Taş / açık gri",
+            "accent": "Siyah",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1246",
+            "accent": "card-siyah",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight2",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-01-soft-touch-1246-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1246&accent=card-siyah&base=oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0085-V001"
+    },
+    {
+      "sku": "SOM-Y0086",
+      "productFamily": "SOFF",
+      "geometryKey": "62c6e118b2dc62e5a8eb05c27f3c6a5c1c9334faae022e0f525629c655faa70e",
+      "geometrySignature": "2329da49cf70fb6aa1b557597e63b3d006948462115d15eb87d28710419e5a53",
+      "label": "Sol dinlenmeli ikili",
+      "presentationIndex": 86,
+      "kind": "chaise",
+      "dimensions": {
+        "widthCm": 305,
+        "depthCm": 191,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "305 × 191 cm",
+      "seatCount": 2,
+      "tableCount": 1,
+      "moduleCount": 3,
+      "bom": [
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M005",
+          "moduleKey": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "chaise_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": -83.901787,
+          "zCm": 14.354499,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 76.137215,
+          "zCm": -14.623276,
+          "rotationDegrees": 15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 0,
+          "zCm": 0,
+          "rotationDegrees": 180,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0086-V001",
+          "key": "inspiration-reverse-v132-02-veronza-1008-dark-oak",
+          "cardKey": "inspiration-reverse-v132-02-veronza-1008-dark-oak",
+          "productFamily": "SOFF",
+          "label": "Sol dinlenmeli ikili",
+          "body": "veronza-1008",
+          "accent": "soft-touch-1355",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001008",
+          "accentArtCode": "457623001355",
+          "materials": {
+            "fabric": "Veronza / Soft Touch",
+            "body": "Veronza 1008 · Ekru melanj",
+            "accent": "Soft Touch 1355 · Gri yeşil",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1008",
+            "accent": "soft-touch-1355",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-02-veronza-1008-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1008&accent=soft-touch-1355&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0086-V001"
+    },
+    {
+      "sku": "SOM-Y0087",
+      "productFamily": "SOFF",
+      "geometryKey": "6864c65299a61a7435a18ce1f5c0198fcfbd69e98d123bcfbc0f02e85aab7d82",
+      "geometrySignature": "297b181d67b45ffa15be5013bca6b7dc87ff4966498ba7eb2e4d4f1cb88aa4cb",
+      "label": "Sol sehpalı sağ dinlenme",
+      "presentationIndex": 87,
+      "kind": "chaise",
+      "dimensions": {
+        "widthCm": 329,
+        "depthCm": 198,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "329 × 198 cm",
+      "seatCount": 2,
+      "tableCount": 2,
+      "moduleCount": 4,
+      "bom": [
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M006",
+          "moduleKey": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M009",
+          "moduleKey": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -76.443883,
+          "zCm": -12.293905,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 74.901787,
+          "zCm": 14.354499,
+          "rotationDegrees": 15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -9,
+          "zCm": 0,
+          "rotationDegrees": 180,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "xCm": -143.713184,
+          "zCm": -36.530317,
+          "rotationDegrees": -15,
+          "role": "terminal",
+          "tableId": "wood-2",
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0087-V001",
+          "key": "inspiration-reverse-v132-03-card-bordo-black-oak",
+          "cardKey": "inspiration-reverse-v132-03-card-bordo-black-oak",
+          "productFamily": "SOFF",
+          "label": "Sol sehpalı sağ dinlenme",
+          "body": "card-bordo",
+          "accent": "soft-touch-1200",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "mora-f-evo",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": null,
+          "accentArtCode": "457623001200",
+          "materials": {
+            "fabric": "Mora kadife / Soft Touch",
+            "body": "Bordo",
+            "accent": "Soft Touch 1200 · Kum / bej",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "card-bordo",
+            "accent": "soft-touch-1200",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-right",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              },
+              {
+                "id": "wood-2",
+                "type": "rectangle",
+                "position": "left-end"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-03-card-bordo-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bordo&accent=soft-touch-1200&base=black-oak&finish=velvet&scene=warm&layout=chaise-right&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22left-end%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0087-V001"
+    },
+    {
+      "sku": "SOM-Y0088",
+      "productFamily": "SOFF",
+      "geometryKey": "2defba862d5886e714ef56544b962f3f58157d97557ac5125a878a8250401711",
+      "geometrySignature": "b34829b29962faa2721add5225340df2317cf4c641b22950e334214fa73fb2c3",
+      "label": "Çift açılı üçlü",
+      "presentationIndex": 88,
+      "kind": "straight",
+      "dimensions": {
+        "widthCm": 392,
+        "depthCm": 177,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "392 × 177 cm",
+      "seatCount": 3,
+      "tableCount": 2,
+      "moduleCount": 5,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -135.430109,
+          "zCm": 39.654475,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 3.861468,
+          "zCm": 4.742952,
+          "rotationDegrees": 30,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 143.153045,
+          "zCm": -30.168571,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -58.102424,
+          "zCm": 34.073713,
+          "rotationDegrees": 195,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 65.82536,
+          "zCm": -24.587809,
+          "rotationDegrees": 15,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0088-V001",
+          "key": "inspiration-reverse-v132-04-soft-touch-1351-oak",
+          "cardKey": "inspiration-reverse-v132-04-soft-touch-1351-oak",
+          "productFamily": "SOFF",
+          "label": "Çift açılı üçlü",
+          "body": "soft-touch-1351",
+          "accent": "colormax-1017",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "soft-touch",
+          "accentFabricSeries": "colormax",
+          "bodyArtCode": "457623001351",
+          "accentArtCode": "262962001017",
+          "materials": {
+            "fabric": "Soft Touch / Colormax",
+            "body": "Soft Touch 1351 · Mavi gri",
+            "accent": "Colormax 1017 · Sarı / ekru melanj",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "soft-touch-1351",
+            "accent": "colormax-1017",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight3",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-04-soft-touch-1351-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=soft-touch-1351&accent=colormax-1017&base=oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0088-V001"
+    },
+    {
+      "sku": "SOM-Y0089",
+      "productFamily": "SOFF",
+      "geometryKey": "df2503900eaa86c3a6a95d2ea216c2b3d32461c44fee997bcec0558b604e6762",
+      "geometrySignature": "157ed6fe55233e622021baad02f1cec9af0582ccde2f471030025bcea6aeb951",
+      "label": "Ara sehpalı sağ dinlenme",
+      "presentationIndex": 89,
+      "kind": "chaise",
+      "dimensions": {
+        "widthCm": 442,
+        "depthCm": 227,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "442 × 227 cm",
+      "seatCount": 3,
+      "tableCount": 2,
+      "moduleCount": 5,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M006",
+          "moduleKey": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M009",
+          "moduleKey": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -118.781646,
+          "zCm": -51.50499,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 27.556117,
+          "zCm": -12.293905,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 178.901787,
+          "zCm": 14.354499,
+          "rotationDegrees": 15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "xCm": -39.713184,
+          "zCm": -36.530317,
+          "rotationDegrees": -15,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 95,
+          "zCm": 0,
+          "rotationDegrees": 180,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0089-V001",
+          "key": "inspiration-reverse-v132-05-veronza-1012-dark-oak",
+          "cardKey": "inspiration-reverse-v132-05-veronza-1012-dark-oak",
+          "productFamily": "SOFF",
+          "label": "Ara sehpalı sağ dinlenme",
+          "body": "veronza-1012",
+          "accent": "soft-touch-1024",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001012",
+          "accentArtCode": "457623001024",
+          "materials": {
+            "fabric": "Veronza / Soft Touch",
+            "body": "Veronza 1012 · Bakır / kiremit melanj",
+            "accent": "Soft Touch 1024 · Haki / zeytin",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1012",
+            "accent": "soft-touch-1024",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "chaise-right",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2,
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-05-veronza-1012-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1012&accent=soft-touch-1024&base=dark-oak&finish=velvet&scene=warm&layout=chaise-right&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0089-V001"
+    },
+    {
+      "sku": "SOM-Y0090",
+      "productFamily": "SOFF",
+      "geometryKey": "c624bd83d1fee91be3c545194046cba0de0b5cf2213990d9f27fd0fe7c2cc1fc",
+      "geometrySignature": "aea80584277fe99486a6ed58a004d7fc7bf8d93a52d1bc37cddf1f384aedf869",
+      "label": "İki açılı sol köşe",
+      "presentationIndex": 90,
+      "kind": "corner",
+      "dimensions": {
+        "widthCm": 284,
+        "depthCm": 307,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "footprintLabel": "284 × 307 cm",
+      "seatCount": 3,
+      "tableCount": 2,
+      "moduleCount": 5,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M007",
+          "moduleKey": "corner_L",
+          "label": "Sol dönüşlü köşe modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "corner_L",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": -94.988415,
+          "zCm": 4.32286,
+          "rotationDegrees": 30,
+          "role": "row",
+          "approximate": true
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 51.512454,
+          "zCm": -41.101802,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -25.815231,
+          "zCm": -35.521041,
+          "rotationDegrees": 15,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -59.090032,
+          "zCm": 156.323729,
+          "rotationDegrees": 90,
+          "role": "return",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -64.670794,
+          "zCm": 78.996044,
+          "rotationDegrees": 285,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0090-V001",
+          "key": "inspiration-reverse-v132-06-colormax-1015-black-oak",
+          "cardKey": "inspiration-reverse-v132-06-colormax-1015-black-oak",
+          "productFamily": "SOFF",
+          "label": "İki açılı sol köşe",
+          "body": "colormax-1015",
+          "accent": "veronza-1030",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "colormax",
+          "accentFabricSeries": "veronza",
+          "bodyArtCode": "262962001015",
+          "accentArtCode": "263267001030",
+          "materials": {
+            "fabric": "Colormax / Veronza",
+            "body": "Colormax 1015 · Ekru melanj",
+            "accent": "Veronza 1030 · Zeytin melanj",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "colormax-1015",
+            "accent": "veronza-1030",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-left",
+            "extra": 0,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": "return",
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-06-colormax-1015-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=colormax-1015&accent=veronza-1030&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0090-V001"
+    },
+    {
+      "sku": "SOM-Y0091",
+      "productFamily": "SOFF",
+      "geometryKey": "604a994fe79e5b3a04053daa6f4c9a92f5d1fe44baa1f0d66b5fef44e3823aca",
+      "geometrySignature": "a71933bcf42fa62e701b856c87da4b8cdd91a4fae9cf4a84c2df7fb5cf0a05b0",
+      "label": "Ara sehpalı çift dinlenme",
+      "presentationIndex": 91,
+      "kind": "dual",
+      "dimensions": {
+        "widthCm": 458,
+        "depthCm": 227,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "458 × 227 cm",
+      "seatCount": 3,
+      "tableCount": 2,
+      "moduleCount": 5,
+      "bom": [
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M005",
+          "moduleKey": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M006",
+          "moduleKey": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M009",
+          "moduleKey": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "chaise_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": -126.546217,
+          "zCm": -22.527215,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 27.556117,
+          "zCm": -12.293905,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 178.901787,
+          "zCm": 14.354499,
+          "rotationDegrees": 15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "xCm": -39.713184,
+          "zCm": -36.530317,
+          "rotationDegrees": -15,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 95,
+          "zCm": 0,
+          "rotationDegrees": 180,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0091-V001",
+          "key": "inspiration-reverse-v132-07-veronza-1031-oak",
+          "cardKey": "inspiration-reverse-v132-07-veronza-1031-oak",
+          "productFamily": "SOFF",
+          "label": "Ara sehpalı çift dinlenme",
+          "body": "veronza-1031",
+          "accent": "card-kiremit",
+          "base": "oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "mora-f-evo",
+          "bodyArtCode": "263267001031",
+          "accentArtCode": null,
+          "materials": {
+            "fabric": "Veronza / Mora kadife",
+            "body": "Veronza 1031 · Haki / kahve melanj",
+            "accent": "Kiremit",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "veronza-1031",
+            "accent": "card-kiremit",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 1
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 2,
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-07-veronza-1031-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1031&accent=card-kiremit&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0091-V001"
+    },
+    {
+      "sku": "SOM-Y0092",
+      "productFamily": "SOFF",
+      "geometryKey": "227138d9ecb3cc7ec18e3ba81edb6d4c425999c2e5512c3420e24bb4efeef811",
+      "geometrySignature": "3bf2c98e9cbeabaf46d10663f1e2084875bbd31de07c0e991c8c9d1028c69cc7",
+      "label": "İki ucu dinlenmeli dörtlü",
+      "presentationIndex": 92,
+      "kind": "dual",
+      "dimensions": {
+        "widthCm": 474,
+        "depthCm": 284,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "474 × 284 cm",
+      "seatCount": 4,
+      "tableCount": 2,
+      "moduleCount": 6,
+      "bom": [
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M005",
+          "moduleKey": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M006",
+          "moduleKey": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "chaise_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": -173.439569,
+          "zCm": 92.566666,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -34.147992,
+          "zCm": 27.655143,
+          "rotationDegrees": 30,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 48.124421,
+          "zCm": -19.844857,
+          "rotationDegrees": 30,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 187.415998,
+          "zCm": -24.75638,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -96.111884,
+          "zCm": 56.985904,
+          "rotationDegrees": 195,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 110.088313,
+          "zCm": -49.175619,
+          "rotationDegrees": 15,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0092-V001",
+          "key": "inspiration-reverse-v132-08-veronza-1035-dark-oak",
+          "cardKey": "inspiration-reverse-v132-08-veronza-1035-dark-oak",
+          "productFamily": "SOFF",
+          "label": "İki ucu dinlenmeli dörtlü",
+          "body": "veronza-1035",
+          "accent": "card-siyah",
+          "base": "dark-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "mora-f-evo",
+          "bodyArtCode": "263267001035",
+          "accentArtCode": null,
+          "materials": {
+            "fabric": "Veronza / Mora kadife",
+            "body": "Veronza 1035 · Koyu kahve",
+            "accent": "Siyah",
+            "wood": "Koyu meşe"
+          },
+          "state": {
+            "body": "veronza-1035",
+            "accent": "card-siyah",
+            "base": "dark-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "dual-chaise",
+            "extra": 2,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 3
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-08-veronza-1035-dark-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1035&accent=card-siyah&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0092-V001"
+    },
+    {
+      "sku": "SOM-Y0093",
+      "productFamily": "SOFF",
+      "geometryKey": "e20c4d40e3a864e56a0257a917fcf786381d0cb5cd35d6721a70e3cf9ff46786",
+      "geometrySignature": "55a89d666df263916e8894e5eed6316b8691f44106f9c7d63541b97c3e35939d",
+      "label": "Ahşap aralıklı sağ köşe",
+      "presentationIndex": 93,
+      "kind": "corner",
+      "dimensions": {
+        "widthCm": 388,
+        "depthCm": 363,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "footprintLabel": "388 × 363 cm",
+      "seatCount": 4,
+      "tableCount": 2,
+      "moduleCount": 6,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M008",
+          "moduleKey": "corner_R",
+          "label": "Sağ dönüşlü köşe modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "moduleSku": "SOM-M009",
+          "moduleKey": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -80.827627,
+          "zCm": -87.56344,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 19.628659,
+          "zCm": -60.64626,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "corner_R",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": 166.957732,
+          "zCm": -15.475535,
+          "rotationDegrees": -15,
+          "role": "row",
+          "approximate": true
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "xCm": 90.003789,
+          "zCm": -48.000958,
+          "rotationDegrees": -15,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 171.623276,
+          "zCm": 140.637215,
+          "rotationDegrees": -75,
+          "role": "return",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 157,
+          "zCm": 64.5,
+          "rotationDegrees": 90,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0093-V001",
+          "key": "inspiration-reverse-v132-09-veronza-1041-black-oak",
+          "cardKey": "inspiration-reverse-v132-09-veronza-1041-black-oak",
+          "productFamily": "SOFF",
+          "label": "Ahşap aralıklı sağ köşe",
+          "body": "veronza-1041",
+          "accent": "soft-touch-1246",
+          "base": "black-oak",
+          "finish": "velvet",
+          "fabricSeries": "mixed",
+          "bodyFabricSeries": "veronza",
+          "accentFabricSeries": "soft-touch",
+          "bodyArtCode": "263267001041",
+          "accentArtCode": "457623001246",
+          "materials": {
+            "fabric": "Veronza / Soft Touch",
+            "body": "Veronza 1041 · Tütün / kahve melanj",
+            "accent": "Soft Touch 1246 · Taş / açık gri",
+            "wood": "Siyah ahşap"
+          },
+          "state": {
+            "body": "veronza-1041",
+            "accent": "soft-touch-1246",
+            "base": "black-oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "corner-right",
+            "extra": 1,
+            "back": "closed",
+            "table": "rectangle",
+            "terminal": "none",
+            "tableDesign": "half-shelf",
+            "tableVariant": "standard",
+            "tablePosition": 2,
+            "tableDirection": "front",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "rectangle",
+                "position": 2
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": "return",
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-09-veronza-1041-black-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=veronza-1041&accent=soft-touch-1246&base=black-oak&finish=velvet&scene=warm&layout=corner-right&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0093-V001"
+    },
+    {
+      "sku": "SOM-Y0094",
+      "productFamily": "SOFF",
+      "geometryKey": "e1f7e564a5881ee17cb4403a2f1ec7887d154791625b549953ec95fe4b2b6e85",
+      "geometrySignature": "af47743a342deeef49e55a8cb83ddea11cbe4ec4ff8d1488780ee3bf6847069d",
+      "label": "İki ters açılı dörtlü",
+      "presentationIndex": 94,
+      "kind": "straight",
+      "dimensions": {
+        "widthCm": 523,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "footprintLabel": "523 × 167 cm",
+      "seatCount": 4,
+      "tableCount": 2,
+      "moduleCount": 6,
+      "bom": [
+        {
+          "moduleSku": "SOM-M001",
+          "moduleKey": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M002",
+          "moduleKey": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "quantity": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M003",
+          "moduleKey": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "quantity": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "moduleSku": "SOM-M011",
+          "moduleKey": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "quantity": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "parts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -191.325177,
+          "zCm": -83.00638,
+          "rotationDegrees": -30,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -53.239372,
+          "zCm": -43.594857,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 41.760628,
+          "zCm": -43.594857,
+          "rotationDegrees": 0,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 179.846434,
+          "zCm": -83.00638,
+          "rotationDegrees": 30,
+          "role": "row",
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": -121.567057,
+          "zCm": -49.175619,
+          "rotationDegrees": 165,
+          "role": "intermediate",
+          "tableId": "wood-1",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        },
+        {
+          "moduleKey": "table_angled",
+          "kind": "table",
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "xCm": 110.088313,
+          "zCm": -49.175619,
+          "rotationDegrees": 195,
+          "role": "intermediate",
+          "tableId": "wood-2",
+          "tableDirection": "back",
+          "outlineCm": [
+            [
+              -33.243487,
+              -44.130858
+            ],
+            [
+              -33.188698,
+              -44.585271
+            ],
+            [
+              -33.06542,
+              -45.02606
+            ],
+            [
+              -32.876522,
+              -45.442966
+            ],
+            [
+              -32.626402,
+              -45.826284
+            ],
+            [
+              -32.320881,
+              -46.167092
+            ],
+            [
+              -31.967071,
+              -46.457456
+            ],
+            [
+              -31.573208,
+              -46.690618
+            ],
+            [
+              -31.148459,
+              -46.861151
+            ],
+            [
+              -30.702712,
+              -46.965084
+            ],
+            [
+              -30.246342,
+              -47
+            ],
+            [
+              30.246342,
+              -47
+            ],
+            [
+              30.702712,
+              -46.965084
+            ],
+            [
+              31.148459,
+              -46.861151
+            ],
+            [
+              31.573208,
+              -46.690618
+            ],
+            [
+              31.967071,
+              -46.457456
+            ],
+            [
+              32.320881,
+              -46.167092
+            ],
+            [
+              32.626402,
+              -45.826284
+            ],
+            [
+              32.876522,
+              -45.442966
+            ],
+            [
+              33.06542,
+              -45.02606
+            ],
+            [
+              33.188698,
+              -44.585271
+            ],
+            [
+              33.243487,
+              -44.130858
+            ],
+            [
+              33.228511,
+              -43.673399
+            ],
+            [
+              33.14412,
+              -43.223543
+            ],
+            [
+              9.564591,
+              44.776457
+            ],
+            [
+              9.421462,
+              45.188239
+            ],
+            [
+              9.220163,
+              45.57493
+            ],
+            [
+              8.964947,
+              45.928363
+            ],
+            [
+              8.661201,
+              46.241075
+            ],
+            [
+              8.31534,
+              46.506463
+            ],
+            [
+              7.934668,
+              46.718923
+            ],
+            [
+              7.527223,
+              46.873969
+            ],
+            [
+              7.101609,
+              46.968325
+            ],
+            [
+              6.666813,
+              47
+            ],
+            [
+              -6.666813,
+              47
+            ],
+            [
+              -7.101609,
+              46.968325
+            ],
+            [
+              -7.527223,
+              46.873969
+            ],
+            [
+              -7.934668,
+              46.718923
+            ],
+            [
+              -8.31534,
+              46.506463
+            ],
+            [
+              -8.661201,
+              46.241075
+            ],
+            [
+              -8.964946,
+              45.928363
+            ],
+            [
+              -9.220163,
+              45.57493
+            ],
+            [
+              -9.421461,
+              45.188239
+            ],
+            [
+              -9.564591,
+              44.776457
+            ],
+            [
+              -33.14412,
+              -43.223543
+            ],
+            [
+              -33.228511,
+              -43.673399
+            ]
+          ],
+          "approximate": false
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SOM-Y0094-V001",
+          "key": "inspiration-reverse-v132-10-card-bal-oak",
+          "cardKey": "inspiration-reverse-v132-10-card-bal-oak",
+          "productFamily": "SOFF",
+          "label": "İki ters açılı dörtlü",
+          "body": "card-bal",
+          "accent": "card-kiremit",
+          "base": "oak",
+          "finish": "velvet",
+          "materials": {
+            "fabric": "Mora kadife",
+            "body": "Bal",
+            "accent": "Kiremit",
+            "wood": "Naturel meşe"
+          },
+          "state": {
+            "body": "card-bal",
+            "accent": "card-kiremit",
+            "base": "oak",
+            "finish": "velvet",
+            "scene": "warm",
+            "layout": "straight3",
+            "extra": 1,
+            "back": "closed",
+            "table": "angled",
+            "terminal": "none",
+            "tableDesign": "dwg-angled",
+            "tableVariant": "standard",
+            "tablePosition": 1,
+            "tableDirection": "back",
+            "tables": [
+              {
+                "id": "wood-1",
+                "type": "angled",
+                "position": 1,
+                "direction": "back"
+              },
+              {
+                "id": "wood-2",
+                "type": "angled",
+                "position": 3,
+                "direction": "back"
+              }
+            ]
+          },
+          "productHref": "https://baharercili.github.io/somass/sofa/urun.html?model=inspiration-reverse-v132-10-card-bal-oak",
+          "editorHref": "https://baharercili.github.io/somass/sofa/index.html?body=card-bal&accent=card-kiremit&base=oak&finish=velvet&scene=warm&layout=straight3&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%2C%22direction%22%3A%22back%22%7D%5D"
+        }
+      ],
+      "defaultVariantSku": "SOM-Y0094-V001"
     }
   ],
   "cardToPlacementSku": {
@@ -22658,7 +27979,17 @@
     "inspiration-fabric-v118-47-veronza-1030-dark-oak": "SOM-Y0027",
     "inspiration-fabric-v118-48-soft-touch-1024-black-oak": "SOM-Y0018",
     "inspiration-fabric-v118-49-veronza-1035-oak": "SOM-Y0080",
-    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050"
+    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050",
+    "inspiration-reverse-v132-01-soft-touch-1246-oak": "SOM-Y0085",
+    "inspiration-reverse-v132-02-veronza-1008-dark-oak": "SOM-Y0086",
+    "inspiration-reverse-v132-03-card-bordo-black-oak": "SOM-Y0087",
+    "inspiration-reverse-v132-04-soft-touch-1351-oak": "SOM-Y0088",
+    "inspiration-reverse-v132-05-veronza-1012-dark-oak": "SOM-Y0089",
+    "inspiration-reverse-v132-06-colormax-1015-black-oak": "SOM-Y0090",
+    "inspiration-reverse-v132-07-veronza-1031-oak": "SOM-Y0091",
+    "inspiration-reverse-v132-08-veronza-1035-dark-oak": "SOM-Y0092",
+    "inspiration-reverse-v132-09-veronza-1041-black-oak": "SOM-Y0093",
+    "inspiration-reverse-v132-10-card-bal-oak": "SOM-Y0094"
   },
   "cardToVariantSku": {
     "inspiration-zeytin-double-angle": "SOM-Y0051-V003",
@@ -22924,6 +28255,16 @@
     "inspiration-fabric-v118-47-veronza-1030-dark-oak": "SOM-Y0027-V003",
     "inspiration-fabric-v118-48-soft-touch-1024-black-oak": "SOM-Y0018-V003",
     "inspiration-fabric-v118-49-veronza-1035-oak": "SOM-Y0080-V003",
-    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050-V003"
+    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050-V003",
+    "inspiration-reverse-v132-01-soft-touch-1246-oak": "SOM-Y0085-V001",
+    "inspiration-reverse-v132-02-veronza-1008-dark-oak": "SOM-Y0086-V001",
+    "inspiration-reverse-v132-03-card-bordo-black-oak": "SOM-Y0087-V001",
+    "inspiration-reverse-v132-04-soft-touch-1351-oak": "SOM-Y0088-V001",
+    "inspiration-reverse-v132-05-veronza-1012-dark-oak": "SOM-Y0089-V001",
+    "inspiration-reverse-v132-06-colormax-1015-black-oak": "SOM-Y0090-V001",
+    "inspiration-reverse-v132-07-veronza-1031-oak": "SOM-Y0091-V001",
+    "inspiration-reverse-v132-08-veronza-1035-dark-oak": "SOM-Y0092-V001",
+    "inspiration-reverse-v132-09-veronza-1041-black-oak": "SOM-Y0093-V001",
+    "inspiration-reverse-v132-10-card-bal-oak": "SOM-Y0094-V001"
   }
 }

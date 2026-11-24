@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "productCount": 271,
-  "imageCount": 2439,
+  "productCount": 281,
+  "imageCount": 2529,
   "products": [
     {
       "key": "inspiration-zeytin-double-angle",
@@ -51889,6 +51889,2152 @@
       "sourceCardKey": "inspiration-v2-square-corner-asymmetric-bej-black-oak",
       "geometryGroupKey": "a224193bf02d4befa6d478f47ea8345b13601e3ec7f37779a52316f07e3f4cc8",
       "newFabric": true
+    },
+    {
+      "key": "inspiration-reverse-v132-01-soft-touch-1246-oak",
+      "title": "Arada sehpalı ikili",
+      "description": "İki oturum, aralarındaki ters açılı sehpayla dışa yönlenen bir hat oluşturur. Soft Touch İnce Dokuma Pietra gövde, Mora Kadife Inchiostro yastıklar ve naturel meşe.",
+      "layoutLabel": "Arada sehpalı ikili",
+      "editorHref": "./index.html?body=soft-touch-1246&accent=card-siyah&base=oak&finish=velvet&scene=warm&layout=straight2&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "289 × 133 × 82 cm",
+      "footprintLabel": "289 × 133 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "2 oturum modülü · 1 sehpa",
+      "materials": {
+        "fabric": "Soft Touch / Mora kadife",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "soft-touch",
+        "accentFabricSeries": "mora-f-evo",
+        "bodyArtCode": "457623001246",
+        "accentArtCode": null,
+        "body": "Soft Touch 1246 · Taş / açık gri",
+        "accent": "Siyah",
+        "wood": "Naturel meşe",
+        "tableDesign": "Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "soft-touch-1246",
+        "accent": "card-siyah",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "straight2",
+        "extra": 0,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 289,
+        "depthCm": 133,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Arada sehpalı ikili · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Arada sehpalı ikili · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Arada sehpalı ikili · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Arada sehpalı ikili · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Arada sehpalı ikili · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Arada sehpalı ikili · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Arada sehpalı ikili · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Arada sehpalı ikili · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Arada sehpalı ikili · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "5d49d66e32332b86a979460a285fe18ff6d06f4db03dc097309f80da54b17088",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-02-veronza-1008-dark-oak",
+      "title": "Sol dinlenmeli ikili",
+      "description": "Sol dinlenme modülü ile sağ oturum arasındaki ters sehpa, iki parçayı dışa açılan bir bağlantıyla ayırır. Veronza Bukle Ekru gövde, Soft Touch İnce Dokuma Salvia yastıklar ve koyu meşe.",
+      "layoutLabel": "Sol dinlenmeli ikili",
+      "editorHref": "./index.html?body=veronza-1008&accent=soft-touch-1355&base=dark-oak&finish=velvet&scene=warm&layout=chaise-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "305 × 191 × 82 cm",
+      "footprintLabel": "305 × 191 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "2 oturum modülü · 1 sehpa",
+      "materials": {
+        "fabric": "Veronza / Soft Touch",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "veronza",
+        "accentFabricSeries": "soft-touch",
+        "bodyArtCode": "263267001008",
+        "accentArtCode": "457623001355",
+        "body": "Veronza 1008 · Ekru melanj",
+        "accent": "Soft Touch 1355 · Gri yeşil",
+        "wood": "Koyu meşe",
+        "tableDesign": "Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "veronza-1008",
+        "accent": "soft-touch-1355",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-left",
+        "extra": 0,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 305,
+        "depthCm": 191,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Sol dinlenmeli ikili · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Sol dinlenmeli ikili · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Sol dinlenmeli ikili · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Sol dinlenmeli ikili · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Sol dinlenmeli ikili · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Sol dinlenmeli ikili · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Sol dinlenmeli ikili · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Sol dinlenmeli ikili · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Sol dinlenmeli ikili · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "62c6e118b2dc62e5a8eb05c27f3c6a5c1c9334faae022e0f525629c655faa70e",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-03-card-bordo-black-oak",
+      "title": "Sol sehpalı sağ dinlenme",
+      "description": "Sağ dinlenmeli iki oturumun arasında ters açılı sehpa, sol uçta dikdörtgen ahşap yüzey bulunur. Mora Kadife Amarena gövde, Soft Touch İnce Dokuma Sabbia yastıklar ve siyah ahşap.",
+      "layoutLabel": "Sol sehpalı sağ dinlenme",
+      "editorHref": "./index.html?body=card-bordo&accent=soft-touch-1200&base=black-oak&finish=velvet&scene=warm&layout=chaise-right&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A%22left-end%22%7D%5D",
+      "dimensionsLabel": "329 × 198 × 82 cm",
+      "footprintLabel": "329 × 198 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "2 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Mora kadife / Soft Touch",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "mora-f-evo",
+        "accentFabricSeries": "soft-touch",
+        "bodyArtCode": null,
+        "accentArtCode": "457623001200",
+        "body": "Bordo",
+        "accent": "Soft Touch 1200 · Kum / bej",
+        "wood": "Siyah ahşap",
+        "tableDesign": "Açılı ara sehpa · Dikdörtgen ahşap modül"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "card-bordo",
+        "accent": "soft-touch-1200",
+        "base": "black-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 0,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          },
+          {
+            "id": "wood-2",
+            "type": "rectangle",
+            "position": "left-end"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 329,
+        "depthCm": 198,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Sol sehpalı sağ dinlenme · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Sol sehpalı sağ dinlenme · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Sol sehpalı sağ dinlenme · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "6864c65299a61a7435a18ce1f5c0198fcfbd69e98d123bcfbc0f02e85aab7d82",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-04-soft-touch-1351-oak",
+      "title": "Çift açılı üçlü",
+      "description": "Üç oturum, ilk arada ters ve ikinci arada standart açılı sehpayla kademeli bir sıraya dönüşür. Soft Touch İnce Dokuma Ardesia gövde, Colormax Melanj Mimosa yastıklar ve naturel meşe.",
+      "layoutLabel": "Çift açılı üçlü",
+      "editorHref": "./index.html?body=soft-touch-1351&accent=colormax-1017&base=oak&finish=velvet&scene=warm&layout=straight3&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%7D%5D",
+      "dimensionsLabel": "392 × 177 × 82 cm",
+      "footprintLabel": "392 × 177 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "3 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Soft Touch / Colormax",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "soft-touch",
+        "accentFabricSeries": "colormax",
+        "bodyArtCode": "457623001351",
+        "accentArtCode": "262962001017",
+        "body": "Soft Touch 1351 · Mavi gri",
+        "accent": "Colormax 1017 · Sarı / ekru melanj",
+        "wood": "Naturel meşe",
+        "tableDesign": "2 × Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "soft-touch-1351",
+        "accent": "colormax-1017",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "straight3",
+        "extra": 0,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": 2
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 392,
+        "depthCm": 177,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Çift açılı üçlü · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Çift açılı üçlü · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Çift açılı üçlü · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Çift açılı üçlü · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Çift açılı üçlü · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Çift açılı üçlü · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Çift açılı üçlü · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Çift açılı üçlü · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Çift açılı üçlü · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "2defba862d5886e714ef56544b962f3f58157d97557ac5125a878a8250401711",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-05-veronza-1012-dark-oak",
+      "title": "Ara sehpalı sağ dinlenme",
+      "description": "Sağ dinlenmeli üç oturumun ilk aralığında dikdörtgen yüzey, ikinci aralığında ters açılı sehpa yer alır. Veronza Bukle Bakır melanj gövde, Soft Touch İnce Dokuma Oliva yastıklar ve koyu meşe.",
+      "layoutLabel": "Ara sehpalı sağ dinlenme",
+      "editorHref": "./index.html?body=veronza-1012&accent=soft-touch-1024&base=dark-oak&finish=velvet&scene=warm&layout=chaise-right&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "442 × 227 × 82 cm",
+      "footprintLabel": "442 × 227 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "3 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Veronza / Soft Touch",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "veronza",
+        "accentFabricSeries": "soft-touch",
+        "bodyArtCode": "263267001012",
+        "accentArtCode": "457623001024",
+        "body": "Veronza 1012 · Bakır / kiremit melanj",
+        "accent": "Soft Touch 1024 · Haki / zeytin",
+        "wood": "Koyu meşe",
+        "tableDesign": "Dikdörtgen ahşap modül · Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "veronza-1012",
+        "accent": "soft-touch-1024",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 1,
+        "back": "closed",
+        "table": "rectangle",
+        "terminal": "none",
+        "tableDesign": "half-shelf",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "front",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "rectangle",
+            "position": 1
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": 2,
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 442,
+        "depthCm": 227,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Ara sehpalı sağ dinlenme · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Ara sehpalı sağ dinlenme · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Ara sehpalı sağ dinlenme · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "df2503900eaa86c3a6a95d2ea216c2b3d32461c44fee997bcec0558b604e6762",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-06-colormax-1015-black-oak",
+      "title": "İki açılı sol köşe",
+      "description": "Üç oturumlu sol köşe, ana sırada standart açı ve dönüş kolunda ters açı taşır. Colormax Melanj Ecrù gövde, Veronza Bukle Zeytin yeşili yastıklar ve siyah ahşap.",
+      "layoutLabel": "İki açılı sol köşe",
+      "editorHref": "./index.html?body=colormax-1015&accent=veronza-1030&base=black-oak&finish=velvet&scene=warm&layout=corner-left&extra=0&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "Yaklaşık 284 × 307 × 82 cm",
+      "footprintLabel": "284 × 307 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "3 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Colormax / Veronza",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "colormax",
+        "accentFabricSeries": "veronza",
+        "bodyArtCode": "262962001015",
+        "accentArtCode": "263267001030",
+        "body": "Colormax 1015 · Ekru melanj",
+        "accent": "Veronza 1030 · Zeytin melanj",
+        "wood": "Siyah ahşap",
+        "tableDesign": "2 × Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "corner_L",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "colormax-1015",
+        "accent": "veronza-1030",
+        "base": "black-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-left",
+        "extra": 0,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "front",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": "return",
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 284,
+        "depthCm": 307,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "İki açılı sol köşe · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "İki açılı sol köşe · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "İki açılı sol köşe · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "İki açılı sol köşe · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "İki açılı sol köşe · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "İki açılı sol köşe · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "İki açılı sol köşe · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "İki açılı sol köşe · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "İki açılı sol köşe · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "c624bd83d1fee91be3c545194046cba0de0b5cf2213990d9f27fd0fe7c2cc1fc",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-07-veronza-1031-oak",
+      "title": "Ara sehpalı çift dinlenme",
+      "description": "İki dinlenme modülü arasındaki ara oturum, bir yanda dikdörtgen ve diğer yanda ters açılı sehpayla bağlanır. Veronza Bukle Haki melanj gövde, Mora Kadife Cotto yastıklar ve naturel meşe.",
+      "layoutLabel": "Ara sehpalı çift dinlenme",
+      "editorHref": "./index.html?body=veronza-1031&accent=card-kiremit&base=oak&finish=velvet&scene=warm&layout=dual-chaise&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=1&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A1%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A2%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "458 × 227 × 82 cm",
+      "footprintLabel": "458 × 227 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "3 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Veronza / Mora kadife",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "veronza",
+        "accentFabricSeries": "mora-f-evo",
+        "bodyArtCode": "263267001031",
+        "accentArtCode": null,
+        "body": "Veronza 1031 · Haki / kahve melanj",
+        "accent": "Kiremit",
+        "wood": "Naturel meşe",
+        "tableDesign": "Dikdörtgen ahşap modül · Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "veronza-1031",
+        "accent": "card-kiremit",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "dual-chaise",
+        "extra": 1,
+        "back": "closed",
+        "table": "rectangle",
+        "terminal": "none",
+        "tableDesign": "half-shelf",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "front",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "rectangle",
+            "position": 1
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": 2,
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 458,
+        "depthCm": 227,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Ara sehpalı çift dinlenme · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Ara sehpalı çift dinlenme · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Ara sehpalı çift dinlenme · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "604a994fe79e5b3a04053daa6f4c9a92f5d1fe44baa1f0d66b5fef44e3823aca",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-08-veronza-1035-dark-oak",
+      "title": "İki ucu dinlenmeli dörtlü",
+      "description": "Dört oturumlu çift dinlenmede ilk ara bağlantı ters, son ara bağlantı standart açılı sehpa taşır. Veronza Bukle Koyu kahve gövde, Mora Kadife Inchiostro yastıklar ve koyu meşe.",
+      "layoutLabel": "İki ucu dinlenmeli dörtlü",
+      "editorHref": "./index.html?body=veronza-1035&accent=card-siyah&base=dark-oak&finish=velvet&scene=warm&layout=dual-chaise&extra=2&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%7D%5D",
+      "dimensionsLabel": "474 × 284 × 82 cm",
+      "footprintLabel": "474 × 284 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "4 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Veronza / Mora kadife",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "veronza",
+        "accentFabricSeries": "mora-f-evo",
+        "bodyArtCode": "263267001035",
+        "accentArtCode": null,
+        "body": "Veronza 1035 · Koyu kahve",
+        "accent": "Siyah",
+        "wood": "Koyu meşe",
+        "tableDesign": "2 × Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "veronza-1035",
+        "accent": "card-siyah",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "dual-chaise",
+        "extra": 2,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": 3
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 474,
+        "depthCm": 284,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "İki ucu dinlenmeli dörtlü · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "İki ucu dinlenmeli dörtlü · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "İki ucu dinlenmeli dörtlü · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "227138d9ecb3cc7ec18e3ba81edb6d4c425999c2e5512c3420e24bb4efeef811",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-09-veronza-1041-black-oak",
+      "title": "Ahşap aralıklı sağ köşe",
+      "description": "Dört oturumlu sağ köşenin ikinci aralığında dikdörtgen yüzey, dönüş kolunda ters açılı sehpa bulunur. Veronza Bukle Kahve melanj gövde, Soft Touch İnce Dokuma Pietra yastıklar ve siyah ahşap.",
+      "layoutLabel": "Ahşap aralıklı sağ köşe",
+      "editorHref": "./index.html?body=veronza-1041&accent=soft-touch-1246&base=black-oak&finish=velvet&scene=warm&layout=corner-right&extra=1&table=rectangle&terminal=none&tableDesign=half-shelf&tableVariant=standard&tablePosition=2&tableDirection=front&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22rectangle%22%2C%22position%22%3A2%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A%22return%22%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "Yaklaşık 388 × 363 × 82 cm",
+      "footprintLabel": "388 × 363 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "4 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Veronza / Soft Touch",
+        "fabricSeries": "mixed",
+        "bodyFabricSeries": "veronza",
+        "accentFabricSeries": "soft-touch",
+        "bodyArtCode": "263267001041",
+        "accentArtCode": "457623001246",
+        "body": "Veronza 1041 · Tütün / kahve melanj",
+        "accent": "Soft Touch 1246 · Taş / açık gri",
+        "wood": "Siyah ahşap",
+        "tableDesign": "Dikdörtgen ahşap modül · Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "veronza-1041",
+        "accent": "soft-touch-1246",
+        "base": "black-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-right",
+        "extra": 1,
+        "back": "closed",
+        "table": "rectangle",
+        "terminal": "none",
+        "tableDesign": "half-shelf",
+        "tableVariant": "standard",
+        "tablePosition": 2,
+        "tableDirection": "front",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "rectangle",
+            "position": 2
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": "return",
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 388,
+        "depthCm": 363,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "Ahşap aralıklı sağ köşe · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "Ahşap aralıklı sağ köşe · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "Ahşap aralıklı sağ köşe · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "e20c4d40e3a864e56a0257a917fcf786381d0cb5cd35d6721a70e3cf9ff46786",
+      "reverseAngle": true,
+      "newFabric": false
+    },
+    {
+      "key": "inspiration-reverse-v132-10-card-bal-oak",
+      "title": "İki ters açılı dörtlü",
+      "description": "Dört oturum, ilk ve son ara bağlantılarındaki iki ters açılı sehpayla dışa açılan geniş bir hat kurar. Mora Kadife Cammello gövde, Mora Kadife Cotto yastıklar ve naturel meşe.",
+      "layoutLabel": "İki ters açılı dörtlü",
+      "editorHref": "./index.html?body=card-bal&accent=card-kiremit&base=oak&finish=velvet&scene=warm&layout=straight3&extra=1&table=angled&terminal=none&tableDesign=dwg-angled&tableVariant=standard&tablePosition=1&tableDirection=back&tables=%5B%7B%22id%22%3A%22wood-1%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A1%2C%22direction%22%3A%22back%22%7D%2C%7B%22id%22%3A%22wood-2%22%2C%22type%22%3A%22angled%22%2C%22position%22%3A3%2C%22direction%22%3A%22back%22%7D%5D",
+      "dimensionsLabel": "523 × 167 × 82 cm",
+      "footprintLabel": "523 × 167 cm",
+      "dimensionsOrder": "Genişlik × derinlik × yükseklik",
+      "moduleCountLabel": "4 oturum modülü · 2 sehpa",
+      "materials": {
+        "fabric": "Mora kadife",
+        "body": "Bal",
+        "accent": "Kiremit",
+        "wood": "Naturel meşe",
+        "tableDesign": "2 × Açılı ara sehpa"
+      },
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "table_angled",
+          "label": "Açılı ara sehpa",
+          "kind": "table",
+          "count": 2,
+          "widthCm": 66.5,
+          "depthCm": 94,
+          "heightCm": 35.3,
+          "approximate": false
+        }
+      ],
+      "state": {
+        "body": "card-bal",
+        "accent": "card-kiremit",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "straight3",
+        "extra": 1,
+        "back": "closed",
+        "table": "angled",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 1,
+        "tableDirection": "back",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "angled",
+            "position": 1,
+            "direction": "back"
+          },
+          {
+            "id": "wood-2",
+            "type": "angled",
+            "position": 3,
+            "direction": "back"
+          }
+        ]
+      },
+      "dimensions": {
+        "widthCm": 523,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "gallery": [
+        {
+          "id": "v132-hero",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/hero.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/hero.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/hero.thumb.webp?v=20261124-reverse-v132",
+          "label": "Stüdyo görünümü",
+          "alt": "İki ters açılı dörtlü · Stüdyo görünümü",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-studio",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        },
+        {
+          "id": "v132-open-back",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/open-back.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/open-back.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/open-back.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sırt açık görünüm",
+          "alt": "İki ters açılı dörtlü · Sırt açık görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-front",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/front.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/front.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/front.thumb.webp?v=20261124-reverse-v132",
+          "label": "Önden görünüm",
+          "alt": "İki ters açılı dörtlü · Önden görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Arkadan görünüm",
+          "alt": "İki ters açılı dörtlü · Arkadan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-rear",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-rear.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-rear.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-rear.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ arka görünüm",
+          "alt": "İki ters açılı dörtlü · Sağ arka görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-right-side",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.thumb.webp?v=20261124-reverse-v132",
+          "label": "Sağ yandan görünüm",
+          "alt": "İki ters açılı dörtlü · Sağ yandan görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Üstten görünüm",
+          "alt": "İki ters açılı dörtlü · Üstten görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-studio",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-dimensioned-top",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/dimensioned-top.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/dimensioned-top.thumb.webp?v=20261124-reverse-v132",
+          "label": "Ölçülü üst görünüm",
+          "alt": "İki ters açılı dörtlü · Ölçülü üst görünüm",
+          "width": 1536,
+          "height": 1024,
+          "kind": "native-dimensioned",
+          "renderer": "Native SOFF reverse-table model and exact module state; V132"
+        },
+        {
+          "id": "v132-detail",
+          "src": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/detail.webp?v=20261124-reverse-v132",
+          "fullSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/detail.webp?v=20261124-reverse-v132",
+          "thumbSrc": "./assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/detail.thumb.webp?v=20261124-reverse-v132",
+          "label": "Kumaş ve modül detayı",
+          "alt": "İki ters açılı dörtlü · Kumaş ve modül detayı",
+          "width": 1536,
+          "height": 1024,
+          "kind": "photographic-fabric-detail",
+          "renderer": "Source-guided SOFF photographic finish; exact reverse layout and fabric pairing; V132"
+        }
+      ],
+      "geometryGroupKey": "e1f7e564a5881ee17cb4403a2f1ec7887d154791625b549953ec95fe4b2b6e85",
+      "reverseAngle": true,
+      "newFabric": false
     }
   ]
 }

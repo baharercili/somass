@@ -98,7 +98,17 @@
     "f6f00b4b6ede8ff41026ca1c1f8d4ae389438865f13c4f31d5fe228daff0d172": "SOM-Y0081",
     "fa80429bd4f45cef26234a1cd9b76e2790ce2f386a667731505cd2065b1f7168": "SOM-Y0082",
     "fb9ab077495998bdb6c9206fc296dc677d64f7cdf50a077c144e491258c9b61f": "SOM-Y0083",
-    "fc6538af1c105f30c1c63cdf6af36d2c43c4467dd190147b9cc649bb7d3424a9": "SOM-Y0084"
+    "fc6538af1c105f30c1c63cdf6af36d2c43c4467dd190147b9cc649bb7d3424a9": "SOM-Y0084",
+    "5d49d66e32332b86a979460a285fe18ff6d06f4db03dc097309f80da54b17088": "SOM-Y0085",
+    "62c6e118b2dc62e5a8eb05c27f3c6a5c1c9334faae022e0f525629c655faa70e": "SOM-Y0086",
+    "6864c65299a61a7435a18ce1f5c0198fcfbd69e98d123bcfbc0f02e85aab7d82": "SOM-Y0087",
+    "2defba862d5886e714ef56544b962f3f58157d97557ac5125a878a8250401711": "SOM-Y0088",
+    "df2503900eaa86c3a6a95d2ea216c2b3d32461c44fee997bcec0558b604e6762": "SOM-Y0089",
+    "c624bd83d1fee91be3c545194046cba0de0b5cf2213990d9f27fd0fe7c2cc1fc": "SOM-Y0090",
+    "604a994fe79e5b3a04053daa6f4c9a92f5d1fe44baa1f0d66b5fef44e3823aca": "SOM-Y0091",
+    "227138d9ecb3cc7ec18e3ba81edb6d4c425999c2e5512c3420e24bb4efeef811": "SOM-Y0092",
+    "e20c4d40e3a864e56a0257a917fcf786381d0cb5cd35d6721a70e3cf9ff46786": "SOM-Y0093",
+    "e1f7e564a5881ee17cb4403a2f1ec7887d154791625b549953ec95fe4b2b6e85": "SOM-Y0094"
   },
   "variantSkus": {
     "inspiration-angled-v72-s03-gok-dark-oak": "SOM-Y0051-V001",
@@ -364,8 +374,18 @@
     "inspiration-fabric-v118-47-veronza-1030-dark-oak": "SOM-Y0027-V003",
     "inspiration-fabric-v118-48-soft-touch-1024-black-oak": "SOM-Y0018-V003",
     "inspiration-fabric-v118-49-veronza-1035-oak": "SOM-Y0080-V003",
-    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050-V003"
+    "inspiration-fabric-v118-50-veronza-1041-dark-oak": "SOM-Y0050-V003",
+    "inspiration-reverse-v132-01-soft-touch-1246-oak": "SOM-Y0085-V001",
+    "inspiration-reverse-v132-02-veronza-1008-dark-oak": "SOM-Y0086-V001",
+    "inspiration-reverse-v132-03-card-bordo-black-oak": "SOM-Y0087-V001",
+    "inspiration-reverse-v132-04-soft-touch-1351-oak": "SOM-Y0088-V001",
+    "inspiration-reverse-v132-05-veronza-1012-dark-oak": "SOM-Y0089-V001",
+    "inspiration-reverse-v132-06-colormax-1015-black-oak": "SOM-Y0090-V001",
+    "inspiration-reverse-v132-07-veronza-1031-oak": "SOM-Y0091-V001",
+    "inspiration-reverse-v132-08-veronza-1035-dark-oak": "SOM-Y0092-V001",
+    "inspiration-reverse-v132-09-veronza-1041-black-oak": "SOM-Y0093-V001",
+    "inspiration-reverse-v132-10-card-bal-oak": "SOM-Y0094-V001"
   },
   "assignmentRule": "Append only. Never renumber or reuse an assigned SKU when display order or active catalogue membership changes.",
-  "lastCatalogueVersion": 118
+  "lastCatalogueVersion": 132
 }
