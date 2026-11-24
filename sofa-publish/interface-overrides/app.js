@@ -38,7 +38,7 @@ let activeSeatId=null,appendType='seat',cornerDirection='left',moduleBuilderMess
 let model,box,size,center,controls,renderer,scene,camera,dimensionsGroup,shadow,environment;
 let rendererInitialized=false,rendererResources=null,rendererProfile=null;
 let ready=false,autoRotate=false,dimensionsVisible=false,toastTimer,initAttempt=0,exploded=false,currentView='quarter';
-let materialSystem,modularLayout,sourceMaterial,paletteTarget='body';
+let materialSystem,modularLayout,sourceMaterial,paletteTarget='body',paletteFamily='all';
 let currentStep='layout',layoutBusy=false,layoutRevision=0,reviewReturnFocus=null;
 const selectionHistory=createSelectionHistory(state);
 let restoringHistory=false,localSaveOK=false;
@@ -296,7 +296,11 @@ function applyState(){
  if(scene){scene.background=color(choices.scene[state.scene].color);shadow.material.opacity=state.scene==='dark'?.45:.24;}
  document.querySelectorAll('[data-group][data-value]').forEach(b=>{const active=state[b.dataset.group]===b.dataset.value;b.setAttribute('aria-pressed',String(active));b.classList.toggle('is-active',active);b.classList.toggle('active',active);});
  document.querySelectorAll('[data-group-label]').forEach(el=>el.textContent=choices[el.dataset.groupLabel]?.[state[el.dataset.groupLabel]]?.label||'');
- if($('#active-material'))$('#active-material').textContent='Mora kadife';
+ const activeFabric=choices[paletteTarget][state[paletteTarget]],activeFamily=activeFabric.fabricSeries||'mora-f-evo',activeFamilyLabel=activeFabric.familyLabel||'Mora kadife',familyCount=cardSwatches.filter(swatch=>(choices.body[swatch.key||'card-'+swatch.id].fabricSeries||'mora-f-evo')===activeFamily).length;
+ if($('#active-material'))$('#active-material').textContent=activeFamilyLabel;
+ setText('#fabric-series-note',familyCount+' renk · 4 seride '+cardSwatches.length+' renk');
+ const fabricAvatar=$('.fabric-note .fabric-texture');if(fabricAvatar){fabricAvatar.style.backgroundColor=activeFabric.color;fabricAvatar.style.backgroundImage=activeFabric.photoChip?`url("${activeFabric.photoChip}")`:'none';fabricAvatar.style.backgroundSize='cover';fabricAvatar.style.backgroundPosition='center';fabricAvatar.dataset.materialKey=state[paletteTarget];}
+ if($('#selected-material-gallery'))$('#selected-material-gallery').href='./material-gallery.html?material='+encodeURIComponent(state[paletteTarget]);
  if($('#selection-summary'))$('#selection-summary').textContent=`${choices.body[state.body].label} · ${choices.accent[state.accent].label} · ${choices.base[state.base].label}`;
  syncLayoutControls(summary);
  syncCompositionControls(summary);
@@ -531,7 +535,7 @@ function renderPalette(){
  const grid=$('#photo-palette');if(!grid)return;grid.replaceChildren();
  for(const swatch of cardSwatches){
   const b=document.createElement('button'),sample=document.createElement('span'),label=document.createElement('span'),check=document.createElementNS('http://www.w3.org/2000/svg','svg'),use=document.createElementNS('http://www.w3.org/2000/svg','use');
-  b.type='button';b.dataset.group=paletteTarget;b.dataset.value=swatch.key||'card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=swatch.label;b.setAttribute('aria-label',swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
+  const fabric=choices.body[swatch.key||'card-'+swatch.id];b.dataset.fabricFamily=fabric.fabricSeries||'mora-f-evo';b.dataset.fabricSearch=[swatch.label,fabric.familyLabel||'Mora kadife',fabric.shortCode,fabric.artCode].filter(Boolean).join(' ');b.type='button';b.dataset.group=paletteTarget;b.dataset.value=swatch.key||'card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=swatch.label;b.setAttribute('aria-label',swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
   const rgb=swatch.hex.slice(1).match(/.{2}/g).map(value=>parseInt(value,16)/255),linear=rgb.map(value=>value<=.04045?value/12.92:((value+.055)/1.055)**2.4),luminance=linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
   b.style.setProperty('--check-color',luminance>.24?'#263126':'#ffffff');sample.className='palette-color-sample';if(swatch.photo_chip)sample.style.backgroundImage=`url("${swatch.photo_chip}")`;sample.style.color=luminance>.24?'#263126':'#ffffff';check.classList.add('icon');check.setAttribute('aria-hidden','true');use.setAttribute('href','#i-check');check.append(use);sample.append(check);label.className='palette-color-name';label.textContent=swatch.label;b.append(sample,label);grid.append(b);
  }
@@ -540,8 +544,9 @@ function renderPalette(){
 }
 function filterPalette(){
  const normalize=value=>String(value).toLocaleLowerCase('tr-TR').replace(/ı/g,'i').normalize('NFD').replace(/[\u0300-\u036f]/g,''),query=normalize($('#palette-search')?.value||'').trim();let count=0;
- for(const button of document.querySelectorAll('#photo-palette button')){const visible=!query||normalize(button.getAttribute('aria-label')).includes(query);button.hidden=!visible;if(visible)count++;}
- setText('#palette-count',query?`${count} / ${cardSwatches.length} renk`:`${cardSwatches.length} renk`);if($('#palette-empty'))$('#palette-empty').hidden=count!==0;
+ for(const button of document.querySelectorAll('#photo-palette button')){const visible=(paletteFamily==='all'||button.dataset.fabricFamily===paletteFamily)&&(!query||normalize(button.dataset.fabricSearch||button.getAttribute('aria-label')).includes(query));button.hidden=!visible;if(visible)count++;}
+ for(const button of document.querySelectorAll('.palette-family-filters [data-fabric-family]'))button.setAttribute('aria-pressed',String(button.dataset.fabricFamily===paletteFamily));
+ setText('#palette-count',query||paletteFamily!=='all'?`${count} / ${cardSwatches.length} renk`:`${cardSwatches.length} renk`);if($('#palette-empty'))$('#palette-empty').hidden=count!==0;
 }
 document.addEventListener('input',event=>{if(event.target.id==='palette-search')filterPalette();});
 function dimensionAnchors(){const dimensions=selection().dimensions,cx=center?.x??0,cz=center?.z??0;return{...dimensions,minX:cx-dimensions.widthCm/200,maxX:cx+dimensions.widthCm/200,minZ:cz-dimensions.depthCm/200,maxZ:cz+dimensions.depthCm/200};}
@@ -583,6 +588,7 @@ document.addEventListener('click',e=>{
  const removeWood=e.target.closest('[data-remove-wood]');if(removeWood){removeWoodModule(removeWood.dataset.removeWood);return;}
  const selectedWood=e.target.closest('[data-wood-id]');if(selectedWood){selectWoodModule(selectedWood.dataset.woodId);return;}
  const composition=e.target.closest('[data-composition-group][data-composition-value]');if(composition&&!composition.disabled){setCompositionOption(composition.dataset.compositionGroup,composition.dataset.compositionValue);return;}
+ const fabricFamily=e.target.closest('.palette-family-filters [data-fabric-family]');if(fabricFamily){paletteFamily=fabricFamily.dataset.fabricFamily;filterPalette();return;}
  const target=e.target.closest('[data-palette-target]');if(target){paletteTarget=target.dataset.paletteTarget;if($('#palette-search'))$('#palette-search').value='';renderPalette();applyState();return;}
  const option=e.target.closest('[data-group][data-value]');if(option){setOption(option.dataset.group,option.dataset.value);return;}
  const b=e.target.closest('button');if(!b)return;

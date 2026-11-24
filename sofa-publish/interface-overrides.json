@@ -28,22 +28,22 @@
       "path": "urun.html",
       "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
       "expectedBaseBytes": 5678,
-      "sha256": "ce5aaa7887a26deffca195934ded017aee14e8bff12f72a41ddb38049e004949",
-      "bytes": 5931
+      "sha256": "c938d9fe7ed57cf713ad1f655ec45a1dac3c8016b92b9ddd3ae2408dca655152",
+      "bytes": 5929
     },
     {
       "path": "index.html",
       "expectedBaseSha256": "8171d56fecc0521bc9d865d492fd00d5604706839f491414940eb5b03916bbdb",
       "expectedBaseBytes": 28146,
-      "sha256": "bce9c0a99b37a6e953b34986f0f9f03c3a3fc4b7bd63d159edc9c8fbb0c3ca7a",
-      "bytes": 28689
+      "sha256": "98c3fa29b61c5667b2fc1dc2f9984d904e3f5b050117946df4ecbaf93bcefe67",
+      "bytes": 29990
     },
     {
       "path": "product-gallery.js",
       "expectedBaseSha256": "98b9bd00f6ce52b4a8a0ee7054ef79d45699a4b9185e34d382748ba1a911029e",
       "expectedBaseBytes": 10698,
-      "sha256": "83565087e29b9d02886205680e1a5fe2ab6f468cfd2a9039549079c5128bbb15",
-      "bytes": 10789
+      "sha256": "6c06e5f3316b9f1f46f117d5e21bb8338430f7549b66f2b2ee7f7e50f0b7034b",
+      "bytes": 11302
     },
     {
       "path": "product-seo.js",
@@ -112,8 +112,8 @@
       "path": "material-gallery.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "8e8394e2f400fb6f7b5b49eb0d1089630fd7c6705f375e199a0bf8455b9aa666",
-      "bytes": 225559
+      "sha256": "f7767a0364115a82943d0d6d106cd22da3cb1a9887d11c18649c088cc8604239",
+      "bytes": 233406
     },
     {
       "path": "assets/material-gallery/0032fb2d59206e6fcf75654155da2f4b5afa6b3a3a9f34dabed37bcbb8104278.jpg",
@@ -3437,8 +3437,8 @@
       "path": "app.js",
       "expectedBaseSha256": "45ed6c3305ec33d07eafec29d0900e625469ca80770e5347ac3c387fbae27d4b",
       "expectedBaseBytes": 58321,
-      "sha256": "f4cf54a7081ef74a26ab514d908777f5a7d779a636255b75036f1fbccab728f6",
-      "bytes": 64649
+      "sha256": "6bdfda82f834059742b16e9a90feb5e2c685a88877ed104fa28f701cbce594a8",
+      "bytes": 66328
     },
     {
       "path": "assets/material-gallery/a51006c09bf47a185f242eab9fd590bc1cf5db31920de02cac2b6bc41501d75d.png",

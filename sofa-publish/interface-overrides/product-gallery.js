@@ -44,7 +44,9 @@ export async function initProductGallery(document=globalThis.document,options={}
  for(const id of ['product-editor-link','empty-editor-link'])$(id).href=editorHref;
  const materials=product.materials??{};
  for(const[label,value]of[['Kumaş',materials.fabric],['Ana kumaş',materials.body],['Yastıklar',materials.accent],['Ahşap',materials.wood]]){
-  if(!text(value))continue;const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=text(value);row.append(dt,dd);$('product-materials').append(row);
+  if(!text(value))continue;const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;
+  const materialKey=label==='Ana kumaş'?product.state?.body:label==='Yastıklar'?product.state?.accent:null;
+  if(typeof materialKey==='string'&&/^[a-z0-9-]+$/.test(materialKey)){const link=document.createElement('a');link.href='./material-gallery.html?material='+encodeURIComponent(materialKey);link.textContent=text(value);link.style.textDecoration='underline';link.style.textUnderlineOffset='.2em';link.setAttribute('aria-label',text(value)+' kumaşını ve tüm görsellerini incele');dd.append(link);}else dd.textContent=text(value);row.append(dt,dd);$('product-materials').append(row);
  }
  if(Array.isArray(product.moduleBreakdown)&&product.moduleBreakdown.length){
   for(const entry of product.moduleBreakdown){const li=document.createElement('li'),name=document.createElement('strong'),details=document.createElement('span'),count=Number(entry.count);name.textContent=(Number.isFinite(count)&&count>0?`${count} × `:'')+text(entry.label);const measures=[entry.widthCm,entry.depthCm,entry.heightCm].filter(value=>Number.isFinite(Number(value))).map(value=>String(value).replace('.',','));details.textContent=(entry.approximate?'Yaklaşık ':'')+(measures.length?measures.join(' × ')+' cm':'');li.append(name,details);$('module-list').append(li);}$('module-details').hidden=false;
