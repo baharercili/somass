@@ -26,6 +26,15 @@ INTERFACE_FILES = INTERFACE_FILES | frozenset(['assets/product-galleries/catalog
 V118_EXISTING_ANCHORS = {'fabric-material.js': ('3f5d86520c47b73e83866a3577315150cb0c0d25775a73307212e5b8c4776e3b', 13593), 'combinations-state.js': ('2aa13955c46ac8ca0caf3be2bf58619f18a958da8f4709ba8534996c2e57ab8f', 12659), 'consumer-summary.js': ('2f8b64bd350fa92edc10690ceb31577aaf35de25dc4f2f4eb2afc42e90f4c99e', 11416), 'inspiration-catalog.js': ('4e6c5e3ca2dabefe02d865fb105a524f2530bb794c7eacabf78e60927325e3d3', 17790), 'catalogue-variants.js': ('9262570c944251b152c05f485915a4ab25c5e767d7ab5f7206fc1f70f0aa4edb', 22004), 'studio-catalog-images.js': ('ea5dfa65ff1fce414bf7dad16656199e4b9ee983b7f2a652d37cd357b2937da2', 3645), 'product-export-materials.js': ('0d94c6d00ce92013ae7b84f36dd2f37dcf74b71812b9a20c0b3111b238e81307', 12781), 'assets/studio/catalogue-v69.json': ('487990eb3ef7e1f9ada8428943a7b4cf8b3d567ca551b4badf94ecea9fc352dc', 443933), 'assets/product-galleries/catalogue-v77.json': ('f51a7cd7934d59ccb1b539a4d212b932e6834f019dbd1860d534094e8827c332', 1566629), 'product-glb-export.js': ('f73741ca5129d2cd4609a9fc57efcd12d29d3073ee52e811d76bdbea2400c6e5', 4403), 'team-pack.js': ('e8737fbc45020eaaed423a924ea0a32efa66b1f1bab5d22f657dc1317542a08e', 2645), 'team-pack-engine.js': ('6e0d64a202797e7f3069fe24e9c430c146621bdd1f827912ef7d5998f8339b63', 7041)}
 V118_ADDITIONS = frozenset(['fabric-library.js', 'fabric-appearance.js', 'new-fabric-variants.js'])
 MAX_OVERLAY_FILES = 1536
+
+SWATCH_CARD_IDS = frozenset(['mora-S01', 'mora-S02', 'mora-S03', 'mora-S04', 'mora-S05', 'mora-S06', 'mora-S07', 'mora-S08', 'mora-S09', 'mora-S10', 'mora-S11', 'mora-S12', 'mora-S13', 'mora-S14', 'mora-S15', 'mora-S16', 'mora-R01', 'mora-R02', 'mora-R03', 'mora-R04', 'mora-R05', 'mora-R06', 'mora-R07', 'mora-R08', 'mora-R09', 'mora-R10', 'mora-R11', 'mora-R12', 'mora-R13', 'mora-R14', 'mora-R15', 'mora-R16', 'mora-R17', 'soft-touch-457623001351', 'soft-touch-457623001355', 'soft-touch-457623001246', 'soft-touch-457623001024', 'soft-touch-457623001200', 'colormax-262962001015', 'colormax-262962001017', 'veronza-263267001008', 'veronza-263267001012', 'veronza-263267001030', 'veronza-263267001031', 'veronza-263267001035', 'veronza-263267001041', 'mora-official-1023', 'mora-reference-1036', 'mora-reference-1035', 'mora-reference-1008', 'mora-reference-1025', 'mora-reference-1019', 'mora-reference-1013', 'mora-reference-1009', 'mora-reference-1016'])
+SWATCH_MEDIA_PATH = re.compile(r'assets/swatch-cards/v120/([A-Za-z0-9-]+)(\.thumb)?\.webp')
+MAX_SWATCH_MEDIA_BYTES = 2 * 1024 * 1024
+MAX_SWATCH_MEDIA_FILES = 110
+MAX_SWATCH_MEDIA_TOTAL_BYTES = 64 * 1024 * 1024
+MAX_SWATCH_ARCHIVE_BYTES = 64 * 1024 * 1024
+MAX_SWATCH_PART_BYTES = 2 * 1024 * 1024
+MAX_SWATCH_PARTS = 32
 MAX_PRODUCT_MEDIA_BYTES = 2 * 1024 * 1024
 MAX_PRODUCT_MEDIA_FILES = 913
 MAX_PRODUCT_MEDIA_TOTAL_BYTES = 128 * 1024 * 1024
@@ -55,6 +64,57 @@ REL_NS = 'http://schemas.openxmlformats.org/package/2006/relationships'
 OFFICE_REL_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
 CONTENT_NS = 'http://schemas.openxmlformats.org/package/2006/content-types'
 
+
+
+
+def swatch_media_match(name):
+    match = SWATCH_MEDIA_PATH.fullmatch(name) if isinstance(name, str) else None
+    return match if match and match.group(1) in SWATCH_CARD_IDS else None
+
+
+def validate_swatch_media(name, content):
+    """Accept one approved still portrait WebP, at its genuine native size."""
+    match = swatch_media_match(name)
+    if (not match or len(content) < 30 or len(content) > MAX_SWATCH_MEDIA_BYTES
+            or content[:4] != b'RIFF' or content[8:12] != b'WEBP'
+            or int.from_bytes(content[4:8], 'little') != len(content) - 8):
+        raise ValueError('Swatch card WebP signature or path differs')
+    cursor, dimensions, canvas, frames, canvases = 12, None, None, 0, 0
+    while cursor < len(content):
+        if cursor + 8 > len(content):
+            raise ValueError('Truncated swatch card WebP chunk')
+        kind = content[cursor:cursor + 4]
+        size = int.from_bytes(content[cursor + 4:cursor + 8], 'little')
+        start, end = cursor + 8, cursor + 8 + size
+        if end + (size & 1) > len(content) or kind in (b'ANIM', b'ANMF'):
+            raise ValueError('Invalid or animated swatch card WebP')
+        data = content[start:end]
+        if kind == b'VP8X':
+            if len(data) != 10 or data[0] & 2 or canvases or frames:
+                raise ValueError('Invalid or animated swatch card WebP canvas')
+            canvas = (int.from_bytes(data[4:7], 'little') + 1, int.from_bytes(data[7:10], 'little') + 1)
+            canvases += 1
+        elif kind == b'VP8 ':
+            if len(data) < 10 or data[3:6] != b'\x9d\x01\x2a':
+                raise ValueError('Invalid swatch card VP8 frame')
+            dimensions = (int.from_bytes(data[6:8], 'little') & 0x3fff, int.from_bytes(data[8:10], 'little') & 0x3fff)
+            frames += 1
+        elif kind == b'VP8L':
+            if len(data) < 5 or data[0] != 0x2f:
+                raise ValueError('Invalid swatch card VP8L frame')
+            bits = int.from_bytes(data[1:5], 'little')
+            dimensions = ((bits & 0x3fff) + 1, ((bits >> 14) & 0x3fff) + 1)
+            frames += 1
+        cursor = end + (size & 1)
+    if frames != 1 or (canvas is not None and canvas != dimensions):
+        raise ValueError('Swatch card WebP frame or canvas differs')
+    width, height = dimensions
+    if match.group(2):
+        valid = (width, height) == (300, 400)
+    else:
+        valid = width > 300 and height > 400 and width * 4 == height * 3 and max(width, height) <= 1600
+    if not valid:
+        raise ValueError('Swatch card WebP dimensions differ')
 
 
 def interface_limit(name):
@@ -481,6 +541,83 @@ def load_product_media_package(package_root, media_records):
     return media, audit
 
 
+def load_swatch_media_package(package_root, media_records):
+    """Read a verified optional media ZIP without extracting paths into checkout."""
+    folder = package_root / 'sofa-publish' / 'swatch-card-media'
+    control = folder / 'swatch-card-media-manifest.json'
+    if not control.exists() and not control.is_symlink():
+        return {}, None
+    regular_source(control, package_root)
+    if not 0 < control.stat().st_size <= 64 * 1024:
+        raise ValueError('Invalid swatch card media manifest size')
+    control_content = control.read_bytes()
+    manifest = json.loads(control_content.decode('utf-8'))
+    if (not isinstance(manifest, dict)
+            or set(manifest) != {'schemaVersion', 'application', 'archiveSha256', 'archiveBytes', 'memberCount', 'parts'}
+            or manifest['schemaVersion'] != 1
+            or manifest['application'] != 'studio-sofa-swatch-card-media'
+            or not interface_digest(manifest['archiveSha256'])
+            or not interface_integer(manifest['archiveBytes'], MAX_SWATCH_ARCHIVE_BYTES)
+            or type(manifest['memberCount']) is not int
+            or manifest['memberCount'] != len(media_records) or not media_records
+            or not isinstance(manifest['parts'], list) or not 1 <= len(manifest['parts']) <= MAX_SWATCH_PARTS):
+        raise ValueError('Invalid swatch card media package manifest')
+    stream, whole, total = io.BytesIO(), hashlib.sha256(), 0
+    for index, item in enumerate(manifest['parts'], 1):
+        if (not isinstance(item, dict) or set(item) != {'name', 'bytes', 'sha256'}
+                or item['name'] != f'swatch-card-media.part-{index:04d}'
+                or not interface_integer(item['bytes'], MAX_SWATCH_PART_BYTES)
+                or not interface_digest(item['sha256'])):
+            raise ValueError('Unexpected swatch card media package part')
+        source = folder / item['name']
+        regular_source(source, package_root)
+        if source.stat().st_size != item['bytes']:
+            raise ValueError('Swatch card media package part size differs')
+        content = source.read_bytes()
+        if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+            raise ValueError('Swatch card media package part checksum differs')
+        total += len(content)
+        if total > manifest['archiveBytes']:
+            raise ValueError('Swatch card media package exceeds expected size')
+        stream.write(content)
+        whole.update(content)
+    if total != manifest['archiveBytes'] or whole.hexdigest() != manifest['archiveSha256']:
+        raise ValueError('Swatch card media archive checksum differs')
+    media, total_expanded = {}, 0
+    try:
+        with zipfile.ZipFile(stream) as archive:
+            infos = archive.infolist()
+            if len(infos) != manifest['memberCount']:
+                raise ValueError('Swatch card media package member count differs')
+            for info in infos:
+                name, mode = info.filename, info.external_attr >> 16
+                if (name not in media_records or name in media or not swatch_media_match(name)
+                        or info.is_dir() or stat.S_ISLNK(mode)
+                        or stat.S_IFMT(mode) not in (0, stat.S_IFREG) or info.flag_bits & 1
+                        or info.compress_type not in (zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED)):
+                    raise ValueError('Unexpected or unsafe swatch card media archive member')
+                item = media_records[name]
+                if info.file_size != item['bytes'] or not interface_integer(info.file_size, MAX_SWATCH_MEDIA_BYTES):
+                    raise ValueError('Swatch card media package member size differs')
+                total_expanded += info.file_size
+                if total_expanded > MAX_SWATCH_MEDIA_TOTAL_BYTES:
+                    raise ValueError('Swatch card media archive expands beyond limit')
+                content = archive.read(info)
+                if len(content) != item['bytes'] or sha256(content) != item['sha256']:
+                    raise ValueError('Swatch card media package member checksum differs')
+                validate_swatch_media(name, content)
+                media[name] = content
+    except (zipfile.BadZipFile, RuntimeError, zlib.error) as error:
+        raise ValueError('Invalid swatch card media archive') from error
+    if set(media) != set(media_records):
+        raise ValueError('Swatch card media archive does not cover active swatch card entries')
+    audit = {'manifestPath': 'sofa-publish/swatch-card-media/swatch-card-media-manifest.json',
+             'manifestSha256': sha256(control_content), 'archiveSha256': manifest['archiveSha256'],
+             'archiveBytes': manifest['archiveBytes'], 'memberCount': manifest['memberCount'],
+             'parts': manifest['parts']}
+    return media, audit
+
+
 def apply_interface_overrides(package_root, restored, manifest, expected):
     """Apply a small allowlisted patch only after both base and patch verify."""
     control = package_root / 'sofa-publish' / 'interface-overrides.json'
@@ -501,6 +638,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         raise ValueError('Invalid sofa interface file list')
     changes, seen, media_count, media_bytes, media_records = [], set(), 0, 0, {}
     product_count, product_bytes, product_records = 0, 0, {}
+    swatch_count, swatch_bytes, swatch_records = 0, 0, {}
     for item in files:
         if (not isinstance(item, dict)
                 or set(item) != {'path', 'expectedBaseSha256', 'expectedBaseBytes', 'sha256', 'bytes'}):
@@ -508,10 +646,11 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         name = item['path']
         media = material_media_match(name)
         product_media = product_media_match(name)
-        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media and not product_media) or name in seen:
+        swatch_media = swatch_media_match(name)
+        if not isinstance(name, str) or (name not in INTERFACE_FILES and not media and not product_media and not swatch_media) or name in seen:
             raise ValueError('Unexpected or duplicate sofa interface file')
         seen.add(name)
-        maximum = MAX_MATERIAL_MEDIA_BYTES if media else (MAX_PRODUCT_MEDIA_BYTES if product_media else interface_limit(name))
+        maximum = MAX_MATERIAL_MEDIA_BYTES if media else (MAX_PRODUCT_MEDIA_BYTES if product_media else (MAX_SWATCH_MEDIA_BYTES if swatch_media else interface_limit(name)))
         if (not interface_integer(item['bytes'], maximum)
                 or not interface_digest(item['sha256'])):
             raise ValueError('Invalid sofa interface file limits')
@@ -533,22 +672,31 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if product_count > MAX_PRODUCT_MEDIA_FILES or product_bytes > MAX_PRODUCT_MEDIA_TOTAL_BYTES:
                 raise ValueError('Product variant media exceeds allowed limits')
             product_records[name] = item
+        if swatch_media:
+            swatch_count += 1
+            swatch_bytes += item['bytes']
+            if swatch_count > MAX_SWATCH_MEDIA_FILES or swatch_bytes > MAX_SWATCH_MEDIA_TOTAL_BYTES:
+                raise ValueError('Swatch card media exceeds allowed limits')
+            swatch_records[name] = item
     bundled_media, bundle_audit = load_material_media_package(package_root, media_records)
     product_bundle, product_audit = load_product_media_package(package_root, product_records)
+    swatch_bundle, swatch_audit = load_swatch_media_package(package_root, swatch_records)
     bundled_media.update(product_bundle)
+    bundled_media.update(swatch_bundle)
     for item in files:
         name = item['path']
         media = material_media_match(name)
         product_media = product_media_match(name)
+        swatch_media = swatch_media_match(name)
         original = expected.get(name)
         installed = restored / name
         if item['expectedBaseSha256'] is None:
-            if ((name not in NEW_INTERFACE_FILES and name not in V118_ADDITIONS and not media and not product_media) or type(item['expectedBaseBytes']) is not int
+            if ((name not in NEW_INTERFACE_FILES and name not in V118_ADDITIONS and not media and not product_media and not swatch_media) or type(item['expectedBaseBytes']) is not int
                     or item['expectedBaseBytes'] != 0 or original is not None
                     or installed.exists() or installed.is_symlink()):
                 raise ValueError('Sofa interface addition collides with base member: ' + name)
         else:
-            if media or product_media:
+            if media or product_media or swatch_media:
                 raise ValueError('Gallery media must be new additions')
             if (not interface_integer(item['expectedBaseBytes'], interface_limit(name))
                     or not interface_digest(item['expectedBaseSha256'])
@@ -559,7 +707,7 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             if len(original_content) != item['expectedBaseBytes'] or sha256(original_content) != item['expectedBaseSha256']:
                 raise ValueError('Restored sofa interface base differs: ' + name)
         source = package_root / 'sofa-publish' / 'interface-overrides' / name
-        if (media or product_media) and name in bundled_media and not source.exists() and not source.is_symlink():
+        if (media or product_media or swatch_media) and name in bundled_media and not source.exists() and not source.is_symlink():
             content = bundled_media[name]
         else:
             regular_source(source, package_root)
@@ -572,6 +720,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
             validate_material_media(name, content)
         elif product_media:
             validate_product_media(name, content)
+        elif swatch_media:
+            validate_swatch_media(name, content)
         elif name == WORKBOOK_PATH:
             validate_xlsx(content)
         else:
@@ -596,6 +746,8 @@ def apply_interface_overrides(package_root, restored, manifest, expected):
         audit['materialMediaPackage'] = bundle_audit
     if product_audit is not None:
         audit['productVariantMediaPackage'] = product_audit
+    if swatch_audit is not None:
+        audit['swatchCardMediaPackage'] = swatch_audit
     audit_content = (json.dumps(audit, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     (restored / audit_name).write_bytes(audit_content)
     expected[audit_name] = {'path': audit_name, 'bytes': len(audit_content), 'sha256': sha256(audit_content)}

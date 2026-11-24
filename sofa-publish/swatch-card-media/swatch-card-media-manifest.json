@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "application": "studio-sofa-swatch-card-media",
+  "archiveSha256": "c0235ac128f1745f10e81985e9c455b97caeb0b6238099f3d443d9adf6000321",
+  "archiveBytes": 23201978,
+  "memberCount": 110,
+  "parts": [
+    {
+      "name": "swatch-card-media.part-0001",
+      "bytes": 2097152,
+      "sha256": "cafa2ee911d3af0d9f4e2d7b56c2786c69459f7ab338051eb6343b931e4d0225"
+    },
+    {
+      "name": "swatch-card-media.part-0002",
+      "bytes": 2097152,
+      "sha256": "fa86fe90094f34bf919ed479a7ea328254aa38d554c372a2e53b13d43fce8c3b"
+    },
+    {
+      "name": "swatch-card-media.part-0003",
+      "bytes": 2097152,
+      "sha256": "6091bcf7ea4fe61bbcacf5540eff7a6b4b77f007d592d8066e4660d7d97d36ea"
+    },
+    {
+      "name": "swatch-card-media.part-0004",
+      "bytes": 2097152,
+      "sha256": "76a1d23ebbd2e7ec8b4f96d07f0a7a2b78ce5fbe8ea9d6f98eb0c6ebf038e415"
+    },
+    {
+      "name": "swatch-card-media.part-0005",
+      "bytes": 2097152,
+      "sha256": "9b4231514bd76144d6d23aed219a48ea4e9b2a76ae8e1bc4f65f4b0eb9cf9206"
+    },
+    {
+      "name": "swatch-card-media.part-0006",
+      "bytes": 2097152,
+      "sha256": "93c0a75ce355d01c61458779e94d57b2f247c2f35e052f6c875093a233b17e9c"
+    },
+    {
+      "name": "swatch-card-media.part-0007",
+      "bytes": 2097152,
+      "sha256": "ac928a83ccebadf4d81d9e4194190df3a9fb81bee8055ea601b9d83ec3a3f47b"
+    },
+    {
+      "name": "swatch-card-media.part-0008",
+      "bytes": 2097152,
+      "sha256": "d4c7a9e1d9f6140ab7bd669e769f06e00359f3d8ba5e775b9332f10541f55561"
+    },
+    {
+      "name": "swatch-card-media.part-0009",
+      "bytes": 2097152,
+      "sha256": "f039213eb713df411b602dfe95fc424809d9279072c6556e88baa7e3afb119f2"
+    },
+    {
+      "name": "swatch-card-media.part-0010",
+      "bytes": 2097152,
+      "sha256": "bec34d37ff740afe128d2b06d4c9931847a76d3091d7f9aad2a5e416d3ffe4b5"
+    },
+    {
+      "name": "swatch-card-media.part-0011",
+      "bytes": 2097152,
+      "sha256": "f99ca63550e5cdcf128301271cbfe70cf5cd5d83fb5eef8c94e8c1e212894273"
+    },
+    {
+      "name": "swatch-card-media.part-0012",
+      "bytes": 133306,
+      "sha256": "98b4c070036e99025b8ce2f73761a8973943675568ea3d75e321e6a0ffa611bb"
+    }
+  ]
+}
