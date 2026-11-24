@@ -1005,6 +1005,8 @@ MAX_VIDEO_PART_BYTES = 2 * 1024 * 1024
 MAX_VIDEO_PARTS = 8
 INTERFACE_FILES = INTERFACE_FILES | frozenset({'soff-hareket-hikayeleri.html'})
 NEW_INTERFACE_FILES = NEW_INTERFACE_FILES | frozenset({'soff-hareket-hikayeleri.html'})
+INTERFACE_FILES = INTERFACE_FILES | frozenset({'ana-sayfa.html'})
+NEW_INTERFACE_FILES = NEW_INTERFACE_FILES | frozenset({'ana-sayfa.html'})
 
 
 def video_webp_dimensions(name, content):

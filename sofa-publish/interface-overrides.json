@@ -7,8 +7,8 @@
       "path": "kombinasyonlar.html",
       "expectedBaseSha256": "9c701e27f7de1ad70193989d56d022c9d4dd19730dd4282cd00225854fbb2e32",
       "expectedBaseBytes": 7688,
-      "sha256": "9a5a176101abbd61584f5885e2c140379ae3d2718c040bcdb50f793a8be22b49",
-      "bytes": 8304
+      "sha256": "a7d9105129142962f89cb8f5e481cfcca029cf8202c50bb40d17147569547a80",
+      "bytes": 8294
     },
     {
       "path": "kombinasyonlar.css",
@@ -21,22 +21,22 @@
       "path": "kombinasyonlar.js",
       "expectedBaseSha256": "95cd75737d3037b920d2e33e8eee2e881928f21d5e2161b4b3d0120a901d294c",
       "expectedBaseBytes": 17655,
-      "sha256": "ce94d1c5ccbab512be6746966f0eddf2e09aa12cbb72f3231200af05811aa342",
-      "bytes": 19838
+      "sha256": "89a385d6bf9ef02545a3d9335fdfb3059edd98a445bed0507c02a9f3291b1e10",
+      "bytes": 19866
     },
     {
       "path": "urun.html",
       "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
       "expectedBaseBytes": 5678,
-      "sha256": "c938d9fe7ed57cf713ad1f655ec45a1dac3c8016b92b9ddd3ae2408dca655152",
-      "bytes": 5929
+      "sha256": "2640c4d0049cf56764eedc8179bd1f8f949c88a56f84bd97dbe3de7228c9fa7f",
+      "bytes": 5922
     },
     {
       "path": "index.html",
       "expectedBaseSha256": "8171d56fecc0521bc9d865d492fd00d5604706839f491414940eb5b03916bbdb",
       "expectedBaseBytes": 28146,
-      "sha256": "98c3fa29b61c5667b2fc1dc2f9984d904e3f5b050117946df4ecbaf93bcefe67",
-      "bytes": 29990
+      "sha256": "5cb746f3d9502f55a81e2ccfddf74b6f8332ef03dcbe38a44f6c437c039a85d3",
+      "bytes": 30538
     },
     {
       "path": "product-gallery.js",
@@ -56,8 +56,8 @@
       "path": "pricing.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "e41fce5d051b632eef2ee468fd4f14b182ac4e1e102c42f7a1783a680dfc00da",
-      "bytes": 5648
+      "sha256": "320299efe58119a3e133efc2948c10679555b7b8b3ec63dcad4f7202082527e1",
+      "bytes": 5680
     },
     {
       "path": "pricing.js",
@@ -112,8 +112,8 @@
       "path": "material-gallery.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "91bb38e9ea12a9488c271bed2455444f9b6740507960d0cbb9a37a21368f22a9",
-      "bytes": 296509
+      "sha256": "93fb9e4644f08ce77b382e559f8fb68efd7214691b25bc222179582d103b7bdb",
+      "bytes": 296494
     },
     {
       "path": "assets/material-gallery/0032fb2d59206e6fcf75654155da2f4b5afa6b3a3a9f34dabed37bcbb8104278.jpg",
@@ -11487,8 +11487,8 @@
       "path": "kumas-hikayeleri.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "bytes": 57016,
-      "sha256": "d90e6a88907ab3963d80b69d419938ebafeb53f66d23e927152359d64c7ba4b8"
+      "bytes": 57000,
+      "sha256": "14fbf15044ea3e0e77fe01c984e29adff6714f80fae49fce90452d7fa54d5113"
     },
     {
       "path": "assets/editorial/v122/editorial-01-window-swatchbook/original.jpg",
@@ -12054,8 +12054,8 @@
       "path": "soff-hareket-hikayeleri.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "bytes": 17852,
-      "sha256": "3d25548806b73a030420930884e267e68d216151cb60f2bb008806a951fd51ed"
+      "bytes": 17834,
+      "sha256": "e63b9fddbd6f7a38cd78ec19f76a3d7a4e51e3bfb562b87fc7e153ab173634cf"
     },
     {
       "path": "assets/animations/v125/ahsap-tonlari/film.mp4",
@@ -12126,6 +12126,13 @@
       "expectedBaseBytes": 0,
       "bytes": 20272,
       "sha256": "b96173c33728cfae82a180161485f6dbb70bc89de579c1f1664b3fb37972759a"
+    },
+    {
+      "path": "ana-sayfa.html",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 38122,
+      "sha256": "d3517cd3f9aa93cf42ada54cd94fef02b4a342401a1d6250121035597ee60bcb"
     }
   ]
 }
