@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-product-variant-media",
-  "archiveSha256": "6d7766db24f72611de8d73ab2b3e418e035f7da766d5058a363016f3b484d9d2",
-  "archiveBytes": 41336342,
+  "archiveSha256": "30783174ba5f0ad60a178603b30ffb4ee7a2b12c112e36b995da71107296366a",
+  "archiveBytes": 41760988,
   "memberCount": 913,
   "parts": [
     {
@@ -102,8 +102,8 @@
     },
     {
       "name": "product-variant-media.part-0020",
-      "bytes": 1490454,
-      "sha256": "e9d5bc10855a454a0dc063c420ce17f42c96dc96f34f937ab710677aa28ca623"
+      "bytes": 1915100,
+      "sha256": "153f969fb51ed045717cb2425778b08330da8d499848c1eb463f80e8aa44d5cd"
     }
   ]
 }

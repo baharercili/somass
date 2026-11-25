@@ -7,8 +7,8 @@
       "path": "kombinasyonlar.html",
       "expectedBaseSha256": "9c701e27f7de1ad70193989d56d022c9d4dd19730dd4282cd00225854fbb2e32",
       "expectedBaseBytes": 7688,
-      "sha256": "6bdc4689a6dc2e289b00446b8f4750b96caa6a417ae307d8206dd9ae90535bec",
-      "bytes": 8584
+      "sha256": "6189dd2474b9843b82f312bd06fe359291f5fce93b6b653610708f85ff82bc52",
+      "bytes": 8579
     },
     {
       "path": "kombinasyonlar.css",
@@ -21,15 +21,15 @@
       "path": "kombinasyonlar.js",
       "expectedBaseSha256": "95cd75737d3037b920d2e33e8eee2e881928f21d5e2161b4b3d0120a901d294c",
       "expectedBaseBytes": 17655,
-      "sha256": "77ff4f0a1a9be2ddb39b9b27ae98410f2f2f7766690420ce7dcbe53abee07a53",
-      "bytes": 21159
+      "sha256": "5671b53f2b9726169cd4a5ca3dccc3399a38f6c6b0e4aff41ca6e2978d61c341",
+      "bytes": 21149
     },
     {
       "path": "urun.html",
       "expectedBaseSha256": "4e2e00439e05823aa1eea6299d2f5ee85e29b74423ced360338f33cc9b9fd902",
       "expectedBaseBytes": 5678,
-      "sha256": "8fa4a2f108e8edef1656be0f885078f99264e2e502e2fcde177a4c3f8f406138",
-      "bytes": 8144
+      "sha256": "3f721465827efee42071ddf83055d6a715aeb692a9ad3d4486ee7933840b91a7",
+      "bytes": 8139
     },
     {
       "path": "index.html",
@@ -42,8 +42,8 @@
       "path": "product-gallery.js",
       "expectedBaseSha256": "98b9bd00f6ce52b4a8a0ee7054ef79d45699a4b9185e34d382748ba1a911029e",
       "expectedBaseBytes": 10698,
-      "sha256": "9d750102fcaef81076ca27368d1705e68b6808cc1327259408dbe9fa14ad0f80",
-      "bytes": 17882
+      "sha256": "6f037df10f9597789ab2ea9030de5b1c9f5a3134930a9b33726ad6e7dd9270fd",
+      "bytes": 17877
     },
     {
       "path": "product-seo.js",
@@ -3451,15 +3451,15 @@
       "path": "assets/product-galleries/catalogue-v77.json",
       "expectedBaseSha256": "f51a7cd7934d59ccb1b539a4d212b932e6834f019dbd1860d534094e8827c332",
       "expectedBaseBytes": 1566629,
-      "sha256": "27abfe7cea2ad3b93ba6237ee06acf58f9d3c597cba02734510f64a51536ea7c",
-      "bytes": 2662539
+      "sha256": "72ed9b50097828a9037049959872b6e5c7fe89e88c02d1bdbf734f1d6a9db9d1",
+      "bytes": 2662527
     },
     {
       "path": "assets/studio/catalogue-v69.json",
       "expectedBaseSha256": "487990eb3ef7e1f9ada8428943a7b4cf8b3d567ca551b4badf94ecea9fc352dc",
       "expectedBaseBytes": 443933,
-      "sha256": "b2653c718aff5d1d67a14bf2d4b3ff19149ee666228786d45cc7adabe3b976a3",
-      "bytes": 586201
+      "sha256": "adf3ee95d3fc15cd32767183625b252c3cf93de7a72287e887a25e5e7ce89475",
+      "bytes": 586202
     },
     {
       "path": "catalogue-variants.js",
@@ -3535,8 +3535,8 @@
       "path": "studio-catalog-images.js",
       "expectedBaseSha256": "ea5dfa65ff1fce414bf7dad16656199e4b9ee983b7f2a652d37cd357b2937da2",
       "expectedBaseBytes": 3645,
-      "sha256": "7be6932aa1d86b0b9248f47f7d26808e696ab3688797f9cd8e6d702e50d83a56",
-      "bytes": 3858
+      "sha256": "aefb40a349a0b12bc501acca23582ce621e838b7ab9a095d0e2c43e021e91c5b",
+      "bytes": 3853
     },
     {
       "path": "team-pack-engine.js",
@@ -3808,15 +3808,15 @@
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "e93e26114be7c64bdbd5c45dd5791abfd34aa6907afa0a8e4b8f45f07a9e0dab",
-      "bytes": 106420
+      "sha256": "9e2c5aa89c5c38d61e64760539e79a9fa32a0afc7e74619b99c7f6373a62b6ef",
+      "bytes": 114696
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/hero.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "4d49857f6687de48613f95b418dd872a6d22aaeef23467696092ed97103dd3c8",
-      "bytes": 2702
+      "sha256": "f0b79a5839d7e4706a5c33e53b0ff17b87f7a98e032ded0b95ab7791bbcf619c",
+      "bytes": 2938
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/open-back.webp",
@@ -4186,15 +4186,15 @@
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "3f183e997c2c2c7263a9f4b32687c3d5df6c2587b0cfb818c3ff102e4c522924",
-      "bytes": 110216
+      "sha256": "f5e1dcdb1d4a7d217fe2a2a59d9a3fff8165958bf0621d99811cacd887c12a56",
+      "bytes": 123616
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/hero.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "9c9fe648cb3bc1fe5661dba3501c3c2638884896be8355f6c2b1e8ef044b0e13",
-      "bytes": 2704
+      "sha256": "8b36aa4172f7bfe3a979cecd0a6f9f6f2e8371ac0e74417d0cb8330ea9bb0057",
+      "bytes": 2836
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/open-back.webp",
@@ -5446,15 +5446,15 @@
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "1f62da0e24412f11d4f4f635fc425aa1b8a1361b7b35d0e99c933d937b196ad8",
-      "bytes": 114966
+      "sha256": "32fa2b53e026bb554d8132634cb7dba029e23d60434d8d5306f657ccc131a59c",
+      "bytes": 104678
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/hero.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "238dce584331357e6124753c7b4c67914cb17028b41e3eebd3a01ec4cc6785e3",
-      "bytes": 3620
+      "sha256": "1e613eb547fa13e791e4efc77fd87e113e337577bca27b2580bf91b4ea66b6f9",
+      "bytes": 3324
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/open-back.webp",
@@ -8722,15 +8722,15 @@
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "476f264ee54abdac6ce29be87d6364cd28514f29b308ae4149102fb5a217806a",
-      "bytes": 81648
+      "sha256": "2134232d86b5ce2a516dc3d3a5824998ecc613aa79feef8b90ee6b17f6259a4e",
+      "bytes": 69262
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/hero.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "65ad0716d08b782a565f36cf2637fea5f3a0926931e168208039dcd7def5e300",
-      "bytes": 2638
+      "sha256": "2d8f6c25bd8970d6b640ce6a4ab4670bbe5808654643b92dae5321545295480a",
+      "bytes": 2324
     },
     {
       "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/open-back.webp",
@@ -12131,8 +12131,8 @@
       "path": "ana-sayfa.html",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "bytes": 42241,
-      "sha256": "d2080d3f0e1e51ad11d35ceb347dfc46d471f1041fda8f22dfc15915b1b00a41"
+      "bytes": 42257,
+      "sha256": "7361b933bbc5065f9b98eef5c754ec6844ee2452832b48cc2d3eae5cfb24ab41"
     },
     {
       "path": "assets/inside/v128/film.mp4",
@@ -13412,15 +13412,15 @@
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "1bd711fcfd1a6b509e95b3ac9c20dcd097b0670b2f5db6ebb1562b0d81285f01",
-      "bytes": 8396
+      "sha256": "f207a3cb65b3bd82ccb113da09e43e8f647e966365082793caa80d52ea903b15",
+      "bytes": 6690
     },
     {
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/detail.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "e70e24df414295f96c53acc48cf34ff8e9a42e33b6dca62e6aa6b88fe669bb85",
-      "bytes": 336730
+      "sha256": "0c11db3e6ea858f3ec5c331ae75fa5141b03468859175239a3405155cded2050",
+      "bytes": 266378
     },
     {
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/dimensioned-top.thumb.webp",
@@ -13454,15 +13454,15 @@
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.thumb.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "f0c6c79639fc248d2963fcef43c75b548eb4945b87cac95a92f91118ac915453",
-      "bytes": 5476
+      "sha256": "9b414aabdfd88e6b6fa3184a3313fb6f3b70c9ddc93e5299c339884cfa77dabb",
+      "bytes": 4708
     },
     {
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/hero.webp",
       "expectedBaseSha256": null,
       "expectedBaseBytes": 0,
-      "sha256": "7db438571064e1d1881efc63ac583c97a634fb5881e1fee1002e5eeab75b97d8",
-      "bytes": 214262
+      "sha256": "3826735abf8e8f5cb7aec79e2a52f33a42dcf7d19918826aa3f986d9662018c7",
+      "bytes": 134126
     },
     {
       "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/open-back.thumb.webp",

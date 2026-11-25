@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "application": "studio-sofa-reverse-table-media",
-  "archiveSha256": "8b6f635d88350c00db28234bfb88b0cca14a71a6b7444b672195dd24f72f7a64",
-  "archiveBytes": 7787737,
+  "archiveSha256": "ec5973f9a8294406d92873224782af5aca4dde80a51b86297200eea4aaa78e9c",
+  "archiveBytes": 8200135,
   "memberCount": 180,
   "parts": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "name": "reverse-table-media.part-0004",
-      "bytes": 1496281,
-      "sha256": "7c812cf90c2cbeb70b450bc4be2c959bcbe2a36007dbcdd5494ae8190b761a1b"
+      "bytes": 1908679,
+      "sha256": "9b2b474779276155e2082ee071fabf42975fa871c96cf1ef9414308f2a0f97f5"
     }
   ],
   "media": [
