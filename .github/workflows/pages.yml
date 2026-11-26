@@ -156,6 +156,8 @@ jobs:
         run: python3 sofa-publish/restore.py --site _source/_site
       - name: Verify and add collection review beside existing applications
         run: python3 collections-publish/restore.py --site _source/_site
+      - name: Verify and refresh fabric material gallery
+        run: python3 sofa-publish/material-gallery-v174/restore-gallery.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
@@ -180,3 +182,4 @@ jobs:
         env:
           SOMASS_PAGES_URL: ${{ steps.deployment.outputs.page_url }}
         run: python3 collections-publish/check-published.py
+
