@@ -9,14 +9,14 @@ from pathlib import Path,PurePosixPath
 MAX_ADDITIVE=20_000_000
 MAX_SITE=1024*1024*1024
 PREFIX='assets/product-studio-v178/'
-UI={'urun.html','kombinasyonlar.html','product-gallery.js','studio-catalog-images.js','kombinasyonlar.js','inspiration-catalog.js'}
+UI={'urun.html','kombinasyonlar.html','product-gallery.js','studio-catalog-images.js','kombinasyonlar.js','inspiration-catalog.js','zeytin-cift-acili.html','assets/product-galleries/catalogue-v77.json','assets/studio/catalogue-v69.json'}
 def require(ok,message):
  if not ok:raise ValueError(message)
 def digest(b):return hashlib.sha256(b).hexdigest()
 def name_ok(name):
  require(isinstance(name,str) and re.fullmatch(r'[A-Za-z0-9_./-]+',name),'Unsafe member name')
  p=PurePosixPath(name);require(not p.is_absolute() and p.as_posix()==name and all(x not in ('','.','..','.git') for x in name.split('/')),'Unsafe member path')
- require(name in UI or name=='catalogue-refresh-v178.js' or name==PREFIX+'gallery-index.json' or re.fullmatch(re.escape(PREFIX)+r'photos/SOM-Y\d{4}-V\d{3}/[a-z-]+-[0-9a-f]{12}\.webp',name),'Unapproved overlay destination')
+ require(name in UI or name=='catalogue-refresh-v178.js' or name in (PREFIX+'gallery-index.json',PREFIX+'view-scope.json') or re.fullmatch(re.escape(PREFIX)+r'photos/SOM-Y\d{4}-V\d{3}/[a-z-]+-[0-9a-f]{12}\.webp',name),'Unapproved overlay destination')
  return p
 def regular(path,root):
  require(path.is_file() and not path.is_symlink(),'Missing or unsafe file: '+str(path))
@@ -30,7 +30,7 @@ def members_size(root):
 def restore(package,site):
  regular(package/'package-manifest.json',package);m=json.loads((package/'package-manifest.json').read_text())
  require(m.get('schemaVersion')==1 and m.get('packageType')=='somass-approved-studio-v178' and m.get('releaseVersion')==181,'Wrong package')
- require(m.get('V174Protected') is True and m.get('prunePaths')==[],'Original assets must remain intact')
+ require(m.get('V174Protected') is True and isinstance(m.get('prunePaths'),list),'Original assets must remain intact')
  require(0<len(m['parts'])<=16 and len(m['members'])==m['memberCount']<=2048,'Invalid package count')
  archive=bytearray();seen=set()
  for part in m['parts']:
@@ -46,6 +46,12 @@ def restore(package,site):
  site=site.resolve();require(site.is_dir() and not site.is_symlink(),'Website root missing');sofa=site/'sofa';require(sofa.is_dir() and not sofa.is_symlink(),'Sofa baseline missing')
  for name,basehash in m['expectedBaseFiles'].items():
   p=sofa/name;regular(p,site);require(digest(p.read_bytes()) in (basehash,expected[name]['sha256']),'Pinned current UI baseline differs: '+name)
+ retired=[]
+ for row in m['prunePaths']:
+  name=row['path'];require('..' not in PurePosixPath(name).parts and PurePosixPath(name).as_posix()==name,'Unsafe cancelled-view path');require(re.fullmatch(r'assets/(?:product-galleries|zeytin-cift-acili)/[A-Za-z0-9_./-]+',name) and re.fullmatch(r'(?:right-side|left-side|top|v73-07-sag-yan|v73-08-ust)(?:\.thumb)?\.(?:webp|png|jpg|jpeg)',name.split('/')[-1]),'Unsafe cancelled-view retirement')
+  p=sofa/name
+  if p.exists():
+   regular(p,site);b=p.read_bytes();require(len(b)==row['bytes'] and digest(b)==row['sha256'],'Cancelled-view source checksum differs: '+name);retired.append(row)
  before=members_size(site);delta=0
  for name,member in expected.items():
   target=sofa/name
@@ -57,6 +63,7 @@ def restore(package,site):
    if name not in UI:require(digest(target.read_bytes())==member['sha256'],'New asset collides with existing content')
    delta+=member['bytes']-target.stat().st_size
   else:delta+=member['bytes']
+ delta-=sum(r['bytes'] for r in retired)
  require(before+delta<MAX_SITE,'Assembled website would exceed Pages size guard')
  with tempfile.TemporaryDirectory(prefix='.studio-v178-',dir=site.parent) as temporary:
   stage=Path(temporary);seen=set()
@@ -80,12 +87,13 @@ def restore(package,site):
    if photo['viewId']=='top':require(proof.get('viewPolicyRevision')=='orthographic-occlusion-v178','Rejected TOP method')
    if photo['viewId']=='high-front':require(proof.get('viewPolicyRevision')=='high-front-occlusion-v178','Rejected high-front method')
    if photo['viewId']=='dimensioned-top':
-    dep=approved.get(proof.get('sourceTopCandidateId'));require(dep and dep['view']=='top' and dep.get('viewPolicyRevision')=='orthographic-occlusion-v178' and dep['masterSHA256']==proof.get('sourceTopMasterSHA256') and proof.get('untouchedPhotographChannelDifferences')==0 and re.fullmatch(r'[a-f0-9]{64}',proof.get('externalOverlaySHA256','')),'Dimension overlay dependency differs')
+    dep={r['candidateId']:r for r in m.get('privateDimensionSourceApprovals',[])}.get(proof.get('sourceTopCandidateId'));require(dep and dep.get('qualityApproved') is True and dep['view']=='top' and dep.get('viewPolicyRevision')=='orthographic-occlusion-v178' and dep['masterSHA256']==proof.get('sourceTopMasterSHA256') and proof.get('untouchedPhotographChannelDifferences')==0 and re.fullmatch(r'[a-f0-9]{64}',proof.get('externalOverlaySHA256','')),'Dimension overlay dependency differs')
   # Put assets and modules in place before their HTML entry points.
   for name in sorted(expected,key=lambda n:(n in ('urun.html','kombinasyonlar.html'),n)):
    target=sofa/name;target.parent.mkdir(parents=True,exist_ok=True);os.replace(stage/name,target)
+ for row in retired:(sofa/row['path']).unlink()
  after=members_size(site);require(after==before+delta and after<MAX_SITE,'Final website size differs')
- proof={'status':'pass','approvedPhotos':len(photos),'replacedVariants':m['replacedVariantCount'],'members':len(expected),'siteBytesBefore':before,'siteBytesAfter':after,'netBytesAdded':delta,'prunedFiles':0,'V174Writes':0,'packageSHA256':digest((package/'package-manifest.json').read_bytes())}
+ proof={'status':'pass','approvedPhotos':len(photos),'replacedVariants':m['replacedVariantCount'],'members':len(expected),'siteBytesBefore':before,'siteBytesAfter':after,'netBytesAdded':delta,'prunedFiles':len(retired),'cancelledViewBytesRemoved':sum(r['bytes'] for r in retired),'sourceOrModelDeleted':0,'V174Writes':0,'packageSHA256':digest((package/'package-manifest.json').read_bytes())}
  print(json.dumps(proof,sort_keys=True));return proof
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--site',type=Path,required=True);args=p.parse_args();restore(Path(__file__).resolve().parent,args.site)

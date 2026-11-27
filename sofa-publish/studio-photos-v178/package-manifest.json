@@ -5,31 +5,31 @@
   "baselineCommit": "8b3bd381942c906d2af8f950a20dd1623121e021",
   "baselineSiteBytesEvidence": 971868833,
   "maximumAdditiveReleaseBytes": 20000000,
-  "archiveBytes": 5636176,
-  "archiveSHA256": "846c2a480fcce9a0fa894fc66f07c2f88c7c43d9b53394048f55726599823458",
+  "archiveBytes": 3856566,
+  "archiveSHA256": "ec5cc1fbdfee246ff3f6e6d44157669e1e702f7f11095b59e986a74ca245d816",
   "parts": [
     {
       "name": "part-001.bin",
       "bytes": 2097152,
-      "sha256": "02010d774e9661e51572ac3b7ed21a88d7a11689d5064b7d22c4bcc75ff3c4c1"
+      "sha256": "36a092aeef372c5bdffc8ff2194a0984183e0ab6e872c0058431d65c974d40e2"
     },
     {
       "name": "part-002.bin",
-      "bytes": 2097152,
-      "sha256": "dca7fbff015f48be9db680701a8b5e39566ad0925ea727e65540209cebd1e1ae"
-    },
-    {
-      "name": "part-003.bin",
-      "bytes": 1441872,
-      "sha256": "29fed96848f82008e39912b353a37c64864896fa1ab238b66f88b7660fe292f4"
+      "bytes": 1759414,
+      "sha256": "60ea67954351c9700cb4c344135c2ca67b062496b6db5ee206cf3fc1c421e01a"
     }
   ],
-  "memberCount": 57,
+  "memberCount": 47,
   "members": [
     {
+      "path": "assets/product-galleries/catalogue-v77.json",
+      "bytes": 1690131,
+      "sha256": "d65c87a772224e4a2cca9fc919b32998609598656bef1337aaeb52590a597ef8"
+    },
+    {
       "path": "assets/product-studio-v178/gallery-index.json",
-      "bytes": 849097,
-      "sha256": "4eb70db5364b67c52982bbb28161fb953dfe72bc25416f769285d21ea0c96901"
+      "bytes": 731724,
+      "sha256": "08a517723c8cf1f6a155089c7717398a7a3a8e34af845036d09d50685b8d84ce"
     },
     {
       "path": "assets/product-studio-v178/photos/SOM-Y0001-V001/dimensioned-top-e70a7562bd8b.webp",
@@ -52,16 +52,6 @@
       "sha256": "2ce222539a51009ef53f1edc8120a325b9cdd7e7b5b433fd03f6c2aedacf900a"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0001-V001/right-side-fb3df4a9b78a.webp",
-      "bytes": 122658,
-      "sha256": "c4ccae1cbb8f1738ef23cef63dd43447c82613c4ec80b4917093cb45cfaa140a"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0001-V001/top-5d7a308d6f15.webp",
-      "bytes": 82430,
-      "sha256": "9947965ad438526278bf1f60ade9f4de395a729376ab615b2b8f962a9f9a21d1"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0001-V002/front-245fa321da5c.webp",
       "bytes": 51244,
       "sha256": "39d833da15a83f2350dea8cf0071ed04150e55caede22eb1680e436cb417abbf"
@@ -70,11 +60,6 @@
       "path": "assets/product-studio-v178/photos/SOM-Y0001-V002/right-rear-7e1c3364314e.webp",
       "bytes": 62782,
       "sha256": "2d33aa3e8777ac1c75bd712ea76c80c4bc5c9be5dafcb9b50f72140cdc9f24f5"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0001-V002/right-side-dd15cd16ca5f.webp",
-      "bytes": 74500,
-      "sha256": "80327eb77d508cb9b4733b82704cf807cb11864d3ac21ac73e2014ee2c07c632"
     },
     {
       "path": "assets/product-studio-v178/photos/SOM-Y0001-V003/front-3c921ef75cc5.webp",
@@ -92,11 +77,6 @@
       "sha256": "f7f9ba2b1b81a44b192c246cd9178cf8caa414b35f4d73b4e9811f5936b4c841"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0001-V003/right-side-918ac428e0ed.webp",
-      "bytes": 85926,
-      "sha256": "370179288f4076c3a2613f058ebe2d7c29a872b97015757c33856bad319cf8f2"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0001-V004/dimensioned-top-e4090eca801e.webp",
       "bytes": 228542,
       "sha256": "6381eba2e817617050bb73533366f6a595396d25829996f8c27c079d9077bc8c"
@@ -112,11 +92,6 @@
       "sha256": "21e9bf8485e34f5d28ed2fc84f25a1d7b1bbb7a14d34a756c46a3c8b73aac5d3"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0001-V004/top-3afc00af32e9.webp",
-      "bytes": 242482,
-      "sha256": "670c6a52e1ee5e0f83a2f33637be53e189a3885018aae96ae90ff2fb9a28a8d6"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0002-V002/front-d101223b0a17.webp",
       "bytes": 83738,
       "sha256": "78a1232424880a79d80bf2bffc3d1a6ad212d63ddc9bb878cfa7224fbf677b44"
@@ -127,24 +102,9 @@
       "sha256": "cd3e850e2f98b66c3a30948979d3f70b2c432354bef9d230bfc9df7b82e48060"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0002-V002/right-side-b840291c6c38.webp",
-      "bytes": 103784,
-      "sha256": "f7b2287ad6d6e1cd5fb57c89db33238ab696fb1487120093bdc5c56439820d81"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0003-V001/right-side-672ffd37b949.webp",
-      "bytes": 127210,
-      "sha256": "a385e2a083d80cd1c51dfdf7bad7d783bcdaa719b3cab547d8925228510a0201"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0003-V002/front-1a03927d1166.webp",
       "bytes": 79798,
       "sha256": "f1dd6d69df1e60acfc4fb917f0672857a89b597b2616bb969d112d12383c6f2e"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0003-V002/right-side-003359346d0e.webp",
-      "bytes": 107836,
-      "sha256": "578c0436bf041e539a178ccfc07c9ffc622df5221b3d0bd903a61b7a8b3a4c72"
     },
     {
       "path": "assets/product-studio-v178/photos/SOM-Y0003-V003/dimensioned-top-f02a876557ac.webp",
@@ -162,16 +122,6 @@
       "sha256": "f1feadd46b06fbeae7d5d5ea14a0b3a3a38ebad50b49987ea93956b206b1dfd2"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0003-V003/right-side-d58ca435b5b1.webp",
-      "bytes": 94210,
-      "sha256": "8518d3c1bc1a18043d4f1fae1d3a7b458bebf5c82541192a384fa593dbd19c49"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0003-V003/top-02f5751ca0dd.webp",
-      "bytes": 106910,
-      "sha256": "82286d96e6890bf495f39255c2ce67fbf2efe8cc7aa764859d7f18b893431466"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0004-V001/dimensioned-top-65fccdf84a18.webp",
       "bytes": 93916,
       "sha256": "74fff324f0125017c203c4ceed36d49d9a40e87e05ac14e67aac0467838f7f7e"
@@ -187,16 +137,6 @@
       "sha256": "53cd94e7b2fe4b2065cd602ec57bd4d42fcb50fbe1b159a3d9d3e37db01fdaa7"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0004-V001/top-0df7aa033719.webp",
-      "bytes": 96246,
-      "sha256": "ece68c4c55ea96b2d13a2cd7d1a40bab3bf724447c0b59affda1ad1eaad64c31"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0004-V002/right-side-b831098fd20f.webp",
-      "bytes": 112682,
-      "sha256": "630ae3065f1c4cfe1011e1abc5de53202115984ca856b786b7bd8500d8dc4dd4"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0004-V003/front-78cfb8067be4.webp",
       "bytes": 160030,
       "sha256": "06aea1871d2b4c3db372c9479760afc53d51f7f5f1c5f452bd7ffd6424d16018"
@@ -205,11 +145,6 @@
       "path": "assets/product-studio-v178/photos/SOM-Y0004-V003/right-rear-bd4d54c5c2ed.webp",
       "bytes": 283222,
       "sha256": "25ecb74f5b681c8c8f499ba8f26ed7a306980663fc2efc94a3819b71ff6cec53"
-    },
-    {
-      "path": "assets/product-studio-v178/photos/SOM-Y0004-V003/right-side-550a151a8ef2.webp",
-      "bytes": 314528,
-      "sha256": "4c22d61073a3aa5b9e2f8f454a08024b59524936c2b6a3aa5374e27fc500606a"
     },
     {
       "path": "assets/product-studio-v178/photos/SOM-Y0005-V001/right-rear-ca2a2f5514ce.webp",
@@ -257,11 +192,6 @@
       "sha256": "128df38049770acb9b573d6d19a8fe209af672ef4aa10cb65e371c6ba10d50c3"
     },
     {
-      "path": "assets/product-studio-v178/photos/SOM-Y0013-V004/top-e70ed323422b.webp",
-      "bytes": 214886,
-      "sha256": "4f05226b44a78238276bf83416881be865b8f35d821cc625b653cca65626d88f"
-    },
-    {
       "path": "assets/product-studio-v178/photos/SOM-Y0035-V002/hero-355903a5370b.webp",
       "bytes": 93072,
       "sha256": "1ed47139f878f7b1286be4d0d319902dcad120e6ab69cac5d9080c95fcd71c36"
@@ -277,9 +207,19 @@
       "sha256": "e7ac75216a175f1cce5bbfa7cdfbb5196ce801c1f9baa2e640813e8d24dfd5c2"
     },
     {
+      "path": "assets/product-studio-v178/view-scope.json",
+      "bytes": 292,
+      "sha256": "5246dbd37b28690e34cf71ca5bc8a0b5bfeb586bba63c51f5df31210e2a7982f"
+    },
+    {
+      "path": "assets/studio/catalogue-v69.json",
+      "bytes": 485017,
+      "sha256": "1001e8e76d74f5f6f2a8a1f47fe1c44a9aff34505dbe3f4023617d989b30dff2"
+    },
+    {
       "path": "catalogue-refresh-v178.js",
-      "bytes": 2469,
-      "sha256": "09bef8c5bc7b14da35a56815afee1bb1aaf772e229dd306d36447a81a1c47248"
+      "bytes": 5022,
+      "sha256": "d369a95c643a97ef939e6a8299fc1a54dfe2e5c22abf769c342dde83842a6c77"
     },
     {
       "path": "inspiration-catalog.js",
@@ -289,27 +229,32 @@
     {
       "path": "kombinasyonlar.html",
       "bytes": 8555,
-      "sha256": "f3c4af03f5a1342a839b7031029257e148a6d938b07ba43075aae032d59d1d4c"
+      "sha256": "25f6feab8872d089f92271b1c969e1a47fa7ce0e12271f49509717d56b22d371"
     },
     {
       "path": "kombinasyonlar.js",
-      "bytes": 21723,
-      "sha256": "6cd9930f5d095832fd6b6aca217e55cb79a4ac6e56eafe477b6e48eafbbeb297"
+      "bytes": 21699,
+      "sha256": "dbdf38a22fc579aa1a40e7359fcf1791aab611bc1e2d17599ab64028d372ac27"
     },
     {
       "path": "product-gallery.js",
-      "bytes": 18314,
-      "sha256": "7bfb75668aa36f56fd193258ea165449d47989f1a9809ca67401d680efcbb131"
+      "bytes": 18345,
+      "sha256": "0a9ff8b7d29a182eae782ea6f37d091934e7739f9d87de46ab65c902b9ae664a"
     },
     {
       "path": "studio-catalog-images.js",
-      "bytes": 5310,
-      "sha256": "86f2cedd5800d843307c20d0527a749eb931daf3f0c539b9a833c32b31762335"
+      "bytes": 5249,
+      "sha256": "7ecbcf8c47cd8dc43ce8f164ad7dc07499ab6379cb82afef0e6dd065c22dcc2c"
     },
     {
       "path": "urun.html",
       "bytes": 8115,
-      "sha256": "d6b358146c0973d36d49f8b6d535c1f3ff3376e82a0a793d4a2ecc78d72ac256"
+      "sha256": "0774539659e4aeddf517e2d3fa04dc92d2686d794feb1fe9e5f228819e9acbd5"
+    },
+    {
+      "path": "zeytin-cift-acili.html",
+      "bytes": 9462,
+      "sha256": "c4dd2583afddc3c11fb8e2843287ce33c5709881844b90b43c05657a9b466437"
     }
   ],
   "expectedBaseFiles": {
@@ -318,7 +263,10 @@
     "product-gallery.js": "6f037df10f9597789ab2ea9030de5b1c9f5a3134930a9b33726ad6e7dd9270fd",
     "studio-catalog-images.js": "aefb40a349a0b12bc501acca23582ce621e838b7ab9a095d0e2c43e021e91c5b",
     "kombinasyonlar.js": "5671b53f2b9726169cd4a5ca3dccc3399a38f6c6b0e4aff41ca6e2978d61c341",
-    "inspiration-catalog.js": "73c0683246b37ce3245bd1cbee733a6ddbc31ad230966f7c3a1d18bb433d36b6"
+    "inspiration-catalog.js": "73c0683246b37ce3245bd1cbee733a6ddbc31ad230966f7c3a1d18bb433d36b6",
+    "zeytin-cift-acili.html": "589e2257c77df42204ed0d201d4210aeacec834032b88497a3d416b3ffaa220f",
+    "assets/product-galleries/catalogue-v77.json": "72ed9b50097828a9037049959872b6e5c7fe89e88c02d1bdbf734f1d6a9db9d1",
+    "assets/studio/catalogue-v69.json": "adf3ee95d3fc15cd32767183625b252c3cf93de7a72287e887a25e5e7ce89475"
   },
   "photos": [
     {
@@ -365,81 +313,6 @@
       "noResize": true,
       "reviewer": "/root/material_gallery_ui_v179",
       "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0001-V001__top-v178-top-01",
-      "variantID": "SOM-Y0001-V001",
-      "view": "top",
-      "masterSHA256": "5d7a308d6f15e5f28d0095cf7f053ba475e2b2ff09334b3997b1a2a5a6792c0c",
-      "nativeSourceSHA256": "8eb218ecaf67369e9beba3c932daae631eb06bd768983b6b95544191011216bf",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V001/top-5d7a308d6f15.webp",
-      "sha256": "9947965ad438526278bf1f60ade9f4de395a729376ab615b2b8f962a9f9a21d1",
-      "bytes": 82430,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root",
-      "viewPolicyRevision": "orthographic-occlusion-v178"
-    },
-    {
-      "candidateId": "SOM-Y0004-V001__top-v178-top-01",
-      "variantID": "SOM-Y0004-V001",
-      "view": "top",
-      "masterSHA256": "0df7aa0337196ec6d0953e438822ffaefd9f1fdca61f66427987b17851838b65",
-      "nativeSourceSHA256": "c453daae5f09ddbf6a51508b35609b574dda9b308df23bf8cada9352a3118a43",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0004-V001/top-0df7aa033719.webp",
-      "sha256": "ece68c4c55ea96b2d13a2cd7d1a40bab3bf724447c0b59affda1ad1eaad64c31",
-      "bytes": 96246,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root",
-      "viewPolicyRevision": "orthographic-occlusion-v178"
-    },
-    {
-      "candidateId": "SOM-Y0001-V004__top-v178-top-01",
-      "variantID": "SOM-Y0001-V004",
-      "view": "top",
-      "masterSHA256": "3afc00af32e9d5566103f0d1430d3bf215a573fe848a5f5081d1ff6f7dd83b11",
-      "nativeSourceSHA256": "fcebdfb540236c748af78c03a3f9a6c76732ac877d08b9d80df95f5f5f72af33",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V004/top-3afc00af32e9.webp",
-      "sha256": "670c6a52e1ee5e0f83a2f33637be53e189a3885018aae96ae90ff2fb9a28a8d6",
-      "bytes": 242482,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root",
-      "viewPolicyRevision": "orthographic-occlusion-v178"
-    },
-    {
-      "candidateId": "SOM-Y0013-V004__top-v178-top-01",
-      "variantID": "SOM-Y0013-V004",
-      "view": "top",
-      "masterSHA256": "e70ed323422b0fa1cbe9563a3caee33815f13bdf2718d5645e940295c306ef80",
-      "nativeSourceSHA256": "4390cb736d86068699d4d822d62ea62532227b6af1aa2db470135e12fba675e8",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0013-V004/top-e70ed323422b.webp",
-      "sha256": "4f05226b44a78238276bf83416881be865b8f35d821cc625b653cca65626d88f",
-      "bytes": 214886,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root",
-      "viewPolicyRevision": "orthographic-occlusion-v178"
-    },
-    {
-      "candidateId": "SOM-Y0003-V003__top-v178-top-01",
-      "variantID": "SOM-Y0003-V003",
-      "view": "top",
-      "masterSHA256": "02f5751ca0dda88aa285e42b683f22ca453eb17c30299e975fbd3488b1860eb9",
-      "nativeSourceSHA256": "73da779655ee867e532b0354c05e3e239c188faea41dcbbe360bedb12124a873",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0003-V003/top-02f5751ca0dd.webp",
-      "sha256": "82286d96e6890bf495f39255c2ce67fbf2efe8cc7aa764859d7f18b893431466",
-      "bytes": 106910,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root",
-      "viewPolicyRevision": "orthographic-occlusion-v178"
     },
     {
       "candidateId": "SOM-Y0001-V001__high-front-v178-high-front-01",
@@ -547,21 +420,6 @@
       "viewPolicyRevision": null
     },
     {
-      "candidateId": "SOM-Y0001-V001__right-side-v177-01",
-      "variantID": "SOM-Y0001-V001",
-      "view": "right-side",
-      "masterSHA256": "fb3df4a9b78a314948b2b681c51879a82f6dd9ffdee9c2af9e9250413f599ffc",
-      "nativeSourceSHA256": "997daa80d2165d40ed10a4a682b48f4ab8b519b7feb0f8060d27badd9ef94fef",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V001/right-side-fb3df4a9b78a.webp",
-      "sha256": "c4ccae1cbb8f1738ef23cef63dd43447c82613c4ec80b4917093cb45cfaa140a",
-      "bytes": 122658,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
       "candidateId": "SOM-Y0001-V002__right-rear-v177-01",
       "variantID": "SOM-Y0001-V002",
       "view": "right-rear",
@@ -570,21 +428,6 @@
       "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V002/right-rear-7e1c3364314e.webp",
       "sha256": "2d33aa3e8777ac1c75bd712ea76c80c4bc5c9be5dafcb9b50f72140cdc9f24f5",
       "bytes": 62782,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0001-V002__right-side-v177-01",
-      "variantID": "SOM-Y0001-V002",
-      "view": "right-side",
-      "masterSHA256": "dd15cd16ca5f04f3800bc178613d6fa1773539f43514bfa1b7a2447e84154ae0",
-      "nativeSourceSHA256": "2ccc8ccf782e63301d38f2d3a318b654bbd6b1415163a12f93480003d9f48deb",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V002/right-side-dd15cd16ca5f.webp",
-      "sha256": "80327eb77d508cb9b4733b82704cf807cb11864d3ac21ac73e2014ee2c07c632",
-      "bytes": 74500,
       "width": 1536,
       "height": 1024,
       "noResize": true,
@@ -615,21 +458,6 @@
       "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V003/right-rear-5e3e4fc2c7aa.webp",
       "sha256": "f7f9ba2b1b81a44b192c246cd9178cf8caa414b35f4d73b4e9811f5936b4c841",
       "bytes": 67476,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0001-V003__right-side-v177-01",
-      "variantID": "SOM-Y0001-V003",
-      "view": "right-side",
-      "masterSHA256": "918ac428e0ed46414cda54594985b82007678c50848f3e9546070caf6cfa0915",
-      "nativeSourceSHA256": "9b198e01ba91167e43f93f0af8626514c3d9f4167d37745ef95bbc910fbc06b7",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0001-V003/right-side-918ac428e0ed.webp",
-      "sha256": "370179288f4076c3a2613f058ebe2d7c29a872b97015757c33856bad319cf8f2",
-      "bytes": 85926,
       "width": 1536,
       "height": 1024,
       "noResize": true,
@@ -682,36 +510,6 @@
       "viewPolicyRevision": null
     },
     {
-      "candidateId": "SOM-Y0002-V002__right-side-v177-01",
-      "variantID": "SOM-Y0002-V002",
-      "view": "right-side",
-      "masterSHA256": "b840291c6c38cd38fe1cd0cf8565cd371002cfc0191356bce3b8a76a764b3a7f",
-      "nativeSourceSHA256": "b7e18f7add2508ec959526af3786bb4646bdb06348c29fa4ee6f04800301283b",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0002-V002/right-side-b840291c6c38.webp",
-      "sha256": "f7b2287ad6d6e1cd5fb57c89db33238ab696fb1487120093bdc5c56439820d81",
-      "bytes": 103784,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0003-V001__right-side-v177-01",
-      "variantID": "SOM-Y0003-V001",
-      "view": "right-side",
-      "masterSHA256": "672ffd37b9496464302623c94b475cd0ec2ae6283845d1f1fff7e23c73728291",
-      "nativeSourceSHA256": "003f98d3af0144efcc106a7476d21d3ccc1caeeaeb6f5fe46d2c2adabb13c9ac",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0003-V001/right-side-672ffd37b949.webp",
-      "sha256": "a385e2a083d80cd1c51dfdf7bad7d783bcdaa719b3cab547d8925228510a0201",
-      "bytes": 127210,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
       "candidateId": "SOM-Y0003-V002__front-v177-01",
       "variantID": "SOM-Y0003-V002",
       "view": "front",
@@ -727,21 +525,6 @@
       "viewPolicyRevision": null
     },
     {
-      "candidateId": "SOM-Y0003-V002__right-side-v177-01",
-      "variantID": "SOM-Y0003-V002",
-      "view": "right-side",
-      "masterSHA256": "003359346d0e33f099d883275d17a9ea8d43ad4dc73df00762588b960c140630",
-      "nativeSourceSHA256": "00fbedfa0c2d533d7db113e92f30e58c794e5fcb96f687090695c9de060f962c",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0003-V002/right-side-003359346d0e.webp",
-      "sha256": "578c0436bf041e539a178ccfc07c9ffc622df5221b3d0bd903a61b7a8b3a4c72",
-      "bytes": 107836,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
       "candidateId": "SOM-Y0003-V003__front-v177-01",
       "variantID": "SOM-Y0003-V003",
       "view": "front",
@@ -750,21 +533,6 @@
       "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0003-V003/front-4589b2801b67.webp",
       "sha256": "4bb5b9387417f894bc8de1d4228067daa0d4c55a8f3cd3a83a0dffd6f2cb86d5",
       "bytes": 77666,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0003-V003__right-side-v177-01",
-      "variantID": "SOM-Y0003-V003",
-      "view": "right-side",
-      "masterSHA256": "d58ca435b5b1c86ee0aeda522c1ad8e0188dd3b91667f70ddd689e3adfc35cb4",
-      "nativeSourceSHA256": "cadfc15e762381c8e44ba66c60d82276d60db3668347a01c1cc3861dce186213",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0003-V003/right-side-d58ca435b5b1.webp",
-      "sha256": "8518d3c1bc1a18043d4f1fae1d3a7b458bebf5c82541192a384fa593dbd19c49",
-      "bytes": 94210,
       "width": 1536,
       "height": 1024,
       "noResize": true,
@@ -802,21 +570,6 @@
       "viewPolicyRevision": null
     },
     {
-      "candidateId": "SOM-Y0004-V002__right-side-v177-01",
-      "variantID": "SOM-Y0004-V002",
-      "view": "right-side",
-      "masterSHA256": "b831098fd20f07ebca95151b27a53fe27256abd37e14e70620da17c047781934",
-      "nativeSourceSHA256": "3ed6d530a86e40b9fe00ec740e238f5bee59f48bff97eb47aa382e2eb19f562b",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0004-V002/right-side-b831098fd20f.webp",
-      "sha256": "630ae3065f1c4cfe1011e1abc5de53202115984ca856b786b7bd8500d8dc4dd4",
-      "bytes": 112682,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
       "candidateId": "SOM-Y0004-V003__front-v177-01",
       "variantID": "SOM-Y0004-V003",
       "view": "front",
@@ -840,21 +593,6 @@
       "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0004-V003/right-rear-bd4d54c5c2ed.webp",
       "sha256": "25ecb74f5b681c8c8f499ba8f26ed7a306980663fc2efc94a3819b71ff6cec53",
       "bytes": 283222,
-      "width": 1536,
-      "height": 1024,
-      "noResize": true,
-      "reviewer": "/root/material_gallery_ui_v179",
-      "viewPolicyRevision": null
-    },
-    {
-      "candidateId": "SOM-Y0004-V003__right-side-v177-01",
-      "variantID": "SOM-Y0004-V003",
-      "view": "right-side",
-      "masterSHA256": "550a151a8ef23dbd6a1d08722016787a9ce02daf9e18cae8748039cccd99c38e",
-      "nativeSourceSHA256": "b9cf6f28891116e47155f70bb703e2850d69dfadc04a98dc7377a8256516b047",
-      "publishedPath": "sofa/assets/product-studio-v178/photos/SOM-Y0004-V003/right-side-550a151a8ef2.webp",
-      "sha256": "4c22d61073a3aa5b9e2f8f454a08024b59524936c2b6a3aa5374e27fc500606a",
-      "bytes": 314528,
       "width": 1536,
       "height": 1024,
       "noResize": true,
@@ -1077,9 +815,3474 @@
       "untouchedPhotographChannelDifferences": 0
     }
   ],
-  "approvedPhotoCount": 49,
+  "approvedPhotoCount": 35,
   "replacedVariantCount": 51,
-  "prunePaths": [],
+  "prunePaths": [
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c01-fume-dark-oak/right-side.webp",
+      "bytes": 61296,
+      "sha256": "f3c80167d961af8f420d1e20b626c88ebe1da28f2fa6643baef94b5896d8d765"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c01-fume-dark-oak/top.webp",
+      "bytes": 89108,
+      "sha256": "f65179dab6696285e9452cac3b862a028121cc0f79595c3e6826e16e11e32c6f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c01-inci-oak/right-side.webp",
+      "bytes": 44168,
+      "sha256": "1300d66c9804f61f4b8abb09e31a8efc61173f1b0223f09246149d2f9b15fc8c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c01-inci-oak/top.webp",
+      "bytes": 64488,
+      "sha256": "d18bbb75fc72260adba24ad8eae32efffa908022ec91ebded86b7228bc053c8d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c02-denim-oak/right-side.webp",
+      "bytes": 54886,
+      "sha256": "1d8bdc17be527b72b88b4718dea32bbfb7694f93257886ad2467dc04bf1705c6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c02-denim-oak/top.webp",
+      "bytes": 90526,
+      "sha256": "6e43a59c415dcbdc6d35cadace50b33500070238357a6fc26d20b573678af306"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c02-tas-dark-oak/right-side.webp",
+      "bytes": 75468,
+      "sha256": "86798bd3a22389ddbf0134621252edfcedd6ed8d87da005fcff7c612cd0570ae"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c02-tas-dark-oak/top.webp",
+      "bytes": 87742,
+      "sha256": "aa7b3db76ebcce2a9ab120375c535a8aeb93c449960f2840df434514f4bd21d8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c03-buz-mavi-oak/right-side.webp",
+      "bytes": 91738,
+      "sha256": "000972c285b11a363373c80d6a285604746d2c156fe8880cda407d258ba500b2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c03-buz-mavi-oak/top.webp",
+      "bytes": 76698,
+      "sha256": "c6b543c290f2955f44cc94e6426c467d8e2c9753ebe436816098d3613c36538b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c03-zeytin-dark-oak/right-side.webp",
+      "bytes": 55760,
+      "sha256": "9ae4295b4157f42af4dc9a424f27f68e99265466536d930e6485c140a0454939"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c03-zeytin-dark-oak/top.webp",
+      "bytes": 77048,
+      "sha256": "cd45bf7a4812f29d434c1a061b9413e5692a732ad15deb1cbb5707eafc63e812"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c04-cikolata-oak/right-side.webp",
+      "bytes": 47274,
+      "sha256": "70e94a3838eb32c1c64d54f0a709b43fff56c2c2efe6b334fb44fb0ffbc01281"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c04-cikolata-oak/top.webp",
+      "bytes": 76628,
+      "sha256": "c3806232973df96e55e5cb3247353e95810bfc72d88de70e6d4cdb2b606ad879"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c04-krem-dark-oak/right-side.webp",
+      "bytes": 57176,
+      "sha256": "08bde27840291cd166df0f9f39e98edaef0d7d8853ebbf2d468479a30f608cd3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c04-krem-dark-oak/top.webp",
+      "bytes": 68158,
+      "sha256": "808f13ceba27988917b94c6ab479e8975e6e45b90ce1736b7700c7abe4156f9c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c05-orman-oak/right-side.webp",
+      "bytes": 64788,
+      "sha256": "16145ed9e571b224bd12b09be32a0849ac1d41966c5c0fd95b4859dca2a729c4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c05-orman-oak/top.webp",
+      "bytes": 59358,
+      "sha256": "7b754c509f11aedcda3a7a85d173f9969c4ab103c349b843db3de5ca6ba33777"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c05-porselen-dark-oak/right-side.webp",
+      "bytes": 79194,
+      "sha256": "91057527f901f5a47fece4c13e3bffb157ee25854e15c8a6c21254aba4dd72de"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c05-porselen-dark-oak/top.webp",
+      "bytes": 72958,
+      "sha256": "9547fc2b6669508ef99d25966c22965da1b9af8a89ccfd4c46bbd8e426c5127d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c06-bordo-dark-oak/right-side.webp",
+      "bytes": 31750,
+      "sha256": "b4337ef19ebb23c4c6f3f15d60a4848a91a0d58e0a0306b2dbc648e883b1cdf0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c06-bordo-dark-oak/top.webp",
+      "bytes": 42826,
+      "sha256": "cb06d827d62874d0020aff3dae5085c73708b3f9cc59c3510dd03aec44cfbd83"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c06-sis-oak/right-side.webp",
+      "bytes": 29988,
+      "sha256": "fbe03720f9006f7b75eaca6902611635704edd2d5bad6a4aad5b07f54306bd89"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c06-sis-oak/top.webp",
+      "bytes": 44684,
+      "sha256": "e7e268800873dcb93aece026a8d3626ae4fde1b66b38b4502b3de1968c1b326f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c07-sedef-dark-oak/right-side.webp",
+      "bytes": 50448,
+      "sha256": "f5f8ad3cba9e6b57f743a5625a0ee469dafd3bd7fc3d0e87585c3111f63dca04"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c07-sedef-dark-oak/top.webp",
+      "bytes": 56208,
+      "sha256": "365db037010432fe18a6fd485f4e15e42fb6e3939b4b40651f33dc929e4f1a67"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c07-tutun-oak/right-side.webp",
+      "bytes": 65560,
+      "sha256": "7023d9ad895879cf6ddef499036f422c2549dd3073336cb23a33bc5da597afac"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c07-tutun-oak/top.webp",
+      "bytes": 62496,
+      "sha256": "2f6a9abefbefd0e8201125bfa5fb6e70ff054c567c99c51c1171252cbe0a0473"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c08-karamel-oak/right-side.webp",
+      "bytes": 79638,
+      "sha256": "51448b9e2497cb1bd780aec345e43098e44fff9d3219e79d9cc739fb11fa9347"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c08-karamel-oak/top.webp",
+      "bytes": 73426,
+      "sha256": "062957d11b6175d8e61002b3a114b56532bd55b352c3675553bbab3751b6379b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c08-kiremit-dark-oak/right-side.webp",
+      "bytes": 89448,
+      "sha256": "bac8d2b54a3f0dce13258d3b67abf75a3593ecd4ac3cede0f28c1b7ce3118ca1"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c08-kiremit-dark-oak/top.webp",
+      "bytes": 85980,
+      "sha256": "e89086fce6e16894f6bb3508e15e9216df395d076bb9b6f45037f3bc98e41d3d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c09-antrasit-dark-oak/right-side.webp",
+      "bytes": 48446,
+      "sha256": "96911bbed2578e809849bca50b05646cf9f54302e110bbeec3dec82ae3a263c7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c09-antrasit-dark-oak/top.webp",
+      "bytes": 48920,
+      "sha256": "ff9687abdd5a2b60df304b5af7ec8a89e96f842262d3bd0be39907cc431b3773"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c09-bal-oak/right-side.webp",
+      "bytes": 58204,
+      "sha256": "7bd7c1e880a618ba1cbb10e9d1cfc58c9c16d532aeec4af5cf0120d2b8b48eb9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c09-bal-oak/top.webp",
+      "bytes": 74702,
+      "sha256": "e0476f815cad26fb6b2a50c93c3a296f7cbd88261848b303e29142a83fce7db0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c10-bej-oak/right-side.webp",
+      "bytes": 37852,
+      "sha256": "c13dcb5bfea23d2a2401d1304362f6018c1c2d43d5c4344fc0fb38a4e8f13175"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c10-bej-oak/top.webp",
+      "bytes": 56836,
+      "sha256": "be734350cd04e87d1ea397007e0969e7be395218e8d525edfdadad4c21e23905"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c10-hardal-dark-oak/right-side.webp",
+      "bytes": 64148,
+      "sha256": "e204c9f7ba65b713709de72f494212159f7c00b9c300417fd04ef38f0ad1d08e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c10-hardal-dark-oak/top.webp",
+      "bytes": 65994,
+      "sha256": "60cdebba30c790c53e2b770f017901df5b8cdbebb75f8a0e67868648656ae9b7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c11-kehribar-dark-oak/right-side.webp",
+      "bytes": 73258,
+      "sha256": "0f1ec3ac08880b728d9b36d78654fc8b315a033b4b446f0316ba4636374ef7bc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c11-kehribar-dark-oak/top.webp",
+      "bytes": 97678,
+      "sha256": "e797a09df5162301a2eaed73c7c9b567566a8c050fbd074c27af9281876a3cb3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c11-lacivert-oak/right-side.webp",
+      "bytes": 46858,
+      "sha256": "4fb9877b8987f4b18758366f67fd6af4953e9ed31c64c21b068743badf06bee6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c11-lacivert-oak/top.webp",
+      "bytes": 72520,
+      "sha256": "95f513d65be085d932d2b231d49a4f888ced00d1ed051fd6266a19f91569c709"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c12-ada-cayi-dark-oak/right-side.webp",
+      "bytes": 52654,
+      "sha256": "ee7b6a9920de768711636fbc31465d6803a8676e627a17ecef91f33e22b707e9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c12-ada-cayi-dark-oak/top.webp",
+      "bytes": 79980,
+      "sha256": "eaa025bb06a816c3a242af72ee48b8dee93ad1d503648763a4fa7d80eee9a9f9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c12-inci-oak/right-side.webp",
+      "bytes": 46610,
+      "sha256": "13bb66059ee0c3f3880b9d713410eafb62576520272d82762b075aa47f58a693"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c12-inci-oak/top.webp",
+      "bytes": 57532,
+      "sha256": "668fa938718db67ca4cf2d9b24cfc899e308a22719c8a5b09f5a2726f2fa1cc6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c13-denim-oak/right-side.webp",
+      "bytes": 43372,
+      "sha256": "3b18c6e878ebf96e9f7fd68cf96a2f32cd7f0bf24f2f66eb8586ceededff91c0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c13-denim-oak/top.webp",
+      "bytes": 83474,
+      "sha256": "636193c51ef06cf6af06a1f86c68621ff9f9c5247e4e65c7e53c709403efbea2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c13-kum-gri-dark-oak/right-side.webp",
+      "bytes": 95104,
+      "sha256": "c3a84ee68373e681f2253ea2249d83ab290b0bb771f94fa677fb325acd4d670b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c13-kum-gri-dark-oak/top.webp",
+      "bytes": 70664,
+      "sha256": "d876b6399d8318f38d8f4b2c87a454f988b4890b02052c2062c8aebddb7abe5a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c14-gok-dark-oak/right-side.webp",
+      "bytes": 79210,
+      "sha256": "dac92bddaab333d4960ff2e190fc970dbc783d140f8d3967f504cc887a780973"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c14-gok-dark-oak/top.webp",
+      "bytes": 80608,
+      "sha256": "48e240915e54483ddf5531206af04ebeebf3848d40a5c03f7408482a7bbdeecc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c14-zeytin-oak/right-side.webp",
+      "bytes": 54752,
+      "sha256": "5e5cbfa70040bb44394a1bc84e25fd24cdd3cd622fc69f441fe19ecfd71f1c5c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c14-zeytin-oak/top.webp",
+      "bytes": 63480,
+      "sha256": "7e829ea1015b30889acb25c8d6bcd549c1f2267ebd94c4400d7e3ddbcc267fba"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c15-fume-dark-oak/right-side.webp",
+      "bytes": 63964,
+      "sha256": "c14648cc47687d4a9392178402dea8a794076bd324579014cbb6e860b6ffb404"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c15-fume-dark-oak/top.webp",
+      "bytes": 109884,
+      "sha256": "ab2292bc03a35809fa99bf86baa6421791d50067c27d87c1f7abdcec2c279e3d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c15-krem-oak/right-side.webp",
+      "bytes": 44580,
+      "sha256": "43019f60a7b1146b9cf028b27c2aef0be1235e0b72aadd8226fbb1344c35529d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c15-krem-oak/top.webp",
+      "bytes": 119546,
+      "sha256": "33373b937f7b8b04f1b0b49819ceee31f54261249bd953b248ee862146ba5967"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c16-orman-oak/right-side.webp",
+      "bytes": 44874,
+      "sha256": "375dc286dcc0e6903cdbf173e37da44ba3e76d20dc8b110d970eec0a439c7303"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c16-orman-oak/top.webp",
+      "bytes": 65028,
+      "sha256": "4947d57a428342b3b99b727529f3047f246840c95a1d21fc17879283b8854e88"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c16-tas-dark-oak/right-side.webp",
+      "bytes": 54726,
+      "sha256": "707a01c94d8a6275a5b6f6470549e8f49693c5c56cddb85d9f37f09eebced252"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-c16-tas-dark-oak/top.webp",
+      "bytes": 93328,
+      "sha256": "d8114211f2c2dd2082de5dad6b192b19bb0872ae54a840698c4c3de7906ddeba"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d01-bordo-dark-oak/right-side.webp",
+      "bytes": 32950,
+      "sha256": "75c35fe7a0587639bed7b3e318304c63e76303bde0ad1f05765d1cb8ad1d1e4f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d01-bordo-dark-oak/top.webp",
+      "bytes": 48340,
+      "sha256": "69c2051e4f04abaffd0bba388b5696fec3f70a769aaea10b7cc87abb443aeec5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d01-sis-oak/right-side.webp",
+      "bytes": 37878,
+      "sha256": "8f4efbc9007bc73bdc04f519d7a928bd9c2571a9eb83f7cf90af8a90c3f36485"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d01-sis-oak/top.webp",
+      "bytes": 79896,
+      "sha256": "3be58dade0f9e74105326eb0e238fc28022db4f91192d52fca75459e8e0ee263"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d02-sedef-dark-oak/right-side.webp",
+      "bytes": 100662,
+      "sha256": "d7217bec4ca71789494741754ad7644743a4555138f923d77f8bd7362a23b9d2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d02-sedef-dark-oak/top.webp",
+      "bytes": 70812,
+      "sha256": "769f249e8bffbe58fd73be687c57f68f80f9478280ec8aabdba10a9e51a6f6af"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d02-tutun-oak/right-side.webp",
+      "bytes": 56556,
+      "sha256": "65a8137dad1e6c706fbdfe1d82343896b72ca5ebcd21a9e51e8ff69a9d6ef594"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d02-tutun-oak/top.webp",
+      "bytes": 63150,
+      "sha256": "b4ef42af296cab4543df8eea69fe8022e6bf6a7140ca1cb7e17a9baea415e0ce"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d03-karamel-oak/right-side.webp",
+      "bytes": 53924,
+      "sha256": "b40781ae060138498bedc99869eec0af014dcdd6028aca8d9632ac18c521472b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d03-karamel-oak/top.webp",
+      "bytes": 64882,
+      "sha256": "1894bcf4ac290a6e602be67bf9e042c8108e9fa0c71b2759ea5a5f0b849ebc18"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d03-kiremit-dark-oak/right-side.webp",
+      "bytes": 92300,
+      "sha256": "35b863dd8eb673726fbcfad04f53b098d01f96d8849e0699e004f9fea480358e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d03-kiremit-dark-oak/top.webp",
+      "bytes": 91372,
+      "sha256": "c30c74cf86e6457e399471fdd5b1a5d3419ac591c6d5b15893cb9c31ed377ba9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d04-antrasit-dark-oak/right-side.webp",
+      "bytes": 48934,
+      "sha256": "eaa2068d987cddef17df7ae8ca20ff85e46be2d99da44b445b603ea7bb35fe70"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d04-antrasit-dark-oak/top.webp",
+      "bytes": 66886,
+      "sha256": "f309dc4de8e6bddca85a095a6410d0da6bb95fcf5b33df23bb716f51c098a1d0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d04-bal-oak/right-side.webp",
+      "bytes": 65778,
+      "sha256": "057be31be639ab4563f715e1effcee2bff9ddef9fa05e23aa1104d473ac162b3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d04-bal-oak/top.webp",
+      "bytes": 99706,
+      "sha256": "7026256462d1916e7e254195d239e4223de448365c1aa35a50a1170661942cf5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d05-bej-oak/right-side.webp",
+      "bytes": 60350,
+      "sha256": "db0a064ecca08f00af4d7acf597751cdc0f45f66be616f6b1edadeec6791938a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d05-bej-oak/top.webp",
+      "bytes": 53380,
+      "sha256": "fd0e4fc4d93908c564e149b69eb94475169895b7706fa27c4913fbb2961a4061"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d05-hardal-dark-oak/right-side.webp",
+      "bytes": 80374,
+      "sha256": "25a295df114ee076c0f9bc3dd3389172a0e76080a4c79039fc18e9f2abce14bb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d05-hardal-dark-oak/top.webp",
+      "bytes": 83728,
+      "sha256": "7b3686ae3410eedc636ed26eb46204614f780f1f836baa8113b12fd65975b76b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d06-kehribar-dark-oak/right-side.webp",
+      "bytes": 96532,
+      "sha256": "52e8394e5f60b286dd6d40d3e9b0e720eff45b501219763d3d24ddc82e1d4f0f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d06-kehribar-dark-oak/top.webp",
+      "bytes": 77576,
+      "sha256": "e1232fb206f8c7be082f4bc66b160e98ed9104cac974c8c6483919be0bdcb0e9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d06-lacivert-oak/right-side.webp",
+      "bytes": 87018,
+      "sha256": "ae63f0c4ed4d2f66b230b48825a49787c145ca49835c4f3e3d107bec9e55ddff"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-d06-lacivert-oak/top.webp",
+      "bytes": 53994,
+      "sha256": "fab49a2ce6fd963961d735fadc8a5ba9baaced1898c8348d63737a811f8c14a0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k01-buz-mavi-dark-oak/right-side.webp",
+      "bytes": 59980,
+      "sha256": "aeb907668bba53ad78153610fc5fd067166089eadeade2965024133b1d2fc501"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k01-buz-mavi-dark-oak/top.webp",
+      "bytes": 74836,
+      "sha256": "80589c5eca6cece763194fb2e2dd701a18298b6a168a843dd5cbe2550efa1c70"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k01-sis-oak/right-side.webp",
+      "bytes": 61380,
+      "sha256": "2e995f5c759bf6ee92452367f37886134888772b768d7e0e83b773f091e719e4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k01-sis-oak/top.webp",
+      "bytes": 73462,
+      "sha256": "330c480e4604a20e6bb829cf6d3e57bdf8b6228ddda77b76b9071eb8dd742e48"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k02-cikolata-dark-oak/right-side.webp",
+      "bytes": 39698,
+      "sha256": "e9f29bfdd3c66fb927deb22df7e29b14f3cea8ed7f79a7e3cc60c4d9c0a42de9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k02-cikolata-dark-oak/top.webp",
+      "bytes": 24148,
+      "sha256": "60abc3165669311908567119907e83fdbb9ea5f56baa1416169a1e13e1c39bb9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k02-sedef-oak/right-side.webp",
+      "bytes": 32366,
+      "sha256": "f86e4e703fb6208eb67b8836c2f1944e38fadd0c3f69f3571edcf004700a06e8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k02-sedef-oak/top.webp",
+      "bytes": 28218,
+      "sha256": "fa67bd6bf8bf66c89b72c37d9961080d087f3af7bb9bf74583ff1dc862507f23"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k03-karamel-oak/right-side.webp",
+      "bytes": 53438,
+      "sha256": "46d5c19598be6795c30729e6085553f7d340d011199f393c672d2cb6c7e9af97"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k03-karamel-oak/top.webp",
+      "bytes": 54994,
+      "sha256": "100c93dc431a916716e630debf80ec7dbb842a62ad630e64da4cfe0344514873"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k03-porselen-dark-oak/right-side.webp",
+      "bytes": 58746,
+      "sha256": "deded7ddbd1b39188e4d32328d2083c7531393a4eeb81da9425517272379fb55"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k03-porselen-dark-oak/top.webp",
+      "bytes": 60008,
+      "sha256": "dd946c224a4c9332bccf8faf1b1a2929bfdd3c0be988e4c003daf04836269303"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k04-antrasit-oak/right-side.webp",
+      "bytes": 57536,
+      "sha256": "8c06fbf7b7e8d1054a56e331dce6a699d9cece4df3165b89c489e1f5344600f0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k04-antrasit-oak/top.webp",
+      "bytes": 70498,
+      "sha256": "c09a84769c4bf68074e3c764a81e12bcf06dd505143ce185af8a744641f1e4b7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k04-bordo-dark-oak/right-side.webp",
+      "bytes": 62854,
+      "sha256": "1f20f78719b96b256a878f52afe62ce4b2b16dc0a53ce8a80eabc889bbb604f9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k04-bordo-dark-oak/top.webp",
+      "bytes": 68120,
+      "sha256": "ed4084b4f3c63d83bf2ac6366ca4fe21b504e8e4e5ea5a55343bda4ebf5a62f4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k05-bej-dark-oak/right-side.webp",
+      "bytes": 46402,
+      "sha256": "6a917a83acec966a45d7c664e8aa4d082d5d337771a5adc77e9a389ce6265e78"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k05-bej-dark-oak/top.webp",
+      "bytes": 62130,
+      "sha256": "a519709c77d0cb8a1230cbf617abdc781dc2b245ec9b69a1a75ee2dfaf768c57"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k05-tutun-oak/right-side.webp",
+      "bytes": 62126,
+      "sha256": "e4292a6ca8617abd4e7b9df3780020c8ec2b025b7083448c2d6a64f92d1f8f0a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k05-tutun-oak/top.webp",
+      "bytes": 69780,
+      "sha256": "f0a0f05769be932d789d96d3465566bce00147ab7a157c2a4f5ba1806188b7bc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k06-kiremit-oak/right-side.webp",
+      "bytes": 56504,
+      "sha256": "c4165714042aea4a25e52ca282b635eda49f743dac99253736d0db4ed2067e7e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k06-kiremit-oak/top.webp",
+      "bytes": 47544,
+      "sha256": "3a4551cdaf3134820440cd2e6eaf884712589e31f356cd9ab8b6e48e762d9a59"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k06-lacivert-dark-oak/right-side.webp",
+      "bytes": 40142,
+      "sha256": "d24f2b827aba5e6b0f77f909384719fea0f451575b3aff4893a9d34fcc1a59d6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k06-lacivert-dark-oak/top.webp",
+      "bytes": 45948,
+      "sha256": "2ba76ffbedf14db64fd46a7f2d43ddb2922a329232d1c09adf88df15f1804c11"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k07-ada-cayi-dark-oak/right-side.webp",
+      "bytes": 55296,
+      "sha256": "b6f82f323817a99cbf921b04c0856c9c937c94258e74a8141e4abf386e7a3121"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k07-ada-cayi-dark-oak/top.webp",
+      "bytes": 107160,
+      "sha256": "8832cdf98acf7feafa3d3f34ab9c910b2e87df904d551044c56d7b7d8cd57c15"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k07-bal-oak/right-side.webp",
+      "bytes": 63192,
+      "sha256": "5ac2b97f8b7ca3d011dfe0418e3c69e684c4cd2486a62a54581efdf843bac0c8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k07-bal-oak/top.webp",
+      "bytes": 69420,
+      "sha256": "bd02da575ba185829cf916a4ed0bff74506c41a23bff262b0e3f31001b67f0b4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k08-hardal-oak/right-side.webp",
+      "bytes": 69114,
+      "sha256": "35a2a89c98305e6326d2416dcd31c843b64edf6e2132f5d03f332150438f5488"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k08-hardal-oak/top.webp",
+      "bytes": 87978,
+      "sha256": "d5fa091f1346ff8187b7867d2a75604987f3011c6686a774713ca3083e09f61f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k08-kum-gri-dark-oak/right-side.webp",
+      "bytes": 60188,
+      "sha256": "e22f4e916680a2222787def9e56f5a8ddbee18fdee8d3036ab38d50cdc903167"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k08-kum-gri-dark-oak/top.webp",
+      "bytes": 65054,
+      "sha256": "5583dd2e72b34f088fa868a92e0ae191e891e4601cd7270a4421a20908e24f88"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k09-gok-dark-oak/right-side.webp",
+      "bytes": 90462,
+      "sha256": "b6e798a5da5f8bf7d1677715e7e6564c012c278d26ed035aa4e29a5325b6cc76"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k09-gok-dark-oak/top.webp",
+      "bytes": 87948,
+      "sha256": "2781bc62324971880566a448946857648bef1707a180ee84d10f96038aca773c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k09-kehribar-oak/right-side.webp",
+      "bytes": 65582,
+      "sha256": "440304db16a2144db476c17d5cbf37385f24711dc7d86b3879b8af7ed0e892fb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k09-kehribar-oak/top.webp",
+      "bytes": 86022,
+      "sha256": "cb4c335e0ecbcd542492302228dc59144e22578c771de03160b4a953171c4708"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k10-fume-dark-oak/right-side.webp",
+      "bytes": 59520,
+      "sha256": "99d32324e53a38a093c867b86c6dc091d4a61bb0967c90d48df350aa179b136f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k10-fume-dark-oak/top.webp",
+      "bytes": 55072,
+      "sha256": "9e67306440529197e340ca7cdd89570f5219962c69c6f91d9b64388582a5deb6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k10-inci-oak/right-side.webp",
+      "bytes": 42390,
+      "sha256": "804f751b554123b0dc6aa7dedc76c970ec3d36587acc8a3f47f26f8f9a3e0676"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k10-inci-oak/top.webp",
+      "bytes": 47652,
+      "sha256": "b0e6f8edccf77c27019262406b349d31acc860f08dbf01729666685b57b7c352"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k11-denim-oak/right-side.webp",
+      "bytes": 53408,
+      "sha256": "40f5e5258427b8ac4071612dbac645121ee1a5a5c47efca893776512fa02e5a5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k11-denim-oak/top.webp",
+      "bytes": 67950,
+      "sha256": "6403e0f3f27f1ad6e7e206373fa7e18f4923663a6589ad95c2650dcc0ac65001"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k11-tas-dark-oak/right-side.webp",
+      "bytes": 55912,
+      "sha256": "020b67e969e979c3b323c18315f95065f1f819dc4ef01bfe434e972966ec0ad0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k11-tas-dark-oak/top.webp",
+      "bytes": 75538,
+      "sha256": "e99584db4a88551eedf1b1a0fec31ac1cda870331672f37ead1da9329238e2ce"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k12-buz-mavi-oak/right-side.webp",
+      "bytes": 51172,
+      "sha256": "d5efdc97239b8c29f5044e2981aab7a6e2bc9168238367d32818508f78c68d55"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k12-buz-mavi-oak/top.webp",
+      "bytes": 64314,
+      "sha256": "6a91e7b4f7a45aef9686bb9abeeb9cd064683b5c6c788cdc65e679816415e3b6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k12-zeytin-dark-oak/right-side.webp",
+      "bytes": 59632,
+      "sha256": "116c747215e3fbe2dfe2f8a17656cbb41fe7841db575f3561ca2c3a866c17faa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k12-zeytin-dark-oak/top.webp",
+      "bytes": 77188,
+      "sha256": "6148364aa443027fa205de144c7d57d7160a66ce4b703ffdc6c6375e7bc64b01"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k13-cikolata-oak/right-side.webp",
+      "bytes": 59182,
+      "sha256": "f079e429d7a4ff40eb2e7d6dfb0958a4cad9084f97b5d054760923af009ffd3e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k13-cikolata-oak/top.webp",
+      "bytes": 35602,
+      "sha256": "b323b90c7a9f145b4ff60fe2e11afd9e6b9e677451bc7f371ad2787df505279e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k13-krem-dark-oak/right-side.webp",
+      "bytes": 51996,
+      "sha256": "a993119c89ce552ce9e3f0f51c78758ea8a5abee501b30311392123cf5c04544"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k13-krem-dark-oak/top.webp",
+      "bytes": 46306,
+      "sha256": "f9326439aa8ff96bb60b40ebc59781530cc1ca98aeb708b0bd3ae20472fc9ac3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k14-orman-oak/right-side.webp",
+      "bytes": 56380,
+      "sha256": "81f815de307976b1d9fab074efb05576acd6870d4f1629254c24621c2778c774"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k14-orman-oak/top.webp",
+      "bytes": 75018,
+      "sha256": "006fa4a5d63647621dea7e65d62a3f07b4c30b926326bf4b9ef11e3d301085d5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k14-porselen-dark-oak/right-side.webp",
+      "bytes": 61560,
+      "sha256": "ab3f0853ecfe4b6664d707866424a29014c33601ed7b5794daae4ecf96b2439b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-k14-porselen-dark-oak/top.webp",
+      "bytes": 74082,
+      "sha256": "8b540f6a293d13302459879129bf43157e4d3bb9e9f1e62ab6e3760970f9fcf0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s01-ada-cayi-dark-oak/right-side.webp",
+      "bytes": 62082,
+      "sha256": "56d897c8d75056b1982d1f52f54507a6a65dcd65f9123e892578fe26f6a16a1a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s01-ada-cayi-dark-oak/top.webp",
+      "bytes": 77570,
+      "sha256": "0f9ff474661c47f02f50a4d9930e3b5f2f7de8762a086f97862f074d0b04dbf4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s01-inci-oak/right-side.webp",
+      "bytes": 36616,
+      "sha256": "191bb1e4430aa5f47de05a23c693aeee3d86673fe1e9f668046eb862f73d64ff"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s01-inci-oak/top.webp",
+      "bytes": 74822,
+      "sha256": "a310170a7dd9262ec887f454caf502598bfd44c8f043b0e31dc5740517003c53"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s02-denim-oak/right-side.webp",
+      "bytes": 61598,
+      "sha256": "fdb565f7988b82c70d8d5ebe90574fce3edde8b3029b4f9e10c49fbe826befa4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s02-denim-oak/top.webp",
+      "bytes": 99418,
+      "sha256": "b42a7196ad01476cb70725864fff117a4ab111a690e3b08d8b4365ddd675334d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s02-kum-gri-dark-oak/right-side.webp",
+      "bytes": 57300,
+      "sha256": "d243e133ba2d5470fe9fa719efaa1af368eed831235a95e29feb18ff20023154"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s02-kum-gri-dark-oak/top.webp",
+      "bytes": 67070,
+      "sha256": "39e898596ffcb9982b59445247bfca8010f8eb51574e8bdfe342c5c62bba3056"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s03-gok-dark-oak/right-side.webp",
+      "bytes": 69944,
+      "sha256": "3e25ab8cb314eeaa091b210351b118b24f780a39f9d33e034475e6cd4c5d4ab5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s03-gok-dark-oak/top.webp",
+      "bytes": 76896,
+      "sha256": "e993e233b316ed3de833931f685df0630608c85a84df8ceec050c81c0948b623"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s04-fume-dark-oak/right-side.webp",
+      "bytes": 43718,
+      "sha256": "ba251271b40bd66b79fd7807449964e4a1d91bb2e31db9882ed085b8be451e40"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s04-fume-dark-oak/top.webp",
+      "bytes": 59184,
+      "sha256": "3e4c93af4f4952e67deab0f056596480678a39eef97e63f328793eb098a523ef"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s04-krem-oak/right-side.webp",
+      "bytes": 40946,
+      "sha256": "72e9e7ee1e8fce0ff7b66255d81a94cce144e001bc509d6724facbeafcd85837"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s04-krem-oak/top.webp",
+      "bytes": 46328,
+      "sha256": "568fdf04e113384a0ec3dfd5073dee55a292f037f2142eade289147f382332ee"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s05-orman-oak/right-side.webp",
+      "bytes": 69932,
+      "sha256": "482f37726cb5c36a04ada4b5cff0355be8f57a8685b170d6242fa398a80af10f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s05-orman-oak/top.webp",
+      "bytes": 56496,
+      "sha256": "dc7dbe7c8478a74d42f753536696f2641ee9a2812afd5641a26cbae08db14a1e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s05-tas-dark-oak/right-side.webp",
+      "bytes": 77220,
+      "sha256": "263d46e1988dcefaa9dbcd2ce79505b33c37ed3b88fc9c3c8a5fa609d29d9945"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s05-tas-dark-oak/top.webp",
+      "bytes": 73638,
+      "sha256": "a5db52e2298d70a8bc9ac58202527b01b6138fb0754a74a71772583722b26f5d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s06-buz-mavi-dark-oak/right-side.webp",
+      "bytes": 40850,
+      "sha256": "146010250a29e0c6c6ef6c063c3377b021104e1fd7e0874591581c8cab9fa413"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s06-buz-mavi-dark-oak/top.webp",
+      "bytes": 48358,
+      "sha256": "841eb8695fabdae17264070e6d6ff79a0040c6954d8b0890b288949ac39ac73d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s06-sis-oak/right-side.webp",
+      "bytes": 36244,
+      "sha256": "76a6dd8fc16ea55a73141abac5d410dc50483b794f5aaea40a41f60baafa6832"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s06-sis-oak/top.webp",
+      "bytes": 49420,
+      "sha256": "0dcf3cc9a4f32d8a56631b49b4bda0fe6c436285690251ea0ba5edd8028e1495"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s07-cikolata-dark-oak/right-side.webp",
+      "bytes": 58084,
+      "sha256": "6ccf5e952f77db09f219b45c63a14720274434eb20847af7dbbc9a07b69f159e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s07-cikolata-dark-oak/top.webp",
+      "bytes": 59988,
+      "sha256": "e2e88d67718687a7b8f07751ffb2ced3eef76d422737eaae0135a4f78dffd9d5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s07-sedef-oak/right-side.webp",
+      "bytes": 60306,
+      "sha256": "267397645f866cf84d123652731361add2b47287abf6d8109d65f48561d6c342"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s07-sedef-oak/top.webp",
+      "bytes": 55416,
+      "sha256": "9d5aa43ac27a0400c3e96f4b3404512d9d0c2de40f7b57aeddd1234a8288993e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s08-karamel-oak/right-side.webp",
+      "bytes": 40792,
+      "sha256": "32fd390dbfc3737b942314489ba0f51a48e9e4c724cc909bc41cdf2eefba46a2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s08-karamel-oak/top.webp",
+      "bytes": 60446,
+      "sha256": "9ad99211acb905c9f419bfe225830077ab37c4a5c2e0a5b089e42da71cfc552b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s08-porselen-dark-oak/right-side.webp",
+      "bytes": 56368,
+      "sha256": "be3dd1667469fca729b8dd1918ed40589a1c3e93b1eb022e32c4a3dac1e17cc5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s08-porselen-dark-oak/top.webp",
+      "bytes": 50502,
+      "sha256": "96956f61c72a167a689d26e94ec0334fe6d6a01633a64afdbb889ecc5f2da4b8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s09-antrasit-oak/right-side.webp",
+      "bytes": 60206,
+      "sha256": "5c73c2dae16de1cc2de782a9817cceafb1fa3c3496c719b10adbe3458d2bd701"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s09-antrasit-oak/top.webp",
+      "bytes": 52282,
+      "sha256": "62e2e00aee7bc280dbafa4bc338e551fb92de0b5a9f197db787ec49c869c589f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s09-bordo-dark-oak/right-side.webp",
+      "bytes": 45950,
+      "sha256": "139af1cc71bb3ab5d5cad349e36338e74efd8146c13bad9a014a6bb36d8f95ad"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s09-bordo-dark-oak/top.webp",
+      "bytes": 52226,
+      "sha256": "1d3b4f1fcde1a3a5ce2fd8be2ac4d3921b955e38abee9399e9cf09a3e9fb2853"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s10-bej-dark-oak/right-side.webp",
+      "bytes": 40610,
+      "sha256": "f3d68cb99547f6503b44bee21bb2264aed2d3e2d488b705508b87ff783020ca2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s10-bej-dark-oak/top.webp",
+      "bytes": 55340,
+      "sha256": "e64bba7fe4a15905ae28b732b14cc614b1cdac663e4edd936eefe0066838d572"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s10-tutun-oak/right-side.webp",
+      "bytes": 43522,
+      "sha256": "e263db6e32a188ca08fbe1cc97693080995a62df678427bb594c6db132821c26"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s10-tutun-oak/top.webp",
+      "bytes": 50384,
+      "sha256": "20f3176fe7a0082efd42e4e339bff84c9960fef97462eb1bba27f3c9af3ada74"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s11-kiremit-oak/right-side.webp",
+      "bytes": 74768,
+      "sha256": "1a21a779101817c1c633db55075c0e293d4bbc30f229b7ad5c5d89b0bd6eb9cd"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s11-kiremit-oak/top.webp",
+      "bytes": 79104,
+      "sha256": "1d1630d335fe42e6abb09ef038034c2614eea9fa290e2045e095029ed752e3f7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s11-lacivert-dark-oak/right-side.webp",
+      "bytes": 54114,
+      "sha256": "7996d3430aca55280c37a8a7659bd25d74933dcfa5cf767b9125051fec5acd44"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s11-lacivert-dark-oak/top.webp",
+      "bytes": 61750,
+      "sha256": "65ac3abf764e6b739982e20da8bbfb102469b8f832667f66b234e3c01b09ed8d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s12-ada-cayi-dark-oak/right-side.webp",
+      "bytes": 61578,
+      "sha256": "dc994aaa913c2f3e09bf745071f80d7e2ac95e1d8885d9641029b90b07c0400b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s12-ada-cayi-dark-oak/top.webp",
+      "bytes": 61328,
+      "sha256": "aee272d67c302855ea1710d142811f639b54b99784e8011462d62270328302e5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s12-bal-oak/right-side.webp",
+      "bytes": 51680,
+      "sha256": "c652cbd31490becaf5fed5b4574d45b47f55944da491e29889b19a6c1e9d1aae"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s12-bal-oak/top.webp",
+      "bytes": 72866,
+      "sha256": "42a64763c56f98139d60b65cacfb15b6ea504b3c1da2bea3c86d6d2b2799701e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s13-hardal-oak/right-side.webp",
+      "bytes": 64310,
+      "sha256": "fca868b4e03495843c361025b679f0ec4090988b2b46b1ce00528119b5137138"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s13-hardal-oak/top.webp",
+      "bytes": 79744,
+      "sha256": "41b419e240679ad7bf0842477eb3b62cc3e376984f7f0f337cb34d3d725eea2c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s13-kum-gri-dark-oak/right-side.webp",
+      "bytes": 68934,
+      "sha256": "937776dbe9780c54dc0ced9903b49bd9b79bd0592d048219ae8c64189ef200e3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s13-kum-gri-dark-oak/top.webp",
+      "bytes": 94426,
+      "sha256": "9413082055f43ef4f96d60d5ccdaa7c56a45cff9d35637e7de1f29fdc153ab16"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s14-gok-dark-oak/right-side.webp",
+      "bytes": 30750,
+      "sha256": "d7d40a01e3e5cbd6822f8dc79891f7a15872af1f3c6699b8614e371ba013888f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s14-gok-dark-oak/top.webp",
+      "bytes": 55900,
+      "sha256": "41affa2c978d868ce40a97bd797a34aa17fb3657c45ce624e5144c59703083eb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s14-kehribar-oak/right-side.webp",
+      "bytes": 29858,
+      "sha256": "c179ec47699cbe9537b925cd0d886c9ce1f6b82bb985a4d3e12cdccdeb8db53c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-angled-v72-s14-kehribar-oak/top.webp",
+      "bytes": 68258,
+      "sha256": "0cf56f61c2a1853208a36ed528c979a9428819a8c01af7a16b85dbc97b01868e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b01/right-side.webp",
+      "bytes": 40086,
+      "sha256": "937a1c1e16ad3259746736fad541ae8e061d26e8304607e47e5e6dabdd9cfc6e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b01/top.webp",
+      "bytes": 58970,
+      "sha256": "e218777d90da5d0878ef634d3f8eac243b91376ae87e023d613c6639ba9b7443"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b02/right-side.webp",
+      "bytes": 73598,
+      "sha256": "69623a3a89ec9274a5c94b0d479b4d449997ab0c9cef136844ed3f537277758b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b02/top.webp",
+      "bytes": 73236,
+      "sha256": "1a0514d05862d699149ddfa31a7c4fd60e17ddeb166c2c0530c865f0a3ea76cf"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b03/right-side.webp",
+      "bytes": 55828,
+      "sha256": "75fa67d1d01a5931b1c727c5c4ca6657d9afc95310e743f1747c98cbecf70439"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b03/top.webp",
+      "bytes": 98100,
+      "sha256": "b185b06b8c61716a02ac9cc95fd80c0f64ef64783f521cedad88fb2e4ea5088e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b04/right-side.webp",
+      "bytes": 45648,
+      "sha256": "9e53b49aef53798eda2ac37dcb2a7bec41c1079c2bcbe5ee9d5f626a067a4cef"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b04/top.webp",
+      "bytes": 68662,
+      "sha256": "9fde5ac05fc6882aec7c0d3ad611367747a6f51998e9f5978e3f07c9fcb17296"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b05/right-side.webp",
+      "bytes": 48538,
+      "sha256": "5f7f5261ef2c713a2d977b09db6135cc73754738c6da5c8388859cc53a868ac3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b05/top.webp",
+      "bytes": 38510,
+      "sha256": "3e6221f904eba02a2b935dc12059d3381329308347ca7efafb353a54dff6931a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b06/right-side.webp",
+      "bytes": 75304,
+      "sha256": "403e9c6ce1c0da027e25091102d0e8314ebfe32689fb62a7aa253af2b0ca185a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b06/top.webp",
+      "bytes": 79830,
+      "sha256": "0d75b65675c0eeda784ef92521b2fbce344c4003c6e75623289d5ad5834f0bee"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b07/right-side.webp",
+      "bytes": 58232,
+      "sha256": "fdf2b63a4faa069e9c3d94c514e80c2f2232c1844f287ce911b22cd02ba22e9e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b07/top.webp",
+      "bytes": 55876,
+      "sha256": "f57023db28988dd1551933670f86974583d13bbc8a85cf05c4f4f85030f5b603"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b08/right-side.webp",
+      "bytes": 45314,
+      "sha256": "d8df21bbb3b7ec292bfe027f8ef54a95a63d0a62fe366e651ee0fe828d55588b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b08/top.webp",
+      "bytes": 47166,
+      "sha256": "a463a7876320705391236d2decf68d47d212ade8760135d58afe52bdaa9549e6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b09/right-side.webp",
+      "bytes": 53378,
+      "sha256": "76b89ff102427cc1073fe92e7f05d84b658a42fc103230d07f611627108cf617"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b09/top.webp",
+      "bytes": 61998,
+      "sha256": "4cf141fe2fcd83d27cb87fefddf7ffbb21af3d93f1e304646cd4b03f269ff142"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b10/right-side.webp",
+      "bytes": 67462,
+      "sha256": "fbe316651557fa401b971a645bf2d1cf6e0c30bfc6c45d6a722dfc2f46a1c67d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b10/top.webp",
+      "bytes": 113292,
+      "sha256": "b2aaa0b32ca348ed026aa571de2a96054930cd07d0aab85f1ade9cef0959eea3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b11/right-side.webp",
+      "bytes": 83400,
+      "sha256": "4cbffcd04f73e0eb3c87a3d4c900e60182b07a4ba6365e978618fd4ee99be81f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b11/top.webp",
+      "bytes": 80708,
+      "sha256": "32cd5894ee963088e1e847a49b516671a4ec858ae3de395a727fa6dc3b93627a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b12/right-side.webp",
+      "bytes": 79854,
+      "sha256": "4c5db5c868db4c17442c90589f1328eb2481756decdf0f419a237e39a69dab5e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-black-b12/top.webp",
+      "bytes": 244146,
+      "sha256": "255c2e8fc379ffadab242cecc2752b70d7da9f705aa8a8b7e6fcf6ebe31b3e45"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-1/right-side.webp",
+      "bytes": 76804,
+      "sha256": "a0dc3b6952c87b59aa0f8bf0bc231d673ccc3dfc1f643e62f3a372aec53b733e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-1/top.webp",
+      "bytes": 156666,
+      "sha256": "43e07f63791ca5a6e9af9a1e588b897c6d65cc210b175ff5f2b1198cff25fa65"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-21/right-side.webp",
+      "bytes": 37134,
+      "sha256": "30f520b8271d157e3fbfa955eff1884ee1fc5b81d5201ced36a3d304d4ab26bf"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-21/top.webp",
+      "bytes": 60980,
+      "sha256": "7510bebb054f847a02e6e3f7c1eb2b0fa66fe8d35d017edbccd4fd5ce8de58db"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-25/right-side.webp",
+      "bytes": 35140,
+      "sha256": "4a2cebdedc1711ff93c06a50016026eb30e3db0f099441d0997b4777688f0f91"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-25/top.webp",
+      "bytes": 52856,
+      "sha256": "70490f03dcdcede351830fafb81c66b73d79ff27fbe9f7a248bb4b9d6948d4a3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-6/right-side.webp",
+      "bytes": 44442,
+      "sha256": "a0d9b9999572585eb3ca778d61113f1605e75b138f0893d7ed81ccc66c16e2e6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c01-6/top.webp",
+      "bytes": 124282,
+      "sha256": "02c089fb59dc9e740e257facabd49e0dce8cbe8158cab173fc38573524c90473"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-13/right-side.webp",
+      "bytes": 41976,
+      "sha256": "c7cd07c64e884a5a832be10ea2b3470a7f0cf36919cadb99973a5e505a02e3bd"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-13/top.webp",
+      "bytes": 68804,
+      "sha256": "d66c583256d74355a2f05d79add7e8a382e40136bfdc09af99a3ffd2d7dce3f4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-2/right-side.webp",
+      "bytes": 51668,
+      "sha256": "37fb1088c6cd25c470f5718e5a5c68080329ec454a73472ff6b2de54fd4b491e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-2/top.webp",
+      "bytes": 39066,
+      "sha256": "5f5007b34cb39f3acc9d1bff90baebbf14e0bb82c7f4b549f91fdaa1f377bd32"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-8/right-side.webp",
+      "bytes": 40338,
+      "sha256": "214511a6a5710f81943e1ee6a5360bc3bee7d2e9cd6aadcf3784fcada3cf5468"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c02-8/top.webp",
+      "bytes": 65790,
+      "sha256": "601c34c626bd22875e9f9a9feb81a3b1710941fb057086d710c0c8a8d8ee85a4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-12/right-side.webp",
+      "bytes": 31130,
+      "sha256": "643296c4edbef17172d3052dd885bc1b6bb347b9a90b9af6a99f2b42d2e0ade2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-12/top.webp",
+      "bytes": 52280,
+      "sha256": "1f47652cc8404640aaee260881b97b05b9ab8533e810a576df74e08e7cb62ae5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-22/right-side.webp",
+      "bytes": 28458,
+      "sha256": "c537a8a0e73b87822e535595014c137002b834197af778d45464697206fbecd2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-22/top.webp",
+      "bytes": 31742,
+      "sha256": "bd20835cca7f1306b2558f2dd8c8b05362c534ad3b5f2f9f4ac6a8f544e66bbc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-3/right-side.webp",
+      "bytes": 39096,
+      "sha256": "d117c3175be08ca7b20f0e4b9ee9755a8bbf40844cddcf82c6e38d8aa8981e4d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c03-3/top.webp",
+      "bytes": 80222,
+      "sha256": "3470660c5feb5cd5d342af9fdcab249f9dccd8b0677513befc299eee112720a8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-14/right-side.webp",
+      "bytes": 57538,
+      "sha256": "567a23e74450fa9cb760de55ecc27c3346c7761bb525a6c5d91765b4031fb264"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-14/top.webp",
+      "bytes": 165250,
+      "sha256": "613606770a134937ead63bd5e664e54a18179b8020d19b914c6dfa32162c7a1f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-23/right-side.webp",
+      "bytes": 39562,
+      "sha256": "dc88d433c5260f48c60113b9a8066786b2efc6efc9532290198fb881f25d514d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-23/top.webp",
+      "bytes": 111660,
+      "sha256": "b30097c4a2e7ae5a6788ce13fecf83191b51dcf1c269aaf2ecca446f5c9841de"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-4/right-side.webp",
+      "bytes": 41548,
+      "sha256": "22bf9f4c36ba85faffd6d324286dc76ac10626f543beda1c77b116d9656f85d5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c04-4/top.webp",
+      "bytes": 51256,
+      "sha256": "ee82328140cb3395efbe3042900c07f757501a57ca874897934785a954aa348d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-16/right-side.webp",
+      "bytes": 50030,
+      "sha256": "fddf4e08143c3768ff0d5fe95f7b51072485ed1bba6edfce7625d8ac63b1aa3d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-16/top.webp",
+      "bytes": 156398,
+      "sha256": "11966b3e8febf15d4b8a17552f6e613334d7a50c500562309597ae38374d78c9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-24/right-side.webp",
+      "bytes": 52718,
+      "sha256": "850e2f16fa2dc9a3a7869aaa8daa9ab4d5e5702897036eb081c4e811f6200bca"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-24/top.webp",
+      "bytes": 127378,
+      "sha256": "bee0d97db041f2fde37ea9cbb66fc0b51f0eb6b9b07011f54e363ebf03cee73d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-5/right-side.webp",
+      "bytes": 39166,
+      "sha256": "828bda290498c6b3801a60b174b1165518b7741331263617eab6a35e17f78591"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c05-5/top.webp",
+      "bytes": 90166,
+      "sha256": "65f21eb3c090ccd73a0527b1450509fc0c6bcc811abc309e78a80f82f106af34"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-17/right-side.webp",
+      "bytes": 50180,
+      "sha256": "bd6ee68b611ec33dfc6441987825dcbd8bc27d333e5b30a1afafb517473744de"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-17/top.webp",
+      "bytes": 144450,
+      "sha256": "afaff1168bded5f99ea48dd22c31a2451ef5ae0f61c60981dca01f7129d6d98c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-26/right-side.webp",
+      "bytes": 30082,
+      "sha256": "f30101c07b73154811d81a1e73e8162953428aa6e2d181241f65f4fea852c7b5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-26/top.webp",
+      "bytes": 56456,
+      "sha256": "901d901b2cde290a9e056f60a1bc020fba62fed2be225d98bc14bfda71a59940"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-9/right-side.webp",
+      "bytes": 41814,
+      "sha256": "4fcc993cbc29e948f5bed8bc0eda752660de8cef24f95a53e37da5d7857e2dbb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c06-9/top.webp",
+      "bytes": 86300,
+      "sha256": "a67a7d64b6f07d71f9b668493b5221f930f82d83630a8ab2077f9786aef95099"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-10/right-side.webp",
+      "bytes": 44556,
+      "sha256": "cb125b27e09bfd739f607a90d4f4d1b771625ab20e47bae823301a0c049cc372"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-10/top.webp",
+      "bytes": 77882,
+      "sha256": "94bc31c408af8c612bb506e5f931f4a29dfeccb74708e029e32c85d4a2bd2c9e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-18/right-side.webp",
+      "bytes": 44476,
+      "sha256": "8655e081bce08d02391def2598ad1c7f5bf2bef8ae619b0b35e6e175ccbe9a39"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-18/top.webp",
+      "bytes": 71624,
+      "sha256": "51da4f2510c80e8cf48aba5eafd1b34d6e16aa6c875b82d841e3ce09a5b6007a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-27/right-side.webp",
+      "bytes": 40364,
+      "sha256": "f17f383831465a31523b12094af9a94cbc132b39c46ba86a3e968874b7b64f53"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c07-27/top.webp",
+      "bytes": 39858,
+      "sha256": "2d2ffc7725cab30950e8e1f563936ba7a07654df817307bb26f97ddf59ce7f53"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-11/right-side.webp",
+      "bytes": 55550,
+      "sha256": "ed1c3f3b0d3ece3b09aae0475ec279a23774d3bc59380a5352b3a6b240d306f3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-11/top.webp",
+      "bytes": 53510,
+      "sha256": "1b705737061b1fb38ecbe86e3b59ddaf55cfe39c782dfc85304c6b760cd30ffb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-15/right-side.webp",
+      "bytes": 29988,
+      "sha256": "349557836f2549546cd230b5b025b900def1f35c36d725d5fdcbdb6493b4d4db"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-15/top.webp",
+      "bytes": 46228,
+      "sha256": "5118f8acc4d1f922ede5f7165daa3f2615a74d94845d37d62438f0b8fa3211be"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-28/right-side.webp",
+      "bytes": 35312,
+      "sha256": "6eab693852927d98faebd4fef425211bba1169dc7267a2d6b150707a02cca95a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-c08-28/top.webp",
+      "bytes": 34852,
+      "sha256": "fe2f03481745de21342bcbd36c1aa2dd9999e9ec5d2bef3964ce00c10184d16b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-0/right-side.webp",
+      "bytes": 34598,
+      "sha256": "625e8c255597c1d26caea18602432a969d50d354db836d4523cf3f77d1ea2094"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-0/top.webp",
+      "bytes": 58264,
+      "sha256": "fa992edc4b61838fef4f2daba6f2910649a14f58afbbcee1ae2269ea4cd8c06c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-20/right-side.webp",
+      "bytes": 51222,
+      "sha256": "6b41c2d277e1bcf3c407eab77245b9200a9a34ea5b8c4fd7a730946cd00aada9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-20/top.webp",
+      "bytes": 75002,
+      "sha256": "531e7d1525097b5cffe4a33c60c2a1c9c21c30d839eb9a55714674c37734c2db"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-6/right-side.webp",
+      "bytes": 45912,
+      "sha256": "709c1a49a9753a17e5567369bf40969ce782efaa88b8f992a44f78600a2e533b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d01-6/top.webp",
+      "bytes": 87186,
+      "sha256": "49c62b9fdce4c3d5276b5a818d592f2387d5ac02481d52df872e7fe3ab006376"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-1/right-side.webp",
+      "bytes": 40838,
+      "sha256": "4f58d498ce6aa8dbf4c2cb4b6058c7ed6383a20f4fb8eedf751cc1fdf90bc329"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-1/top.webp",
+      "bytes": 120768,
+      "sha256": "12ceba35ccf5cd5f5428a15da676b281fa30ebed71b0abb3c1e924488e01fd2e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-21/right-side.webp",
+      "bytes": 45190,
+      "sha256": "e1d1188fbf4e54ea2864f31b928bbbf33f3daad58e3ab488b72dc4b8d7cb9281"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-21/top.webp",
+      "bytes": 101920,
+      "sha256": "67a99f01366c8bc6a439160bf7e2377511c4a67f7f0632a1fe451f835bddfe21"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-8/right-side.webp",
+      "bytes": 46638,
+      "sha256": "53a5ec618b9abd170f309f89d035bc8e8a053ae76607bf4943c8389b40cd2e8c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d02-8/top.webp",
+      "bytes": 81922,
+      "sha256": "5dc2be722a879be9c6bf0903a426de982e0074b3398e50b43aebca3bad559eaa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-12/right-side.webp",
+      "bytes": 40864,
+      "sha256": "48c26bd66762155effc9078835f5a06df5feb75612cbca5a72c78452fce13f00"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-12/top.webp",
+      "bytes": 44642,
+      "sha256": "eca4bafbcc347d9204869a22921fe9331fe720b4c82c3f2cc135d347cf04dea2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-2/right-side.webp",
+      "bytes": 28400,
+      "sha256": "422dd9be5f7f29504849d4a7e7f579175d7ced9485cf2801f8614ed0508feb00"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-2/top.webp",
+      "bytes": 34136,
+      "sha256": "16bf1f305b5ff4bb35924153b3b3a2e481545f15b19af834e3cc4e8889afff2c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-22/right-side.webp",
+      "bytes": 37676,
+      "sha256": "17b0b19c8681bc538534f6b02e15af1ba485e2c55d7f3a72cfece0b71259890c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d03-22/top.webp",
+      "bytes": 37690,
+      "sha256": "aa219d11f1fe8c94b49a6884dc0ae735d3aa89f52a2ff47c025d62ed126ebbe5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-13/right-side.webp",
+      "bytes": 46384,
+      "sha256": "97a9a97eb7c4ba78d2dd9cf16e1eb9375edefa680e15990dfa41efa2d136a0b0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-13/top.webp",
+      "bytes": 237046,
+      "sha256": "0e32c74b76b3b8367c0c357a1d432b742b89f6ec941fbfde9ee487af54faa916"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-23/right-side.webp",
+      "bytes": 46092,
+      "sha256": "0e4fe321d18c7df801944ab37ddcf77fb30e510886e13f480c128824902262fc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-23/top.webp",
+      "bytes": 102758,
+      "sha256": "5e37bcf9773d85296cd915885837b7cdccbf634c21186f4641915f8154d7aeaa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-3/right-side.webp",
+      "bytes": 46108,
+      "sha256": "dfa26628c6ea12c03c141da5371170663e0c39f230a3fdac58fa34ce65abdfaf"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d04-3/top.webp",
+      "bytes": 172536,
+      "sha256": "423b477b90a8ee2f5777fbd53fb6f136de562166dabee82c221367dcdd08bf11"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-16/right-side.webp",
+      "bytes": 77888,
+      "sha256": "65f5a8b5ef5fb8f339bf451c7d8388ed23045edc3ad025a2612ef470ba5581ac"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-16/top.webp",
+      "bytes": 199496,
+      "sha256": "294d68ec5b8f01a7db91e50b70e2e9630a925a5762cd56fc1507eb3863e7262c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-24/right-side.webp",
+      "bytes": 49670,
+      "sha256": "eecb0cc66bda3f2fa117f7b4ad1992d19030e106e83cf95825e9520583a818b1"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-24/top.webp",
+      "bytes": 124814,
+      "sha256": "ea4a6cc5e0901ba07243cd4a870262cb37be9fd5e35124e649d4ea52f50ef199"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-4/right-side.webp",
+      "bytes": 42542,
+      "sha256": "704559bdc1f5b648b2996ee036bc27303990ff84d6d757e02aa9f13bc470c34e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d05-4/top.webp",
+      "bytes": 50344,
+      "sha256": "42a2909a2760612154b56c6f7e38930eb748d198a6dcdeeab9f6180f647af6cb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-17/right-side.webp",
+      "bytes": 47846,
+      "sha256": "5c9bd91ebdca24e1810ec1eb0a9e460d16b9189d4856997d677ea3fea16100ee"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-17/top.webp",
+      "bytes": 138300,
+      "sha256": "5c05e69b24cc8d381c7f06373883301c48e28924f908289209bea2d1ac40d341"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-25/right-side.webp",
+      "bytes": 47024,
+      "sha256": "22d50d4bf59e3fd37c9eea729a258dff3171b6540fa285e7a161c92e76cd08db"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-25/top.webp",
+      "bytes": 52030,
+      "sha256": "990fc8bd9b97e9a0ae4c1348267d6cd099a920858471ab56f4bff00d96f5d30e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-5/right-side.webp",
+      "bytes": 40184,
+      "sha256": "e3bf20a1fdad99a399f91436012e13d1d74d1030376bd7d5a8460709142da6f6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-d06-5/top.webp",
+      "bytes": 74928,
+      "sha256": "3adc7dae058d58b61d0343d630e7cc67166df4070d6f4e9476e119a63774b40c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-0/right-side.webp",
+      "bytes": 36930,
+      "sha256": "d28916466a80b746c2a6c6c52db4fad599c585ffdda6962df1cadcde953a7a7b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-0/top.webp",
+      "bytes": 35476,
+      "sha256": "b1aa6ca15ca99b51fa58cf68a544aa27522c195e1a965b817e32635da3a9a24f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-20/right-side.webp",
+      "bytes": 41412,
+      "sha256": "b865deb7a4027f961691139e1f9793ac753901d0e0d3c5eafaeecd666eca2525"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-20/top.webp",
+      "bytes": 42596,
+      "sha256": "3a0118d47652238e4a068bc76b7f04127ee6a85bd1aac5be548564c856da5bf9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-29/right-side.webp",
+      "bytes": 41430,
+      "sha256": "56c72aaa1fb2c1386a390ff3e7e842a6a4fcff19512aafdf5c3d659853d881c7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-29/top.webp",
+      "bytes": 41170,
+      "sha256": "a2c26c13df5cacfb766243a70d3715bc4ab2733df2426e1229084020bde71757"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-7/right-side.webp",
+      "bytes": 76588,
+      "sha256": "ce699f0a05624d805dc59a298cea3b3052dfc3a883ade2a2a740f8fdb6853b9e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k01-7/top.webp",
+      "bytes": 55012,
+      "sha256": "a7bb75964fa73f3f5ae339b9f24cf81d8abe586e8417c96eaf44b612f7c61d0d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-1/right-side.webp",
+      "bytes": 50800,
+      "sha256": "cb95e01ddc6a0d1ec4e64cb222eab367bb71d1d2c6a7c5e035a38ddccf397300"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-1/top.webp",
+      "bytes": 40056,
+      "sha256": "6d0c90c58a4f5ddab9bfeba231042783d3d088b0000be4a5fd46f175f7281842"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-12/right-side.webp",
+      "bytes": 49326,
+      "sha256": "53756aa98e3e084bc26b2d2983bde551733ae5516b5157b26b7eeb47682884c1"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-12/top.webp",
+      "bytes": 56850,
+      "sha256": "db773ef020835490caaccfc23756447671a32211cbed8af39618efc0b94d5607"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-8/right-side.webp",
+      "bytes": 50622,
+      "sha256": "e565dfa6f2c44b62da1e7f37eefa1b428b625061d9a342b14200a8c6aa4b5915"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k02-8/top.webp",
+      "bytes": 39754,
+      "sha256": "063141efe06020c9a87162465cef795201010c692b2d0c134ecff44a92f6151a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-13/right-side.webp",
+      "bytes": 54522,
+      "sha256": "94ac7ca1693d0a53443e96a815044980c36c3c7ee612f159675e52be0a2160e5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-13/top.webp",
+      "bytes": 69178,
+      "sha256": "84d4f74ad84b278196c8adc5a84974583ef1820dac2313ea96d74117c47191ec"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-2/right-side.webp",
+      "bytes": 28470,
+      "sha256": "366110a4e76610a5ef976df3735fa3dfea1eeea4dc5f5f2fbc480e493669abcb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-2/top.webp",
+      "bytes": 34792,
+      "sha256": "42568053714082e5b015ab4881238647c77c295b94115be93c3b3d5621c9c2e3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-21/right-side.webp",
+      "bytes": 35666,
+      "sha256": "a20fdd0d109f5f9cc8f12311e74a7233627934a29a1ec3f00f279b6be3eeb5fa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k03-21/top.webp",
+      "bytes": 40426,
+      "sha256": "16acd1e1c32c23f22d0285a07ed1bd148bb4c919414ce513adf540181df45959"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-14/right-side.webp",
+      "bytes": 39910,
+      "sha256": "30774f0e7ad1d503c5f552ae1b7f818442e07c8dca9aa5d08dfdb6792773c6ca"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-14/top.webp",
+      "bytes": 30278,
+      "sha256": "28a75d72914cb0d097900ac0cf0f5b84132b432093c03fe7fcbb6af3a30f0914"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-22/right-side.webp",
+      "bytes": 31908,
+      "sha256": "73834f4d3a846c552d91b1fa96a4ca08994939eb614533004777d32155d3212a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-22/top.webp",
+      "bytes": 29836,
+      "sha256": "ee681d51059739cf25a1ae0b24f9563f242c7fb6ed8df03d19e3fa7a3cb431e6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-3/right-side.webp",
+      "bytes": 34612,
+      "sha256": "40272b99a9cd87b22fe9000d7da4b13120e9d910f7afce4114ee98f954aac068"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k04-3/top.webp",
+      "bytes": 34442,
+      "sha256": "c9e62735746da48713527f733478ca7dd35935435c8197a9ff816df0b406b032"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-16/right-side.webp",
+      "bytes": 49732,
+      "sha256": "3f753e5f5ba18291ddcc114ac30e98ec49867f6116e97b7eb95b63e8f664f9cc"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-16/top.webp",
+      "bytes": 54572,
+      "sha256": "5624eee13f94bf1d703133dd40988cea2684956ea69efd2944d08dfaa4519f2b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-23/right-side.webp",
+      "bytes": 31702,
+      "sha256": "9ec78d9ef1dcd806d5cb107b9b7d2bb6f78124db41f5ab9fe72aa7271f40e63f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-23/top.webp",
+      "bytes": 44808,
+      "sha256": "7a657b0918c3fae87bc90267b18b69d9c9ceaaf9003cfe58c9477e1ca9a5333e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-4/right-side.webp",
+      "bytes": 58328,
+      "sha256": "591ec9bf362156360fd0bc33ec388149594bd80639ef660962b2a41061f4b77f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k05-4/top.webp",
+      "bytes": 49680,
+      "sha256": "873b121ebd2c9843222f89dcc934dbd972bfbc3681a7e30f5d69f9988003a440"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-17/right-side.webp",
+      "bytes": 49820,
+      "sha256": "884882b92db0f8b353c2cfabddf0fc25edebd9c7a059cc11b4b0b30d7bb397ea"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-17/top.webp",
+      "bytes": 48412,
+      "sha256": "78377e4c342c9e5062b932a2d5406d16089b1b6767beeef56f23a21772614646"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-24/right-side.webp",
+      "bytes": 42224,
+      "sha256": "f95c485a2effdc56f30fcd01df5ff0e6df59b653da9e6238b05038d4d99fd80b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-24/top.webp",
+      "bytes": 35360,
+      "sha256": "9d7cd0182e4878467d6d90879cdff7e23099b184b9d011cb6ef32edd95cf31b4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-5/right-side.webp",
+      "bytes": 36702,
+      "sha256": "19446978f935158c6e693bffb782db230d525d14f78a7e31348c9693e5fa9537"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k06-5/top.webp",
+      "bytes": 36296,
+      "sha256": "6fd31978436d053fa8cd20a70838412668ebd0839ffc717e5ab7907b9a37ff88"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-18/right-side.webp",
+      "bytes": 43314,
+      "sha256": "8af798399cad48e547930ef2e68d6da4df8270573dbbf3bf888623c5d942437d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-18/top.webp",
+      "bytes": 34050,
+      "sha256": "007a803b0b02fc08930bcd4ed84ce255d6c8b9e5d9ac76cb4d06e81578ce66ec"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-25/right-side.webp",
+      "bytes": 35554,
+      "sha256": "04fd1ba31b4ccf3d8eee1c44c4782886d8561a42ff13d4c79eec22c3963c94e7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-25/top.webp",
+      "bytes": 28528,
+      "sha256": "3b44b07e5284935d8a3c513f9cd8eca9fec91af61233b28611f8d11305d17100"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-9/right-side.webp",
+      "bytes": 35770,
+      "sha256": "ded5fd75a870431b6cfcf9ac107bc5db9f0306660f41d328f4ce6628708199b6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k07-9/top.webp",
+      "bytes": 33304,
+      "sha256": "02f4e1dc2e137061b5b70c9f544adbd1a1883d0705dd4a9ecbb2c3b24a3ccf62"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-10/right-side.webp",
+      "bytes": 41122,
+      "sha256": "d3482f95776f933f9ac51a6a48fe4652c5928c3f89f3a8453120345a30698a47"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-10/top.webp",
+      "bytes": 52120,
+      "sha256": "5f142f60112e1ebd4b174c3d1dc23fe8d52e10c54a46d4f8f522d8988978aca5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-15/right-side.webp",
+      "bytes": 49200,
+      "sha256": "bb6b8974010ed2cc7d2e51128f7db664125ad9b4eacdb2e533d2fb408fe4cf2c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-15/top.webp",
+      "bytes": 75342,
+      "sha256": "8c7c09066afde1c856407711a9de7e3a1ebb4cc98e69d57ae2840fa4d31fb775"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-26/right-side.webp",
+      "bytes": 34184,
+      "sha256": "97c4a6b38aa5dd607266c04eca3733598d67b5bd8b3b5fd85f38bc3a8e5f5888"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-k08-26/top.webp",
+      "bytes": 51608,
+      "sha256": "92b79f60dd08bef45afc354fa9a3660c5f315e2f7477436a77541adbc71804d6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-0/right-side.webp",
+      "bytes": 34018,
+      "sha256": "8fbb3827ae8073d8d62244315a4f6c410ee7f44211788d07b84ada83c33ee1b9"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-0/top.webp",
+      "bytes": 84380,
+      "sha256": "d176ff273c75f5cc25960be1dc260e16f2c03068520532d8077a220fd05e4601"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-20/right-side.webp",
+      "bytes": 30818,
+      "sha256": "4d387fafba5eafc08ca02d7b8cb4f697085a5025ef7dc21b0d0a2536e5a5c06d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-20/top.webp",
+      "bytes": 121062,
+      "sha256": "c928c1d90374281ac03228990c1efc939fc127522186eed34e1343b829f78b71"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-23/right-side.webp",
+      "bytes": 61312,
+      "sha256": "dfa08e7161be9c26559cc2f92564f5f50552de81b48a725c0558c1559ac9c0c0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-23/top.webp",
+      "bytes": 126392,
+      "sha256": "47e019ee38dc6b9be6c5b0da3fe6ebb1a3ea812fd44ab7341261cc19b2650f91"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-6/right-side.webp",
+      "bytes": 38196,
+      "sha256": "545d4f1beab66845d71cc843c2a59cec1f42254decf1c727c2793f4d6badc905"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s01-6/top.webp",
+      "bytes": 50440,
+      "sha256": "c5e243a5d647035304210e8dae46b645d2cbc01447bf6d7a01d375d0ad7efc62"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-1/right-side.webp",
+      "bytes": 37538,
+      "sha256": "55e9e9d7c6b8e3599c0c3e30ad04d5d7f736a5bbd649bcaf77a98e12d2cbc0aa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-1/top.webp",
+      "bytes": 58710,
+      "sha256": "9367521e01573495af33d753b3246e42051c1d600bef68a449d64935c3657867"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-12/right-side.webp",
+      "bytes": 28680,
+      "sha256": "175fa339f4a279639b3d7d917ac0efaddd0ad523e69238d22d2ec8789b0ae2c8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-12/top.webp",
+      "bytes": 43942,
+      "sha256": "6ed506a031d163bb090a2f4787b141e6a9ea0c673900753c86f8922c1de54731"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-21/right-side.webp",
+      "bytes": 28994,
+      "sha256": "153612e347ad48f36938777ade47ea430777b0290f11fd8c5e3c72f1cf09a5ea"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-21/top.webp",
+      "bytes": 47316,
+      "sha256": "8006c799f320b4d11fb7f7d6bb6d91d35a2a97e7d1970f0670093fd64f851fba"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-8/right-side.webp",
+      "bytes": 24000,
+      "sha256": "f82e53fe130d26ac82e506bb98358653bc6d929eb46cf85eb205d183489b9441"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s02-8/top.webp",
+      "bytes": 47450,
+      "sha256": "82735b2487d2883659b3cb1d20810ec0ff689e510962166aed41140dd88fd0b6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-24/right-side.webp",
+      "bytes": 35264,
+      "sha256": "09e8dd275aed0e6420b0b3aeff051fa21239521be1584ec7c06e35586095ea88"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-24/top.webp",
+      "bytes": 42288,
+      "sha256": "dfd18514717869ac196c4217ba20f2131aab889d402ed660825dc646bf460921"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-3/right-side.webp",
+      "bytes": 21708,
+      "sha256": "8f03b875535ca942fb3ff3374e07199ea889483b076fafde8586a3e5249fd17e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-3/top.webp",
+      "bytes": 29346,
+      "sha256": "c32a8c3018702cc6f2aa4f4e7d200c83721bbbb2e2d3078f378db2606dfb971e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-7/right-side.webp",
+      "bytes": 22066,
+      "sha256": "e2ce8ea5dc941812d136bacee357b58e473ccd24da63f17342a8830acfedc5f7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s03-7/top.webp",
+      "bytes": 27102,
+      "sha256": "ddb48f80ec83dd8478974f2b26df785cf4b6aa9ed512db2087210a9bddd43e17"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-13/right-side.webp",
+      "bytes": 27984,
+      "sha256": "52bf207606aa27da7edcfc6e3acb6714f575951c6df49352c0fb92f8c3baee0f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-13/top.webp",
+      "bytes": 93274,
+      "sha256": "7294ce9b4d749295d864dc03fe159edbefd4302451f4bd407deabe81d03edff8"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-2/right-side.webp",
+      "bytes": 24240,
+      "sha256": "123f1c8336910df53c56c9cfad1627dfe0c2e33bca022f34f72e38b566667fd4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-2/top.webp",
+      "bytes": 39720,
+      "sha256": "4ad4f99587a96e9f0e3cf69ea096882da46610ba0311dd1e5e810c5999729285"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-22/right-side.webp",
+      "bytes": 29644,
+      "sha256": "2e5321f164e602a3ff5237f5e838d4c2461ba88fc956286a8bc03fccdf559b8d"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s04-22/top.webp",
+      "bytes": 37538,
+      "sha256": "24c7bd3eb0aa84893a372ab90c60d880eabe2c1994fcb546412c86cc6aa47050"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-14/right-side.webp",
+      "bytes": 31224,
+      "sha256": "71fc0639c3110507928a92fa1c6ebcc83bee644b457e995acffdf653369cf1d7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-14/top.webp",
+      "bytes": 50894,
+      "sha256": "0e6947e766c4807aeb19cec018c4f3c73a077c4fe3165f087776d5864be31b3a"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-25/right-side.webp",
+      "bytes": 30012,
+      "sha256": "59056a678a26e3e6c4b00806aff4003c866432af50088de72d66ab0f3c4a0f69"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-25/top.webp",
+      "bytes": 43976,
+      "sha256": "9c269b3394978b8def25017d89e727700fe03bda98bb9265904ccec70f1bf5ad"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-4/right-side.webp",
+      "bytes": 23102,
+      "sha256": "ebb138547672de9c67007c6ff21d30955e8c05e105b60bb451d177b6df71c933"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s05-4/top.webp",
+      "bytes": 47340,
+      "sha256": "efb892bcf28d0c0fb7d546d28603a0dcfe2d30b4bf751ea375578c6e3c9138f4"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-16/right-side.webp",
+      "bytes": 48560,
+      "sha256": "83b4873a1f3f79563840754904ccb26245afbce907975a7752cb0549d1fab956"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-16/top.webp",
+      "bytes": 53794,
+      "sha256": "3d56e3219b35fecb724f1ac0571c7b2c85ad881b2a5b3ee662bee503103ddf39"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-26/right-side.webp",
+      "bytes": 27074,
+      "sha256": "757d05c0f219da7259c69f5a004c8bb0d51af467e3054b894c51e90e00c02b59"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-26/top.webp",
+      "bytes": 47100,
+      "sha256": "d00297c7275434fb5c168920a098c1f468d3105cc525702c6c4985f6c42ac983"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-5/right-side.webp",
+      "bytes": 32122,
+      "sha256": "84c640be89a9ba20bcbe8a0b8e9dddb7544dab1b777bbd204d835c1d1380d23c"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s06-5/top.webp",
+      "bytes": 60600,
+      "sha256": "893dc17cc9deffbcfc3ec7f684ac468477ad4a7fd7aa566fa7a215bce0c479eb"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-10/right-side.webp",
+      "bytes": 24522,
+      "sha256": "be77ec2973b6f1e36b673bfa0c6c094a1742296dfbd25a6129ff91e1789ef990"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-10/top.webp",
+      "bytes": 45484,
+      "sha256": "271fe0d741c6810f23d42cfbfe51f0b7604d87392bd9547a035f2fbb31ac27cf"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-17/right-side.webp",
+      "bytes": 32920,
+      "sha256": "d8a634e20a3a6047395b7ad4f493229750875f897d0c4fb989df611ab36f8523"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-17/top.webp",
+      "bytes": 82988,
+      "sha256": "8a8864dbc38e4803d1dd4cf1b127b071d3a79bd252b5ffa689b4a57aa006becf"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-27/right-side.webp",
+      "bytes": 35156,
+      "sha256": "1ee850dcac571ec2e35510323e24c519e58878490acf6ebdbdc5225a08655ae5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s07-27/top.webp",
+      "bytes": 40386,
+      "sha256": "506b15dfaf429b0acc090d7c433851ba567b2fafb4647d20d9089b46b1c8f2f2"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-11/right-side.webp",
+      "bytes": 31642,
+      "sha256": "5d0f828dc1c2a8efd29a815f65c26ff59ef9efabf2344e26734ac43cf96740f7"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-11/top.webp",
+      "bytes": 37600,
+      "sha256": "dd0f539c90727185292bf5e5f42f6afda747ec8923f6e1b07c898bab0940c7c5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-18/right-side.webp",
+      "bytes": 37966,
+      "sha256": "8895fe8f5e78013a9cab029b32ddce86b915d37060476df513f389ed735fc19b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-18/top.webp",
+      "bytes": 46538,
+      "sha256": "8a113f826fb499a71723a4d922c1387d74c8bb0448c0c11eb633b1b3ae52b73e"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-28/right-side.webp",
+      "bytes": 43584,
+      "sha256": "e0a9499442a7565111f62373b2b793ac477e769f74eb156f2ee04aa344bf03b0"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s08-28/top.webp",
+      "bytes": 59924,
+      "sha256": "db1df29fe4d9969b5810bda079e57c5e6b195b5054664036d5de71fa41794008"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-15/right-side.webp",
+      "bytes": 37894,
+      "sha256": "d870f8896512ab78acde890f1ab01dc8851092870f8425c45cbbb4bf0d91b2c6"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-15/top.webp",
+      "bytes": 146488,
+      "sha256": "0ae17a7c56befbceadd16fe9b6925cb3dbafd0ae3a4dada8e425ba70f57a8f97"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-19/right-side.webp",
+      "bytes": 37910,
+      "sha256": "b6fa0a0c68f1f8e191aef91792ae0008f735a92ef1a2ed5f97a9e93610e189aa"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-19/top.webp",
+      "bytes": 104402,
+      "sha256": "70a4b666981639d3a16f7c598413845c25dc43df8e7a096ad4388a47c7ed6acd"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-9/right-side.webp",
+      "bytes": 34930,
+      "sha256": "682e3ed270013fab8ec5bbd6b255577c9407c785e966c9d27b93077aaf11eba3"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s09-9/top.webp",
+      "bytes": 68074,
+      "sha256": "f899da433f9eddbd0a3c6f952189f54b7075c4dc6239b4010dd98b72b2198273"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-0/right-side.webp",
+      "bytes": 38550,
+      "sha256": "d4614e3aeeb52e57d72dda2d8059499ab88cfd1172a37ae8e9a5ede0f0501b85"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-0/top.webp",
+      "bytes": 43240,
+      "sha256": "999081b74e281fc1b3a4360720a000c64515dd134235517f6eab19e52c232e0f"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-20/right-side.webp",
+      "bytes": 33866,
+      "sha256": "1a6a9e7c32e92a7a9ead3c1b2b088328a851fca19bd537dfa9759526fb95ffce"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-20/top.webp",
+      "bytes": 42394,
+      "sha256": "3194034f8418df12eb4d9ab8cceac24443af70d22e73a0bec3a8654643488f14"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-7/right-side.webp",
+      "bytes": 34342,
+      "sha256": "20552190f24463a5e184ffdfafa56e08ab4154a33eb1fa59ce90f62a6045fb46"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-s10-7/top.webp",
+      "bytes": 33038,
+      "sha256": "f7ce192e2848d854416afb6e8f0aac79339ce3fbd1ee05019542dcec83fea3b5"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-single-both-zeytin/right-side.webp",
+      "bytes": 112600,
+      "sha256": "a7d5a25ea10944d8c5edea0feac0b4b4d2f67686310437092b9b827876bb5d3b"
+    },
+    {
+      "path": "assets/product-galleries/all-v96/inspiration-single-both-zeytin/top.webp",
+      "bytes": 135964,
+      "sha256": "0b75d2177e31ccda14cb9e0c71e22692f1e5d3117ed94d381a32ca168f669118"
+    },
+    {
+      "path": "assets/product-galleries/flat-v94/v73-07-sag-yan.png",
+      "bytes": 506267,
+      "sha256": "e75668f4dc1863dfb716d7fef4ed8cee7c1544f65ccd5e16d8b3a8fde8692de8"
+    },
+    {
+      "path": "assets/product-galleries/flat-v94/v73-07-sag-yan.webp",
+      "bytes": 324572,
+      "sha256": "65884d1a1246a37849dc51f528475a1b180a06ffd966eb864a0d7a3230cb2d58"
+    },
+    {
+      "path": "assets/product-galleries/flat-v94/v73-08-ust.png",
+      "bytes": 861701,
+      "sha256": "3fcb4999b6b16fc412667a7bf27960e27f88df2162b85bb1cf46e9036a689476"
+    },
+    {
+      "path": "assets/product-galleries/flat-v94/v73-08-ust.webp",
+      "bytes": 571650,
+      "sha256": "8f1a7f9303f0a976090622efbaf5cbe032219ec9bc36f440678bb19c1c70858d"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-six-seat-five-angle-denim-dark-oak/right-side.webp",
+      "bytes": 100870,
+      "sha256": "74fe7b5f6a601843ebbb1943362f68a79220c98716bb95ed485ebab84026a60b"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-six-seat-five-angle-denim-dark-oak/top.webp",
+      "bytes": 119106,
+      "sha256": "aa35025dc242df36cb43f8ec9f0f3cf7148c8f7936c8ab3906521374d2e21570"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-six-seat-five-angle-zeytin-oak/right-side.webp",
+      "bytes": 111000,
+      "sha256": "620846747ed2be6b0356e5d7053fb414e83af978d9a1be2924736a2f1b41da60"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-six-seat-five-angle-zeytin-oak/top.webp",
+      "bytes": 125454,
+      "sha256": "c61a946743d249348fd749269b89e38a24c4ec4e59a49ddade5fb42255fb486d"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-asymmetric-bej-black-oak/right-side.webp",
+      "bytes": 73534,
+      "sha256": "bd3c0df653d7fd93cf62a1c00d49eedf2fd2171b0ecd3e9de43f19e6b086a516"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-asymmetric-bej-black-oak/top.webp",
+      "bytes": 78472,
+      "sha256": "687f3e3b0e3707a82f9843c6f43c1b1e6566743e0339edb585a3c16e42007953"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-asymmetric-zeytin-oak/right-side.webp",
+      "bytes": 84562,
+      "sha256": "29977b787463d14d19ee521679f7bf0b3e70cc41f3d0d8c7c77255c16b28c8fe"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-asymmetric-zeytin-oak/top.webp",
+      "bytes": 90308,
+      "sha256": "eaf10fa5aa1e1dc822a94874868705e72fade2df9b76b022d8284ecd1e3fc499"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-compact-inci-black-oak/right-side.webp",
+      "bytes": 100244,
+      "sha256": "e0bec05fdf477c2b55c1cb376758cb7e686c2bb9807449db7ceb2f64ffc70e56"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-compact-inci-black-oak/top.webp",
+      "bytes": 96840,
+      "sha256": "0b025a16b4c27337db080f9b94a9fd5996f9ca804c8d603a73b5f5b785424e17"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-compact-zeytin-oak/right-side.webp",
+      "bytes": 124424,
+      "sha256": "a9827c762b0824bf9bbbb612e5720bfb6df2a63430fc43479df61f70504347f1"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-compact-zeytin-oak/top.webp",
+      "bytes": 115640,
+      "sha256": "fb34e32e7b6bbac3c1986001a8faf83aa5f62689ab2a0b032ae99e6018091d79"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-extended-denim-dark-oak/right-side.webp",
+      "bytes": 122232,
+      "sha256": "8b8e2d9282d5682e6710ec9924a3bbac817e90225c0b3c6fcc6c148aefed45c1"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-extended-denim-dark-oak/top.webp",
+      "bytes": 163626,
+      "sha256": "5d40793acb2d07e7db2db32554ca38e7418d5a2977b25af6d87abeaa6419fc1e"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-extended-karamel-oak/right-side.webp",
+      "bytes": 130690,
+      "sha256": "bf8a2c132a5bc4be7a1f31fcbe918d1aac82132494afd956836450152284324e"
+    },
+    {
+      "path": "assets/product-galleries/v102/inspiration-v2-square-corner-extended-karamel-oak/top.webp",
+      "bytes": 158566,
+      "sha256": "f816e7b1550e702f0b1c179c46eddee813d4e49daf0211740da422c6847f3334"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/right-side.thumb.webp",
+      "bytes": 2774,
+      "sha256": "fe0dd55074d3c9bca7ed31a48955611dd32f24bef9ae3f037d2c33dd969a3433"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/right-side.webp",
+      "bytes": 34110,
+      "sha256": "457dea7137698893cb8acd9501feede125fea4d8c85fa6715cd5a1f0bf603ac3"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/top.thumb.webp",
+      "bytes": 3652,
+      "sha256": "8ac7feeca1d4d4c9bb03e068c94c98e7c846107231bf623da9c4622d7f27f3ae"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-01-soft-touch-1351-oak/top.webp",
+      "bytes": 53710,
+      "sha256": "d5891f730013d071a2664223a98da8e2814a27cecdea20cd12413868154b883a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/right-side.thumb.webp",
+      "bytes": 1738,
+      "sha256": "344e14e0d7dc8be86e578483fc48df36d1f31e90eb678dde243057d2f7a9dd46"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/right-side.webp",
+      "bytes": 55122,
+      "sha256": "1fc1fa38b6eefb007ec16494c9ecb85f9111ad03f55f8a91887f229ae54d4c08"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/top.thumb.webp",
+      "bytes": 2158,
+      "sha256": "892706d91296a40585137fdeef6e90c218ba9d83e18ee68f874486c3ae1cd64f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-02-veronza-1008-dark-oak/top.webp",
+      "bytes": 124316,
+      "sha256": "973144f4bdbc70233afd7fa5d8ab70ee97c2c47241782d004d61249c37a20c51"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/right-side.thumb.webp",
+      "bytes": 2350,
+      "sha256": "77e4048d2761cbcad0db4c27d4560d3c6e5c1ab8c538b873ff544e874c858433"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/right-side.webp",
+      "bytes": 62094,
+      "sha256": "2685f86b0fa91630283da2055aff39c28628034c5efeb79592db7fe75c14f820"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/top.thumb.webp",
+      "bytes": 2098,
+      "sha256": "a76d39565cb0967a9c85a4046e0819d9f84064bacc5fee6f661c701f24f8999f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-03-colormax-1015-black-oak/top.webp",
+      "bytes": 74792,
+      "sha256": "2beafe0f4db1c0683237e85abdf153ffc911d6ff5864e51cbe5be9595200238c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/right-side.thumb.webp",
+      "bytes": 2308,
+      "sha256": "10e226dab6381a2ea64f6cd84084e6dd8248223e22e1d95f8b75eafdae67e7f7"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/right-side.webp",
+      "bytes": 27566,
+      "sha256": "178e56ca698056b4bfeea69950788fd5e9d9f7acb6653234b5059c148cd9aa57"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/top.thumb.webp",
+      "bytes": 2226,
+      "sha256": "563da23f1173230ff9378f4cd8799d53c3b75a5b0dd85382abf4ebdc3b1b8543"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-04-soft-touch-1355-oak/top.webp",
+      "bytes": 27674,
+      "sha256": "c179e2fb8c78168ba3816bbf885e1fce9592e73cc6a3f6bbc39ff9b815c1c2f9"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/right-side.thumb.webp",
+      "bytes": 1842,
+      "sha256": "44859cb012d9dc74f614e336a5eee367d71821238a3bf1ae0c1259ccb61ebc0c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/right-side.webp",
+      "bytes": 50516,
+      "sha256": "91114726a83c3808e83eebd5b2e44a1224e685296144c19269af8b6c0ca1a1dc"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/top.thumb.webp",
+      "bytes": 2442,
+      "sha256": "386c22cdb6a35f1c3353a20f897beda2369993cdc622fd1fbf29815bc1bf4683"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-05-veronza-1012-dark-oak/top.webp",
+      "bytes": 123796,
+      "sha256": "e2a33431f63c68dcf2b75bb7cec339c53b4667e16e6bd9196d351e3a956d2f85"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/right-side.thumb.webp",
+      "bytes": 1634,
+      "sha256": "c343f4e3fb17389650ef0c23a5823fa9c245b86db252940a2701bc1c6f25d9ac"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/right-side.webp",
+      "bytes": 40306,
+      "sha256": "a0494124a43d9550a63cd38792ad38fa1d7d77f271293409e38fd079c41dbd2d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/top.thumb.webp",
+      "bytes": 2176,
+      "sha256": "5a5b54d6ce97bcbaed693056f056333c7a6af439f960d1688018fbca969b046d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-06-colormax-1017-black-oak/top.webp",
+      "bytes": 92838,
+      "sha256": "a2c4da40bfccb850906bae16e719d2087a5352900694246b3bebbadb9821b29f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/right-side.thumb.webp",
+      "bytes": 2170,
+      "sha256": "b5a4b56fa3c9135086d5a7afc4ee9720972815c44f547b7d82852168c6956420"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/right-side.webp",
+      "bytes": 26086,
+      "sha256": "e6efab178b8dc5b7f9f4b5add1afba0b476a95f43be9df1df5e03b4e50e52a23"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/top.thumb.webp",
+      "bytes": 2818,
+      "sha256": "aa8d2c508985a16fcbea0ae4c71cfdb4518928540aa27d15c2628f5e14136d5d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-07-soft-touch-1246-oak/top.webp",
+      "bytes": 53168,
+      "sha256": "e0793844b71264079cbd66c6aa3decba8c4bd75c007958b3a31bc58c88f78c73"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/right-side.thumb.webp",
+      "bytes": 2506,
+      "sha256": "6cbf5c8c4f9b11cd62ad846e4aaad8922e9921e4d16d85200c1d4f0a34ec091b"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/right-side.webp",
+      "bytes": 36326,
+      "sha256": "bf8766edd901d9eb7403f9059c8e72eab1df693e06ab50c08477c70321557f9a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/top.thumb.webp",
+      "bytes": 1910,
+      "sha256": "9dc1d9be9a6e55cacef942dbcdc03cd88c310cd0cc52d21c0b354c3d6a4886dd"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-08-veronza-1030-dark-oak/top.webp",
+      "bytes": 41094,
+      "sha256": "570d2605035da394ab8a8b36d6d7774df3314aa4a7030c15aa0da6e2282389c8"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/right-side.thumb.webp",
+      "bytes": 2272,
+      "sha256": "4fe939785347df84e8106bde31580dba8d9d114b401d238fc7ccfcd8162c32c5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/right-side.webp",
+      "bytes": 25464,
+      "sha256": "a032f5331f70abf6c4294397a0d93b185bad15054bd4ba81c200c2ea7e1f0ce1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/top.thumb.webp",
+      "bytes": 2538,
+      "sha256": "a65138ba077dadbfc325a7b922531d112785b9c01dc0b5836a7e68034cc3e6f3"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-09-soft-touch-1024-black-oak/top.webp",
+      "bytes": 40238,
+      "sha256": "23a5cae855d61423916689e90daa840164f4cbf9a2c50d82d631af7c629a69f9"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/right-side.thumb.webp",
+      "bytes": 1934,
+      "sha256": "9376d36aec46da35550fb8fbe6dbc20e4a0222d34bd103eade20b3d4e04ca8a7"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/right-side.webp",
+      "bytes": 22198,
+      "sha256": "014a67f77918774e153b79c51ef0192a7168cf56f370b0289c8a5c3f8dd727df"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/top.thumb.webp",
+      "bytes": 3380,
+      "sha256": "104aeab0a4112885ce12af65fd038ed5041b00b4975e8ef27fa0e4d7d1eb6610"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-10-veronza-1035-oak/top.webp",
+      "bytes": 58324,
+      "sha256": "96a6b75e8b66b04ce9694562b0d0b8273484b14d56ae1a1b9374f45f6a7d160b"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/right-side.thumb.webp",
+      "bytes": 2610,
+      "sha256": "347189258c5a81d146412f67ff872525fc7908cf75c4d7d39c3dd5221b8a9413"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/right-side.webp",
+      "bytes": 46200,
+      "sha256": "db4f522c5406f9d795e3b648e670f2214c3b4c37b141dd2ed99b60870731414c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/top.thumb.webp",
+      "bytes": 2648,
+      "sha256": "5dbdcb675dd2f5cce5d6bfe48357a00271a0a8e5be25c2262e7b448eeac4b8b1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-11-soft-touch-1200-dark-oak/top.webp",
+      "bytes": 52760,
+      "sha256": "0736dc53b657bd4f4ce41664948c015b3a3ea12d166b65f6cbe69346d5fcf1e6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/right-side.thumb.webp",
+      "bytes": 2358,
+      "sha256": "9bfac4fa50d76780a141492062234b39bbabbf8e19d1392e2b060b1d91ae3bb2"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/right-side.webp",
+      "bytes": 31184,
+      "sha256": "007d54ee75a4ca87e4ace4e17bdd79d869172dfa0375bb78212dd341e0335a47"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/top.thumb.webp",
+      "bytes": 3220,
+      "sha256": "7ade93666f74482b0532ace23dec66815bb6ef305d28d43e6cffe5c39c787afb"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-12-veronza-1031-black-oak/top.webp",
+      "bytes": 50782,
+      "sha256": "9c25cf4e60a42c40786cc35bb6698ffc4bd27f5f8d0b52a13e7d77c777b67569"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/right-side.thumb.webp",
+      "bytes": 1844,
+      "sha256": "797478b2d92c7e953ba2a23e8d1bca23072711d588bc9782f8a7963e235e219f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/right-side.webp",
+      "bytes": 22980,
+      "sha256": "b2b56871ab3b8ab80361c4cb9ee1af490391762c422bc5784be68f81cfb88e22"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/top.thumb.webp",
+      "bytes": 1950,
+      "sha256": "a7027738aa050e349f6b6b5f8d18630caac6b2c7d40209ebb78c30eefbd63898"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-13-veronza-1041-oak/top.webp",
+      "bytes": 47694,
+      "sha256": "a1cac6c8db59e7465071d3a67e65a1cdd4ff5269a8c50c36d10fca986049e57f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/right-side.thumb.webp",
+      "bytes": 1900,
+      "sha256": "c7899212f29f4798f57f363761a4d5bf1f8cea0e200c84e0fb0693733576cf76"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/right-side.webp",
+      "bytes": 23802,
+      "sha256": "7a6cd7db15eb2197cc4888387ca9324168809836cc2e6b55187b5bcabdeffa1d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/top.thumb.webp",
+      "bytes": 2440,
+      "sha256": "76b49db9523e8cfaacd8e8a7a73a6bdd70edac3907a2158024dbeb590eddffee"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-14-soft-touch-1351-dark-oak/top.webp",
+      "bytes": 53396,
+      "sha256": "3df37e68c7da859191385a41be86028f920db508179be3a84c9fa17e4ee3d48e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/right-side.thumb.webp",
+      "bytes": 1860,
+      "sha256": "6033d76c0f02401a16da108197642de9b4008a9b582bb60c17a0017c12cfc905"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/right-side.webp",
+      "bytes": 41754,
+      "sha256": "98304cee5568ba0c285e4a092e44a34274ce5bfef40a4f8662c9a28267af66ed"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/top.thumb.webp",
+      "bytes": 2512,
+      "sha256": "fa1623909bb96d8fc4cad85cf2c3ed52e133faa817c4d4e792246f7a87ceaa96"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-15-veronza-1008-black-oak/top.webp",
+      "bytes": 94430,
+      "sha256": "d4bed3b2a8075f04d766b7f0e3f621a143147b24b61d5692c595e5cb985d6f54"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/right-side.thumb.webp",
+      "bytes": 2798,
+      "sha256": "4493ebdaefd2cbf6d034c1ae4b8ab00451ad8c8568c884838fe9ee4e5c668e6d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/right-side.webp",
+      "bytes": 91710,
+      "sha256": "b59b2d126c87be4cd9a50f0ea3296063d673466317f19861cc5444c708dfbb38"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/top.thumb.webp",
+      "bytes": 3626,
+      "sha256": "a19c75e2d88f297e0b24f1e4922dec6ccfd60b84e5e71679277b95998fab25d0"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-16-colormax-1015-oak/top.webp",
+      "bytes": 125380,
+      "sha256": "ee983c4218399fc5db5d33b16d68911b3a43e4654b59a0884991cf3354395f0f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/right-side.thumb.webp",
+      "bytes": 2526,
+      "sha256": "5e6638a5cbdd228216843f7b5831978b5de88ae76b46316bb5fda967042ffb25"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/right-side.webp",
+      "bytes": 31340,
+      "sha256": "2217e0565f63a07821ca883106882fd00ff11ce076fe3e48d672736c4ec0b41d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/top.thumb.webp",
+      "bytes": 3586,
+      "sha256": "9ee976608ff909d9b80f9104b784c3d87c00812863d57c8b758993733acbee24"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-17-soft-touch-1355-dark-oak/top.webp",
+      "bytes": 56856,
+      "sha256": "f5e954830a020c25f9c84ccb2000c56f9e4f0e9c58adfc0228437f794e24dd26"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/right-side.thumb.webp",
+      "bytes": 2148,
+      "sha256": "b11d75512b41a12cc757c171046026ad73a14bd3da9842e379df2020a6a84563"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/right-side.webp",
+      "bytes": 36352,
+      "sha256": "0b699b8d29fd8adc20eaacb658a9c30ca21abc71594b27b1078204b191765ccc"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/top.thumb.webp",
+      "bytes": 2544,
+      "sha256": "5e775df0368ce17b37f53b5f7e162895b29faa6b4ea3b78ad9744aa614d3da4f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-18-veronza-1012-black-oak/top.webp",
+      "bytes": 70358,
+      "sha256": "392193697153cb43d09043627e10684cb8bfa9c1ea3f4fe726f45c05df44fa1c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/right-side.thumb.webp",
+      "bytes": 1672,
+      "sha256": "b99eedaadbcebb355437a8189f2fa8b57532371c2ccd9fe0bb129a341daa5ee9"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/right-side.webp",
+      "bytes": 41900,
+      "sha256": "51df28448d9a4a159e27caf51c0d4bcda25265210d0d3f0145ad47ad8cfa4b9f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/top.thumb.webp",
+      "bytes": 2194,
+      "sha256": "4fc24dd195f89e2d3349273ba64ed652045c2e8ba9a2bfce3578aa94c6fa3c3d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-19-colormax-1017-oak/top.webp",
+      "bytes": 82774,
+      "sha256": "8a1cc14dd7c51724f02ccd2a4faade54869e433003769a8c9ec6226a8a85ad6e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/right-side.thumb.webp",
+      "bytes": 2300,
+      "sha256": "c2dcdfcf985c9f47fb227fc20b483adf3920bad12dd1149f827da9fdb12db0c9"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/right-side.webp",
+      "bytes": 30372,
+      "sha256": "1197018a40b92cb321df302859a547a301f602640ee6739b3990c6938a41930e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/top.thumb.webp",
+      "bytes": 2962,
+      "sha256": "76567998e9a9e328f640986c80f9b476ea8ba5b76fc5c25b08d0910a0e7a519d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-20-soft-touch-1246-dark-oak/top.webp",
+      "bytes": 55910,
+      "sha256": "8a9d075d1d8927a5a4bec41004d4777a32991210beedb5e597116fc548cc3cbb"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/right-side.thumb.webp",
+      "bytes": 2722,
+      "sha256": "231ec5bc44df5c5f9da3199359b9a6f5afbab9aa3c46b5f6ccbe3692e7631e58"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/right-side.webp",
+      "bytes": 36292,
+      "sha256": "feb13a51fd991584bf96015bd384b834d0b99fa2585aa1be2c4fbda0c2b38595"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/top.thumb.webp",
+      "bytes": 3430,
+      "sha256": "aa6b37b77594bed2d4b0720547410a9ffcabd73e29ef86303d0e45209f5259fa"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-21-veronza-1030-black-oak/top.webp",
+      "bytes": 56532,
+      "sha256": "9dc91941d65afa4895353291edb254ffadaa8351ce4df86931b7c5a66e8ece9f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/right-side.thumb.webp",
+      "bytes": 2296,
+      "sha256": "18224391cde103a1c99920f32aaf3ec66023ff869f944793e8e00cb96018bb87"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/right-side.webp",
+      "bytes": 29472,
+      "sha256": "477fa457a2197f0e6fb7f78a64cc76bd88e1d973a5718020ddc1b2fc219731d4"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/top.thumb.webp",
+      "bytes": 3744,
+      "sha256": "a695302ec2dbed39bc4e65c4e73aeeedcc1fe2a208e981f68a8df386576aaba8"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-22-soft-touch-1024-oak/top.webp",
+      "bytes": 53432,
+      "sha256": "455e73c1469b9164515b8bd86ee81909b356db3f636c0068f2e843ac3ebccf80"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/right-side.thumb.webp",
+      "bytes": 2340,
+      "sha256": "e25c98adbe6640793eb06e90e27e9ad8996e6d2f1bd8683d190ded8aba308295"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/right-side.webp",
+      "bytes": 28428,
+      "sha256": "e6c1ca3e7b67567f2a6f3099ac1b743b7db8c9defc4363190bf7574dd6a923fa"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/top.thumb.webp",
+      "bytes": 3594,
+      "sha256": "f5dafa820dfbf20255b2d11f0270ee779ff183f507b92105ea4dbf6280026db2"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-23-veronza-1035-dark-oak/top.webp",
+      "bytes": 61286,
+      "sha256": "5eefabd3cd6fe5c88f624b07ddf8fe95cb27ce3927a7e8dc44d3834043c25fed"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/right-side.thumb.webp",
+      "bytes": 2740,
+      "sha256": "7bffad90aa3a462cd02cfef3da8f0d93f698c42fa960926119cb9a7c30ace646"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/right-side.webp",
+      "bytes": 33606,
+      "sha256": "b1cd51fded8e49e60a4f8c0b1c225c46097e12e7aa854187edb6aaf3ecbadbd5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/top.thumb.webp",
+      "bytes": 3152,
+      "sha256": "42f1b0d6a160ca3450c5413ed702c42b8270164bea3641e27df1dc9af6bcf658"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-24-soft-touch-1200-black-oak/top.webp",
+      "bytes": 42152,
+      "sha256": "694a2c2362cd58de2c8204ae98b4c53c54f9befa6db70286f53a80dbf026dd0b"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/right-side.thumb.webp",
+      "bytes": 2556,
+      "sha256": "34b170d31436ec86a305c03a47c29a3d4a9c51d9cbc4fbef134972ead24f8580"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/right-side.webp",
+      "bytes": 37892,
+      "sha256": "4f7b259fcf381f63c2c23dfd9280b8a72dc9374bdaadd5ef459fe7cc577f712e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/top.thumb.webp",
+      "bytes": 3872,
+      "sha256": "967fb4ae55de6837200244984938b118b633b88d5ecf3a6ce6337a29712f24e4"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-25-veronza-1031-oak/top.webp",
+      "bytes": 79566,
+      "sha256": "adc713830a82d12ef2f92b022d96beb3ac21f2485b4dd993f7e59033853118d5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/right-side.thumb.webp",
+      "bytes": 2654,
+      "sha256": "86c97696dfc3bfeb797b058d1a2edd66aaba3ee7de916080dfcdec1b3bcbc424"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/right-side.webp",
+      "bytes": 43596,
+      "sha256": "0178150e811084a80ed9fc4124c64d81d2ace7448167d59b4e56997f4ec1d74f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/top.thumb.webp",
+      "bytes": 3824,
+      "sha256": "489e966b90716eb59a91ee17c0877729642d44ee6629acf3b7bc4ed29ed5d74f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-26-veronza-1041-dark-oak/top.webp",
+      "bytes": 95842,
+      "sha256": "72fa4e727fe838ab657bae03522aadaa68f204b56668c5ade5fd8dcc78a299a4"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/right-side.thumb.webp",
+      "bytes": 2648,
+      "sha256": "7cee7bc11c01f207873143be3dc93f5a083b0519f572725531227adc5f9b1f3a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/right-side.webp",
+      "bytes": 30262,
+      "sha256": "56fc25b5b6741999f7e09934da9e515ba802ae2a24b396a636be97f34abdbe06"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/top.thumb.webp",
+      "bytes": 3582,
+      "sha256": "1ca612beef6fccc4f1542474261eb11cb45afcb31c171c4319f4d2ee08fef863"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-27-soft-touch-1351-black-oak/top.webp",
+      "bytes": 56426,
+      "sha256": "29a57d75301a40c51ceb0a38535fe917225c05b7658402215138c134d19e3a5f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/right-side.thumb.webp",
+      "bytes": 2446,
+      "sha256": "cadf3f77f41f8661936ff45c12fa6e4bab5c617739cf67ed6ec3a3a281ae5bf1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/right-side.webp",
+      "bytes": 40752,
+      "sha256": "a9fd3803a4c1119d9a0619b1c2026615a0c15b9d52e9119b18ae1e451fb4ae49"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/top.thumb.webp",
+      "bytes": 3416,
+      "sha256": "99cf7b191d3bc8e6f615eca8a4ccba1ae56c2fa8857f8c46d08efd1b0ba53542"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-28-veronza-1008-oak/top.webp",
+      "bytes": 70364,
+      "sha256": "e290ec74522a03e530507c4260fce7a4e67ba906abc0f79db206d9ac87547a5e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/right-side.thumb.webp",
+      "bytes": 2176,
+      "sha256": "f60f3196670814ec21ae3f06476ec27fa8e3a282d19eb5f9496b80af38c8835d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/right-side.webp",
+      "bytes": 34512,
+      "sha256": "917f5de47be3aea32239fdaaad3c3992ea8bb202ef8847e9d3256f78ed2d12a3"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/top.thumb.webp",
+      "bytes": 2536,
+      "sha256": "31c7ddc14252b6841b0f7b5c631c588e429d416ca11ff2d23acb35b8d38ff5a6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-29-colormax-1015-dark-oak/top.webp",
+      "bytes": 66060,
+      "sha256": "6cee363c2bfdb36fc3e514a2c146cea4dc1806a89dc31735c88f3893e82ff47c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/right-side.thumb.webp",
+      "bytes": 2316,
+      "sha256": "a519c2e41043575c2807982671abdfa40be902c89a6a9c96df763956aea333c1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/right-side.webp",
+      "bytes": 27128,
+      "sha256": "fe39f12f3180c4f9145ce2f355596284be20f6969a711d305f38e7585dad4b5d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/top.thumb.webp",
+      "bytes": 3330,
+      "sha256": "d110ccd6f47340477a04d7a042fb6e7ad8e8e102a992fdf0adcc3d770a255e8e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-30-soft-touch-1355-black-oak/top.webp",
+      "bytes": 46626,
+      "sha256": "ae95da518b1499af18def58afb8100139ae21fa79098ca90a61d62f48a7703f5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/right-side.thumb.webp",
+      "bytes": 2142,
+      "sha256": "186508968d03b58a29b7f7c6c4d188f1a0514eda85bb556a5ffd08954a462498"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/right-side.webp",
+      "bytes": 30104,
+      "sha256": "589e77f2a84c6c907f68a75bc73c7f16ac71b6bee6a62709c38e938b8e53f695"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/top.thumb.webp",
+      "bytes": 3532,
+      "sha256": "8e821832ab77126887e3b72833025959060d03a0cf5d0e91753d6fe69bfc45f6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-31-veronza-1012-oak/top.webp",
+      "bytes": 70814,
+      "sha256": "42ca52f3abd6140a146032dc359a4578ab74c3a2a1185cc5dfa69de6026ceb85"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/right-side.thumb.webp",
+      "bytes": 3240,
+      "sha256": "315bf7bc40007a46950c725c10350166efea7459aaac4881624df68f35a6765f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/right-side.webp",
+      "bytes": 61852,
+      "sha256": "fb4fc286edad29cbc962eab977623a9f9cc3480cf40d0da72936273a12dd69c6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/top.thumb.webp",
+      "bytes": 3854,
+      "sha256": "7ccd7e3985a80e303c1231e5e5314a0254aa645b4225440808b4f9f7c3b369af"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-32-colormax-1017-dark-oak/top.webp",
+      "bytes": 106324,
+      "sha256": "25292a1ed24fea869a61aafbfc7188ea00783fbf84c71deb243cf163a08f4294"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/right-side.thumb.webp",
+      "bytes": 2126,
+      "sha256": "19297b66a83a390a9db733727b31409a07b0f8f5eb43184bebb61ef59c3afe4e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/right-side.webp",
+      "bytes": 27588,
+      "sha256": "bede6373ae8f8d32b236c071f80e69228ad9b99f10a515ae2038d4e9c950685b"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/top.thumb.webp",
+      "bytes": 2874,
+      "sha256": "ea52cf3a54dd8d0cc8a47204611937ec76ad4919533ebc74fbcd2b21011b4a82"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-33-soft-touch-1246-black-oak/top.webp",
+      "bytes": 42526,
+      "sha256": "8e038d05ab3dc64f2fe8bdfe90c4f70879525726ee6cbe6fa0acc2bc5d3591a1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/right-side.thumb.webp",
+      "bytes": 2016,
+      "sha256": "3e8be10f48ca14d116278660a39deb1fdad7ad2416b7973ccdfee408b783b7a6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/right-side.webp",
+      "bytes": 25902,
+      "sha256": "ff8c0699dc0c6a47909f85783d05f04a5f1897111ad08ba5d751d95bef1074f8"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/top.thumb.webp",
+      "bytes": 3104,
+      "sha256": "7eb5fab2b88aceca1614aafb14a8d0dcc1feabdb8321007c7ae46b58002e8e16"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-34-veronza-1030-oak/top.webp",
+      "bytes": 52656,
+      "sha256": "7ccb875ba99db76a6d6188e91cc7fa48bfc7757dea86fdcc823fac1f3101fe5a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/right-side.thumb.webp",
+      "bytes": 3114,
+      "sha256": "6475be8014e2ae7d2b5778d3b66a6ad5348ab8cb21d45ec5eb9c26700d73e74c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/right-side.webp",
+      "bytes": 51996,
+      "sha256": "3ac593770fb4f8bffb67139a660dfea4d1b7c9907b9c9c6c8ed0b253864a1198"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/top.thumb.webp",
+      "bytes": 4168,
+      "sha256": "e41311279d87d00b6ac7889d710f9398d68edddd7551831084d2d4a39f2caee5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-35-soft-touch-1024-dark-oak/top.webp",
+      "bytes": 77748,
+      "sha256": "3bc80d74cd808c6be6bd644268cb4236e88ae6b4627e57c51c70d71a40dc4968"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/right-side.thumb.webp",
+      "bytes": 2258,
+      "sha256": "11a562aa85b4d91b9fbbe154c202586022892cbec6626122f6f2ed33f8a83804"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/right-side.webp",
+      "bytes": 26118,
+      "sha256": "0a1c1be9520dcdaa778561637a324c45936d9e91f5d261985004db8545852da7"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/top.thumb.webp",
+      "bytes": 3366,
+      "sha256": "12ed70ce466f84a2825d7398e450e24e0b2fe21d960b8f2035438b695a533521"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-36-veronza-1035-black-oak/top.webp",
+      "bytes": 43188,
+      "sha256": "9315322a46ff763c460987dfaf4e9827088cd45f8bf9126b9d7d26878af048dd"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/right-side.thumb.webp",
+      "bytes": 2494,
+      "sha256": "7c7a9401c78eb00ddc01f9ee9fa09c8cf3a28b628110c0fd9de5f1bea4c2c8ec"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/right-side.webp",
+      "bytes": 31746,
+      "sha256": "cdb0fb6253b7ba59be950e73a5a764348302e28b4438afadd7fad23f03fd80f4"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/top.thumb.webp",
+      "bytes": 3652,
+      "sha256": "de60e3ece72bc10cce29f8eb945a0234e10435516a6c6fbb6b2179ec4dfa8a5c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-37-soft-touch-1200-oak/top.webp",
+      "bytes": 50266,
+      "sha256": "3ed39305154f21ea21d98c77a940a409118bef2171b6b226db05660bb08c7609"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/right-side.thumb.webp",
+      "bytes": 2800,
+      "sha256": "0915ba1f48580f05c63cc45f12860081cbafb6fc5af1d99b46a4d438918a9ed8"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/right-side.webp",
+      "bytes": 41826,
+      "sha256": "2e11128d6159d1694f603dabcf9a1c97b7615c152c309dbb8c1f1fffbb2fe4c6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/top.thumb.webp",
+      "bytes": 4040,
+      "sha256": "4cf706ded6841637fc7fcaadbef01eea78cbc3676a6f5b3ffb9b2a4cfbafe2fc"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-38-veronza-1031-dark-oak/top.webp",
+      "bytes": 81470,
+      "sha256": "fbf75c1d9a2b55f027ea56b242f5b32b041e934c482f6f0adfeb7402c6e043c6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/right-side.thumb.webp",
+      "bytes": 2106,
+      "sha256": "b48fa43be5a9a654f3c2bf2dae3084ed91c625af1e95eaa378615b9624385dbb"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/right-side.webp",
+      "bytes": 22520,
+      "sha256": "19c5add5ee46add8a73cfdd0b85df81284e53a0e73d2c1cc97e329651e0c0cc1"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/top.thumb.webp",
+      "bytes": 2762,
+      "sha256": "ea007590caf78647bd010e0a372f618d958a41e8ad4fd5bb77512e9cb44a53c3"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-39-veronza-1041-black-oak/top.webp",
+      "bytes": 34574,
+      "sha256": "2766c97b258937cc886403b4d86b979d5f218e509d8fb423f9e0ab0749783d22"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/right-side.thumb.webp",
+      "bytes": 2718,
+      "sha256": "3e5a338e12c430701bc9e6cbdb67734471ba0824f80bc2e62ea5c662d2a62405"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/right-side.webp",
+      "bytes": 33876,
+      "sha256": "b5fc0667f55ff4e44e1c8af52d454fab227b2f99124e9439dc731b04581e196a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/top.thumb.webp",
+      "bytes": 4058,
+      "sha256": "07b59744bf6967b52f57848da91f75ae02c6a65a61f71d69b3202faa52fa6b87"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-40-soft-touch-1351-oak/top.webp",
+      "bytes": 52062,
+      "sha256": "d317f7816a820d0913887c0afaedb7f03d4989563c0b3c7ff35bda8c79763c57"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/right-side.thumb.webp",
+      "bytes": 2562,
+      "sha256": "0cc52e62a740f49748f48d7567cec353e0ebccda3f8bee7ebcec6ad738155a05"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/right-side.webp",
+      "bytes": 42340,
+      "sha256": "b2bdb870bda0d46b9633b54aef1c7751abebd0fd1fc3a2eca853d1c984b65a9f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/top.thumb.webp",
+      "bytes": 3244,
+      "sha256": "293f50f3a3a14ccb6bc39da522216ec24e22fbec810fb725cf7997036b50f493"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-41-veronza-1008-dark-oak/top.webp",
+      "bytes": 75644,
+      "sha256": "9f1e0884ee3ec97160b38413148efd9a5a8fb1c5c191ce65fa9a05253de20336"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/right-side.thumb.webp",
+      "bytes": 2256,
+      "sha256": "a42c811ae44972a0ef359570db251a8878d946a7fd731ad60e016628ac1c366e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/right-side.webp",
+      "bytes": 41248,
+      "sha256": "f56cefdf8df3a127d451aa9b6dcf29e605123665007fbb6380bf9e51b51e892a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/top.thumb.webp",
+      "bytes": 3036,
+      "sha256": "591ec54342ea2de4072f7c2d0fab70ef95703b64780435f508a9e83a85ac9d9f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-42-colormax-1015-black-oak/top.webp",
+      "bytes": 71000,
+      "sha256": "de83cd30917b600cdf42f48317adece044d361bb47d408cc3d4c76503088eaba"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/right-side.thumb.webp",
+      "bytes": 2592,
+      "sha256": "b64271cb62cf9f64e94291da97bf6ed48b65b41683ba84df118b483f2080d142"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/right-side.webp",
+      "bytes": 34470,
+      "sha256": "07976d08cb3c6b0d6483f2e7e18c9e904b5cda8334846f43fabd14dffdf3a1a2"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/top.thumb.webp",
+      "bytes": 3114,
+      "sha256": "f1cf96bff7cbdbd37d5db9e60479011a6647d57ab528c4f38d3c5634b73bf8ee"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-43-soft-touch-1355-oak/top.webp",
+      "bytes": 46060,
+      "sha256": "24369363712852bafa2fca825afb38f40ba4d603506d87c0bb84631542963a41"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/right-side.thumb.webp",
+      "bytes": 2900,
+      "sha256": "796b066d3ce6867cbeb7dabe251a8646c73b41ea11fadae32f8f2d10e4caf4bb"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/right-side.webp",
+      "bytes": 37644,
+      "sha256": "4f89bd732c95250ca30bf27bdcf4f9172e63c0f1ba945d4d2077622f4abad032"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/top.thumb.webp",
+      "bytes": 3054,
+      "sha256": "cc2d3b40feea953071ff2581d9406e96016bd1ca4ea62c67016741275488c23e"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-44-veronza-1012-dark-oak/top.webp",
+      "bytes": 72424,
+      "sha256": "cf12363a60ae862c014bc20c92cbd65e679f52c7937fe65fb4117af77abde521"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/right-side.thumb.webp",
+      "bytes": 1666,
+      "sha256": "ece4fb7aa6095bbb085ca1eb3ba932aef5070347315daa3135ac9ca83907d6ad"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/right-side.webp",
+      "bytes": 25190,
+      "sha256": "3fb5e5b2dd1cec2c1e95861d625a7be2e9602e310004d7855eff7ab4c0ffd1f5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/top.thumb.webp",
+      "bytes": 2192,
+      "sha256": "4ffdbf2dce5b3570165b170da89884e82ea4ab5798fc441ea79aabeb6dda6d7d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-45-colormax-1017-black-oak/top.webp",
+      "bytes": 81208,
+      "sha256": "0ed11a737b3543fae2ab945307fb20b96270f4c5d1020bbb00eda05f56357696"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/right-side.thumb.webp",
+      "bytes": 2430,
+      "sha256": "30b09fb396cbcba65daf5d6e51bc9ea4690f20c5764c4bf87ab9392243ba7232"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/right-side.webp",
+      "bytes": 30920,
+      "sha256": "f7fa37bd7d8ae1952f7e261db126e6297412185413f31e7823ed1c08a7d1b435"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/top.thumb.webp",
+      "bytes": 3230,
+      "sha256": "0c84bea271ba08c8fec847998bb5848884448888a1255462cafa90dce4b7d4e8"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-46-soft-touch-1246-oak/top.webp",
+      "bytes": 49970,
+      "sha256": "437df17258fa396434ef0da59cfb8db112dec10ccb48fc18b7c9011f318256f5"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/right-side.thumb.webp",
+      "bytes": 2614,
+      "sha256": "fcf543f36f949bd4064c396ed284d746d8a2aa83f963c85bda767993f87b72fe"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/right-side.webp",
+      "bytes": 68440,
+      "sha256": "ff103d3ba4df7637b54631f79aa7fcb08c673e7d8f7256eb82885f423fb565cb"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/top.thumb.webp",
+      "bytes": 2132,
+      "sha256": "de24afc76f4a9c6e6fdfa5ea4aaa534a8517a2897e635e218f1f23dfa46f0230"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-47-veronza-1030-dark-oak/top.webp",
+      "bytes": 73580,
+      "sha256": "857e8631a9bcddfcbf781c4a70d07d0fe25bf32b1fdeede9ec08853bcbfa7e69"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/right-side.thumb.webp",
+      "bytes": 3332,
+      "sha256": "59f1e1d88993aae7876a316a8800fdbba843883fe254f579b26b819b01a5eef6"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/right-side.webp",
+      "bytes": 42090,
+      "sha256": "e14f80c053658c66f96f5b4ad2579cc407f852c0f6688de3252986cb3effd727"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/top.thumb.webp",
+      "bytes": 3866,
+      "sha256": "aea87c851903c302f003de9064791d67819436a065dbd54adde7b7b0f6aa853c"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-48-soft-touch-1024-black-oak/top.webp",
+      "bytes": 52556,
+      "sha256": "73388225cc6cad10bfc335bd675410d159967a5bb42c4fb8a4edc9c031ba10c3"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/right-side.thumb.webp",
+      "bytes": 2184,
+      "sha256": "16d7b9c096e05d8e18a3d7d1e8f955091cde2e3b75809ce492aca31db525215b"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/right-side.webp",
+      "bytes": 26480,
+      "sha256": "78679cd3d187cede74d7b7196e869841c4c7026ac1a544a04446fe93ac194a02"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/top.thumb.webp",
+      "bytes": 2196,
+      "sha256": "8e3f65ab513c8b074832a7a2e67db3e042cfe3f69c1b004553fb04cf7158496d"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-49-veronza-1035-oak/top.webp",
+      "bytes": 41890,
+      "sha256": "e3b0a9e8ed77182aa52960738e2836abf44715179d3328cc109b6e8daf6c665a"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/right-side.thumb.webp",
+      "bytes": 2938,
+      "sha256": "3cf620149b258a66857ed0ccce46d8151e2b8b07e37d57ddd105e885cdaaef8f"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/right-side.webp",
+      "bytes": 49078,
+      "sha256": "5dcbb97ef935c677424d593ccd2080b0f2c7f02af13afc2411ddc83fd65ad081"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/top.thumb.webp",
+      "bytes": 2590,
+      "sha256": "0b02e7d49b47a1ffb6f60b2c85dc4eeb642719d3638e05141ba16e2b83aede62"
+    },
+    {
+      "path": "assets/product-galleries/v118/inspiration-fabric-v118-50-veronza-1041-dark-oak/top.webp",
+      "bytes": 62048,
+      "sha256": "28d2d2ddf71909d62b6fa780d6d76285bc5b5edb83aae1c1c03573c2f0b178dc"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.thumb.webp",
+      "bytes": 2086,
+      "sha256": "817e8da2b35465bd06bc054f65a8854869a7ac8a1158995bdbd52772a664584b"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/right-side.webp",
+      "bytes": 25554,
+      "sha256": "66ac1b1e66cb7c4579fc778888326f10c3d0363ab0309216e12af53c6014532c"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.thumb.webp",
+      "bytes": 3564,
+      "sha256": "28608d0640216d67627a6ef2ac4e6648479ad661423f2725e4ac7f3606bfc760"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-01-soft-touch-1246-oak/top.webp",
+      "bytes": 56790,
+      "sha256": "1dd53b22cfc4ccbc1106a4ea5ac80719c2fc7999656e71a73f20c2d44f6946b8"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.thumb.webp",
+      "bytes": 2276,
+      "sha256": "d999855c191755d33b3ab99369dfc0b87f24eef3abc27b4162e20b8431921f88"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/right-side.webp",
+      "bytes": 42686,
+      "sha256": "211c82beb6ce30585e701412b702ec8e32aab268056133a08e093c6674e81b22"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.thumb.webp",
+      "bytes": 3522,
+      "sha256": "c8ad2ec01b511868fa8438651aedeb5d8b8726f654cb372819d50609aa08f561"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-02-veronza-1008-dark-oak/top.webp",
+      "bytes": 88484,
+      "sha256": "4f7d4fa6429c5486d288f1750f427769834d281772e6061b3b9537426f446f1a"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.thumb.webp",
+      "bytes": 2378,
+      "sha256": "597323864287d068f4e7a0beb2497f48c04c4ca63086da578644ffc35446748a"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/right-side.webp",
+      "bytes": 24648,
+      "sha256": "d60bdcfb1abe51543e9c3913ab7cd9b2e615a4a044005ef9a309cfe15986c466"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.thumb.webp",
+      "bytes": 3618,
+      "sha256": "d7df7c8bf5d0d1b23476f274a5884ead9312dd7afeb2ce4e9b5a63561b74b3bf"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-03-card-bordo-black-oak/top.webp",
+      "bytes": 49846,
+      "sha256": "1d3791818bc7a09130fc8f420433d11f0f1076b5ee40aac7c51d5c17f7b2ee46"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.thumb.webp",
+      "bytes": 2794,
+      "sha256": "74c7bfd83fcd7106a1087c555e22e0e40fdffff372b9f9d6bf9681cb7ffc5521"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/right-side.webp",
+      "bytes": 34924,
+      "sha256": "86f0c0cb37468d43e59c38a865f1e0be5663bfb6e4ba8fdce20d0272cfccd6b7"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.thumb.webp",
+      "bytes": 3796,
+      "sha256": "c40e5c21edc79a670b3b361ccb0bf938b19e41499b01faf9f7f4fa9064842bd9"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-04-soft-touch-1351-oak/top.webp",
+      "bytes": 59990,
+      "sha256": "4cb2c155650428477d71a765ffe18df55f66858a5c89efec330922dc39233cab"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.thumb.webp",
+      "bytes": 2546,
+      "sha256": "5c9e1f8d483f417ab2822fbedc98bf7638bda54d7f19afb9d27eec87fbeb7675"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/right-side.webp",
+      "bytes": 32816,
+      "sha256": "d87ac68a42f5a65f98722b78f6f81b44d53cbad0c92110fcccad938bb353b36c"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.thumb.webp",
+      "bytes": 3876,
+      "sha256": "08083bf81649b4b10aacb35b58087e9d1966be63804466e8e54c0be4cd468e2d"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-05-veronza-1012-dark-oak/top.webp",
+      "bytes": 70660,
+      "sha256": "27de89ccb9e5d87f4de0bbf79791f36f6950f5dedefab439e3036b985bc33f87"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.thumb.webp",
+      "bytes": 2428,
+      "sha256": "f8b0091af1e9efffe9e7b29eb31959367b8599621a79240a261d82c8bfb6b3b9"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/right-side.webp",
+      "bytes": 37538,
+      "sha256": "18b8b450bd50a2cf24707c3616f0871a3ef2eb67195e03e8151eb5353bf56445"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.thumb.webp",
+      "bytes": 2328,
+      "sha256": "6908f70d9a9d9ae2fb1686acef14461a3ec5e75dbb0f601449b7162449021eca"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-06-colormax-1015-black-oak/top.webp",
+      "bytes": 38798,
+      "sha256": "c5aa4476b841d5efe39540eee9c572b4d587981ed2adc64e19652d7d3f7d383b"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.thumb.webp",
+      "bytes": 2180,
+      "sha256": "41e93fa4e4e9056e8a6a6b431384cfd0dd0098a4437fb57faa0393046f140b5e"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/right-side.webp",
+      "bytes": 23798,
+      "sha256": "c6b186d515c784e048b593a488ff4c54258c0b74857142effc996d47d5ca9445"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.thumb.webp",
+      "bytes": 3286,
+      "sha256": "826dd75e27440eacf3642a705df76c9c6f2656dc6d448ae596a2555bea04d784"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-07-veronza-1031-oak/top.webp",
+      "bytes": 47866,
+      "sha256": "cce6bcbb89c538f3dc6b3714a5b4e84bbe62bbb8198802933ea2601bdbd627c6"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.thumb.webp",
+      "bytes": 2176,
+      "sha256": "6dbc26d549161c615f4f959c27ff0cbe568f69874a1f5b1b636a780a0a962de5"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/right-side.webp",
+      "bytes": 21044,
+      "sha256": "1f5ae7c2693e40009bd3588f47d38216d5658175e206730bf7b882e12943ccc9"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.thumb.webp",
+      "bytes": 2820,
+      "sha256": "4cd5c9073aa739f2043a18bb80b822d27c80f4f5f29c802f854c349184de1b4a"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-08-veronza-1035-dark-oak/top.webp",
+      "bytes": 35474,
+      "sha256": "e7caad6cd65d717c6f059cc84516bf4c8cf7d3d1b1c80865b58a7faab70708bc"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.thumb.webp",
+      "bytes": 2828,
+      "sha256": "3aff1db356e10001277b3ffd7a9d5abd346420f6e2ed99989983ef782bc9470d"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/right-side.webp",
+      "bytes": 32672,
+      "sha256": "180eb7c244edd4ae5c208546b6474199171e0590243ecdd8c0770c67c776b329"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.thumb.webp",
+      "bytes": 3538,
+      "sha256": "c9a281ccc3f8838bb0cb2c11215ea41251fe16e5211b4eb45ecda949b2e20be0"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-09-veronza-1041-black-oak/top.webp",
+      "bytes": 48810,
+      "sha256": "d73c6b011649f7a212af99b15e4d08d17a13307224621e6e35728d63b17e40f4"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.thumb.webp",
+      "bytes": 2254,
+      "sha256": "59beb2672afbf43d36d5ee71293a88484a05036661e9dacfec4503a132a5208a"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/right-side.webp",
+      "bytes": 24246,
+      "sha256": "f6db377cfdc50270fba3a8612f57bf3b29cbf06b7269fc3bc9d0488265ff45e6"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.thumb.webp",
+      "bytes": 2780,
+      "sha256": "41dd1d1c9b8519d5cb77e121ab0a7bee5844a24ead8937a30e7636b5daf4040e"
+    },
+    {
+      "path": "assets/product-galleries/v132/inspiration-reverse-v132-10-card-bal-oak/top.webp",
+      "bytes": 37700,
+      "sha256": "b5cf68602f22dd47ba06b1a3b7b8519e91468d477ab41447f914f1dc40419034"
+    }
+  ],
+  "privateDimensionSourceApprovals": [
+    {
+      "candidateId": "SOM-Y0001-V001__top-v178-top-01",
+      "masterSHA256": "5d7a308d6f15e5f28d0095cf7f053ba475e2b2ff09334b3997b1a2a5a6792c0c",
+      "view": "top",
+      "viewPolicyRevision": "orthographic-occlusion-v178",
+      "qualityApproved": true
+    },
+    {
+      "candidateId": "SOM-Y0004-V001__top-v178-top-01",
+      "masterSHA256": "0df7aa0337196ec6d0953e438822ffaefd9f1fdca61f66427987b17851838b65",
+      "view": "top",
+      "viewPolicyRevision": "orthographic-occlusion-v178",
+      "qualityApproved": true
+    },
+    {
+      "candidateId": "SOM-Y0001-V004__top-v178-top-01",
+      "masterSHA256": "3afc00af32e9d5566103f0d1430d3bf215a573fe848a5f5081d1ff6f7dd83b11",
+      "view": "top",
+      "viewPolicyRevision": "orthographic-occlusion-v178",
+      "qualityApproved": true
+    },
+    {
+      "candidateId": "SOM-Y0013-V004__top-v178-top-01",
+      "masterSHA256": "e70ed323422b0fa1cbe9563a3caee33815f13bdf2718d5645e940295c306ef80",
+      "view": "top",
+      "viewPolicyRevision": "orthographic-occlusion-v178",
+      "qualityApproved": true
+    },
+    {
+      "candidateId": "SOM-Y0003-V003__top-v178-top-01",
+      "masterSHA256": "02f5751ca0dda88aa285e42b683f22ca453eb17c30299e975fbd3488b1860eb9",
+      "view": "top",
+      "viewPolicyRevision": "orthographic-occlusion-v178",
+      "qualityApproved": true
+    }
+  ],
+  "allowedViews": [
+    "hero",
+    "front",
+    "right-rear",
+    "high-front",
+    "dimensioned-top"
+  ],
   "V174Protected": true,
   "sourceHashIsNotQualityApproval": true
 }
