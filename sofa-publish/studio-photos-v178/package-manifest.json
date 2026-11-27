@@ -5,8 +5,8 @@
   "baselineCommit": "8b3bd381942c906d2af8f950a20dd1623121e021",
   "baselineSiteBytesEvidence": 971868833,
   "maximumAdditiveReleaseBytes": 20000000,
-  "archiveBytes": 3688833,
-  "archiveSHA256": "6c973c602b16a6f2c487434b07487828181bd045c3a59e77a38155c530b90065",
+  "archiveBytes": 3688826,
+  "archiveSHA256": "114079d115139c663c47225c7675cd6ae58d422aaf14c3b74f6d51209a9e0435",
   "parts": [
     {
       "name": "part-001.bin",
@@ -15,8 +15,8 @@
     },
     {
       "name": "part-002.bin",
-      "bytes": 1591681,
-      "sha256": "ee85037d1fd59e2112f1ab95ccf965ef11d9f07441ca963c9dcba784c624874d"
+      "bytes": 1591674,
+      "sha256": "e9527b47514a28cb86b01ee57e42302a33df22600c7b75eac1a824c9a1923d6d"
     }
   ],
   "memberCount": 44,
@@ -218,36 +218,36 @@
     },
     {
       "path": "kombinasyonlar.html",
-      "bytes": 8556,
-      "sha256": "92cc0a4037db70fce023538be23259f30f3ef87035d3ef3ae4d6ccac51b5b87c"
+      "bytes": 8555,
+      "sha256": "26ceae82cc3de864bd77736ab18af89dc79e8ce4d0f16ce1770e1e9e2cf92280"
     },
     {
       "path": "kombinasyonlar.js",
-      "bytes": 21724,
-      "sha256": "9cdd148deb94beb41ed25fc1b3176c08cd688c08a96e98203b68abf35aff8488"
+      "bytes": 21723,
+      "sha256": "3391d255e93cc70790e076006d9cf371a2fdcf5600a6030d92a2397d5dcb12a2"
     },
     {
       "path": "product-gallery.js",
-      "bytes": 18229,
-      "sha256": "870083340d5441b2ed957e6f49e2d7c807669e266c91beb66a57bd75eca4a398"
+      "bytes": 18228,
+      "sha256": "f6f7875a90fdcf3105b8fc88f68a02c0168845aa6f65bb2db02c97f949771c43"
     },
     {
       "path": "studio-catalog-images.js",
-      "bytes": 5311,
-      "sha256": "9383ec3def47e067b1d1863bdfce5ee36f97b48d846c18835bd75c3b4b271399"
+      "bytes": 5310,
+      "sha256": "e470df4cd5f051818df7c04f9d0359892f61f3a82a4d3a7433ea0f1ecea6d0fe"
     },
     {
       "path": "urun.html",
-      "bytes": 8116,
-      "sha256": "353ddd81cc6e6c92723e4e6ef309e37a9d2a9982f4530c7bc5c8220637673b03"
+      "bytes": 8115,
+      "sha256": "954524fb8d3ec0907558e29708cd522ec612db23ae2f65b86073d84897813a2d"
     }
   ],
   "expectedBaseFiles": {
-    "urun.html": "378252528cfb14a6cc3ad80a32241ecf7d2d1677915e154820c8375d464a938e",
-    "kombinasyonlar.html": "3f105fc2487679334ffc0cbe1cef9e408d595451582378a82715684794a4a0c1",
-    "product-gallery.js": "d0f8f1d6fd2798a2509bb91861ebaa11bf36b8ccfaf9b593f24d67e22c7a4dc6",
-    "studio-catalog-images.js": "d303406bbed3f039ab84d3e52d7124d0cfd13334085ac3229c8df7eb30666952",
-    "kombinasyonlar.js": "6c3b81ab1cde43db71703d35f69a8534519bf1a8d9ac859cba8624a4746c3457",
+    "urun.html": "3f721465827efee42071ddf83055d6a715aeb692a9ad3d4486ee7933840b91a7",
+    "kombinasyonlar.html": "6189dd2474b9843b82f312bd06fe359291f5fce93b6b653610708f85ff82bc52",
+    "product-gallery.js": "6f037df10f9597789ab2ea9030de5b1c9f5a3134930a9b33726ad6e7dd9270fd",
+    "studio-catalog-images.js": "aefb40a349a0b12bc501acca23582ce621e838b7ab9a095d0e2c43e021e91c5b",
+    "kombinasyonlar.js": "5671b53f2b9726169cd4a5ca3dccc3399a38f6c6b0e4aff41ca6e2978d61c341",
     "inspiration-catalog.js": "73c0683246b37ce3245bd1cbee733a6ddbc31ad230966f7c3a1d18bb433d36b6"
   },
   "photos": [
