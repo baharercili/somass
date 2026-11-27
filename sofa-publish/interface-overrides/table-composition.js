@@ -1,5 +1,5 @@
-import {sanitizeModuleSequence,moduleExtraCount,moduleTablePositionChoices} from './module-chain.js?v=20261124-reverse-v132';
-import {sanitizeModuleOptions,planModuleChain} from './module-chain-planner.js?v=20261124-reverse-v132';
+import {sanitizeModuleSequence,moduleExtraCount,moduleTablePositionChoices} from './module-chain.js?v=20261127-configurator-v180';
+import {sanitizeModuleOptions,planModuleChain} from './module-chain-planner.js?v=20261127-configurator-v180';
 import {getTableProfile,getTablePlacement,normalizeTableDirection} from './sofa-table-profiles.js?v=20261124-reverse-v132';
 import {PRODUCTION_MODULE_DIMENSIONS} from './module-dimensions.js?v=20261121-single-both-v86';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
@@ -240,7 +240,7 @@ function hasOverlap(parts){
 
 /** A list is authoritative, including an empty list; earlier one-table links migrate. */
 export function sanitizeCompositionOptions(requestedLayout,requestedExtra,options={}){
- if(sanitizeModuleSequence(options.modules).length)return sanitizeModuleOptions(options);
+ if(sanitizeModuleSequence(options.modules).length)return sanitizeModuleOptions({...options,layout:options.layout??requestedLayout});
  const layout=normalLayout(requestedLayout),extra=layout.startsWith('single-')?0:extraCount(requestedExtra);
  if(!Array.isArray(options?.tables)){
   const old=sanitizeLegacyOptions(layout,extra,{...options,tableDirection:'front'}),tables=old.table==='none'?[]:[{id:'wood-1',type:old.table,position:old.tablePosition}];
@@ -271,3 +271,4 @@ export function planSofaComposition(requestedLayout='straight2',requestedExtra=0
  const layout=normalLayout(requestedLayout),extra=layout.startsWith('single-')?0:extraCount(requestedExtra),options=sanitizeCompositionOptions(layout,extra,requestedOptions);
  return planAcceptedTables(layout,extra,options.tables,Boolean(requestedOptions?.exploded));
 }
+

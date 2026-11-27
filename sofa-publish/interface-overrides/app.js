@@ -1,40 +1,30 @@
-import {NEW_FABRICS,addNewFabricChoices} from './fabric-library.js?v=20261124-new-fabrics-v118';
+import {APPROVED_FABRICS,compareFabricsChromatically,DEFAULT_BODY_FABRIC,DEFAULT_ACCENT_FABRIC} from './approved-fabrics.js?v=20261127-configurator-v180';
 import {getTableProfile} from './sofa-table-profiles.js?v=20261124-reverse-v132';
 import {createSelectionHistory} from './workspace-history.js?v=20261124-reverse-v132';
-import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY} from './combinations-state.js?v=20261124-reverse-v132';
-import {sanitizeCompositionOptions,getTablePositionChoices} from './table-composition.js?v=20261124-reverse-v132';
+import {galleryHref,readGalleryState,CONFIG_STORAGE_KEY,createGalleryChoices} from './combinations-state.js?v=20261127-configurator-v180';
+import {sanitizeCompositionOptions,getTablePositionChoices} from './table-composition.js?v=20261127-configurator-v180';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 import * as THREE from 'three';
 import { GLTFLoader } from './vendor/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from './vendor/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from './vendor/addons/environments/RoomEnvironment.js';
 import { SofaMaterialSystem } from './fabric-material.js?v=20261124-soft-touch-lines-v134-v05';
-import { ModularLayout } from './modular-layout.js?v=20261124-reverse-v132';
+import { ModularLayout } from './modular-layout.js?v=20261127-configurator-v180';
 import { evaluateBackBounds } from './back-motion.js?v=20261122-open-travel-v95';
-import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261124-reverse-v132';
-import {layoutFamily,layoutSide,layoutForFamily,layoutForSide,createPlacementGuide,shortPosition,validWoodModules,findWoodModuleSlot,reflowWoodModules} from './configuration-guide.js?v=20261124-reverse-v132';
-import {deriveModuleSequence,appendModule,removeModule,getCornerTableChoices,setCornerTable} from './module-chain.js?v=20261124-reverse-v132';
+import { buildConsumerSummary, buildSelectionText } from './consumer-summary.js?v=20261127-configurator-v180';
+import {layoutFamily,layoutSide,layoutForFamily,layoutForSide,createPlacementGuide,shortPosition,positionWoodModule,validWoodModules,findWoodModuleSlot,reflowWoodModules} from './configuration-guide.js?v=20261127-configurator-v180';
+import {deriveModuleSequence,appendModule,removeModule,getCornerTableChoices,setCornerTable} from './module-chain.js?v=20261127-configurator-v180';
 
 const $ = (s) => document.querySelector(s);
-const defaults = {body:'card-inci',accent:'card-bej',base:'oak',finish:'velvet',scene:'warm'};
-const choices = {
- body:{ivory:{label:'Fildişi',color:'#dfd8ca'},sand:{label:'Kum',color:'#b7a18a'},sage:{label:'Adaçayı',color:'#7b8975'},terracotta:{label:'Kiremit',color:'#a4654f'},charcoal:{label:'Antrasit',color:'#41464a'}},
- accent:{taupe:{label:'Vizon',color:'#9e8b72'},cocoa:{label:'Kakao',color:'#604736'},olive:{label:'Zeytin',color:'#62694c'},ink:{label:'Gece',color:'#263646'},rust:{label:'Tarçın',color:'#a85f40'}},
- base:{oak:{label:'Naturel meşe',color:'#bc8f62'},'dark-oak':{label:'Koyu meşe',color:'#493324'},'black-oak':{label:'Siyah ahşap',color:'#242526'}},
- finish:{velvet:{label:'Mora kadife'}},
- scene:{warm:{label:'Sıcak stüdyo',color:'#e8e4dc'},light:{label:'Aydınlık',color:'#f1f2ef'},dark:{label:'Koyu stüdyo',color:'#343a3b'}}
-};
-
-const paletteData=await fetch('./assets/velvet/palette.json?v=20261117-soft-velvet-v58b').then(r=>r.json());
-const cardSwatches=[...paletteData.swatches,...NEW_FABRICS.map(f=>({id:f.key,key:f.key,label:f.label,hex:f.hex,render_hex:f.renderHex,photo_chip:f.photoChip}))];
-for(const swatch of cardSwatches){const entry={label:swatch.label,color:swatch.hex,renderColor:swatch.render_hex||swatch.hex,photoChip:swatch.photo_chip};const key=swatch.key||'card-'+swatch.id;choices.body[key]=entry;choices.accent[key]=entry;}
-addNewFabricChoices(choices);
+const defaults = {body:DEFAULT_BODY_FABRIC,accent:DEFAULT_ACCENT_FABRIC,base:'oak',finish:'velvet',scene:'warm'};
+const choices=createGalleryChoices();
+const cardSwatches=APPROVED_FABRICS.map(fabric=>({...fabric,render_hex:fabric.renderHex,photo_chip:fabric.photoChip})).sort(compareFabricsChromatically);
 const layoutKeys=['straight2','straight3','corner-left','corner-right','chaise-left','chaise-right','single-left','single-right','single-both','dual-chaise'];
 
 let storedConfig='{}';try{storedConfig=localStorage.getItem(CONFIG_STORAGE_KEY)||'{}';}catch{}
 const state=readGalleryState(location.search,storedConfig,choices);
 let activeTableId=state.tables?.[0]?.id||null;
-let activeSeatId=null,appendType='seat',cornerDirection='left',moduleBuilderMessage='';
+let activeSeatId=null,appendType='seat',cornerDirection='left',moduleBuilderMessage=state.moduleBuilderError||'';
 let model,box,size,center,controls,renderer,scene,camera,dimensionsGroup,shadow,environment;
 let rendererInitialized=false,rendererResources=null,rendererProfile=null;
 let ready=false,autoRotate=false,dimensionsVisible=false,toastTimer,initAttempt=0,exploded=false,currentView='quarter';
@@ -296,9 +286,10 @@ function applyState(){
  if(scene){scene.background=color(choices.scene[state.scene].color);shadow.material.opacity=state.scene==='dark'?.45:.24;}
  document.querySelectorAll('[data-group][data-value]').forEach(b=>{const active=state[b.dataset.group]===b.dataset.value;b.setAttribute('aria-pressed',String(active));b.classList.toggle('is-active',active);b.classList.toggle('active',active);});
  document.querySelectorAll('[data-group-label]').forEach(el=>el.textContent=choices[el.dataset.groupLabel]?.[state[el.dataset.groupLabel]]?.label||'');
- const activeFabric=choices[paletteTarget][state[paletteTarget]],activeFamily=activeFabric.fabricSeries||'mora-f-evo',activeFamilyLabel=activeFabric.familyLabel||'Mora kadife',familyCount=cardSwatches.filter(swatch=>(choices.body[swatch.key||'card-'+swatch.id].fabricSeries||'mora-f-evo')===activeFamily).length;
+ const activeFabric=choices[paletteTarget][state[paletteTarget]],activeFamily=activeFabric.fabricSeries||'mora',activeFamilyLabel=activeFabric.familyLabel||'Durable Velvet',familyCount=cardSwatches.filter(swatch=>(choices.body[swatch.key||'card-'+swatch.id].fabricSeries||'mora')===activeFamily).length;
  if($('#active-material'))$('#active-material').textContent=activeFamilyLabel;
- setText('#fabric-series-note',familyCount+' renk · 4 seride '+cardSwatches.length+' renk');
+ setText('#fabric-series-note',familyCount+' renk · 4 koleksiyonda '+cardSwatches.length+' renk');
+ setText('#upholstery-family',summary.materials.fabric);
  const fabricAvatar=$('.fabric-note .fabric-texture');if(fabricAvatar){fabricAvatar.style.backgroundColor=activeFabric.color;fabricAvatar.style.backgroundImage=activeFabric.photoChip?`url("${activeFabric.photoChip}")`:'none';fabricAvatar.style.backgroundSize='cover';fabricAvatar.style.backgroundPosition='center';fabricAvatar.dataset.materialKey=state[paletteTarget];}
  if($('#selected-material-gallery'))$('#selected-material-gallery').href='./material-gallery.html?material='+encodeURIComponent(state[paletteTarget]);
  if($('#selection-summary'))$('#selection-summary').textContent=`${choices.body[state.body].label} · ${choices.accent[state.accent].label} · ${choices.base[state.base].label}`;
@@ -455,7 +446,7 @@ function syncCompositionControls(summary=selection()){
  setText('#table-position-current',positionLabel);
  for(const button of document.querySelectorAll('[data-composition-group][data-composition-value]')){
   const group=button.dataset.compositionGroup,value=compositionControlValue(group,button.dataset.compositionValue),selected=group==='table'?active.type===value:active.position===value;
-  const candidate=entries.map(entry=>entry.id===active.id?{...entry,[group==='table'?'type':'position']:value}:entry);
+  const candidate=entries.map(entry=>entry.id===active.id?(group==='table'?{...entry,type:value}:positionWoodModule(entry,value)):entry);
   button.disabled=!validWoodModules(state,candidate);button.setAttribute('aria-pressed',String(selected));button.classList.toggle('is-active',selected);
  }
  setText('#composition-availability-note',['left-end','right-end'].includes(active.position)?'Seçili ahşap modül, kolsuz oturumun yanında kol görevi görür. Diğer ahşap modüllerin yerleri korunur.':'Çizimlerde koyu görünen parça seçili ahşap modüldür. Diğer modüller yerlerinde kalır.');
@@ -487,7 +478,7 @@ function setCompositionOption(group,value){
  if(group==='table'&&!['angled','square','rectangle'].includes(value))return false;
  if(!active)return group==='table'?addWoodModule(value):false;
  if((group==='table'?active.type:active.position)===value)return true;
- const entries=woodEntries().map(entry=>entry.id===active.id?{...entry,[group==='table'?'type':'position']:value}:entry);
+ const entries=woodEntries().map(entry=>entry.id===active.id?(group==='table'?{...entry,type:value}:positionWoodModule(entry,value)):entry);
  return commitWoodEntries(entries);
 }
 function setOption(group,value){if(!choices[group]?.[value])return;state[group]=value;applyState();}
@@ -535,7 +526,7 @@ function renderPalette(){
  const grid=$('#photo-palette');if(!grid)return;grid.replaceChildren();
  for(const swatch of cardSwatches){
   const b=document.createElement('button'),sample=document.createElement('span'),label=document.createElement('span'),check=document.createElementNS('http://www.w3.org/2000/svg','svg'),use=document.createElementNS('http://www.w3.org/2000/svg','use');
-  const fabric=choices.body[swatch.key||'card-'+swatch.id];b.dataset.fabricFamily=fabric.fabricSeries||'mora-f-evo';b.dataset.fabricSearch=[swatch.label,fabric.familyLabel||'Mora kadife',fabric.shortCode,fabric.artCode].filter(Boolean).join(' ');b.type='button';b.dataset.group=paletteTarget;b.dataset.value=swatch.key||'card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=swatch.label;b.setAttribute('aria-label',swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
+  const fabric=choices.body[swatch.key||'card-'+swatch.id];b.dataset.fabricFamily=fabric.fabricSeries||'mora';b.dataset.fabricSearch=[swatch.label,fabric.familyLabel||'Durable Velvet',fabric.shortCode,fabric.artCode].filter(Boolean).join(' ');b.type='button';b.dataset.group=paletteTarget;b.dataset.value=swatch.key||'card-'+swatch.id;b.style.setProperty('--swatch',swatch.hex);b.title=fabric.familyLabel+' · '+swatch.label;b.setAttribute('aria-label',fabric.familyLabel+' · '+swatch.label);b.setAttribute('aria-pressed',String(state[paletteTarget]===b.dataset.value));
   const rgb=swatch.hex.slice(1).match(/.{2}/g).map(value=>parseInt(value,16)/255),linear=rgb.map(value=>value<=.04045?value/12.92:((value+.055)/1.055)**2.4),luminance=linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
   b.style.setProperty('--check-color',luminance>.24?'#263126':'#ffffff');sample.className='palette-color-sample';if(swatch.photo_chip)sample.style.backgroundImage=`url("${swatch.photo_chip}")`;sample.style.color=luminance>.24?'#263126':'#ffffff';check.classList.add('icon');check.setAttribute('aria-hidden','true');use.setAttribute('href','#i-check');check.append(use);sample.append(check);label.className='palette-color-name';label.textContent=swatch.label;b.append(sample,label);grid.append(b);
  }
@@ -615,3 +606,4 @@ document.addEventListener('fullscreenchange',()=>requestAnimationFrame(resize));
 compactInterface.addEventListener?.('change',()=>{applyState();resize();});
 window.addEventListener('beforeunload',()=>renderer?.setAnimationLoop(null));
 renderPalette();setStep('layout');applyState();loadModel();
+

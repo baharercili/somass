@@ -1,8 +1,8 @@
-import {selectedFabricDescription} from './fabric-library.js?v=20261124-new-fabrics-v118';
-import {moduleExtraCount} from './module-chain.js?v=20261124-reverse-v132';
+import {selectedFabricDescription} from './approved-fabrics.js?v=20261127-configurator-v180';
+import {moduleExtraCount} from './module-chain.js?v=20261127-configurator-v180';
 import {getTableProfile} from './sofa-table-profiles.js?v=20261124-reverse-v132';
 
-import {planSofaComposition,getTablePositionChoices} from './table-composition.js?v=20261124-reverse-v132';
+import {planSofaComposition,getTablePositionChoices} from './table-composition.js?v=20261127-configurator-v180';
 
 import {SOFA_TABLE_DESIGNS,normalizeTableDesign} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 
@@ -81,3 +81,4 @@ export function buildSelectionText(summary,{url}={}){
  if(url){try{const parsed=new URL(url);if(parsed.protocol==='https:'||parsed.protocol==='http:')lines.push('',`Seçim bağlantısı: ${parsed.href}`);}catch{}}
  return lines.join('\n');
 }
+

@@ -35,8 +35,8 @@
       "path": "index.html",
       "expectedBaseSha256": "8171d56fecc0521bc9d865d492fd00d5604706839f491414940eb5b03916bbdb",
       "expectedBaseBytes": 28146,
-      "sha256": "35a0e121414152276d28d5da94cf54f65a44bb0b93a6b1d325697a93e68e567e",
-      "bytes": 30549
+      "sha256": "51be834ee5ac8065262bb7066b4f06b15bd6909ba20074f59df6f9a145389290",
+      "bytes": 30737
     },
     {
       "path": "product-gallery.js",
@@ -3437,8 +3437,8 @@
       "path": "app.js",
       "expectedBaseSha256": "45ed6c3305ec33d07eafec29d0900e625469ca80770e5347ac3c387fbae27d4b",
       "expectedBaseBytes": 58321,
-      "sha256": "5d0fe0e4403fcce117daa1d83d0a8eec6ff616c5f8d7e97adaf82228bf44881e",
-      "bytes": 66305
+      "sha256": "9e061c52852390617e598e3438f918a15b3c638dbbaab4b8e1b36571533ce785",
+      "bytes": 65493
     },
     {
       "path": "assets/material-gallery/a51006c09bf47a185f242eab9fd590bc1cf5db31920de02cac2b6bc41501d75d.png",
@@ -3472,15 +3472,15 @@
       "path": "combinations-state.js",
       "expectedBaseSha256": "2aa13955c46ac8ca0caf3be2bf58619f18a958da8f4709ba8534996c2e57ab8f",
       "expectedBaseBytes": 12659,
-      "sha256": "a6c6edbe04cb49f8578708e8c452d30e779e7c05d0dfb5d74ad3195d47ffe942",
-      "bytes": 12824
+      "sha256": "50e9dfdec219c75f2c9f76711bf7d5eb8672442fcc434a25b08d67c1a91fb477",
+      "bytes": 12033
     },
     {
       "path": "consumer-summary.js",
       "expectedBaseSha256": "2f8b64bd350fa92edc10690ceb31577aaf35de25dc4f2f4eb2afc42e90f4c99e",
       "expectedBaseBytes": 11416,
-      "sha256": "b30a8e429e2bdbd210a1bbd040fb2ee941c80ae220e6269a702c4b36563854e2",
-      "bytes": 11903
+      "sha256": "9dbee829e75c3481354537a2c9f81036e6152fb676f97cffb5327abae03e3ecd",
+      "bytes": 11917
     },
     {
       "path": "fabric-appearance.js",
@@ -12341,8 +12341,8 @@
       "path": "configuration-guide.js",
       "expectedBaseSha256": "d63d983cb7e85ec0ef5f5180963b6a6da51c6eb0edc2dd7824a21ccb5fa52bbf",
       "expectedBaseBytes": 8661,
-      "bytes": 8755,
-      "sha256": "cdfb3670555ce949f11e7bdc6fa023a5750bb1dc3198fad5f367ed134be881ef"
+      "bytes": 8937,
+      "sha256": "e0ffc3bd94490897441af91150619424154d28a19ef43e4510bc7d598de17602"
     },
     {
       "path": "corner-table-composition.js",
@@ -12355,22 +12355,22 @@
       "path": "modular-layout.js",
       "expectedBaseSha256": "2429e45ab7968fac16ae06b3b676f8d5cea8839b911fc80010463ca95aebab7f",
       "expectedBaseBytes": 14400,
-      "bytes": 14396,
-      "sha256": "ec19b41b705aca4504660eace14adce5da1d8cfda4734b1364721fb6666722a0"
+      "bytes": 14402,
+      "sha256": "463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1"
     },
     {
       "path": "module-chain-planner.js",
       "expectedBaseSha256": "0477bfe258b80958661358f634ab294184a6e455da4b971379daaf31b25c06b4",
       "expectedBaseBytes": 9687,
-      "bytes": 10114,
-      "sha256": "3f5f17b30238280328c457428037a278116bb2f22600404a3b5a8bccf24d3f5e"
+      "bytes": 10375,
+      "sha256": "183bb573956d8f3960f1d7991627be10ca3ac45a08bf04430f08df69bbe1a43c"
     },
     {
       "path": "module-chain.js",
       "expectedBaseSha256": "e18b94c1091df53414173052a4399c34ce5d4e5dd29ee5802cf1b08a07a43a79",
       "expectedBaseBytes": 8120,
-      "bytes": 8112,
-      "sha256": "5c31e4eeeabbb201dd5f129454cf5f86ad5ec460da291a8b08e83b3049c34294"
+      "bytes": 14328,
+      "sha256": "826fd8ea89544807da3f440bc6051a84dca10f7d36f38a958d4942f0a046fc28"
     },
     {
       "path": "product-pack-documents.js",
@@ -12390,8 +12390,8 @@
       "path": "table-composition.js",
       "expectedBaseSha256": "2cea73b71dcc4cdefabd563fdf52527d8b75b23215da3038fcbc82c40170d285",
       "expectedBaseBytes": 23679,
-      "bytes": 24360,
-      "sha256": "bf7a7df03aeeb928761084b01d503f639abd7e4b10ae09b51322c41b9f0bd3a3"
+      "bytes": 24415,
+      "sha256": "b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f"
     },
     {
       "path": "workspace-history.js",
@@ -13659,6 +13659,13 @@
       "expectedBaseBytes": 0,
       "sha256": "b5cf68602f22dd47ba06b1a3b7b8519e91468d477ab41447f914f1dc40419034",
       "bytes": 37700
+    },
+    {
+      "path": "approved-fabrics.js",
+      "expectedBaseSha256": null,
+      "expectedBaseBytes": 0,
+      "bytes": 29278,
+      "sha256": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687"
     }
   ]
 }

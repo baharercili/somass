@@ -2,7 +2,7 @@ import {buildArmlessChaise,createArmlessChaiseFeet,ARMLESS_CHAISE_DIMENSIONS} fr
 import {buildDoubleArmSingle} from './double-arm-single.js?v=20261121-single-both-v86';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
 import {createSofaTable,setSofaTableFinish} from './sofa-tables.js?v=20261121-black-oak-v74';
-import {planSofaComposition,sanitizeCompositionOptions} from './table-composition.js?v=20261124-reverse-v132';
+import {planSofaComposition,sanitizeCompositionOptions} from './table-composition.js?v=20261127-configurator-v180';
 import {coverChaiseArmJoin} from './chaise-arm-joint-cover.js?v=20261112-arm-detail-v36c';
 import {finishClosedContactEdges} from './closed-contact-edge-finish.js?v=20261112-contact-detail-v36b';
 import {repairMiddleSeatSide} from './middle-seat-side-repair.js?v=20261112-middle-sides-v34d';
@@ -176,3 +176,4 @@ export class ModularLayout {
   return this.root;
  }
 }
+

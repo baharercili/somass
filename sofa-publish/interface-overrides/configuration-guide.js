@@ -1,4 +1,4 @@
-import {compositionFootprint,getTablePositionChoices,planSofaComposition,sanitizeCompositionOptions} from './table-composition.js?v=20261124-reverse-v132';
+import {compositionFootprint,getTablePositionChoices,planSofaComposition,sanitizeCompositionOptions} from './table-composition.js?v=20261127-configurator-v180';
 
 const LAYOUTS=new Set(['straight2','straight3','corner-left','corner-right','chaise-left','chaise-right','dual-chaise','single-left','single-right','single-both']);
 const validLayout=value=>LAYOUTS.has(value)?value:'straight2';
@@ -35,11 +35,12 @@ export function shortPosition(value){
  if(value==='return')return 'Köşe dönüşü';
  return `${value}–${value+1} arası`;
 }
+export function positionWoodModule(entry,position){const {beforeId,afterId,...rest}=entry;return {...rest,position};}
 export const sameWoodModules=(expected,actual)=>Array.isArray(actual)&&actual.length===expected.length&&expected.every(entry=>actual.some(item=>item.id===entry.id&&item.type===entry.type&&item.position===entry.position&&(item.direction??'front')===(entry.direction??'front')));
 export const nextWoodId=entries=>'wood-'+(Math.max(0,...entries.map(entry=>Number(String(entry.id).split('-')[1])||0))+1);
 export function validWoodModules(state,entries){
  const candidate=sanitizeCompositionOptions(state.layout,state.extra,{...state,tables:entries});
- return sameWoodModules(entries,candidate.tables)?candidate:null;
+ return !candidate.moduleBuilderError&&sameWoodModules(entries,candidate.tables)?candidate:null;
 }
 export function findWoodModuleSlot(state,type='rectangle',id=nextWoodId(state.tables||[])){
  const entries=state.tables||[],occupied=new Set(entries.map(entry=>entry.position));
@@ -60,7 +61,7 @@ export function reflowWoodModules(state,entries=state.tables||[]){
   let placed=false;
   for(const position of positions){
    if(accepted.some(other=>other.position===position)||(reserved.has(position)&&reserved.get(position)!==entry.id))continue;
-   const next=[...accepted,{...entry,position}],candidate=validWoodModules(state,next);
+   const next=[...accepted,positionWoodModule(entry,position)],candidate=validWoodModules(state,next);
    if(!candidate)continue;
    accepted.push(candidate.tables.find(item=>item.id===entry.id));if(position!==entry.position)moved.push(entry.id);placed=true;break;
   }
@@ -93,7 +94,7 @@ export function createPlacementGuide(container){
   activeId=active.id;
   const wood=safeColor(choices.base?.[state.base]?.color,'#bc8f62'),positions=getTablePositionChoices(state.layout,state.extra,{...state,...normalized}).filter(option=>{
    if(entries.some(entry=>entry.id!==active.id&&entry.position===option.value))return false;
-   return Boolean(validWoodModules(state,entries.map(entry=>entry.id===active.id?{...entry,position:option.value}:entry)));
+   return Boolean(validWoodModules(state,entries.map(entry=>entry.id===active.id?positionWoodModule(entry,option.value):entry)));
   });
   // A selection-only change updates pressed states without replacing focusable nodes.
   const nextSignature=JSON.stringify([state.layout,state.extra,state.modules,state.moduleRotation,active.id,wood,entries.map(entry=>[entry.id,entry.type,entry.id===active.id?null:entry.position,...(entry.direction==='back'?['back']:[])]),positions.map(option=>[option.value,option.label])]);
@@ -101,7 +102,7 @@ export function createPlacementGuide(container){
    const previousPosition=container.contains(container.ownerDocument.activeElement)?container.ownerDocument.activeElement.closest('[data-composition-value]')?.dataset.compositionValue:null;
    const document=container.ownerDocument,fragment=document.createDocumentFragment();cards=[];
    for(const option of positions){
-    const candidate=validWoodModules(state,entries.map(entry=>entry.id===active.id?{...entry,position:option.value}:entry));
+    const candidate=validWoodModules(state,entries.map(entry=>entry.id===active.id?positionWoodModule(entry,option.value):entry));
     const button=document.createElement('button'),label=document.createElement('span'),check=document.createElement('span'),plan=planSofaComposition(state.layout,state.extra,{...state,...candidate});
     button.type='button';button.className='placement-card';button.dataset.compositionGroup='tablePosition';button.dataset.compositionValue=String(option.value);button.setAttribute('aria-label',option.label);button.title=option.label;
     label.className='placement-card-label';label.textContent=shortPosition(option.value);
@@ -114,3 +115,4 @@ export function createPlacementGuide(container){
   for(const {button,value}of cards){const selected=value===active.position;button.setAttribute('aria-pressed',String(selected));button.classList.toggle('is-active',selected);}
  }};
 }
+

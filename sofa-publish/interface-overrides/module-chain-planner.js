@@ -1,6 +1,6 @@
 import {getTableProfile,getTablePlacement,normalizeTableDirection} from './sofa-table-profiles.js?v=20261124-reverse-v132';
 import {DEFAULT_TABLE_DESIGN} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
-import {sanitizeModuleSequence,moduleQuarterRotation,moduleTablePositionChoices,moduleTableAnchors,moduleExtraCount} from './module-chain.js?v=20261124-reverse-v132';
+import {sanitizeModuleSequence,moduleQuarterRotation,moduleTablePositionChoices,moduleTableAnchors,moduleTablePosition,normalizeModuleComposition,moduleExtraCount} from './module-chain.js?v=20261127-configurator-v180';
 import {sanitizeCornerTables,createCornerTablePart} from './corner-table-composition.js?v=20261124-reverse-v132';
 const STANDARD_DEPTH=1.07;
 const rotate=(x,z,a)=>({x:Math.cos(a)*x+Math.sin(a)*z,z:-Math.sin(a)*x+Math.cos(a)*z});
@@ -11,7 +11,7 @@ export function sanitizeModuleTables(modules,options={}){
  const entries=Array.isArray(options.tables)?options.tables:options.table&&options.table!=='none'?[{id:'wood-1',type:options.table,position:options.tablePosition}]:[];
  for(const [index,item]of entries.entries()){
   if(!item||typeof item!=='object')continue;const type=item.type==='straight'?'angled':item.type;if(!types.has(type))continue;
-  let position=item.position;if(typeof position==='string'&&/^\d+$/.test(position))position=Number(position);
+  let position=moduleTablePosition(modules,item);
   if(!positions.has(position)){
    const before=modules.findIndex(node=>node.id===item.beforeId),after=modules.findIndex(node=>node.id===item.afterId);
    position=after===0&&item.beforeId==null?'left-end':before===modules.length-1&&item.afterId==null?'right-end':after>0&&before===after-1?after:Math.max(1,Math.floor(modules.length/2));
@@ -23,13 +23,13 @@ export function sanitizeModuleTables(modules,options={}){
  return result;
 }
 export function sanitizeModuleOptions(options={},validateTables=true){
- const modules=sanitizeModuleSequence(options.modules),cornerTables=sanitizeCornerTables(modules,options.cornerTables),requested=sanitizeModuleTables(modules,options),moduleRotation=moduleQuarterRotation(options.moduleRotation);let tables=requested;
+ const original=sanitizeModuleSequence(options.modules),normalized=normalizeModuleComposition(original,sanitizeModuleTables(original,options),options),modules=normalized.modules,cornerTables=sanitizeCornerTables(modules,options.cornerTables),requested=sanitizeModuleTables(modules,{tables:normalized.tables}),moduleRotation=moduleQuarterRotation(options.moduleRotation);let tables=requested;
  if(validateTables&&requested.length){
   tables=[];
   for(const entry of requested){const next=[...tables,entry];if(!planModuleChain('straight2',0,{modules,moduleRotation,tables:next,...(cornerTables.length?{cornerTables}:{})},false).conflicts.length)tables.push(entry);}
  }
  const first=tables[0],table=first?.type??'none';
- return {table,terminal:'none',tableDesign:first?getTableProfile(table).design:DEFAULT_TABLE_DESIGN,tablePosition:first?.position??0,tableDirection:normalizeTableDirection(first?.type,first?.direction),tableVariant:'standard',tables,modules,moduleRotation,...(cornerTables.length?{cornerTables}:{})};
+ return {table,terminal:'none',tableDesign:first?getTableProfile(table).design:DEFAULT_TABLE_DESIGN,tablePosition:first?.position??0,tableDirection:normalizeTableDirection(first?.type,first?.direction),tableVariant:'standard',tables,modules,moduleRotation,...(cornerTables.length?{cornerTables}:{}),...(normalized.moduleBuilderError?{moduleBuilderError:normalized.moduleBuilderError}:{})};
 }
 function tablePart(entry){const profile=getTableProfile(entry.type),d=profile.dimensions;return {type:'table_'+entry.type,kind:'table',tableId:entry.id,tablePosition:entry.position,tableDesign:profile.design,tableVariant:'standard',width:d.width,depth:d.depth,height:d.height,seatHeight:0,approximate:false,outline:profile.outline.map(point=>[...point]),...(normalizeTableDirection(entry.type,entry.direction)==='back'?{tableDirection:'back'}:{})};}
 function transform(part,origin,target,angle){
@@ -46,7 +46,7 @@ function overlap(a,b){
  return true;
 }
 export function planModuleChain(layout='straight2',extra=0,requested={},validateTables=true){
- const options=sanitizeModuleOptions(requested,validateTables),modules=options.modules.length?options.modules:[{id:'module-1',type:'seat'}],gap=requested.exploded?.075:0,parts=[],slots=new Map(options.tables.map(entry=>[entry.position,entry])),cornerIds=new Set((options.cornerTables??[]).map(entry=>entry.moduleId));
+ const options=sanitizeModuleOptions({...requested,layout:requested.layout??layout},validateTables),modules=options.modules.length?options.modules:[{id:'module-1',type:'seat'}],gap=requested.exploded?.075:0,parts=[],slots=new Map(options.tables.map(entry=>[entry.position,entry])),cornerIds=new Set((options.cornerTables??[]).map(entry=>entry.moduleId));
  let contact={x:0,z:0},theta=options.moduleRotation*Math.PI/2;
  for(const [index,node]of modules.entries()){
   if(cornerIds.has(node.id)){
@@ -90,3 +90,4 @@ export function planModuleChain(layout='straight2',extra=0,requested={},validate
  const points=polygons.flat(),xs=points.map(point=>point[0]),zs=points.map(point=>point[1]),bounds={minX:Math.min(...xs),maxX:Math.max(...xs),minZ:Math.min(...zs),maxZ:Math.max(...zs)};
  return {layout,extra:moduleExtraCount(extra),options,parts,width:bounds.maxX-bounds.minX,depth:bounds.maxZ-bounds.minZ,height:.82,seatHeight:.42,bounds,seatCount:modules.length-cornerIds.size,tableCount:options.tables.length+cornerIds.size,moduleCount:parts.length,approximate:parts.some(part=>part.approximate),angle:options.tables.reduce((sum,item)=>sum+(item.type==='angled'?getTablePlacement(item.type,item.direction).leftAngle:0),0),custom:true,conflicts};
 }
+

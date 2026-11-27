@@ -2270,5 +2270,65 @@ def apply_v132_interface_overrides(package_root, restored, manifest, expected):
 apply_interface_overrides = apply_v132_interface_overrides
 
 
+
+# V180: one approved material catalogue module is added to the preserved
+# legacy patch chain. Every earlier media/restoration gate remains active.
+V180_CONFIG_PINS = {'app.js': {'sha256': '9e061c52852390617e598e3438f918a15b3c638dbbaab4b8e1b36571533ce785', 'bytes': 65493}, 'approved-fabrics.js': {'sha256': '7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687', 'bytes': 29278}, 'combinations-state.js': {'sha256': '50e9dfdec219c75f2c9f76711bf7d5eb8672442fcc434a25b08d67c1a91fb477', 'bytes': 12033}, 'configuration-guide.js': {'sha256': 'e0ffc3bd94490897441af91150619424154d28a19ef43e4510bc7d598de17602', 'bytes': 8937}, 'consumer-summary.js': {'sha256': '9dbee829e75c3481354537a2c9f81036e6152fb676f97cffb5327abae03e3ecd', 'bytes': 11917}, 'index.html': {'sha256': '51be834ee5ac8065262bb7066b4f06b15bd6909ba20074f59df6f9a145389290', 'bytes': 30737}, 'modular-layout.js': {'sha256': '463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1', 'bytes': 14402}, 'module-chain-planner.js': {'sha256': '183bb573956d8f3960f1d7991627be10ca3ac45a08bf04430f08df69bbe1a43c', 'bytes': 10375}, 'module-chain.js': {'sha256': '826fd8ea89544807da3f440bc6051a84dca10f7d36f38a958d4942f0a046fc28', 'bytes': 14328}, 'table-composition.js': {'sha256': 'b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f', 'bytes': 24415}}
+_apply_interface_overrides_before_v180 = apply_interface_overrides
+
+def apply_v180_interface_overrides(package_root, restored, manifest, expected):
+    control=package_root/'sofa-publish/interface-overrides.json'
+    if not control.exists() and not control.is_symlink():
+        return _apply_interface_overrides_before_v180(package_root,restored,manifest,expected)
+    regular_source(control,package_root)
+    overlay=json.loads(control.read_text('utf-8'));files=overlay.get('files',[])
+    additions=[r for r in files if r.get('path')=='approved-fabrics.js']
+    if not additions:
+        return _apply_interface_overrides_before_v180(package_root,restored,manifest,expected)
+    if len(additions)!=1 or len(files)!=V132_FULL_OVERLAY_LIMIT+1:
+        raise ValueError('V180 requires exactly one catalogue addition')
+    rows={r.get('path'):r for r in files}
+    if len(rows)!=len(files):raise ValueError('Duplicate V180 control paths')
+    for name,pin in V180_CONFIG_PINS.items():
+        row=rows.get(name)
+        if not row or row.get('sha256')!=pin['sha256'] or row.get('bytes')!=pin['bytes']:
+            raise ValueError('V180 approved configurator content differs: '+name)
+    row=additions[0];name=row['path']
+    if (row.get('expectedBaseSha256') is not None or row.get('expectedBaseBytes')!=0
+            or name in expected or (restored/name).exists() or (restored/name).is_symlink()):
+        raise ValueError('V180 catalogue addition collides with original source')
+    source=package_root/'sofa-publish/interface-overrides'/name
+    regular_source(source,package_root);body=source.read_bytes()
+    if len(body)!=row['bytes'] or sha256(body)!=row['sha256']:
+        raise ValueError('V180 catalogue source checksum differs')
+    body.decode('utf-8')
+    with tempfile.TemporaryDirectory(prefix='.sofa-v180-legacy-view-',dir=restored.parent) as temporary:
+        filtered=Path(temporary);folder=package_root/'sofa-publish'
+        for f in folder.rglob('*'):
+            if f.is_symlink():raise ValueError('Symlink in V180 publication source')
+            if not f.is_file() or f==control:continue
+            regular_source(f,package_root);target=filtered/'sofa-publish'/f.relative_to(folder)
+            target.parent.mkdir(parents=True,exist_ok=True);os.link(f,target)
+        subset=dict(overlay);subset['files']=[r for r in files if r['path']!=name]
+        target=filtered/'sofa-publish/interface-overrides.json';target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(json.dumps(subset,ensure_ascii=False,indent=2)+'\n','utf-8')
+        count=_apply_interface_overrides_before_v180(filtered,restored,manifest,expected)
+    target=restored/name;target.write_bytes(body)
+    expected[name]={'path':name,'bytes':len(body),'sha256':sha256(body)}
+    audit_name='INTERFACE-OVERRIDES.json';audit=json.loads((restored/audit_name).read_text('utf-8'))
+    audit.update({'files':files,'legacyFullOverlayLimit':V132_FULL_OVERLAY_LIMIT,
+                  'fullOverlayLimit':V132_FULL_OVERLAY_LIMIT+1,'fullOverlayRecords':len(files),
+                  'v180ConfiguratorFiles':V180_CONFIG_PINS,'v180AdditionalFileCount':1})
+    b=(json.dumps(audit,ensure_ascii=False,indent=2)+'\n').encode();(restored/audit_name).write_bytes(b)
+    expected[audit_name]={'path':audit_name,'bytes':len(b),'sha256':sha256(b)}
+    integrity='PACKAGE-MEMBERS.json';details={'schemaVersion':1,'members':sorted((r for n,r in expected.items() if n!=integrity),key=lambda r:r['path'])}
+    b=(json.dumps(details,ensure_ascii=False,indent=2)+'\n').encode()
+    if sum(r['bytes'] for n,r in expected.items() if n!=integrity)+len(b)>MAX_SITE_BYTES:
+        raise ValueError('V180 configurator publication exceeds preserved site limit')
+    (restored/integrity).write_bytes(b);expected[integrity]={'path':integrity,'bytes':len(b),'sha256':sha256(b)}
+    return count+1
+
+apply_interface_overrides = apply_v180_interface_overrides
+
 if __name__ == '__main__':
     main()

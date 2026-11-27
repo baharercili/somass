@@ -1,8 +1,8 @@
-import {addNewFabricChoices} from './fabric-library.js?v=20261124-new-fabrics-v118';
-import {sanitizeModuleSequence,moduleExtraCount,moduleQuarterRotation} from './module-chain.js?v=20261124-reverse-v132';
-import {buildConsumerSummary} from './consumer-summary.js?v=20261124-reverse-v132';
+import {addApprovedFabricChoices,resolveFabricKey,DEFAULT_BODY_FABRIC,DEFAULT_ACCENT_FABRIC} from './approved-fabrics.js?v=20261127-configurator-v180';
+import {sanitizeModuleSequence,moduleExtraCount,moduleQuarterRotation} from './module-chain.js?v=20261127-configurator-v180';
+import {buildConsumerSummary} from './consumer-summary.js?v=20261127-configurator-v180';
 
-import {sanitizeCompositionOptions} from './table-composition.js?v=20261124-reverse-v132';
+import {sanitizeCompositionOptions} from './table-composition.js?v=20261127-configurator-v180';
 import {sanitizeCornerTables} from './corner-table-composition.js?v=20261124-reverse-v132';
 
 import {DEFAULT_TABLE_DESIGN,TABLE_DESIGN_IDS,normalizeTableDesign} from './sofa-table-designs.js?v=20261118-wood-modules-v65';
@@ -14,34 +14,25 @@ const ALL_LAYOUTS=[...COMBINATION_LAYOUTS,'single-left','single-right','single-b
 const MATERIAL_KEYS=['body','accent','base','finish','scene'];
 const TABLE_TYPES=['none','straight','angled','square','rectangle'];
 const NAMED_TABLE_POSITIONS=['return','left-end','right-end'];
-export const DEFAULT_GALLERY_STATE=Object.freeze({body:'card-inci',accent:'card-bej',base:'oak',finish:'velvet',scene:'warm',layout:'straight2',extra:0,back:'closed',table:'none',terminal:'none',tableDesign:DEFAULT_TABLE_DESIGN,tableVariant:'standard',tablePosition:0,tableDirection:'front'});
+export const DEFAULT_GALLERY_STATE=Object.freeze({body:DEFAULT_BODY_FABRIC,accent:DEFAULT_ACCENT_FABRIC,base:'oak',finish:'velvet',scene:'warm',layout:'straight2',extra:0,back:'closed',table:'none',terminal:'none',tableDesign:DEFAULT_TABLE_DESIGN,tableVariant:'standard',tablePosition:0,tableDirection:'front'});
 const owns=(object,key)=>object!=null&&typeof key==='string'&&Object.hasOwn(object,key);
 const clampExtra=moduleExtraCount;
 const tableEntries=value=>Array.isArray(value)?value.filter(entry=>entry&&typeof entry==='object'&&!Array.isArray(entry)).map(entry=>({id:entry.id,type:entry.type,position:entry.position,...(entry.type==='angled'&&entry.direction==='back'?{direction:'back'}:{}),...(Object.hasOwn(entry,'beforeId')?{beforeId:entry.beforeId}:{}),...(Object.hasOwn(entry,'afterId')?{afterId:entry.afterId}:{})})):[];
 
 /** The same legacy identifiers used by the configurator remain valid on shared links. */
-export function createGalleryChoices(palette=[]){
- const choices={
-  body:{ivory:{label:'Fildişi',color:'#dfd8ca'},sand:{label:'Kum',color:'#b7a18a'},sage:{label:'Adaçayı',color:'#7b8975'},terracotta:{label:'Kiremit',color:'#a4654f'},charcoal:{label:'Antrasit',color:'#41464a'},'card-inci':{label:'İnci',color:'#dfd8ca'}},
-  accent:{taupe:{label:'Vizon',color:'#9e8b72'},cocoa:{label:'Kakao',color:'#604736'},olive:{label:'Zeytin',color:'#62694c'},ink:{label:'Gece',color:'#263646'},rust:{label:'Tarçın',color:'#a85f40'},'card-bej':{label:'Bej',color:'#cab99e'}},
+export function createGalleryChoices(){
+ return addApprovedFabricChoices({
   base:{oak:{label:'Naturel meşe',color:'#bc8f62'},'dark-oak':{label:'Koyu meşe',color:'#493324'},'black-oak':{label:'Siyah ahşap',color:'#242526'}},
-  finish:{velvet:{label:'Mora kadife'}},
+  finish:{velvet:{label:'Kumaş döşeme'}},
   scene:{warm:{label:'Sıcak stüdyo',color:'#e8e4dc'},light:{label:'Aydınlık',color:'#f1f2ef'},dark:{label:'Koyu stüdyo',color:'#343a3b'}}
- };
- const swatches=Array.isArray(palette)?palette:palette?.swatches;
- for(const swatch of Array.isArray(swatches)?swatches:[]){
-  if(!swatch||typeof swatch.id!=='string'||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(swatch.id)||typeof swatch.label!=='string'||!/^#[a-f0-9]{6}$/i.test(swatch.hex))continue;
-  const entry={label:swatch.label.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,80),color:swatch.hex,renderColor:/^#[a-f0-9]{6}$/i.test(swatch.render_hex||'')?swatch.render_hex:swatch.hex,photoChip:swatch.photo_chip};
-  choices.body['card-'+swatch.id]=entry;choices.accent['card-'+swatch.id]=entry;
- }
- return addNewFabricChoices(choices);
+ });
 }
 
 /** URL values override valid stored values, matching the existing configurator. */
 export function readGalleryState(query='',storageSerialized='{}',choices=createGalleryChoices()){
  const state={...DEFAULT_GALLERY_STATE};let stored={};
  try{const value=typeof storageSerialized==='string'?JSON.parse(storageSerialized):storageSerialized;if(value&&typeof value==='object'&&!Array.isArray(value))stored=value;}catch{}
- for(const key of MATERIAL_KEYS)if(owns(choices[key],stored[key]))state[key]=stored[key];
+ for(const key of MATERIAL_KEYS){const value=['body','accent'].includes(key)?resolveFabricKey(stored[key]):stored[key];if(owns(choices[key],value))state[key]=value;}
  if(ALL_LAYOUTS.includes(stored.layout))state.layout=stored.layout;
  if(Number.isInteger(stored.extra))state.extra=clampExtra(stored.extra);
  if(TABLE_TYPES.includes(stored.table))state.table=stored.table;
@@ -52,7 +43,7 @@ export function readGalleryState(query='',storageSerialized='{}',choices=createG
  const storedModules=sanitizeModuleSequence(stored.modules);if(storedModules.length){state.modules=storedModules;state.moduleRotation=moduleQuarterRotation(stored.moduleRotation);}
  const storedCornerTables=sanitizeCornerTables(storedModules,stored.cornerTables);if(storedCornerTables.length)state.cornerTables=storedCornerTables;
  const params=new URLSearchParams(query);
- for(const key of MATERIAL_KEYS){const value=params.get(key);if(owns(choices[key],value))state[key]=value;}
+ for(const key of MATERIAL_KEYS){const value=['body','accent'].includes(key)?resolveFabricKey(params.get(key)):params.get(key);if(owns(choices[key],value))state[key]=value;else if(['body','accent'].includes(key)&&params.has(key))state[key]=DEFAULT_GALLERY_STATE[key];}
  if(ALL_LAYOUTS.includes(params.get('layout')))state.layout=params.get('layout');
  if(params.has('extra')){const value=Number(params.get('extra'));state.extra=Number.isFinite(value)?clampExtra(value):0;}
  // A legacy shared layout opens with its original upholstered ends and no tables.
@@ -163,3 +154,4 @@ export function getGalleryCombinations(state={},choices=createGalleryChoices()){
   return{key:`${family}-${count}`,layoutKey,title,label:summary.layoutLabel,kind:summary.layoutKind,side:summary.side,additionalMiddleCount:spec.extra,isCurrent:!current.modules&&currentFamily===family&&currentSummary.seatCount===count,state:cardState,href:combinationHref(cardState,layoutKey,choices),summary,dimensions:summary.dimensions,footprintLabel:summary.footprintLabel,moduleCount:summary.moduleCount,seatCount:summary.seatCount,tableCount:summary.tableCount,tableDesign:summary.tableDesign,tableVariant:summary.tableVariant,tablePosition:summary.tablePosition,tableDirection:summary.tableDirection,modulePlan:summary.modulePlan,directionOptions};
  });
 }
+
