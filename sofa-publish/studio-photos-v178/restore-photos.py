@@ -79,6 +79,8 @@ def restore(package,site):
    proof=approved[photo['candidateId']];name=photo['src'][2:];require(photo['src'].startswith('./'+PREFIX+'photos/') and expected[name]['sha256']==proof['sha256']==photo['sha256'] and proof['masterSHA256']==photo['masterSHA256'],'Photo binding differs')
    if photo['viewId']=='top':require(proof.get('viewPolicyRevision')=='orthographic-occlusion-v178','Rejected TOP method')
    if photo['viewId']=='high-front':require(proof.get('viewPolicyRevision')=='high-front-occlusion-v178','Rejected high-front method')
+   if photo['viewId']=='dimensioned-top':
+    dep=approved.get(proof.get('sourceTopCandidateId'));require(dep and dep['view']=='top' and dep.get('viewPolicyRevision')=='orthographic-occlusion-v178' and dep['masterSHA256']==proof.get('sourceTopMasterSHA256') and proof.get('untouchedPhotographChannelDifferences')==0 and re.fullmatch(r'[a-f0-9]{64}',proof.get('externalOverlaySHA256','')),'Dimension overlay dependency differs')
   # Put assets and modules in place before their HTML entry points.
   for name in sorted(expected,key=lambda n:(n in ('urun.html','kombinasyonlar.html'),n)):
    target=sofa/name;target.parent.mkdir(parents=True,exist_ok=True);os.replace(stage/name,target)
