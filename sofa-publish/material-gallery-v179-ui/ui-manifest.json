@@ -1,0 +1,43 @@
+{
+  "format": "somass-material-gallery-v179-ui-v1",
+  "files": [
+    {
+      "path": "material-gallery.html",
+      "bytes": 1063986,
+      "sha256": "278f698fcfc827e11652d3d5c1bd09f29ec3044625f13d88879dde2da44b54e3"
+    },
+    {
+      "path": "assets/material-gallery/v179/gallery.js",
+      "bytes": 39524,
+      "sha256": "df07bd560172a77e91844aa489f9fc8e98c2df47e9f75240324d182f0a2ea3fc"
+    },
+    {
+      "path": "assets/material-gallery/v179/gallery.css",
+      "bytes": 7300,
+      "sha256": "ebb1aa47d383d99e1e9b20356787db5a39841284d9b783751c15a0ae568d65cd"
+    },
+    {
+      "path": "assets/material-gallery/v179/metadata.json",
+      "bytes": 1024081,
+      "sha256": "a4be6d2b197a771c5afedb7e9e9b6d409854a450d3b88880498c36667f279fad"
+    },
+    {
+      "path": "assets/material-gallery/v179/manifest.json",
+      "bytes": 1260,
+      "sha256": "99011fb7ad32113e171242bc7ee0002906d455f056baed8c6f86ea9a8fe1f223"
+    }
+  ],
+  "expectedBaseGallery": {
+    "path": "material-gallery.html",
+    "bytes": 368512,
+    "sha256": "ee1ccaee5b78cf7efb5a472664056293cebd9ec4dbdc3f5aed3a2dd2c197991d"
+  },
+  "assetManifestURL": "https://baharercili.github.io/somass-room-planner/material-gallery-v179-cfd55e91db46/asset-manifest.json",
+  "assetManifestSHA256": "42fd76888e1c1dbfebf2ef7968522a43dab8e8e07453af076080bf129892b35b",
+  "immutableAssetSetSHA256": "cfd55e91db469b076e2132cedf84294f6031b2fbcac882aa4302436c1a3a51c7",
+  "archivePublishedCommit": "38ee411b313102a78184e8daf5ae8292751ee0c8",
+  "archiveHTTPFilesVerified": 1538,
+  "baseSOMASSCommit": "ca1ceed8a6d96f18f50756c2bc328d0136d90c11",
+  "maximumSiteBytes": 1000000000,
+  "currentPhotoHoldsRemainExcluded": true
+}

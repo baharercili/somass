@@ -1,0 +1,48 @@
+{
+  "version": 179,
+  "materialCount": 37,
+  "viewsPerMaterial": 31,
+  "totalGalleryViews": 1147,
+  "sourceAssetVersion": 174,
+  "assetIntegration": "asset-integration-v179.json",
+  "galleryContract": {
+    "studio": 8,
+    "sampleCard": 1,
+    "textureCollage": 1,
+    "nativeCloseups": 8,
+    "static": 3,
+    "lightingSingles": 9,
+    "lightingComparison": 1,
+    "perMaterial": 31,
+    "materialCount": 37
+  },
+  "sortContract": {
+    "scope": "within-family",
+    "groups": [
+      "white-cream",
+      "beige-greige",
+      "grey-black",
+      "yellow-earth",
+      "brown",
+      "pink-red",
+      "green",
+      "blue"
+    ],
+    "tieBreak": "immutable original material order"
+  },
+  "webDelivery": {
+    "quality": 94,
+    "nativeDimensionsRetained": true,
+    "lossyEncodedFiles": 750,
+    "v174Reencoded": false,
+    "correctedWaveSwatchesReencoded": false
+  },
+  "assetArchive": {
+    "immutablePublicPrefix": "/somass-room-planner/material-gallery-v179-cfd55e91db46/",
+    "immutableAssetSetSHA256": "cfd55e91db469b076e2132cedf84294f6031b2fbcac882aa4302436c1a3a51c7",
+    "files": 1537,
+    "bytes": 219162404,
+    "v174ReferencesRemainAtRoot": true,
+    "metadataSHA256": "a4be6d2b197a771c5afedb7e9e9b6d409854a450d3b88880498c36667f279fad"
+  }
+}

@@ -160,6 +160,8 @@ jobs:
         run: python3 sofa-publish/material-gallery-v174/restore-gallery.py --site _source/_site
       - name: Verify and refresh approved sofa studio photographs
         run: python3 sofa-publish/studio-photos-v178/restore-photos.py --site _source/_site
+      - name: Verify and switch the complete fabric gallery interface
+        run: python3 sofa-publish/material-gallery-v179-ui/restore-ui.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website

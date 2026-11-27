@@ -1,0 +1,71 @@
+/* Additions to the established live gallery layout. */
+.feature-icon-row{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 24px}
+.feature-icon{position:relative;flex:0 0 62px;min-width:0}
+.feature-icon summary{list-style:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:7px;text-align:center;cursor:pointer;font-size:10px;line-height:1.3;color:var(--muted)}
+.feature-icon summary::-webkit-details-marker{display:none}
+.feature-icon svg{box-sizing:content-box;display:block;width:27px;height:27px;flex:none;border:1px solid var(--line);border-radius:9px;padding:14px;color:#696e65;background:#fff}
+.feature-icon[open] svg{border-color:var(--olive);background:var(--soft)}
+.feature-icon p{position:absolute;z-index:4;top:85px;left:0;width:225px;margin:0;padding:12px;background:white;border:1px solid var(--line);box-shadow:0 6px 20px #00000012;border-radius:5px;font-size:12px;line-height:1.5;color:var(--muted)}
+.feature-icon:nth-child(n+5) p{left:auto;right:0}
+.product-brief-note,.technical-scope,.source-focus-note,.gallery-note,.gallery-image-note{font-size:.77rem;line-height:1.6;color:var(--muted)}
+.gallery-image-note{display:block;max-width:43em;margin-top:5px}
+.product-certification{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #cfd6c7;border-radius:3px;background:#f6f7f3;font-size:.79rem;line-height:1.3}
+#detail-badges>.product-certification{margin-top:8px}
+.technical-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.technical-summary>div{padding:12px 0;border-top:1px solid var(--line)}
+.technical-summary dt{font-size:.77rem;color:var(--muted);margin-bottom:5px}
+.technical-summary dd{margin:0;font-size:1.06rem;font-weight:500}
+.technical-details{border-top:1px solid var(--line);padding-top:13px;margin-top:18px}
+.technical-details summary{font-size:.88rem;cursor:pointer}
+.technical-table{margin:16px 0;width:100%;border-collapse:collapse;font-size:.8rem;line-height:1.5;table-layout:fixed}
+.technical-table th,.technical-table td{padding:11px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.technical-table th{width:43%;font-weight:500}
+.technical-table small{display:block;color:var(--muted);font-size:.7rem;margin-top:4px}
+.extra-image-group{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.extra-image-group h3{font-size:.92rem;font-weight:500;margin:0 0 10px}
+.extra-image-group .gallery-note{margin:0 0 12px}
+.extra-image-group .image-thumbs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.image-thumb img{object-fit:cover}
+.static-test-label{font-size:10px;line-height:1.35}
+@media(max-width:850px){.feature-icon-row{gap:7px}.feature-icon{flex-basis:58px}.feature-icon svg{padding:12px}.feature-icon p{width:190px}.extra-image-group .image-thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:420px){.feature-icon-row{gap:7px}.feature-icon{flex-basis:55px}.feature-icon svg{padding:11px}.feature-icon p{width:170px}.technical-summary{gap:8px}}
+/* V179 · a single editorial line icon system and fabric-first browsing. */
+.material-card .card-photo{aspect-ratio:4/5;border:0;background:#f4f4f0}
+.material-card .card-photo>img{object-fit:cover}
+.material-card .photo-kind{font-size:.75rem;letter-spacing:.015em;right:10px;bottom:10px;padding:4px 7px;background:#ffffffed;border:0}
+.material-card .card-caption{padding-top:1rem}
+.material-card .card-title{font:400 1.55rem/1.15 Baskerville,'Iowan Old Style',Georgia,serif;letter-spacing:-.015em}
+.material-card .card-fabric-type{font-size:.875rem;line-height:1.5;margin:0 0 .5rem;font-weight:500}
+.material-card .colour-name-secondary{margin:.35rem 0 .6rem}
+.material-card .material-traits{margin:.6rem 0 .8rem}
+.material-card .material-traits li{padding:0;background:none;font-size:.8rem;line-height:1.5}
+.material-card .material-traits li+li::before{content:'·';margin-right:.5rem;color:#b2b7a8}
+.material-card .card-select{margin-top:.5rem;min-height:44px;border-radius:0;font-size:.875rem}
+.material-colour-chip{grid-template-rows:44px auto;gap:6px;min-height:78px;padding:4px}
+.material-colour-chip[aria-pressed=true]{padding:3px}
+.material-colour-chip>img{height:44px;object-fit:cover}
+.material-colour-chip>span:not(.source-roi){font-size:.7rem;line-height:1.3;overflow-wrap:anywhere}
+.detail-colour-chips{grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:.5rem}
+.feature-icon-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.25rem;margin:1.25rem 0;border-top:1px solid var(--line)}
+.feature-icon{min-width:0;padding:.75rem 0;border-bottom:1px solid var(--line)}
+.feature-icon summary{display:grid;grid-template-columns:30px minmax(0,1fr);align-items:center;gap:.7rem;min-height:36px;text-align:left;font-size:.875rem;line-height:1.35;color:var(--ink)}
+.feature-icon svg{box-sizing:border-box;width:28px;height:28px;display:block;border:0;padding:0;border-radius:0;color:var(--olive);background:none;stroke-width:1.25}
+.feature-icon[open] svg{border:0;background:none}
+.feature-icon p{position:static;left:auto;right:auto;top:auto;width:auto;margin:.6rem 0 0;padding:0;border:0;box-shadow:none;background:none;border-radius:0;font-size:.875rem;line-height:1.55}
+.feature-icon p small{display:block;margin-top:.4rem;font-size:.75rem;color:var(--muted)}
+.icon{stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.detail-info .detail-family{font-size:1rem;line-height:1.5;margin-bottom:.75rem}
+.detail-info .detail-colour-secondary{font-size:.875rem;margin-top:.6rem}
+.technical-table{font-size:.875rem}
+.technical-table small{font-size:.75rem}
+.technical-summary dt{font-size:.875rem;line-height:1.5}
+.studio-heading.has-sample-card{grid-template-columns:70px minmax(0,1fr)}
+.studio-details .image-thumbs{gap:.5rem}
+.studio-details .image-thumb{height:80px}
+.image-thumb .thumb-number{font-size:.7rem;line-height:1.4;background:#fffffff0}
+.image-thumb[aria-pressed=true]{border-color:var(--olive)}
+.compare-card>img{aspect-ratio:4/5;object-fit:cover}
+.compare-card h3{font:400 1.6rem/1.2 Baskerville,'Iowan Old Style',Georgia,serif}
+.compare-card .material-traits{display:block}.compare-card .material-traits li{background:none;padding:0}
+@media(max-width:850px){.material-grid{gap:1.75rem 1rem}.feature-icon-row{gap:0 1rem}.studio-details .image-thumb{height:72px}.feature-icon svg{padding:0}.feature-icon p{width:auto}}
+@media(max-width:560px){.material-card .card-title{font-size:1.4rem}.material-card .card-caption{padding-top:.75rem}.material-card .card-fabric-type{font-size:.8rem;line-height:1.4;min-height:2.2em}.material-card .material-traits{display:block}.material-card .material-traits li{font-size:.75rem}.material-card .material-traits li+li::before{content:none}.material-card .card-select{font-size:.8rem}.feature-icon{padding:.7rem 0}.feature-icon summary{grid-template-columns:26px minmax(0,1fr);gap:.5rem;font-size:.8rem}.feature-icon svg{width:25px;height:25px;padding:0}.feature-icon p{width:auto;font-size:.8rem}.material-card .photo-kind{font-size:.7rem;right:7px;bottom:7px;padding:3px 6px}.detail-colour-chips{grid-template-columns:repeat(auto-fill,minmax(60px,1fr))}.studio-details .image-thumbs{gap:.4rem}.studio-details .image-thumb{height:70px}}
