@@ -26,7 +26,7 @@ def run(site):
   if p.is_file():
    b=p.read_bytes();active.append({**row,'sourceSHA256':row.get('sourceSHA256',row['sha256']),'sourceBytes':row.get('sourceBytes',row['bytes']),'sha256':sha(b),'bytes':len(b)})
  doc.update(files=active,sourceOverlayRecordCount=source_count,activePublishedRecords=len(active),publicAllowedViews=ALLOWED,cancelledViewsRemoved=len(retired));audit.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n')
- report={'allowedViews':ALLOWED,'publicSourceSlots':1190,'activeReviewedGalleryImages':sum(len(p['gallery']) for p in index['products']),'catalogueRecords':281,'cancelledDerivativeFilesRemoved':len(retired),'sourceMasterModelFabricDeletionCount':0,'privateTopProofContainsNoPublicTopURL':True}
+ report={'allowedViews':ALLOWED,'publicSourceSlots':1190,'activePublishedGalleryImages':sum(len(p['gallery']) for p in index['products']),'qualityApprovedImages':index['qualityApprovedCount'],'reviewPendingImages':index['pendingReviewPhotoCount'],'catalogueRecords':281,'cancelledDerivativeFilesRemoved':len(retired),'sourceMasterModelFabricDeletionCount':0,'privateTopProofContainsNoPublicTopURL':True}
  (sofa/'VIEW-SCOPE-PUBLICATION.json').write_text(json.dumps(report,indent=2)+'\n')
  integrity=sofa/'PACKAGE-MEMBERS.json';rows=[]
  for p in sorted(sofa.rglob('*')):

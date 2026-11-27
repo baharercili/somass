@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Restore only the explicitly reviewed V178 combination subset after V174.
+"""Restore only the user-authorized V178 combination photographs after V174.
 
 All original models, material galleries and unreplaced combination galleries
-remain in the preceding verified baseline. No pruning is performed here.
+remain in the preceding verified baseline. Only exact unused public legacy WebP derivatives are retired here.
 """
 import argparse,hashlib,io,json,os,re,stat,tempfile,zipfile
 from pathlib import Path,PurePosixPath
-MAX_ADDITIVE=20_000_000
-MAX_SITE=1024*1024*1024
+MAX_ADDITIVE=200_000_000
+MAX_SITE=1_000_000_000
 PREFIX='assets/product-studio-v178/'
 UI={'urun.html','kombinasyonlar.html','product-gallery.js','studio-catalog-images.js','kombinasyonlar.js','inspiration-catalog.js','zeytin-cift-acili.html','assets/product-galleries/catalogue-v77.json','assets/studio/catalogue-v69.json'}
 def require(ok,message):
@@ -31,7 +31,7 @@ def restore(package,site):
  regular(package/'package-manifest.json',package);m=json.loads((package/'package-manifest.json').read_text())
  require(m.get('schemaVersion')==1 and m.get('packageType')=='somass-approved-studio-v178' and m.get('releaseVersion')==181,'Wrong package')
  require(m.get('V174Protected') is True and isinstance(m.get('prunePaths'),list),'Original assets must remain intact')
- require(0<len(m['parts'])<=16 and len(m['members'])==m['memberCount']<=2048,'Invalid package count')
+ require(0<len(m['parts'])<=96 and len(m['members'])==m['memberCount']<=2048,'Invalid package count')
  archive=bytearray();seen=set()
  for part in m['parts']:
   name=part['name'];require(re.fullmatch(r'part-\d{3}\.bin',name) and name not in seen,'Invalid package part');seen.add(name)
@@ -48,7 +48,7 @@ def restore(package,site):
   p=sofa/name;regular(p,site);require(digest(p.read_bytes()) in (basehash,expected[name]['sha256']),'Pinned current UI baseline differs: '+name)
  retired=[]
  for row in m['prunePaths']:
-  name=row['path'];require('..' not in PurePosixPath(name).parts and PurePosixPath(name).as_posix()==name,'Unsafe cancelled-view path');require(re.fullmatch(r'assets/(?:product-galleries|zeytin-cift-acili)/[A-Za-z0-9_./-]+',name) and re.fullmatch(r'(?:right-side|left-side|top|v73-07-sag-yan|v73-08-ust)(?:\.thumb)?\.(?:webp|png|jpg|jpeg)',name.split('/')[-1]),'Unsafe cancelled-view retirement')
+  name=row['path'];require('..' not in PurePosixPath(name).parts and PurePosixPath(name).as_posix()==name,'Unsafe cancelled-view path');require(re.fullmatch(r'assets/(?:product-galleries|studio|zeytin-cift-acili)/[A-Za-z0-9_./-]+',name) and (name.endswith('.webp') or name in ['assets/product-galleries/flat-v94/v73-07-sag-yan.png','assets/product-galleries/flat-v94/v73-08-ust.png']) and not any(t in name.lower() for t in ['pbr','original','master']),'Unsafe legacy photograph retirement')
   p=sofa/name
   if p.exists():
    regular(p,site);b=p.read_bytes();require(len(b)==row['bytes'] and digest(b)==row['sha256'],'Cancelled-view source checksum differs: '+name);retired.append(row)
@@ -60,7 +60,7 @@ def restore(package,site):
    require(not parent.is_symlink() and (not parent.exists() or parent.is_dir()),'Unsafe target parent')
   if target.exists():
    regular(target,site)
-   if name not in UI:require(digest(target.read_bytes())==member['sha256'],'New asset collides with existing content')
+   if name not in UI:require(digest(target.read_bytes()) in [member['sha256'],*m.get('replaceableOverlayBaseFiles',{}).get(name,[])],'New asset collides with existing content: '+name)
    delta+=member['bytes']-target.stat().st_size
   else:delta+=member['bytes']
  delta-=sum(r['bytes'] for r in retired)
@@ -79,21 +79,35 @@ def restore(package,site):
     p=stage/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
   require(seen==set(expected),'Missing ZIP members')
   index=json.loads((stage/PREFIX/'gallery-index.json').read_text());photos=[g for p in index['products'] for g in p['gallery']]
-  require(index['version']==178 and index['actualPhotoCount']==index['qualityApprovedCount']==m['approvedPhotoCount']==len(photos)==len(m['photos']),'Approved photo count differs')
+  require(index['version']==178 and index['actualPhotoCount']==m['actualPhotoCount']==len(photos)==len(m['photos']) and index['qualityApprovedCount']==m['approvedPhotoCount']==sum(p['qaApproved'] is True for p in photos) and index['pendingReviewPhotoCount']==m['pendingReviewPhotoCount']==sum(p['qaApproved'] is False for p in photos),'Photo/review counts differ')
   approved={p['candidateId']:p for p in m['photos']};require(len(approved)==len(photos),'Duplicate approved photograph')
   for photo in photos:
-   require(photo.get('qaApproved') is True and photo.get('qualityApproved') is True and photo.get('sourceRevision')=='feet-original-position-v176' and photo.get('materialSourceRevision')=='material-studio-oak-v177' and photo.get('sourceWoodId')==photo.get('woodId'),'Unapproved or mismatched source photograph')
+   reviewed=photo.get('qaApproved') is True and photo.get('qualityApproved') is True
+   pending=photo.get('qaApproved') is False and photo.get('qualityApproved') is False and photo.get('qualityReviewStatus')=='review-pending' and photo.get('userRequestedBulkPublication') is True and photo.get('publicationAuthorized') is True
+   require((reviewed or pending) and photo.get('sourceRevision')=='feet-original-position-v176' and photo.get('materialSourceRevision')=='material-studio-oak-v177' and photo.get('sourceWoodId')==photo.get('woodId'),'Unapproved or mismatched source photograph')
    proof=approved[photo['candidateId']];name=photo['src'][2:];require(photo['src'].startswith('./'+PREFIX+'photos/') and expected[name]['sha256']==proof['sha256']==photo['sha256'] and proof['masterSHA256']==photo['masterSHA256'],'Photo binding differs')
    if photo['viewId']=='top':require(proof.get('viewPolicyRevision')=='orthographic-occlusion-v178','Rejected TOP method')
    if photo['viewId']=='high-front':require(proof.get('viewPolicyRevision')=='high-front-occlusion-v178','Rejected high-front method')
    if photo['viewId']=='dimensioned-top':
-    dep={r['candidateId']:r for r in m.get('privateDimensionSourceApprovals',[])}.get(proof.get('sourceTopCandidateId'));require(dep and dep.get('qualityApproved') is True and dep['view']=='top' and dep.get('viewPolicyRevision')=='orthographic-occlusion-v178' and dep['masterSHA256']==proof.get('sourceTopMasterSHA256') and proof.get('untouchedPhotographChannelDifferences')==0 and re.fullmatch(r'[a-f0-9]{64}',proof.get('externalOverlaySHA256','')),'Dimension overlay dependency differs')
+    dep={r['candidateId']:r for r in m.get('privateDimensionSourceApprovals',[])}.get(proof.get('sourceTopCandidateId'));require(dep and (dep.get('qualityApproved') is True or (pending and dep.get('qualityReviewStatus')=='review-pending' and dep.get('userRequestedBulkPublication') is True)) and dep['view']=='top' and dep.get('viewPolicyRevision')=='orthographic-occlusion-v178' and dep['masterSHA256']==proof.get('sourceTopMasterSHA256') and proof.get('untouchedPhotographChannelDifferences')==0 and re.fullmatch(r'[a-f0-9]{64}',proof.get('externalOverlaySHA256','')),'Dimension overlay dependency differs')
+  # Rebinding must be effective before any legacy photo is removed. Generated
+  # integrity/source-lineage inventories are evidence rather than runtime links.
+  prune_names={r['path'] for r in m['prunePaths']}
+  runtime_sources={p.relative_to(sofa).as_posix():p for p in sofa.rglob('*') if p.is_file() and p.suffix.lower() in ('.js','.mjs','.html','.css','.json','.svg')}
+  runtime_sources.update({name:stage/name for name in expected if Path(name).suffix.lower() in ('.js','.mjs','.html','.css','.json','.svg')})
+  checked_sources=0
+  for name,p in runtime_sources.items():
+   if Path(name).name in ('PACKAGE-MEMBERS.json','INTERFACE-OVERRIDES.json'):continue
+   text=p.read_text().replace('\\/','/')
+   links={h.removeprefix('./').split('?',1)[0].split('#',1)[0] for h in re.findall(r'(?:\./)?assets/[A-Za-z0-9_./%?=&#,:+@()~-]+',text)}
+   require(not (links & prune_names),'Retired photograph still referenced by '+name+': '+str(sorted(links & prune_names)[:3]))
+   checked_sources+=1
   # Put assets and modules in place before their HTML entry points.
   for name in sorted(expected,key=lambda n:(n in ('urun.html','kombinasyonlar.html'),n)):
    target=sofa/name;target.parent.mkdir(parents=True,exist_ok=True);os.replace(stage/name,target)
  for row in retired:(sofa/row['path']).unlink()
  after=members_size(site);require(after==before+delta and after<MAX_SITE,'Final website size differs')
- proof={'status':'pass','approvedPhotos':len(photos),'replacedVariants':m['replacedVariantCount'],'members':len(expected),'siteBytesBefore':before,'siteBytesAfter':after,'netBytesAdded':delta,'prunedFiles':len(retired),'cancelledViewBytesRemoved':sum(r['bytes'] for r in retired),'sourceOrModelDeleted':0,'V174Writes':0,'packageSHA256':digest((package/'package-manifest.json').read_bytes())}
+ proof={'status':'pass','approvedPhotos':m['approvedPhotoCount'],'actualPhotos':len(photos),'pendingReviewPhotos':m['pendingReviewPhotoCount'],'replacedVariants':m['replacedVariantCount'],'members':len(expected),'siteBytesBefore':before,'siteBytesAfter':after,'netBytesAdded':delta,'prunedFiles':len(retired),'legacyPublicWebPBytesRemoved':sum(r['bytes'] for r in retired),'sourceOrModelDeleted':0,'V174Writes':0,'runtimeReferenceSourcesChecked':checked_sources,'packageSHA256':digest((package/'package-manifest.json').read_bytes())}
  print(json.dumps(proof,sort_keys=True));return proof
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--site',type=Path,required=True);args=p.parse_args();restore(Path(__file__).resolve().parent,args.site)
