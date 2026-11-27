@@ -164,6 +164,8 @@ jobs:
         run: python3 sofa-publish/material-gallery-v179-ui/restore-ui.py --site _source/_site
       - name: Verify the final five-view public inventory
         run: python3 sofa-publish/studio-photos-v178/finalize-view-scope.py --site _source/_site
+      - name: Verify and add available sofa gallery photographs and distinct body colours
+        run: python3 sofa-publish/gallery-delta-v191-01/restore-delta.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
