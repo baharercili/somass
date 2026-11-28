@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "type": "catalogue-header-count-v191-06",
+  "baselineCommit": "2625ee90372ec967b069368b5b2641bac4221f46",
+  "bytes": 8541,
+  "sha256": "01b8a7b683215dfd63fa03a17cb14bc0fa6f49f079b4cdc69d047ce82790b4d8",
+  "expectedBaseSHA256": "ea04736888c8acfd649ef1856793727344dad94c51271052842d96a45812fb8f",
+  "oldCopy": "94 farklı yerleşim, 274 renk ve malzeme seçeneği.",
+  "newCopy": "97 farklı yerleşim, 281 renk ve malzeme seçeneği.",
+  "protectedFiles": {
+    "assets/product-studio-v178/gallery-index.json": "1860eeb8ec2092dc4798cc7250820aae6feed62d45b59c8d17c2d0ab8b2d3114",
+    "assets/product-galleries/catalogue-v77.json": "74199a6d9d103cebf87717fcfad84b60d95a8714be3c9d8a0b88964ede3f4b79",
+    "assets/pricing/catalogue-skus.json": "5574f05e7ab2290c292d3385748626836a6896bda7149b35376ddd3933fcf365",
+    "pricing.html": "c3dbc9d410a9259acf8fe26ee542f404e1e2d3b7c3cf3e1b731106e17611f909",
+    "pricing.js": "4c9526d69861bfe2559df62f0c202515ef8e3d66d69ee3f5bee7861ca6a5c358",
+    "kombinasyonlar.js": "5e136a7dff6cf29c7b2b308b731a7fd015b916890cb2f05d42fcce7a5143983f"
+  }
+}
