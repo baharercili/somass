@@ -186,6 +186,8 @@ jobs:
         run: python3 sofa-publish/capacity-v192-04/restore.py --site _source/_site
       - name: Verify and publish the next reviewed sofa photograph batch
         run: python3 sofa-publish/photos-v192-05/restore.py --site _source/_site
+      - name: Verify and publish the next reviewed sofa photograph batch
+        run: python3 sofa-publish/photos-v192-06/restore.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
