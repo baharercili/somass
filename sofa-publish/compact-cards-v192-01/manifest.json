@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "type": "compact-sofa-cards-v192-01",
+  "baselineCommit": "90d2f889a0ded9b1540c8de32fd1f3ae6973752e",
+  "files": [
+    {
+      "path": "kombinasyonlar.html",
+      "bytes": 8079,
+      "sha256": "503aa9253241e78eabd3b2e84255b7555a11c2da31fdcac1900f92836c783743",
+      "expectedBaseSHA256": "01b8a7b683215dfd63fa03a17cb14bc0fa6f49f079b4cdc69d047ce82790b4d8"
+    },
+    {
+      "path": "kombinasyonlar.css",
+      "bytes": 15738,
+      "sha256": "4910f9a62e4b46b8fadaeebfc667da8aa5e9eaa3989fd7330b1018a2bf92e9a5",
+      "expectedBaseSHA256": "cff2b69e82070f4132425c7a886176dc7868c97c02ba2445300adcd77ee14ebb"
+    },
+    {
+      "path": "kombinasyonlar.js",
+      "bytes": 22909,
+      "sha256": "52a08c41fd056dae4e6ac92480d16b84588343fa2122ce26131d0dfb5a4dcbb1",
+      "expectedBaseSHA256": "5e136a7dff6cf29c7b2b308b731a7fd015b916890cb2f05d42fcce7a5143983f"
+    },
+    {
+      "path": "sku-display.js",
+      "bytes": 3198,
+      "sha256": "a57ca54dfc431f78f39de09ef55a4cb4d4fb874e444edce2cc4fbbea24c8ee7d",
+      "expectedBaseSHA256": "e41cca8e8f08c4810c1dd1e2ec70399117711a3a4cf9d8913bd130f3b270a624"
+    },
+    {
+      "path": "sku-display.css",
+      "bytes": 1144,
+      "sha256": "0055456a06a79c6326fbbf4fa351c4335fb1edf7d9f2cfa723782007557ac5bc",
+      "expectedBaseSHA256": "0c14d34e65ce3b2961bd44bd47b52b7ffd3f64ff9fc4e69e11d7240ac0447bdc"
+    }
+  ],
+  "protectedFiles": {
+    "assets/product-studio-v178/gallery-index.json": "1860eeb8ec2092dc4798cc7250820aae6feed62d45b59c8d17c2d0ab8b2d3114",
+    "assets/product-galleries/catalogue-v77.json": "74199a6d9d103cebf87717fcfad84b60d95a8714be3c9d8a0b88964ede3f4b79",
+    "assets/pricing/catalogue-skus.json": "5574f05e7ab2290c292d3385748626836a6896bda7149b35376ddd3933fcf365",
+    "pricing.html": "c3dbc9d410a9259acf8fe26ee542f404e1e2d3b7c3cf3e1b731106e17611f909",
+    "pricing.js": "4c9526d69861bfe2559df62f0c202515ef8e3d66d69ee3f5bee7861ca6a5c358",
+    "catalogue-refresh-v178.js": "7e109ba3dee112c4d61bbfa997854bf8366e787a580d6055d7d7f2ce5db06c20",
+    "product-gallery.js": "449f7521a74c6fa87e7e0b27b66e868a12318af9e394afce508d537676750409",
+    "approved-fabrics.js": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687"
+  },
+  "plannedProductsIncluded": 0,
+  "existingProducts": 281,
+  "existingPhotos": 1405,
+  "materialCount": 37
+}
