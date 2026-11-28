@@ -1,0 +1,3815 @@
+{
+  "schemaVersion": 1,
+  "type": "additive-six-sofa-layouts-v196-01",
+  "baselineCommit": "36424935dba41fb59165b7bb311317086ffe3a13",
+  "newLayoutSKUs": [
+    "SOM-Y0098",
+    "SOM-Y0099",
+    "SOM-Y0100",
+    "SOM-Y0101",
+    "SOM-Y0102",
+    "SOM-Y0103"
+  ],
+  "newProductKeys": [
+    "inspiration-layout-v196-y0098-v001",
+    "inspiration-layout-v196-y0098-v002",
+    "inspiration-layout-v196-y0099-v001",
+    "inspiration-layout-v196-y0099-v002",
+    "inspiration-layout-v196-y0100-v001",
+    "inspiration-layout-v196-y0100-v002",
+    "inspiration-layout-v196-y0101-v001",
+    "inspiration-layout-v196-y0101-v002",
+    "inspiration-layout-v196-y0102-v001",
+    "inspiration-layout-v196-y0102-v002",
+    "inspiration-layout-v196-y0103-v001",
+    "inspiration-layout-v196-y0103-v002"
+  ],
+  "newVariantIDs": [
+    "SOM-Y0098-V001",
+    "SOM-Y0098-V002",
+    "SOM-Y0099-V001",
+    "SOM-Y0099-V002",
+    "SOM-Y0100-V001",
+    "SOM-Y0100-V002",
+    "SOM-Y0101-V001",
+    "SOM-Y0101-V002",
+    "SOM-Y0102-V001",
+    "SOM-Y0102-V002",
+    "SOM-Y0103-V001",
+    "SOM-Y0103-V002"
+  ],
+  "newCanonicalDefinitions": [
+    {
+      "key": "inspiration-layout-v196-y0098-v001",
+      "layoutSKU": "SOM-Y0098",
+      "variantID": "SOM-Y0098-V001",
+      "state": {
+        "body": "mora-1006",
+        "accent": "mora-1015",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 0,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "mora-1006",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -56.5,
+          "zCm": 0
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 56.5,
+          "zCm": 30
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 226,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "1904f18ca3539abebed34b3a00717376ae67b1c7720e5726b1db1a87129dbd0a",
+      "materials": {
+        "fabric": "Durable Velvet",
+        "body": "Avorio · 1006",
+        "back": "Avorio · 1006",
+        "accent": "Siena · 1015",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -56.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 56.5,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-right",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0098-v002",
+      "layoutSKU": "SOM-Y0098",
+      "variantID": "SOM-Y0098-V002",
+      "state": {
+        "body": "mora-1020",
+        "accent": "mora-1018",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 0,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "mora-1036",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -56.5,
+          "zCm": 0
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 56.5,
+          "zCm": 30
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 226,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "1904f18ca3539abebed34b3a00717376ae67b1c7720e5726b1db1a87129dbd0a",
+      "materials": {
+        "fabric": "Durable Velvet",
+        "body": "Bosco · 1020",
+        "back": "Calce · 1036",
+        "accent": "Salvia · 1018",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -56.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 56.5,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-right",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0099-v001",
+      "layoutSKU": "SOM-Y0099",
+      "variantID": "SOM-Y0099-V001",
+      "state": {
+        "body": "soft-touch-457623001133",
+        "accent": "mora-1019",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-left",
+        "extra": 1,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "soft-touch-457623001133",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -104,
+          "zCm": 30
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 0,
+          "zCm": 0
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 104,
+          "zCm": 0
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 321,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "e8b7341190ea89aa40592e84ab11283dae25285fe470f31d92e405bd28ee58cc",
+      "materials": {
+        "fabric": "Plush Vintage Chenille / Durable Velvet",
+        "body": "Biscotto · 1133",
+        "back": "Biscotto · 1133",
+        "accent": "Oliva · 1019",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "chaise_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": -104,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 0,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 104,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-left",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0099-v002",
+      "layoutSKU": "SOM-Y0099",
+      "variantID": "SOM-Y0099-V002",
+      "state": {
+        "body": "soft-touch-457623001351",
+        "accent": "mora-1007",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-left",
+        "extra": 1,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "soft-touch-457623001246",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -104,
+          "zCm": 30
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 0,
+          "zCm": 0
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 104,
+          "zCm": 0
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "chaise_L",
+          "label": "Sol kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 321,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "e8b7341190ea89aa40592e84ab11283dae25285fe470f31d92e405bd28ee58cc",
+      "materials": {
+        "fabric": "Plush Vintage Chenille / Durable Velvet",
+        "body": "Nebbia · 1351",
+        "back": "Pietra · 1246",
+        "accent": "Cammello · 1007",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "chaise_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": -104,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 0,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 104,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-left",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0100-v001",
+      "layoutSKU": "SOM-Y0100",
+      "variantID": "SOM-Y0100-V001",
+      "state": {
+        "body": "veronza-263267001008",
+        "accent": "veronza-263267001030",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 2,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "veronza-263267001008",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -151.5,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -47.5,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 47.5,
+          "zCm": 0
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 151.5,
+          "zCm": 30
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 416,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "3fbfdad2976e37fb4565f99302c32543570298ebf16735bef36d8e6ea36f1712",
+      "materials": {
+        "fabric": "Micro Boucle",
+        "body": "Conchiglia · 1008",
+        "back": "Conchiglia · 1008",
+        "accent": "Alloro · 1030",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -151.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -47.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 47.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 151.5,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-right",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0100-v002",
+      "layoutSKU": "SOM-Y0100",
+      "variantID": "SOM-Y0100-V002",
+      "state": {
+        "body": "veronza-263267001012",
+        "accent": "mora-1017",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "chaise-right",
+        "extra": 2,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "mora-1035",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -151.5,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -47.5,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 47.5,
+          "zCm": 0
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 151.5,
+          "zCm": 30
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "chaise_R",
+          "label": "Sağ kollu dinlenme modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 416,
+        "depthCm": 167,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": false
+      },
+      "geometryKey": "3fbfdad2976e37fb4565f99302c32543570298ebf16735bef36d8e6ea36f1712",
+      "materials": {
+        "fabric": "Micro Boucle / Durable Velvet",
+        "body": "Rame · 1012",
+        "back": "Avena · 1035",
+        "accent": "Cotto · 1017",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -151.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -47.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 47.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "chaise_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 167,
+          "heightCm": 82,
+          "xCm": 151.5,
+          "zCm": 30,
+          "rotationDegrees": 0,
+          "role": "row"
+        }
+      ],
+      "layoutKey": "chaise-right",
+      "kind": "chaise"
+    },
+    {
+      "key": "inspiration-layout-v196-y0101-v001",
+      "layoutSKU": "SOM-Y0101",
+      "variantID": "SOM-Y0101-V001",
+      "state": {
+        "body": "colormax-262962001015",
+        "accent": "mora-1020",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-left",
+        "extra": 1,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "colormax-262962001015",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "corner_L",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -104,
+          "zCm": 5.5
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 2.5,
+          "zCm": 0
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 106.5,
+          "zCm": 0
+        },
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": 90,
+          "xCm": -109.5,
+          "zCm": 121
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "corner_L",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 326,
+        "depthCm": 231,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "194ae083cd13c54493217b958e5af4f1134416ea7baa0b36aec197c097840239",
+      "materials": {
+        "fabric": "Natural Melanj Boucle / Durable Velvet",
+        "body": "Ecrù · 1015",
+        "back": "Ecrù · 1015",
+        "accent": "Bosco · 1020",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "corner_L",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": -104,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 2.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 106.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -109.5,
+          "zCm": 121,
+          "rotationDegrees": 90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-left",
+      "kind": "corner"
+    },
+    {
+      "key": "inspiration-layout-v196-y0101-v002",
+      "layoutSKU": "SOM-Y0101",
+      "variantID": "SOM-Y0101-V002",
+      "state": {
+        "body": "mora-1025",
+        "accent": "mora-1013",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-left",
+        "extra": 1,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "mora-1036",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "corner_L",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -104,
+          "zCm": 5.5
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 2.5,
+          "zCm": 0
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 106.5,
+          "zCm": 0
+        },
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": 90,
+          "xCm": -109.5,
+          "zCm": 121
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "corner_L",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 326,
+        "depthCm": 231,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "194ae083cd13c54493217b958e5af4f1134416ea7baa0b36aec197c097840239",
+      "materials": {
+        "fabric": "Durable Velvet",
+        "body": "Indaco · 1025",
+        "back": "Calce · 1036",
+        "accent": "Ambra · 1013",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "corner_L",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": -104,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 2.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 106.5,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -109.5,
+          "zCm": 121,
+          "rotationDegrees": 90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-left",
+      "kind": "corner"
+    },
+    {
+      "key": "inspiration-layout-v196-y0102-v001",
+      "layoutSKU": "SOM-Y0102",
+      "variantID": "SOM-Y0102-V001",
+      "state": {
+        "body": "mora-1035",
+        "accent": "soft-touch-457623001355",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-right",
+        "extra": 2,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "mora-1035",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -154,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -50,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 45,
+          "zCm": 0
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 151.5,
+          "zCm": 5.5
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": -90,
+          "xCm": 157,
+          "zCm": 121
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 421,
+        "depthCm": 231,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "97e0a35bc6a6b2128c2c6d53d1dcbb9aec6a059b57ef1ed569f419fdc90c0270",
+      "materials": {
+        "fabric": "Durable Velvet / Plush Vintage Chenille",
+        "body": "Avena · 1035",
+        "back": "Avena · 1035",
+        "accent": "Eucalipto · 1355",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -154,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -50,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 45,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "corner_R",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": 151.5,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 157,
+          "zCm": 121,
+          "rotationDegrees": -90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-right",
+      "kind": "corner"
+    },
+    {
+      "key": "inspiration-layout-v196-y0102-v002",
+      "layoutSKU": "SOM-Y0102",
+      "variantID": "SOM-Y0102-V002",
+      "state": {
+        "body": "veronza-263267001035",
+        "accent": "mora-1015",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-right",
+        "extra": 2,
+        "back": "closed",
+        "table": "none",
+        "terminal": "none",
+        "tableDesign": "dwg-angled",
+        "tableVariant": "standard",
+        "tablePosition": 0,
+        "tableDirection": "front",
+        "backFabric": "veronza-263267001008",
+        "tables": []
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -154,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -50,
+          "zCm": 0
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 45,
+          "zCm": 0
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 151.5,
+          "zCm": 5.5
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": -90,
+          "xCm": 157,
+          "zCm": 121
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "middle",
+          "label": "Kolsuz ara modül",
+          "kind": "seat",
+          "count": 2,
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 421,
+        "depthCm": 231,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "97e0a35bc6a6b2128c2c6d53d1dcbb9aec6a059b57ef1ed569f419fdc90c0270",
+      "materials": {
+        "fabric": "Micro Boucle / Durable Velvet",
+        "body": "Cacao · 1035",
+        "back": "Conchiglia · 1008",
+        "accent": "Siena · 1015",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -154,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -50,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "middle",
+          "kind": "seat",
+          "widthCm": 95,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 45,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "corner_R",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": 151.5,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 157,
+          "zCm": 121,
+          "rotationDegrees": -90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-right",
+      "kind": "corner"
+    },
+    {
+      "key": "inspiration-layout-v196-y0103-v001",
+      "layoutSKU": "SOM-Y0103",
+      "variantID": "SOM-Y0103-V001",
+      "state": {
+        "body": "soft-touch-457623001200",
+        "accent": "mora-1018",
+        "base": "oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-right",
+        "extra": 0,
+        "back": "closed",
+        "table": "rectangle",
+        "terminal": "none",
+        "tableDesign": "half-shelf",
+        "tableVariant": "standard",
+        "tablePosition": "return",
+        "tableDirection": "front",
+        "backFabric": "soft-touch-457623001200",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "rectangle",
+            "position": "return"
+          }
+        ]
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -59,
+          "zCm": 0
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 56.5,
+          "zCm": 5.5
+        },
+        {
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "tableId": "wood-1",
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "seatHeightCm": 0,
+          "approximate": false,
+          "role": "intermediate",
+          "rotationDegrees": -90,
+          "xCm": 68,
+          "zCm": 88.25
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": -90,
+          "xCm": 62,
+          "zCm": 168.5
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 231,
+        "depthCm": 279,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "30fb6750cc788b72a58adcb5299d32461d9e19c9d2f4e36a225a0e269fae76db",
+      "materials": {
+        "fabric": "Plush Vintage Chenille / Durable Velvet",
+        "body": "Sabbia · 1200",
+        "back": "Sabbia · 1200",
+        "accent": "Salvia · 1018",
+        "wood": "Açık meşe · M01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -59,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "corner_R",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": 56.5,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.300061,
+          "xCm": 68,
+          "zCm": 88.25,
+          "rotationDegrees": -90,
+          "role": "intermediate",
+          "tablePosition": "return",
+          "tableDesign": "half-shelf"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 62,
+          "zCm": 168.5,
+          "rotationDegrees": -90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-right",
+      "kind": "corner"
+    },
+    {
+      "key": "inspiration-layout-v196-y0103-v002",
+      "layoutSKU": "SOM-Y0103",
+      "variantID": "SOM-Y0103-V002",
+      "state": {
+        "body": "colormax-262962001017",
+        "accent": "veronza-263267001030",
+        "base": "dark-oak",
+        "finish": "velvet",
+        "scene": "warm",
+        "layout": "corner-right",
+        "extra": 0,
+        "back": "closed",
+        "table": "rectangle",
+        "terminal": "none",
+        "tableDesign": "half-shelf",
+        "tableVariant": "standard",
+        "tablePosition": "return",
+        "tableDirection": "front",
+        "backFabric": "mora-1036",
+        "tables": [
+          {
+            "id": "wood-1",
+            "type": "rectangle",
+            "position": "return"
+          }
+        ]
+      },
+      "modulePlan": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": -59,
+          "zCm": 0
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": true,
+          "role": "row",
+          "rotationDegrees": 0,
+          "xCm": 56.5,
+          "zCm": 5.5
+        },
+        {
+          "outlineCm": [
+            [
+              23.75,
+              44.5
+            ],
+            [
+              23.724335,
+              44.891579
+            ],
+            [
+              23.647777,
+              45.276457
+            ],
+            [
+              23.521639,
+              45.64805
+            ],
+            [
+              23.348076,
+              46
+            ],
+            [
+              23.13006,
+              46.326284
+            ],
+            [
+              22.87132,
+              46.62132
+            ],
+            [
+              22.576284,
+              46.88006
+            ],
+            [
+              22.25,
+              47.098076
+            ],
+            [
+              21.89805,
+              47.271639
+            ],
+            [
+              21.526457,
+              47.397777
+            ],
+            [
+              21.141579,
+              47.474335
+            ],
+            [
+              20.75,
+              47.5
+            ],
+            [
+              -20.75,
+              47.5
+            ],
+            [
+              -21.141579,
+              47.474335
+            ],
+            [
+              -21.526457,
+              47.397777
+            ],
+            [
+              -21.89805,
+              47.271639
+            ],
+            [
+              -22.25,
+              47.098076
+            ],
+            [
+              -22.576284,
+              46.88006
+            ],
+            [
+              -22.87132,
+              46.62132
+            ],
+            [
+              -23.13006,
+              46.326284
+            ],
+            [
+              -23.348076,
+              46
+            ],
+            [
+              -23.521639,
+              45.64805
+            ],
+            [
+              -23.647777,
+              45.276457
+            ],
+            [
+              -23.724335,
+              44.891579
+            ],
+            [
+              -23.75,
+              44.5
+            ],
+            [
+              -23.75,
+              -44.5
+            ],
+            [
+              -23.724335,
+              -44.891579
+            ],
+            [
+              -23.647777,
+              -45.276457
+            ],
+            [
+              -23.521639,
+              -45.64805
+            ],
+            [
+              -23.348076,
+              -46
+            ],
+            [
+              -23.13006,
+              -46.326284
+            ],
+            [
+              -22.87132,
+              -46.62132
+            ],
+            [
+              -22.576284,
+              -46.88006
+            ],
+            [
+              -22.25,
+              -47.098076
+            ],
+            [
+              -21.89805,
+              -47.271639
+            ],
+            [
+              -21.526457,
+              -47.397777
+            ],
+            [
+              -21.141579,
+              -47.474335
+            ],
+            [
+              -20.75,
+              -47.5
+            ],
+            [
+              20.75,
+              -47.5
+            ],
+            [
+              21.141579,
+              -47.474335
+            ],
+            [
+              21.526457,
+              -47.397777
+            ],
+            [
+              21.89805,
+              -47.271639
+            ],
+            [
+              22.25,
+              -47.098076
+            ],
+            [
+              22.576284,
+              -46.88006
+            ],
+            [
+              22.87132,
+              -46.62132
+            ],
+            [
+              23.13006,
+              -46.326284
+            ],
+            [
+              23.348076,
+              -46
+            ],
+            [
+              23.521639,
+              -45.64805
+            ],
+            [
+              23.647777,
+              -45.276457
+            ],
+            [
+              23.724335,
+              -44.891579
+            ],
+            [
+              23.75,
+              -44.5
+            ]
+          ],
+          "tableId": "wood-1",
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "seatHeightCm": 0,
+          "approximate": false,
+          "role": "intermediate",
+          "rotationDegrees": -90,
+          "xCm": 68,
+          "zCm": 88.25
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "seatHeightCm": 42,
+          "approximate": false,
+          "role": "return",
+          "rotationDegrees": -90,
+          "xCm": 62,
+          "zCm": 168.5
+        }
+      ],
+      "moduleBreakdown": [
+        {
+          "key": "end_L",
+          "label": "Sol kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        },
+        {
+          "key": "corner_R",
+          "label": "Köşe modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "approximate": true
+        },
+        {
+          "key": "table_rectangle",
+          "label": "Dikdörtgen ahşap modül",
+          "kind": "table",
+          "count": 1,
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.3,
+          "approximate": false
+        },
+        {
+          "key": "end_R",
+          "label": "Sağ kollu oturum modülü",
+          "kind": "seat",
+          "count": 1,
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "approximate": false
+        }
+      ],
+      "dimensions": {
+        "widthCm": 231,
+        "depthCm": 279,
+        "heightCm": 82,
+        "seatHeightCm": 42,
+        "approximate": true
+      },
+      "geometryKey": "30fb6750cc788b72a58adcb5299d32461d9e19c9d2f4e36a225a0e269fae76db",
+      "materials": {
+        "fabric": "Natural Melanj Boucle / Durable Velvet / Micro Boucle",
+        "body": "Mimosa · 1017",
+        "back": "Calce · 1036",
+        "accent": "Alloro · 1030",
+        "wood": "Koyu meşe · D01"
+      },
+      "expectedParts": [
+        {
+          "moduleKey": "end_L",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": -59,
+          "zCm": 0,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "corner_R",
+          "kind": "seat",
+          "widthCm": 118,
+          "depthCm": 118,
+          "heightCm": 82,
+          "xCm": 56.5,
+          "zCm": 5.5,
+          "rotationDegrees": 0,
+          "role": "row"
+        },
+        {
+          "moduleKey": "table_rectangle",
+          "kind": "table",
+          "widthCm": 47.5,
+          "depthCm": 95,
+          "heightCm": 35.300061,
+          "xCm": 68,
+          "zCm": 88.25,
+          "rotationDegrees": -90,
+          "role": "intermediate",
+          "tablePosition": "return",
+          "tableDesign": "half-shelf"
+        },
+        {
+          "moduleKey": "end_R",
+          "kind": "seat",
+          "widthCm": 113,
+          "depthCm": 107,
+          "heightCm": 82,
+          "xCm": 62,
+          "zCm": 168.5,
+          "rotationDegrees": -90,
+          "role": "return"
+        }
+      ],
+      "layoutKey": "corner-right",
+      "kind": "corner"
+    }
+  ],
+  "newVariants": 12,
+  "newPhotos": 60,
+  "layouts": 100,
+  "products": 473,
+  "photos": 2365,
+  "qualityApproved": 75,
+  "reviewPending": 2290,
+  "members": [
+    {
+      "path": "INTERFACE-OVERRIDES.json",
+      "bytes": 357104,
+      "sha256": "cf104531a2f91b7f89910288afccc10e4441b985cea531e0aa1018acb28e3d94"
+    },
+    {
+      "path": "PACKAGE-MEMBERS.json",
+      "bytes": 911611,
+      "sha256": "8953505d74b36a64c7329f6679d6cce9266d2e9032542c8fb082e1925bb9fa0b"
+    },
+    {
+      "path": "VIEW-SCOPE-PUBLICATION.json",
+      "bytes": 633,
+      "sha256": "f40e545f2810fb9dfa806a0c993b8897dfc83f94c5e1ee545022946ffe643395"
+    },
+    {
+      "path": "assets/pricing/catalogue-skus.json",
+      "bytes": 619369,
+      "sha256": "b78a2a4ee3b01972390bb440b6f45d42c5af04efb91b5ea4a9196fca72646679"
+    },
+    {
+      "path": "assets/pricing/sku-registry.json",
+      "bytes": 23782,
+      "sha256": "c3841c37ccbec61ca61add8d0c4eb73d00d96d640e46ee51d60d217720fb479d"
+    },
+    {
+      "path": "assets/product-galleries/catalogue-v77.json",
+      "bytes": 3662414,
+      "sha256": "8178543fabaf0ded5bca5661ed595e4e7b4c6bb372dee01e8d32d9648d0bdb8a"
+    },
+    {
+      "path": "assets/product-studio-v178/gallery-index.json",
+      "bytes": 3980906,
+      "sha256": "4d6713d25a53918faec1ad8f683f8fd3622ecb5ba0622b375bc98a8dbc3d4f49"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/dimensioned-top-d4d16d840f98.avif",
+      "bytes": 29948,
+      "sha256": "3ff587beb13e180ef3bf305fcdf94cecc6df7155e0f990ed65b6f74e1452a515"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/front-ff58afd3a2c1.avif",
+      "bytes": 29540,
+      "sha256": "b63f884ebbc5df6a52a5d514d2a9b6d094d3044eef10b5a11685d62012f7c370"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/hero-bac5f0745c1b.avif",
+      "bytes": 52881,
+      "sha256": "5fa4ee18997a0de56a911de118deb49240791df98a7ef0f5a62357c829150fc9"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/high-front-719f2d728034.avif",
+      "bytes": 20961,
+      "sha256": "4b2027aee78eae24e712c6d9eeec8fa6f83e7b7395eca74b448c1f7a9d143a2f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/right-rear-6072a5d327c3.avif",
+      "bytes": 29662,
+      "sha256": "46dd4c8242e5ac5df0c816671314737b9407199999ccb33097c7edeafa2e92b8"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/dimensioned-top-398f620f77aa.avif",
+      "bytes": 28808,
+      "sha256": "47c8dfaaedbb89d48981ba440b18b1d1494ae486ca26c1ff17bb05717e21fb2f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/front-b393561ca111.avif",
+      "bytes": 28333,
+      "sha256": "637ac25dffe32750d1e0ed0c724874e7598c8f0ee46df95836a8fd60cd2919c3"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/hero-2158effce858.avif",
+      "bytes": 57045,
+      "sha256": "09adc587e8b2b17aae0b139d8d81a9b9c8566da0e08c5bd3ceeb7865ff9c7404"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/high-front-3a39c06bd2b3.avif",
+      "bytes": 26402,
+      "sha256": "2db31113d28b6f745776df9c256343a0c5b3382e55e59af901ca836215e6663d"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/right-rear-a342e852265a.avif",
+      "bytes": 32121,
+      "sha256": "b8ec71329a8527fae84cd9b7d5342f29cbeb8789b9454787c864cc023e21d8ac"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/dimensioned-top-1b7efffde2dd.avif",
+      "bytes": 78433,
+      "sha256": "41b7a8be7e0f357def3f2201bb347c76b97e4cd98d32604881cccd597b4017db"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/front-de1f82ce54cb.avif",
+      "bytes": 45193,
+      "sha256": "ce60b99019f9874e9cb6b7e0b179249b62efddf414fe3ef698787b06c4f81289"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/hero-1c0e710b0bd5.avif",
+      "bytes": 63173,
+      "sha256": "e92d99ed0d4cc5e24c7107acff4d0a8a0182145bde708741202da88d1ebf87d0"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/high-front-7a23c9f1c504.avif",
+      "bytes": 63030,
+      "sha256": "171431f0bce6496f182ebf2566747d4b4ad447e6c77d38c544c030214e0de30f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/right-rear-68d44b99740f.avif",
+      "bytes": 56843,
+      "sha256": "e2073e97e6d8388af7a1cf1018f0931157fb6a145f074d56fcbf50fe21af0e96"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/dimensioned-top-2e5953a8cc80.avif",
+      "bytes": 98872,
+      "sha256": "4ec227fe3abba2e91bf365bfae68c5a6acfb816f8268651919834f8e3a66ef13"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/front-f738e3c00deb.avif",
+      "bytes": 46494,
+      "sha256": "6baeb869d683fc6062cffefbc7e022204df2e51cf5ab65f880322a380a796509"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/hero-75e778fb6d2e.avif",
+      "bytes": 83447,
+      "sha256": "892866c78db9a3ba5a3d67669a66f4a0aa5356bad7bb2bc2323ec8b7f1ea501f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/high-front-575c462408d5.avif",
+      "bytes": 58398,
+      "sha256": "b3263221b32e112c4470dd15e3fde5eda93ecde958e4e8014026f9e09cff1826"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/right-rear-69f4976173a8.avif",
+      "bytes": 47283,
+      "sha256": "8f7f49e5a187e5f0cf4ae1d982e55f4b122255a2aa703e67d1d645b9c3ea1177"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/dimensioned-top-cf5cf47a8e85.avif",
+      "bytes": 91671,
+      "sha256": "d5caa401161e8e03a07f5485ba38a7a8fbd31ed478c63a79677d50419686594e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/front-b885dfbf8387.avif",
+      "bytes": 57753,
+      "sha256": "119aea35bab11970d3dfa4b55d1d3d432a123614c74f60b2938aeaedb3324441"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/hero-0b6c7a57d5d9.avif",
+      "bytes": 128177,
+      "sha256": "12e01b00426c1f11b6f752bc69db83e4cff058fa8fa4116424433fc87e7ccdc1"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/high-front-a4928c2ffea3.avif",
+      "bytes": 87841,
+      "sha256": "c363ea688087d01a49c45409aaa1d775a200699f021e1b8de1fde5c411f326db"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/right-rear-8bf52908143b.avif",
+      "bytes": 66070,
+      "sha256": "607c0844b4bd3ce7ce7d250767d85760ad305413523318b475aa940223e49b00"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/dimensioned-top-323556a50a90.avif",
+      "bytes": 82098,
+      "sha256": "46fd9b0f286e8b814f0f1df202560a756ea778f6e238f69218cd3e304cd53b83"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/front-927cbc424505.avif",
+      "bytes": 41252,
+      "sha256": "84b57e46c6c38f5786f816414c65a4d143f3ca6ee17c35d30602c5591665a4b6"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/hero-1414bfd4c467.avif",
+      "bytes": 98825,
+      "sha256": "1c8cd526fffd1711405be1b2e351dce22363ecb5bfdda28986a6319e22bb586b"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/high-front-0f05a00a237e.avif",
+      "bytes": 70752,
+      "sha256": "cadd09d946ba1d019eff0cf628d281531f9ecf571161016baa460ed557b0290b"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/right-rear-7cb9019f858c.avif",
+      "bytes": 64041,
+      "sha256": "2aecc6cde0cc7b471510673414b08318018ff1d3d4ceeb9de6db8bd7c8f8e8b7"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/dimensioned-top-61cabfa2c1c4.avif",
+      "bytes": 154033,
+      "sha256": "daef6fdd119c06c02b324ddaa6f871561b3e5478eabab0523d24fc39bcbbced5"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/front-6df61c3e8a78.avif",
+      "bytes": 71915,
+      "sha256": "b07018725ff64118141d20755704287286f0f6abf9a9e5c731c5fcdd32298763"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/hero-1469cd4ff952.avif",
+      "bytes": 106310,
+      "sha256": "7dd0608b3f4da6724c073b2eed5f7a23103397030a3d8c1f8cd2a3f965b8b8b1"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/high-front-601895bdf72d.avif",
+      "bytes": 106889,
+      "sha256": "e80c3b1aedd037bcf028889d5707dd60127eeb96e87932e2f185e372c6457c4b"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/right-rear-360c908c358f.avif",
+      "bytes": 122443,
+      "sha256": "00ef2362682c4dac9adaaba3402e97616b6e7d8c1788ccb681175eb06fdaea45"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/dimensioned-top-9f09343a6f97.avif",
+      "bytes": 39110,
+      "sha256": "ca6d4bb848442c6a37f88b26a5629221db2feb224754b05f3a59acda4439507e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/front-22cb07d30d13.avif",
+      "bytes": 21838,
+      "sha256": "6fa97c4ce3704c0a7e9cd81d1f79b2c56bae4b962914531e69bd1867c6e080fe"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/hero-29df4b6a5f03.avif",
+      "bytes": 35377,
+      "sha256": "2bbf2cde2a912ea0f783d74f97d0aa10f5df8914188806e3e6e22b76e6605c08"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/high-front-a2ecf66b4389.avif",
+      "bytes": 35434,
+      "sha256": "ccc9a0f58d001d4e0a75ff2d1a11a372e6ad1169ee89f993fc8cd2dfe27dda78"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/right-rear-9ed1c3be4e4f.avif",
+      "bytes": 33417,
+      "sha256": "7d40335292547c925aa87f7d1780f0ea2a076a994702511597fb2f29dcbaefbe"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/dimensioned-top-a97bc9132003.avif",
+      "bytes": 36840,
+      "sha256": "39e89b8f2d014c198f2669a42747bcfe22f91388b61f6ee1bcca4f931f789fda"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/front-03fe6a7d73eb.avif",
+      "bytes": 22747,
+      "sha256": "f88113f7e8de0086c2fda51268548fae1c0bd658593161a309177d3e68253618"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/hero-abb47a75242a.avif",
+      "bytes": 54661,
+      "sha256": "452f1b59456a6c519a69d30e39f92b33aaf51417992593dbce98ea3032b60295"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/high-front-7d9ee41d1a10.avif",
+      "bytes": 26214,
+      "sha256": "bf030efd36955b4242252867f3dc627dd676e73cadd1de4e4f54c5c4744c32e4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/right-rear-02523ff77540.avif",
+      "bytes": 25404,
+      "sha256": "a28259d312d05e2200b7a33413950c57fdee105974be08d071b295295524c8ff"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/dimensioned-top-50c925808856.avif",
+      "bytes": 105562,
+      "sha256": "9c82162ddec2351217c4baf9b3796156796d3be59879841110934b8cab09aaa2"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/front-98bae0bfb48f.avif",
+      "bytes": 51857,
+      "sha256": "d52e64e9af6046ee55134714bdf47c13fcc0440f596614471b0846e2f3551a15"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/hero-fd4ca56750a5.avif",
+      "bytes": 122569,
+      "sha256": "405b769b28ea8054be9189c64400e1b2ac9ed836cfbc8963a2144a0c3103c88e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/high-front-e31fb5468a25.avif",
+      "bytes": 47342,
+      "sha256": "dae836e842abb6b2864713e208d3bc61a88b59e0bedad8be08b350aac51ae8bf"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/right-rear-cb847bcebead.avif",
+      "bytes": 52808,
+      "sha256": "1d4613781daa3b2ae2aeb0e309b87b42e1f67d61832188e674c4a42db12d7b5d"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/dimensioned-top-afcc881f5f5e.avif",
+      "bytes": 44105,
+      "sha256": "9684e77e8b7627b2708bd98bab346655b3c5e761eea452723a7c7ed17230dae8"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/front-0bffe3e45664.avif",
+      "bytes": 63569,
+      "sha256": "4eb229ee089a84fc94bf18c707f08ea7daafbe846368ae288ece7b9a2edb1cf3"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/hero-857e8a6c6a5d.avif",
+      "bytes": 99120,
+      "sha256": "4079dca6123feac1c4e663437148b4c6a0ff9e72ba0b0154941e59e171e052d8"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/high-front-5a9911070f93.avif",
+      "bytes": 26909,
+      "sha256": "2d3978be51126881ac908e2929769d884efa7d05c44e498a980dcfba14b4ade4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/right-rear-e92d168a5f22.avif",
+      "bytes": 49706,
+      "sha256": "ffc30e12cc1efed1eaf5f25fd93e1816bd9fa91af2821e3b7dbb8a219d097071"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/dimensioned-top-732cd1a03aab.avif",
+      "bytes": 82072,
+      "sha256": "8b5a45755359cb80253f7aabd87337050c8d95b9cb04017508adbab66c194054"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/front-fb51c3128511.avif",
+      "bytes": 105259,
+      "sha256": "e9ae8b4dd0637243832a265954552783b09fdc1a75a5a9cf420c7f096a355527"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/hero-cf0130fe05a1.avif",
+      "bytes": 153319,
+      "sha256": "146251bef1b8077cc30423a814810665aca193362860c1b4f3b2ebcc7f74c7d8"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/high-front-0d56c293c2a7.avif",
+      "bytes": 50653,
+      "sha256": "35358aafb59e3bd3fca8527469f2625f66c1b7478111549957daa8dd7e0d6374"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/right-rear-01d8873efcc6.avif",
+      "bytes": 90434,
+      "sha256": "2250defc52d97d631ad14b4809517fce2678919b5357efb8346d0e7876d6b468"
+    },
+    {
+      "path": "authored-layouts-v196.js",
+      "bytes": 38570,
+      "sha256": "029cfc7941b575d13d1c20bf829e886b52ba41cd3f7ba8b01810245ca1a008d5"
+    },
+    {
+      "path": "catalogue-refresh-v178.js",
+      "bytes": 24293,
+      "sha256": "8e04912928bdab0315d172783eb3b64cf16afe4e85a8ff552cd170d9ed2a92bd"
+    },
+    {
+      "path": "inspiration-catalog.js",
+      "bytes": 28903,
+      "sha256": "cec9d9fb083349c800bee345fb8cb2dfb564ad4679c34ef536bf588c7e3a780d"
+    },
+    {
+      "path": "kombinasyonlar.html",
+      "bytes": 8068,
+      "sha256": "1153c072d8450001ca5de7dde8dce9d8a51f8cb174ab307b47ce4f3a89960c58"
+    },
+    {
+      "path": "kombinasyonlar.js",
+      "bytes": 22916,
+      "sha256": "42d12924516f5e04ac876d9808ed45150cb60e75881e9fd2ea009b80a47c8aaf"
+    },
+    {
+      "path": "pricing.html",
+      "bytes": 5747,
+      "sha256": "00addccb934eefae0e5a78204fa874f6b84eb9dcbd606c94351bf6e7798e15a1"
+    },
+    {
+      "path": "pricing.js",
+      "bytes": 18445,
+      "sha256": "e0fdb77eab7a124ae351e103543f4d3b4a0f811469e9364176cda1dd9c229d04"
+    },
+    {
+      "path": "product-gallery.js",
+      "bytes": 23806,
+      "sha256": "8d344de10cdba999bd817209955ffb8023a49f9e6f038661b7699ab1e7e97c1a"
+    },
+    {
+      "path": "sku-display.js",
+      "bytes": 3841,
+      "sha256": "1122f2be9923eb5bb33e9862395e546d9c985e3048a9ac023ea6fb6906d852b7"
+    },
+    {
+      "path": "studio-catalog-images.js",
+      "bytes": 5493,
+      "sha256": "0607b498566837c290f97934e13f2f793f678b63761d3e5f6609641c9b0db23f"
+    },
+    {
+      "path": "urun.html",
+      "bytes": 8782,
+      "sha256": "3e0f5c32a3d80e223111c694fa625a2770cbe5c849e739dd213aedf64ba867a1"
+    }
+  ],
+  "allowedPayloadPaths": [
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/hero-bac5f0745c1b.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/hero-2158effce858.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/hero-1c0e710b0bd5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/hero-75e778fb6d2e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/hero-0b6c7a57d5d9.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/hero-1414bfd4c467.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/hero-1469cd4ff952.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/hero-29df4b6a5f03.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/hero-abb47a75242a.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/hero-fd4ca56750a5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/hero-857e8a6c6a5d.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/hero-cf0130fe05a1.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/front-ff58afd3a2c1.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/front-b393561ca111.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/front-de1f82ce54cb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/front-f738e3c00deb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/front-b885dfbf8387.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/front-927cbc424505.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/front-6df61c3e8a78.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/front-22cb07d30d13.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/front-03fe6a7d73eb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/front-98bae0bfb48f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/front-0bffe3e45664.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/front-fb51c3128511.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/right-rear-6072a5d327c3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/right-rear-a342e852265a.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/right-rear-68d44b99740f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/right-rear-69f4976173a8.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/right-rear-8bf52908143b.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/right-rear-7cb9019f858c.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/right-rear-360c908c358f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/right-rear-9ed1c3be4e4f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/right-rear-02523ff77540.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/right-rear-cb847bcebead.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/right-rear-e92d168a5f22.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/right-rear-01d8873efcc6.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/high-front-719f2d728034.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/high-front-3a39c06bd2b3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/high-front-7a23c9f1c504.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/high-front-575c462408d5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/high-front-a4928c2ffea3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/high-front-0f05a00a237e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/high-front-601895bdf72d.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/high-front-a2ecf66b4389.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/high-front-7d9ee41d1a10.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/high-front-e31fb5468a25.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/high-front-5a9911070f93.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/high-front-0d56c293c2a7.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/dimensioned-top-d4d16d840f98.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/dimensioned-top-398f620f77aa.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/dimensioned-top-1b7efffde2dd.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/dimensioned-top-2e5953a8cc80.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/dimensioned-top-cf5cf47a8e85.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/dimensioned-top-323556a50a90.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/dimensioned-top-61cabfa2c1c4.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/dimensioned-top-9f09343a6f97.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/dimensioned-top-a97bc9132003.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/dimensioned-top-50c925808856.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/dimensioned-top-afcc881f5f5e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/dimensioned-top-732cd1a03aab.avif",
+    "assets/product-studio-v178/gallery-index.json",
+    "assets/product-galleries/catalogue-v77.json",
+    "assets/pricing/catalogue-skus.json",
+    "assets/pricing/sku-registry.json",
+    "kombinasyonlar.html",
+    "catalogue-refresh-v178.js",
+    "inspiration-catalog.js",
+    "kombinasyonlar.js",
+    "pricing.html",
+    "pricing.js",
+    "product-gallery.js",
+    "sku-display.js",
+    "studio-catalog-images.js",
+    "urun.html",
+    "authored-layouts-v196.js",
+    "INTERFACE-OVERRIDES.json",
+    "VIEW-SCOPE-PUBLICATION.json",
+    "PACKAGE-MEMBERS.json"
+  ],
+  "changedRootFiles": [
+    "catalogue-refresh-v178.js",
+    "inspiration-catalog.js",
+    "kombinasyonlar.html",
+    "kombinasyonlar.js",
+    "pricing.html",
+    "pricing.js",
+    "product-gallery.js",
+    "sku-display.js",
+    "studio-catalog-images.js",
+    "urun.html",
+    "authored-layouts-v196.js"
+  ],
+  "additionalAllowedDataFiles": [],
+  "newPaths": [
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/hero-bac5f0745c1b.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/hero-2158effce858.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/hero-1c0e710b0bd5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/hero-75e778fb6d2e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/hero-0b6c7a57d5d9.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/hero-1414bfd4c467.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/hero-1469cd4ff952.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/hero-29df4b6a5f03.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/hero-abb47a75242a.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/hero-fd4ca56750a5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/hero-857e8a6c6a5d.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/hero-cf0130fe05a1.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/front-ff58afd3a2c1.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/front-b393561ca111.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/front-de1f82ce54cb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/front-f738e3c00deb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/front-b885dfbf8387.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/front-927cbc424505.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/front-6df61c3e8a78.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/front-22cb07d30d13.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/front-03fe6a7d73eb.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/front-98bae0bfb48f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/front-0bffe3e45664.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/front-fb51c3128511.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/right-rear-6072a5d327c3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/right-rear-a342e852265a.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/right-rear-68d44b99740f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/right-rear-69f4976173a8.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/right-rear-8bf52908143b.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/right-rear-7cb9019f858c.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/right-rear-360c908c358f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/right-rear-9ed1c3be4e4f.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/right-rear-02523ff77540.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/right-rear-cb847bcebead.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/right-rear-e92d168a5f22.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/right-rear-01d8873efcc6.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/high-front-719f2d728034.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/high-front-3a39c06bd2b3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/high-front-7a23c9f1c504.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/high-front-575c462408d5.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/high-front-a4928c2ffea3.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/high-front-0f05a00a237e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/high-front-601895bdf72d.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/high-front-a2ecf66b4389.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/high-front-7d9ee41d1a10.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/high-front-e31fb5468a25.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/high-front-5a9911070f93.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/high-front-0d56c293c2a7.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V001/dimensioned-top-d4d16d840f98.avif",
+    "assets/product-studio-v178/photos/SOM-Y0098-V002/dimensioned-top-398f620f77aa.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V001/dimensioned-top-1b7efffde2dd.avif",
+    "assets/product-studio-v178/photos/SOM-Y0099-V002/dimensioned-top-2e5953a8cc80.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V001/dimensioned-top-cf5cf47a8e85.avif",
+    "assets/product-studio-v178/photos/SOM-Y0100-V002/dimensioned-top-323556a50a90.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V001/dimensioned-top-61cabfa2c1c4.avif",
+    "assets/product-studio-v178/photos/SOM-Y0101-V002/dimensioned-top-9f09343a6f97.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V001/dimensioned-top-a97bc9132003.avif",
+    "assets/product-studio-v178/photos/SOM-Y0102-V002/dimensioned-top-50c925808856.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V001/dimensioned-top-afcc881f5f5e.avif",
+    "assets/product-studio-v178/photos/SOM-Y0103-V002/dimensioned-top-732cd1a03aab.avif",
+    "authored-layouts-v196.js"
+  ],
+  "expectedBaseFiles": {
+    "assets/product-studio-v178/gallery-index.json": "c788f06dbe69f922af44c716ee9c6e27fa697f9aa371f73ed35bc70be136160d",
+    "assets/product-galleries/catalogue-v77.json": "5b7a3c5ff623ccbe12f24ab1c7cfdd83abd646109b28e3907bdbb989a1df73aa",
+    "assets/pricing/catalogue-skus.json": "8b887aa3c889860ce09a632ea1ff973fa080f6b990d7566a342bda85c2a952c3",
+    "assets/pricing/sku-registry.json": "2fa9b2fe4de4b990a951a570f1658863889236dc02b2bfd1852c682af7f6b9cf",
+    "kombinasyonlar.html": "2bb984221c951c8d5675eef773d428509acb7074267728b1e33d4d1e947073ee",
+    "catalogue-refresh-v178.js": "6863dbeee58d43b2fbac818deba29a0aba35312b0db5e953502d0c1f14b4a5c3",
+    "inspiration-catalog.js": "aeaec10e33b9f837d8218c48250e5d4c4e83356b8ffa9f77ffcefd8cafcb55b2",
+    "kombinasyonlar.js": "23961cef768425ce7ec2239558fa497a9c9c64b4b3a28f3a4ceffb7842365dfc",
+    "pricing.html": "1dc29dbedff31b4155fa414debf23986864dc0a2c48a62ea219b28e0e8c9ac61",
+    "pricing.js": "3772401ca556a2a7ca4164cb19bb2495689acf57ec2931ef4715902fe9fb119d",
+    "product-gallery.js": "8bab23964d6bbf6cefa47dec4355fd5393aa18e67f4c77884e09861fffbc420e",
+    "sku-display.js": "9ccb69263374703630ce4741761981219b40ca41b8407ddcc605da98a6faaeb5",
+    "studio-catalog-images.js": "66059bdcc5643e6c8f0cb20c52403f9961c275843ea3c01086414b531f7ad3bd",
+    "urun.html": "16e1f5de2c7daf8bf71c19917da99b5e467b08fda727009a86df8c02789f2d2c",
+    "INTERFACE-OVERRIDES.json": "49fd0df2dc29b73d1f656d79f0353f85bbd81adbd0485f98eabc41738998b234",
+    "VIEW-SCOPE-PUBLICATION.json": "d4d0d6176655d2948db0608d1556aa48b93ab11cbf789c56a4945b7dc242c33d",
+    "PACKAGE-MEMBERS.json": "e01fa19b573b405f567efee29b3f78f86fb2b28078bdcc08ace5ad1ba2df3748"
+  },
+  "protectedFiles": {
+    "catalogue-removals-v193.js": "f12a04d8d87c0100bc921abc420172e42cf6ea76a593ef8f00272e42084eff22",
+    "approved-fabrics.js": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687",
+    "modular-layout.js": "463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1",
+    "fabric-material.js": "c863134b43806418490fee842f8471092d5752ede61e5adabe9a10b0da5378ee",
+    "table-composition.js": "b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f",
+    "module-dimensions.js": "50a06af61ec666c580507ab353d7033c0429382f56891291273e78aea76f4441",
+    "loose-back-material.js": "16d93074fd9659543f950d2deea82811a911097d00a6d5a765a5a4a16c5dcfa3",
+    "product-export-materials.js": "bebc5c76cfc0b4f7157c47e198c9b4a2b8b4c00ee1419a4915b2effecb3b6324",
+    "app.js": "a67ee51c0567a31476558520a44b88cc81edd3e9bd0b448b1bd98726b54b6d2c",
+    "combinations-state.js": "62e50a361ee4d80d96b59ff8c6e7f1ccc4aa171b4a4b44f50ebf38192e1c5912",
+    "consumer-summary.js": "ef2fc11d1a60c731a305374c8e1682c35fbd4dc00ca6af18f32313de76594917",
+    "product-variants.js": "7177374e98cc853fc5792e0076bf97b3be9205c0d5e76fae57dddac478e9040e",
+    "assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx": "6c6df4f6c4218eb89ef0fb954304eb684c086c21100aaa47312d0e698a6e20a9"
+  },
+  "newPhotoRecords": [
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/hero-bac5f0745c1b.avif",
+      "bytes": 52881,
+      "sha256": "5fa4ee18997a0de56a911de118deb49240791df98a7ef0f5a62357c829150fc9",
+      "variantID": "SOM-Y0098-V001",
+      "view": "hero",
+      "masterSHA256": "bac5f0745c1b2570bf21135096bad5d0a873477305343cc3c2e941e5328887a3",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/hero-2158effce858.avif",
+      "bytes": 57045,
+      "sha256": "09adc587e8b2b17aae0b139d8d81a9b9c8566da0e08c5bd3ceeb7865ff9c7404",
+      "variantID": "SOM-Y0098-V002",
+      "view": "hero",
+      "masterSHA256": "2158effce8588c6b28c4ae249aaae1c866ff8f4b2982718f574363c6bd43f411",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/hero-1c0e710b0bd5.avif",
+      "bytes": 63173,
+      "sha256": "e92d99ed0d4cc5e24c7107acff4d0a8a0182145bde708741202da88d1ebf87d0",
+      "variantID": "SOM-Y0099-V001",
+      "view": "hero",
+      "masterSHA256": "1c0e710b0bd5c342c0813ade6320ecbe8f2dbce13289d0faacf3f094163e3d62",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/hero-75e778fb6d2e.avif",
+      "bytes": 83447,
+      "sha256": "892866c78db9a3ba5a3d67669a66f4a0aa5356bad7bb2bc2323ec8b7f1ea501f",
+      "variantID": "SOM-Y0099-V002",
+      "view": "hero",
+      "masterSHA256": "75e778fb6d2ed1cfde587b1e507bd26153423bcefbda5a4e39848582a98f9566",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/hero-0b6c7a57d5d9.avif",
+      "bytes": 128177,
+      "sha256": "12e01b00426c1f11b6f752bc69db83e4cff058fa8fa4116424433fc87e7ccdc1",
+      "variantID": "SOM-Y0100-V001",
+      "view": "hero",
+      "masterSHA256": "0b6c7a57d5d913cb8a510804fca57ea2eb2c75c17a3b271cd27c30fe8a473fee",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/hero-1414bfd4c467.avif",
+      "bytes": 98825,
+      "sha256": "1c8cd526fffd1711405be1b2e351dce22363ecb5bfdda28986a6319e22bb586b",
+      "variantID": "SOM-Y0100-V002",
+      "view": "hero",
+      "masterSHA256": "1414bfd4c467376e51b2dbf1baf806e882fd449fa9bad1d7409e5bdbc389f12e",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/hero-1469cd4ff952.avif",
+      "bytes": 106310,
+      "sha256": "7dd0608b3f4da6724c073b2eed5f7a23103397030a3d8c1f8cd2a3f965b8b8b1",
+      "variantID": "SOM-Y0101-V001",
+      "view": "hero",
+      "masterSHA256": "1469cd4ff9520a020c2dbf50c40182cd67cba975a2a1d32a413cd3e053516a76",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/hero-29df4b6a5f03.avif",
+      "bytes": 35377,
+      "sha256": "2bbf2cde2a912ea0f783d74f97d0aa10f5df8914188806e3e6e22b76e6605c08",
+      "variantID": "SOM-Y0101-V002",
+      "view": "hero",
+      "masterSHA256": "29df4b6a5f0355890084e5ae3030ea2b0a45a59360e84f0abeb5eb333109c25b",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/hero-abb47a75242a.avif",
+      "bytes": 54661,
+      "sha256": "452f1b59456a6c519a69d30e39f92b33aaf51417992593dbce98ea3032b60295",
+      "variantID": "SOM-Y0102-V001",
+      "view": "hero",
+      "masterSHA256": "abb47a75242ab51e5b6afe435885b52a0f36ac28bb620e75004fcd7aa9f9dddd",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/hero-fd4ca56750a5.avif",
+      "bytes": 122569,
+      "sha256": "405b769b28ea8054be9189c64400e1b2ac9ed836cfbc8963a2144a0c3103c88e",
+      "variantID": "SOM-Y0102-V002",
+      "view": "hero",
+      "masterSHA256": "fd4ca56750a5c4b959a0d4e4395c24c783f1abd3b3ef3e96107b9f8997628eab",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/hero-857e8a6c6a5d.avif",
+      "bytes": 99120,
+      "sha256": "4079dca6123feac1c4e663437148b4c6a0ff9e72ba0b0154941e59e171e052d8",
+      "variantID": "SOM-Y0103-V001",
+      "view": "hero",
+      "masterSHA256": "857e8a6c6a5db5594002d591201401aced0aea5f80e65dd0a27089f7bec9e35e",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/hero-cf0130fe05a1.avif",
+      "bytes": 153319,
+      "sha256": "146251bef1b8077cc30423a814810665aca193362860c1b4f3b2ebcc7f74c7d8",
+      "variantID": "SOM-Y0103-V002",
+      "view": "hero",
+      "masterSHA256": "cf0130fe05a1f5e51eeb4783e360ab2abf1bbbf057e6dc694eaacd4fdf3ad95e",
+      "quality": 75,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/front-ff58afd3a2c1.avif",
+      "bytes": 29540,
+      "sha256": "b63f884ebbc5df6a52a5d514d2a9b6d094d3044eef10b5a11685d62012f7c370",
+      "variantID": "SOM-Y0098-V001",
+      "view": "front",
+      "masterSHA256": "ff58afd3a2c106c95d99697845c4160933bac937d0574c8c1ba2c43a645b6f06",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/front-b393561ca111.avif",
+      "bytes": 28333,
+      "sha256": "637ac25dffe32750d1e0ed0c724874e7598c8f0ee46df95836a8fd60cd2919c3",
+      "variantID": "SOM-Y0098-V002",
+      "view": "front",
+      "masterSHA256": "b393561ca111af486b4248e7ba7282c1ed2e9abad38e83e9e93843eb62412f03",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/front-de1f82ce54cb.avif",
+      "bytes": 45193,
+      "sha256": "ce60b99019f9874e9cb6b7e0b179249b62efddf414fe3ef698787b06c4f81289",
+      "variantID": "SOM-Y0099-V001",
+      "view": "front",
+      "masterSHA256": "de1f82ce54cb700fecaae21a213d19d26472e5755d73a50e97965d6a32441c3c",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/front-f738e3c00deb.avif",
+      "bytes": 46494,
+      "sha256": "6baeb869d683fc6062cffefbc7e022204df2e51cf5ab65f880322a380a796509",
+      "variantID": "SOM-Y0099-V002",
+      "view": "front",
+      "masterSHA256": "f738e3c00debb955da253d42d6aaf6163196c2a58d35067e18fce026c5b3e657",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/front-b885dfbf8387.avif",
+      "bytes": 57753,
+      "sha256": "119aea35bab11970d3dfa4b55d1d3d432a123614c74f60b2938aeaedb3324441",
+      "variantID": "SOM-Y0100-V001",
+      "view": "front",
+      "masterSHA256": "b885dfbf8387c5227ef179d9621b4a5131eb52ede5ef67ace6106a3d8897eafc",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/front-927cbc424505.avif",
+      "bytes": 41252,
+      "sha256": "84b57e46c6c38f5786f816414c65a4d143f3ca6ee17c35d30602c5591665a4b6",
+      "variantID": "SOM-Y0100-V002",
+      "view": "front",
+      "masterSHA256": "927cbc42450517dd6b9f96e431a73571e7ced076ef1d304fcb470fc18196c4c9",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/front-6df61c3e8a78.avif",
+      "bytes": 71915,
+      "sha256": "b07018725ff64118141d20755704287286f0f6abf9a9e5c731c5fcdd32298763",
+      "variantID": "SOM-Y0101-V001",
+      "view": "front",
+      "masterSHA256": "6df61c3e8a78a4361562c51a0baab9a815d8236887aa86db607bfb3cce413774",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/front-22cb07d30d13.avif",
+      "bytes": 21838,
+      "sha256": "6fa97c4ce3704c0a7e9cd81d1f79b2c56bae4b962914531e69bd1867c6e080fe",
+      "variantID": "SOM-Y0101-V002",
+      "view": "front",
+      "masterSHA256": "22cb07d30d133aa1bae9f859ea5c96e0fed011d04ab7d7b10ed1c91d851a9382",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/front-03fe6a7d73eb.avif",
+      "bytes": 22747,
+      "sha256": "f88113f7e8de0086c2fda51268548fae1c0bd658593161a309177d3e68253618",
+      "variantID": "SOM-Y0102-V001",
+      "view": "front",
+      "masterSHA256": "03fe6a7d73eb41addbe744ab8e0ef2894ff48d93dffe4db902aeec0c97d4329b",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/front-98bae0bfb48f.avif",
+      "bytes": 51857,
+      "sha256": "d52e64e9af6046ee55134714bdf47c13fcc0440f596614471b0846e2f3551a15",
+      "variantID": "SOM-Y0102-V002",
+      "view": "front",
+      "masterSHA256": "98bae0bfb48f864d3bbf38b0b0ef1e1d059523991847b670ba75dc92b8346517",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/front-0bffe3e45664.avif",
+      "bytes": 63569,
+      "sha256": "4eb229ee089a84fc94bf18c707f08ea7daafbe846368ae288ece7b9a2edb1cf3",
+      "variantID": "SOM-Y0103-V001",
+      "view": "front",
+      "masterSHA256": "0bffe3e4566459d7eb79dcc4900c56cfdca61cb4e45b2148d4a95df4c372d473",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/front-fb51c3128511.avif",
+      "bytes": 105259,
+      "sha256": "e9ae8b4dd0637243832a265954552783b09fdc1a75a5a9cf420c7f096a355527",
+      "variantID": "SOM-Y0103-V002",
+      "view": "front",
+      "masterSHA256": "fb51c3128511e8a06152d3393d5e78e89c7b12dd9cc2761c5359de3eb2856b5d",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/right-rear-6072a5d327c3.avif",
+      "bytes": 29662,
+      "sha256": "46dd4c8242e5ac5df0c816671314737b9407199999ccb33097c7edeafa2e92b8",
+      "variantID": "SOM-Y0098-V001",
+      "view": "right-rear",
+      "masterSHA256": "6072a5d327c3d7f7173f5e9ed5c6b9f316ed09b4e1f836b028bd0e12aae6f84d",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/right-rear-a342e852265a.avif",
+      "bytes": 32121,
+      "sha256": "b8ec71329a8527fae84cd9b7d5342f29cbeb8789b9454787c864cc023e21d8ac",
+      "variantID": "SOM-Y0098-V002",
+      "view": "right-rear",
+      "masterSHA256": "a342e852265a6571e76f00d7e134de699169cadc9cfa3a356ade368fbfc45f07",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/right-rear-68d44b99740f.avif",
+      "bytes": 56843,
+      "sha256": "e2073e97e6d8388af7a1cf1018f0931157fb6a145f074d56fcbf50fe21af0e96",
+      "variantID": "SOM-Y0099-V001",
+      "view": "right-rear",
+      "masterSHA256": "68d44b99740f4a4753e91f353e0e8ccaf2e0c4fcd708cb19e825cc112db31719",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/right-rear-69f4976173a8.avif",
+      "bytes": 47283,
+      "sha256": "8f7f49e5a187e5f0cf4ae1d982e55f4b122255a2aa703e67d1d645b9c3ea1177",
+      "variantID": "SOM-Y0099-V002",
+      "view": "right-rear",
+      "masterSHA256": "69f4976173a81efd40edc6f303a2f7d40ce79a863f268959927daee06ebbcd4f",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/right-rear-8bf52908143b.avif",
+      "bytes": 66070,
+      "sha256": "607c0844b4bd3ce7ce7d250767d85760ad305413523318b475aa940223e49b00",
+      "variantID": "SOM-Y0100-V001",
+      "view": "right-rear",
+      "masterSHA256": "8bf52908143becb0f15082db073f48ddebbe2534bba472e65f38b15dc5408fa4",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/right-rear-7cb9019f858c.avif",
+      "bytes": 64041,
+      "sha256": "2aecc6cde0cc7b471510673414b08318018ff1d3d4ceeb9de6db8bd7c8f8e8b7",
+      "variantID": "SOM-Y0100-V002",
+      "view": "right-rear",
+      "masterSHA256": "7cb9019f858cfbb01c96d20c7581e4a7a790b22f58d2629a1249e6a4fb283b89",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/right-rear-360c908c358f.avif",
+      "bytes": 122443,
+      "sha256": "00ef2362682c4dac9adaaba3402e97616b6e7d8c1788ccb681175eb06fdaea45",
+      "variantID": "SOM-Y0101-V001",
+      "view": "right-rear",
+      "masterSHA256": "360c908c358f0e87d8fb3fc8b57f9dc75d9d1831db587ec325cb46949cebb47a",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/right-rear-9ed1c3be4e4f.avif",
+      "bytes": 33417,
+      "sha256": "7d40335292547c925aa87f7d1780f0ea2a076a994702511597fb2f29dcbaefbe",
+      "variantID": "SOM-Y0101-V002",
+      "view": "right-rear",
+      "masterSHA256": "9ed1c3be4e4f952af2901d09771215ce00b1a30c324fed4051f543029ee70648",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/right-rear-02523ff77540.avif",
+      "bytes": 25404,
+      "sha256": "a28259d312d05e2200b7a33413950c57fdee105974be08d071b295295524c8ff",
+      "variantID": "SOM-Y0102-V001",
+      "view": "right-rear",
+      "masterSHA256": "02523ff775401b5bcc244778ab5344a5a8e0cf810100b8d6cf7735c4f333f45e",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/right-rear-cb847bcebead.avif",
+      "bytes": 52808,
+      "sha256": "1d4613781daa3b2ae2aeb0e309b87b42e1f67d61832188e674c4a42db12d7b5d",
+      "variantID": "SOM-Y0102-V002",
+      "view": "right-rear",
+      "masterSHA256": "cb847bcebead4b917bff384c1c151832219be3a81d0d428616f72ec4a6c9396e",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/right-rear-e92d168a5f22.avif",
+      "bytes": 49706,
+      "sha256": "ffc30e12cc1efed1eaf5f25fd93e1816bd9fa91af2821e3b7dbb8a219d097071",
+      "variantID": "SOM-Y0103-V001",
+      "view": "right-rear",
+      "masterSHA256": "e92d168a5f226a5d3e7104405ee3980a6a119bdbc3e393fddad8182afaeb9a71",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/right-rear-01d8873efcc6.avif",
+      "bytes": 90434,
+      "sha256": "2250defc52d97d631ad14b4809517fce2678919b5357efb8346d0e7876d6b468",
+      "variantID": "SOM-Y0103-V002",
+      "view": "right-rear",
+      "masterSHA256": "01d8873efcc6fcafb83e65cd8d988c5bc55509762db48e8c5fa7cfd26209579d",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/high-front-719f2d728034.avif",
+      "bytes": 20961,
+      "sha256": "4b2027aee78eae24e712c6d9eeec8fa6f83e7b7395eca74b448c1f7a9d143a2f",
+      "variantID": "SOM-Y0098-V001",
+      "view": "high-front",
+      "masterSHA256": "719f2d72803417460b970672739225d7afb6d269296e06e4cb88a7ee13d05878",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/high-front-3a39c06bd2b3.avif",
+      "bytes": 26402,
+      "sha256": "2db31113d28b6f745776df9c256343a0c5b3382e55e59af901ca836215e6663d",
+      "variantID": "SOM-Y0098-V002",
+      "view": "high-front",
+      "masterSHA256": "3a39c06bd2b379a43f04870248271f5ca618c45e20c2e9abe2b506dece4ff2a7",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/high-front-7a23c9f1c504.avif",
+      "bytes": 63030,
+      "sha256": "171431f0bce6496f182ebf2566747d4b4ad447e6c77d38c544c030214e0de30f",
+      "variantID": "SOM-Y0099-V001",
+      "view": "high-front",
+      "masterSHA256": "7a23c9f1c50453f1b59160c032cab8d002defa23b3eee14d9842d431770dd6e2",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/high-front-575c462408d5.avif",
+      "bytes": 58398,
+      "sha256": "b3263221b32e112c4470dd15e3fde5eda93ecde958e4e8014026f9e09cff1826",
+      "variantID": "SOM-Y0099-V002",
+      "view": "high-front",
+      "masterSHA256": "575c462408d51dfca1ded78fe64e6f0e673cf041e2d36781f75fb4a751ff5618",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/high-front-a4928c2ffea3.avif",
+      "bytes": 87841,
+      "sha256": "c363ea688087d01a49c45409aaa1d775a200699f021e1b8de1fde5c411f326db",
+      "variantID": "SOM-Y0100-V001",
+      "view": "high-front",
+      "masterSHA256": "a4928c2ffea327d8bd0cbb3fa52e0717f15777b3bbb802e2ed6dbb7c2bc5cf49",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/high-front-0f05a00a237e.avif",
+      "bytes": 70752,
+      "sha256": "cadd09d946ba1d019eff0cf628d281531f9ecf571161016baa460ed557b0290b",
+      "variantID": "SOM-Y0100-V002",
+      "view": "high-front",
+      "masterSHA256": "0f05a00a237e6c56ceee6923a3c96c557283435f8f29340fc2cb8427cc79a3d0",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/high-front-601895bdf72d.avif",
+      "bytes": 106889,
+      "sha256": "e80c3b1aedd037bcf028889d5707dd60127eeb96e87932e2f185e372c6457c4b",
+      "variantID": "SOM-Y0101-V001",
+      "view": "high-front",
+      "masterSHA256": "601895bdf72d418f212a98746477ab0c447c4cccdf342b82a6b5b0e30f42382b",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/high-front-a2ecf66b4389.avif",
+      "bytes": 35434,
+      "sha256": "ccc9a0f58d001d4e0a75ff2d1a11a372e6ad1169ee89f993fc8cd2dfe27dda78",
+      "variantID": "SOM-Y0101-V002",
+      "view": "high-front",
+      "masterSHA256": "a2ecf66b4389f7dc46b9fc0b7e224f70434267435d4346723e2966ea63a180ba",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/high-front-7d9ee41d1a10.avif",
+      "bytes": 26214,
+      "sha256": "bf030efd36955b4242252867f3dc627dd676e73cadd1de4e4f54c5c4744c32e4",
+      "variantID": "SOM-Y0102-V001",
+      "view": "high-front",
+      "masterSHA256": "7d9ee41d1a1001e327d2e2e78daf5505af5a550cd3408cde76429fb7d4142014",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/high-front-e31fb5468a25.avif",
+      "bytes": 47342,
+      "sha256": "dae836e842abb6b2864713e208d3bc61a88b59e0bedad8be08b350aac51ae8bf",
+      "variantID": "SOM-Y0102-V002",
+      "view": "high-front",
+      "masterSHA256": "e31fb5468a2598fee71e1fbdc31f9c06d5364cce70be95d4ddb92de5c9c78a30",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/high-front-5a9911070f93.avif",
+      "bytes": 26909,
+      "sha256": "2d3978be51126881ac908e2929769d884efa7d05c44e498a980dcfba14b4ade4",
+      "variantID": "SOM-Y0103-V001",
+      "view": "high-front",
+      "masterSHA256": "5a9911070f934dd3eb7ed63822000f8f50145556c104d2849963e4599e59ddc7",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/high-front-0d56c293c2a7.avif",
+      "bytes": 50653,
+      "sha256": "35358aafb59e3bd3fca8527469f2625f66c1b7478111549957daa8dd7e0d6374",
+      "variantID": "SOM-Y0103-V002",
+      "view": "high-front",
+      "masterSHA256": "0d56c293c2a72a9e043dacd4aefb24c75d60ddb258d5a0771a758201b440790c",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V001/dimensioned-top-d4d16d840f98.avif",
+      "bytes": 29948,
+      "sha256": "3ff587beb13e180ef3bf305fcdf94cecc6df7155e0f990ed65b6f74e1452a515",
+      "variantID": "SOM-Y0098-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "d4d16d840f984eae853e89823a107d9f1096d38f007c34cc19fca36a3774e0f1",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0098-V002/dimensioned-top-398f620f77aa.avif",
+      "bytes": 28808,
+      "sha256": "47c8dfaaedbb89d48981ba440b18b1d1494ae486ca26c1ff17bb05717e21fb2f",
+      "variantID": "SOM-Y0098-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "398f620f77aaad9541fdd04bee0fb3b26ca7d204872a22f779ae352cb0182210",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V001/dimensioned-top-1b7efffde2dd.avif",
+      "bytes": 78433,
+      "sha256": "41b7a8be7e0f357def3f2201bb347c76b97e4cd98d32604881cccd597b4017db",
+      "variantID": "SOM-Y0099-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "1b7efffde2dd04cc3c4ebaef8dae2d34cbc76e14723208596d3c0581d89e3f92",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0099-V002/dimensioned-top-2e5953a8cc80.avif",
+      "bytes": 98872,
+      "sha256": "4ec227fe3abba2e91bf365bfae68c5a6acfb816f8268651919834f8e3a66ef13",
+      "variantID": "SOM-Y0099-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "2e5953a8cc80f0b03ec4f35110d623f0eee8a7f3cdd83a77a03889d851c7ae0f",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V001/dimensioned-top-cf5cf47a8e85.avif",
+      "bytes": 91671,
+      "sha256": "d5caa401161e8e03a07f5485ba38a7a8fbd31ed478c63a79677d50419686594e",
+      "variantID": "SOM-Y0100-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "cf5cf47a8e8564c1ebef80de2443b3c6255460cc45cdbf69d72c0030bf87b8f2",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0100-V002/dimensioned-top-323556a50a90.avif",
+      "bytes": 82098,
+      "sha256": "46fd9b0f286e8b814f0f1df202560a756ea778f6e238f69218cd3e304cd53b83",
+      "variantID": "SOM-Y0100-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "323556a50a9090254f7d9ebfe9b337ebddf3ac0558ca9190fb114a5c4142c6fd",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V001/dimensioned-top-61cabfa2c1c4.avif",
+      "bytes": 154033,
+      "sha256": "daef6fdd119c06c02b324ddaa6f871561b3e5478eabab0523d24fc39bcbbced5",
+      "variantID": "SOM-Y0101-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "61cabfa2c1c47b411d4b57b6d2b61cc28444559376b3bdf170235628617e9143",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0101-V002/dimensioned-top-9f09343a6f97.avif",
+      "bytes": 39110,
+      "sha256": "ca6d4bb848442c6a37f88b26a5629221db2feb224754b05f3a59acda4439507e",
+      "variantID": "SOM-Y0101-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "9f09343a6f9707772fadb50efeb8a7d43a458646a78dea83e407cf2956ccfc98",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V001/dimensioned-top-a97bc9132003.avif",
+      "bytes": 36840,
+      "sha256": "39e89b8f2d014c198f2669a42747bcfe22f91388b61f6ee1bcca4f931f789fda",
+      "variantID": "SOM-Y0102-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "a97bc9132003393f27647739de2e660c1e23ef006a67a9340ef2625265be8109",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0102-V002/dimensioned-top-50c925808856.avif",
+      "bytes": 105562,
+      "sha256": "9c82162ddec2351217c4baf9b3796156796d3be59879841110934b8cab09aaa2",
+      "variantID": "SOM-Y0102-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "50c9258088569df71ae0f575598ace232d30cafa18bc45fd2474ce53a9613dcd",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V001/dimensioned-top-afcc881f5f5e.avif",
+      "bytes": 44105,
+      "sha256": "9684e77e8b7627b2708bd98bab346655b3c5e761eea452723a7c7ed17230dae8",
+      "variantID": "SOM-Y0103-V001",
+      "view": "dimensioned-top",
+      "masterSHA256": "afcc881f5f5e186496e06c6a56744437eee2962dfe9807adaf54d519629ab6c4",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0103-V002/dimensioned-top-732cd1a03aab.avif",
+      "bytes": 82072,
+      "sha256": "8b5a45755359cb80253f7aabd87337050c8d95b9cb04017508adbab66c194054",
+      "variantID": "SOM-Y0103-V002",
+      "view": "dimensioned-top",
+      "masterSHA256": "732cd1a03aabe49f6b8a496643102c79797ecf573eb93e31c2f561891574f662",
+      "quality": 65,
+      "effort": 6,
+      "chromaSubsampling": "4:4:4"
+    }
+  ],
+  "previousVerifiedFullSiteBytes": 986787548,
+  "baselineSofaBytes": 637614012,
+  "baselineOtherAppsBytes": 349173536,
+  "expectedSiteByteDelta": 4334038,
+  "predictedFullSiteBytes": 991121586,
+  "existingPhotoBytesRepacked": 0,
+  "sourceMastersChanged": 0,
+  "originalSourcesDeleted": 0,
+  "unpublishedV194Excluded": true,
+  "assemblyProofSHA256": "ee18be9a54ddbc03d26b99ca2909e5afafb2c6bfd54efe7643cb56c65a55a368",
+  "localAssembledQASHA256": "5dc2b0b05aa348c04309c3fd53701e61ffb3cbe17cd67fd87c02402016bf7ab9",
+  "parts": [
+    {
+      "name": "part-001.bin",
+      "bytes": 2097152,
+      "sha256": "3e7a262e99093ff160bcbfef4f583282a4fe7d1d10107deea7471642ae91c0ea"
+    },
+    {
+      "name": "part-002.bin",
+      "bytes": 2097152,
+      "sha256": "b5c64b91927413cdf686001eabc597806ac0628d05cac9a905283f691a4bcea4"
+    },
+    {
+      "name": "part-003.bin",
+      "bytes": 887666,
+      "sha256": "f6a1261f467fc2b2ab0af9c3b7c19540b7ba5b09686b48f9842119d5f934f174"
+    }
+  ],
+  "archiveBytes": 5081970,
+  "archiveSHA256": "cb9aed5e830a070b960ac56aa6681ab0eeb4ad8e275899348ee0e20971ceb34d"
+}
