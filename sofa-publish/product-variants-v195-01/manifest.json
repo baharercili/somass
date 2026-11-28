@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "type": "product-detail-variant-picker-v195-01",
+  "baselineCommit": "b56ddca6c5361c553105fb7d7f7d17d5a910d8d6",
+  "layouts": 94,
+  "products": 461,
+  "photos": 2305,
+  "qualityApproved": 75,
+  "reviewPending": 2230,
+  "members": [
+    {
+      "path": "product-gallery.css",
+      "bytes": 14509,
+      "sha256": "7cf2c8e8ff2b4c4af2b434ba6dab56bb45ac1fb96be8edc61456c2d592da0f16"
+    },
+    {
+      "path": "product-gallery.js",
+      "bytes": 23806,
+      "sha256": "8bab23964d6bbf6cefa47dec4355fd5393aa18e67f4c77884e09861fffbc420e"
+    },
+    {
+      "path": "product-glb-export.js",
+      "bytes": 5260,
+      "sha256": "42e7d6fd7311a3f658f585d124f2d679b8d86bb81f40cfdf45d98d87845039d8"
+    },
+    {
+      "path": "product-pack-documents.js",
+      "bytes": 14308,
+      "sha256": "6c3c6eebb8167eaed5e5baeb440c2d57e4a35a5c369b2a935142ef559349dbf5"
+    },
+    {
+      "path": "product-seo.js",
+      "bytes": 3929,
+      "sha256": "dda72b28c59d3ab391d998da2962bf8ec6990921dd34bdbf53c85f790117df11"
+    },
+    {
+      "path": "product-variants.js",
+      "bytes": 2069,
+      "sha256": "7177374e98cc853fc5792e0076bf97b3be9205c0d5e76fae57dddac478e9040e"
+    },
+    {
+      "path": "sku-display.js",
+      "bytes": 3841,
+      "sha256": "9ccb69263374703630ce4741761981219b40ca41b8407ddcc605da98a6faaeb5"
+    },
+    {
+      "path": "team-pack-engine.js",
+      "bytes": 7153,
+      "sha256": "c37d2eda5691c3f667402b3896dc9bd7dc11f936d76b05a55e5fdfbf133d2709"
+    },
+    {
+      "path": "team-pack.js",
+      "bytes": 2819,
+      "sha256": "1f5056aef904334b196852898e46770fee8eb21dc5250883e3233236218e3416"
+    },
+    {
+      "path": "urun.html",
+      "bytes": 8782,
+      "sha256": "16e1f5de2c7daf8bf71c19917da99b5e467b08fda727009a86df8c02789f2d2c"
+    }
+  ],
+  "allowedPayloadPaths": [
+    "product-gallery.css",
+    "product-gallery.js",
+    "product-glb-export.js",
+    "product-pack-documents.js",
+    "product-seo.js",
+    "product-variants.js",
+    "sku-display.js",
+    "team-pack-engine.js",
+    "team-pack.js",
+    "urun.html"
+  ],
+  "newPaths": [
+    "product-variants.js"
+  ],
+  "expectedBaseFiles": {
+    "product-gallery.css": "83dcc4839a076e8921aedeb1fefdfcca759762771a59696a1ad330635f1ca9af",
+    "product-gallery.js": "ab9c827371966c1f9507b5cb6341a9f2b2bdac42e9f02c402a680a67f797aec1",
+    "product-glb-export.js": "f7399e4fff0728de3120766b95c403da54a4340a9b1e002cff06c46510bbeb97",
+    "product-pack-documents.js": "9aff6d105d961105d6c3bfed4e2e013e6b9c6bd8a941353abe330663acd8a675",
+    "product-seo.js": "caa3e8ceea303b2d95bec53603b8fc50aa673a000d25e8820772a08aff4d01fb",
+    "sku-display.js": "9788596cccbb9a6958748e0b190a6528296bc456cc627706ba2eb385a322ad5d",
+    "team-pack-engine.js": "c540fa25eaab0d58de75350794e5b5b3514c4cae16bd7b9cd2e5c2d661114559",
+    "team-pack.js": "8a6e50966a42c46ff63938b9a01af5fe8e18a47803369d55b4ea58d21d0c2e31",
+    "urun.html": "24aee36591f0321a4503765155daf39dec89a05f84b39052173bf2f0c4cb803e",
+    "INTERFACE-OVERRIDES.json": "4f6fdbbd21eea484fc36625c7ec960bb2d7351bda83d02917ade3b2e80b78608",
+    "VIEW-SCOPE-PUBLICATION.json": "facd44593f00064ac312c0cb8b4b672b9ba6f7b2c19966428de521a44f1634a5",
+    "PACKAGE-MEMBERS.json": "545047563be8ee7ef71b8e22357f29496b17ac07d50ac03d89cee0f81868287e"
+  },
+  "protectedFiles": {
+    "assets/product-studio-v178/gallery-index.json": "c788f06dbe69f922af44c716ee9c6e27fa697f9aa371f73ed35bc70be136160d",
+    "assets/product-galleries/catalogue-v77.json": "5b7a3c5ff623ccbe12f24ab1c7cfdd83abd646109b28e3907bdbb989a1df73aa",
+    "assets/pricing/catalogue-skus.json": "8b887aa3c889860ce09a632ea1ff973fa080f6b990d7566a342bda85c2a952c3",
+    "assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx": "6c6df4f6c4218eb89ef0fb954304eb684c086c21100aaa47312d0e698a6e20a9",
+    "catalogue-removals-v193.js": "f12a04d8d87c0100bc921abc420172e42cf6ea76a593ef8f00272e42084eff22",
+    "approved-fabrics.js": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687",
+    "modular-layout.js": "463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1",
+    "fabric-material.js": "c863134b43806418490fee842f8471092d5752ede61e5adabe9a10b0da5378ee",
+    "table-composition.js": "b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f",
+    "module-dimensions.js": "50a06af61ec666c580507ab353d7033c0429382f56891291273e78aea76f4441"
+  },
+  "previousVerifiedFullSiteBytes": 986775795,
+  "existingPhotoBytesRepacked": 0,
+  "sourceMastersChanged": 0,
+  "unpublishedV194Excluded": true,
+  "resultIntegrity": {
+    "INTERFACE-OVERRIDES.json": {
+      "bytes": 344730,
+      "sha256": "49fd0df2dc29b73d1f656d79f0353f85bbd81adbd0485f98eabc41738998b234"
+    },
+    "VIEW-SCOPE-PUBLICATION.json": {
+      "bytes": 608,
+      "sha256": "d4d0d6176655d2948db0608d1556aa48b93ab11cbf789c56a4945b7dc242c33d"
+    },
+    "PACKAGE-MEMBERS.json": {
+      "bytes": 900773,
+      "sha256": "e01fa19b573b405f567efee29b3f78f86fb2b28078bdcc08ace5ad1ba2df3748"
+    }
+  },
+  "expectedSiteByteDelta": 11753,
+  "predictedFullSiteBytes": 986787548,
+  "parts": [
+    {
+      "name": "part-001.bin",
+      "bytes": 31670,
+      "sha256": "0a880b680a743b63437335d0b8a7c6dec00a7e6c502d0fced57cf5f35385fd71"
+    }
+  ],
+  "archiveBytes": 31670,
+  "archiveSHA256": "0a880b680a743b63437335d0b8a7c6dec00a7e6c502d0fced57cf5f35385fd71"
+}

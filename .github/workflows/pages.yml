@@ -216,6 +216,8 @@ jobs:
         run: python3 sofa-publish/photos-v192-19/restore.py --site _source/_site
       - name: Remove only the three user-selected sofa layouts with exact preservation checks
         run: python3 sofa-publish/catalogue-removal-v193-01/restore.py --site _source/_site
+      - name: Add product detail colour variants while preserving every product and photograph
+        run: python3 sofa-publish/product-variants-v195-01/restore.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
