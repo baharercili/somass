@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "type": "catalogue-filter-cleanup-v197-01",
+  "baselineCommit": "0ee04051ac95b5d6e818a0b3ded902fc673d7a68",
+  "layouts": 100,
+  "products": 473,
+  "photos": 2365,
+  "qualityApproved": 75,
+  "reviewPending": 2290,
+  "members": [
+    {
+      "path": "kombinasyonlar.css",
+      "bytes": 15012,
+      "sha256": "484c9eac7e21d115345d1275b00745926b7f0e723dedf95dcf202e0109cf2cbe"
+    },
+    {
+      "path": "kombinasyonlar.html",
+      "bytes": 7711,
+      "sha256": "38a10825b164590b3c3962bd0c059277e7c940014a081b9af1392b769b96a6bd"
+    },
+    {
+      "path": "kombinasyonlar.js",
+      "bytes": 21636,
+      "sha256": "f9d7b3253e1bc31b47a089dee7d79a63358e55722b77c0161679db12c7893be1"
+    }
+  ],
+  "allowedPayloadPaths": [
+    "kombinasyonlar.css",
+    "kombinasyonlar.html",
+    "kombinasyonlar.js"
+  ],
+  "newPaths": [],
+  "expectedBaseFiles": {
+    "kombinasyonlar.css": "4910f9a62e4b46b8fadaeebfc667da8aa5e9eaa3989fd7330b1018a2bf92e9a5",
+    "kombinasyonlar.html": "1153c072d8450001ca5de7dde8dce9d8a51f8cb174ab307b47ce4f3a89960c58",
+    "kombinasyonlar.js": "42d12924516f5e04ac876d9808ed45150cb60e75881e9fd2ea009b80a47c8aaf",
+    "INTERFACE-OVERRIDES.json": "cf104531a2f91b7f89910288afccc10e4441b985cea531e0aa1018acb28e3d94",
+    "VIEW-SCOPE-PUBLICATION.json": "f40e545f2810fb9dfa806a0c993b8897dfc83f94c5e1ee545022946ffe643395",
+    "PACKAGE-MEMBERS.json": "8953505d74b36a64c7329f6679d6cce9266d2e9032542c8fb082e1925bb9fa0b"
+  },
+  "protectedFiles": {
+    "catalogue-removals-v193.js": "f12a04d8d87c0100bc921abc420172e42cf6ea76a593ef8f00272e42084eff22",
+    "approved-fabrics.js": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687",
+    "modular-layout.js": "463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1",
+    "fabric-material.js": "c863134b43806418490fee842f8471092d5752ede61e5adabe9a10b0da5378ee",
+    "table-composition.js": "b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f",
+    "module-dimensions.js": "50a06af61ec666c580507ab353d7033c0429382f56891291273e78aea76f4441",
+    "loose-back-material.js": "16d93074fd9659543f950d2deea82811a911097d00a6d5a765a5a4a16c5dcfa3",
+    "product-export-materials.js": "bebc5c76cfc0b4f7157c47e198c9b4a2b8b4c00ee1419a4915b2effecb3b6324",
+    "app.js": "a67ee51c0567a31476558520a44b88cc81edd3e9bd0b448b1bd98726b54b6d2c",
+    "combinations-state.js": "62e50a361ee4d80d96b59ff8c6e7f1ccc4aa171b4a4b44f50ebf38192e1c5912",
+    "consumer-summary.js": "ef2fc11d1a60c731a305374c8e1682c35fbd4dc00ca6af18f32313de76594917",
+    "product-variants.js": "7177374e98cc853fc5792e0076bf97b3be9205c0d5e76fae57dddac478e9040e",
+    "assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx": "6c6df4f6c4218eb89ef0fb954304eb684c086c21100aaa47312d0e698a6e20a9",
+    "assets/product-studio-v178/gallery-index.json": "4d6713d25a53918faec1ad8f683f8fd3622ecb5ba0622b375bc98a8dbc3d4f49",
+    "assets/product-galleries/catalogue-v77.json": "8178543fabaf0ded5bca5661ed595e4e7b4c6bb372dee01e8d32d9648d0bdb8a",
+    "assets/pricing/catalogue-skus.json": "b78a2a4ee3b01972390bb440b6f45d42c5af04efb91b5ea4a9196fca72646679",
+    "assets/pricing/sku-registry.json": "c3841c37ccbec61ca61add8d0c4eb73d00d96d640e46ee51d60d217720fb479d",
+    "authored-layouts-v196.js": "029cfc7941b575d13d1c20bf829e886b52ba41cd3f7ba8b01810245ca1a008d5",
+    "inspiration-catalog.js": "cec9d9fb083349c800bee345fb8cb2dfb564ad4679c34ef536bf588c7e3a780d",
+    "catalogue-refresh-v178.js": "8e04912928bdab0315d172783eb3b64cf16afe4e85a8ff552cd170d9ed2a92bd"
+  },
+  "previousVerifiedFullSiteBytes": 991121586,
+  "existingPhotoBytesRepacked": 0,
+  "sourceMastersChanged": 0,
+  "unpublishedV194Excluded": true,
+  "resultIntegrity": {
+    "INTERFACE-OVERRIDES.json": {
+      "bytes": 357146,
+      "sha256": "cedeb0ad7a92f780fd3a681be44fb2304b8044d3fbbfdc3b47e8772319b6e40d"
+    },
+    "VIEW-SCOPE-PUBLICATION.json": {
+      "bytes": 673,
+      "sha256": "a4b93668d527b5acf5282e5241a155ca8deadaf3b1a194e7a357b54926fb1c50"
+    },
+    "PACKAGE-MEMBERS.json": {
+      "bytes": 911653,
+      "sha256": "15af5dd03cf0676b3be4d419581ee9eb5bee45e0b5971ea3e9d722ae0ba32dc4"
+    }
+  },
+  "expectedSiteByteDelta": -2239,
+  "predictedFullSiteBytes": 991119347,
+  "baselineSofaBytes": 641948050,
+  "parts": [
+    {
+      "name": "part-001.bin",
+      "bytes": 14155,
+      "sha256": "7ab868694cabf25b1fb0994a0112ac23144acd1d25b994640c41094905a127bb"
+    }
+  ],
+  "archiveBytes": 14155,
+  "archiveSHA256": "7ab868694cabf25b1fb0994a0112ac23144acd1d25b994640c41094905a127bb"
+}

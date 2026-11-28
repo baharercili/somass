@@ -220,6 +220,8 @@ jobs:
         run: python3 sofa-publish/product-variants-v195-01/restore.py --site _source/_site
       - name: Add six source-bound sofa layouts with full catalogue and media preservation
         run: python3 sofa-publish/layout-expansion-v196-01/restore.py --site _source/_site
+      - name: Remove only the two requested catalogue filters while preserving the full catalogue
+        run: python3 sofa-publish/filter-cleanup-v197-01/restore.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
