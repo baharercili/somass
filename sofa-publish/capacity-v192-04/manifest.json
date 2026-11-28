@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "type": "capacity-and-back-clarity-v192-04",
+  "baselineCommit": "094426522ae5d356f1541f1980ab032c23bf9205",
+  "archiveBytes": 491071,
+  "archiveSHA256": "c53eb545bc0e1d19b9a0c3c82d16bf96525940ca88bc50f16ad3dd5a9a331ee2",
+  "parts": [
+    {
+      "name": "part-001.bin",
+      "bytes": 491071,
+      "sha256": "c53eb545bc0e1d19b9a0c3c82d16bf96525940ca88bc50f16ad3dd5a9a331ee2"
+    }
+  ],
+  "members": [
+    {
+      "path": "assets/product-galleries/catalogue-v77.json",
+      "bytes": 2135385,
+      "sha256": "6376c1fc0cf5b288fff1dce6aa06f5cdd73b5d3d34275afca142c08d5fedffb5"
+    },
+    {
+      "path": "assets/product-studio-v178/gallery-index.json",
+      "bytes": 2280949,
+      "sha256": "a5857ef9e9107176d326c4526c71e53c6915167fddf3c6e349299c0f46d394a1"
+    },
+    {
+      "path": "product-gallery.js",
+      "bytes": 18692,
+      "sha256": "0f0f19e44a231b28070bcd5b6ac90d70e76c7582fdf9743122ac1309625025f2"
+    },
+    {
+      "path": "urun.html",
+      "bytes": 8113,
+      "sha256": "02bfafb2a2072746d6e7408684e77e87df66291c2049462150e719e6bd4a6396"
+    }
+  ],
+  "expectedBaseFiles": {
+    "assets/product-galleries/catalogue-v77.json": "ce093ff5627e08c702da0455047d5efc84d9c44908028e5fc98ca2a3b7263a94",
+    "urun.html": "0b57a3727c70d445c1e46f8a46dc1c0660f1d8d3d8443d5e84e4aaff88fa4901",
+    "assets/product-studio-v178/gallery-index.json": "fab905fff03b1efb215da65bcd78bb09797d17ff12b65980ccefd02700ee608d",
+    "product-gallery.js": "76c3fd2053144bd489477310abdf826321dd6adbce7b60a9c2ecc019d8fc188d",
+    "PACKAGE-MEMBERS.json": "94190283b12800a38a76544b1dc08a8ebf7a2121011781852a7c42c68c269381",
+    "INTERFACE-OVERRIDES.json": "4b0cc798af6d57d06f2c2ae2c238bb3ec5881a1fdea386fd9b99365d6fcf801a",
+    "VIEW-SCOPE-PUBLICATION.json": "667293f75069dccbee1c14c10bb57757d4fd04da1d27d3ffd9d556bbdf9e36cd"
+  },
+  "protectedFiles": {
+    "assets/pricing/catalogue-skus.json": "5574f05e7ab2290c292d3385748626836a6896bda7149b35376ddd3933fcf365",
+    "approved-fabrics.js": "7d64ad58ae4dbf44bca3ac7d6af26ded0977deeb7e799da37070d19de91b9687",
+    "modular-layout.js": "463eea4f89c8c1b5c08d029adb120cf9a094c619bd09d68893341263a466e9e1",
+    "fabric-material.js": "c863134b43806418490fee842f8471092d5752ede61e5adabe9a10b0da5378ee",
+    "table-composition.js": "b2c1270f97b678181d9e944a024ce96bb7bcadc8ccb486eec5326dbbd0b1255f",
+    "module-dimensions.js": "50a06af61ec666c580507ab353d7033c0429382f56891291273e78aea76f4441"
+  },
+  "retirement": {
+    "path": "assets/zeytin-cift-acili/Studio-Zeytin-6-Ek-Aci.zip",
+    "bytes": 3217182,
+    "sha256": "0ea44f4b03b72231f0d16b728d267e67cb5b5df518092e915dade85d774e674d",
+    "referenceAndKeeperProofsPassed": true,
+    "localAndGitSourceArchivePreserved": true,
+    "sourceArchiveSHA256": "8e1eb809db3f8b0dab431a9edeeaa0fd96a63123f27a1d0092a8fa5c726efeff",
+    "keeperGitCommit": "094426522ae5d356f1541f1980ab032c23bf9205"
+  },
+  "resultIntegrity": {
+    "INTERFACE-OVERRIDES.json": {
+      "bytes": 344138,
+      "sha256": "e03edfa7de5fc378e63e385e6ba5a2ee1e72dac512c2fceed644f4f9d4603286"
+    },
+    "VIEW-SCOPE-PUBLICATION.json": {
+      "bytes": 449,
+      "sha256": "c317b2e6298deba3c1e13918bf8187d2c89e540e56591860130e86aeb245ffa4"
+    },
+    "PACKAGE-MEMBERS.json": {
+      "bytes": 746817,
+      "sha256": "3eb09ed9a5a294cab1e950c751af01420e2038ee7f9b71ba5e02a42d6b23bc48"
+    }
+  },
+  "expectedSiteByteDelta": -5115024,
+  "previousVerifiedFullSiteBytes": 932128951,
+  "predictedFullSiteBytes": 927013927,
+  "publicProducts": 319,
+  "publicPhotos": 1443,
+  "photoBytesChanged": 0,
+  "primaryImagesDeleted": 0,
+  "sourceArchiveBytesChanged": 0,
+  "allParsedCatalogueDataExact": true
+}
