@@ -1,0 +1,823 @@
+{
+  "schemaVersion": 1,
+  "packageType": "somass-gallery-delta-v191",
+  "deltaVersion": "v191-03",
+  "baselineCommit": "97b66fca4f1a647281ecc2ece802a6040f3c1c3b",
+  "archiveBytes": 3726444,
+  "archiveSHA256": "520d15bf29669112b971c6ee92a75cf31d137618c11deeeac609f22a46bec781",
+  "parts": [
+    {
+      "name": "part-001.bin",
+      "bytes": 2097152,
+      "sha256": "f864833c200b8747366dce96c16c2e96394edf2ae5bd4777378daaf612413c6e"
+    },
+    {
+      "name": "part-002.bin",
+      "bytes": 1629292,
+      "sha256": "c0169b59a3712cf069eea3e9416a0688a4f70c1132476908b34d012da3bf405a"
+    }
+  ],
+  "members": [
+    {
+      "path": "assets/product-galleries/catalogue-v77.json",
+      "bytes": 2679396,
+      "sha256": "92ffa35baf2427b7db27edf68ff0ac4ced7f2b8f68d362192098e42cac5d2bb4"
+    },
+    {
+      "path": "assets/product-studio-v178/gallery-index.json",
+      "bytes": 2936315,
+      "sha256": "d663f903993545d52f12ce3086c2d9e5dfd8b3c6da908551a9aa75d6c36fa1e6"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0012-V003/front-9eabccc4b73d.webp",
+      "bytes": 71352,
+      "sha256": "b0e82c448d19cda0b21b6212eea8156cade2b38d08c47decc56468a3cf1ad722"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0018-V001/hero-698ea90e69b6.webp",
+      "bytes": 55666,
+      "sha256": "1085f230ed79f429258fb7b6cfe8500967c7cc6c352ff5a8a2c9d8024000665e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/dimensioned-top-df813dab23bb.webp",
+      "bytes": 92124,
+      "sha256": "b4d9e582550750cfc1a3c49ddecca6c51ccfd2715f2ca457352acab999ccc548"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/front-9daa6a3e16f4.webp",
+      "bytes": 113442,
+      "sha256": "d80b1934d76e592e14448c01fda4d4ef9e9d05383a65c418e74a2aff020afde5"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/high-front-8a063faeabbd.webp",
+      "bytes": 112278,
+      "sha256": "0fbde9b3816a2ad75daabbfaa247af7ecca975941d38ba92c876400825606b26"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/right-rear-948e5df72216.webp",
+      "bytes": 122532,
+      "sha256": "0752d0b04db52980017b104cca43ad890207a94325f8da55bb2d80f78bcf3fd5"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0029-V002/hero-c40afd9360d3.webp",
+      "bytes": 65242,
+      "sha256": "98faab334774e3e9c91c0a2e9dd14c3271fcc9ed1bc8836487ba5821a5a1b558"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/dimensioned-top-5ca8b4c2d338.webp",
+      "bytes": 123828,
+      "sha256": "bf0006a23bbf61af8bf806d88928b88b130639f6d85ddb757048aa35c1af9e6f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/front-cdfb7c3d3b05.webp",
+      "bytes": 167728,
+      "sha256": "3d1e2833988ca66dfc0b05ff6899429c5d66ed35fe2054f38efde2737f430156"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/high-front-1f0372110dd9.webp",
+      "bytes": 96224,
+      "sha256": "aa482e6e2bfe4547b968d2672e9a6dc9b08b679e1340f19529692f329c765b19"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/right-rear-9992f55a80c3.webp",
+      "bytes": 188314,
+      "sha256": "6a1353cf623f09ede66d7d3e04769c8dcf4fa12eff25837eea7012a04883526f"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/dimensioned-top-835a5985e156.webp",
+      "bytes": 131504,
+      "sha256": "e7dfec624f99849b673d6ae8275ce234426debeb9882b3ff76ed259fb88c1903"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/front-85fca601aaa6.webp",
+      "bytes": 90658,
+      "sha256": "e073d49b922d32446ffc89e5ca8b86e1cbd73bcd5e494cbf3f934eaebb0d9ff9"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/high-front-6bdfad618418.webp",
+      "bytes": 103216,
+      "sha256": "df8248e5840a41c0719a474bbe5a81ba4b2c3c14b2d02bb4e31a1e41148731a3"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/right-rear-5c8c8a0c7f31.webp",
+      "bytes": 99476,
+      "sha256": "403e072b8fcf8593b956519f123b1725dd98ecd1a96443eda7e40411ca7a6911"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0036-V006/front-87ae792bed15.webp",
+      "bytes": 182012,
+      "sha256": "7f574fada9eff6b3771cb304b55ae505d348c111205b8bd27a5a5adfaa4ceaf9"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0038-V004/hero-6061cba3e1b7.webp",
+      "bytes": 107234,
+      "sha256": "f6ee697c4064e52edb57eed2dd25dccf5eacdaee0b2329576f53104e69400427"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0047-V004/front-e80a3a3de729.webp",
+      "bytes": 131682,
+      "sha256": "952f06362bc59b233f9580fd84b904ad0a408d36b3171fbe9ce7a28924b3e3e5"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/dimensioned-top-b63fa76a9779.webp",
+      "bytes": 132652,
+      "sha256": "ad62845c5257103a4e1ca667bbe284e789aae14963d7a9785ee93d0cf5d20cc1"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/front-78f4727ba34d.webp",
+      "bytes": 73552,
+      "sha256": "f18b97418811e40bdba834609e1a21bf4161437ea6deaf45cb753248f3981e1e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/high-front-2608fe0d2fdd.webp",
+      "bytes": 127016,
+      "sha256": "82f350f3f58e1fea584a748ea92f412ba5db9df1a5ec04d23606605c88b824de"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/right-rear-929c33a12617.webp",
+      "bytes": 137376,
+      "sha256": "793b0f0a271a4647f0c2d0d2a862618f12c1c06a0c07ca9b8b457444a85b810e"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0062-V003/hero-931b3317dd50.webp",
+      "bytes": 103694,
+      "sha256": "26c226189f2994b23c31b535e6f7bafc518750eb0dea869b14b9d16c367fa718"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0068-V003/front-fcdd1cbb4573.webp",
+      "bytes": 70698,
+      "sha256": "2b36fc540d259c56e58af916c7abd5cea377279fb6990d5a7c0f719edab4efeb"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0074-V003/front-837a7298454f.webp",
+      "bytes": 109538,
+      "sha256": "5bd774aef19e6eaa71f50ba29ec4dd51798dbac5f89ae622b728e3cfbcb362a1"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0084-V004/hero-ec40b9ef5b63.webp",
+      "bytes": 117650,
+      "sha256": "bd577e17a6aa9b0624c7f53a3fc606e68e50ce5fb8250dbeb5d0a14be9e7cee0"
+    },
+    {
+      "path": "assets/product-studio-v178/photos/SOM-Y0090-V001/front-08669c6a1930.webp",
+      "bytes": 271676,
+      "sha256": "8996b255c3b1d80e5a98ff0d5194c34589537823329cf907828e531ac5c852a9"
+    },
+    {
+      "path": "assets/product-studio-v178/view-scope.json",
+      "bytes": 292,
+      "sha256": "0190609650d2e425c67ce1cc576b0a556ee794912320c337affadc3917d37ab2"
+    },
+    {
+      "path": "assets/studio/catalogue-v69.json",
+      "bytes": 122,
+      "sha256": "14af09b9d88d63c275a65d5e9339ed99d1a789f7dadcd51cfcfee8f3bd46f9d0"
+    },
+    {
+      "path": "catalogue-refresh-v178.js",
+      "bytes": 13873,
+      "sha256": "be747f5fdded61321a09494e6946e09c8133a30dddce657fb7c19b99b377d0f5"
+    },
+    {
+      "path": "inspiration-catalog.js",
+      "bytes": 28611,
+      "sha256": "51b9ef3881f39da6ad37e8767b979ff36a3255f9c61a933d66dec2efd56e7e08"
+    },
+    {
+      "path": "kombinasyonlar.html",
+      "bytes": 8556,
+      "sha256": "0605f18f1ea62f20cf02a2252050e20c767faf1b2cafa10d1b72ae1c1c34e6c8"
+    },
+    {
+      "path": "kombinasyonlar.js",
+      "bytes": 21788,
+      "sha256": "64a257bc25fa0a2bea41e9ddf4f56e8f8388fcda14016dc0845a9be276c6c577"
+    },
+    {
+      "path": "product-gallery.js",
+      "bytes": 18347,
+      "sha256": "937e38510a73fe0cd63dd66390829d97d48eb5f7c1887acf48020f6c1c4d1d2e"
+    },
+    {
+      "path": "studio-catalog-images.js",
+      "bytes": 5251,
+      "sha256": "35b51dda3640c7ade1cde967fa8e9097b591815bb91a1f68f80db537e77d39b5"
+    },
+    {
+      "path": "urun.html",
+      "bytes": 8116,
+      "sha256": "058839883380e04f50ea49f1883d8fb3912f39155f37d064947a3c528a16b4a0"
+    }
+  ],
+  "allowedTextPaths": [
+    "assets/product-galleries/catalogue-v77.json",
+    "assets/product-studio-v178/gallery-index.json",
+    "assets/product-studio-v178/view-scope.json",
+    "assets/studio/catalogue-v69.json",
+    "catalogue-refresh-v178.js",
+    "inspiration-catalog.js",
+    "kombinasyonlar.html",
+    "kombinasyonlar.js",
+    "product-gallery.js",
+    "studio-catalog-images.js",
+    "urun.html"
+  ],
+  "expectedBaseFiles": {
+    "assets/product-galleries/catalogue-v77.json": "2a88e8dd61e5c183cee33bba93ccfe3fab9930c2d890faf944894a0a44eae07e",
+    "assets/product-studio-v178/gallery-index.json": "b5d2d1def35ecabb6780420057c5241937cb8604ebadfeb348d18fec9057aee9",
+    "assets/product-studio-v178/view-scope.json": "0190609650d2e425c67ce1cc576b0a556ee794912320c337affadc3917d37ab2",
+    "assets/studio/catalogue-v69.json": "14af09b9d88d63c275a65d5e9339ed99d1a789f7dadcd51cfcfee8f3bd46f9d0",
+    "catalogue-refresh-v178.js": "fb03b8052c4c4c9f2852de298d7ce23d5df814e1b360abed9285d0651f18e321",
+    "inspiration-catalog.js": "51b9ef3881f39da6ad37e8767b979ff36a3255f9c61a933d66dec2efd56e7e08",
+    "kombinasyonlar.html": "69509fc7409dcea72a53e51264803d21b5f9896b1561d4851858a41f3b702799",
+    "kombinasyonlar.js": "2fbbe4f6e8d3b0e7ee137a177b8faf4d336ede5838e0273b83268b424e546972",
+    "product-gallery.js": "b380554a56b264047405be66518eaa6c4a1eaeb0b2ecc4dec72934383615b543",
+    "studio-catalog-images.js": "55515e259538aeeb0fa93ad34d8c707e0ed4ff433143470ee57509896aa3ed54",
+    "urun.html": "26c3c3dcb9864455e799cdfd2fe644571de66079fa958360f4b41979b6b83dac"
+  },
+  "photos": [
+    {
+      "candidateId": "SOM-Y0022-V005__dimensioned-top-v191-01",
+      "variantID": "SOM-Y0022-V005",
+      "view": "dimensioned-top",
+      "masterSHA256": "df813dab23bb55f6c5352ced41f7b062908973dedf970fe475b78f9710f6affa",
+      "nativeSourceSHA256": "b53f62168a70c7a4a85fa47cbafb1209698c99d65acafbe732a4a60397a84b95",
+      "recordSHA256": "8d2f1e83c9f8fa2cc85e4ebdcd14dfaa1055fa9964dd772c172b49dd2a3e30a2",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/dimensioned-top-df813dab23bb.webp",
+      "sha256": "b4d9e582550750cfc1a3c49ddecca6c51ccfd2715f2ca457352acab999ccc548",
+      "bytes": 92124,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "untouchedPhotographChannelDifferences": 0
+    },
+    {
+      "candidateId": "SOM-Y0022-V005__front-v191-01",
+      "variantID": "SOM-Y0022-V005",
+      "view": "front",
+      "masterSHA256": "9daa6a3e16f427223e9a453f3ddd4ce2f46f6affc2acd123cd5211ee7b9fad4b",
+      "nativeSourceSHA256": "58fb31181b8f572e5b9aa487f3121efbb62b9719a55505a458be888e6565f9b5",
+      "recordSHA256": "c1518a57c92843fa1adfd3496f867da975c31e3db41d49c3d0cf9568f75179d1",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/front-9daa6a3e16f4.webp",
+      "sha256": "d80b1934d76e592e14448c01fda4d4ef9e9d05383a65c418e74a2aff020afde5",
+      "bytes": 113442,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0022-V005__high-front-v191-01",
+      "variantID": "SOM-Y0022-V005",
+      "view": "high-front",
+      "masterSHA256": "8a063faeabbdba1207bf7d1616efbabe8353ce541d06acd60fd79d78817277ce",
+      "nativeSourceSHA256": "073cc1c691bff6b46f970898b64b5dd934dd9dcf28a3a249b07ff0933be3aa4e",
+      "recordSHA256": "41312d12d549b40e0f24f5f0432e92dde1011d868efe0632ede81a9d80cc4448",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/high-front-8a063faeabbd.webp",
+      "sha256": "0fbde9b3816a2ad75daabbfaa247af7ecca975941d38ba92c876400825606b26",
+      "bytes": 112278,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0022-V005__right-rear-v191-01",
+      "variantID": "SOM-Y0022-V005",
+      "view": "right-rear",
+      "masterSHA256": "948e5df72216406fde8a14b6664e4f9a189042d28eeb9e5cc9b89f056d7535c0",
+      "nativeSourceSHA256": "f5e376333fb07fa66b15802550b422dd17708df507099b64fc71b7300df66701",
+      "recordSHA256": "af84dd0ee1ee45a4d31dda4045590df24aac0843c433318771d70c659509c056",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0022-V005/right-rear-948e5df72216.webp",
+      "sha256": "0752d0b04db52980017b104cca43ad890207a94325f8da55bb2d80f78bcf3fd5",
+      "bytes": 122532,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0032-V003__dimensioned-top-v191-01",
+      "variantID": "SOM-Y0032-V003",
+      "view": "dimensioned-top",
+      "masterSHA256": "5ca8b4c2d3384d927a119ac8c17bdb6ead3ead8161c0709b2e577dc9a9ffb0ff",
+      "nativeSourceSHA256": "5ccd902411b09e857b7dbd7af5d8b9af783e910a91e622c4c6ae896bdcd97d6d",
+      "recordSHA256": "e80fdae96144ede37ac1d71e299f28b53feb011e3017699a698fecb03627e21c",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/dimensioned-top-5ca8b4c2d338.webp",
+      "sha256": "bf0006a23bbf61af8bf806d88928b88b130639f6d85ddb757048aa35c1af9e6f",
+      "bytes": 123828,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "untouchedPhotographChannelDifferences": 0
+    },
+    {
+      "candidateId": "SOM-Y0032-V003__front-v191-01",
+      "variantID": "SOM-Y0032-V003",
+      "view": "front",
+      "masterSHA256": "cdfb7c3d3b0542663a786ff2cce2e89c7c117b4bf1e37ac71057a784862fc65b",
+      "nativeSourceSHA256": "88385b9faa601c10dacf074f2423c1d6828dc7282b53b8bb8e8b9ea49a1a6db6",
+      "recordSHA256": "530a3e7d604cf9fba1eb1edd33a9e96d65291dee85ce716a4da8e230534434c4",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/front-cdfb7c3d3b05.webp",
+      "sha256": "3d1e2833988ca66dfc0b05ff6899429c5d66ed35fe2054f38efde2737f430156",
+      "bytes": 167728,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0032-V003__high-front-v191-01",
+      "variantID": "SOM-Y0032-V003",
+      "view": "high-front",
+      "masterSHA256": "1f0372110dd9e07f01f9ff1224ce590671340959d060cbc2075d6dd0b9230ac3",
+      "nativeSourceSHA256": "87fbace743e893c39b997ab174154b6556391a443159ea944c3ef5bc09cbd382",
+      "recordSHA256": "40d008d40589fe523a2ec8ddeacb61e398bfdc3106a9bf68d14f9cba092b489f",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/high-front-1f0372110dd9.webp",
+      "sha256": "aa482e6e2bfe4547b968d2672e9a6dc9b08b679e1340f19529692f329c765b19",
+      "bytes": 96224,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0032-V003__right-rear-v191-01",
+      "variantID": "SOM-Y0032-V003",
+      "view": "right-rear",
+      "masterSHA256": "9992f55a80c3f7c5b03cafcbd10c6d4fd0ef40a883ce89394f113ef8201bb7e6",
+      "nativeSourceSHA256": "de07f5bda3d2a7014f29feda6ed3e0f808bac7264afe47d6b40e3c49a9a9b2d8",
+      "recordSHA256": "ae6954bebf2c8fc30146701b657eae887e637e70ce64238d6705634972b66b37",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0032-V003/right-rear-9992f55a80c3.webp",
+      "sha256": "6a1353cf623f09ede66d7d3e04769c8dcf4fa12eff25837eea7012a04883526f",
+      "bytes": 188314,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0035-V004__dimensioned-top-v191-01",
+      "variantID": "SOM-Y0035-V004",
+      "view": "dimensioned-top",
+      "masterSHA256": "835a5985e156276ea49e186ab161c0d0162b6ef8715394af1056447a3f5a7a5a",
+      "nativeSourceSHA256": "91c6db8739b4fdb3e12b6bd839dbf3e1b1ccfb27b345ea737a623e125a4cfcd0",
+      "recordSHA256": "f898aa4e9ca04083e0a0d370ce3c43d15f37a7ce259fbed9fd08085e8b14e79e",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/dimensioned-top-835a5985e156.webp",
+      "sha256": "e7dfec624f99849b673d6ae8275ce234426debeb9882b3ff76ed259fb88c1903",
+      "bytes": 131504,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "untouchedPhotographChannelDifferences": 0
+    },
+    {
+      "candidateId": "SOM-Y0035-V004__front-v191-01",
+      "variantID": "SOM-Y0035-V004",
+      "view": "front",
+      "masterSHA256": "85fca601aaa61ce253e423743f6e2cd77173669d8f318f50281c3b64e44c27b8",
+      "nativeSourceSHA256": "5ca29cd96aa9eebfa24a655067a796cb01d897ce556eff1454d30706e2a8396c",
+      "recordSHA256": "269dc4d2dcb963bcf13ac36e45afb1ad998cde14d8cc0d1198dcd4bebf23b8c4",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/front-85fca601aaa6.webp",
+      "sha256": "e073d49b922d32446ffc89e5ca8b86e1cbd73bcd5e494cbf3f934eaebb0d9ff9",
+      "bytes": 90658,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0035-V004__high-front-v191-01",
+      "variantID": "SOM-Y0035-V004",
+      "view": "high-front",
+      "masterSHA256": "6bdfad61841863ce4e4ff65ca654435f396d8523d47e02c74359741d5ed62fd3",
+      "nativeSourceSHA256": "f7153ae35dc7a11c4b847107863fce694cc09f4cc631f4b7335da58836283c34",
+      "recordSHA256": "1a4317e34376429a9ab76e26d1af7a81e1b10c8aff43707f0715047f6f0493e6",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/high-front-6bdfad618418.webp",
+      "sha256": "df8248e5840a41c0719a474bbe5a81ba4b2c3c14b2d02bb4e31a1e41148731a3",
+      "bytes": 103216,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0035-V004__right-rear-v191-01",
+      "variantID": "SOM-Y0035-V004",
+      "view": "right-rear",
+      "masterSHA256": "5c8c8a0c7f31e8792ddd0a39a37921f7717c0f1c94fc197b9e26f742e0ba51f2",
+      "nativeSourceSHA256": "a947fce0fc4b05059297131ad8cc38a68ad9bc29dee06d968ab1de65ca28bb21",
+      "recordSHA256": "0003ced7506347976ae571fcc6fbbbcf1a8c1acb0551296ae5da081a57e2ae16",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0035-V004/right-rear-5c8c8a0c7f31.webp",
+      "sha256": "403e072b8fcf8593b956519f123b1725dd98ecd1a96443eda7e40411ca7a6911",
+      "bytes": 99476,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0051-V005__dimensioned-top-v191-01",
+      "variantID": "SOM-Y0051-V005",
+      "view": "dimensioned-top",
+      "masterSHA256": "b63fa76a9779b268a12cdb83b8c75e9b05ebbd88b164b6430273ebba6460e1be",
+      "nativeSourceSHA256": "d98c749111a63ac2f105ca56a2ebb304348a3ae9541ed8b7ff2ad9b04669cd55",
+      "recordSHA256": "e50a95966691630b04ec59765e2379400ff9d2058d63ae7c242b3ec7671eeaba",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/dimensioned-top-b63fa76a9779.webp",
+      "sha256": "ad62845c5257103a4e1ca667bbe284e789aae14963d7a9785ee93d0cf5d20cc1",
+      "bytes": 132652,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "untouchedPhotographChannelDifferences": 0
+    },
+    {
+      "candidateId": "SOM-Y0051-V005__front-v191-01",
+      "variantID": "SOM-Y0051-V005",
+      "view": "front",
+      "masterSHA256": "78f4727ba34d7cfc12edf6257c6efa0ce2b3745b4367ab2a796dad592fa14b3f",
+      "nativeSourceSHA256": "8675b9da6bf5e8ceb4ee7bed36a704ea1854508aa6ccad62e0a0161e520df244",
+      "recordSHA256": "1a67ce12f86dd48ea4f1dd9a294bb8dd9b8a0fd05925941fb5b3b77e175f1332",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/front-78f4727ba34d.webp",
+      "sha256": "f18b97418811e40bdba834609e1a21bf4161437ea6deaf45cb753248f3981e1e",
+      "bytes": 73552,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0051-V005__high-front-v191-01",
+      "variantID": "SOM-Y0051-V005",
+      "view": "high-front",
+      "masterSHA256": "2608fe0d2fdd7e6d17f18dc780d9b57072cb54eebdab945b0e3d74684362bd3f",
+      "nativeSourceSHA256": "a1ff317d1b94a21ddb20dbb6fac1087157037d3c3061656328169543af785f02",
+      "recordSHA256": "269dca5179b1ab7884c5c64da32ed4a7fbcd77cdaab4dbd6630b891153b46124",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/high-front-2608fe0d2fdd.webp",
+      "sha256": "82f350f3f58e1fea584a748ea92f412ba5db9df1a5ec04d23606605c88b824de",
+      "bytes": 127016,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0051-V005__right-rear-v191-01",
+      "variantID": "SOM-Y0051-V005",
+      "view": "right-rear",
+      "masterSHA256": "929c33a12617ebfc5d48a14540e2167ae3c4bb33c26c6f5476be5f59c7862af0",
+      "nativeSourceSHA256": "4d7e8ca22d3118eb8acf4cb10d4028bc7ed10c7870633729f98cf6e50a15103e",
+      "recordSHA256": "e3f72199489ffa6693306fe7325a07ec5ca8326efdb030a3e294588797ab5aff",
+      "kind": "legacy",
+      "path": "assets/product-studio-v178/photos/SOM-Y0051-V005/right-rear-929c33a12617.webp",
+      "sha256": "793b0f0a271a4647f0c2d0d2a862618f12c1c06a0c07ca9b8b457444a85b810e",
+      "bytes": 137376,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending"
+    },
+    {
+      "candidateId": "SOM-Y0018-V001__hero-v190-01",
+      "variantID": "SOM-Y0018-V001",
+      "view": "hero",
+      "masterSHA256": "698ea90e69b64cd974f39e9d49fb4b976c43c3d2bdb5ead6d50da6bb3cad52f0",
+      "nativeSourceSHA256": "db1938f0f595deddfbdd6526a8efb4bb3b78b49aabc0c64826484e5d2159daef",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0018-V001/hero-698ea90e69b6.webp",
+      "sha256": "1085f230ed79f429258fb7b6cfe8500967c7cc6c352ff5a8a2c9d8024000665e",
+      "bytes": 55666,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "698ea90e69b64cd974f39e9d49fb4b976c43c3d2bdb5ead6d50da6bb3cad52f0",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0036-V006__front-v190-01",
+      "variantID": "SOM-Y0036-V006",
+      "view": "front",
+      "masterSHA256": "87ae792bed154ed900c4400b55b4ef65aee9695987812b2823f75e9e8d7eb1f4",
+      "nativeSourceSHA256": "06d6fa10bc5f92760025be5d94469b95622248fa054e79c3d9b8645b783c5c0d",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0036-V006/front-87ae792bed15.webp",
+      "sha256": "7f574fada9eff6b3771cb304b55ae505d348c111205b8bd27a5a5adfaa4ceaf9",
+      "bytes": 182012,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "87ae792bed154ed900c4400b55b4ef65aee9695987812b2823f75e9e8d7eb1f4",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0029-V002__hero-v190-01",
+      "variantID": "SOM-Y0029-V002",
+      "view": "hero",
+      "masterSHA256": "c40afd9360d3beec7e6c1a2680b80c9fd680f6dfe700c557f8358fd25d8ad946",
+      "nativeSourceSHA256": "00a0f05dde00eeaf80bae71828e33f0b70669c00ca40e78daf0cf94527917db7",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0029-V002/hero-c40afd9360d3.webp",
+      "sha256": "98faab334774e3e9c91c0a2e9dd14c3271fcc9ed1bc8836487ba5821a5a1b558",
+      "bytes": 65242,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "c40afd9360d3beec7e6c1a2680b80c9fd680f6dfe700c557f8358fd25d8ad946",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0062-V003__hero-v190-01",
+      "variantID": "SOM-Y0062-V003",
+      "view": "hero",
+      "masterSHA256": "931b3317dd500dcd4eace7bcbfc750a82eff47cb5cb52f427801dda47f6d9409",
+      "nativeSourceSHA256": "00bb700637dc37d4100f66f1cc249f99afba7855a15c8dbbd17be83a9281a797",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0062-V003/hero-931b3317dd50.webp",
+      "sha256": "26c226189f2994b23c31b535e6f7bafc518750eb0dea869b14b9d16c367fa718",
+      "bytes": 103694,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "931b3317dd500dcd4eace7bcbfc750a82eff47cb5cb52f427801dda47f6d9409",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0090-V001__front-v190-01",
+      "variantID": "SOM-Y0090-V001",
+      "view": "front",
+      "masterSHA256": "08669c6a19309927b971ee7fab6b3b8e17a45a12795abce6a822e13b6123d2c4",
+      "nativeSourceSHA256": "4e6b027b4dfe47a8896590e05229af901dfa5cf81f44bcc76ae15860e1f1cdcc",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0090-V001/front-08669c6a1930.webp",
+      "sha256": "8996b255c3b1d80e5a98ff0d5194c34589537823329cf907828e531ac5c852a9",
+      "bytes": 271676,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "08669c6a19309927b971ee7fab6b3b8e17a45a12795abce6a822e13b6123d2c4",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0068-V003__front-v190-01",
+      "variantID": "SOM-Y0068-V003",
+      "view": "front",
+      "masterSHA256": "fcdd1cbb45735fc995773835e1c4dc7982f36ebc5b3c6f27e2d2b2cf3b23b170",
+      "nativeSourceSHA256": "bf7359bb10c7f35b391bbab1716f54021817b44fae57f66c413a15f2b40bf85e",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0068-V003/front-fcdd1cbb4573.webp",
+      "sha256": "2b36fc540d259c56e58af916c7abd5cea377279fb6990d5a7c0f719edab4efeb",
+      "bytes": 70698,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "fcdd1cbb45735fc995773835e1c4dc7982f36ebc5b3c6f27e2d2b2cf3b23b170",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0074-V003__front-v190-01",
+      "variantID": "SOM-Y0074-V003",
+      "view": "front",
+      "masterSHA256": "837a7298454fbd6841c0f0f8158bd367ef8ff2f3269dbd2e27ea357d2b0b7430",
+      "nativeSourceSHA256": "ae4cba3a6b1cec9ae3f4975f13017ec87ba3e3a6c4ee535ff2c3252764402ce6",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0074-V003/front-837a7298454f.webp",
+      "sha256": "5bd774aef19e6eaa71f50ba29ec4dd51798dbac5f89ae622b728e3cfbcb362a1",
+      "bytes": 109538,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "837a7298454fbd6841c0f0f8158bd367ef8ff2f3269dbd2e27ea357d2b0b7430",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0038-V004__hero-v190-01",
+      "variantID": "SOM-Y0038-V004",
+      "view": "hero",
+      "masterSHA256": "6061cba3e1b7b84499504f2149b68d6dfc5507d054a1a5e1becb945447e2ce71",
+      "nativeSourceSHA256": "1daf963afa90c78334b2852b34f6ed11ce8f0e67d1f81e9b52c34d90d9f64276",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0038-V004/hero-6061cba3e1b7.webp",
+      "sha256": "f6ee697c4064e52edb57eed2dd25dccf5eacdaee0b2329576f53104e69400427",
+      "bytes": 107234,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "6061cba3e1b7b84499504f2149b68d6dfc5507d054a1a5e1becb945447e2ce71",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0012-V003__front-v190-01",
+      "variantID": "SOM-Y0012-V003",
+      "view": "front",
+      "masterSHA256": "9eabccc4b73d02a843c3396676fa7173eb2c3a3b05e8769703e9ae9cf9e7f32a",
+      "nativeSourceSHA256": "e34609839d9e0ef3a7ba28cacafb4532d09b176999c1ee90d33cfc4fa8a52231",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0012-V003/front-9eabccc4b73d.webp",
+      "sha256": "b0e82c448d19cda0b21b6212eea8156cade2b38d08c47decc56468a3cf1ad722",
+      "bytes": 71352,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "9eabccc4b73d02a843c3396676fa7173eb2c3a3b05e8769703e9ae9cf9e7f32a",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0084-V004__hero-v190-01",
+      "variantID": "SOM-Y0084-V004",
+      "view": "hero",
+      "masterSHA256": "ec40b9ef5b635f703537a2f53bf993c885639e05a19e7576669a8ed64230ab19",
+      "nativeSourceSHA256": "8aa762df6c8f931dff932f2fc96ad1acf110222f4bba4ee3d3995dad596767f0",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0084-V004/hero-ec40b9ef5b63.webp",
+      "sha256": "bd577e17a6aa9b0624c7f53a3fc606e68e50ce5fb8250dbeb5d0a14be9e7cee0",
+      "bytes": 117650,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "ec40b9ef5b635f703537a2f53bf993c885639e05a19e7576669a8ed64230ab19",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    },
+    {
+      "candidateId": "SOM-Y0047-V004__front-v190-01",
+      "variantID": "SOM-Y0047-V004",
+      "view": "front",
+      "masterSHA256": "e80a3a3de729687ebb97aae9ebfda213f7ec3af01646911335eada2627c038e8",
+      "nativeSourceSHA256": "7b77783164985a52051c5f028c20e330f4fa0a175b58574f51e1473529d10943",
+      "kind": "repair",
+      "path": "assets/product-studio-v178/photos/SOM-Y0047-V004/front-e80a3a3de729.webp",
+      "sha256": "952f06362bc59b233f9580fd84b904ad0a408d36b3171fbe9ce7a28924b3e3e5",
+      "bytes": 131682,
+      "width": 1536,
+      "height": 1024,
+      "noResize": true,
+      "qualityApproved": false,
+      "qualityReviewStatus": "review-pending",
+      "visualReviewEvidence": [
+        {
+          "reviewer": "/root/repair_missing_v190",
+          "masterSHA256": "e80a3a3de729687ebb97aae9ebfda213f7ec3af01646911335eada2627c038e8",
+          "verdict": "ready-for-gallery-review",
+          "nonFootHoldResolved": true
+        }
+      ]
+    }
+  ],
+  "retiredColourPhotos": [],
+  "cancelledDerivativeFilesRemoved": 4207,
+  "sourceMasterModelFabricDeletionCount": 0,
+  "allowedViews": [
+    "hero",
+    "front",
+    "right-rear",
+    "high-front",
+    "dimensioned-top"
+  ],
+  "distinctBodyColourChanges": [
+    {
+      "variantID": "SOM-Y0011-V003",
+      "newBody": "mora-1020",
+      "name": "Bosco"
+    },
+    {
+      "variantID": "SOM-Y0017-V004",
+      "newBody": "mora-1015",
+      "name": "Siena"
+    },
+    {
+      "variantID": "SOM-Y0022-V005",
+      "newBody": "mora-1023",
+      "name": "Bordeaux"
+    },
+    {
+      "variantID": "SOM-Y0032-V003",
+      "newBody": "mora-1018",
+      "name": "Salvia"
+    },
+    {
+      "variantID": "SOM-Y0035-V004",
+      "newBody": "mora-1020",
+      "name": "Bosco"
+    },
+    {
+      "variantID": "SOM-Y0051-V005",
+      "newBody": "mora-1012",
+      "name": "Ocra"
+    }
+  ],
+  "qualityApprovalAutomatic": false
+}
