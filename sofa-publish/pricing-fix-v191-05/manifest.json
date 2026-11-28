@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "type": "pricing-browser-import-map-v191-05",
+  "baselineCommit": "1ab8a60186f9cc89c36b5a40bd1c21569280da6e",
+  "bytes": 5777,
+  "sha256": "c3dbc9d410a9259acf8fe26ee542f404e1e2d3b7c3cf3e1b731106e17611f909",
+  "expectedBaseSHA256": "a92c2d80eda73148d00765e9ec3ca743b6a0cd69c754950049573d63be2949f6",
+  "protectedFiles": {
+    "assets/product-studio-v178/gallery-index.json": "1860eeb8ec2092dc4798cc7250820aae6feed62d45b59c8d17c2d0ab8b2d3114",
+    "assets/product-galleries/catalogue-v77.json": "74199a6d9d103cebf87717fcfad84b60d95a8714be3c9d8a0b88964ede3f4b79",
+    "assets/pricing/catalogue-skus.json": "5574f05e7ab2290c292d3385748626836a6896bda7149b35376ddd3933fcf365",
+    "pricing.js": "4c9526d69861bfe2559df62f0c202515ef8e3d66d69ee3f5bee7861ca6a5c358"
+  }
+}

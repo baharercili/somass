@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfbf7">
+  <meta name="description" content="SOFF yerleşim SKU’larını, modül listelerini ve birim fiyatlara göre hesaplanan toplamlarını incele. SOFF Excel fiyatlandırma dosyasını indir.">
+  <title>SOFF — SKU ve fiyat</title>
+  <link rel="stylesheet" href="./pricing.css?v=20261123-sku-v108">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#pricing-main">Fiyat hesaplamasına geç</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="./ana-sayfa.html" aria-label="SOFF ana sayfa">STUDIO</a>
+    <nav aria-label="Ana gezinme"><a href="./index.html">Koltuğunu oluştur</a><a href="./kombinasyonlar.html">Kombinasyonlar</a><a href="./pricing.html" aria-current="page">SKU ve fiyat</a><a href="./material-gallery.html">Malzeme galerisi</a></nav>
+  </div></header>
+  <main id="pricing-main" class="pricing-main">
+    <section class="pricing-intro" aria-labelledby="pricing-title">
+      <div><p class="eyebrow">MODÜLER KOLTUK</p><h1 id="pricing-title">SOFF<br>SKU ve fiyat.</h1><p>Modül birim fiyatlarını gir; her yerleşimin modül listesini ve toplamını birlikte gör.</p></div>
+      <div class="download-panel"><a class="primary-button" href="./assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx?v=20261124-reverse-v132" download>SOFF Excel dosyasını indir <span aria-hidden="true">↓</span></a><p>Excel’de fiyatlar formüllerle hesaplanır. Bu sayfadaki fiyatlar da bu tarayıcıda otomatik kaydedilir; iki liste birbirinden bağımsızdır.</p></div>
+    </section>
+    <p id="pricing-status" class="page-status" role="status" aria-live="polite">SKU ve modül listeleri yükleniyor…</p>
+    <div id="pricing-content" hidden>
+      <section class="panel" aria-labelledby="unit-prices-title">
+        <div class="section-heading"><div><p class="eyebrow">1 · BİRİM FİYATLAR</p><h2 id="unit-prices-title">Modül fiyatlarını gir.</h2></div><button id="reset-prices" type="button" class="text-button">Fiyatları temizle</button></div>
+        <p class="section-note">Fiyatları, hesaplamak istediğin kumaş ve ahşap seçimine göre TL olarak gir. Aynı birim fiyat listesi tüm yerleşimlerde kullanılır. Kol, sırt, yastık ve ayaklar ilgili döşemeli modüle dahildir; sehpalar ayrı listelenir.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Modül birim fiyatları tablosu"><table class="sheet-table unit-prices"><thead><tr><th scope="col">Modül SKU</th><th scope="col">Modül</th><th scope="col">Ölçü (cm)</th><th scope="col" class="numeric">Birim fiyat (TL)</th></tr></thead><tbody id="module-price-rows"></tbody></table></div>
+        <p id="price-save-status" class="save-status" role="status" aria-live="polite"></p>
+      </section>
+      <div class="pricing-workspace">
+        <section class="panel placements-panel" aria-labelledby="placements-title">
+          <div class="section-heading"><div><p class="eyebrow">2 · YERLEŞİM SEÇ</p><h2 id="placements-title">SKU listesi</h2></div><span id="placement-count" class="count-pill"></span></div>
+          <label class="search-label" for="sku-search">SKU veya yerleşim adıyla ara<input id="sku-search" type="search" placeholder="Örn. SOM-Y0004 veya köşe" autocomplete="off"></label>
+          <div class="table-scroll placements-scroll" tabindex="0" role="region" aria-label="Yerleşim SKU listesi"><table class="sheet-table placements-table"><thead><tr><th scope="col">Yerleşim SKU</th><th scope="col">Yerleşim</th><th scope="col" class="numeric">Modül</th><th scope="col" class="numeric">Toplam (TL)</th></tr></thead><tbody id="placement-rows"></tbody></table></div>
+          <p id="sku-empty" class="empty-note" hidden>Bu aramada bir yerleşim bulunamadı.</p>
+        </section>
+        <section id="selected-placement" class="panel detail-panel" aria-labelledby="selected-title" tabindex="-1">
+          <p class="eyebrow">3 · MODÜL LİSTESİ</p><p id="selected-sku" class="selected-sku"></p><h2 id="selected-title"></h2><p id="selected-dimensions" class="section-note"></p>
+          <label class="variant-label" for="variant-select">Renk ve malzeme seçeneği<select id="variant-select"></select></label><p id="selected-variant-sku" class="variant-sku"></p><p id="selected-materials" class="section-note"></p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Seçili yerleşimin modül listesi"><table class="sheet-table bom-table"><thead><tr><th scope="col">Modül / SKU</th><th scope="col" class="numeric">Adet</th><th scope="col" class="numeric">Birim (TL)</th><th scope="col" class="numeric">Tutar (TL)</th></tr></thead><tbody id="bom-rows"></tbody></table></div>
+          <div class="total-row"><span>Yerleşim toplamı</span><strong id="selected-total"></strong></div><p id="selected-price-note" class="section-note"></p><a id="selected-product-link" class="outline-button" href="./kombinasyonlar.html">Seçili ürünü incele <span aria-hidden="true">→</span></a>
+        </section>
+      </div>
+    </div>
+    <noscript><p>SKU listesi ve fiyat hesaplaması için JavaScript’i etkinleştir veya <a href="./assets/pricing/SOMASS-SKU-Fiyatlandirma.xlsx?v=20261124-reverse-v132" download>Excel dosyasını indir.</a></p></noscript>
+  </main>
+  <footer class="site-footer"><span class="brand">STUDIO</span><a href="./kombinasyonlar.html">Kombinasyonlara dön</a></footer>
+  <script type="module" src="./pricing.js?v=191-05"></script>
+</body>
+</html>

@@ -172,6 +172,8 @@ jobs:
         run: python3 sofa-publish/gallery-delta-v191-03/restore-delta.py --site _source/_site
       - name: Verify and add available sofa gallery photographs and distinct body colours
         run: python3 sofa-publish/gallery-delta-v191-04/restore-delta.py --site _source/_site
+      - name: Verify the pricing browser module resolution fix
+        run: python3 sofa-publish/pricing-fix-v191-05/restore-ui.py --site _source/_site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload the assembled website
